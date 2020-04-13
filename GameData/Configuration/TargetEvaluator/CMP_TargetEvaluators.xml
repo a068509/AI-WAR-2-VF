@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <target_evaluator name="EngineDamageAsMajorPrimary" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.TargetEvaluator_EngineDamageAsMajorPrimary" />
+  <target_evaluator name="EngineDamageAsMinorPart" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.TargetEvaluator_EngineDamageAsMinorPart" />
+  <target_evaluator name="Melee" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.TargetEvaluator_Melee" />
+  <target_evaluator name="ParalyzerAsPrimary" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.TargetEvaluator_ParalyzerAsPrimary" />
+  <target_evaluator name="ZombifyAsPrimary" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.TargetEvaluator_ZombifyAsPrimary" />
+  <target_evaluator name="CanKnockback" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.TargetEvaluator_CanKnockback" />
+  <target_evaluator name="WeaponJamAsPrimary" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.TargetEvaluator_WeaponJamAsPrimary" />
+</root>

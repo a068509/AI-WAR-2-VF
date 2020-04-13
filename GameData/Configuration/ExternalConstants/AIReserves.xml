@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root
+    is_partial_record="true"
+    custom_int_AIReserves_MinSpawnDelayTime="15"
+    custom_int_AIReserves_MaxSpawnDelayTime="25"
+    custom_int_AIReserves_IneligibleSeconds="1000"
+    custom_int_AIReserves_TimeToStayOnPlanet="250"
+
+    custom_int_AIReserves_MinStrengthToTrigger="4000"
+
+    custom_int_AIReserves_MinDepthForDeepstrike="5"
+    custom_FInt_AIReserves_MultiplierPerDepthLowIntensity="1.1"
+    custom_FInt_AIReserves_MultiplierPerDepthMedIntensity="1.2"
+    custom_FInt_AIReserves_MultiplierPerDepthHighIntensity="1.3"
+
+    custom_FInt_AIReserves_BudgetInWaveSizesDifficulty1="0.8"
+    custom_FInt_AIReserves_BudgetInWaveSizesDifficulty2="0.9"
+    custom_FInt_AIReserves_BudgetInWaveSizesDifficulty3="1.0"
+    custom_FInt_AIReserves_BudgetInWaveSizesDifficulty4="1.1"
+    custom_FInt_AIReserves_BudgetInWaveSizesDifficulty5="1.2"
+    custom_FInt_AIReserves_BudgetInWaveSizesDifficulty6="1.3"
+    custom_FInt_AIReserves_BudgetInWaveSizesDifficulty7="1.4"
+    custom_FInt_AIReserves_BudgetInWaveSizesDifficulty8="1.5"
+    custom_FInt_AIReserves_BudgetInWaveSizesDifficulty9="1.6"
+    custom_FInt_AIReserves_BudgetInWaveSizesDifficulty10="1.7"
+    
+    custom_int_AIReserves_ChanceToHelpPercentLow="28"
+    custom_int_AIReserves_ChanceToHelpPercentMed="33"
+    custom_int_AIReserves_ChanceToHelpPercentHigh="38"
+
+    custom_int_AIReserves_PercentToJoinHunterLow="26"
+    custom_int_AIReserves_PercentToJoinHunterMed="31"
+    custom_int_AIReserves_PercentToJoinHunterHigh="36"
+>
+</root>

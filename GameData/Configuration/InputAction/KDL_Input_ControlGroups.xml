@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <input_action name="SelectFleetGroup_1"
+      category="Fleet Groups" display_name="Select Fleet Group 1"
+      description="One or more fleets may be assigned to this hotkey, and pressing this hotkey selects them all.  In the fleet details window, you can assign which fleets are assigned to this hotkey."
+      related_int_1="1"
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_FleetHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="Alpha1" />
+  <input_action name="SelectFleetGroup_2"
+      category="Fleet Groups" display_name="Select Fleet Group 2"
+      description="One or more fleets may be assigned to this hotkey, and pressing this hotkey selects them all.  In the fleet details window, you can assign which fleets are assigned to this hotkey."
+      related_int_1="2"
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_FleetHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="Alpha2" />
+  <input_action name="SelectFleetGroup_3"
+      category="Fleet Groups" display_name="Select Fleet Group 3"
+      description="One or more fleets may be assigned to this hotkey, and pressing this hotkey selects them all.  In the fleet details window, you can assign which fleets are assigned to this hotkey."
+      related_int_1="3"
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_FleetHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="Alpha3" />
+  <input_action name="SelectFleetGroup_4"
+      category="Fleet Groups" display_name="Select Fleet Group 4"
+      description="One or more fleets may be assigned to this hotkey, and pressing this hotkey selects them all.  In the fleet details window, you can assign which fleets are assigned to this hotkey."
+      related_int_1="4"
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_FleetHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="Alpha4" />
+  <input_action name="SelectFleetGroup_5"
+      category="Fleet Groups" display_name="Select Fleet Group 5"
+      description="One or more fleets may be assigned to this hotkey, and pressing this hotkey selects them all.  In the fleet details window, you can assign which fleets are assigned to this hotkey."
+      related_int_1="5"
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_FleetHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="Alpha5" />
+  <input_action name="SelectFleetGroup_6"
+      category="Fleet Groups" display_name="Select Fleet Group 6"
+      description="One or more fleets may be assigned to this hotkey, and pressing this hotkey selects them all.  In the fleet details window, you can assign which fleets are assigned to this hotkey."
+      related_int_1="6"
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_FleetHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="Alpha6" />
+  <input_action name="SelectFleetGroup_7"
+      category="Fleet Groups" display_name="Select Fleet Group 7"
+      description="One or more fleets may be assigned to this hotkey, and pressing this hotkey selects them all.  In the fleet details window, you can assign which fleets are assigned to this hotkey."
+      related_int_1="7"
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_FleetHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="Alpha7" />
+  <input_action name="SelectFleetGroup_8"
+      category="Fleet Groups" display_name="Select Fleet Group 8"
+      description="One or more fleets may be assigned to this hotkey, and pressing this hotkey selects them all.  In the fleet details window, you can assign which fleets are assigned to this hotkey."
+      related_int_1="8"
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_FleetHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="Alpha8" />
+  <input_action name="SelectFleetGroup_9"
+      category="Fleet Groups" display_name="Select Fleet Group 9"
+      description="One or more fleets may be assigned to this hotkey, and pressing this hotkey selects them all.  In the fleet details window, you can assign which fleets are assigned to this hotkey."
+      related_int_1="9"
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_FleetHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="Alpha9" />
+  <input_action name="SelectFleetGroup_10"
+      category="Fleet Groups" display_name="Select Fleet Group 10"
+      description="One or more fleets may be assigned to this hotkey, and pressing this hotkey selects them all.  In the fleet details window, you can assign which fleets are assigned to this hotkey."
+      related_int_1="10"
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_FleetHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="Alpha0" />
+</root>

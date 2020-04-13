@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root
+	galaxy_map_visual_position_scale_multiplier="1.2"
+	galaxy_map_planet_holder_bundle="arcenui"
+	galaxy_map_planet_holder_prefab="assets/galaxymap/galaxyplanet.prefab"
+	forcefield_sphere_bundle="aiw2_effects"
+	forcefield_sphere_prefab="assets/effects/forcefields/forcefieldsphere.prefab"
+	example_bounds_spot_bundle="aiwar2goodiebox"
+	example_bounds_spot_prefab="assets/arcenbundle/other/exampleboundsspot.prefab"
+  
+	ship_spawn_material_bundle="aiw2_effects"
+	ship_spawn_material_filename="assets/effects/lifeeffect.mat"
+	ship_under_construction_material_bundle="aiw2_effects"
+	ship_under_construction_material_filename="assets/effects/underconstruction.mat"
+	ship_under_construction_stalled_material_bundle="aiw2_effects"
+	ship_under_construction_stalled_material_filename="assets/effects/underconstructionstalled.mat"
+	ship_remains_material_bundle="aiw2_effects"
+	ship_remains_material_filename="assets/effects/burningremains.mat"
+	ship_placement_blocked_material_bundle="aiw2_effects"
+	ship_placement_blocked_material_filename="assets/effects/placementblocked.mat"
+	ship_placement_okay_material_bundle="aiw2_effects"
+	ship_placement_okay_material_filename="assets/effects/placementokay.mat"
+	galaxy_map_line_prefab_bundle="arcenui"
+	galaxy_map_line_prefab_filename="assets/galaxymap/line_galaxymapdiagonal.prefab"
+	galaxy_map_line_material_bundle="aiw2_lines_shots"
+	galaxy_map_line_material_filename="assets/visualshotsandlines/lines/matsandtextures/line_galaxymap.mat"
+	galaxy_map_line_dotted_material_bundle="aiw2_lines_shots"
+	galaxy_map_line_dotted_material_filename="assets/visualshotsandlines/lines/matsandtextures/line_galaxymapdotted.mat"
+	  
+  main_game_cursor_radius="2"
+  main_game_cursor_scales_up_above="0.4"
+  main_game_cursor_scales_up_multiplier="2"
+  main_game_cursor_scales_down_below="0.01"
+  main_game_cursor_min_scale_multiplier="0.1"
+  
+  color_radii_debug_all_times="253,227,203"
+  color_radii_selected="255,255,255"
+  color_radii_hovered="255,240,0"
+  color_radii_hovered_selected="159,255,121"
+  
+  color_placement_center="40,255,255,255"
+  color_placement_border="120,255,255,255"
+  
+  gimbal_starts_scaling_up_at_distance="80"
+  gimbal_scaling_up_multiplier="0.0085"
+  gimbal_scaling_down_multiplier="0.98"
+  gimbal_scaling_absolute_min="0.001"
+  
+	official_sprite_object_bundle="arcencolors"
+	official_sprite_object_filename="assets/icons/officialspritedict.prefab"
+  
+	gimbal_sprite_object_bundle="arcencolors"
+	gimbal_sprite_object_filename="assets/icons/gimbalsprite.prefab"
+  
+	gimbal_sprite_object_with_text_bundle="arcencolors"
+	gimbal_sprite_object_with_text_filename="assets/icons/gimbalsprite_withtext.prefab"
+  
+	you_lose_object_bundle="aiw2_effects"
+	you_lose_object_filename="assets/effects/youlosedisplay.prefab"
+  
+  sprite="Official/Y_"
+  sprite_atk="Official/F_Attack"  
+  sprite_frd="Official/F_FRD"  
+  sprite_grp="Official/F_GroupMove"
+  sprite_guard="Official/F_Guard"
+  sprite_problem="Official/F_Problem"
+  sprite_off="Official/F_Off"
+  sprite_build="Official/F_Build"
+  sprite_selected="Official/F_Selected"
+  sprite_selectedplanet="Official/F_SelectedPlanet"
+  sprite_nuclear="Official/F_Nuclear"
+  sprite_dead="Official/F_Dead"
+  sprite_contains="Official/F_Contains"
+  sprite_count="Official/Count_x"
+  sprite_control_group="Official/ControlGroup_"
+  
+  sprite_no_shield="Official/Z_Health_NoShield"
+  sprite_health_base="Official/Z_Health_Base"
+  sprite_health_shield="Official/Z_Health_Shield"
+  sprite_health_stealth="Official/Z_Health_Stealth"    
+  
+  galaxyplanet_font_size_general="24"
+  galaxyplanet_font_size_current="32"
+  galaxyplanet_scale_base="0.5"
+  galaxyplanet_scale_up_starts_at_y="400"
+  galaxyplanet_scale_up_factor="0.0007"
+  galaxyplanet_line_scale_up_factor="0.0018"
+  
+  extra_y_offset_to_all_icons="35"
+  
+  mainviewscrolling_extra_y_offset_for_plane_of_scrolling_center="40"
+  galaxyscrolling_extra_y_offset_for_plane_of_scrolling_center="1"
+  mainviewscrolling_multiplier_for_scrolling_offset="0.2"
+  galaxyscrolling_multiplier_for_scrolling_offset="0.2"
+  
+  battlefield_visuals_dll_name="AIWarExternalVisualizationCode" 
+  battlefield_visuals_type_name="Arcen.AIW2.ExternalVisualization.BattlefieldVisualSingleton"
+
+  planetary_selection_manager_dll_name="AIWarExternalVisualizationCode" 
+  planetary_selection_manager_type_name="Arcen.AIW2.ExternalVisualization.PlanetViewSelector"
+  
+  galaxy_selection_manager_dll_name="AIWarExternalVisualizationCode"
+  galaxy_selection_manager_type_name="Arcen.AIW2.ExternalVisualization.GalaxyViewSelector"
+  
+  ship_to_ship_lines_visuals_dll_name="AIWarExternalVisualizationCode" 
+  ship_to_ship_lines_visuals_type_name="Arcen.AIW2.ExternalVisualization.ShipToShipLine"
+  
+  generic_objects_visuals_dll_name="AIWarExternalVisualizationCode" 
+  generic_objects_visuals_type_name="Arcen.AIW2.ExternalVisualization.GenericObjectVisualizer"
+  
+  special_effects_visuals_dll_name="AIWarExternalVisualizationCode" 
+  special_effects_visuals_type_name="Arcen.AIW2.ExternalVisualization.SpecialEffect"
+
+>
+</root>

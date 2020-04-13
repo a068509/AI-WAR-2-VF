@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <tip category="DefensiveStrategies" name="Defensive_GateRaiding" display_name="Gate-Raid To Control Where Waves Arrive" sort_priority="1000"
+        full_text="This works the same as in the first game.  Enemies will sometimes be sending waves of ships against you from their warp gates.  So every warp gate adjacent to your territory is a potential vulnerable point.
+        
+The easiest way to shore up that weakness is to go in and just destroy the warp gate on those planets, which will incur an AI Progress (AIP) cost, but not nearly so severe of one as destroying the command station would.
+
+You're likely to aggro the planet pretty heavily when you do this, so be prepared either for them to counterattack your planet traveling through physical space (aka not a wave), or, possibly worse, to join the Hunter Fleet and increment the threat counter.  Expect to then see them in the future at a time when you least want to have them added to something else you're dealing with.
+
+One additional tip is not to destroy ALL the warp gates next to your territory.  If you do, then the AIs will warp their waves into unknown planets behind the enemy front lines, and then fly through physical space to attack you.  This can lead to them hitting you in unexpected places.  Leaving at least one warp gate threatening a planet of yours is a good way to make sure that you're ready for them.
+
+Once you destroy a warp gate adjacent to your planets, the wormhole link from the AI planet to your planets will be shown as extra thin." />
+
+  
+  
+  
+  <tip category="DefensiveStrategies" name="Defensive_CPAs" display_name="Cross Planet Attacks (CPAs) Happen Eventually" sort_priority="1000"
+        full_text="Depending on the difficulty level, AI Progress (AIP), and other situational factors, sooner or later you're going to see a Cross Planet Attack (CPA).
+        
+This is when a whole bunch of ships of the AI abandon their strictly-defensive postures and band together into one giant flash mob that hits you from potentially multiple directions at once... hard.
+
+You'll get some warning that this is about to happen, but knowing in advance that it CAN happen is pretty useful.  Basically if you think you're perfectly protected because you gate-raided one side of your empire and have some moderate defeneses over there... it could be that that's just the weak point that the CPA (or, heck, even the Hunter Fleet) sees and exploits later.
+
+Of course, that cuts both ways: you can leave a planet that looks intentionally weak but which has a strong neighbor willing to step in and crush the foes that show up.  The Hunter Fleet is particularly wise to this sort of trick and factors it into its decisions on when and where to attack.  But it still has some utility, and is worth experimenting with." />
+
+
+
+
+  <tip category="DefensiveStrategies" name="Defensive_WormholeInvasions" display_name="Wormhole Invasions Are A Danger On Difficulty 7+" sort_priority="1000"
+        full_text="These are sudden Behind-Your-Lines assaults by the AI through Exogalactic Wormholes. They are intended to be scary, unpredictable and hard to defend against. They are also infrequent, and will not happen more often than once per hour.
+        
+The AI has a new budget type for Wormhole Invasions (to go with Waves, Reinforcements, etc). To spend that budget, it will spawn an indestructible Exogalactic Wormhole will appear on a player's planet. This wormhole is unstable and will disappear in a few minutes. The AI will launch a number of attacks through it. Sometimes it will launch lots of weaker attacks, other times fewer but larger attacks.
+
+You will get a Notification while the Wormhole Invasion is active, but a minimal time warning when the attacks are actually coming.  The Wormhole Invasion will prefer weakly defended planets behind your front lines, but won't ever spawn on your homeworld.
+
+Even worse: Exogalactic Wormholes can also be used to spawn regular waves!
+
+These only start happening once the AI Progress (AIP) has reached a certain level (depending on the difficulty level, and only on difficulty 7+).  If the difficulty is less than 9, then they also can't spawn on planets adjacent to your homeworld." />
+
+
+
+
+  <tip category="DefensiveStrategies" name="Defensive_MilitaryCommand" display_name="Military Command Stations Matter!" sort_priority="1000"
+        full_text="It's tempting to just use as many economic command stations as possible, to maximize your economy.
+        
+But consider: your military command stations get more and often stronger turrets, and so are very useful when they are planets out on their own, or planets on your border.
+
+You can always switch command station types later on if you need to, but these are often useful when you're in new and dangerous territory.
+
+Even when it comes to the turrets granted by Global Command Augmenters (GCAs -- those newthings that give you more turrets or other defenses at all your command stations if you capture and hold them), military command stations get 2x what logistical command stations get, and 4x what economic command stations get." />
+
+
+
+
+  <tip category="DefensiveStrategies" name="Defensive_NeuteringPlanets" display_name="Neutering Planets Reduces The AI's Effectiveness On Your Borders" sort_priority="1000"
+        full_text="Exactly how the AI goes about getting a reinforcement bonus is... complicated.  But basically, the more planets you are owning territory next to (and thus alerting), the more planets the AI will pump reinforcements into that you'll eventually have to fight.
+        
+However, AIs get more or fewer units in their reinforcements depending on how many guard posts they have.  And guard posts don't cost AI Progress (AIP) to destroy!
+
+So if there are some planets that are next to you, and which you are planning on leaving in AI hands for the long haul because you don't want the AIP increase that taking them would cause... consider neutering them instead.
+
+Neutering means to go in and destroy all the guard posts, but leave the command station intact, and up-to-you about the warp gate.  This will make any reinforcements at that planet much more anemic, and makes the ship cap for the AI at that planet also far lower.
+
+In some ways its a way to make the AI waste part of its own budget by making their planets simply not as effective on the border between you and them, and that can really pay off long-term." />
+
+
+
+
+
+  <tip category="DefensiveStrategies" name="Defensive_Bottlenecks" display_name="Bottlenecks Are Your Friend!" sort_priority="1000"
+        full_text="If you are constantly surrounded by a ton of AI planets, you may never know exactly where the Hunter Fleet will strike from, or where a CPA will come in, or even where waves might come from with full certainty.
+        
+It can be costly in terms of AI Progress (AIP) increases, but a popular strategy is to carve out a small corner of the galaxy to be the main heart of your empire, and have only one or two wormholes leading into or out of that section.
+
+You can then make more of the command stations away from the bottleneck into economic command stations and thus boost your economy, but having taken all those planets will also mean the AI is stronger.
+
+But on the flip side, you're free to focus a lot more of your forces on that bottleneck planet, and then planet-hop (deep-striking) out into the galaxy and take fewer planets outside of your core empire.
+
+As with any strategy that involves increasing AIP, there are pros and cons.  But it definitely can be a boon for new players or players on lower difficulty levels in particular." />
+  
+
+
+
+  <tip category="DefensiveStrategies" name="Defensive_GCAs" display_name="Capture or Hack Global Command Augmenters (GCAs)" sort_priority="1000"
+        full_text="Feeling like your command stations don't have many defensive options?  It's time to go get the rewards from some Global Command Augmenters (GCAs) in some fashion.
+        
+The simplest approach is just to go over to that planet and hack it to get the benefit at no AI Progress (AIP cost), and with no risk of ever losing the benfit.  This gives you a bunch of new turret types and/or minefields and other defensive options at ALL your command stations.  But it costs a heck of a lot of hacking points, so you're going to be limited in what other options you can do with hacking.
+
+The hacking-point-free approach is to go over and capture and hold the planet.  If you do that, then you get all the same benefits from the GCA, but you've increased AIP instead of spending hacking points.  So... that's definitely a tradeoff.  But you also got whatever else was on the planet, including new metal harvester points, so that's good.... right?
+
+However, depending on your permadeath settings in the lobby options, by default if you are holding a GCA and it gets destroyed, then you lose its benefits forever.  This can be a major blow!  Once you've captured the planet, or at least paid the AIP for kicking the AI off, you're able to hack it for a fraction of the normal hacking point cost.
+
+All of those options have pros and cons, but one thing is certain: GCAs in general are absolutely key for your ability to defend yourself." />
+
+  <tip category="DefensiveStrategies" name="UnderstandingWaves" display_name="Understanding Wave Compositions" sort_priority="2000"
+        full_text="The compositions of waves that the AI sends against you is based on the planet that is the source of the wave. Each AI planet has a preferred set of units it likes to use." />
+
+</root>

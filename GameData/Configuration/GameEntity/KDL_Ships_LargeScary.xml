@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <!--These ships are not guardians, but are vaguely like them.-->
+  <entity name="Usurper" gimbal_icon_size_multiplier="1.4"
+			tags="AIReclaimer"
+			special_entity_type="LargeShipNotStackable"
+			visuals="assets/_finalgamemeshes/aibuildings/usurper/usurper.prefab"
+			icon_name="Official/Usurper"
+			uses_large_health_bar="true"
+			category="Ship"
+			size_scale="9"
+			visuals_scale_multiplier="2"
+			y_offset_of_icon="40"
+			collision_priority="800"
+			display_name="Usurper"
+			description="Peut reprendre une planète humaine ou neutre pour l'IA."
+			blocks_enemy_claim_flows="true"
+			can_reclaim_planet="true"
+			voice_group="Silent"
+			starting_mark_level="Mark1"
+			cost_for_ai_to_purchase="1000" strength_multiplier="1.8"			
+			hull_points="100000" shield_points="100000" speed="VeryVeryLittle2"
+			metal_cost="12000" energy_consumption="15000"
+			armor_mm="140" albedo="0.9" engine_gx="25" mass_tx="7"
+			ship_or_structure_explosion_sfx="Attrition_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			exp_to_grant_on_death="100"
+                        priority_as_ai_target="IrreplaceableBigAsTheyCome" priority_as_frd_target="MajorPlanetLevelObjective" priority_to_protect="Irreplaceable"
+                        not_eligible_to_join_hunter_fleet="true"
+			>
+    <system name="LaserPulse" display_name="Laser Pulse"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="1800" range="AboveAverage2" shot_speed="Normal" rate_of_fire="High" fires_salvos_sequentially="true"
+				shot_type_data="LaserPulse_RedLevel2"				
+				>
+    </system>
+    <system name="StingerBolts" display_name="Stinger Bolts"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="1800" range="AboveAverage2" shot_speed="Normal" rate_of_fire="Misery"
+				shots_per_salvo="16" fires_salvos_sequentially="false"
+				shot_type_data="StingerBolt"
+				>
+      <outgoing_damage_modifier applies_to="AllShields" based_on="MaxBubbleForcefield" comparison_type="GreaterThan" compared_to="10000" multiplier="10"  />
+    </system>
+    <system name="GuidedMissile" display_name="Guided Missile"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="2600" range="AboveAverage2" shot_speed="Normal" rate_of_fire="VeryLow" fires_salvos_sequentially="true"
+				shot_type_data="GuidedMissile"				
+				>
+    </system>
+  </entity>
+  
+  <!-- Below this is where the first tier of Extragalactic stuff start. This is just to help organise it a little - Puffin !
+  ************************************************************************************************
+  ************************************************************************************************
+  ************************************************************************************************--> 
+	
+   <entity name="ExtragalacticMaugrim" tags="ExtragalacticWar,ExtragalacticWarTier1"			
+			draw_in_galaxy_view="true"
+			visuals="Assets/_FinalGameMeshes/AIExtragalactic/Tier1_ExtragalacticMaugrim/Tier1_ExtragalacticMaugrim.prefab"
+			icon_name="Official/SomethingPortal" icon_overlay="Official/Guardian_Beam" gimbal_icon_size_multiplier="2"
+			voice_group="Silent"			
+			uses_large_health_bar="true"
+			category="Ship"
+            size_scale="9.5"
+			visuals_scale_multiplier="110"
+			y_offset_of_icon="30"
+			collision_priority="810"
+			display_name="Extragalactic War Maugrim"
+			description="Grand navire avec une arme à faisceau de puissance très élevée et lance de gros drones comme support."
+			fleet_design_template_i_use_for_drones="MaugrimDrones"
+			drone_starting_behavior_type="Attacker_Full"
+			starting_mark_level="Mark7" tech_upgrades_that_benefit_me="Unused" does_not_use_multipliers_from_mark_level="true"
+			cost_for_ai_to_purchase="51563" strength_multiplier="1.5"
+			hull_points="6000000" shield_points="3000000" speed="AboveAverage1"			
+			metal_cost="2000000" energy_consumption="15000"	
+			armor_mm="180" albedo="0.4" engine_gx="18" mass_tx="7"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+            exp_to_grant_on_death="-1"
+			should_never_be_captured_by_another_faction="true"
+            priority_as_ai_target="BigThreateningWeapon" priority_as_frd_target="BigThreateningWeapon" priority_to_protect="BigFavoriteToy"
+			>
+	<metal_flow purpose="BuildingDronesInternally" throughput="6750" />		
+    <system name="HeavyBeamCannon" display_name="Heavy Beam Cannon"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="450000" range="AboveAverage4" shot_speed="Normal" rate_of_fire="ExtremelyLow"
+				shot_type_data="HeavyBeamInvisible"
+				beam_length_multiplier="1.3"
+				hits_all_intersecting_targets="false"				
+				shots_detonate_immediately="false"
+				>
+    </system>	
+    </entity>
+
+   <entity name="MaugrimDrone"			
+			visuals="Assets/_FinalGameMeshes/AIExtragalactic/Tier1_MaugrimDrone/Tier1_MaugrimDrone.prefab"
+			icon_name="Official/SomethingPortal" icon_overlay="Official/Drone" gimbal_icon_size_multiplier="0.6"
+			voice_group="Silent" special_entity_type="DroneFrigate"			
+			category="Ship"
+			size_scale="2.8"
+			visuals_scale_multiplier="12"
+			y_offset_of_icon="30"
+			collision_priority="810"
+			display_name="Maugrim Drone"
+			description="Grand drone avec boulons laser à tir rapide"
+			starting_mark_level="Mark7" tech_upgrades_that_benefit_me="Unused" does_not_use_multipliers_from_mark_level="true"
+			self_attritions_X_percent_per_second_if_parent_ship_not_on_planet="5"
+			cost_for_ai_to_purchase="10"
+			hull_points="40000" shield_points="20000" speed="AboveAverage5"
+			metal_cost="1500" energy_consumption="200"
+			armor_mm="30" albedo="0.3" engine_gx="7" mass_tx="4"
+			ship_or_structure_explosion_sfx="ShipSmall_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+            exp_to_grant_on_death="-1"
+			should_never_be_captured_by_another_faction="true"
+            priority_as_ai_target="NormalFleetship" priority_as_frd_target="NormalFleetship" priority_to_protect="Expendable"
+			>
+	<fleet_membership name="MaugrimDrones" ship_cap_group="Frigate" weight="100" min="10" max="10"/>		
+    <system name="LaserPulse" display_name="Laser Pulse"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="10000" range="AboveAverage4" shot_speed="Normal" rate_of_fire="Misery"
+				shot_type_data="LaserPulse_RedLevel2"
+				>
+    </system>	
+    </entity>	
+
+   <entity name="ExtragalacticPoltergeist" tags="ExtragalacticWar,ExtragalacticWarTier1"			
+			draw_in_galaxy_view="true"
+			visuals="Assets/_FinalGameMeshes/AIExtragalactic/Tier1_ExtragalacticTrespasser/Tier1_ExtragalacticTrespasser.prefab"
+			icon_name="Official/SomethingPortal" icon_overlay="Official/Guardian_Plasma" gimbal_icon_size_multiplier="2"
+			voice_group="Silent"			
+			uses_large_health_bar="true"
+			category="Ship"
+            size_scale="9"
+			visuals_scale_multiplier="60"
+			y_offset_of_icon="30"
+			collision_priority="810"
+			display_name="Extragalactic War Poltergeist"
+			description="Grand vaisseau qui inflige des dégâts élevés sur une seule cible, contournant complètement les boucliers personnels et les champs de force."
+			starting_mark_level="Mark7" tech_upgrades_that_benefit_me="Unused" does_not_use_multipliers_from_mark_level="true"
+			cost_for_ai_to_purchase="50250" strength_multiplier="1.5"
+			hull_points="6000000" shield_points="3000000" speed="AboveAverage1"			
+			metal_cost="2000000" energy_consumption="15000"	
+			armor_mm="180" albedo="0.7" engine_gx="18" mass_tx="7"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+            exp_to_grant_on_death="-1"
+			should_never_be_captured_by_another_faction="true"
+            priority_as_ai_target="BigThreateningWeapon" priority_as_frd_target="BigThreateningWeapon" priority_to_protect="BigFavoriteToy"
+			>		
+    <system name="FusionBomb" display_name="Poltergeist Fusion Mortar"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="80000" range="AboveAverage3" shot_speed="Slow" rate_of_fire="Normal" fires_salvos_sequentially="false"				
+				shot_type_data="FusionBomb"
+				base_percent_damage_bypasses_personal_shields="1"
+				fires_through_enemy_shields="true"
+				>
+			    <outgoing_damage_modifier based_on="CurrentPersonalShieldPercentage" applies_to="HullOnly" comparison_type="AtLeast" compared_to="75" multiplier="1.5" />
+    </system>
+    <system name="Cloaker" display_name="Cloaking Device"
+				category="Passive" cloaking_points="8000"
+				>
+    </system>	
+    </entity>
+	
+   <entity name="ExtragalacticPhoenix" tags="ExtragalacticWar,ExtragalacticWarTier1"			
+			draw_in_galaxy_view="true"
+			visuals="Assets/_FinalGameMeshes/AIExtragalactic/Tier1_ExtralacticRaven/Tier1_ExtralacticRaven.prefab"
+			icon_name="Official/SomethingPortal" icon_overlay="Official/Guardian_Nucleophilic" gimbal_icon_size_multiplier="2"
+			voice_group="Silent"			
+			uses_large_health_bar="true"
+			category="Ship"
+            size_scale="6.2"
+			visuals_scale_multiplier="3"
+			y_offset_of_icon="30"
+			collision_priority="810"
+			display_name="Extragalactic War Phoenix"
+			description="Navire extrêmement rapide avec impulsions laser à tir rapide."
+			starting_mark_level="Mark7" tech_upgrades_that_benefit_me="Unused" does_not_use_multipliers_from_mark_level="true"
+			cost_for_ai_to_purchase="37500"
+			hull_points="6000000" shield_points="3000000" speed="High"			
+			metal_cost="2000000" energy_consumption="15000"	
+			armor_mm="180" albedo="0.4" engine_gx="18" mass_tx="7"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+            exp_to_grant_on_death="-1"
+			should_never_be_captured_by_another_faction="true"
+            priority_as_ai_target="BigThreateningWeapon" priority_as_frd_target="BigThreateningWeapon" priority_to_protect="BigFavoriteToy"
+			>		
+    <system name="AblativeCannon" display_name="Energy Burst"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="2500" range="AboveAverage3" shot_speed="Slow" rate_of_fire="Devourer" 
+				shots_per_salvo="40" fires_salvos_sequentially="false"				
+				shot_type_data="LaserPulse_Pink"
+				>
+    </system>	
+    </entity>	
+
+   <entity name="ExtragalacticAIHunterSeeker" tags="ExtragalacticWar,ExtragalacticWarTier1"			
+			draw_in_galaxy_view="true"
+			visuals="Assets/_FinalGameMeshes/AIExtragalactic/Tier1_ExtragalacticHunterSeeker/Tier1_ExtragalacticHunterSeeker.prefab"
+			icon_name="Official/HunterKiller" icon_overlay="Official/HunterKiller_Rank2" gimbal_icon_size_multiplier="2"
+			voice_group="Silent"			
+			uses_large_health_bar="true"
+			category="Ship"
+            size_scale="10.5"
+			visuals_scale_multiplier="12"
+			y_offset_of_icon="30"
+			collision_priority="810"
+			display_name="Extragalactic War Hunter / Seeker"
+			description="Chasseur / tueur plus grand, plus rapide et plus dangereux."			
+			starting_mark_level="Mark7" tech_upgrades_that_benefit_me="Unused" does_not_use_multipliers_from_mark_level="true"
+			cost_for_ai_to_purchase="49500"
+			hull_points="8000000" shield_points="4000000" speed="AboveAverage1"			
+			metal_cost="2000000" energy_consumption="15000"	
+			armor_mm="180" albedo="0.4" engine_gx="18" mass_tx="7"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+            exp_to_grant_on_death="-1"
+			should_never_be_captured_by_another_faction="true"
+            priority_as_ai_target="BigThreateningWeapon" priority_as_frd_target="BigThreateningWeapon" priority_to_protect="BigFavoriteToy"
+			>		
+   <system name="HeavyBeamCannon" display_name="Mass Destabilisation Beam"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="30000" range="AboveAverage1" shot_speed="Normal" rate_of_fire="Devourer"
+				shot_type_data="HeavyBeamInvisible"
+				beam_length_multiplier="1.3"
+				hits_all_intersecting_targets="false"				
+				shots_detonate_immediately="false"
+				>
+				<outgoing_damage_modifier based_on="mass_tx" comparison_type="AtLeast" compared_to="5" multiplier="3" />
+    </system>
+    <system name="FusionBomb" display_name="Fusion Bomb"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="8000" range="AboveAverage1" shot_speed="Slow" rate_of_fire="High"
+                shots_per_salvo="35" fires_salvos_sequentially="false"
+				shot_type_data="FusionBomb"
+				base_percent_damage_bypasses_personal_shields="1" 
+				>
+			<outgoing_damage_modifier based_on="CurrentPersonalShieldPercentage" applies_to="HullOnly" comparison_type="AtLeast" compared_to="50" multiplier="1.5" />
+    </system>	
+    </entity> 	
+	
+  <!-- Below this is where the second tier of Extragalactic stuff start. This is just to help organise it a little - Puffin !
+  ************************************************************************************************
+  ************************************************************************************************
+  ************************************************************************************************--> 
+
+   <entity name="ExtragalacticWendigo" tags="ExtragalacticWar,ExtragalacticWarTier2"			
+			draw_in_galaxy_view="true"
+			visuals="Assets/_FinalGameMeshes/AIExtragalactic/Tier2_ExtragalacticReanimator/Tier2_ExtragalacticReanimator.prefab"
+			icon_name="Official/SomethingPortal" icon_overlay="Official/Guardian_Tethuida" gimbal_icon_size_multiplier="2"
+			voice_group="Silent"			
+			uses_large_health_bar="true"
+			category="Ship"
+            size_scale="5.5"
+			visuals_scale_multiplier="60"
+			y_offset_of_icon="30"
+			collision_priority="810"
+			display_name="Extragalactic War Wendigo"
+			description="Navire rapide de taille moyenne, se nourrit d'ennemis les convertissant à ses côtés, tout en ramenant des alliés tombés."
+			health_change_per_damage_dealt="0.2"
+			fleet_design_template_i_use_for_drones="WendigoDrones"
+			drone_starting_behavior_type="Attacker_Full"			
+			starting_mark_level="Mark7" tech_upgrades_that_benefit_me="Unused" does_not_use_multipliers_from_mark_level="true"
+			cost_for_ai_to_purchase="71666"
+			hull_points="12000000" shield_points="6000000" speed="High"			
+			metal_cost="2000000" energy_consumption="15000"	
+			armor_mm="180" albedo="0.4" engine_gx="18" mass_tx="7"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+            exp_to_grant_on_death="-1"
+			should_never_be_captured_by_another_faction="true"
+            priority_as_ai_target="BigThreateningWeapon" priority_as_frd_target="BigThreateningWeapon" priority_to_protect="BigFavoriteToy"
+			>
+	<metal_flow purpose="BuildingDronesInternally" throughput="6750" />			
+    <system name="ParasiteBolt" display_name="Gluttony Bolt"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="8000" range="AboveAverage3" shot_speed="Normal" rate_of_fire="High"
+                shots_per_salvo="50" fires_salvos_sequentially="false"
+				shot_type_data="ParasiteCurvedPinkShot"	added_target_evaluator="ZombifyAsPrimary"				
+				>
+          <death_effect_damage type="Nanocaustation" tier_name="Reanimator"/>
+    </system>	
+    </entity>
+	
+   <entity name="WendigoDrone"			
+			visuals="Assets/_FinalGameMeshes/AIExtragalactic/Tier2_ExtragalacticReanimator/Tier2_ExtragalacticReanimatorDrone.prefab"
+			icon_name="Official/SomethingPortal" icon_overlay="Official/Drone" gimbal_icon_size_multiplier="0.6"
+			voice_group="Silent" special_entity_type="DroneFrigate"			
+			category="Ship"
+			size_scale="3.2"
+			visuals_scale_multiplier="32"
+			y_offset_of_icon="30"
+			collision_priority="810"
+			display_name="Wendigo Drone"
+			description="Grand drone qui se sacrifie pour soigner les alliés de cette planète."
+			regenerates_dying_ships_at_this_health_cost_ratio="0.2"
+			starting_mark_level="Mark7" tech_upgrades_that_benefit_me="Unused" does_not_use_multipliers_from_mark_level="true"
+			self_attritions_X_percent_per_second_if_parent_ship_not_on_planet="5"
+			cost_for_ai_to_purchase="10"
+			hull_points="80000" shield_points="40000" speed="High"
+			metal_cost="1500" energy_consumption="200"
+			armor_mm="30" albedo="0.3" engine_gx="7" mass_tx="4"
+			ship_or_structure_explosion_sfx="ShipSmall_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+            exp_to_grant_on_death="-1"
+			should_never_be_captured_by_another_faction="true"
+            priority_as_ai_target="NormalFleetship" priority_as_frd_target="NormalFleetship" priority_to_protect="Expendable"
+			>
+	<fleet_membership name="WendigoDrones" ship_cap_group="Frigate" weight="100" min="10" max="10"/>		
+    <system name="ParasiteBolt" display_name="Gluttony Bolt"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="8000" range="AboveAverage3" shot_speed="Normal" rate_of_fire="High" fires_salvos_sequentially="false"
+				shot_type_data="ParasiteCurvedPinkShot"	added_target_evaluator="ZombifyAsPrimary"				
+				>
+          <death_effect_damage type="Nanocaustation" tier_name="Reanimator"/>
+    </system>	
+    </entity>	
+
+   <entity name="ExtragalacticWyrm" tags="ExtragalacticWar,ExtragalacticWarTier2"			
+			draw_in_galaxy_view="true"
+			visuals="Assets/_FinalGameMeshes/AIExtragalactic/Tier2_ExtragalacticShellshocker/Tier2_ExtragalacticShellshocker.prefab"
+			icon_name="Official/SomethingPortal" icon_overlay="Official/Guardian_Grenade" gimbal_icon_size_multiplier="2"
+			voice_group="Silent"			
+			uses_large_health_bar="true"
+			category="Ship"
+            size_scale="4.8"
+			visuals_scale_multiplier="50"
+			y_offset_of_icon="30"
+			collision_priority="810"
+			display_name="Extragalactic War Wyrm"
+			description="Navire rapide à courte portée avec une zone de dégâts d'effet élevée."			
+			starting_mark_level="Mark7" tech_upgrades_that_benefit_me="Unused" does_not_use_multipliers_from_mark_level="true"
+			cost_for_ai_to_purchase="66000"
+			hull_points="12000000" shield_points="6000000" speed="High"			
+			metal_cost="2000000" energy_consumption="15000"	
+			armor_mm="180" albedo="0.4" engine_gx="18" mass_tx="7"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+            exp_to_grant_on_death="-1"
+			should_never_be_captured_by_another_faction="true"
+            priority_as_ai_target="BigThreateningWeapon" priority_as_frd_target="BigThreateningWeapon" priority_to_protect="BigFavoriteToy"
+			>		
+	<system name="Grenade" display_name="Explosive Breath"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="15000" range="Normal6" shot_speed="Normal" rate_of_fire="High"
+				shots_per_salvo="4" fires_salvos_sequentially="true"
+				shot_type_data="FlakShotAOEBurstAtEnd"
+				area_of_effect_size="700"				
+				maximum_number_of_targets_hit_per_shot="10"
+				>
+    </system>	
+    </entity>
+
+   <entity name="ExtragalacticChimeraArtillery" tags="ExtragalacticWar,ExtragalacticWarTier2"			
+			draw_in_galaxy_view="true"
+            visuals="Assets/_FinalGameMeshes/AIExtragalactic/Tier2_ExtragalacticWarspiteArtillery/Tier2_ExtragalacticWarspiteArtillery.prefab"
+			icon_name="Official/SomethingPortal" icon_overlay="Official/MegaTurret_MassDriver" gimbal_icon_size_multiplier="2"
+			voice_group="Silent"			
+			uses_large_health_bar="true"
+			category="Ship"
+			size_scale="15"
+			visuals_scale_multiplier="125"
+			y_offset_of_icon="30"
+			collision_priority="810"
+			display_name="Extragalactic War Chimera Artillery"
+			description="Lance en continu de grands projectiles à travers la planète."			
+			starting_mark_level="Mark7" tech_upgrades_that_benefit_me="Unused" does_not_use_multipliers_from_mark_level="true"
+			cost_for_ai_to_purchase="72500"
+			hull_points="12000000" shield_points="6000000" speed="Normal1"			
+			metal_cost="2000000" energy_consumption="15000"	
+			armor_mm="180" albedo="0.4" engine_gx="20" mass_tx="9"
+			spawns_on_death="ExtragalacticChimera"
+            count_to_spawn_on_death="1"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+            exp_to_grant_on_death="-1"
+			should_never_be_captured_by_another_faction="true"
+            priority_as_ai_target="BigThreateningWeapon" priority_as_frd_target="BigThreateningWeapon" priority_to_protect="BigFavoriteToy"
+			>		
+    <system name="PlasmaTorpedo" display_name="Plasma Torpedo"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="75000" range="InsanelyHigh" shot_speed="Slow" rate_of_fire="Devourer" 
+				shots_per_salvo="2" fires_salvos_sequentially="true"
+				shot_type_data="PlasmaTorpedo"	
+				>
+    </system>	
+    </entity>
+
+   <entity name="ExtragalacticChimera"			
+			draw_in_galaxy_view="true"
+            visuals="Assets/_FinalGameMeshes/AIExtragalactic/Tier2_ExtragalacticWarspite/Tier2_ExtragalacticWarspite.prefab"
+			icon_name="Official/SomethingPortal" icon_overlay="Official/Guardian_Tantruming" gimbal_icon_size_multiplier="2"
+			voice_group="Silent"			
+			uses_large_health_bar="true"
+			category="Ship"
+			size_scale="15"
+			visuals_scale_multiplier="125"
+			y_offset_of_icon="30"
+			collision_priority="810"
+			display_name="Extragalactic War Chimera"
+			description="Chimère sans les canons principaux mais tirant maintenant a révélé des lanceurs de missiles."			
+			starting_mark_level="Mark7" tech_upgrades_that_benefit_me="Unused" does_not_use_multipliers_from_mark_level="true"
+			cost_for_ai_to_purchase="74900"
+			hull_points="12000000" shield_points="6000000" speed="Normal1"			
+			metal_cost="2000000" energy_consumption="15000"	
+			armor_mm="180" albedo="0.4" engine_gx="20" mass_tx="8"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+            exp_to_grant_on_death="-1"
+			should_never_be_captured_by_another_faction="true"
+            priority_as_ai_target="BigThreateningWeapon" priority_as_frd_target="BigThreateningWeapon" priority_to_protect="BigFavoriteToy"
+			>		
+	<system name="ConcussionMissile" display_name="Guided Missiles"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="11000" range="InsanelyHigh" shot_speed="Slow" rate_of_fire="Devourer"
+			    shots_per_salvo="18" fires_salvos_sequentially="false"
+				shot_type_data="GuidedMissile"
+				>    
+    </system>	
+    </entity>	
+
+  <!-- Below this is where the third tier of Extragalactic stuff start. This is just to help organise it a little - Puffin !
+  ************************************************************************************************
+  ************************************************************************************************
+  ************************************************************************************************-->
+
+   <entity name="ExtragalacticAIHunterAnnihilator" tags="ExtragalacticWar,ExtragalacticWarTier3"			
+			draw_in_galaxy_view="true"
+			visuals="Assets/_FinalGameMeshes/AIExtragalactic/Tier3_ExtragalacticAIHunterAnnihilator/Tier3_ExtragalacticAIHunterAnnihilator.prefab"
+			icon_name="Official/HunterKiller" icon_overlay="Official/HunterKiller_Rank3" gimbal_icon_size_multiplier="2"
+			voice_group="Silent"			
+			uses_large_health_bar="true"
+			category="Ship"
+            size_scale="12.5"
+			visuals_scale_multiplier="10"
+			y_offset_of_icon="30"
+			collision_priority="810"
+			display_name="Extragalactic War Hunter / Annihilator"
+			description="Chasseur / tueur considérablement amélioré."			
+			starting_mark_level="Mark7" tech_upgrades_that_benefit_me="Unused" does_not_use_multipliers_from_mark_level="true"
+			cost_for_ai_to_purchase="234833"
+			hull_points="40000000" shield_points="20000000" speed="Normal2"			
+			metal_cost="2000000" energy_consumption="15000"	
+			armor_mm="180" albedo="0.4" engine_gx="22" mass_tx="8"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+            exp_to_grant_on_death="-1"
+			should_never_be_captured_by_another_faction="true"
+            priority_as_ai_target="BigThreateningWeapon" priority_as_frd_target="BigThreateningWeapon" priority_to_protect="BigFavoriteToy"
+			>		
+   <system name="HeavyBeamCannon" display_name="Mass Destabilisation Coil Beam"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="130000" range="AboveAverage1" shot_speed="Normal" rate_of_fire="Devourer"
+				shot_type_data="HeavyBeamInvisible"
+				beam_length_multiplier="1.3"
+				hits_all_intersecting_targets="true"				
+				shots_detonate_immediately="true"
+				is_coilbeam="true"
+				>
+				<outgoing_damage_modifier based_on="mass_tx" comparison_type="AtLeast" compared_to="5" multiplier="3" />
+    </system>
+    <system name="FusionBomb" display_name="Fusion Bomb"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="20000" range="AboveAverage1" shot_speed="Slow" rate_of_fire="High"
+                shots_per_salvo="35" fires_salvos_sequentially="false"
+				shot_type_data="FusionBomb"
+				base_percent_damage_bypasses_personal_shields="1" 
+				>
+			<outgoing_damage_modifier based_on="CurrentPersonalShieldPercentage" applies_to="HullOnly" comparison_type="AtLeast" compared_to="50" multiplier="1.5" />
+    </system>	
+    </entity>
+
+   <entity name="ExtragalacticJackalope" tags="ExtragalacticWar,ExtragalacticWarTier3"			
+			draw_in_galaxy_view="true"
+			visuals="Assets/_FinalGameMeshes/AIExtragalactic/Tier3_ExtragalacticWarSlicerFrigate/Tier3_ExtragalacticWarSlicerFrigate.prefab"
+			icon_name="Official/SomethingPortal" icon_overlay="Official/Guardian_Shredder" gimbal_icon_size_multiplier="2"
+			voice_group="Silent"			
+			uses_large_health_bar="true"
+			category="Ship"
+            size_scale="6"
+			visuals_scale_multiplier="16"
+			y_offset_of_icon="30"
+			collision_priority="810"
+			display_name="Extragalactic War Jackalope"
+			description="Plage extrêmement rapide et presque vierge... se genre de traduction ou je comprend rien breecherr"			
+			starting_mark_level="Mark7" tech_upgrades_that_benefit_me="Unused" does_not_use_multipliers_from_mark_level="true"
+			cost_for_ai_to_purchase="256666"
+			hull_points="40000000" shield_points="20000000" speed="High"			
+			metal_cost="2000000" energy_consumption="15000"	
+			armor_mm="180" albedo="0.4" engine_gx="22" mass_tx="8"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+            exp_to_grant_on_death="-1"
+			should_never_be_captured_by_another_faction="true"
+            priority_as_ai_target="BigThreateningWeapon" priority_as_frd_target="BigThreateningWeapon" priority_to_protect="BigFavoriteToy"
+			>
+    <system name="Melee" display_name="Shredder"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="800000" range="Tiny3" shot_speed="Fast" rate_of_fire="Devourer" fires_salvos_sequentially="false"
+				shot_type_data="MeleeInvisible"	added_target_evaluator="Melee"			
+				>
+    </system>			
+    </entity>
+
+   <entity name="ExtragalacticThunderbird" tags="ExtragalacticWar,ExtragalacticWarTier3"			
+			draw_in_galaxy_view="true"
+			visuals="Assets/_FinalGameMeshes/AIExtragalactic/Tier3_ExtragalacticCommandDeck/Tier3_ExtragalacticCommandDeck.prefab"
+			icon_name="Official/SomethingPortal" icon_overlay="Official/Guardian_Carrier" gimbal_icon_size_multiplier="2"
+			voice_group="Silent"			
+			uses_large_health_bar="true"
+			category="Ship"
+            size_scale="12.5"
+			visuals_scale_multiplier="18"
+			y_offset_of_ship_in_visual_space="15"
+			y_offset_of_icon="30"
+			collision_priority="810"
+			display_name="Extragalactic War Thunderchild"
+			description="Le grand vaisseau de commandement améliore les alliés sur cette planète, tout en attaquant avec de grandes explosions tesla à travers la planète."			
+			starting_mark_level="Mark7" tech_upgrades_that_benefit_me="Unused" does_not_use_multipliers_from_mark_level="true"
+			cost_for_ai_to_purchase="350001"
+			hull_points="60000000" shield_points="30000000" speed="Normal3"			
+			metal_cost="2000000" energy_consumption="15000"	
+			armor_mm="180" albedo="0.4" engine_gx="22" mass_tx="8"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+            exp_to_grant_on_death="-1"
+			should_never_be_captured_by_another_faction="true"
+			allied_speed_multiplier="1.25"
+			allied_attack_multiplier="1.25"
+            priority_as_ai_target="BigThreateningWeapon" priority_as_frd_target="BigThreateningWeapon" priority_to_protect="BigFavoriteToy"
+			>	
+    <system name="TeslaCoil" display_name="Tesla Blast Cannon"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="8500000" range="EssentiallyInfinite" shot_speed="Instant" rate_of_fire="PeriodicActivation" fires_salvos_sequentially="false"
+				shot_type_data="LightningExplosionAOEShot" cloaking_percent_loss_from_firing="0.1"
+				area_of_effect_size="4000"
+                aoe_spreads_damage_among_available_targets="true"				
+				>	
+    </system>	
+    </entity> 	
+
+  <!-- Below this is where the fourth tier of Extragalactic stuff start. This is just to help organise it a little - Puffin !
+  ************************************************************************************************
+  ************************************************************************************************
+  ************************************************************************************************--> 
+  
+   <entity name="ExtragalacticMothership"
+            draw_in_galaxy_view="true"
+			tags="Mothership,ExtragalacticWar,ExtragalacticWarTier4"
+			visuals="Assets/_FinalGameMeshes/AIExtragalactic/Tier4_ExtragalacticMothership/Tier4_ExtragalacticMothership.prefab"
+			icon_name="Official/SomethingTargetPlanet" gimbal_icon_size_multiplier="2"
+			voice_group="Silent"			
+			uses_large_health_bar="true"
+			category="Ship"
+			size_scale="36"
+			visuals_scale_multiplier="22"
+			y_offset_of_icon="30"
+			collision_priority="9000"
+			display_name="Extragalactic War Mothership"
+			description="Un planétoïde armé colossal. L'IA ne considérerait pas normalement même toute la galaxie de la Voie lactée comme méritant l'attention d'un vaisseau mère. Qu'est-ce que tu as fait?!"
+			starting_mark_level="Mark7" tech_upgrades_that_benefit_me="Unused" does_not_use_multipliers_from_mark_level="true"
+			cost_for_ai_to_purchase="2212500" strength_multiplier="1.5"
+			hull_points="240000000" shield_points="120000000" speed="AboveAverage1"
+			metal_cost="2000000" energy_consumption="15000"	
+			armor_mm="180" albedo="0.7" engine_gx="25" mass_tx="20"			
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+            exp_to_grant_on_death="-1"
+			should_never_be_captured_by_another_faction="true"
+            priority_as_ai_target="BigThreateningWeapon" priority_as_frd_target="BigThreateningWeapon" priority_to_protect="BigFavoriteToy"
+			>		
+    <system name="HeavyBeamCannon" display_name="Doomsday Coil Beam"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="2500000" range="High1" shot_speed="Normal" rate_of_fire="Devourer"
+				shot_type_data="HeavyBeamInvisible"
+				beam_length_multiplier="1.3"
+				hits_all_intersecting_targets="true"				
+				shots_detonate_immediately="true"
+                is_coilbeam="true"				
+				>
+    </system>
+    <system name="LaserPulse" display_name="Point Defense"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="12500" range="High1" shot_speed="Normal" rate_of_fire="Misery"
+				shots_per_salvo="160" fires_salvos_sequentially="false"
+				shot_type_data="LaserPulse_DeepBlue"				
+				>
+    </system>	
+    </entity>
+	
+   <entity name="ExtragalacticPlanetCracker"
+            draw_in_galaxy_view="true"
+			tags="PlanetCracker,ExtragalacticWar,ExtragalacticWarTier4"
+			visuals="Assets/_FinalGameMeshes/AIExtragalactic/Tier4_ExtragalacticPlanetCracker/Tier4_ExtragalacticPlanetCracker.prefab"
+			icon_name="Official/SomethingTargetPlanet" icon_overlay="Official/MegaTurret_MassDriver" gimbal_icon_size_multiplier="2"
+			voice_group="Silent"			
+			uses_large_health_bar="true"
+			category="Ship"
+			size_scale="44"
+			visuals_scale_multiplier="23"
+			y_offset_of_icon="30"
+			collision_priority="9000"
+			display_name="Extragalactic War Planetcracker"
+			description="Immense vaisseau, brandissant une arme capable d'anéantir même certains des vaisseaux les plus puissants."
+			starting_mark_level="Mark7" tech_upgrades_that_benefit_me="Unused" does_not_use_multipliers_from_mark_level="true"
+			cost_for_ai_to_purchase="1835000" strength_multiplier="1.5"
+			hull_points="200000000" shield_points="100000000" speed="AboveAverage1"
+			metal_cost="2000000" energy_consumption="15000"	
+			armor_mm="180" albedo="0.7" engine_gx="25" mass_tx="20"			
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+            exp_to_grant_on_death="-1"
+			should_never_be_captured_by_another_faction="true"
+            priority_as_ai_target="BigThreateningWeapon" priority_as_frd_target="BigThreateningWeapon" priority_to_protect="BigFavoriteToy"
+			>		
+    <system name="MassDriver" display_name="Planet Cracker Array"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="450000" range="EssentiallyInfinite" shot_speed="Normal" rate_of_fire="Devourer"
+				shots_per_salvo="4"
+				shot_type_data="MassDriver"			
+				>
+				<outgoing_damage_modifier based_on="mass_tx" comparison_type="AtLeast" compared_to="5" multiplier="1.2" />
+    </system>
+    <system name="LaserPulse" display_name="Point Defense"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="12500" range="EssentiallyInfinite" shot_speed="Normal" rate_of_fire="Misery"
+				shots_per_salvo="160" fires_salvos_sequentially="false"
+				shot_type_data="LaserPulse_DeepBlue"				
+				>
+    </system>	
+    </entity> 
+
+  <!-- Below this is where the fifth tier of Extragalactic stuff start. This is just to help organise it a little - Puffin !
+  ************************************************************************************************
+  ************************************************************************************************
+  ************************************************************************************************-->  
+
+   <entity name="ExtragalacticFlenser"
+            draw_in_galaxy_view="true"
+			tags="Mothership,ExtragalacticWar,ExtragalacticWarTier5"
+			visuals="Assets/_FinalGameMeshes/AIExtragalactic/Tier5_ExtragalacticFlenser/Tier5_ExtragalacticFlenser.prefab"
+			icon_name="Official/SomethingApocalypse" gimbal_icon_size_multiplier="2"
+			voice_group="Silent"			
+			uses_large_health_bar="true"
+			category="Ship"
+			size_scale="75"
+			visuals_scale_multiplier="70"
+			y_offset_of_icon="30"
+			collision_priority="10000"
+			display_name="Extragalactic War Flenser"
+			description="Tout simplement un énorme navire de guerre IA. Si énormément puissante, son apparence ne signifie généralement qu'une seule chose:
+
+La fin."
+			starting_mark_level="Mark7" tech_upgrades_that_benefit_me="Unused" does_not_use_multipliers_from_mark_level="true"
+			cost_for_ai_to_purchase="3522500" strength_multiplier="4"
+			hull_points="600000000" shield_points="300000000" speed="VeryVeryLittle2"
+			metal_cost="2000000" energy_consumption="15000"	
+			armor_mm="180" albedo="0.7" engine_gx="25" mass_tx="25"			
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+            exp_to_grant_on_death="-1"
+			should_never_be_captured_by_another_faction="true"
+            priority_as_ai_target="BigThreateningWeapon" priority_as_frd_target="BigThreateningWeapon" priority_to_protect="BigFavoriteToy"
+			>		
+    <system name="HeavyBeamCannon" display_name="Doomsday Heavy Beam Cannon"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="50000" range="High2" shot_speed="Normal" rate_of_fire="Devourer"
+				stack_damage_multiplier="1.5"
+				shot_type_data="HeavyBeamInvisible"
+				hits_all_intersecting_targets="true"				
+				shots_detonate_immediately="true"
+				maximum_number_of_targets_hit_per_shot="30"
+				number_beams_to_fire="20"
+				degrees_offset_per_beam="1"				
+				>
+    </system>
+    <system name="MassDriver" display_name="Planet Cracker Array"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="1350000" range="EssentiallyInfinite" shot_speed="Normal" rate_of_fire="Devourer"
+				shots_per_salvo="4"
+				shot_type_data="MassDriver"			
+				>
+				<outgoing_damage_modifier based_on="mass_tx" comparison_type="AtLeast" compared_to="5" multiplier="1.2" />
+    </system>	
+    </entity>	  
+
+  
+</root>

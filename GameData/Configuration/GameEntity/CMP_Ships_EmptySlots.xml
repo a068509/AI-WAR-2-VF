@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>  
+  <!--Note from Chris: ALL of the things in this file are deprecated.-->
+  <entity name="EmptySlotBase"
+      visuals="assets/arcenbundle/other/smalltemporaryrock.prefab"
+      icon_name="Official/RallyFlag" gimbal_icon_size_multiplier="0.7"
+      does_not_need_sidebar_icon="true"
+      category="Ship" skip_export="true"
+      size_scale="0.80"
+      collision_priority="9000"
+      display_name="Empty Slot"
+      description="Aucun navire ne se trouve dans cet emplacement, mais grâce à la possibilité de permuter les lignes de navires entre les flottes (à partir de la barre latérale de gestion de flotte), vous pouvez créer des flottes de conception spécialisée en échangeant les lignes de navires avec ces emplacements vides."
+      behavior="Stationary"
+      target_type_for_player="AutotargetIfTakingPlanet"
+      starting_mark_level="Markless"
+      cost_for_ai_to_purchase="200"
+      hull_points="100" shield_points="100" speed="Immobile"
+      metal_cost="100" energy_consumption="0"
+      armor_mm="1" albedo="1" mass_tx="1" cannot_actually_be_built="true"
+      ship_or_structure_explosion_sfx="StructureLarge_Explosion"
+      ship_or_structure_explosion_if_on_other_planet_sfx="StructureLostOnOtherPlanet_Explosion"
+      ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+      voice_group="Silent"
+      exp_to_grant_on_death="-1"
+      priority_as_ai_target="IgnoreMe" priority_as_frd_target="IgnoreMe" priority_to_protect="IgnoreMe"
+  />
+
+  <entity name="EmptySlot_StealthAlpha1" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_StealthAlpha2" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_StealthAlpha3" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_StealthAlpha4" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_StealthAlpha5" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_StealthAlpha6" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_StealthAlpha7" copy_from="EmptySlotBase"/>
+ 
+  <entity name="EmptySlot_StealthBravo1" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_StealthBravo2" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_StealthBravo3" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_StealthBravo4" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_StealthBravo5" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_StealthBravo6" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_StealthBravo7" copy_from="EmptySlotBase"/>
+
+  <entity name="EmptySlot_StealthFoxtrot1" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_StealthFoxtrot2" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_StealthFoxtrot3" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_StealthFoxtrot4" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_StealthFoxtrot5" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_StealthFoxtrot6" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_StealthFoxtrot7" copy_from="EmptySlotBase"/>
+
+  <entity name="EmptySlot_VelocityAlpha1" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_VelocityAlpha2" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_VelocityAlpha3" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_VelocityAlpha4" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_VelocityAlpha5" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_VelocityAlpha6" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_VelocityAlpha7" copy_from="EmptySlotBase"/>
+
+  <entity name="EmptySlot_VelocityBravo1" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_VelocityBravo2" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_VelocityBravo3" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_VelocityBravo4" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_VelocityBravo5" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_VelocityBravo6" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_VelocityBravo7" copy_from="EmptySlotBase"/>
+
+  <entity name="EmptySlot_VelocityFoxtrot1" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_VelocityFoxtrot2" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_VelocityFoxtrot3" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_VelocityFoxtrot4" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_VelocityFoxtrot5" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_VelocityFoxtrot6" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_VelocityFoxtrot7" copy_from="EmptySlotBase"/>
+
+  <entity name="EmptySlot_WorkhorseAlpha1" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_WorkhorseAlpha2" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_WorkhorseAlpha3" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_WorkhorseAlpha4" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_WorkhorseAlpha5" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_WorkhorseAlpha6" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_WorkhorseAlpha7" copy_from="EmptySlotBase"/>
+
+  <entity name="EmptySlot_WorkhorseBravo1" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_WorkhorseBravo2" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_WorkhorseBravo3" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_WorkhorseBravo4" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_WorkhorseBravo5" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_WorkhorseBravo6" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_WorkhorseBravo7" copy_from="EmptySlotBase"/>
+
+  <entity name="EmptySlot_WorkhorseFoxtrot1" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_WorkhorseFoxtrot2" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_WorkhorseFoxtrot3" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_WorkhorseFoxtrot4" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_WorkhorseFoxtrot5" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_WorkhorseFoxtrot6" copy_from="EmptySlotBase"/>
+  <entity name="EmptySlot_WorkhorseFoxtrot7" copy_from="EmptySlotBase"/>
+
+</root>

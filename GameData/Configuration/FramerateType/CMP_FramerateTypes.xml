@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<framerateType name="Unlocked" vsync_count="0" target_framerate="0"/>
+  <framerateType name="144 FPS" vsync_count="0" target_framerate="144"/>
+  <framerateType name="120 FPS" vsync_count="0" target_framerate="120"/>
+  <framerateType name="100 FPS" vsync_count="0" target_framerate="100"/>
+  <framerateType name="90 FPS" vsync_count="0" target_framerate="90"/>
+  <framerateType name="75 FPS" vsync_count="0" target_framerate="75"/>
+  <framerateType name="60 FPS" vsync_count="0" target_framerate="60"/>
+  <framerateType name="Vsync" vsync_count="1" target_framerate="0"/>
+  <framerateType name="30 FPS" vsync_count="0" target_framerate="30"/>
+  <framerateType name="Half Vsync" vsync_count="2" target_framerate="0"/>
+</root>

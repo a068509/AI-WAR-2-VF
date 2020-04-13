@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--Buttons-->
+  <prefab name="ButtonBlue" prefab_bundle="arcenui" prefab_filename="assets/arcenui/buttons/blue/buttonblue.prefab"  />
+  <prefab name="ButtonBlueSmallerCenter" prefab_bundle="arcenui" prefab_filename="assets/arcenui/buttons/blue/buttonbluesmallercenter.prefab"  />
+  <prefab name="BlueShipButton" prefab_bundle="arcenui" prefab_filename="assets/arcenui/buttons/ships/blueshipbutton.prefab"  />
+  <prefab name="ButtonLeft" prefab_bundle="arcenui" prefab_filename="assets/arcenui/buttons/leftandtop/buttonleft.prefab"  />
+  <prefab name="ButtonLeftAndTop" prefab_bundle="arcenui" prefab_filename="assets/arcenui/buttons/leftandtop/buttonleftandtop.prefab"  />
+  <prefab name="ButtonLeftExternalLink" prefab_bundle="arcenui" prefab_filename="assets/arcenui/buttons/leftandtop/buttonleftexternallink.prefab"  />
+  <prefab name="ColorPickerButton" prefab_bundle="arcenui" prefab_filename="assets/arcenui/buttons/specialized/colorpickerbutton.prefab"  />
+  <prefab name="ButtonBlank" prefab_bundle="arcenui" prefab_filename="assets/arcenui/buttons/blank/buttonblank.prefab"  />
+
+  <!--Button Sets-->
+  <prefab name="ButtonSet_BlueSmallerCenter" prefab_bundle="arcenui" prefab_filename="assets/arcenui/sets/buttonset.prefab"
+          child_prefab_bundle="arcenui" child_prefab_filename="assets/arcenui/buttons/blue/buttonbluesmallercenter.prefab" has_child_prefab="true" />
+  
+  <!--Dropdowns-->
+  <prefab name="BasicDropdown" prefab_bundle="arcenui" prefab_filename="assets/arcenui/dropdowns/basicdropdown.prefab"  />
+
+  <!--Textboxes-->
+  <prefab name="BasicTextbox" prefab_bundle="arcenui" prefab_filename="assets/arcenui/textboxes/basictextbox.prefab"  />
+  <prefab name="BasicTextboxSelectOnClick" prefab_bundle="arcenui" prefab_filename="assets/arcenui/textboxes/basictextboxselectonclick.prefab"  />
+  
+  <!--Sliders-->
+  <prefab name="BasicVerticalSlider" prefab_bundle="arcenui" prefab_filename="assets/arcenui/sliders/basicverticalslider.prefab"  />
+  <prefab name="BasicHorizontalSlider" prefab_bundle="arcenui" prefab_filename="assets/arcenui/sliders/basichorizontalslider.prefab"  />
+
+  <!--Images-->
+  <prefab name="BasicImageDrawer" prefab_bundle="arcenui" prefab_filename="assets/arcenui/imagedrawer/basicimagedrawer.prefab"  />
+  <prefab name="BasicImageDrawerButton" prefab_bundle="arcenui" prefab_filename="assets/arcenui/imagedrawer/basicimagedrawerbutton.prefab"  />
+  <prefab name="SidebarImageButton" prefab_bundle="arcenui" prefab_filename="assets/arcenui/imagedrawer/specialized/sidebarimagebutton.prefab"  />
+  <prefab name="BuildImageButtonBorderless" prefab_bundle="arcenui" prefab_filename="assets/arcenui/imagedrawer/specialized/buildimagebuttonborderless.prefab"  />  
+
+  <!--Image Button Sets-->
+  <prefab name="ImageButtonSet_BasicImageButtonDrawer" prefab_bundle="arcenui" prefab_filename="assets/arcenui/sets/imagebuttonset.prefab"
+          child_prefab_bundle="arcenui" child_prefab_filename="assets/arcenui/imagedrawer/basicimagedrawerbutton.prefab" has_child_prefab="true" />
+  <prefab name="ImageButtonSet_SidebarIcons" prefab_bundle="arcenui" prefab_filename="assets/arcenui/sets/imagebuttonset.prefab"
+          child_prefab_bundle="arcenui" child_prefab_filename="assets/arcenui/imagedrawer/specialized/sidebarimagebutton.prefab" has_child_prefab="true" />
+  <prefab name="ImageButtonSet_BuildImageButtons" prefab_bundle="arcenui" prefab_filename="assets/arcenui/sets/imagebuttonset.prefab"
+          child_prefab_bundle="arcenui" child_prefab_filename="assets/arcenui/imagedrawer/specialized/buildimagebuttonborderless.prefab" has_child_prefab="true" />
+  <prefab name="ImageButtonSet_BuildQueueImageButtons" prefab_bundle="arcenui" prefab_filename="assets/arcenui/sets/imagebuttonset.prefab"
+          child_prefab_bundle="arcenui" child_prefab_filename="assets/arcenui/imagedrawer/specialized/buildqueueimagebuttonborderless.prefab" has_child_prefab="true" />
+  
+  <!--Texts-->
+  <prefab name="BasicText" prefab_bundle="arcenui" prefab_filename="assets/arcenui/text/basictext.prefab" />
+  <prefab name="BasicMousehandlingText" prefab_bundle="arcenui" prefab_filename="assets/arcenui/text/basicmousehandlingtext.prefab"  />
+  <prefab name="HoverableText" prefab_bundle="arcenui" prefab_filename="assets/arcenui/text/hoverabletext.prefab"  />
+  <prefab name="BasicTextUnderlay" prefab_bundle="arcenui" prefab_filename="assets/arcenui/text/basictextunderlay.prefab" />
+  <prefab name="SmallSecondaryText" prefab_bundle="arcenui" prefab_filename="assets/arcenui/text/smallsecondarytext.prefab" />
+  
+  <!--Uniterm Canvas-->
+  <prefab name="UnitermCanvas" is_unusual_prefab="true" prefab_bundle="arcenui" prefab_filename="assets/arcenui/uniterm/canvasuniterm.prefab"  />
+
+  <!--Window Backgrounds-->
+  <prefab name="BasicWindowBG" prefab_bundle="arcenui" prefab_filename="assets/arcenui/windowbackgrounds/basicwindowbg.prefab"  />
+  
+  <!--Custom Panels-->
+  <prefab name="AtMouseTooltipPanelNarrow" prefab_bundle="arcenui" prefab_filename="assets/arcenui/imagedrawer/specialized/atmousetooltipnarrow.prefab"  />
+  <prefab name="AtMouseTooltipPanelWide" prefab_bundle="arcenui" prefab_filename="assets/arcenui/imagedrawer/specialized/atmousetooltipwide.prefab"  />
+  <prefab name="SimpleWindowBackground" prefab_bundle="arcenui" prefab_filename="assets/arcenui/imagedrawer/basicnoninteractableimagedrawer.prefab"  />
+  <prefab name="MainMenu" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/mainmenu.prefab"  />
+  <prefab name="CreditsPanel" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/creditspanel.prefab"  />
+  <prefab name="ModalOKWindow" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/modalokwindow.prefab"  />
+  <prefab name="ModalOKWindowTall" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/modalokwindowtall.prefab"  />
+  <prefab name="ModalYesNoWindow" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/modalyesnowindow.prefab"  />
+  <prefab name="BackgroundStory" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/backgroundstory.prefab"  />
+  <prefab name="AddEditProfileWindow" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/addeditprofilewindow.prefab"  />
+  <prefab name="TeamColorPicker" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/teamcolorpicker.prefab"  />
+  <prefab name="TeamColorPickerTrimOnly" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/teamcolorpickertrimonly.prefab"  />
+  <prefab name="PopupScrollingColumnButtonList" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/popupscrollingcolumnbuttonlist.prefab"  />
+  <prefab name="ModalSystemMenu" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/modalsystemmenu.prefab"  />
+  <prefab name="LoadQuickStartWindow" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/loadquickstartwindow.prefab"  />
+  <prefab name="LoadTutorialWindow" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/loadtutorialwindow.prefab"  />  
+  <prefab name="LoadGameWindow" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/loadgamewindow.prefab"  />
+  <prefab name="SaveGameWindow" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/savegamewindow.prefab"  />
+  <prefab name="SettingsMenu" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/settingswindow.prefab"  />
+  <prefab name="ControlBindingsMenu" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/controlbindingsmenu.prefab"  />
+  <prefab name="SelectedShips" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/selectedships.prefab"  />
+  
+  <prefab name="MainGameBottomLeft" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/maingamebottomleft.prefab"  />
+  <prefab name="MainGameHeader" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/maingameheader.prefab"  />
+  <prefab name="SidebarLeftTabs" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/sidebarlefttabs.prefab"  />
+  <prefab name="SidebarShips" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/sidebarships.prefab"  />
+  <prefab name="SidebarClosed" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/sidebarclosed.prefab"  />
+  <prefab name="SidebarFleets" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/sidebarfleets.prefab"  />
+  <prefab name="SidebarDirectBuild" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/sidebardirectbuild.prefab"  />
+  <prefab name="SidebarScience" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/sidebarscience.prefab"  />
+  <prefab name="SidebarHacking" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/sidebarhacking.prefab"  />
+  <prefab name="SidebarMercenaries" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/sidebarmercenaries.prefab"  />
+  <prefab name="SidebarObjectives" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/sidebarobjectives.prefab"  />
+  <prefab name="NotificationsDisplay" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/notificationsdisplay.prefab"  />
+  <prefab name="SettingsSidebarPopout" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/settingssidebarpopout.prefab"  />
+  <prefab name="ModalTextboxWindow" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/modaltextboxwindow.prefab"  />
+  <prefab name="ModalScrollingContents" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/modalscrollingcontents.prefab"  />
+  <prefab name="ModalDualTextboxWindow" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/modaldualtextboxwindow.prefab"  />
+  <prefab name="SetupTopTabs" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/setuptoptabs.prefab"  />
+  <prefab name="SetupFooterControls" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/setupfootercontrols.prefab"  />
+  <prefab name="SetupWindowSectional" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/setupwindowsectional.prefab"  />
+  <prefab name="SetupWindowChatOnRight" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/setupwindowchatonright.prefab"  />
+  <prefab name="SetupWindowScrollingStuffOnLeft" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/setupwindowscrollingstuffonleft.prefab"  />
+  <prefab name="ChatboxWindow" prefab_bundle="arcenui" prefab_filename="assets/arcenui/_customuis/chatboxwindow.prefab"  />
+</root>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <planet_name_type name="Standard" display_name="Standard" subdir="Standard"
+          description="Inspired by famous scientists, along with real and fictional named planets and locations from other works.  Created by Chris and Keith." />
+  <planet_name_type name="NoGravitas" display_name="No Gravitas" subdir="NoGravitas"
+          description="Inspired by phrases and spaceship names in a pretty humorous sci fi series.  Created by Draco18s (edited by Chris)." />
+  <planet_name_type name="FantasyMonsters" display_name="Fantasy Monsters" subdir="FantasyMonsters"
+          description="Inspired by the names of monsters in several fantasy games.  Created by Zoutzakje (edited by Chris)." />
+  <planet_name_type name="KahunasRealStars" display_name="Kahuna's Real Stars" subdir="KahunasRealStars"
+          description="Absolutely enormous list of actual star names, including codenames for them.  Plus a few easter eggs in there.  Created by Kahuna." />
+  <planet_name_type name="KahunasRealStarsNoCodenames" display_name="Kahuna's No-Codename Stars" subdir="KahunasRealStarsNoCodenames"
+          description="Absolutely enormous list of actual star names, but minus the codename-y sort.  Plus a few easter eggs in there.  Created by Kahuna." />
+  <planet_name_type name="Cities_DE" display_name="Cities (DE)" subdir="Cities_DE"
+          description="Most cities in Germany show up here, if they are 10 characters or fewer.  Created by Viss Valdyr." />
+  <planet_name_type name="Cities_UK" display_name="Cities (UK)" subdir="Cities_UK"
+          description="Most cities in the UK show up here, if they are 10 characters or fewer.  Created by Viss Valdyr." />
+  <planet_name_type name="Cities_US" display_name="Cities (US)" subdir="Cities_US"
+          description="Most cities in the US show up here, if they are 10 characters or fewer.  Created by Viss Valdyr." />
+  <planet_name_type name="Cities_RUS" display_name="Cities (RUS)" subdir="Cities_RUS"
+          description="Most cities in Russia show up here, if they are 10 characters or fewer.  Created by Viss Valdyr." />
+  <planet_name_type name="Cities_FRandSP" display_name="Cities (FR/SPA)" subdir="Cities_FRandSP"
+          description="Most cities in France and Spain show up here, if they are 10 characters or fewer.  It's a shorter (and combined) list because most of their city names are quite long!  Created by Viss Valdyr." />
+</root>

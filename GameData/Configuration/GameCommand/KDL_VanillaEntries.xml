@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <command name="SetupOnly_ChangeSetup" core_function="SetupOnly_ChangeSetup" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetupOnly_ChangeSetup" />
+  <command name="SetupOnly_RequestSetupChanges" core_function="SetupOnly_RequestSetupChanges" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetupOnly_RequestSetupChanges" />
+  <command name="DuringGameOnly_RequestGalaxySettingChanges" core_function="DuringGameOnly_RequestGalaxySettingChanges" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_DuringGameOnly_RequestGalaxySettingChanges" />
+  <command name="EditFleetData" core_function="EditFleetData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_EditFleetData" />
+  <command name="HandleEndOfIntermittentLongRangePlanningCycle" core_function="HandleEndOfIntermittentLongRangePlanningCycle" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_HandleEndOfIntermittentLongRangePlanningCycle" />
+
+  <command name="MoveManyToOnePoint" core_function="MoveManyToOnePoint" audio_cue="Move" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_MoveManyToOnePoint" />
+  <command name="MoveManyToManyPoints" core_function="MoveManyToManyPoints" audio_cue="Move" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_MoveManyToManyPoints" />
+  <command name="DecollideUnits_MoveManyToMany" core_function="DecollideUnits_MoveManyToMany" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_DecollideUnits_MoveManyToMany" />
+  
+  <!--
+      effects_clickspawn_bundle="aiw2_effects" effects_clickspawn="assets/effects/lightningexplosionradius50.prefab"/>
+      -->
+  <command name="Attack" core_function="Attack" audio_cue="Attack" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_Attack" />
+           <!--
+               effects_clickspawn_bundle="aiw2_effects" effects_clickspawn="assets/effects/lightningexplosionradius50.prefab"/>/>
+               -->
+  <command name="SetWormholePath_Player" core_function="SetWormholePath_Player" audio_cue="SetWormholePath" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetWormholePath" />
+  <command name="SetWormholePath_NPCSingleUnit" core_function="SetWormholePath_NPCSingleUnit" audio_cue="SetWormholePath" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetWormholePath" />
+  <command name="SetWormholePath_NPCFireTeams" core_function="SetWormholePath_NPCFireTeams" audio_cue="SetWormholePath" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetWormholePath" />
+  <command name="SetWormholePath_AIRaidKing" core_function="SetWormholePath_AIRaidKing" audio_cue="SetWormholePath" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetWormholePath" />
+  <command name="SetWormholePath_ExoMove" core_function="SetWormholePath_ExoMove" audio_cue="SetWormholePath" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetWormholePath" />
+  <command name="SetWormholePath_AIThreatTractor" core_function="SetWormholePath_AIThreatTractor" audio_cue="SetWormholePath" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetWormholePath" />
+  <command name="SetWormholePath_AIThreatRaid" core_function="SetWormholePath_AIThreatRaid" audio_cue="SetWormholePath" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetWormholePath" />
+  <command name="SetWormholePath_AIThreatRetreat" core_function="SetWormholePath_AIThreatRetreat" audio_cue="SetWormholePath" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetWormholePath" />
+  <command name="SetWormholePath_AIIndFleet" core_function="SetWormholePath_AIIndFleet" audio_cue="SetWormholePath" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetWormholePath" />
+  <command name="SetWormholePath_OtherRaidKing" core_function="SetWormholePath_OtherRaidKing" audio_cue="SetWormholePath" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetWormholePath" />
+  <command name="SetWormholePath_NPCAngryWanderMob" core_function="SetWormholePath_NPCAngryWanderMob" audio_cue="SetWormholePath" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetWormholePath" />
+  <command name="SetWormholePath_OutguardAttack" core_function="SetWormholePath_OutguardAttack" audio_cue="SetWormholePath" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetWormholePath" />
+  <command name="SetWormholePath_NPCSingleSpecialMission" core_function="SetWormholePath_NPCSingleSpecialMission" audio_cue="SetWormholePath" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetWormholePath" />
+  <command name="SetWormholePath_NPCDirectedMob" core_function="SetWormholePath_NPCDirectedMob" audio_cue="SetWormholePath" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetWormholePath" />
+  <command name="SetWormholePath_UtilRaidKing" core_function="SetWormholePath_UtilRaidKing" audio_cue="SetWormholePath" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetWormholePath" />
+  <command name="SetWormholePath_UtilDivideShips" core_function="SetWormholePath_UtilDivideShips" audio_cue="SetWormholePath" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetWormholePath" />
+  <command name="SetWormholePath_UtilRaidSpecific" core_function="SetWormholePath_UtilRaidSpecific" audio_cue="SetWormholePath" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetWormholePath" />
+  <command name="SetWormholePath_UtilRaidFromList" core_function="SetWormholePath_UtilRaidFromList" audio_cue="SetWormholePath" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetWormholePath" />
+  
+  <command name="CreateSpeedGroup_Player" audio_cue="SetBehaviorPlayerSound" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_CreateSpeedGroup" />
+  <command name="CreateSpeedGroup_Destroy" audio_cue="SetBehaviorPlayerSound" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_CreateSpeedGroup" />
+  <command name="CreateSpeedGroup_ExoAttack" audio_cue="SetBehaviorPlayerSound" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_CreateSpeedGroup" />
+  <command name="CreateSpeedGroup_FireteamAttack" audio_cue="SetBehaviorPlayerSound" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_CreateSpeedGroup" />
+  <!--
+               effects_clickspawn_bundle="aiw2_effects" effects_clickspawn="assets/effects/lightningexplosionradius50.prefab"/>/>
+               -->
+  <command name="PlaceSelfBuildingUnit" core_function="PlaceSelfBuildingUnit" audio_cue="PlaceSelfBuildingUnit" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_PlaceSelfBuildingUnit" />
+  <command name="Assist" core_function="Assist" audio_cue="Assist" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_Assist" />
+  <command name="SetPlanetViewedByPlayerAccount" core_function="SetPlanetViewedByPlayerAccount" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetPlanetViewedByPlayerAccount" />
+  
+  <command name="SetHoldFireMode" audio_cue="SetHoldFireMode" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_UnitSetCommands" />
+  <command name="UnlockTech" audio_cue="UnlockTech" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_UnlockTech" />
+  <command name="SetBehavior_FromPlayer" audio_cue="SetBehaviorPlayerSound" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_UnitSetCommands" />
+  <command name="SetBehavior_FromFaction_SomeOtherReason" audio_cue="SetBehaviorPlayerSound" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_UnitSetCommands" />
+  <command name="SetBehavior_FromFaction_GoBackToGuardingCommand" audio_cue="SetBehaviorPlayerSound" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_UnitSetCommands" />
+  <command name="SetBehavior_FromFaction_ThreatGoesBackToSleep" audio_cue="SetBehaviorPlayerSound" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_UnitSetCommands" />
+  <command name="SetBehavior_FromFaction_AbandonBecauseLargeEnemyForce" audio_cue="SetBehaviorPlayerSound" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_UnitSetCommands" />
+  <command name="SetBehavior_FromFaction_ITractoredShips" audio_cue="SetBehaviorPlayerSound" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_UnitSetCommands" />
+  <command name="SetBehavior_FromFaction_NoPraetorianGuard" audio_cue="SetBehaviorPlayerSound" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_UnitSetCommands" />
+  <command name="SetBehavior_FromFaction_RunAwayWithEnemyShips" audio_cue="SetBehaviorPlayerSound" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_UnitSetCommands" />
+  <command name="SetBehavior_FromFaction_ThreatTimeToFight" audio_cue="SetBehaviorPlayerSound" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_UnitSetCommands" />
+  <command name="SetBehavior_FromFaction_SendOnThreatRaid" audio_cue="SetBehaviorPlayerSound" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_UnitSetCommands" />
+  <command name="SetBehavior_FromFaction_RetreatThreat" audio_cue="SetBehaviorPlayerSound" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_UnitSetCommands" />
+  <command name="Debug_SendNextWave" audio_cue="Debug_SendNextWave" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_Debug_SendNextWave" />
+  <command name="Debug_SpawnPlayerShips" audio_cue="Debug_SendNextWave" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_Debug_SpawnPlayerShips" />
+  <command name="Debug_GiveMetal" audio_cue="Debug_GiveMetal" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_Debug_GiveMetal" />
+  <command name="Debug_IncreaseAIP" audio_cue="Debug_IncreaseAIP" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_Debug_IncreaseAIP" />
+  <command name="Debug_DecreaseAIP" audio_cue="Debug_DecreaseAIP" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_Debug_DecreaseAIP" />
+  <command name="Debug_KillEnemiesOnPlanet" audio_cue="Debug_KillEnemiesOnPlanet" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_Debug_KillEnemiesOnPlanet" />
+  <command name="Debug_FinishAllConstructionOnPlanet" audio_cue="Debug_KillEnemiesOnPlanet" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_Debug_FinishAllConstructionOnPlanet" />
+  <command name="Debug_SpawnRelic" audio_cue="Debug_KillEnemiesOnPlanet" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_Debug_SpawnRelic" />
+  <command name="Debug_GiveScience" audio_cue="Debug_GiveScience" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_Debug_GiveScience" />
+  <command name="Debug_GiveEnergy" audio_cue="Debug_GiveEnergy" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_Debug_GiveEnergy" />
+  <command name="Debug_RevealAll" audio_cue="Debug_RevealAll" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_Debug_RevealAll" />
+  <command name="Debug_ExploreAll" audio_cue="Debug_RevealAll" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_Debug_ExploreAll" />
+  <command name="Debug_GiveWaveAndCPAPoints" audio_cue="Debug_RevealAll" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_Debug_GiveWaveAndCPAPoints" />
+  <command name="TogglePause" audio_cue="TogglePause" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_TogglePause" />
+  <command name="UnpauseOnly" audio_cue="TogglePause" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_UnpauseOnly" />
+  <command name="PauseOnly" audio_cue="TogglePause" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_PauseOnly" />
+  <command name="ScrapUnits" audio_cue="ScrapUnits" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_ScrapUnits" />
+  <command name="ChangeFrameSize" audio_cue="ChangeFrameSize" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_ChangeFrameSize" />
+  <!--<command name="ChangeFrameFrequency" audio_cue="ChangeFrameFrequency" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_ChangeFrameFrequency" />-->
+  <command name="ChangeGameSpeed" audio_cue="ChangeFrameFrequency" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_ChangeGameSpeed" />
+  <command name="ChangePlanetFactionBooleanFlag" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_ChangePlanetFactionBooleanFlag" />
+  <command name="SetWaiting" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_UnitSetCommands" />
+  <command name="SetActiveHack" audio_cue="SetActiveHack" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_UnitSetCommands" />
+  <command name="SetStopToShootAnySeenTargets" audio_cue="SetBehaviorPlayerSound" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetStopToShootAnySeenTargets" />
+  <command name="ToggleEnabled" audio_cue="SetBehaviorPlayerSound" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_ToggleEnabled" />
+  <command name="UnloadTransports" audio_cue="SetBehaviorPlayerSound" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_UnloadTransports" />
+  <command name="SetTransportIntoLoadMode" core_function="SetTransportIntoLoadMode" audio_cue="SetBehaviorPlayerSound" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetTransportIntoLoadMode" />
+  <command name="DestroyDistantFleetMembers" audio_cue="SetBehaviorPlayerSound" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_DestroyDistantFleetMembers" />
+  
+  <command name="Debug_GiveHacking" audio_cue="Debug_GiveHacking" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_Debug_GiveHacking" />
+  <command name="UpdateExternalInvulnerability" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_UpdateExternalInvulnerability" />
+  <command name="SaveGame" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SaveGame" />
+  <command name="SetFleetFormation" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_FleetSetCommands" />
+  <command name="SetSpecialTargetPlanet" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_FactionSetCommands" />
+  <command name="TransferEntitiesToFaction" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_TransferEntitiesToFaction" />
+  <command name="LogMessage" core_function="LogMessage" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_LogMessage" />
+  <command name="TransformUnits" audio_cue="SetBehaviorPlayerSound" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_TransformUnits" />
+  <command name="DeleteSaveGame" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_DeleteSaveGame" />  
+  <command name="ModderCommand" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_ModderCommand" />
+  <command name="SetTargetList" core_function="SetTargetList" audio_cue="Move" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetTargetList" />
+  <command name="SetFRDTarget" core_function="SetFRDTarget" audio_cue="Move" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SetFRDTarget" />
+  <command name="StackUnits" core_function="StackUnits" audio_cue="Move" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_StackUnits" />
+  <command name="SplitStack" core_function="SplitStack" audio_cue="Move" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SplitStack" />
+  <command name="Debug_GiveFleetExp" audio_cue="Debug_GiveFleetExp" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_Debug_GiveFleetExp" />
+  <command name="ChangeFactionSettings" audio_cue="ChangeFactionSettings" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_ChangeFactionSettings" />
+  <command name="FlushReinforcementPoints" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_FlushReinforcementPoints" />
+
+  <command name="SendSpireRelicToLocation" audio_cue="SetWormholePath" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_SendSpireRelicToLocation" />
+  
+  <command name="CreatePreset" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.GameCommand_CreatePreset" />
+
+</root>

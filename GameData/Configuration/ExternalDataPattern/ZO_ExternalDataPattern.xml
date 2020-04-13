@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <item name="ZenithMiners" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.ZenithMinersGlobalExternalData" />
+    <item name="ZenithMinersPerUnitData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.ZenithMinersPerUnitExternalData" />
+    <item name="DarkZenithGlobalData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.DarkZenithGlobalExternalData" />
+    <item name="DarkZenithPerUnitData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.DarkZenithPerUnitExternalData" /> 
+
+  <item name="ZenithArchitraveGlobalData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.ZenithArchitraveGlobalExternalData" />
+  <item name="ZenithArchitravePerUnitData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.ZenithArchitravePerUnitExternalData" />
+
+</root>

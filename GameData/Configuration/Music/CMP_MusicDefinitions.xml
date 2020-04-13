@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <!--Title Screen Music-->
+  <music name="AI War 2 Theme" displayname="Main Theme" type="TitleScreen" bundle_name="aiwar2music" filename="assets/music/title/ai war 2 theme_vm-16bit.mp3" />
+
+  <!--Game Win Stage1 Music-->
+  <music name="For The Fallen" displayname="For The Fallen" type="GameWin_Stage1" bundle_name="aiwar2music" filename="assets/music/victory/for the fallen.mp3" />
+  <!--Game Win Stage2 Music-->
+  <music name="Fleet Command - AI War (Victory)-VM" displayname="Classic Victory-VM" type="GameWin_Stage2" bundle_name="aiwar2music" filename="assets/music/victory2/fleet command - ai war (victory)-vm.mp3" />
+
+  <!--Game Lose Music-->
+  <music name="Defeat" displayname="Defeat" type="GameLoss_Stage2" bundle_name="aiwar2music" filename="assets/music/defeat/fleet command - ai war (defeat)-vm.mp3" />
+  
+  <!--In-Game Music-->
+  <music name="Anti-Gravity" displayname="Anti-Gravity" type="InGame" bundle_name="aiwar2music" filename="assets/music/ingame/anti-gravity.mp3" />
+  <music name="Into The Eye Of The Black Hole" displayname="Into The Eye Of The Black Hole" type="InGame" bundle_name="aiwar2music" filename="assets/music/ingame/into the eye of the black hole.mp3" />
+  <music name="StarsSuite" displayname="Stars Suite" type="InGame" bundle_name="aiwar2music" filename="assets/music/ingame/starssuite.mp3" />
+  <music name="Abandoned Ship-VM" displayname="Abandoned Ship-VM" type="InGame" bundle_name="aiwar2music" filename="assets/music/ingame/abandoned ship-vm.mp3" />
+  <music name="Absolute Zero-VM" displayname="Absolute Zero-VM" type="InGame" bundle_name="aiwar2music" filename="assets/music/ingame/absolute zero-vm.mp3" />
+  <music name="Bouncing Lights-VM" displayname="Bouncing Lights-VM" type="InGame" bundle_name="aiwar2music" filename="assets/music/ingame/bouncing lights-vm.mp3" />
+  <music name="Event Horizon-VM" displayname="Event Horizon-VM" type="InGame" bundle_name="aiwar2music" filename="assets/music/ingame/event horizon-vm.mp3" />
+  <music name="Light Year-B-VM" displayname="Light Year-B-VM" type="InGame" bundle_name="aiwar2music" filename="assets/music/ingame/light year-b-vm.mp3" />
+  <music name="Supercluster-VM" displayname="Supercluster-VM" type="InGame" bundle_name="aiwar2music" filename="assets/music/ingame/supercluster-vm.mp3" />
+
+  <!--In-Game Music (Classic Remixes) -->
+  <music name="Destroyer Of Worlds - Nomad Sunrise-VM" displayname="Nomad Sunrise-VM" type="InGame" bundle_name="aiwar2music" filename="assets/music/ingame/Destroyer Of Worlds - Nomad Sunrise-VM.mp3" />
+  <music name="Fleet Command - Intro-VM" displayname="Intro-VM" type="InGame" bundle_name="aiwar2music" filename="assets/music/ingame/fleet command - intro-vm.mp3" />
+  <music name="Fleet Command - Midnight-VM" displayname="Midnight-VM" type="InGame" bundle_name="aiwar2music" filename="assets/music/ingame/fleet command - midnight-vm.mp3" />
+  <music name="Light Of The Spire - Night Light-VM" displayname="Night Light-VM" type="InGame" bundle_name="aiwar2music" filename="assets/music/ingame/light of the spire - night light-vm.mp3" />
+  <music name="Vengeance Of The Machine - Rising Up-VM" displayname="Rising Up-VM" type="InGame" bundle_name="aiwar2music" filename="assets/music/ingame/vengeance of the machine - rising up-vm.mp3" />
+  <music name="Zenith Remnant - Voyage To Zenith-VM" displayname="Voyage To Zenith-VM" type="InGame" bundle_name="aiwar2music" filename="assets/music/ingame/zenith remnant - voyage to zenith-vm.mp3" />
+  
+  <!--CLASSIC In-Game Music-->
+  <music name="AIRevolution" displayname="AI Revolution" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/AIRevolution.mp3" />
+  <music name="AmbitiousDesign" displayname="Ambitious Design" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/AmbitiousDesign.mp3" />
+  <music name="AncientShadows" displayname="Ancient Shadows" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/AncientShadows.mp3" />
+  <music name="ANewDawn" displayname="A New Dawn" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/ANewDawn.mp3" />
+  <music name="AnUnfamiliarWorld" displayname="An Unfamiliar World" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/AnUnfamiliarWorld.mp3" />
+  <music name="AriseSleepingWarriors" displayname="Arise Sleeping Warriors" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/AriseSleepingWarriors.mp3" />
+  <music name="AshesToAshes" displayname="Ashes To Ashes" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/AshesToAshes.mp3" />
+  <music name="AWarWorthFighting" displayname="A War Worth Fighting" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/AWarWorthFighting.mp3" />
+  <music name="BeforeTheStorm" displayname="Before The Storm" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/BeforeTheStorm.mp3" />
+  <music name="Chase" displayname="Chase" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/Chase.mp3" />
+  <music name="Cries of Zenith" displayname="Cries of Zenith" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/Cries of Zenith.mp3" />
+  <music name="Darkness" displayname="Darkness" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/Darkness.mp3" />
+  <music name="Deception" displayname="Deception" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/Deception.mp3" />
+  <music name="Devastator" displayname="Devastator" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/Devastator.mp3" />
+  <music name="DustToDust" displayname="Dust To Dust" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/DustToDust.mp3" />
+  <music name="EnergyStorm" displayname="Energy Storm" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/EnergyStorm.mp3" />
+  <music name="EveryManForHimself" displayname="Every Man For Himself" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/EveryManForHimself.mp3" />
+  <music name="FallingDown" displayname="Falling Down" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/FallingDown.mp3" />
+  <music name="Fire And Iron" displayname="Fire And Iron" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/Fire And Iron.mp3" />
+  <music name="ImminentAnnihilation" displayname="Imminent Annihilation" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/ImminentAnnihilation.mp3" />
+  <music name="Immortal" displayname="Immortal" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/Immortal.mp3" />
+  <music name="IncarnateRace" displayname="Incarnate Race" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/IncarnateRace.mp3" />
+  <music name="InquisitionOfTheStars" displayname="Inquisition Of The Stars" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/InquisitionOfTheStars.mp3" />
+  <music name="Ironclad" displayname="Ironclad" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/Ironclad.mp3" />
+  <music name="KiteFlier" displayname="Kite Flier" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/KiteFlier.mp3" />
+  <music name="Marisa" displayname="Marisa" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/Marisa.mp3" />
+  <music name="Meteor Shower" displayname="Meteor Shower" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/Meteor Shower.mp3" />
+  <music name="Midnight" displayname="Midnight" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/Midnight.mp3" />
+  <music name="Neinzul Lullaby" displayname="Neinzul Lullaby" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/Neinzul Lullaby.mp3" />
+  <music name="NeinzulReborn" displayname="Neinzul Reborn" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/NeinzulReborn.mp3" />
+  <music name="Night Carousel" displayname="Night Carousel" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/Night Carousel.mp3" />
+  <music name="NomadBeacon" displayname="Nomad Beacon" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/NomadBeacon.mp3" />
+  <music name="NomadSunrise" displayname="Nomad Sunrise" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/NomadSunrise.mp3" />
+  <music name="On The Move" displayname="On The Move" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/On The Move.mp3" />
+  <music name="Revelations 9-6" displayname="Revelations 9-6" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/Revelations 9-6.mp3" />
+  <music name="RoundAndRound" displayname="Round And Round" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/RoundAndRound.mp3" />
+  <music name="Sleepless Children" displayname="Sleepless Children" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/Sleepless Children.mp3" />
+  <music name="Stars" displayname="Stars" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/Stars.mp3" />
+  <music name="The Blinding Star" displayname="The Blinding Star" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/The Blinding Star.mp3" />
+  <music name="The Next Chapter" displayname="The Next Chapter" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/The Next Chapter.mp3" />
+  <music name="The Night Light" displayname="The Night Light" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/The Night Light.mp3" />
+  <music name="TheExodianBlade" displayname="The Exodian Blade" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/TheExodianBlade.mp3" />
+  <music name="TheHurricane" displayname="The Hurricane" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/TheHurricane.mp3" />
+  <music name="TheWormHole" displayname="The Wormhole" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/TheWormHole.mp3" />
+  <music name="TitleAncientShadows" displayname="Light Of The Spire" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/TitleAncientShadows.mp3" />
+  <music name="TitleZenithRemnant" displayname="Zenith Remnant" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/TitleZenithRemnant.mp3" />
+  <music name="Translocator" displayname="Translocator" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/Translocator.mp3" />
+  <music name="VengeanceOfTheMachine" displayname="Vengeance Of The Machine" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/VengeanceOfTheMachine.mp3" />
+  <music name="WakingToDarkness" displayname="Waking To Darkness" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/WakingToDarkness.mp3" />
+  <music name="WatchingTheNightSky" displayname="Watching The Night Sky" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/WatchingTheNightSky.mp3" />
+  <music name="WelcomeToTheEnd" displayname="Welcome To The End" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/WelcomeToTheEnd.mp3" />
+  <music name="WhispersOfHope" displayname="Whispers Of Hope" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/WhispersOfHope.mp3" />
+  <music name="WorshippedWasteland" displayname="Worshipped Wasteland" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/WorshippedWasteland.mp3" />
+  <music name="WrathOfTheSpire" displayname="Wrath Of The Spire" type="InGame" sub_tag="aiwc" bundle_name="aiwar_classic_music" filename="assets/music/ingamefromclassic/WrathOfTheSpire.mp3" />
+</root>

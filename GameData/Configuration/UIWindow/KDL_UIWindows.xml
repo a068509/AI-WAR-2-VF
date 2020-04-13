@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <window name="Window_MainMenu"
+        canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_MainMenu"
+        width="1040" height="150"
+        y_align="MaximumOfScreen" x_align="MiddleOfScreen"
+  >
+    <element prefab_lookup_name="MainMenu" width="1040" height="150" type_name="customParent" />
+  </window>
+  <window name="Window_Credits"
+        canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_Credits"
+        width="1040" height="500"
+        y_align="MiddleOfScreen" x_align="MiddleOfScreen"
+  >
+    <element prefab_lookup_name="CreditsPanel" width="1040" height="500" type_name="customParent" />
+  </window>
+  <window name="Window_BackgroundStory"
+        canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_BackgroundStory"
+        width="600" height="400"
+        y_align="MiddleOfScreen" x_align="MiddleOfScreen"
+  >
+    <element prefab_lookup_name="BackgroundStory" width="600" height="400" type_name="customParent" />
+  </window>
+
+  <window name="Window_AddEditProfileWindow"
+        canvas_sort_order="150" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_AddEditProfileWindow"
+        width="462" height="157"
+        y_align="MiddleOfScreen" x_align="MiddleOfScreen"
+  >
+    <element prefab_lookup_name="AddEditProfileWindow" width="462" height="157" type_name="customParent" />
+  </window>
+  
+  <window name="Window_TeamColorPicker"
+        canvas_sort_order="450" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_TeamColorPicker"
+        width="1000" height="414.5"
+        y_align="MiddleOfScreen" x_align="MiddleOfScreen"
+  >
+    <element prefab_lookup_name="BasicWindowBG" x="-2000" y="-2000" width="4000" height="4000" />
+    <element prefab_lookup_name="BasicWindowBG" x="-2000" y="-2000" width="4000" height="4000" />
+    <element prefab_lookup_name="TeamColorPicker" width="1000" height="414.5" type_name="customParent" />
+  </window>
+
+  <window name="Window_TeamColorPickerTrimOnly"
+        canvas_sort_order="450" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_TeamColorPickerTrimOnly"
+        width="498.1" height="449.5"
+        y_align="MiddleOfScreen" x_align="MiddleOfScreen"
+  >
+    <element prefab_lookup_name="BasicWindowBG" x="-2000" y="-2000" width="4000" height="4000" />
+    <element prefab_lookup_name="BasicWindowBG" x="-2000" y="-2000" width="4000" height="4000" />
+    <element prefab_lookup_name="TeamColorPickerTrimOnly" width="498.1" height="449.5" type_name="customParent" />
+  </window>
+
+  <window name="Window_PopupScrollingColumnButtonList"
+        canvas_sort_order="450" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_PopupScrollingColumnButtonList"
+        width="374.3" height="500"
+        y_align="MiddleOfScreen" x_align="MiddleOfScreen"
+  >
+    <element prefab_lookup_name="BasicWindowBG" x="-2000" y="-2000" width="4000" height="4000" />
+    <element prefab_lookup_name="BasicWindowBG" x="-2000" y="-2000" width="4000" height="4000" />
+    <element prefab_lookup_name="PopupScrollingColumnButtonList" width="374.3" height="500" type_name="customParent" />
+  </window>
+  
+  <window name="Window_JoinMultiplayerGameMenu"
+          canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_JoinMultiplayerGameMenu"
+          x_align="MiddleOfScreen" y_align="MiddleOfScreen"
+          width="200" height="160"
+  >
+      <element prefab_lookup_name="BasicWindowBG" x="-10" y="-10" width="220" height="180" />
+        <element prefab_lookup_name="BasicTextbox" width="200" height="24" type_name="iRemoteIP" />  
+        <element prefab_lookup_name="ButtonBlueSmallerCenter" y="50" width="200" height="60" font_size="14" type_name="bConnectToIP" />
+        <element prefab_lookup_name="ButtonBlueSmallerCenter" y="120" width="200" height="40" font_size="14" type_name="bCancel" />
+  </window>
+  <!-- 
+  <window name="Window_ClientMultiplayerConnectionStatus"
+          canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_ClientMultiplayerConnectionStatus"
+          x_align="MiddleOfScreen" y_align="MiddleOfScreen"
+          width="600" height="250"
+  >
+      <element prefab_lookup_name="BasicWindowBG" x="-10" y="-10" width="620" height="270" />
+        <element prefab_lookup_name="BasicText" width="600" height="210" type_name="tStatus" /> 
+        <element prefab_lookup_name="ButtonBlueSmallerCenter" y="215" width="200" height="40" type_name="bCancel" />
+  </window>
+  <window name="Window_ServerMultiplayerConnectionStatus"
+          canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_ServerMultiplayerConnectionStatus"
+          x_align="MiddleOfScreen" y_align="MiddleOfScreen"
+          width="600" height="210"
+  >
+        <element prefab_lookup_name="BasicWindowBG" x="-10" y="-10" width="620" height="230" />
+        <element prefab_lookup_name="BasicText" width="600" height="210" type_name="tStatus" />  
+  </window>-->
+  <window name="Window_SettingsMenu"
+          canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_SettingsMenu"
+          x_align="MiddleOfScreen" y_align="MiddleOfScreen"
+          width="1100" height="500"
+              >
+    <element prefab_lookup_name="SettingsMenu" width="1100" height="500" type_name="customParent" />
+  </window>
+  
+  <window name="Window_InGameGalaxyOptions"
+            canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_InGameGalaxyOptions"
+            x_align="MiddleOfScreen" y_align="MiddleOfScreen"
+            width="1100" height="500"
+              >
+    <element prefab_lookup_name="SettingsMenu" width="1100" height="500" type_name="customParent" />
+  </window>
+
+  <window name="Window_Tips"
+          canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_Tips"
+          x_align="MiddleOfScreen" y_align="MiddleOfScreen"
+          width="1100" height="500"
+              >
+    <element prefab_lookup_name="SettingsMenu" width="1100" height="500" type_name="customParent" />
+  </window>
+  
+  <window name="Window_ControlBindingsMenu"
+          canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_ControlBindingsMenu"
+          x_align="MiddleOfScreen" y_align="MiddleOfScreen"
+          width="1100" height="500"
+              >
+    <element prefab_lookup_name="ControlBindingsMenu" width="1100" height="500" type_name="customParent" />
+  </window>
+  <window name="Window_LoadQuickStartMenu"
+        canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_LoadQuickStartMenu"
+        x_align="MiddleOfScreen" y_align="MiddleOfScreen"
+        width="1040" height="500"
+        >
+    <element prefab_lookup_name="LoadQuickStartWindow" width="1040" height="500" type_name="customParent" />
+  </window>
+  <window name="Window_LoadGameMenu"
+        canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_LoadGameMenu"
+        x_align="MiddleOfScreen" y_align="MiddleOfScreen"
+        width="1040" height="500"
+        >
+    <element prefab_lookup_name="LoadGameWindow" width="1040" height="500" type_name="customParent" />
+  </window>
+  <window name="Window_LoadTutorialsMenu"
+        canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_LoadTutorialsMenu"
+        x_align="MiddleOfScreen" y_align="MiddleOfScreen"
+        width="1040" height="500"
+        >
+    <element prefab_lookup_name="LoadTutorialWindow" width="1040" height="500" type_name="customParent" />
+  </window>
+  
+  <window name="Window_SaveGameMenu"
+        canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_SaveGameMenu"
+        x_align="MiddleOfScreen" y_align="MiddleOfScreen"
+        width="1040" height="500"
+  >
+    <element prefab_lookup_name="SaveGameWindow" width="1040" height="500" type_name="customParent" />
+  </window>
+
+  <window name="Window_SetupTopTabs"
+      canvas_sort_order="150" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_SetupTopTabs"
+      width="1100" height="40" x="-2" y="-2"
+  >
+    <element prefab_lookup_name="SetupTopTabs" width="1100" height="40" type_name="custSetupTopTabs" />
+  </window>
+
+  <window name="Window_SetupFooterControls"
+      canvas_sort_order="150" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_SetupFooterControls"
+      width="1100" height="40" x="-2" y="1" y_align="MaximumOfScreen"
+  >
+    <element prefab_lookup_name="SetupFooterControls" width="1100" height="40" type_name="custSetupFooterControls" />
+  </window>
+
+  <window name="Window_SetupFactionsTab"
+          canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_SetupFactionsTab"
+          x_align="MiddleOfScreen" y="42"
+          width="1100" height="500"
+              >
+    <element prefab_lookup_name="SetupWindowSectional" width="1100" height="500" type_name="custSetupWindowSectional" />
+  </window>
+
+  <window name="Window_SetupOptionsTab"
+          canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_SetupOptionsTab"
+          x_align="MiddleOfScreen" y="42"
+          width="1100" height="500"
+              >
+    <element prefab_lookup_name="SetupWindowSectional" width="1100" height="500" type_name="custSetupWindowSectional" />
+  </window>
+
+  <window name="Window_SetupMapTabLeft"
+          canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_SetupMapTabLeft"
+          y="42"
+          width="227" height="500"
+              >
+    <element prefab_lookup_name="SetupWindowScrollingStuffOnLeft" width="227" height="500" type_name="custSetupWindowScrollingStuffOnLeft" />
+  </window>
+
+  <window name="Window_SetupChatStandaloneRight"
+          canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_SetupChatStandaloneRight"
+          x_align="MaximumOfScreen" y="42"
+          width="227" height="500"
+          >
+    <element prefab_lookup_name="SetupWindowChatOnRight" width="227" height="500" type_name="custSetupWindowChatOnRight" />
+  </window>
+            
+  <!--<window name="Window_GameSetup"
+      canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_GameSetup"
+      x="10" y="0" width="1006" height="242+24+24"
+      y_align="MaximumOfScreen"
+      tabs="Map,Factions,Options"
+  >
+
+    <element tab="Options" prefab_lookup_name="ButtonSet_BlueSmallerCenter" x="2" y="10" width="1" height="1" button_width="300" button_height="24" font_size="13" type_name="bsConducts" />
+  </window>-->
+
+  <window name="Window_InGameBottomLeftMenu"
+      canvas_sort_order="250" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_InGameBottomLeftMenu"
+      x="-6.5" y="2.5"
+      width="540" height="50" y_align="MaximumOfScreen"
+  >
+    <element prefab_lookup_name="MainGameBottomLeft" width="540" height="44" type_name="customParent" />
+  </window>
+  
+  <window name="Window_InGameSelectionInfo"
+        canvas_sort_order="50" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_InGameSelectionInfo"
+        width="240" height="200"
+        y="-10" x="-10" x_align="MaximumOfScreen" y_align="MaximumOfScreen"
+  >
+    <element prefab_lookup_name="SelectedShips" width="240" height="200" type_name="customParent" />
+  </window>
+
+  <window name="Window_InGameEscapeMenu"
+        canvas_sort_order="1150" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_InGameEscapeMenu"
+        width="800" height="540"
+        y_align="MiddleOfScreen" x_align="MiddleOfScreen"
+  >
+    <element prefab_lookup_name="BasicWindowBG" x="-2000" y="-2000" width="4000" height="4000" />
+    <element prefab_lookup_name="ModalSystemMenu" width="800" height="540" type_name="customParent" />
+  </window>
+  
+  <window name="Window_InGameDeveloperToolsMenu"
+      canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_InGameDeveloperToolsMenu"
+      width="240+20+10+240" height="300+20" x_align="MiddleOfScreen" y_align="MiddleOfScreen"
+  >
+    <element prefab_lookup_name="BasicWindowBG" x="-2000" y="-2000" width="4000" height="4000" />
+    <element prefab_lookup_name="BasicWindowBG" x="0" y="-15" width="240+20+10+240" height="240+20" />
+    <element prefab_lookup_name="BasicText" x="105" y="-30" width="240" height="20" type_name="tHeaderText" font_size="13" text_alignment="Bottom" />
+    <!--Column 1: Non-Cheats-->
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="0" y="0" width="240" height="18" font_size="13" type_name="bRevealAll" />
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="0" y="20" width="240" height="18" font_size="13" type_name="bExploreAll" />
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="0" y="40" width="240" height="18" font_size="13" type_name="bSpawnWave" />
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="0" y="60" width="240" height="18" font_size="13" type_name="bToggleTracingMenu" />
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="0" y="80" width="240" height="18" font_size="13" type_name="bIncreaseAIP" />
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="0" y="100" width="240" height="18" font_size="13" type_name="bGiveWaveAndCPAPoints" />
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="0" y="120" width="240" height="18" font_size="13" type_name="bWinOrLoseInstantly" />
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="0" y="140" width="240" height="18" font_size="13" type_name="bClearLocalAchievements" />
+	<element prefab_lookup_name="ButtonBlueSmallerCenter" x="0" y="160" width="240" height="18" font_size="13" type_name="bCreatePreset" />
+	<element prefab_lookup_name="ButtonBlueSmallerCenter" x="0" y="160" width="240" height="18" font_size="13" type_name="bListMusic" />
+
+    <!--Column 2: Cheats-->
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="260" y="0" width="240" height="18" font_size="13" type_name="bGiveMetal" />
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="260" y="20" width="240" height="18" font_size="13" type_name="bGiveScience" />
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="260" y="40" width="240" height="18" font_size="13" type_name="bGiveHacking" />
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="260" y="60" width="240" height="18" font_size="13" type_name="bDecreaseAIP" />
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="260" y="80" width="240" height="18" font_size="13" type_name="bSpawnPlayerShips" />
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="260" y="100" width="240" height="18" font_size="13" type_name="bGiveFleetExp" />
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="260" y="120" width="240" height="18" font_size="13" type_name="bGiveEnergy" />
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="260" y="140" width="240" height="18" font_size="13" type_name="bKillEnemiesOnPlanet" />
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="260" y="160" width="240" height="18" font_size="13" type_name="bIncreaseAIDifficulty" />
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="260" y="180" width="240" height="18" font_size="13" type_name="bDecreaseAIDifficulty" />
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="260" y="200" width="240" height="18" font_size="13" type_name="bTestLocalAchievements" />
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="260" y="220" width="240" height="18" font_size="13" type_name="bFinishAllConstructionOnPlanet" />
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="260" y="240" width="240" height="18" font_size="13" type_name="bSpawnRelic" />
+  </window>
+
+  <window name="Window_InGameTracingMenu"
+      canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_InGameTracingMenu"
+      width="240" height="132" x_align="MiddleOfScreen" y_align="MiddleOfScreen"
+  >
+    <element prefab_lookup_name="BasicWindowBG" x="-2000" y="-2000" width="4000" height="4000" />
+    <element prefab_lookup_name="BasicWindowBG" x="0" y="-15" width="240+20" height="132+15+15+15+25" />
+    <element prefab_lookup_name="BasicText" x="0" y="-20" width="240" height="20" type_name="tHeaderText" font_size="13" text_alignment="Bottom" />
+    <element prefab_lookup_name="ButtonSet_BlueSmallerCenter" width="240" height="132" button_width="240" button_height="18" font_size="13" type_name="bsMenuSelectionRow" />
+  </window>
+
+  <window name="Window_SidebarShips"
+      canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_InGameSidebarShips"
+      width="200" height="530" y="24"
+  >
+    <element prefab_lookup_name="SidebarLeftTabs" width="40" height="530" x="0" type_name="headerParent" />
+    <element prefab_lookup_name="SidebarShips" width="200" height="530" x="40" y="26" type_name="customParent" />
+  </window>
+  <window name="Window_SidebarFleets"
+      canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_InGameSidebarFleets"
+      width="200" height="530" y="24"
+  >
+    <element prefab_lookup_name="SidebarLeftTabs" width="40" height="530" x="0" type_name="headerParent" />
+    <element prefab_lookup_name="SidebarFleets" width="200" height="530" x="40" y="26" type_name="customParent" />
+  </window>
+  <window name="Window_SidebarDirectBuild"
+      canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_InGameSidebarDirectBuild"
+      width="200" height="530" y="24"
+  >
+    <element prefab_lookup_name="SidebarLeftTabs" width="40" height="530" x="0" type_name="headerParent" />
+    <element prefab_lookup_name="SidebarDirectBuild" width="200" height="530" x="40" y="26" type_name="customParent" />
+  </window>
+  <window name="Window_SidebarScience"
+      canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_InGameSidebarScience"
+      width="200" height="530" y="24"
+  >
+    <element prefab_lookup_name="SidebarLeftTabs" width="40" height="530" x="0" type_name="headerParent" />
+    <element prefab_lookup_name="SidebarScience" width="200" height="530" x="40" y="26" type_name="customParent" />
+  </window>
+  <window name="Window_SidebarHacking"
+      canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_InGameSidebarHacking"
+      width="200" height="530" y="24"
+  >
+    <element prefab_lookup_name="SidebarLeftTabs" width="40" height="530" x="0" type_name="headerParent" />
+    <element prefab_lookup_name="SidebarHacking" width="200" height="530" x="40" y="26" type_name="customParent" />
+  </window>
+  <window name="Window_SidebarMercenaries"
+      canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_InGameSidebarMercenaries"
+      width="200" height="530" y="24"
+  >
+    <element prefab_lookup_name="SidebarLeftTabs" width="40" height="530" x="0" type_name="headerParent" />
+    <element prefab_lookup_name="SidebarMercenaries" width="200" height="530" x="40" y="26" type_name="customParent" />
+  </window>
+  <window name="Window_SidebarObjectives"
+      canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_InGameSidebarObjectives"
+      width="200" height="530" y="24"  >
+    <element prefab_lookup_name="SidebarLeftTabs" width="40" height="530" x="0" type_name="headerParent" />
+    <element prefab_lookup_name="SidebarObjectives" width="200" height="530" x="40" y="26" type_name="customParent" />
+  </window>
+  <window name="Window_SidebarClosed"
+      canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_InGameSidebarClosed"
+      width="40" height="530" y="24"  >
+    <element prefab_lookup_name="SidebarLeftTabs" width="40" height="530" x="0" type_name="headerParent" />
+  </window>
+  <window name="Window_FleetManagementSidebarPopout"
+          canvas_sort_order="700" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_FleetManagementSidebarPopout"
+          width="500" height="540"
+          x="195" y_align="MiddleOfScreen"
+>
+    <element prefab_lookup_name="SettingsSidebarPopout" width="500" height="540" font_size="13" type_name="customParent" />
+  </window>
+  <window name="Window_HackChoicesSidebarPopout"
+          canvas_sort_order="700" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_HackChoicesSidebarPopout"
+          width="500" height="540"
+          x="195" y_align="MiddleOfScreen"
+>
+    <element prefab_lookup_name="SettingsSidebarPopout" width="500" height="540" font_size="13" type_name="customParent" />
+  </window>
+  <window name="Window_InGameHoverPlanetInfo"
+      canvas_sort_order="20" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_InGameHoverPlanetInfo"
+      width="1" height="1"
+      x="205"
+      y_align="MaximumOfScreen" y="-6"
+  >
+  	<element prefab_lookup_name="AtMouseTooltipPanelWide" width="1" height="1" font_size="15" type_name="bPanel" />
+  </window>
+  <window name="Window_InGameHoverEntityInfo"
+        canvas_sort_order="20" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_InGameHoverEntityInfo"
+        width="1" height="1"
+        x="205"
+        y_align="MaximumOfScreen" y="-6"
+  >
+    <element prefab_lookup_name="AtMouseTooltipPanelWide" width="1" height="1" font_size="15" type_name="bPanel" />
+  </window>
+
+  <window name="Window_InGamePlanetActionMenu"
+        canvas_sort_order="100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_InGamePlanetActionMenu"
+        width="190" height="132"
+        x="-5" x_align="MaximumOfScreen"
+        y_align="MaximumOfScreen" y="-5"
+  >
+    <element prefab_lookup_name="ButtonSet_BlueSmallerCenter" width="190" height="132" button_width="190" button_height="18" font_size="13" type_name="bsItems" />
+  </window>
+
+  <window name="Window_OngoingMessageDisplay"
+          canvas_sort_order="300" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_OngoingMessageDisplay"
+          width="300" height="400"
+          x="-5" x_align="MaximumOfScreen"
+          y="32"
+>
+    <element prefab_lookup_name="BasicTextUnderlay" width="300" height="400" font_size="13" type_name="tText" />
+  </window>
+  <window name="Window_NotificationsDisplay"
+          canvas_sort_order="300" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_NotificationsDisplay"
+          width="800" height="120"
+          x="200" y="26"
+><!--Negative y value because the resource bar has extra empty space at bottom.-->
+    <element prefab_lookup_name="NotificationsDisplay" width="800" height="120" font_size="13" type_name="customParent" />
+  </window>
+  <window name="Window_ResourceBar"
+      canvas_sort_order="150" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_ResourceBar"
+      width="980" height="26"
+  >
+    <element prefab_lookup_name="MainGameHeader" width="980" height="26" type_name="customParent" />
+  </window>
+  <window name="Window_FindPlanetMenu" courtesy_of="BadgerBadger"
+          canvas_sort_order="600" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_FindPlanetMenu"
+          x_align="MiddleOfScreen" y_align="MiddleOfScreen"
+          width="410" height="170"
+          >
+      <element prefab_lookup_name="BasicWindowBG" x="-10" y="-10" width="430" height="190" />
+      <element prefab_lookup_name="BasicText" y="0" width="400" height="24" font_size="14" type_name="tHeaderText" />
+      <element prefab_lookup_name="BasicTextboxSelectOnClick" y="30" width="400" height="24" font_size="13" type_name="iPlanetName" />
+      <element prefab_lookup_name="BasicText" y="60" width="400" height="80" font_size="13" type_name="tAutoCompletion" />
+      <element prefab_lookup_name="ButtonBlueSmallerCenter" y="140" x="200" width="100" height="24" font_size="13" type_name="bFindPlanet" />
+      <element prefab_lookup_name="ButtonBlueSmallerCenter" y="140" x="305" width="100" height="24" font_size="13" type_name="bCloseFindPlanet" />
+  </window>
+  <window name="Window_ModalSwapFleetMembers"
+        canvas_sort_order="900" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_ModalSwapFleetMembers"
+        width="673" height="540"
+        y_align="MiddleOfScreen" x_align="MiddleOfScreen"
+  >
+    <element prefab_lookup_name="BasicWindowBG" x="-2000" y="-2000" width="4000" height="4000" />
+    <element prefab_lookup_name="ModalScrollingContents" width="673" height="540" type_name="customParent" />
+  </window>
+  <window name="Window_ModalSelfUpdatingTextWindow"
+        canvas_sort_order="1000" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_ModalSelfUpdatingTextWindow"
+        width="673" height="540"
+        y_align="MiddleOfScreen" x_align="MiddleOfScreen"
+  >
+    <element prefab_lookup_name="BasicWindowBG" x="-2000" y="-2000" width="4000" height="4000" />
+    <element prefab_lookup_name="ModalOKWindowTall" width="673" height="540" type_name="customParent" />
+  </window>
+  <window name="Window_ModalTextboxWindow"
+        canvas_sort_order="1050" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_ModalTextboxWindow"
+        width="500" height="156.9"
+        y_align="MiddleOfScreen" x_align="MiddleOfScreen"
+  >
+    <element prefab_lookup_name="BasicWindowBG" x="-2000" y="-2000" width="4000" height="4000" />
+    <element prefab_lookup_name="ModalTextboxWindow" width="500" height="156.9" type_name="customParent" />
+  </window>
+ 
+    <window name="Window_ModalDualTextboxWindow"
+        canvas_sort_order="1050" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_ModalDualTextboxWindow"
+        width="673" height="540"
+        y_align="MiddleOfScreen" x_align="MiddleOfScreen"
+  >
+    <element prefab_lookup_name="BasicWindowBG" x="-2000" y="-2000" width="4000" height="4000" />
+    <element prefab_lookup_name="ModalDualTextboxWindow" width="673" height="540" type_name="customParent" />
+  </window>
+  
+  <window name="Window_DebugInfo"
+        canvas_sort_order="1100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_DebugInfo"
+        x="5" x_align="MaximumOfScreen" y="32"
+        width="500" height="50"
+  >
+    <element prefab_lookup_name="BasicTextUnderlay" width="500" height="50" font_size="11" text_alignment="TopLeft" type_name="tText" />
+  </window>
+  <window name="Window_ErrorReportMenu"
+        canvas_sort_order="1100" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_ErrorReportMenu"
+        x_align="MiddleOfScreen" y_align="MiddleOfScreen"
+        width="700" height="400"
+  >
+    <element prefab_lookup_name="BasicWindowBG" x="-10" y="-10" width="720" height="420" />
+    <element prefab_lookup_name="BasicText" width="700" height="300" type_name="tText" />
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="139" y="305" width="100" height="30" type_name="bOpenLog" />
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="244" y="305" width="100" height="30" type_name="bIgnore" />
+    <element prefab_lookup_name="ButtonBlueSmallerCenter" x="350" y="305" width="220" height="30" type_name="bIgnoreAndSuppress" />
+  </window>
+  <window name="Window_ModalOK"
+        canvas_sort_order="1150" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_ModalOK"
+        width="673" height="264.7"
+        y_align="MiddleOfScreen" x_align="MiddleOfScreen"
+  >
+    <element prefab_lookup_name="BasicWindowBG" x="-2000" y="-2000" width="4000" height="4000" />
+    <element prefab_lookup_name="ModalOKWindow" width="673" height="264.7" type_name="customParent" />
+  </window>
+  <window name="Window_ModalOKTall"
+        canvas_sort_order="1150" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_ModalOKTall"
+        width="673" height="540"
+        y_align="MiddleOfScreen" x_align="MiddleOfScreen"
+  >
+    <element prefab_lookup_name="BasicWindowBG" x="-2000" y="-2000" width="4000" height="4000" />
+    <element prefab_lookup_name="ModalOKWindowTall" width="673" height="540" type_name="customParent" />
+  </window>
+  <window name="Window_ModalYesNo"
+        canvas_sort_order="1150" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_ModalYesNo"
+        width="673" height="264.7"
+        y_align="MiddleOfScreen" x_align="MiddleOfScreen"
+  >
+    <element prefab_lookup_name="BasicWindowBG" x="-2000" y="-2000" width="4000" height="4000" />
+    <element prefab_lookup_name="ModalYesNoWindow" width="673" height="264.7" type_name="customParent" />
+  </window>
+  <window name="Window_AtMouseTooltipPanelWide"
+        canvas_sort_order="1200" dll_name="AIWarExternalCode"
+        type_name="Arcen.AIW2.External.Window_AtMouseTooltipPanelWide"
+        width="1" height="1"
+        canvas_z_offset="0.01"
+  >
+    <element prefab_lookup_name="AtMouseTooltipPanelWide" width="1" height="1" font_size="15" type_name="bPanel" />
+  </window>
+  <window name="Window_AtMouseTooltipPanelBesideSidebar"
+        canvas_sort_order="1200" dll_name="AIWarExternalCode"
+        type_name="Arcen.AIW2.External.Window_AtMouseTooltipPanelBesideSidebar"
+        width="1" height="1"
+        canvas_z_offset="0.01"
+  >
+    <element prefab_lookup_name="AtMouseTooltipPanelWide" width="1" height="1" font_size="15" type_name="bPanel" />
+  </window>
+  <window name="Window_AtMouseTooltipPanelNarrow"
+        canvas_sort_order="1200" dll_name="AIWarExternalCode"
+        type_name="Arcen.AIW2.External.Window_AtMouseTooltipPanelNarrow"
+        width="1" height="1"
+        canvas_z_offset="0.01"
+  >
+    <element prefab_lookup_name="AtMouseTooltipPanelNarrow" width="1" height="1" font_size="15" type_name="bPanel" />
+  </window>  
+  
+  <window name="Window_ChatboxWindow"
+        canvas_sort_order="1050" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Window_ChatboxWindow"
+      width="200" height="530" y="24"
+	  y_align="MaximumOfScreen"
+  >
+    <element prefab_lookup_name="ChatboxWindow" width="200" height="530" x="35" y="26" type_name="customParent" />
+  </window>
+
+</root>

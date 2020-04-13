@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<rof name="OneShot" seconds_per_salvo="100" />
+	<rof name="Sloth" seconds_per_salvo="30"  />
+    <rof name="PeriodicActivation" seconds_per_salvo="17"  />
+	<rof name="ExtremelyLow" seconds_per_salvo="12" />
+	<rof name="VeryLow" seconds_per_salvo="9" />
+	<rof name="RatherLow" seconds_per_salvo="8" />
+	<rof name="FairlyLow" seconds_per_salvo="7" />
+	<rof name="Low" seconds_per_salvo="6"/>
+	<rof name="SlightlyLow" seconds_per_salvo="5"/>
+	<rof name="Normal" seconds_per_salvo="4" /> 
+	<rof name="High" seconds_per_salvo="3" /> 
+	<rof name="Misery" seconds_per_salvo="2" />
+	<rof name="Devourer" seconds_per_salvo="1"/>
+</root>

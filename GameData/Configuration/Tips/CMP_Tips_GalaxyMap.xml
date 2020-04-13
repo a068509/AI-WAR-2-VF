@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <tip category="GalaxyMap" name="WormholeLinkColour" display_name="Understanding Wormhole Link Colours" sort_priority="1000"
+        full_text="You may observe in the game that the links between different wormholes can be different colours, and this is based on whoever controls the planets at either end of the link.
+
+If either planet is neutral then the link is coloured grey.
+
+If both ends of the link are owned by the same faction then the link is the colour of that faction.
+
+If both ends of the link are owned by friendly factions then the link is Blue.
+
+If the ends are owned by factions hostile to eachother the link is Red." />
+
+  <tip category="GalaxyMap" name="WormholeLinkThickness" display_name="Understanding Wormhole Link Thickness" sort_priority="1000"
+        full_text="Most wormhole links are the same thickness, but sometimes they can be thinner or thicker. 
+
+If there is an AI planet next to a non-AI planet and the AI planet has a Warp Gate (which means the AI planet can send Waves against the non-AI planet), the link is shown extra thick. 
+
+If there is an AI planet next to a non-AI planet and the AI planet does not have a warp gate (which means the AI can't send waves) then the link is shown extra thin.
+
+If you have units selected and are hovering a planet, the links that your ships would use are shown extra thick and in your player colour." />
+
+
+  <tip category="GalaxyMap" name="PlanetMarkLevelColors" display_name="Extra: The Meanings Behind Planet Mark Level Colors" sort_priority="2000"
+        full_text="There are seven mark levels in this game (I through VII), and the colors to them are broken up in a way that hints at their grouping, so to speak:
+
+I is &lt;color=#fbffbd&gt;pale yellow&lt;/color&gt;
+II is &lt;color=#ffba00&gt;orange&lt;/color&gt;
+
+These are the ones that are really really weak, and so they wind up looking like it, and being kind of grouped together visually. You can tell the two of them apart, which is nice, but they also really stand out as being 'easy pickings' compared to everything else.
+
+III is &lt;color=#00deff&gt;blue&lt;/color&gt;, which is a really big shift.
+
+This is where things start getting notably powerful, but the blue hints that things aren't really SUPER hard yet.  These are targets that in the game when looking at planets are often things that have good stuff on them that you can capture early even with weaker fleets, so highlighting them some makes sense.
+
+IV is &lt;color=#60ff00&gt;green&lt;/color&gt;, which is another really big shift.
+
+These are pretty darn scary in the early game, but not abject terrifying.  So highlighting these again makes a certain amount of sense, as they're a thing to avoid.
+
+But why green?  Well, the colors are the same when you're controlling your own units, and the 4th mark is typically about the highest you can get via one tech upgrade line.  It's also solidly a 'fully upgraded but not overpowered' level for mid to late game stuff. Something to feel happy about using, without it being 'overdriven for maximum success.'
+
+V is &lt;color=#ff3000&gt;red&lt;/color&gt;
+VI is &lt;color=#ff0036&gt;almost the same red&lt;/color&gt;
+VII is &lt;color=#ff00ea&gt;scary purple&lt;/color&gt;
+
+These basically have the same late-game progression that the first game did, and they are rare enough (and V and VI have a different-enough shape) that they are easy to pick out.  They are ALL things to be very scared of early in the game, and to be very cautious of in the late game even.
+
+The color shifts help you navigate the galaxy map, or should at least, even if it's not a traditional progression of slight color changes from one hue/darkness to a different hue/lightness.  Those sorts of progressions are somewhat more intuitive at a glance, but over extended play in particular give you a lot less info and are harder to distinguish." />
+
+  </root>

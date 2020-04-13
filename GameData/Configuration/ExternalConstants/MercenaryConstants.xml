@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root
+    is_partial_record="true"
+    custom_bool_Mercenary_SpawnBeaconOnHomeworld="false"
+    custom_int_Mercenary_GroupsPerBeacon="2"
+    custom_int_Mercenary_TimesAllowedToSummonPerGroup="2"
+    custom_int_Mercenary_BeaconsToSpawn="5"
+>
+</root>

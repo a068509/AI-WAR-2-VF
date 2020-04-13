@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  
+  <tip_category name="GettingStarted" display_name="Getting Started" sort_priority="100"
+        description="Helpful tips specifically for new commanders." />
+
+  <tip_category name="ReturningPlayers" display_name="For Returning Players" sort_priority="200"
+        description="Information specifically for players coming new to this sequel from the original.  If you didn't play the original, definitely skip this section." />
+  <!--
+  <tip_category name="FleetManagement" display_name="Fleet Management" sort_priority="300"
+        description="Detailed strategies and info on how to handle your fleets." />
+
+  <tip_category name="EconomicManagement" display_name="Economic Management" sort_priority="400"
+        description="Detailed strategies and info on how to handle your economy." />-->
+
+  <tip_category name="OffensiveStrategies" display_name="Offensive Strategies" sort_priority="1000"
+        description="Detailed strategies and info on how to attack your enemies." />
+
+  <tip_category name="DefensiveStrategies" display_name="Defensive Strategies" sort_priority="1200"
+        description="Detailed strategies and info on how to defend yourself." />
+  
+  <tip_category name="Hacking" display_name="Hacking" sort_priority="1400"
+        description="All you ever wanted to know about breaching your enemy's computer infrastructure." />
+
+  <tip_category name="AIFleets" display_name="AI Sub-Fleets" sort_priority="2000"
+        description="This is about some different types of forces the AI will throw against you." />
+		
+  <tip_category name="AIMechanisms" display_name="AI Mechanisms" sort_priority="2500"
+        description="This is about some different types of attacks and similar the AI will try." />		
+
+  <tip_category name="OtherFactions" display_name="Other Factions" sort_priority="3000"
+        description="Detailed strategies and info on factions beyond just the AI and yourself." />
+
+  <tip_category name="GalaxyMap" display_name="Galaxy Map" sort_priority="7000"
+        description="This is about how to understand the galaxy map." />
+		
+  <tip_category name="FleetExperience" display_name="Fleet Experience" sort_priority="8000"
+        description="Detailed info on what Fleet Experience does, how you get it, and what things influence the amount." />		
+
+  <tip_category name="Modding" display_name="Modding" sort_priority="8000"
+        description="This is less about how to play the game, and more about how to mod it if that's something you want to do." />
+  
+  <tip_category name="QuickTips" display_name="Quick Tips" sort_priority="9000" is_used_for_main_menu="true"
+        description="Quite random bits of trivia and helpful advice that gets shown at random on the main menu as the 'tip of the day' each time you open the main menu." />
+
+</root>

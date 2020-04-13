@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--These fleets are used for things that are "mobile fleets" of non-combatants.
+      The most basic is just a bunch of combat engineers, which are a type of engineer
+      that you don't build from the sidebar, but which rather are built by factories
+      like a Bomber or whatever.
+      
+      Since the potential_ships categories are built around the idea of combat ships,
+      we're using the Strike category here even for things that are actually just engineers.
+      That's okay, because these categories determine ship caps but are never seen by players.-->
+
+  <fleet_design name="CombatEngineers" design_logic="MobileSupportFleet" weight="100">
+    <potential_ships category="Strike" min="1" max="1"/>
+  </fleet_design>
+  
+  <fleet_design name="CombatSentryFrigates" design_logic="MobileSupportFleet" weight="10">
+    <potential_ships category="Frigate" min="1" max="1"/>
+  </fleet_design>  
+</root>

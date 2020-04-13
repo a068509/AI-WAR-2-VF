@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--These "Special" fleets are completely hand-designed EMPTY fleets that should never have any duplicate ship types between any of them.
+      These are things that instead allow for various forms of player customization.  The only "real" ships in these are the centerpiecces,
+      and the centerpieces themselves should also be unique and tied to the same fleet design.-->
+
+
+  <fleet_design name="StealthAlpha"
+        display_name="Stealth Alpha"
+        design_logic="Special" weight="1" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="TransportFlagship_StealthAlpha" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_StealthAlpha1" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_StealthAlpha2" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_StealthAlpha3" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_StealthAlpha4" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_StealthAlpha5" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_StealthAlpha6" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_StealthAlpha7" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+  </fleet_design>
+  
+  
+  <fleet_design name="StealthBravo"
+        display_name="Stealth Bravo"
+        design_logic="Special" weight="1" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="TransportFlagship_StealthBravo" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_StealthBravo1" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_StealthBravo2" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_StealthBravo3" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_StealthBravo4" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_StealthBravo5" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_StealthBravo6" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_StealthBravo7" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+  </fleet_design>
+
+
+  <fleet_design name="StealthFoxtrot"
+        display_name="Stealth Foxtrot"
+        design_logic="Special" weight="1" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="TransportFlagship_StealthFoxtrot" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_StealthFoxtrot1" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_StealthFoxtrot2" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_StealthFoxtrot3" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_StealthFoxtrot4" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_StealthFoxtrot5" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_StealthFoxtrot6" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_StealthFoxtrot7" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+  </fleet_design>
+
+
+
+  <fleet_design name="VelocityAlpha"
+        display_name="Velocity Alpha"
+        design_logic="Special" weight="1" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="TransportFlagship_VelocityAlpha" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_VelocityAlpha1" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_VelocityAlpha2" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_VelocityAlpha3" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_VelocityAlpha4" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_VelocityAlpha5" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_VelocityAlpha6" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_VelocityAlpha7" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+  </fleet_design>
+
+
+  <fleet_design name="VelocityBravo"
+        display_name="Velocity Bravo"
+        design_logic="Special" weight="1" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="TransportFlagship_VelocityBravo" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_VelocityBravo1" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_VelocityBravo2" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_VelocityBravo3" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_VelocityBravo4" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_VelocityBravo5" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_VelocityBravo6" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_VelocityBravo7" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+  </fleet_design>
+
+
+  <fleet_design name="VelocityFoxtrot"
+        display_name="Velocity Foxtrot"
+        design_logic="Special" weight="1" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="TransportFlagship_VelocityFoxtrot" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_VelocityFoxtrot1" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_VelocityFoxtrot2" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_VelocityFoxtrot3" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_VelocityFoxtrot4" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_VelocityFoxtrot5" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_VelocityFoxtrot6" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_VelocityFoxtrot7" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+  </fleet_design>
+
+  
+  <fleet_design name="WorkhorseAlpha"
+        display_name="Workhorse Alpha"
+        design_logic="Special" weight="1" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="TransportFlagship_WorkhorseAlpha" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_WorkhorseAlpha1" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_WorkhorseAlpha2" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_WorkhorseAlpha3" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_WorkhorseAlpha4" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_WorkhorseAlpha5" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_WorkhorseAlpha6" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_WorkhorseAlpha7" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+  </fleet_design>
+
+
+  <fleet_design name="WorkhorseBravo"
+        display_name="Workhorse Bravo"
+        design_logic="Special" weight="1" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="TransportFlagship_WorkhorseBravo" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_WorkhorseBravo1" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_WorkhorseBravo2" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_WorkhorseBravo3" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_WorkhorseBravo4" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_WorkhorseBravo5" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_WorkhorseBravo6" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_WorkhorseBravo7" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+  </fleet_design>
+
+
+  <fleet_design name="WorkhorseFoxtrot"
+        display_name="Workhorse Foxtrot"
+        design_logic="Special" weight="1" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="TransportFlagship_WorkhorseFoxtrot" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_WorkhorseFoxtrot1" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_WorkhorseFoxtrot2" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_WorkhorseFoxtrot3" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_WorkhorseFoxtrot4" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_WorkhorseFoxtrot5" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_WorkhorseFoxtrot6" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+    <ship_membership name="EmptySlot_WorkhorseFoxtrot7" ship_cap_group="Strike" weight="100" min="1" max="1"/>
+  </fleet_design>
+</root>

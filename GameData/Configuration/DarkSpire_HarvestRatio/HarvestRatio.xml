@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- to figure out how much energy is derived by a unit dying on a Dark Spire planet,
+       you multiply the Strength of unit killed by the killing faction's ration_when_killing and the
+       dying unit's faction ratio_when dying. So if the Devourer kills a human ship then we multiply
+       the strength of the human ship killed by the human's ratio_when_dying and the devourer's ratio_when_killing.
+
+       We provide a Default, then allow overrides for other factions -->
+    <item name="DefaultRatio"
+        faction_name="Default"
+        harvest_ratio_when_dying="1.0"
+        harvest_ratio_when_killing="1.0"
+        />
+
+  <item name="HumanRatio"
+        faction_name="Human"
+        harvest_ratio_when_dying="1.0"
+        harvest_ratio_when_killing="1.0"
+        harvest_ratio_for_structures_dying="0.0"
+        />
+  <item name="InstigatorRation"
+        faction_name="Instigators"
+        harvest_ratio_when_dying="0.4"
+        harvest_ratio_when_killing="1.0"
+        />
+
+  <item name="AIRatio"
+        faction_name="AI"
+        harvest_ratio_when_dying="0.5"
+        harvest_ratio_when_killing="1.0"
+        />
+  <item name="DarkSpireRatio"
+        faction_name="DarkSpire"
+        harvest_ratio_when_dying="0.0"
+        harvest_ratio_when_killing="1.1"
+        />
+
+  <item name="MacrophageRatio"
+        faction_name="Macrophage"
+        harvest_ratio_when_dying="0.1"
+        harvest_ratio_when_killing="0.2"
+        />
+  <item name="DevourerRatio"
+        faction_name="Devourer"
+        harvest_ratio_when_dying="1.0"
+        harvest_ratio_when_killing="0.2"
+        />
+  <item name="NanocaustRatio"
+        faction_name="Nanocaust"
+        harvest_ratio_when_dying="0.2"
+        harvest_ratio_when_killing="0.2"
+        />
+  <item name="ZombieRatio"
+        faction_name="AntiAIZombie"
+        harvest_ratio_when_dying="0.01"
+        harvest_ratio_when_killing="0.01"
+        />
+  <item name="ZombieAntiPlayerRatio"
+        faction_name="AntiPlayerZombie"
+        harvest_ratio_when_dying="0.01"
+        harvest_ratio_when_killing="0.01"
+        />
+
+</root>

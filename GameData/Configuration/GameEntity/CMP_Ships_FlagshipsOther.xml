@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <entity name="CombatFactory"
+			special_entity_type="MobileSupportFleetFlagship" fleet_design_logic_i_grant_one_from="MobileSupportFleet" fleet_design_templates_i_always_grant="CombatSentryFrigates"
+			draw_in_galaxy_view="true"
+			visuals="assets/_finalgamemeshes/humanbuildings/spacedock/spacedock.prefab"
+			tags="Capturable,ShowsOnNormalDisplayMode" capturable_seed_weight="100"
+			icon_name="Official/SpaceDock" gimbal_icon_size_multiplier="1.5"
+			y_offset_of_icon="20"
+			category="Ship"
+            visuals_scale_multiplier="4.8" size_scale="3.9"
+			collision_priority="500"
+			display_name="Combat Factory"
+			description="Installation phare de l'installation mobile. Si un vaisseau amiral de la flotte se trouve sur la même planète ou sur une planète adjacente et qu'il manque des navires, cela produira automatiquement des remplacements qui se déformeront directement sur ce navire amiral. A également quelques drones de combat de base."
+      description_short="Installation mobile qui remplace automatiquement les pertes de flotte à proximité et répare les unités à proximité. A également quelques drones de combat de base."
+	        fleet_design_template_i_use_for_drones="CombatFactoryDrones"
+			drone_starting_behavior_type="Attacker_Full"
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="UpgradeMeFromFleetOnly" is_upgraded_via_fleet_exp="true"
+			cost_for_ai_to_purchase="200"
+			aip_to_claim="0"
+			metal_to_claim="200000"
+			skip_drawing_ship_cap="true"
+			hull_points="100000" shield_points="100000" speed="Normal3"
+			metal_cost="8000" energy_consumption="2200"
+      assist_range="Normal1"
+			armor_mm="140" engine_gx="16" albedo="0.4" mass_tx="5"
+			ship_or_structure_explosion_sfx="ShipSmall_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+			voice_group="Civilian"
+			never_leaves_remains="true"
+      exp_to_grant_on_death="-1" is_combatant_despite_no_weapons="true" shows_on_galaxy_map_for_explored_planets="true" always_visible_to_players="true"
+      priority_as_ai_target="MidNasty" priority_as_frd_target="MidNasty" priority_to_protect="BigFavoriteToy"
+			>
+    <metal_flow purpose="SelfConstruction" throughput="500"/>
+	<metal_flow purpose="RebuildingRemains" throughput="100" increase_per_mark_level="100"/>
+    <metal_flow purpose="FactoryConstructionForPlayerMobileFleets" throughput="2000" increase_per_mark_level="1000"/>
+	<metal_flow purpose="BuildingDronesInternally" throughput="1000"/>
+    <metal_flow purpose="RepairingHullsOfFriendlies" throughput="100"/>
+    <metal_flow purpose="RepairingShieldsOfFriendlies" throughput="100"/>
+    <metal_flow purpose="RepairingEnginesOfFriendlies" throughput="100"/>
+  </entity>
+  
+  
+  
+  <entity name="OverloaderCombatFactory"
+			special_entity_type="MobileSupportFleetFlagship" fleet_design_logic_i_grant_one_from="MobileSupportFleet" fleet_design_templates_i_always_grant="CombatSentryFrigates"
+			draw_in_galaxy_view="true"
+			visuals="assets/_finalgamemeshes/humanbuildings/spacedock/spacedock.prefab"
+			tags="Capturable,ShowsOnNormalDisplayMode" capturable_seed_weight="100"
+			icon_name="Official/SpaceDock" gimbal_icon_size_multiplier="1.5"
+			y_offset_of_icon="20"
+			category="Ship"
+      visuals_scale_multiplier="4.8" size_scale="3.9"
+			collision_priority="500"
+			display_name="Overloader Combat Factory"
+			description="Installation phare de l'installation mobile. Si un vaisseau amiral de la flotte se trouve sur la même planète ou sur une planète adjacente et qu'il manque des navires, cela produira automatiquement des remplacements qui se déformeront directement sur ce navire amiral. Cette usine accélère les alliés sur la même planète et lance également des drones qui désactivent les structures."
+			description_short="Installation mobile qui remplace automatiquement les pertes de flotte à proximité et répare les unités à proximité. Accélère également les alliés et lance des drones qui désactivent les structures."
+			fleet_design_template_i_use_for_drones="SaboteurDrones"
+			drone_starting_behavior_type="Attacker_Full"
+			allied_speed_multiplier="1.4"
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="UpgradeMeFromFleetOnly" is_upgraded_via_fleet_exp="true"
+			cost_for_ai_to_purchase="200"
+			aip_to_claim="0"
+			metal_to_claim="200000"
+			skip_drawing_ship_cap="true"
+			hull_points="100000" shield_points="100000" speed="Normal3"
+			metal_cost="8000" energy_consumption="2200"
+      assist_range="Normal1"
+			armor_mm="140" engine_gx="16" albedo="0.4" mass_tx="5"
+			ship_or_structure_explosion_sfx="ShipSmall_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+			voice_group="Civilian"
+			never_leaves_remains="true"
+      exp_to_grant_on_death="-1" is_combatant_despite_no_weapons="true" shows_on_galaxy_map_for_explored_planets="true" always_visible_to_players="true"
+      priority_as_ai_target="MidNasty" priority_as_frd_target="MidNasty" priority_to_protect="BigFavoriteToy"
+			>
+    <metal_flow purpose="SelfConstruction" throughput="500"/>
+	<metal_flow purpose="RebuildingRemains" throughput="100" increase_per_mark_level="100"/>
+    <metal_flow purpose="FactoryConstructionForPlayerMobileFleets" throughput="2000" increase_per_mark_level="1000"/>
+	<metal_flow purpose="BuildingDronesInternally" throughput="1000"/>
+    <metal_flow purpose="RepairingHullsOfFriendlies" throughput="100"/>
+    <metal_flow purpose="RepairingShieldsOfFriendlies" throughput="100"/>
+    <metal_flow purpose="RepairingEnginesOfFriendlies" throughput="100"/>
+  </entity>  
+  
+  <entity name="BackdoorCombatFactory"
+			special_entity_type="MobileSupportFleetFlagship" fleet_design_logic_i_grant_one_from="MobileSupportFleet" fleet_design_templates_i_always_grant="CombatSentryFrigates"
+			draw_in_galaxy_view="true"
+			visuals="assets/_finalgamemeshes/humanbuildings/spacedock/spacedock.prefab"
+			tags="Capturable,ShowsOnNormalDisplayMode" capturable_seed_weight="100"
+			icon_name="Official/SpaceDock" gimbal_icon_size_multiplier="1.5"
+			y_offset_of_icon="20"
+			category="Ship"
+            visuals_scale_multiplier="4.8" size_scale="3.9"
+			collision_priority="500"
+			display_name="Backdoor Combat Factory"
+			description="Installation phare de l'installation mobile. Si un vaisseau amiral de la flotte se trouve sur la même planète ou sur une planète adjacente et qu'il manque des navires, cela produira automatiquement des remplacements qui se déformeront directement sur ce navire amiral. Cette usine a une cape personnelle et lance également des drones qui chargent les ennemis avec des rayons de tracteur pour les repousser."
+			description_short="Installation mobile qui remplace automatiquement les pertes de flotte à proximité et répare les unités à proximité. Est également masqué et lance des drones qui chargent les ennemis avec des rayons de tracteur."
+			fleet_design_template_i_use_for_drones="TackleDrones"
+			drone_starting_behavior_type="Attacker_Full"			
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="UpgradeMeFromFleetOnly" is_upgraded_via_fleet_exp="true"
+			cost_for_ai_to_purchase="200"
+			aip_to_claim="0"
+			metal_to_claim="200000"
+			skip_drawing_ship_cap="true"
+			hull_points="100000" shield_points="100000" speed="Normal3"
+			metal_cost="8000" energy_consumption="2200"
+      assist_range="Normal1"
+			armor_mm="140" engine_gx="16" albedo="0.4" mass_tx="5"
+			ship_or_structure_explosion_sfx="ShipSmall_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+			voice_group="Civilian"
+			never_leaves_remains="true"
+      exp_to_grant_on_death="-1" is_combatant_despite_no_weapons="true" shows_on_galaxy_map_for_explored_planets="true" always_visible_to_players="true"
+      priority_as_ai_target="MidNasty" priority_as_frd_target="MidNasty" priority_to_protect="BigFavoriteToy"
+			>
+    <metal_flow purpose="SelfConstruction" throughput="500"/>
+	<metal_flow purpose="RebuildingRemains" throughput="100" increase_per_mark_level="100"/>
+    <metal_flow purpose="FactoryConstructionForPlayerMobileFleets" throughput="2000" increase_per_mark_level="1000"/>
+	<metal_flow purpose="BuildingDronesInternally" throughput="1000"/>
+    <metal_flow purpose="RepairingHullsOfFriendlies" throughput="100"/>
+    <metal_flow purpose="RepairingShieldsOfFriendlies" throughput="100"/>
+    <metal_flow purpose="RepairingEnginesOfFriendlies" throughput="100"/>
+    <system name="Cloaker" display_name="Cloaking Device"
+				category="Passive" cloaking_points="2000" cloaking_points_added_per_mark="1000"
+				>
+    </system>		
+  </entity>
+
+  <entity name="RejuvenatorCombatFactory"
+			special_entity_type="MobileSupportFleetFlagship" fleet_design_logic_i_grant_one_from="MobileSupportFleet" fleet_design_templates_i_always_grant="CombatSentryFrigates"
+			draw_in_galaxy_view="true"
+			visuals="assets/_finalgamemeshes/humanbuildings/spacedock/spacedock.prefab"
+			tags="Capturable,ShowsOnNormalDisplayMode" capturable_seed_weight="100"
+			icon_name="Official/SpaceDock" gimbal_icon_size_multiplier="1.5"
+			y_offset_of_icon="20"
+			category="Ship"
+            visuals_scale_multiplier="4.8" size_scale="3.9"
+			collision_priority="500"
+			display_name="Rejuvenator Combat Factory"
+			description="Installation phare de l'installation mobile. Si un vaisseau amiral de la flotte se trouve sur la même planète ou sur une planète adjacente et qu'il manque des navires, cela produira automatiquement des remplacements qui se déformeront directement sur ce navire amiral. Cette usine a considérablement augmenté la capacité de réparation et lance également des drones qui agissent comme des leurres pour les tirs ennemis."
+			description_short="Installation mobile qui remplace automatiquement les pertes de flotte à proximité et répare les unités à proximité. A une vitesse de réparation beaucoup plus grande et lance des drones qui agissent comme des leurres pour le feu ennemi."
+			fleet_design_template_i_use_for_drones="DecoyDrones"
+			drone_starting_behavior_type="Attacker_Full"			
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="UpgradeMeFromFleetOnly" is_upgraded_via_fleet_exp="true"
+			cost_for_ai_to_purchase="200"
+			aip_to_claim="0"
+			metal_to_claim="200000"
+			skip_drawing_ship_cap="true"
+			hull_points="100000" shield_points="100000" speed="Normal3"
+			metal_cost="8000" energy_consumption="2200"
+      assist_range="Normal1"
+			armor_mm="140" engine_gx="16" albedo="0.4" mass_tx="5"
+			ship_or_structure_explosion_sfx="ShipSmall_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+			voice_group="Civilian"
+			never_leaves_remains="true"
+      exp_to_grant_on_death="-1" is_combatant_despite_no_weapons="true" shows_on_galaxy_map_for_explored_planets="true" always_visible_to_players="true"
+      priority_as_ai_target="MidNasty" priority_as_frd_target="MidNasty" priority_to_protect="BigFavoriteToy"
+			>
+    <metal_flow purpose="SelfConstruction" throughput="500"/>
+	<metal_flow purpose="RebuildingRemains" throughput="100" increase_per_mark_level="100"/>
+    <metal_flow purpose="FactoryConstructionForPlayerMobileFleets" throughput="2000" increase_per_mark_level="1000"/>
+	<metal_flow purpose="BuildingDronesInternally" throughput="1000"/>
+	<metal_flow purpose="RepairingHullsOfFriendlies" throughput="3000" increase_per_mark_level="1500"/> 
+    <metal_flow purpose="RepairingShieldsOfFriendlies" throughput="3000" increase_per_mark_level="1500"/>
+    <metal_flow purpose="RepairingEnginesOfFriendlies" throughput="3000" increase_per_mark_level="1500"/>	
+  </entity> 
+
+  <entity name="ScrapperCombatFactory"
+			special_entity_type="MobileSupportFleetFlagship" fleet_design_logic_i_grant_one_from="MobileSupportFleet" fleet_design_templates_i_always_grant="CombatSentryFrigates"
+			draw_in_galaxy_view="true"
+			visuals="assets/_finalgamemeshes/humanbuildings/spacedock/spacedock.prefab"
+			tags="Capturable,ShowsOnNormalDisplayMode" capturable_seed_weight="20" capturable_max_per_galaxy="2"
+			icon_name="Official/SpaceDock" gimbal_icon_size_multiplier="1.5"
+			y_offset_of_icon="20"
+			category="Ship"
+      visuals_scale_multiplier="4.8" size_scale="3.9"
+			collision_priority="500"
+			display_name="Scrapper Combat Factory"
+			description="Installation phare de l'installation mobile. Si un vaisseau amiral de la flotte se trouve sur la même planète ou sur une planète adjacente et qu'il manque des navires, cela produira automatiquement des remplacements qui se déformeront directement sur ce navire amiral. Cette usine produit des ressources et lance également des drones qui explosent pour endommager une zone."
+			description_short="Installation mobile qui remplace automatiquement les pertes de flotte à proximité et répare les unités à proximité. Produit des ressources et lance des drones qui explosent pour des dégâts de zone."
+			fleet_design_template_i_use_for_drones="ScrapDrones"
+			drone_starting_behavior_type="Attacker_Full"			
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="UpgradeMeFromFleetOnly" is_upgraded_via_fleet_exp="true"
+			cost_for_ai_to_purchase="200"
+			aip_to_claim="0"
+			metal_to_claim="200000"
+			skip_drawing_ship_cap="true"
+			hull_points="100000" shield_points="100000" speed="Normal3"
+			metal_cost="8000" energy_consumption="2200"
+      assist_range="Normal1"
+			armor_mm="140" engine_gx="16" albedo="0.4" mass_tx="5"
+			ship_or_structure_explosion_sfx="ShipSmall_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+			voice_group="Civilian"
+			never_leaves_remains="true"
+      exp_to_grant_on_death="-1" is_combatant_despite_no_weapons="true" shows_on_galaxy_map_for_explored_planets="true" always_visible_to_players="true"
+      priority_as_ai_target="MidNasty" priority_as_frd_target="MidNasty" priority_to_protect="BigFavoriteToy"
+			>
+    <resource_production type="Metal" amount="250" increase_per_mark_level="250"/>			
+    <metal_flow purpose="SelfConstruction" throughput="500"/>
+	<metal_flow purpose="RebuildingRemains" throughput="100" increase_per_mark_level="100"/>
+    <metal_flow purpose="FactoryConstructionForPlayerMobileFleets" throughput="2000" increase_per_mark_level="1000"/>
+	<metal_flow purpose="BuildingDronesInternally" throughput="1000"/>
+    <metal_flow purpose="RepairingHullsOfFriendlies" throughput="100"/>
+    <metal_flow purpose="RepairingShieldsOfFriendlies" throughput="100"/>
+    <metal_flow purpose="RepairingEnginesOfFriendlies" throughput="100"/>
+  </entity>
+  
+  <entity name="SpireLostFrigateLance"
+      special_entity_type="MobileLoneWolfFleetFlagship"
+			tags="ShowsOnNormalDisplayMode,Capturable" capturable_seed_weight="65" capturable_max_per_galaxy="1"
+			voice_group="Spire" gimbal_icon_size_multiplier="1.5"
+			draw_in_galaxy_view="true"
+			visuals="Assets/_FinalGameMeshes/Spire/SpireLostFrigate/SpireLostFrigate.prefab"
+			icon_name="Official/Spire_Frigate"
+			uses_large_health_bar="true"
+			category="Ship"
+			size_scale="8.8"
+			visuals_scale_multiplier="3.8"
+			y_offset_of_icon="30"
+			display_name="Lost Spire Frigate"
+			description="Un vaisseau Spire bas niveau. Pendant son temps seul, il est devenu beaucoup plus fort que la normale. Réparez-le et cela vous aidera"
+			collision_priority="810"
+			metal_to_claim="2000000"
+			aip_to_claim="15"
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="UpgradeMeFromFleetOnly" is_upgraded_via_fleet_exp="true"
+			cost_for_ai_to_purchase="10000" strength_multiplier="2"
+			hull_points="1800000" shield_points="900000" speed="AboveAverage1"
+			armor_mm="180" albedo="0.7" engine_gx="18" mass_tx="9"
+			metal_cost="2000000" energy_consumption="15000"
+      assist_range="Normal1"			
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			speed_multiplier_first_5_seconds_on_planet="1.5"
+      exp_to_grant_on_death="-1" shows_on_galaxy_map_for_explored_planets="true" always_visible_to_players="true"
+      priority_as_ai_target="BigThreateningWeapon" priority_as_frd_target="BigThreateningWeapon" priority_to_protect="BigFavoriteToy"
+			>
+	<metal_flow purpose="RebuildingRemains" throughput="100" increase_per_mark_level="100"/>		
+   <system name="HeavyBeamCannon" display_name="Spire Photon Lance"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="1800" range="AboveAverage3" shot_speed="Normal" rate_of_fire="Devourer"
+				shots_per_salvo="3" fires_salvos_sequentially="true"
+				stack_damage_multiplier="1.25"
+				shot_type_data="HeavyBeamInvisible"
+				beam_length_multiplier="1.3"
+				hits_all_intersecting_targets="true"				
+				shots_detonate_immediately="true"
+				maximum_number_of_targets_hit_per_shot="15"
+				>
+    </system>
+  </entity>
+  
+  <entity name="SpireLostFrigateLaser"
+      special_entity_type="MobileLoneWolfFleetFlagship"
+			tags="ShowsOnNormalDisplayMode,Capturable" capturable_seed_weight="65" capturable_max_per_galaxy="1"
+			voice_group="Spire" gimbal_icon_size_multiplier="1.5"
+			draw_in_galaxy_view="true"
+			visuals="Assets/_FinalGameMeshes/Spire/SpireLostFrigate/SpireLostFrigate.prefab"
+			icon_name="Official/Spire_Frigate"
+			uses_large_health_bar="true"
+			category="Ship"
+			size_scale="8.8"
+			visuals_scale_multiplier="3.8"
+			y_offset_of_icon="30"
+			display_name="Lost Spire Frigate"
+			description="Un vaisseau Spire bas niveau. Pendant son temps seul, il est devenu beaucoup plus fort que la normale. Réparez-le et cela vous aidera."
+			collision_priority="810"
+			metal_to_claim="2000000"
+			aip_to_claim="15"
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="UpgradeMeFromFleetOnly" is_upgraded_via_fleet_exp="true"
+			cost_for_ai_to_purchase="10000" strength_multiplier="2"
+			hull_points="1800000" shield_points="900000" speed="AboveAverage1"
+			armor_mm="180" albedo="0.7" engine_gx="18" mass_tx="9"
+			metal_cost="2000000" energy_consumption="15000"
+      assist_range="Normal1"			
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			speed_multiplier_first_5_seconds_on_planet="1.5"
+      exp_to_grant_on_death="-1" shows_on_galaxy_map_for_explored_planets="true" always_visible_to_players="true"
+      priority_as_ai_target="BigThreateningWeapon" priority_as_frd_target="BigThreateningWeapon" priority_to_protect="BigFavoriteToy"
+			>
+	<metal_flow purpose="RebuildingRemains" throughput="100" increase_per_mark_level="100"/>		
+   <system name="HeavyBeamCannon" display_name="Spire Photon Lance"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="2650" range="AboveAverage3" shot_speed="Normal" rate_of_fire="Devourer"
+				stack_damage_multiplier="1.25"
+				shot_type_data="HeavyBeamInvisible"
+				beam_length_multiplier="1.3"
+				hits_all_intersecting_targets="true"				
+				shots_detonate_immediately="true"
+				maximum_number_of_targets_hit_per_shot="15"
+				>
+    </system>
+    <system name="LaserPulse" display_name="Spire Laser Pulse"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="3500" range="AboveAverage3" shot_speed="Normal" rate_of_fire="Misery"
+				shots_per_salvo="20" fires_salvos_sequentially="false"
+				shot_type_data="LaserPulse_DeepBlue"				
+				>
+    </system>	
+  </entity>  
+  
+  <entity name="SpireLostFrigateRailcannon"
+      special_entity_type="MobileLoneWolfFleetFlagship"
+			tags="ShowsOnNormalDisplayMode,Capturable" capturable_seed_weight="65" capturable_max_per_galaxy="1"
+			voice_group="Spire" gimbal_icon_size_multiplier="1.5"
+			draw_in_galaxy_view="true"
+			visuals="Assets/_FinalGameMeshes/Spire/SpireLostFrigate/SpireLostFrigate.prefab"
+			icon_name="Official/Spire_Frigate"
+			uses_large_health_bar="true"
+			category="Ship"
+			size_scale="8.8"
+			visuals_scale_multiplier="3.8"
+			y_offset_of_icon="30"
+			display_name="Lost Spire Frigate"
+			description="Un vaisseau Spire bas niveau. Pendant son temps seul, il est devenu beaucoup plus fort que la normale. Réparez-le et cela vous aidera."
+			collision_priority="810"
+			metal_to_claim="2000000"
+			aip_to_claim="15"
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="UpgradeMeFromFleetOnly" is_upgraded_via_fleet_exp="true"
+			cost_for_ai_to_purchase="10000" strength_multiplier="2"
+			hull_points="1800000" shield_points="900000" speed="AboveAverage1"
+			armor_mm="180" albedo="0.7" engine_gx="18" mass_tx="9"
+			metal_cost="2000000" energy_consumption="15000"
+      assist_range="Normal1"			
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			speed_multiplier_first_5_seconds_on_planet="1.5"
+      exp_to_grant_on_death="-1" shows_on_galaxy_map_for_explored_planets="true" always_visible_to_players="true"
+      priority_as_ai_target="BigThreateningWeapon" priority_as_frd_target="BigThreateningWeapon" priority_to_protect="BigFavoriteToy"
+			>
+	<metal_flow purpose="RebuildingRemains" throughput="100" increase_per_mark_level="100"/>		
+   <system name="HeavyBeamCannon" display_name="Spire Photon Lance"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="2650" range="AboveAverage3" shot_speed="Normal" rate_of_fire="Devourer"
+				stack_damage_multiplier="1.25"
+				shot_type_data="HeavyBeamInvisible"
+				beam_length_multiplier="1.3"
+				hits_all_intersecting_targets="true"				
+				shots_detonate_immediately="true"
+				maximum_number_of_targets_hit_per_shot="15"
+				>
+    </system>
+    <system name="Railcannon" display_name="Spire Railcannon"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="5000" range="EssentiallyInfinite" shot_speed="VeryFast" rate_of_fire="Normal"
+                shots_per_salvo="20" fires_salvos_sequentially="false"
+				shot_type_data="ExtremeLongRangeRailgun"				
+				>
+    </system>
+  </entity>
+
+  
+  <!--  This basic version has low multipliers for the strikecraft or frigates and should be very rarely seeded as a capturable.
+        However, since it has the general stats for the various transport flagships, it-->
+  <entity name="TransportFlagship_Base"
+			special_entity_type="MobileStrikeCombatFleetFlagship" fleet_design_logic_i_grant_one_from="MobileCombatFleet"
+			voice_group="Silent" gimbal_icon_size_multiplier="1.5"
+			visuals="assets/_finalgamemeshes/humanoddities/colonyship/colonyship.prefab"
+			icon_name="Official/ColonyShip"
+			draw_in_galaxy_view="true"
+			tags="ShowsOnNormalDisplayMode,Capturable" capturable_seed_weight="1" capturable_max_per_galaxy="999"
+			size_scale="10"
+			visuals_scale_multiplier="12"
+			y_offset_of_icon="25"
+			uses_large_health_bar="true"
+			category="Ship"
+			collision_priority="10000"
+			display_name="Transport Flagship"
+			description="Flagship très rapide et relativement durable sans armement, principalement utile pour faire tourner rapidement sa flotte et les protéger pendant les attaques de raid."
+			aip_to_claim="0"
+			metal_to_claim="50000"
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="UpgradeMeFromFleetOnly" is_upgraded_via_fleet_exp="true"
+			cost_for_ai_to_purchase="200" strength_multiplier="0.25"
+			hull_points="350000" shield_points="350000" speed="High"
+			metal_cost="100000" energy_consumption="500"
+      assist_range="Normal1"			
+			armor_mm="120" albedo="0.7" engine_gx="18" mass_tx="7"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+                        firing_delay_for_transported_ships="6"
+      priority_as_ai_target="NotDangerous" priority_as_frd_target="NotDangerous" priority_to_protect="MajorPlanetLevelObjective"
+      exp_to_grant_on_death="-1" is_combatant_despite_no_weapons="true" shows_on_galaxy_map_for_explored_planets="true" always_visible_to_players="true"
+			>
+	<metal_flow purpose="RebuildingRemains" throughput="100" increase_per_mark_level="100"/>		
+  </entity>
+  
+  <entity name="TransportFlagship_MobileSupport" copy_from="TransportFlagship_Base" capturable_seed_weight="1" tags="ShowsOnNormalDisplayMode,Capturable"
+			special_entity_type="MobileStrikeCombatFleetFlagship" fleet_design_logic_i_grant_one_from="MobileCombatFleet"
+      exp_to_grant_on_death="-1">
+  </entity>
+
+  <entity name="TransportFlagship_StrikecraftHeavy" copy_from="TransportFlagship_Base" capturable_seed_weight="40" tags="ShowsOnNormalDisplayMode,Capturable"
+			special_entity_type="MobileStrikeCombatFleetFlagship" fleet_design_logic_i_grant_one_from="MobileCombatFleet"
+      exp_to_grant_on_death="-1">
+  </entity>
+  
+  <entity name="TransportFlagship_StrikecraftModerate" copy_from="TransportFlagship_Base" capturable_seed_weight="100" tags="ShowsOnNormalDisplayMode,Capturable"
+			special_entity_type="MobileStrikeCombatFleetFlagship" fleet_design_logic_i_grant_one_from="MobileCombatFleet"
+      exp_to_grant_on_death="-1">
+  </entity>
+
+  <entity name="TransportFlagship_FrigateHeavy" copy_from="TransportFlagship_Base" capturable_seed_weight="20" tags="ShowsOnNormalDisplayMode,Capturable"
+			special_entity_type="MobileStrikeCombatFleetFlagship" fleet_design_logic_i_grant_one_from="MobileCombatFleet"
+      exp_to_grant_on_death="-1">
+  </entity>
+
+  <entity name="TransportFlagship_GeneralHeavy" copy_from="TransportFlagship_Base" capturable_seed_weight="30" tags="ShowsOnNormalDisplayMode,Capturable"
+			special_entity_type="MobileStrikeCombatFleetFlagship" fleet_design_logic_i_grant_one_from="MobileCombatFleet"
+      exp_to_grant_on_death="-1">
+  </entity>
+
+  <entity name="TransportFlagship_Starter" copy_from="TransportFlagship_Base" tags="ShowsOnNormalDisplayMode,Capturable"
+			capturable_can_seed_at_all="false">
+  </entity>
+  
+  <entity name="TransportFlagship_Cloaked" copy_from="TransportFlagship_Base" tags="ShowsOnNormalDisplayMode,Capturable" display_name="Cloaked Transport Flagship"
+      description="Fast, cloaked and relatively durable Flagship with no weaponry, mainly useful for shuttling its Fleet around quickly and protecting them during raid attacks."
+	  capturable_can_seed_at_all="false">
+    <system name="Cloaker" display_name="Cloaking Device" category="Passive" cloaking_points="2000" cloaking_points_added_per_mark="1000" > </system>
+  </entity>
+  
+  <entity name="TransportFlagship_Agile" copy_from="TransportFlagship_Base" tags="ShowsOnNormalDisplayMode,Capturable" display_name="Agile Transport Flagship"
+      description="Flagship extrêmement rapide mais moins durable sans armement, principalement utile pour faire tourner rapidement sa flotte et les protéger pendant les attaques de raid."
+			speed="VeryHigh1" capturable_can_seed_at_all="false">
+  </entity>
+  
+</root>

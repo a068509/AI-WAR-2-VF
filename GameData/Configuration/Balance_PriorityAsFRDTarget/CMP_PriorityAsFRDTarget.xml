@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <priority_for_frd name="IgnoreMe" importance_metric="-1" />
+  <priority_for_frd name="NotDangerous" importance_metric="1" />
+  <priority_for_frd name="ShieldGenerator" importance_metric="75" />
+  <priority_for_frd name="LowGradeAnnoyance" importance_metric="80" />
+  <priority_for_frd name="NormalFleetship" importance_metric="100" />
+  <priority_for_frd name="BiggerFleetship" importance_metric="120" />
+  <priority_for_frd name="NormalTurret" importance_metric="130" />
+  <priority_for_frd name="NormalStarship" importance_metric="150" />
+  <priority_for_frd name="BiggerStarship" importance_metric="160" />
+  <priority_for_frd name="BigTurret" importance_metric="180" />
+  <priority_for_frd name="MinorResourceGeneration" importance_metric="200" />
+  <priority_for_frd name="NormalGuardPost" importance_metric="300" />
+  <priority_for_frd name="MidNasty" importance_metric="400" />
+  <priority_for_frd name="BigThreateningWeapon" importance_metric="1000" />
+  <priority_for_frd name="MajorPlanetLevelObjective" importance_metric="2000" />
+  <priority_for_frd name="IrreplaceableMisc" importance_metric="2500" />
+  <priority_for_frd name="IrreplaceableResourceGeneration" importance_metric="3000" />
+  <priority_for_frd name="IrreplaceableAIPIncreaser" importance_metric="3000" />
+  <priority_for_frd name="IrreplaceableBigAsTheyCome" importance_metric="4000" />
+  <priority_for_frd name="MajorFullGameObjective_SlightlyLower" importance_metric="6000" />
+  <priority_for_frd name="MajorFullGameObjective" importance_metric="8000" />  
+</root>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <line_type name="Claim" hardcoded_type="Claim" visuals_bundle="aiw2_lines_shots" visuals="assets/visualshotsandlines/lines/claimlinerenderer.prefab" />
+  <line_type name="RepairHull" hardcoded_type="RepairHull" visuals_bundle="aiw2_lines_shots" visuals="assets/visualshotsandlines/lines/repairlinerenderer.prefab" />
+  <line_type name="Tachyon" hardcoded_type="Tachyon" visuals_bundle="aiw2_lines_shots" visuals="assets/visualshotsandlines/lines/tachyonlinerenderer.prefab" />
+  <line_type name="Tractor" hardcoded_type="Tractor" visuals_bundle="aiw2_lines_shots" visuals="assets/visualshotsandlines/lines/tractorlinerenderer.prefab" />
+  <line_type name="StarvedMetalFlow" hardcoded_type="StarvedMetalFlow" visuals_bundle="aiw2_lines_shots" visuals="assets/visualshotsandlines/lines/starvedmetalflowlinerenderer.prefab" />
+  <line_type name="BeamCannon" hardcoded_type="BeamCannon" visuals_bundle="aiw2_lines_shots" visuals="assets/visualshotsandlines/lines/plasmarenderer.prefab" />
+  <line_type name="Laser" hardcoded_type="Laser" visuals_bundle="aiw2_lines_shots" visuals="assets/visualshotsandlines/lines/laserrenderer.prefab" />
+</root>

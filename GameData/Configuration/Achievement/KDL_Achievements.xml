@@ -1,0 +1,1245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <achievement name="Fully Arrayed" api_key="FULLY_ARRAYED"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Full Ensemble AI on any difficulty."
+               ai_type_name="FullEnsemble"
+               intensity_for_achievement="1"
+               level="bronze"
+               >
+  </achievement>
+  <achievement name="Yet Divided" api_key="YET_DIVIDED"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Full Ensemble AI on difficulty >= 7."
+               ai_type_name="FullEnsemble"
+               intensity_for_achievement="7"
+               level="silver"
+               >
+  </achievement>
+  <achievement name="And Conquered" api_key="AND_CONQUERED"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Full Ensemble AI on difficulty >= 9."
+               ai_type_name="FullEnsemble"
+               intensity_for_achievement="9"
+               level="gold"
+               >
+  </achievement>
+  
+      <achievement name="Tide Turner!" api_key="TIDE_TURNER"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Tsunami AI on any difficulty."
+               ai_type_name="Tsunami"
+               intensity_for_achievement="1"
+               level="silver"
+               >
+      </achievement>
+      <achievement name="Withstood The Tide" api_key="WITHSTOOD_THE_T"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Tsunami AI on difficulty >= 7."
+               ai_type_name="Tsunami"
+               intensity_for_achievement="7"
+               level="gold"
+               >
+      </achievement>
+      <achievement name="Calm In The Storm" api_key="CALM_IN_THE_STO"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Tsunami AI on difficulty >= 9."
+               ai_type_name="Tsunami"
+               intensity_for_achievement="9"
+               level="platinum"
+               >
+      </achievement>	  
+	  
+      <achievement name="I'll Be Waiting For You On The Other Side" api_key="ILL_BE_WAITING_"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Wormhole Master AI on any difficulty."
+               ai_type_name="WormholeMaster"
+               intensity_for_achievement="1"
+               level="bronze"
+               >
+      </achievement>
+      <achievement name="A Warm Welcome" api_key="A_WARM_WELCOME"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Wormhole Master AI on difficulty >= 7."
+               ai_type_name="WormholeMaster"
+               intensity_for_achievement="7"
+               level="silver"
+               >
+      </achievement>
+      <achievement name="Backdoor Closed" api_key="BACKDOOR_CLOSED"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Wormhole Master AI on difficulty >= 9."
+               ai_type_name="WormholeMaster"
+               intensity_for_achievement="9"
+               level="gold"
+               >
+      </achievement>	  
+	  
+      <achievement name="The Powers Of Two Were Not Enough" api_key="THE_POWERS_OF_T"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Quadratic AI on any difficulty."
+               ai_type_name="Quadratic"
+               intensity_for_achievement="1"
+               level="bronze"
+               >
+      </achievement>
+      <achievement name="Your Math Is Off" api_key="YOUR_MATH_IS_OF"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Quadratic AI on difficulty >= 7."
+               ai_type_name="Quadratic"
+               intensity_for_achievement="7"
+               level="silver"
+               >
+      </achievement>
+      <achievement name="Divided By Zero" api_key="DIVIDED_BY_ZERO"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Quadratic AI on difficulty >= 9."
+               ai_type_name="Quadratic"
+               intensity_for_achievement="9"
+               level="gold"
+               >
+      </achievement>	  
+
+      <achievement name="Man Down!" api_key="MAN_DOWN"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Special Forces Master AI on any difficulty."
+               ai_type_name="SpecialForcesMaster"
+               intensity_for_achievement="1"
+               level="bronze"
+               >
+      </achievement>
+      <achievement name="Fall Back!" api_key="FALL_BACK"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Special Forces Master AI on difficulty >= 7"
+               ai_type_name="SpecialForcesMaster"
+               intensity_for_achievement="7"
+               level="silver"
+               >
+      </achievement>
+      <achievement name="Critical Mission Failure!" api_key="CRITICAL_MISSIO"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Special Forces Master AI on difficulty >= 9"
+               ai_type_name="SpecialForcesMaster"
+               intensity_for_achievement="9"
+               level="gold"
+               >
+      </achievement>	  
+	  
+	  
+      <achievement name="I Hate Camping!" api_key="I_HATE_CAMPING"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Sniper AI on any difficulty."
+               ai_type_name="Sniper"
+               intensity_for_achievement="1"
+               level="bronze"
+               >
+      </achievement>
+      <achievement name="Hey, Get Over Here!" api_key="HEY_GET_OVER_HE"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Sniper AI on difficulty >= 7"
+               ai_type_name="Sniper"
+               intensity_for_achievement="7"
+               level="silver"
+               >
+      </achievement>
+      <achievement name="Face To Face" api_key="FACE_TO_FACE"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Sniper AI on difficulty >= 9"
+               ai_type_name="Sniper"
+               intensity_for_achievement="9"
+               level="gold"
+               >
+      </achievement>	  
+
+      <achievement name="Our Shields Were Too Strong!" api_key="OUR_SHIELDS_WER"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Shield Hater AI on any difficulty."
+               ai_type_name="ShieldHater"
+               intensity_for_achievement="1"
+               level="bronze"
+               >
+      </achievement>
+      <achievement name="Shields Still At Full, Captain" api_key="SHIELDS_STILL_A"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Shield Hater AI on difficulty >= 7."
+               ai_type_name="ShieldHater"
+               intensity_for_achievement="7"
+               level="silver"
+               >
+      </achievement>
+      <achievement name="No Bridge Explosions For Once" api_key="NO_BRIDGE_EXPLO"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Shield Hater AI on difficulty >= 9."
+               ai_type_name="ShieldHater"
+               intensity_for_achievement="9"
+               level="gold"
+               >
+      </achievement>	  
+	  
+      <achievement name="Shellcracker!" api_key="SHELLCRACKER"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Turtle AI on any difficulty."
+               ai_type_name="Turtle"
+               intensity_for_achievement="1"
+               level="bronze"
+               >
+      </achievement>
+      <achievement name="Turtle Soup!" api_key="TURTLE_SOUP"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Turtle AI on difficulty >= 7."
+               ai_type_name="Turtle"
+               intensity_for_achievement="7"
+               level="silver"
+               >
+      </achievement>
+      <achievement name="Delicate Delicacy" api_key="DELICATE_DELICA"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Turtle AI on difficulty >= 9."
+               ai_type_name="Turtle"
+               intensity_for_achievement="9"
+               level="gold"
+               >
+      </achievement>
+	  
+      <achievement name="Counter Counter Strike!" api_key="COUNTER_COUNTER"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Reconquista AI on any difficulty."
+               ai_type_name="Reconquista"
+               intensity_for_achievement="1"
+               level="bronze"
+               >
+      </achievement>
+      <achievement name="Hey, That Was Mine!" api_key="HEY_THAT_WAS_MI"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Reconquista AI on difficulty >= 7."
+               ai_type_name="Reconquista"
+               intensity_for_achievement="7"
+               level="silver"
+               >
+      </achievement>
+      <achievement name="What Was Rightfully Mine" api_key="WHAT_WAS_RIGHTF"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Reconquista AI on difficulty >= 9."
+               ai_type_name="Reconquista"
+               intensity_for_achievement="9"
+               level="gold"
+               >
+      </achievement>
+	  
+      <achievement name="You're Cut Off!" api_key="YOURE_CUT_OFF"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Barfighter AI on any difficulty."
+               ai_type_name="Barfighter"
+               intensity_for_achievement="1"
+               level="bronze"
+               >
+      </achievement>
+      <achievement name="You're Outta Here Buddy!" api_key="YOURE_OUTTA_HER"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Barfighter AI on difficulty >= 7."
+               ai_type_name="Barfighter"
+               intensity_for_achievement="7"
+               level="silver"
+               >
+      </achievement>
+      <achievement name="Better Not Come Back!" api_key="BETTER_NOT_COME"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Barfighter AI on difficulty >= 9."
+               ai_type_name="Barfighter"
+               intensity_for_achievement="9"
+               level="gold"
+               >
+      </achievement>	  
+	  
+      <achievement name="Two Can Play At Disproportionate Response!" api_key="TWO_CAN_PLAY_AT"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Overreactive AI on any difficulty."
+               ai_type_name="Overreactive"
+               intensity_for_achievement="1"
+               level="bronze"
+               >
+      </achievement>
+      <achievement name="A Rather Extreme Reaction" api_key="A_RATHER_EXTREM"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Overreactive AI on difficulty >= 7."
+               ai_type_name="Overreactive"
+               intensity_for_achievement="7"
+               level="silver"
+               >
+      </achievement>
+      <achievement name="Yet Still Not Enough" api_key="YET_STILL_NOT_E"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Overreactive AI on difficulty >= 9."
+               ai_type_name="Overreactive"
+               intensity_for_achievement="9"
+               level="gold"
+               >
+      </achievement>	  
+	 
+	  
+      <achievement name="Ghostbusters!" api_key="GHOSTBUSTERS"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Ghost AI on any difficulty."
+               ai_type_name="Ghost"
+               intensity_for_achievement="1"
+               level="bronze"
+               >
+      </achievement>
+      <achievement name="I Can See You, You Know" api_key="I_CAN_SEE_YOU_Y"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Ghost AI on difficulty >= 7."
+               ai_type_name="Ghost"
+               intensity_for_achievement="7"
+               level="silver"
+               >
+      </achievement>
+      <achievement name="Dispelled Apparition" api_key="DISPELLED_APPAR"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Ghost AI on difficulty >= 9."
+               ai_type_name="Ghost"
+               intensity_for_achievement="9"
+               level="gold"
+               >
+      </achievement>
+	  
+	  
+      <achievement name="Broken Sledge" api_key="BROKEN_SLEDGE"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Sledgehammer AI on any difficulty."
+               ai_type_name="SledgeHammer"
+               intensity_for_achievement="1"
+               level="bronze"
+               >
+      </achievement>
+      <achievement name="Wrong Tool" api_key="WRONG_TOOL"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Sledgehammer AI on difficulty >= 7."
+               ai_type_name="SledgeHammer"
+               intensity_for_achievement="7"
+               level="silver"
+               >
+      </achievement>
+      <achievement name="Too Tough A Nail" api_key="TOO_TOUGH_A_NAI"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Sledgehammer AI on difficulty >= 9."
+               ai_type_name="SledgeHammer"
+               intensity_for_achievement="9"
+               level="gold"
+               >
+      </achievement>
+	  
+      <achievement name="The Bigger They Are" api_key="THE_BIGGER_THEY"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Golemite AI on any difficulty."
+               ai_type_name="Golemite"
+               intensity_for_achievement="1"
+               level="gold"
+               >
+      </achievement>
+      <achievement name="The Harder They Fall" api_key="THE_HARDER_THEY"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Golemite AI on difficulty >= 7."
+               ai_type_name="Golemite"
+               intensity_for_achievement="7"
+               level="gold"
+               >
+      </achievement>
+      <achievement name="How The Mighty Have Fallen" api_key="HOW_THE_MIGHTY_"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Golemite AI on difficulty >= 9."
+               ai_type_name="Golemite"
+               intensity_for_achievement="9"
+               level="platinum"
+               >
+      </achievement>	  
+
+      <achievement name="Rabid Defender" api_key="RABID_DEFENDER"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Vicious Raider AI on any difficulty."
+               ai_type_name="ViciousRaider"
+               intensity_for_achievement="1"
+               level="silver"
+               >
+      </achievement>
+      <achievement name="Raid Fail" api_key="RAID_FAIL"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Vicious Raider AI on difficulty >= 7."
+               ai_type_name="ViciousRaider"
+               intensity_for_achievement="7"
+               level="gold"
+               >
+      </achievement>
+      <achievement name="Hit A Brick Wall" api_key="HIT_A_BRICK_WAL"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Vicious Raider AI on difficulty >= 9."
+               ai_type_name="ViciousRaider"
+               intensity_for_achievement="9"
+               level="platinum"
+               >
+      </achievement>	  
+
+      <achievement name="Splash Damage" api_key="SPLASH_DAMAGE"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Swarmer AI on any difficulty."
+               ai_type_name="Swarmer"
+               intensity_for_achievement="1"
+               level="gold"
+               >
+      </achievement>
+      <achievement name="Picking On The Little Guys" api_key="PICKING_ON_THE_"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Swarmer AI on difficulty >= 7."
+               ai_type_name="Swarmer"
+               intensity_for_achievement="7"
+               level="gold"
+               >
+      </achievement>
+      <achievement name="Wasn't Enough Of Them" api_key="WASNT_ENOUGH_OF"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Swarmer AI on difficulty >= 9."
+               ai_type_name="Swarmer"
+               intensity_for_achievement="9"
+               level="platinum"
+               >
+      </achievement>	  
+	  
+      <achievement name="Fort Buster" api_key="FORT_BUSTER"
+                   single_faction_based_victory_achievement="true"
+  	           description="Beat the Fortress Baron AI on any difficulty."
+                   ai_type_name="FortressBaron"
+                   intensity_for_achievement="1"
+                   level="bronze"
+                   >
+      </achievement>
+      <achievement name="Crush the Castle!" api_key="CRUSH_THE_CASTL"
+                   single_faction_based_victory_achievement="true"
+  	           description="Beat the Fortress Baron AI on difficulty >= 7."
+                   ai_type_name="FortressBaron"
+                   intensity_for_achievement="7"
+                   level="silver"
+                   >
+      </achievement>
+      <achievement name="Walls Tumbling Down" api_key="WALLS_TUMBLING_"
+                   single_faction_based_victory_achievement="true"
+  	           description="Beat the Fortress Baron AI on difficulty >= 9."
+                   ai_type_name="FortressBaron"
+                   intensity_for_achievement="9"
+                   level="gold"
+                   >
+      </achievement>	  
+
+      <achievement name="Diplomacy Is Overrated" api_key="DIPLOMACY_IS_OV"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Peace Maker AI on any difficulty."
+               ai_type_name="PeaceMaker"
+               intensity_for_achievement="1"
+               level="bronze"
+               >
+      </achievement>
+      <achievement name="Violent Negotiations" api_key="VIOLENT_NEGOTIA"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Peace Maker AI on difficulty >= 7."
+               ai_type_name="PeaceMaker"
+               intensity_for_achievement="7"
+               level="silver"
+               >
+      </achievement>	  
+      <achievement name="Peace Through Superior Firepower" api_key="PEACE_THROUGH_S"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Peace Maker AI on difficulty >= 9."
+               ai_type_name="PeaceMaker"
+               intensity_for_achievement="9"
+               level="gold"
+               >
+      </achievement>
+	  
+      <achievement name="Viva La Revolution" api_key="VIVA_LA_REVOLUT"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Royal AI on any difficulty."
+               ai_type_name="Royal"
+               intensity_for_achievement="1"
+               level="gold"
+               >
+      </achievement>
+      <achievement name="Uprising" api_key="UPRISING"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Royal AI on difficulty >= 7."
+               ai_type_name="Royal"
+               intensity_for_achievement="7"
+               level="gold"
+               >
+      </achievement>
+      <achievement name="Dethroned" api_key="DETHRONED"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Royal AI on difficulty >= 9."
+               ai_type_name="Royal"
+               intensity_for_achievement="9"
+               level="platinum"
+               >
+      </achievement>
+	  
+      <achievement name="Don't Open That Door" api_key="DONT_OPEN_THAT_"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the One Way Doormaster AI on any difficulty."
+               ai_type_name="OneWayDoormaster"
+               intensity_for_achievement="1"
+               level="bronze"
+               >
+      </achievement>	  
+      <achievement name="Lockpicked" api_key="LOCKPICKED"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the One Way Doormaster AI on difficulty >= 7."
+               ai_type_name="OneWayDoormaster"
+               intensity_for_achievement="7"
+               level="silver"
+               >
+      </achievement>
+      <achievement name="Open Sesame" api_key="OPEN_SESAME"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the One Way Doormaster AI on difficulty >= 9."
+               ai_type_name="OneWayDoormaster"
+               intensity_for_achievement="9"
+               level="gold"
+               >
+      </achievement>
+
+      <achievement name="I Hate Spiders!" api_key="I_HATE_SPIDERS"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Ensnarer AI on any difficulty."
+               ai_type_name="Ensnarer"
+               intensity_for_achievement="1"
+               level="bronze"
+               >
+      </achievement>	  
+      <achievement name="Why Was I Ever Afraid?" api_key="WHY_WAS_I_EVER_"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Ensnarer AI on difficulty >= 7."
+               ai_type_name="Ensnarer"
+               intensity_for_achievement="7"
+               level="silver"
+               >
+      </achievement>
+      <achievement name="Arach No" api_key="ARACH_NO"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Ensnarer AI on difficulty >= 9."
+               ai_type_name="Ensnarer"
+               intensity_for_achievement="9"
+               level="gold"
+               >
+      </achievement>
+
+      <achievement name="Attempted Burglary" api_key="ATTEMPTED_BURGL"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Thief AI on any difficulty."
+               ai_type_name="Thief"
+               intensity_for_achievement="1"
+               level="bronze"
+               >
+      </achievement>	  
+      <achievement name="Caught Red Handed" api_key="CAUGHT_RED_HAND"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Thief AI on difficulty >= 7."
+               ai_type_name="Thief"
+               intensity_for_achievement="7"
+               level="silver"
+               >
+      </achievement>
+      <achievement name="Sentenced To Defeat" api_key="SENTENCED_TO_DE"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Thief AI on difficulty >= 9."
+               ai_type_name="Thief"
+               intensity_for_achievement="9"
+               level="gold"
+               >
+      </achievement>
+
+      <achievement name="Outbreak" api_key="OUTBREAK"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Zombifyier AI on any difficulty."
+               ai_type_name="Zombifyier"
+               intensity_for_achievement="1"
+               level="silver"
+               >
+      </achievement>	  
+      <achievement name="Containment" api_key="CONTAINMENT"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Zombifyier AI on difficulty >= 7."
+               ai_type_name="Zombifyier"
+               intensity_for_achievement="7"
+               level="gold"
+               >
+      </achievement>
+      <achievement name="Eradication" api_key="ERADICATION"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Zombifyier AI on difficulty >= 9."
+               ai_type_name="Zombifyier"
+               intensity_for_achievement="9"
+               level="platinum"
+               >
+      </achievement>	  
+	  
+  <achievement name="That's No Moon" api_key="THATS_NO_MOON"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the game with the Devourer Golem enabled."
+               minor_faction_name="Devourer Golem"
+               intensity_for_achievement="0"
+               level="bronze"
+               >
+  </achievement>
+    <achievement name="Discounts Not Accepted" api_key="DISCOUNTS_NOT_A"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the game with the Zenith Trader enabled."
+               minor_faction_name="Zenith Trader"
+               intensity_for_achievement="0"
+               level="bronze"
+               >
+  </achievement>
+  <achievement name="The Power Of The Sun In My Hand" api_key="THE_POWER_OF_TH"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the game with the Dyson Sphere enabled."
+               minor_faction_name="ZenithDysonSphere"
+               intensity_for_achievement="0"
+               level="bronze"
+               >
+  </achievement>
+  <achievement name="Allies After All" api_key="ALLIES_AFTER_AL"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the game with friendly Marauders enabled."
+               minor_faction_name="HumanMarauders"
+               intensity_for_achievement="0"
+               minor_faction_allegiance="Friendly To Players"
+               level="bronze"
+               >
+  </achievement>
+  <achievement name="Take A Look At My Friends" api_key="TAKE_A_LOOK_AT_"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the game with Human Resistance Fighters enabled."
+               minor_faction_name="HumanResistanceFighters"
+               intensity_for_achievement="0"
+               level="bronze"
+               >
+  </achievement>  
+  <achievement name="Nanobots Are No Fun" api_key="NANOBOTS_ARE_NO"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the game with Hostile to All Nanocaust with intensity >= 4 enabled."
+               minor_faction_name="Nanocaust"
+               intensity_for_achievement="4"
+               minor_faction_allegiance="Hostile To All"
+               level="bronze"
+               >
+  </achievement>
+  <achievement name="Cataclysm Averted" api_key="CATACLYSM_AVERT"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the game with Hostile to All Nanocaust with intensity >= 7 enabled."
+               minor_faction_name="Nanocaust"
+               intensity_for_achievement="7"
+               minor_faction_allegiance="Hostile To All"
+               level="silver"
+               >
+  </achievement>  
+  <achievement name="Resistance Was Not Futile" api_key="RESISTANCE_WAS_"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the game with Hostile to All Nanocaust with intensity = 10 enabled."
+               minor_faction_name="Nanocaust"
+               intensity_for_achievement="10"
+               minor_faction_allegiance="Hostile To All"
+               level="gold"
+               >
+  </achievement>
+  
+  <achievement name="Weren't We On The Same Side" api_key="WERENT_WE_ON_TH"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the game with Hostile to All Marauders with intensity >= 4 enabled."
+               minor_faction_name="HumanMarauders"
+               intensity_for_achievement="4"
+               minor_faction_allegiance="Hostile To All"
+               level="bronze"
+               >
+  </achievement>
+  <achievement name="Yarr Harr!" api_key="YARR_HARR"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the game with Hostile to All Marauders with intensity >= 7 enabled."
+               minor_faction_name="HumanMarauders"
+               intensity_for_achievement="7"
+               minor_faction_allegiance="Hostile To All"
+               level="silver"
+               >
+  </achievement>  
+  <achievement name="Vandals At The Gates" api_key="VANDALS_AT_THE_"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the game with Hostile to All Marauders with intensity = 10 enabled."
+               minor_faction_name="HumanMarauders"
+               intensity_for_achievement="10"
+               minor_faction_allegiance="Hostile To All"
+               level="gold"
+               >
+  </achievement>
+  <achievement name="Get The Bug Spray" api_key="GET_THE_BUG_SPR"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the game with Hostile to All Macrophage Infestation with intensity >= 4 enabled."
+               minor_faction_name="MacrophageInfestation"
+               intensity_for_achievement="4"
+			   minor_faction_allegiance="Hostile To All"
+               level="bronze"
+               >
+  </achievement>
+  <achievement name="Someone Call The Exterminator" api_key="SOMEONE_CALL_TH"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the game with Hostile to All Macrophage Infestation with intensity >= 7 enabled."
+               minor_faction_name="MacrophageInfestation"
+               intensity_for_achievement="7"
+			   minor_faction_allegiance="Hostile To All"
+               level="silver"
+               >
+  </achievement>
+  <achievement name="Fumigated" api_key="FUMIGATED"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the game with Hostile to All Macrophage Infestation with intensity = 10 enabled."
+               minor_faction_name="MacrophageInfestation"
+               intensity_for_achievement="10"
+			   minor_faction_allegiance="Hostile To All"
+               level="gold"
+               >
+  </achievement>
+  <achievement name="Hey, Lighten Up!" api_key="HEY_LIGHTEN_UP"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the game with Dark Spire with intensity >= 4 enabled."
+               minor_faction_name="Dark Spire"
+               intensity_for_achievement="4"
+               level="bronze"
+               >
+  </achievement>
+  <achievement name="Okay, Who Woke Them Up?" api_key="OKAY_WHO_WOKE_T"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the game with Dark Spire with intensity >= 7 enabled."
+               minor_faction_name="Dark Spire"
+               intensity_for_achievement="7"
+               level="silver"
+               >
+  </achievement>
+  <achievement name="Darkness Overpowering" api_key="DARKNESS_OVERPO"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the game with Dark Spire with intensity = 10 enabled."
+               minor_faction_name="Dark Spire"
+               intensity_for_achievement="10"
+               level="gold"
+               >
+  </achievement>
+
+  <achievement name="Win On 80 Planet Map" api_key="WIN_ON_80_PLANE"
+  	       description="Beat the game on an 80 planet map."
+               number_of_planets_based_victory_achievement="true"
+               number_of_planets_in_galaxy="80"
+               level="bronze"
+               >
+  </achievement>
+  <achievement name="Win On 120 Planet Map" api_key="WIN_ON_120_PLAN"
+  	       description="Beat the game on a 120 planet map."
+               number_of_planets_based_victory_achievement="true"
+               number_of_planets_in_galaxy="120"
+               level="bronze"
+               >
+  </achievement>
+  <achievement name="Win On 200 Planet Map" api_key="WIN_ON_200_PLAN"
+  	       description="Beat the game on a 200 planet map."
+               number_of_planets_based_victory_achievement="true"
+               number_of_planets_in_galaxy="200"
+               level="bronze"
+               >
+  </achievement>
+  
+  <achievement name="Control 25" api_key="CONTROL_25"
+  	       description="Control 25 planets simultaneously in a single game."
+               control_planets_achievement="true"
+               number_of_planets_to_control="25"
+               level="bronze"
+               >
+  </achievement>
+  <achievement name="Control 50" api_key="CONTROL_50"
+  	       description="Control 50 planets simultaneously in a single game."
+               control_planets_achievement="true"
+               number_of_planets_to_control="50"
+               level="silver"
+               >
+  </achievement>
+  <achievement name="Control 75" api_key="CONTROL_75"
+  	       description="Control 75 planets simultaneously in a single game."
+               control_planets_achievement="true"
+               number_of_planets_to_control="75"
+               level="gold"
+               >
+  </achievement>
+  <achievement name="Control 100" api_key="CONTROL_100"
+  	       description="Control 100 planets simultaneously in a single game."
+               control_planets_achievement="true"
+               number_of_planets_to_control="100"
+               level="platinum"
+               >
+  </achievement>
+  
+  <achievement name="Lots Of Metal" api_key="LOTS_OF_METAL"
+  	       description="Have 5 million metal."
+               acquire_resource_achievement="true"
+               resource="Metal"
+               amount_of_resource="5000000"
+               level="bronze"
+               >
+  </achievement>
+  <achievement name="Lots Of Energy" api_key="LOTS_OF_ENERGY"
+  	       description="Have 1 million energy."
+               acquire_resource_achievement="true"
+               resource="Energy"
+               amount_of_resource="1000000"
+               level="bronze"
+               >
+  </achievement>
+  <achievement name="Lots Of Hacking" api_key="LOTS_OF_HACKING"
+  	       description="Have 1 thousand Hacking points."
+               acquire_resource_achievement="true"
+               resource="Hacking"
+               amount_of_resource="1000"
+               level="bronze"
+               >
+  </achievement>
+
+  <achievement name="Kills: Warrior" api_key="KILLS_WARRIOR"
+  	       description="Kill 30,000 ships in a game."
+               kill_ships_achievement="true"
+               ships_killed="30000"
+               level="bronze"
+               >
+  </achievement>
+  <achievement name="Kills: Merciless" api_key="KILLS_MERCILESS"
+  	       description="Kill 75,000 ships in a game."
+               kill_ships_achievement="true"
+               ships_killed="75000"
+               level="silver"
+               >
+  </achievement>
+  <achievement name="Kills: Xenocidal" api_key="KILLS_XENOCIDAL"
+  	       description="Kill 200,000 ships in a game."
+               kill_ships_achievement="true"
+               ships_killed="200000"
+               level="gold"
+               >
+  </achievement> 
+  
+  <achievement name="Losses: In The Midst Of A Cold, Dark Winter" api_key="LOSSES_IN_THE_M"
+  	       description="Lose 30,000 ships in a game."
+               kill_ships_achievement="true"
+               ships_lost="30000"
+               level="bronze"
+               >
+  </achievement>
+  <achievement name="Losses: For The Greater Good" api_key="LOSSES_FOR_THE_"
+  	       description="Lose 75,000 ships in a game."
+               kill_ships_achievement="true"
+               ships_lost="75000"
+               level="silver"
+               >
+  </achievement>
+  <achievement name="Losses: What Have We Done" api_key="LOSSES_WHAT_HAV"
+  	       description="Lose 200,000 ships in a game."
+               kill_ships_achievement="true"
+               ships_lost="200000"
+               level="gold"
+               >
+  </achievement>
+  
+  <achievement name="The Real Bloodbath" api_key="THE_REAL_BLOODB"
+  	       description="Lose and kill 100,000 ships in a game."
+               kill_ships_achievement="true"
+               ships_lost="100000"
+               ships_killed="100000"
+               level="gold"
+               >
+  </achievement>
+  
+  <achievement name="Getting Into This: 5 Hour Campaign" api_key="GETTING_INTO_TH"
+  	       description="Reach a game time of 5 hours in a single game."
+               time_elapsed_achievement="true"
+               time_elapsed="18000"
+               level="bronze"
+               >
+  </achievement>
+  <achievement name="Nearing The End? 10 Hour Campaign" api_key="NEARING_THE_END"
+  	       description="Reach a game time of 10 hours in a single game."
+               time_elapsed_achievement="true"
+               time_elapsed="36000"
+               level="silver"
+               >
+  </achievement> 
+  <achievement name="Long One: 15 Hour Campaign" api_key="LONG_ONE_15_HOU"
+  	       description="Reach a game time of 15 hours in a single game."
+               time_elapsed_achievement="true"
+               time_elapsed="54000"
+               level="gold"
+               >
+  </achievement>   
+
+  <achievement name="We Didn't Start The Fire" api_key="WE_DIDNT_START_"
+  	       description="Beat at least 2 AIs in Civil War mode."
+               civil_war_victory="true"
+               number_of_ais="2"
+               level="bronze"
+               >
+  </achievement>
+  <achievement name="The Fire Rises" api_key="THE_FIRE_RISES"
+  	       description="Beat at least 3 AIs in Civil War mode."
+               civil_war_victory="true"
+               number_of_ais="3"
+               level="silver"
+               >
+  </achievement>
+  <achievement name="The Flames Consume" api_key="THE_FLAMES_CONS"
+  	       description="Beat at least 4 AIs in Civil War mode."
+               civil_war_victory="true"
+               number_of_ais="4"
+               level="gold"
+               >
+  </achievement>
+
+  <achievement name="A Terminal Problem (Bronze)" api_key="A_TERMINAL_BRON"
+  	       description="Hack the superterminal to reduce at least 30 AIP."
+               superterminal_hack="true"
+               aip_to_reduce="30"
+               level="bronze"
+               >
+  </achievement>
+  <achievement name="A Terminal Problem (Silver)" api_key="A_TERMINAL_SILV"
+  	       description="Hack the superterminal to reduce at least 50 AIP."
+               superterminal_hack="true"
+               aip_to_reduce="50"
+               level="silver"
+               >
+  </achievement>
+    <achievement name="A Terminal Problem (Gold)" api_key="A_TERMINAL_GOLD"
+  	       description="Hack the superterminal to reduce at least 80 AIP."
+               superterminal_hack="true"
+               aip_to_reduce="80"
+               level="gold"
+               >
+  </achievement>
+
+  <achievement name="MUAHUAHUAHUAHUA" api_key="MUAHUAHUAHUAHUA"
+    description="Claim a Botnet Golem."
+    condition_type="ClaimUnit"
+    condition_related_strings="BotnetGolem"
+    level="bronze"
+  />
+  <achievement name="The Way Home" api_key="THE_WAY_HOME"
+    description="Claim a Lost Spire Frigate."
+    condition_type="ClaimUnit"
+    condition_related_strings="SpireLostFrigateLance,SpireLostFrigateLaser,SpireLostFrigateRailcannon"
+    level="bronze"
+  />
+
+  <achievement name="Research Grant" api_key="RESEARCH_GRANT"
+    description="Hack an Advanced Research Station to grant a new ship line."
+    condition_type="PerformHack"
+    condition_related_strings="HackToGrantShipLine"
+    level="bronze"
+  />
+  <achievement name="Knowledge is Power" api_key="KNOWLEDGE_IS_PO"
+    description="Hack an Advanced Research Station to reroll the ship lines it can provide."
+    condition_type="PerformHack"
+    condition_related_strings="RerollARS"
+    level="bronze"
+  />
+  <achievement name="FOR SCIENCE!" api_key="FOR_SCIENCE"
+    description="Hack an Advanced Research Station or Technology Vault to convert it into science."
+    condition_type="PerformHack"
+    condition_related_strings="ConvertARSToScience,ConvertTVToScience"
+    level="bronze"
+  />
+  <achievement name="Tech Tree" api_key="TECH_TREE"
+    description="Hack a Technology Vault to unlock a new technology."
+    condition_type="PerformHack"
+    condition_related_strings="HackToGrantTech"
+    level="bronze"
+  />
+  <achievement name="Library of Alexandria" api_key="LIBRARY_OF_ALEX"
+    description="Hack a Spire Archive to extract science."
+    condition_type="PerformHack"
+    condition_related_strings="SpireArchiveExtraction"
+    level="silver"
+  />
+  <achievement name="So We're the Bad Guys Now?" api_key="SO_WERE_THE_BAD"
+    description="Antagonize a Dyson Sphere through hacking."
+    condition_type="PerformHack"
+    condition_related_strings="DownloadDysonShip,IncreaseDysonProduction,IncreaseDysonMaxStrength,DecreaseDysonProduction"
+    level="silver"
+  />
+  <achievement name="This Will Definitely Make Things Better And Not Worse" api_key="THIS_WILL_DEFIN"
+    description="Deliberately provoke the Dark Spire through hacking."
+    condition_type="PerformHack"
+    condition_related_strings="ProvokeVengeanceStrike,DownloadDarkSpireShip,RenderVengeanceGeneratorVulnerable"
+    level="silver"
+  />
+  <achievement name="Abandon All Cookies Ye Who Enter Here" api_key="ABANDON_ALL_COO"
+    description="Keep hacking random mysterious homing beacons until something REALLY bad happens."
+    condition_type="PerformHack"
+    condition_related_strings="SummonDevourerGolem"
+    level="bronze"
+  />
+
+  <achievement name="Risk It for the Biscuit" api_key="RISK_IT_FOR_THE"
+               single_faction_based_victory_achievement="true"
+           description="Beat the game with Risk Analyzers with intensity >= 4 enabled."
+               minor_faction_name="AI Risk Analyzers"
+               intensity_for_achievement="4"
+               level="bronze"
+  />
+  <achievement name="Risky Business" api_key="RISKY_BUSINESS"
+               single_faction_based_victory_achievement="true"
+           description="Beat the game with Risk Analyzers with intensity >= 7 enabled."
+               minor_faction_name="AI Risk Analyzers"
+               intensity_for_achievement="7"
+               level="silver"
+  />
+  <achievement name="Intergalactic Insurance Agency" api_key="INTERGALACTIC_I"
+               single_faction_based_victory_achievement="true"
+           description="Beat the game with Risk Analyzers with intensity = 10 enabled."
+               minor_faction_name="AI Risk Analyzers"
+               intensity_for_achievement="10"
+               level="gold"
+  />
+
+  <achievement name="Derailment" api_key="DERAILMENT"
+               single_faction_based_victory_achievement="true"
+           description="Beat the game with Astro Trains with intensity >= 4 enabled."
+               minor_faction_name="AstroTrains"
+               intensity_for_achievement="4"
+               level="bronze"
+  />
+  <achievement name="End of the Line" api_key="END_OF_THE_LINE"
+               single_faction_based_victory_achievement="true"
+           description="Beat the game with Astro Trains with intensity >= 7 enabled."
+               minor_faction_name="AstroTrains"
+               intensity_for_achievement="7"
+               level="silver"
+  />
+  <achievement name="Last Stop" api_key="LAST_STOP"
+               single_faction_based_victory_achievement="true"
+           description="Beat the game with Astro Trains with intensity = 10 enabled."
+               minor_faction_name="AstroTrains"
+               intensity_for_achievement="10"
+               level="gold"
+  />
+  <achievement name="Kites Get Struck By Lightning, You Know" api_key="KITES_GET_STRUC"
+    single_faction_based_victory_achievement="true"
+    description="Beat the game with a 'Kite Master' Hunter Fleet with intensity >= 4 enabled."
+    minor_faction_name="HunterFleet"
+    minor_faction_sub_type="KiteMaster"
+    intensity_for_achievement="4"
+    level="bronze"
+  />
+
+  <achievement name="Megalodon Hunter" api_key="MEGALADON_HUNTE"
+    description="Win with 'Shark A' enabled."
+    condition_type="WinWithGalaxySettingEnabled"
+    condition_related_strings="SharkA"
+    level="gold"
+  />
+  <achievement name="Bullshark Slayer" api_key="BULLSHARK_SLAYE"
+    description="Win with 'Shark B' enabled."
+    condition_type="WinWithGalaxySettingEnabled"
+    condition_related_strings="SharkB"
+    level="gold"
+  />
+
+  <achievement name="Snap Out of It!" api_key="SNAP_OUT_OF_IT"
+    description="Destroy a Dyson Antagonizer."
+    condition_type="KillUnit"
+    condition_related_strings="DysonAntagonizer,WarpingInDysonAntagonizer"
+    level="silver"
+  />
+  <achievement name="Fighting a Shadow" api_key="FIGHTING_A_SHAD"
+    description="Destroy the Ravenous Shadow."
+    condition_type="KillUnit"
+    condition_related_strings="RavenousShadow"
+    level="silver"
+  />
+  <achievement name="Off to the Dire Graveyard" api_key="OFF_TO_THE_DIRE"
+    description="Destroy a Dire Guardian."
+    condition_type="KillUnit"
+    condition_related_strings="DireGuardian"
+    condition_string_mode="Tag"
+    level="silver"
+  />
+
+  <achievement name="Miffed" api_key="MIFFED"
+    description="AI Tech Level reached 3."
+    condition_type="AITechLevel"
+    condition_magnitude="3"
+    level="silver"
+  />
+  <achievement name="Angry" api_key="ANGRY"
+    description="AI Tech Level reached 5."
+    condition_type="AITechLevel"
+    condition_magnitude="5"
+    level="gold"
+  />
+  <achievement name="RAAAGH!" api_key="RAAAGH"
+    description="AI Tech Level reached 7."
+    condition_type="AITechLevel"
+    condition_magnitude="7"
+    level="platinum"
+  />
+
+  <achievement name="Give a Man a Fish..." api_key="GIVE_A_MAN_A_FI"
+    description="Spend science to mark up a single Command Station or Battlestation."
+    condition_type="UpgradeFleetByScience"
+    condition_related_strings="BattlestationBasic,BattlestationCitadel,NormalHumanCommandStation,HumanHomeCommand"
+    condition_string_mode="SpecialEntityType"
+    level="bronze"
+  />
+
+  <achievement name="Teach a Man to Fish..." api_key="TEACH_A_MAN_TO_"
+    description="Raise a ship type to Tier VII."
+    condition_type="UpgradeFleetLineToMark"
+    condition_magnitude="7"
+    level="gold"
+  />
+
+  <achievement name="Slot Machine" api_key="SLOT_MACHINE"
+               single_faction_based_victory_achievement="true"
+  	            description="Beat the Adaptive Easier AI on any difficulty."
+               ai_type_name="AdaptiveEasier"
+               adaptive_difficulty="Easier"
+               intensity_for_achievement="1"
+               level="bronze"
+               >
+  </achievement>
+  <achievement name="Betting on Black" api_key="BETTING_ON_BLACK"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Adaptive Easier AI on difficulty >= 7."
+               ai_type_name="AdaptiveEasier"
+               adaptive_difficulty="Easier"
+               intensity_for_achievement="7"
+               level="silver"
+               >
+  </achievement>
+  <achievement name="Vegas Victory" api_key="VEGAS_VICTORY"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Adaptive Easier AI on difficulty >= 9."
+               ai_type_name="AdaptiveEasier"
+               adaptive_difficulty="Easier"
+               intensity_for_achievement="9"
+               level="gold"
+               >
+  </achievement>
+
+  <achievement name="Wheel of Misfortune" api_key="WHEEL_OF_MISFORTUNE"
+               single_faction_based_victory_achievement="true"
+  	            description="Beat the Adaptive Moderate AI on any difficulty."
+               ai_type_name="AdaptiveModerate"
+               adaptive_difficulty="Moderate"
+               intensity_for_achievement="1"
+               level="bronze"
+               >
+  </achievement>
+  <achievement name="Wheel of Doom" api_key="WHEEL_OF_DOOM"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Adaptive Moderate AI on difficulty >= 7."
+               ai_type_name="AdaptiveModerate"
+               adaptive_difficulty="Moderate"
+               intensity_for_achievement="7"
+               level="silver"
+               >
+  </achievement>
+  <achievement name="Wheel of Torture" api_key="WHEEL_OF_TORTURE"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Adaptive Moderate AI on difficulty >= 9."
+               ai_type_name="AdaptiveModerate"
+               adaptive_difficulty="Moderate"
+               intensity_for_achievement="9"
+               level="gold"
+               >
+  </achievement>
+
+  <achievement name="Cobra Eyes" api_key="COBRA_EYES"
+               single_faction_based_victory_achievement="true"
+  	            description="Beat the Adaptive Hard AI on any difficulty."
+               ai_type_name="AdaptiveHard"
+               adaptive_difficulty="Hard"
+               intensity_for_achievement="1"
+               level="silver"
+               >
+  </achievement>
+  <achievement name="Viper Eyes" api_key="VIPER_EYES"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Adaptive Hard AI on difficulty >= 7."
+               ai_type_name="AdaptiveHard"
+               adaptive_difficulty="Hard"
+               intensity_for_achievement="7"
+               level="gold"
+               >
+  </achievement>
+  <achievement name="Taipan Eyes" api_key="TAIPAN_EYES"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Adaptive Hard AI on difficulty >= 9."
+               ai_type_name="AdaptiveHard"
+               adaptive_difficulty="Hard"
+               intensity_for_achievement="9"
+               level="platinum"
+               >
+  </achievement>
+
+  <achievement name="Brutal Mutator" api_key="BRUTAL_MUTATOR"
+               single_faction_based_victory_achievement="true"
+  	            description="Beat the Adaptive Brutal AI on any difficulty."
+               ai_type_name="AdaptiveBrutal"
+               adaptive_difficulty="Brutal"
+               intensity_for_achievement="1"
+               level="gold"
+               >
+  </achievement>
+  <achievement name="Brutal Metamorphoser" api_key="BRUTAL_METAMORPHOSER"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Adaptive Brutal AI on difficulty >= 7."
+               ai_type_name="AdaptiveBrutal"
+               adaptive_difficulty="Brutal"
+               intensity_for_achievement="7"
+               level="gold"
+               >
+  </achievement>
+  <achievement name="Brutal Transmuter" api_key="BRUTAL_TRANSMUTER"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Adaptive Brutal AI on difficulty >= 9."
+               ai_type_name="AdaptiveBrutal"
+               adaptive_difficulty="Brutal"
+               intensity_for_achievement="9"
+               level="platinum"
+               >
+  </achievement>
+
+  <achievement name="Erratic Command" api_key="ERRATIC_COMMAND"
+               single_faction_based_victory_achievement="true"
+  	            description="Beat the Adaptive Full AI on any difficulty."
+               ai_type_name="Adaptive"
+               adaptive_difficulty="Any"
+               intensity_for_achievement="1"
+               level="gold"
+               >
+  </achievement>
+  <achievement name="Volatile Personality Core" api_key="VOLATILE_PERSONALITY_CORE"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Adaptive Full AI on difficulty >= 7."
+               ai_type_name="Adaptive"
+               adaptive_difficulty="Any"
+               intensity_for_achievement="7"
+               level="gold"
+               >
+  </achievement>
+  <achievement name="Mercurial Mind" api_key="MERCURIAL_MIND"
+               single_faction_based_victory_achievement="true"
+  	       description="Beat the Adaptive Full AI on difficulty >= 9."
+               ai_type_name="Adaptive"
+               adaptive_difficulty="Any"
+               intensity_for_achievement="9"
+               level="platinum"
+               >
+  </achievement>
+  
+</root>

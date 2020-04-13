@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--Used for normal planets.-->
+  <gp_and_cmd_placer name="GuardingMetalDeposits"
+    dll_name="AIWarExternalCode"
+    type_name="Arcen.AIW2.External.AIGuardPostAndCommandPlacer_GuardingMetalDeposits"
+    weight="20" min_mark="3" min_difficulty_for_added_weight="6" weight_added_per_difficulty="5"
+  />
+  <gp_and_cmd_placer name="GuardingWormholesGenerally"
+    dll_name="AIWarExternalCode"
+    type_name="Arcen.AIW2.External.AIGuardPostAndCommandPlacer_GuardingWormholesGenerally"
+    weight="10" min_difficulty_for_added_weight="5" weight_added_per_difficulty="5"
+  />
+  <gp_and_cmd_placer name="GuardingWormholesHarshly"
+    dll_name="AIWarExternalCode"
+    type_name="Arcen.AIW2.External.AIGuardPostAndCommandPlacer_GuardingWormholesHarshly"
+    weight="2" min_mark="3" min_difficulty_for_added_weight="6" weight_added_per_difficulty="3"
+  />
+  <gp_and_cmd_placer name="OneSingleMasss"
+    dll_name="AIWarExternalCode"
+    type_name="Arcen.AIW2.External.AIGuardPostAndCommandPlacer_OneSingleMasss"
+    weight="2" min_mark="2" min_difficulty_for_added_weight="6" weight_added_per_difficulty="3"
+  />
+  <gp_and_cmd_placer name="ThreeSpreadOutGuardPosts"
+    dll_name="AIWarExternalCode"
+    type_name="Arcen.AIW2.External.AIGuardPostAndCommandPlacer_ThreeSpreadOutGuardPosts"
+    weight="100" max_mark="2" min_difficulty_for_added_weight="5" weight_added_per_difficulty="-10"
+  />
+  <gp_and_cmd_placer name="FourSpreadOutGuardPosts"
+    dll_name="AIWarExternalCode"
+    type_name="Arcen.AIW2.External.AIGuardPostAndCommandPlacer_FourSpreadOutGuardPosts"
+    weight="100" max_mark="3" min_difficulty_for_added_weight="5" weight_added_per_difficulty="-10"
+  />
+  <gp_and_cmd_placer name="SixSpreadOutGuardPosts"
+    dll_name="AIWarExternalCode"
+    type_name="Arcen.AIW2.External.AIGuardPostAndCommandPlacer_SixSpreadOutGuardPosts"
+    weight="100" min_mark="3" min_difficulty_for_added_weight="6" weight_added_per_difficulty="-10"
+  />
+  <gp_and_cmd_placer name="SixSpreadOutGuardPosts_AndTwoByCommand"
+    dll_name="AIWarExternalCode"
+    type_name="Arcen.AIW2.External.AIGuardPostAndCommandPlacer_SixSpreadOutGuardPosts_AndTwoByCommand"
+    weight="50" min_mark="4" min_difficulty_for_added_weight="6" weight_added_per_difficulty="5"
+  />
+  <gp_and_cmd_placer name="EightSpreadOutGuardPosts"
+    dll_name="AIWarExternalCode"
+    type_name="Arcen.AIW2.External.AIGuardPostAndCommandPlacer_EightSpreadOutGuardPosts"
+    weight="100" min_mark="4" min_difficulty_for_added_weight="7" weight_added_per_difficulty="-10"
+  />
+  <gp_and_cmd_placer name="EightSpreadOutGuardPosts_AndTwoByCommand"
+    dll_name="AIWarExternalCode"
+    type_name="Arcen.AIW2.External.AIGuardPostAndCommandPlacer_EightSpreadOutGuardPosts_AndTwoByCommand"
+    weight="50" min_mark="5" min_difficulty_for_added_weight="7" weight_added_per_difficulty="5"
+  />
+  <gp_and_cmd_placer name="TenSpreadOutGuardPosts"
+    dll_name="AIWarExternalCode"
+    type_name="Arcen.AIW2.External.AIGuardPostAndCommandPlacer_TenSpreadOutGuardPosts"
+    weight="100" min_mark="5" min_difficulty_index="5"
+  />
+  <gp_and_cmd_placer name="TwelveSpreadOutGuardPosts"
+    dll_name="AIWarExternalCode"
+    type_name="Arcen.AIW2.External.AIGuardPostAndCommandPlacer_TwelveSpreadOutGuardPosts"
+    weight="100" min_mark="6" min_difficulty_index="6"
+  />
+
+  <!--Used for ai homeworld planets only.-->  
+  <gp_and_cmd_placer name="AIHome_TwelveSpreadOutGuardPosts"
+    dll_name="AIWarExternalCode"
+    type_name="Arcen.AIW2.External.AIGuardPostAndCommandPlacer_AIHome_TwelveSpreadOutGuardPosts"
+    weight="100" is_used_for_ai_homeworlds="true" max_difficulty_index="8"
+  />
+  <gp_and_cmd_placer name="AIHome_TenSpreadOutGuardPostsAndTwoByCommand"
+    dll_name="AIWarExternalCode"
+    type_name="Arcen.AIW2.External.AIGuardPostAndCommandPlacer_AIHome_TenSpreadOutGuardPostsAndTwoByCommand"
+    weight="100" is_used_for_ai_homeworlds="true" min_difficulty_index="6"
+  />
+</root>

@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <entity name="PikeTurret"			
+			visuals="assets/_finalgamemeshes/turrets/needlerturret/needlerturret.prefab" lod_distance_overrides="100,450,4000"
+			icon_name="Official/Turret" icon_overlay="Official/Turret_Pike"
+			category="Ship" is_turret="true"
+			size_scale="1.02"
+			visuals_scale_multiplier="5.1"
+			collision_priority="1000"
+			display_name="Pike Turret"
+			description="Exceptionnel contre les navires hautement blindés, en particulier ceux avec une bonne santé de coque restante."
+			behavior="Stationary"			
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Disruptive,Turret"
+			build_sidebar_categories_i_am_part_of="Turrets" destroys_self_until_not_over_ship_cap_if_planetary_command="true"
+			cost_for_ai_to_purchase="76" strength_multiplier="1.2"			
+			hull_points="5400" shield_points="13500" speed="Immobile"
+			metal_cost="6000" energy_consumption="450"
+			armor_mm="80" albedo="0.45" mass_tx="2"
+			voice_group="Turret"
+			fleet_membership="Planetary"
+			ship_or_structure_explosion_sfx="Turret_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+      exp_to_grant_on_death="20"
+      priority_as_ai_target="NormalTurret" priority_as_frd_target="NormalTurret" priority_to_protect="Expendable"
+      multiplier_to_all_costs="5" multiplier_to_all_healths="5" damage_multiplier_to_all_weapons="5" multiplier_to_all_fleet_caps="0.2" multiplier_to_all_scales="2.5"
+			>
+    <fleet_membership name="AddedToCommandStation" ship_cap_group="Turret" weight="100" min="15" max="25"/>
+    <fleet_membership name="GeneralTurrets" ship_cap_group="Turret" weight="100" min="25" max="50"/>    
+    <fleet_membership name="MonochromeTurrets" ship_cap_group="Turret" weight="100" min="60" max="120"/>
+	  <fleet_membership name="OtherDefenseFocus" ship_cap_group="Turret" weight="100" min="20" max="40"/>
+	  <fleet_membership name="PlayerHomeCommand" ship_cap_group="Turret" weight="100" min="24" max="24"/>
+    <fleet_membership name="PlayerEconomicCommand" ship_cap_group="Turret" weight="100" min="24" max="24"/>
+    <fleet_membership name="PlayerMilitaryCommand" ship_cap_group="Turret" weight="100" min="24" max="24"/>
+    <fleet_membership name="PlayerLogisticalCommand" ship_cap_group="Turret" weight="100" min="24" max="24"/>
+    <metal_flow purpose="SelfConstruction" throughput="500"/>
+    <system name="Petard" display_name="Petard"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="416" range="AboveAverage3" shot_speed="Normal" rate_of_fire="High" fires_salvos_sequentially="true"
+				shot_type_data="PikeShot_Gold" cloaking_percent_loss_from_firing="0.1"
+				>
+				<outgoing_damage_modifier based_on="Armor_mm" comparison_type="AtLeast" compared_to="90" multiplier="3" />
+        <outgoing_damage_modifier based_on="CurrentHullPercentage" applies_to="HullOnly" comparison_type="AtLeast" compared_to="75" multiplier="2" />
+    </system>
+  </entity>
+
+  <entity name="AIPikeTurret" skip_export="true" copy_from="PikeTurret" range_multiplier_to_all_weapons="0.75" display_name="AI Pike Great-Turret"
+    multiplier_to_all_costs="5" multiplier_to_all_healths="3" damage_multiplier_to_all_weapons="5" multiplier_to_all_fleet_caps="0.2" multiplier_to_all_scales="1"
+   >
+    <ai_ship_group_membership name="TurretTrapWormholeSentinels_GravityPikes" weight="100"/>
+    <ai_ship_group_membership name="TurretTrapWormholeSentinels_FreeforAll" weight="100"/>
+    <ai_ship_group_membership name="AnyTurrets_FreeforAll" weight="100"/>
+    <ai_ship_group_membership name="PikeTurrets" weight="100"/>
+    <ai_ship_group_membership name="TutorialTurrets_FreeforAll" weight="100"/>
+    <ai_ship_group_membership name="PikeSubverterTurrets" weight="100"/>
+    <ai_ship_group_membership name="PikeImploderTurrets" weight="100"/>
+    <ai_ship_group_membership name="PikeBlasterTurrets" weight="100"/>		
+  </entity>
+  
+  <entity name="MarauderPikeTurret" skip_export="true" copy_from="AIPikeTurret" display_name="Marauder Pike Turret" starting_mark_level="Mark3" tags="MarauderMark3TurretOutpost" exp_to_grant_on_death="-1"
+    multiplier_to_all_costs="1" multiplier_to_all_healths="1" damage_multiplier_to_all_weapons="1" multiplier_to_all_fleet_caps="1" multiplier_to_all_scales="1">    
+  </entity>
+  
+  <entity name="EnsnarerPikeTurret" skip_export="true" copy_from="AIPikeTurret" display_name="Ensnarer AI Pike Great-Turret"
+      exp_to_grant_on_death="20">
+    <fleet_membership name="EnsnarerTurrets" ship_cap_group="Turret" weight="100" min="25" max="50"/>
+    <ai_ship_group_membership name="EnsnarerTurrets_FreeforAll" weight="100"/>
+	<ai_ship_group_membership name="EnsnarerPikeTurrets" weight="100"/>
+	<ai_ship_group_membership name="EnsnarerTurretTrapWormholeSentinels_GravityPikes" weight="100"/>
+	<ai_ship_group_membership name="EnsnarerTurretTrapWormholeSentinels_FreeforAll" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerPikeSubverterTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerPikeImploderTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerPikeBlasterTurrets" weight="100"/>	
+  	<system name="TractorBeam" display_name="Tractor Beam"
+				category="Passive"
+				tractor_range="Small5" tractor_count="20" tractor_count_added_per_mark="2" tractor_hits_albedo_less_than="0.5" tractor_hits_engine_gx_less_than="10"
+				>
+    </system>
+  </entity>
+  
+  <entity name="GhostPikeTurret" skip_export="true" copy_from="AIPikeTurret" display_name="Ghost AI Pike Great-Turret"
+      exp_to_grant_on_death="20">
+    <ai_ship_group_membership name="GhostTurrets_FreeforAll" weight="100"/>
+	<ai_ship_group_membership name="GhostPikeTurrets" weight="100"/>
+	<ai_ship_group_membership name="GhostTurretTrapWormholeSentinels_GravityPikes" weight="100"/>
+	<ai_ship_group_membership name="GhostTurretTrapWormholeSentinels_FreeforAll" weight="100"/>
+    <ai_ship_group_membership name="GhostPikeSubverterTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostPikeImploderTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostPikeBlasterTurrets" weight="100"/>	
+	  <system name="Cloaker" display_name="Cloaking Device"
+				category="Passive" cloaking_points="2000" cloaking_points_added_per_mark="1000"
+				>
+    </system>
+  </entity>
+  
+
+
+  <entity name="AmbushTurret"			
+			visuals="Assets/_FinalGameMeshes/Turrets/AmbushTurret/AmbushTurret.prefab"
+			icon_name="Official/Turret" icon_overlay="Official/Turret_Ambush"
+			category="Ship" is_turret="true"
+			size_scale="0.95"
+			visuals_scale_multiplier="4.8"
+			collision_priority="1000"
+			display_name="Ambush Turret"
+			description="Spécialisé dans la destruction d'ennemis nouveaux sur la planète."
+			behavior="Stationary"			
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Ambush,Turret"
+			build_sidebar_categories_i_am_part_of="Turrets" destroys_self_until_not_over_ship_cap_if_planetary_command="true"
+			cost_for_ai_to_purchase="56" strength_multiplier="1.2"				
+			hull_points="4500" shield_points="9000" speed="Immobile"
+			metal_cost="6000" energy_consumption="450"
+			armor_mm="80" albedo="0.7" mass_tx="2"
+			voice_group="Turret"
+			fleet_membership="Planetary"
+			ship_or_structure_explosion_sfx="Turret_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+      exp_to_grant_on_death="20"
+      priority_as_ai_target="NormalTurret" priority_as_frd_target="NormalTurret" priority_to_protect="Expendable"
+      multiplier_to_all_costs="5" multiplier_to_all_healths="5" damage_multiplier_to_all_weapons="5" multiplier_to_all_fleet_caps="0.2" multiplier_to_all_scales="2.5"
+			>
+    <fleet_membership name="AddedToCommandStation" ship_cap_group="Turret" weight="100" min="30" max="50"/>
+    <fleet_membership name="GeneralTurrets" ship_cap_group="Turret" weight="100" min="50" max="100"/>
+    <fleet_membership name="MonochromeTurrets" ship_cap_group="Turret" weight="100" min="120" max="240"/>
+	<fleet_membership name="OtherDefenseFocus" ship_cap_group="Turret" weight="100" min="40" max="80"/>
+    <fleet_membership name="PlayerMilitaryCommand" ship_cap_group="Turret" weight="100" min="60" max="60"/>
+    <metal_flow purpose="SelfConstruction" throughput="500"/>
+    <system name="DeadlineInjector" display_name="Deadline Injector"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="36" range="Normal3" shot_speed="Normal" rate_of_fire="Devourer" 
+				shots_per_salvo="3" fires_salvos_sequentially="false"
+				shot_type_data="Ambush" cloaking_percent_loss_from_firing="0.1"
+				>
+      <outgoing_damage_modifier based_on="TargetTimeAtPlanet" comparison_type="LessThan" compared_to="15" multiplier="12" />
+    </system>	
+	  <system name="Cloaker" display_name="Cloaking Device"
+				category="Passive" cloaking_points="2000" cloaking_points_added_per_mark="1000"
+				>
+    </system>	
+  </entity>
+
+  <entity name="AIAmbushTurret" skip_export="true" copy_from="AmbushTurret" range_multiplier_to_all_weapons="0.75" display_name="AI Ambush Great-Turret"
+    multiplier_to_all_costs="5" multiplier_to_all_healths="3" damage_multiplier_to_all_weapons="5" multiplier_to_all_fleet_caps="0.2" multiplier_to_all_scales="1"
+   >
+    <ai_ship_group_membership name="TurretTrapWormholeSentinels_TractorAmbushes" weight="100"/>
+    <ai_ship_group_membership name="AnyTurrets_FreeforAll" weight="5"/>
+    <ai_ship_group_membership name="AmbushTurrets" weight="100"/>
+    <ai_ship_group_membership name="TutorialTurrets_FreeforAll" weight="1"/>
+    <ai_ship_group_membership name="AcidAmbushTurrets" weight="100"/>	
+  </entity>
+  
+
+  
+  <entity name="GrenadeLauncherTurret"			  
+			visuals="assets/_finalgamemeshes/turrets/flakturret/flak_turret.prefab"
+			icon_name="Official/Turret" icon_overlay="Official/Turret_Grenade"
+			category="Ship" is_turret="true"
+			size_scale="0.68"
+			visuals_scale_multiplier="3.4"
+			collision_priority="1000"
+			display_name="Grenade Launcher Turret"
+			description="Tire des tirs AOE - méchant contre les types d'essaims."
+			behavior="Stationary"			
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Splash,Turret"
+			build_sidebar_categories_i_am_part_of="Turrets" destroys_self_until_not_over_ship_cap_if_planetary_command="true"
+			cost_for_ai_to_purchase="120" strength_multiplier="1.2"				
+			hull_points="9450" shield_points="23600" speed="Immobile"
+			metal_cost="9000" energy_consumption="450"
+			armor_mm="80" albedo="0.45" mass_tx="2"
+			voice_group="Turret"
+			fleet_membership="Planetary"
+			ship_or_structure_explosion_sfx="Turret_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+      exp_to_grant_on_death="20"
+      priority_as_ai_target="NormalTurret" priority_as_frd_target="NormalTurret" priority_to_protect="Expendable"
+      multiplier_to_all_costs="5" multiplier_to_all_healths="5" damage_multiplier_to_all_weapons="5" multiplier_to_all_fleet_caps="0.2" multiplier_to_all_scales="2.5"
+			>
+    <fleet_membership name="AddedToCommandStation" ship_cap_group="Turret" weight="100" min="15" max="25"/>
+    <fleet_membership name="GeneralTurrets" ship_cap_group="Turret" weight="100" min="25" max="50"/>
+    <fleet_membership name="MonochromeTurrets" ship_cap_group="Turret" weight="100" min="60" max="120"/>
+	<fleet_membership name="OtherDefenseFocus" ship_cap_group="Turret" weight="100" min="20" max="40"/>
+    <metal_flow purpose="SelfConstruction" throughput="750"/>
+    <system name="Grenade" display_name="Grenade"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="330" range="Normal5" shot_speed="Normal" rate_of_fire="RatherLow" fires_salvos_sequentially="true"
+				shot_type_data="FlakShotAOEBurstAtEnd"
+				area_of_effect_size="600"
+                stack_damage_multiplier="1.5"
+				maximum_number_of_targets_hit_per_shot="9" cloaking_percent_loss_from_firing="0.1"
+				>
+				<outgoing_damage_modifier based_on="Armor_mm" comparison_type="AtMost" compared_to="30" multiplier="3" />
+    </system>
+  </entity>
+
+  <entity name="AIGrenadeLauncherTurret" skip_export="true" copy_from="GrenadeLauncherTurret" range_multiplier_to_all_weapons="0.75" display_name="AI Grenade Launcher Great-Turret"
+    multiplier_to_all_costs="5" multiplier_to_all_healths="3" damage_multiplier_to_all_weapons="5" multiplier_to_all_fleet_caps="0.2" multiplier_to_all_scales="1"
+   >
+    <ai_ship_group_membership name="TurretTrapWormholeSentinels_TractorAmbushes" weight="100"/>
+    <ai_ship_group_membership name="TurretTrapWormholeSentinels_FreeforAll" weight="100"/>
+    <ai_ship_group_membership name="AnyTurrets_FreeforAll" weight="10"/>
+    <ai_ship_group_membership name="GrenadeLauncherTurrets" weight="100"/>
+    <ai_ship_group_membership name="TutorialTurrets_FreeforAll" weight="3"/>
+    <ai_ship_group_membership name="MicroConcussionGrenadeHailstormTurrets" weight="100"/>
+    <ai_ship_group_membership name="GrenadeHailstormFortifiedTeslaHoloceneTurrets" weight="100"/>
+    <ai_ship_group_membership name="AblativeHailstormGrenadeTurrets" weight="100"/>		
+  </entity>
+
+  <entity name="MarauderGrenadeLauncherTurret" skip_export="true" copy_from="AIGrenadeLauncherTurret" display_name="Marauder Grenade Launcher Turret" starting_mark_level="Mark3" tags="MarauderMark3TurretOutpost" exp_to_grant_on_death="-1"
+    multiplier_to_all_costs="1" multiplier_to_all_healths="1" damage_multiplier_to_all_weapons="1" multiplier_to_all_fleet_caps="1" multiplier_to_all_scales="1"  >    
+  </entity>
+  
+  <entity name="EnsnarerGrenadeLauncherTurret" skip_export="true" copy_from="AIGrenadeLauncherTurret" display_name="Ensnarer AI Grenade Launcher Great-Turret" exp_to_grant_on_death="20">
+    <fleet_membership name="EnsnarerTurrets" ship_cap_group="Turret" weight="100" min="25" max="50"/>
+    <ai_ship_group_membership name="EnsnarerTurrets_FreeforAll" weight="100"/>
+	<ai_ship_group_membership name="EnsnarerGrenadeLauncherTurrets" weight="100"/>
+	<ai_ship_group_membership name="EnsnarerTurretTrapWormholeSentinels_TractorAmbushes" weight="100"/>
+	<ai_ship_group_membership name="EnsnarerTurretTrapWormholeSentinels_FreeforAll" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerMicroConcussionGrenadeHailstormTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerGrenadeHailstormFortifiedTeslaHoloceneTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerAblativeHailstormGrenadeTurrets" weight="100"/>		
+  	<system name="TractorBeam" display_name="Tractor Beam"
+				category="Passive"
+				tractor_range="Small5" tractor_count="20" tractor_count_added_per_mark="2" tractor_hits_albedo_less_than="0.5" tractor_hits_engine_gx_less_than="10"
+				>
+    </system>
+  </entity>
+  
+  <entity name="GhostGrenadeLauncherTurret" skip_export="true" copy_from="AIGrenadeLauncherTurret" display_name="Ghost AI Grenade Launcher Great-Turret" exp_to_grant_on_death="20">
+    <ai_ship_group_membership name="GhostTurrets_FreeforAll" weight="100"/>
+	<ai_ship_group_membership name="GhostGrenadeLauncherTurrets" weight="100"/>
+	<ai_ship_group_membership name="GhostTurretTrapWormholeSentinels_TractorAmbushes" weight="100"/>
+	<ai_ship_group_membership name="GhostTurretTrapWormholeSentinels_FreeforAll" weight="100"/>
+    <ai_ship_group_membership name="GhostMicroConcussionGrenadeHailstormTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostGrenadeHailstormFortifiedTeslaHoloceneTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostAblativeHailstormGrenadeTurrets" weight="100"/>		
+	  <system name="Cloaker" display_name="Cloaking Device"
+				category="Passive" cloaking_points="2000" cloaking_points_added_per_mark="1000"
+				>
+    </system>
+  </entity>
+  
+  
+
+  <entity name="NucleophilicTurret"			
+			visuals="assets/_finalgamemeshes/turrets/laserturret/laserturret.prefab"
+			icon_name="Official/Turret" icon_overlay="Official/Turret_Nucleophilic"
+			category="Ship" is_turret="true"
+			size_scale="0.68"
+			visuals_scale_multiplier="3.4"
+			collision_priority="1000"
+			display_name="Nucleophilic Turret"
+			description="Beaucoup plus fort contre des cibles avec des coûts énergétiques plus élevés."
+			behavior="Stationary"			
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Generalist,Turret"
+			build_sidebar_categories_i_am_part_of="Turrets" destroys_self_until_not_over_ship_cap_if_planetary_command="true"
+			cost_for_ai_to_purchase="76" strength_multiplier="1.2"				
+			hull_points="5400" shield_points="13500" speed="Immobile"
+			metal_cost="6000" energy_consumption="450"
+			armor_mm="80" albedo="0.45" mass_tx="2"
+			voice_group="Turret"
+			fleet_membership="Planetary"
+			ship_or_structure_explosion_sfx="Turret_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+      exp_to_grant_on_death="20"
+      priority_as_ai_target="NormalTurret" priority_as_frd_target="NormalTurret" priority_to_protect="Expendable"
+      multiplier_to_all_costs="5" multiplier_to_all_healths="5" damage_multiplier_to_all_weapons="5" multiplier_to_all_fleet_caps="0.2" multiplier_to_all_scales="2.5"
+			>
+    <fleet_membership name="AddedToCommandStation" ship_cap_group="Turret" weight="100" min="15" max="25"/>
+    <fleet_membership name="GeneralTurrets" ship_cap_group="Turret" weight="100" min="25" max="50"/>
+    <fleet_membership name="MonochromeTurrets" ship_cap_group="Turret" weight="100" min="60" max="120"/>
+	<fleet_membership name="OtherDefenseFocus" ship_cap_group="Turret" weight="100" min="20" max="40"/>
+    <metal_flow purpose="SelfConstruction" throughput="500"/>
+    <system name="LaserPulse" display_name="Electron Pulse"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="900" range="AboveAverage4" shot_speed="Normal" rate_of_fire="Low" fires_salvos_sequentially="true"
+				shot_type_data="LaserPulse_DeepBlue" cloaking_percent_loss_from_firing="0.1"
+				>
+				<outgoing_damage_modifier based_on="EnergyUsage" comparison_type="AtLeast" compared_to="7000" multiplier="4" />
+    </system>
+  </entity>
+
+  <entity name="AINucleophilicTurret" skip_export="true" copy_from="NucleophilicTurret" range_multiplier_to_all_weapons="0.75" display_name="AI Nucleophilic Great-Turret"
+    multiplier_to_all_costs="5" multiplier_to_all_healths="3" damage_multiplier_to_all_weapons="5" multiplier_to_all_fleet_caps="0.2" multiplier_to_all_scales="1"
+   >
+    <ai_ship_group_membership name="TurretTrapWormholeSentinels_FreeforAll" weight="100"/>
+    <ai_ship_group_membership name="NucleophilicTurrets" weight="100"/>
+    <ai_ship_group_membership name="PlasmaNucleophilicTurrets" weight="100"/>
+    <ai_ship_group_membership name="NucleophilicBlasterTurrets" weight="100"/>
+    <ai_ship_group_membership name="NucleophilicSeekerTurrets" weight="100"/>	
+  </entity>
+
+  <entity name="MarauderNucleophilicTurret" skip_export="true" copy_from="AINucleophilicTurret" display_name="Marauder Nucleophilic Turret" starting_mark_level="Mark3" tags="MarauderMark3TurretOutpost" exp_to_grant_on_death="-1"
+    multiplier_to_all_costs="1" multiplier_to_all_healths="1" damage_multiplier_to_all_weapons="1" multiplier_to_all_fleet_caps="1" multiplier_to_all_scales="1">    
+  </entity>
+  
+  <entity name="EnsnarerNucleophilicTurret" skip_export="true" copy_from="AINucleophilicTurret" display_name="Ensnarer AI Nucleophilic Great-Turret" exp_to_grant_on_death="20">
+    <fleet_membership name="EnsnarerTurrets" ship_cap_group="Turret" weight="100" min="25" max="50"/>
+    <ai_ship_group_membership name="EnsnarerTurrets_FreeforAll" weight="100"/>
+	<ai_ship_group_membership name="EnsnarerNucleophilicTurrets" weight="100"/>
+	<ai_ship_group_membership name="EnsnarerTurretTrapWormholeSentinels_FreeforAll" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerPlasmaNucleophilicTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerNucleophilicBlasterTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerNucleophilicSeekerTurrets" weight="100"/>	
+  	<system name="TractorBeam" display_name="Tractor Beam"
+				category="Passive"
+				tractor_range="Small5" tractor_count="20" tractor_count_added_per_mark="2" tractor_hits_albedo_less_than="0.5" tractor_hits_engine_gx_less_than="10"
+				>
+    </system>
+  </entity>
+  
+  <entity name="GhostNucleophilicTurret" skip_export="true" copy_from="AINucleophilicTurret" display_name="Ghost AI Nucleophilic Great-Turret" exp_to_grant_on_death="20">
+    <ai_ship_group_membership name="GhostTurrets_FreeforAll" weight="100"/>
+	<ai_ship_group_membership name="GhostNucleophilicTurrets" weight="100"/>
+	<ai_ship_group_membership name="GhostTurretTrapWormholeSentinels_FreeforAll" weight="100"/>
+    <ai_ship_group_membership name="GhostPlasmaNucleophilicTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostNucleophilicBlasterTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostNucleophilicSeekerTurrets" weight="100"/>	
+	  <system name="Cloaker" display_name="Cloaking Device"
+				category="Passive" cloaking_points="2000" cloaking_points_added_per_mark="1000"
+				>
+    </system>
+  </entity>
+  
+  
+
+  <entity name="FortifiedTeslaTurret"			  
+			visuals="assets/_finalgamemeshes/turrets/lightningturret/lightningturret.prefab"
+			icon_name="Official/Turret" icon_overlay="Official/Turret_Tesla"
+			category="Ship" is_turret="true"
+			size_scale="0.85"
+			visuals_scale_multiplier="3.4"
+			collision_priority="1000"
+			display_name="Fortified Tesla Turret"
+			description="Explosion AOE à très courte portée, mais protégée contre les attaques extérieures à sa portée."
+			behavior="Stationary"			
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Splash,Turret"
+			build_sidebar_categories_i_am_part_of="Turrets" destroys_self_until_not_over_ship_cap_if_planetary_command="true"
+			cost_for_ai_to_purchase="170" strength_multiplier="1.2"	 			
+			hull_points="13500" shield_points="33750" speed="Immobile"
+			metal_cost="9000" energy_consumption="450"
+			armor_mm="80" albedo="0.45" mass_tx="2"
+			voice_group="Turret"
+			fleet_membership="Planetary"
+			ship_or_structure_explosion_sfx="Turret_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+      exp_to_grant_on_death="20"
+      priority_as_ai_target="NormalTurret" priority_as_frd_target="NormalTurret" priority_to_protect="Expendable"
+      multiplier_to_all_costs="5" multiplier_to_all_healths="5" damage_multiplier_to_all_weapons="5" multiplier_to_all_fleet_caps="0.2" multiplier_to_all_scales="2.5"
+			>
+    <fleet_membership name="AddedToCommandStation" ship_cap_group="Turret" weight="100" min="6" max="12"/>
+    <fleet_membership name="GeneralTurrets" ship_cap_group="Turret" weight="100" min="12" max="25"/>
+    <fleet_membership name="MonochromeTurrets" ship_cap_group="Turret" weight="100" min="30" max="60"/>
+	<fleet_membership name="OtherDefenseFocus" ship_cap_group="Turret" weight="100" min="10" max="20"/>
+    <metal_flow purpose="SelfConstruction" throughput="750"/>
+    <system name="TeslaCoil" display_name="Tesla Coil"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="540" range="Tiny3" shot_speed="Normal" rate_of_fire="PeriodicActivation" fires_salvos_sequentially="false"
+				shot_type_data="LightningExplosionAOEShot"
+				area_of_effect_size="3200"				
+				shots_detonate_immediately="true"
+				maximum_number_of_targets_hit_per_shot="20" cloaking_percent_loss_from_firing="0.1"
+				>
+			<outgoing_damage_modifier based_on="Albedo" comparison_type="AtLeast" compared_to="0.7" multiplier="3" />	
+    </system> 
+    <incoming_damage_modifier based_on="AttackDistance" comparison_type="GreaterThan" compared_to="2500" multiplier="0.01" />
+  </entity>
+
+  <entity name="AIFortifiedTeslaTurret" skip_export="true" copy_from="FortifiedTeslaTurret" range_multiplier_to_all_weapons="1" display_name="AI Fortified Tesla Great-Turret"
+    multiplier_to_all_costs="5" multiplier_to_all_healths="3" damage_multiplier_to_all_weapons="5" multiplier_to_all_fleet_caps="0.2" multiplier_to_all_scales="1"
+   >
+    <ai_ship_group_membership name="TurretTrapWormholeSentinels_Teslas" weight="100"/>
+    <ai_ship_group_membership name="AnyTurrets_FreeforAll" weight="1"/>
+    <ai_ship_group_membership name="FortifiedTeslaTurrets" weight="100"/>
+    <ai_ship_group_membership name="TutorialTurrets_FreeforAll" weight="1"/>
+    <ai_ship_group_membership name="AblativeFortifiedTeslaTurrets" weight="100"/>
+    <ai_ship_group_membership name="GrenadeHailstormFortifiedTeslaHoloceneTurrets" weight="100"/>
+    <ai_ship_group_membership name="JammerFortifiedTeslaTurrets" weight="100"/>
+    <ai_ship_group_membership name="RuffianFortifiedTeslaTurrets" weight="100"/>
+    <ai_ship_group_membership name="TranslocatorFortifiedTeslaTurrets" weight="100"/>	
+  </entity>
+  
+  <entity name="EnsnarerFortifiedTeslaTurret" skip_export="true" copy_from="AIFortifiedTeslaTurret" display_name="Ensnarer AI Fortified Tesla Great-Turret" exp_to_grant_on_death="20">
+    <fleet_membership name="EnsnarerTurrets" ship_cap_group="Turret" weight="100" min="12" max="25"/>
+    <ai_ship_group_membership name="EnsnarerTurrets_FreeforAll" weight="100"/>
+	<ai_ship_group_membership name="EnsnarerFortifiedTeslaTurrets" weight="100"/>
+	<ai_ship_group_membership name="EnsnarerTurretTrapWormholeSentinels_Teslas" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerAblativeFortifiedTeslaTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerGrenadeHailstormFortifiedTeslaHoloceneTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerJammerFortifiedTeslaTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerRuffianFortifiedTeslaTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerTranslocatorFortifiedTeslaTurrets" weight="100"/>		
+  	<system name="TractorBeam" display_name="Tractor Beam"
+				category="Passive"
+				tractor_range="Tiny3" tractor_count="20" tractor_count_added_per_mark="2" tractor_hits_albedo_less_than="0.5" tractor_hits_engine_gx_less_than="10"
+				>
+    </system>
+  </entity>
+  
+  <entity name="GhostFortifiedTeslaTurret" skip_export="true" copy_from="AIFortifiedTeslaTurret" display_name="Ghost AI Fortified Tesla Great-Turret" exp_to_grant_on_death="20">
+    <ai_ship_group_membership name="GhostTurrets_FreeforAll" weight="100"/>
+	<ai_ship_group_membership name="GhostFortifiedTeslaTurrets" weight="100"/>
+	<ai_ship_group_membership name="GhostTurretTrapWormholeSentinels_Teslas" weight="100"/>
+    <ai_ship_group_membership name="GhostAblativeFortifiedTeslaTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostGrenadeHailstormFortifiedTeslaHoloceneTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostJammerFortifiedTeslaTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostRuffianFortifiedTeslaTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostTranslocatorFortifiedTeslaTurrets" weight="100"/>		
+	  <system name="Cloaker" display_name="Cloaking Device"
+				category="Passive" cloaking_points="2000" cloaking_points_added_per_mark="1000"
+				>
+    </system>
+  </entity>
+
+  
+  
+  <entity name="ConcussionTurret"			
+			visuals="assets/_finalgamemeshes/turrets/missileturret/missile_turret.prefab"
+			icon_name="Official/Turret" icon_overlay="Official/Turret_Concussion"
+			category="Ship" is_turret="true"
+			size_scale="1.02"
+			visuals_scale_multiplier="3.4"
+			collision_priority="1000"
+			display_name="Concussion Turret"
+			description="Tire des missiles à longue portée avec une forte augmentation des dégâts contre des cibles à armure mince."
+			behavior="Stationary"			
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Concussion,Turret"
+			build_sidebar_categories_i_am_part_of="Turrets" destroys_self_until_not_over_ship_cap_if_planetary_command="true"
+			cost_for_ai_to_purchase="51" strength_multiplier="1.2"				
+			hull_points="4500" shield_points="7500" speed="Immobile"
+			metal_cost="6000" energy_consumption="450"
+			armor_mm="80" albedo="0.45" mass_tx="2"
+			voice_group="Turret"
+			fleet_membership="Planetary"
+			ship_or_structure_explosion_sfx="Turret_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+      exp_to_grant_on_death="20"
+      priority_as_ai_target="NormalTurret" priority_as_frd_target="NormalTurret" priority_to_protect="Expendable"
+      multiplier_to_all_costs="5" multiplier_to_all_healths="5" damage_multiplier_to_all_weapons="5" multiplier_to_all_fleet_caps="0.2" multiplier_to_all_scales="2.5"
+			>
+    <fleet_membership name="AddedToCommandStation" ship_cap_group="Turret" weight="100" min="15" max="25"/>
+    <fleet_membership name="GeneralTurrets" ship_cap_group="Turret" weight="100" min="25" max="50"/>
+    <fleet_membership name="MonochromeTurrets" ship_cap_group="Turret" weight="100" min="60" max="120"/>
+	  <fleet_membership name="OtherDefenseFocus" ship_cap_group="Turret" weight="100" min="20" max="40"/>
+    <metal_flow purpose="SelfConstruction" throughput="500"/>
+    <system name="ConcussionMissile" display_name="Concussion Missile"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="680" range="High1" shot_speed="Normal" rate_of_fire="Low" fires_salvos_sequentially="true"
+				shot_type_data="GuidedMissile" cloaking_percent_loss_from_firing="0.1"
+				>
+			<outgoing_damage_modifier based_on="Armor_mm" comparison_type="AtMost" compared_to="50" multiplier="3" />
+    </system>
+  </entity>
+
+  <entity name="AIConcussionTurret" skip_export="true" copy_from="ConcussionTurret" range_multiplier_to_all_weapons="0.75" display_name="AI Concussion Great-Turret"
+    multiplier_to_all_costs="5" multiplier_to_all_healths="3" damage_multiplier_to_all_weapons="5" multiplier_to_all_fleet_caps="0.2" multiplier_to_all_scales="1"
+   >
+    <ai_ship_group_membership name="TurretTrapWormholeSentinels_FreeforAll" weight="100"/>
+    <ai_ship_group_membership name="SniperTurrets_FreeforAll" weight="3"/>
+    <ai_ship_group_membership name="AnyTurrets_FreeforAll" weight="100"/>
+    <ai_ship_group_membership name="ConcussionTurrets" weight="100"/>
+    <ai_ship_group_membership name="TutorialTurrets_FreeforAll" weight="100"/>
+    <ai_ship_group_membership name="MicroConcussionGrenadeHailstormTurrets" weight="100"/>
+    <ai_ship_group_membership name="ConcussionMicroConcussionTurrets" weight="100"/>		
+  </entity>
+
+  <entity name="MarauderConcussionTurret" skip_export="true" copy_from="AIConcussionTurret" display_name="Marauder Concussion Turret" starting_mark_level="Mark1" tags="MarauderMark1TurretOutpost" exp_to_grant_on_death="-1"
+    multiplier_to_all_costs="1" multiplier_to_all_healths="1" damage_multiplier_to_all_weapons="1" multiplier_to_all_fleet_caps="1" multiplier_to_all_scales="1">
+  </entity>
+
+  <entity name="MercConcussionTurret" skip_export="true" copy_from="ConcussionTurret"   starting_mark_level="Mark2" tags="MercTurret" exp_to_grant_on_death="-1">    
+  </entity>
+  
+  <entity name="EnsnarerConcussionTurret" skip_export="true" copy_from="AIConcussionTurret" display_name="Ensnarer AI Concussion Great-Turret" exp_to_grant_on_death="20">
+    <fleet_membership name="EnsnarerTurrets" ship_cap_group="Turret" weight="100" min="25" max="50"/>
+    <ai_ship_group_membership name="EnsnarerTurrets_FreeforAll" weight="100"/>
+	<ai_ship_group_membership name="EnsnarerConcussionTurrets" weight="100"/>
+	<ai_ship_group_membership name="EnsnarerTurretTrapWormholeSentinels_FreeforAll" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerMicroConcussionGrenadeHailstormTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerConcussionMicroConcussionTurrets" weight="100"/>		
+  	<system name="TractorBeam" display_name="Tractor Beam"
+				category="Passive"
+				tractor_range="Small5" tractor_count="20" tractor_count_added_per_mark="2" tractor_hits_albedo_less_than="0.5" tractor_hits_engine_gx_less_than="10"
+				>
+    </system>
+  </entity>
+  
+  <entity name="GhostConcussionTurret" skip_export="true" copy_from="AIConcussionTurret" display_name="Ghost AI Concussion Great-Turret" exp_to_grant_on_death="20">
+    <ai_ship_group_membership name="GhostTurrets_FreeforAll" weight="100"/>
+	<ai_ship_group_membership name="GhostConcussionTurrets" weight="100"/>
+	<ai_ship_group_membership name="GhostTurretTrapWormholeSentinels_FreeforAll" weight="100"/>
+    <ai_ship_group_membership name="GhostMicroConcussionGrenadeHailstormTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostConcussionMicroConcussionTurrets" weight="100"/>		
+	
+	  <system name="Cloaker" display_name="Cloaking Device"
+				category="Passive" cloaking_points="2000" cloaking_points_added_per_mark="1000"
+				>
+    </system>
+  </entity>
+  
+  
+  
+
+  <entity name="MLRSTurret"			  
+			visuals="assets/_finalgamemeshes/turrets/mlrsturret/mlrsturret.prefab"
+			icon_name="Official/Turret" icon_overlay="Official/Turret_MLRS"
+			category="Ship" is_turret="true"
+			size_scale="0.93"
+			visuals_scale_multiplier="3.4"
+			collision_priority="1000"
+			display_name="MLRS Turret"
+			description="Conçu pour le contrôle des foules et le retrait des retardataires."
+			behavior="Stationary"			
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Fusion,Turret"
+			build_sidebar_categories_i_am_part_of="Turrets" destroys_self_until_not_over_ship_cap_if_planetary_command="true"
+			cost_for_ai_to_purchase="62" strength_multiplier="1.2"				
+			hull_points="4500" shield_points="9000" speed="Immobile"
+			metal_cost="6000" energy_consumption="450"
+			armor_mm="80" albedo="0.45" mass_tx="2"
+			voice_group="Turret"
+			fleet_membership="Planetary"
+			ship_or_structure_explosion_sfx="Turret_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+      exp_to_grant_on_death="20"
+      priority_as_ai_target="NormalTurret" priority_as_frd_target="NormalTurret" priority_to_protect="Expendable"
+      multiplier_to_all_costs="5" multiplier_to_all_healths="5" damage_multiplier_to_all_weapons="5" multiplier_to_all_fleet_caps="0.2" multiplier_to_all_scales="2.5"
+			>
+    <fleet_membership name="AddedToCommandStation" ship_cap_group="Turret" weight="100" min="15" max="25"/>
+    <fleet_membership name="GeneralTurrets" ship_cap_group="Turret" weight="100" min="25" max="50"/>
+    <fleet_membership name="MonochromeTurrets" ship_cap_group="Turret" weight="100" min="60" max="120"/>
+	<fleet_membership name="OtherDefenseFocus" ship_cap_group="Turret" weight="100" min="20" max="40"/>
+    <metal_flow purpose="SelfConstruction" throughput="500"/>
+    <system name="FusionRockets" display_name="Micro Rockets"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="85" range="AboveAverage4" shot_speed="Normal" rate_of_fire="Normal"
+				shots_per_salvo="10" fires_salvos_sequentially="false"
+				shot_type_data="FusionRocket" cloaking_percent_loss_from_firing="0.1"
+				>
+        <outgoing_damage_modifier based_on="CurrentHullPercentage" comparison_type="AtMost" compared_to="30" multiplier="4" />
+    </system>
+  </entity>
+
+  <entity name="AIMLRSTurret" skip_export="true" copy_from="MLRSTurret" range_multiplier_to_all_weapons="0.75" display_name="AI MLRS Great-Turret"
+    multiplier_to_all_costs="5" multiplier_to_all_healths="3" damage_multiplier_to_all_weapons="5" multiplier_to_all_fleet_caps="0.2" multiplier_to_all_scales="1"
+   >
+    <ai_ship_group_membership name="TurretTrapWormholeSentinels_FreeforAll" weight="100"/>
+    <ai_ship_group_membership name="AnyTurrets_FreeforAll" weight="10"/>
+    <ai_ship_group_membership name="MLRSTurrets" weight="100"/>
+    <ai_ship_group_membership name="TutorialTurrets_FreeforAll" weight="10"/>
+    <ai_ship_group_membership name="AcidMLRSTurrets" weight="100"/>
+    <ai_ship_group_membership name="MLRSImploderTurrets" weight="100"/>
+    <ai_ship_group_membership name="BlasterMLRSPlasmaTurrets" weight="100"/>	
+  </entity>
+
+  <entity name="MarauderMLRSTurret" skip_export="true" copy_from="AIMLRSTurret"  starting_mark_level="Mark2" display_name="Marauder MLRS Turret" tags="MarauderMark2TurretOutpost" exp_to_grant_on_death="-1"
+    multiplier_to_all_costs="1" multiplier_to_all_healths="1" damage_multiplier_to_all_weapons="1" multiplier_to_all_fleet_caps="1" multiplier_to_all_scales="1">    
+  </entity>
+   
+  <entity name="EnsnarerMLRSTurret" skip_export="true" copy_from="AIMLRSTurret" display_name="Ensnarer AI MLRS Great-Turret" exp_to_grant_on_death="20">
+    <fleet_membership name="EnsnarerTurrets" ship_cap_group="Turret" weight="100" min="25" max="50"/>
+    <ai_ship_group_membership name="EnsnarerTurrets_FreeforAll" weight="100"/>
+	<ai_ship_group_membership name="EnsnarerMLRSTurrets" weight="100"/>
+	<ai_ship_group_membership name="EnsnarerTurretTrapWormholeSentinels_FreeforAll" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerAcidMLRSTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerMLRSImploderTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerBlasterMLRSPlasmaTurrets" weight="100"/>	
+  	<system name="TractorBeam" display_name="Tractor Beam"
+				category="Passive"
+				tractor_range="Small5" tractor_count="20" tractor_count_added_per_mark="2" tractor_hits_albedo_less_than="0.5" tractor_hits_engine_gx_less_than="10"
+				>
+    </system>
+  </entity>
+  
+  <entity name="GhostMLRSTurret" skip_export="true" copy_from="AIMLRSTurret" display_name="Ghost AI MLRS Great-Turret" exp_to_grant_on_death="20">
+    <ai_ship_group_membership name="GhostTurrets_FreeforAll" weight="100"/>
+	<ai_ship_group_membership name="GhostMLRSTurrets" weight="100"/>
+	<ai_ship_group_membership name="GhostTurretTrapWormholeSentinels_FreeforAll" weight="100"/>
+    <ai_ship_group_membership name="GhostAcidMLRSTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostMLRSImploderTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostBlasterMLRSPlasmaTurrets" weight="100"/>	
+	  <system name="Cloaker" display_name="Cloaking Device"
+				category="Passive" cloaking_points="2000" cloaking_points_added_per_mark="1000"
+				>
+    </system>
+  </entity>
+  
+
+  
+  <entity name="PlasmaTurret"  	          
+            visuals="assets/_finalgamemeshes/turrets/plasmatorpedolauncher/plasmatorpedolauncher.prefab"
+            icon_name="Official/Turret" icon_overlay="Official/Turret_Plasma"
+            category="Ship" is_turret="true"
+            size_scale="2.55"
+			visuals_scale_multiplier="8.5"
+            collision_priority="1000"
+            display_name="Plasma Turret"
+            description="Tire rapidement des torpilles à plasma à longue portée avec un bonus contre les champs de force."
+            behavior="Stationary"            
+            starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Disruptive,Turret"
+			build_sidebar_categories_i_am_part_of="Turrets" destroys_self_until_not_over_ship_cap_if_planetary_command="true"
+            cost_for_ai_to_purchase="329"
+			hull_points="25000" shield_points="35000" speed="Immobile"
+			metal_cost="45000" energy_consumption="7500"
+			armor_mm="120" albedo="0.45" mass_tx="3"
+			voice_group="Turret"
+			fleet_membership="Planetary"
+			ship_or_structure_explosion_sfx="StructureSmall_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+      exp_to_grant_on_death="20"
+      priority_as_ai_target="NormalTurret" priority_as_frd_target="NormalTurret" priority_to_protect="Expendable"
+      multiplier_to_all_costs="5" multiplier_to_all_healths="5" damage_multiplier_to_all_weapons="5" multiplier_to_all_fleet_caps="0.2" multiplier_to_all_scales="1.7"
+  >
+    <fleet_membership name="AddedToCommandStation" ship_cap_group="Turret" weight="100" min="5" max="5"/>
+    <fleet_membership name="GeneralTurrets" ship_cap_group="Turret" weight="100" min="5" max="10"/>
+    <fleet_membership name="MonochromeTurrets" ship_cap_group="Turret" weight="100" min="10" max="30"/>
+	<fleet_membership name="OtherDefenseFocus" ship_cap_group="Turret" weight="100" min="5" max="10"/>
+    <metal_flow purpose="SelfConstruction" throughput="1500"/>
+    <system name="PlasmaTorpedo" display_name="Plasma Torpedo"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="5500" range="High1" shot_speed="Slow" rate_of_fire="Misery" fires_salvos_sequentially="true"
+				shot_type_data="PlasmaTorpedo" cloaking_percent_loss_from_firing="0.1"
+				>
+        <outgoing_damage_modifier applies_to="AllShields" based_on="MaxBubbleForcefield" comparison_type="GreaterThan" compared_to="10000" multiplier="3" />
+    </system>
+  </entity>
+  
+
+  <entity name="AIPlasmaTurret" skip_export="true" copy_from="PlasmaTurret" range_multiplier_to_all_weapons="0.75" display_name="AI Plasma Great-Turret"
+    multiplier_to_all_costs="5" multiplier_to_all_healths="3" damage_multiplier_to_all_weapons="5" multiplier_to_all_fleet_caps="0.2" multiplier_to_all_scales="1"
+   >
+    <ai_ship_group_membership name="TurretTrapWormholeSentinels_Plasma" weight="100"/>
+    <ai_ship_group_membership name="AnyTurrets_FreeforAll" weight="1"/>
+    <ai_ship_group_membership name="PlasmaTurrets" weight="100"/>
+    <ai_ship_group_membership name="TutorialTurrets_FreeforAll" weight="1"/>
+    <ai_ship_group_membership name="PlasmaNucleophilicTurrets" weight="100"/>
+    <ai_ship_group_membership name="SeekerPlasmaTurrets" weight="100"/>
+    <ai_ship_group_membership name="BlasterMLRSPlasmaTurrets" weight="100"/>
+    <ai_ship_group_membership name="CounterSniperPlasmaTurrets" weight="100"/>
+    <ai_ship_group_membership name="SniperTurrets_CounterSniperPlasmaTurrets" weight="100"/>
+    <ai_ship_group_membership name="PlasmaSolarFlareTurrets" weight="100"/>	
+  </entity>
+
+  <entity name="EnsnarerPlasmaTurret" skip_export="true" copy_from="AIPlasmaTurret" display_name="Ensnarer AI Plasma Great-Turret" exp_to_grant_on_death="20">
+    <fleet_membership name="EnsnarerTurrets" ship_cap_group="Turret" weight="100" min="10" max="20"/>
+    <ai_ship_group_membership name="EnsnarerTurrets_FreeforAll" weight="100"/>
+	<ai_ship_group_membership name="EnsnarerPlasmaTurrets" weight="100"/>
+	<ai_ship_group_membership name="EnsnarerTurretTrapWormholeSentinels_Plasma" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerPlasmaNucleophilicTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerSeekerPlasmaTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerBlasterMLRSPlasmaTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerCounterSniperPlasmaTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerPlasmaSolarFlareTurrets" weight="100"/>		
+  	<system name="TractorBeam" display_name="Tractor Beam"
+				category="Passive"
+				tractor_range="Small5" tractor_count="20" tractor_count_added_per_mark="2" tractor_hits_albedo_less_than="0.5" tractor_hits_engine_gx_less_than="10"
+				>
+    </system>
+  </entity>
+  
+  <entity name="GhostPlasmaTurret" skip_export="true" copy_from="AIPlasmaTurret" display_name="Ghost AI Plasma Great-Turret" exp_to_grant_on_death="20">
+    <ai_ship_group_membership name="GhostTurrets_FreeforAll" weight="100"/>
+	<ai_ship_group_membership name="GhostPlasmaTurrets" weight="100"/>
+	<ai_ship_group_membership name="GhostTurretTrapWormholeSentinels_Plasma" weight="100"/>
+    <ai_ship_group_membership name="GhostPlasmaNucleophilicTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostSeekerPlasmaTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostBlasterMLRSPlasmaTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostCounterSniperPlasmaTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostPlasmaSolarFlareTurrets" weight="100"/>		
+	  <system name="Cloaker" display_name="Cloaking Device"
+				category="Passive" cloaking_points="2000" cloaking_points_added_per_mark="1000"
+				>
+    </system>
+  </entity>
+  
+  
+
+  <entity name="TritiumSniperTurret"		  
+			visuals="assets/_finalgamemeshes/turrets/sniperturret/sniperturret.prefab"
+			icon_name="Official/Turret" icon_overlay="Official/Turret_Sniper"
+			category="Ship" is_turret="true"
+			size_scale="0.85"
+			visuals_scale_multiplier="3.4"
+			collision_priority="1000"
+			display_name="Tritium Sniper Turret"
+			description="Conçu pour effacer les navires avec une faible protection contre les radiations à n'importe quelle distance."
+			behavior="Stationary"			
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Generalist,Turret"
+			build_sidebar_categories_i_am_part_of="Turrets" destroys_self_until_not_over_ship_cap_if_planetary_command="true"
+			cost_for_ai_to_purchase="53" strength_multiplier="1.8"				
+			hull_points="2700" shield_points="6750" speed="Immobile"
+			metal_cost="7500" energy_consumption="600"
+			armor_mm="80" albedo="0.45" mass_tx="2"
+			voice_group="Turret"
+			fleet_membership="Planetary"
+			ship_or_structure_explosion_sfx="Turret_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+      exp_to_grant_on_death="20"
+      priority_as_ai_target="NormalTurret" priority_as_frd_target="NormalTurret" priority_to_protect="Expendable"
+      multiplier_to_all_costs="5" multiplier_to_all_healths="5" damage_multiplier_to_all_weapons="5" multiplier_to_all_fleet_caps="0.2" multiplier_to_all_scales="2.5"
+			>
+    <fleet_membership name="AddedToCommandStation" ship_cap_group="Turret" weight="100" min="15" max="25"/>
+    <fleet_membership name="GeneralTurrets" ship_cap_group="Turret" weight="100" min="25" max="50"/>
+    <fleet_membership name="MonochromeTurrets" ship_cap_group="Turret" weight="100" min="60" max="120"/>
+	<fleet_membership name="OtherDefenseFocus" ship_cap_group="Turret" weight="100" min="20" max="40"/>
+    <metal_flow purpose="SelfConstruction" throughput="500"/>
+    <system name="TritiumRailcannon" display_name="Tritium Railcannon"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="138" range="EssentiallyInfinite" shot_speed="VeryFast" rate_of_fire="Normal" fires_salvos_sequentially="true"
+				shot_type_data="ExtremeLongRangeRailgun" cloaking_percent_loss_from_firing="0.1"
+				>
+        <outgoing_damage_modifier based_on="Albedo" comparison_type="AtMost" compared_to="0.3" multiplier="8" />    
+    </system>
+  </entity>  
+
+  <entity name="AITritiumSniperTurret" skip_export="true" copy_from="TritiumSniperTurret" range_multiplier_to_all_weapons="1" display_name="AI Tritium Sniper Great-Turret"
+    multiplier_to_all_costs="5" multiplier_to_all_healths="3" damage_multiplier_to_all_weapons="5" multiplier_to_all_fleet_caps="0.2" multiplier_to_all_scales="1"
+   >
+    <ai_ship_group_membership name="TritiumSniperTurrets" weight="100"/>
+    <ai_ship_group_membership name="InterceptorCounterSniperSpiderTritiumTurrets" weight="100"/>
+    <ai_ship_group_membership name="TritiumAblativeTurrets" weight="100"/>
+    <ai_ship_group_membership name="CounterSniperHoloceneTritiumTurrets" weight="100"/>	
+  </entity>
+  
+  <entity name="EnsnarerTritiumSniperTurret" skip_export="true" copy_from="AITritiumSniperTurret" display_name="Ensnarer AI Tritium Sniper Great-Turret" exp_to_grant_on_death="20">
+    <fleet_membership name="EnsnarerTurrets" ship_cap_group="Turret" weight="100" min="25" max="50"/>
+    <ai_ship_group_membership name="EnsnarerTurrets_FreeforAll" weight="100"/>
+	<ai_ship_group_membership name="EnsnarerTritiumSniperTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerInterceptorCounterSniperSpiderTritiumTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerTritiumAblativeTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerCounterSniperHoloceneTritiumTurrets" weight="100"/>	
+  	<system name="TractorBeam" display_name="Tractor Beam"
+				category="Passive"
+				tractor_range="Small5" tractor_count="20" tractor_count_added_per_mark="2" tractor_hits_albedo_less_than="0.5" tractor_hits_engine_gx_less_than="10"
+				>
+    </system>
+  </entity>
+  
+  <entity name="GhostTritiumSniperTurret" skip_export="true" copy_from="AITritiumSniperTurret" display_name="Ghost AI Tritium Sniper Great-Turret" exp_to_grant_on_death="20">
+    <ai_ship_group_membership name="GhostTurrets_FreeforAll" weight="100"/>
+	<ai_ship_group_membership name="GhostTritiumSniperTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostInterceptorCounterSniperSpiderTritiumTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostTritiumAblativeTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostCounterSniperHoloceneTritiumTurrets" weight="100"/>	
+	  <system name="Cloaker" display_name="Cloaking Device"
+				category="Passive" cloaking_points="2000" cloaking_points_added_per_mark="1000"
+				>
+    </system>
+  </entity>
+  
+  <entity name="SniperTritiumSniperTurret" copy_from="AITritiumSniperTurret" display_name="Sniper AI Tritium Sniper Great-Turret" strength_multiplier="0.8" exp_to_grant_on_death="20">
+    <ai_ship_group_membership name="SniperTurrets_FreeforAll" weight="100"/>
+    <ai_ship_group_membership name="SniperTurrets_InterceptorCounterSniperSpiderTritiumTurrets" weight="100"/>
+    <ai_ship_group_membership name="SniperTurrets_TritiumAblativeTurrets" weight="100"/>
+    <ai_ship_group_membership name="SniperTurrets_CounterSniperHoloceneTritiumTurrets" weight="100"/>	
+    <system name="TritiumRailcannon" damage_per_shot="184" />
+  </entity>
+  
+  
+  
+  <entity name="SpiderTurret"			  
+			visuals="assets/_finalgamemeshes/turrets/spiderturret/spiderturret.prefab"
+			icon_name="Official/Turret" icon_overlay="Official/Turret_Spider"
+			category="Ship" is_turret="true"
+			size_scale="0.63"
+			visuals_scale_multiplier="4.25"
+			collision_priority="1000"
+			display_name="Spider Turret"
+			description="Une variante de la tourelle de sniper; applique un effet lent aux navires hostiles."
+			behavior="Stationary"			
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Subterfuge,Turret"
+			build_sidebar_categories_i_am_part_of="Turrets" destroys_self_until_not_over_ship_cap_if_planetary_command="true"
+			cost_for_ai_to_purchase="67" strength_multiplier="2"				
+			hull_points="2700" shield_points="6750" speed="Immobile"
+			metal_cost="7500" energy_consumption="600"
+			armor_mm="80" albedo="0.45" mass_tx="2"
+			voice_group="Turret"
+			fleet_membership="Planetary"
+			ship_or_structure_explosion_sfx="Turret_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+      exp_to_grant_on_death="20"
+      priority_as_ai_target="NormalTurret" priority_as_frd_target="NormalTurret" priority_to_protect="Expendable"
+      multiplier_to_all_costs="5" multiplier_to_all_healths="5" damage_multiplier_to_all_weapons="5" multiplier_to_all_fleet_caps="0.2" multiplier_to_all_scales="2.5"
+			>
+    <fleet_membership name="AddedToCommandStation" ship_cap_group="Turret" weight="100" min="15" max="25"/>
+    <fleet_membership name="GeneralTurrets" ship_cap_group="Turret" weight="100" min="25" max="50"/>
+    <fleet_membership name="MonochromeTurrets" ship_cap_group="Turret" weight="100" min="60" max="120"/>
+	<fleet_membership name="OtherDefenseFocus" ship_cap_group="Turret" weight="100" min="20" max="40"/>
+    <metal_flow purpose="SelfConstruction" throughput="500"/>
+    <system name="SpiderCannon" display_name="Spider Cannon"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="30" range="EssentiallyInfinite" shot_speed="Normal" rate_of_fire="Normal" fires_salvos_sequentially="true"
+				base_engine_stun_per_shot="12" added_engine_stun_per_shot_per_mark="3" engine_stun_to_engine_gx_less_than="14"
+				max_engine_stun_seconds="30" added_target_evaluator="EngineDamageAsMajorPrimary"
+				shots_per_salvo="15"
+				shot_type_data="EngineDisruptingShell"
+				>
+    </system>
+  </entity>
+
+  <entity name="AISpiderTurret" skip_export="true" copy_from="SpiderTurret" range_multiplier_to_all_weapons="0.75" display_name="AI Spider Great-Turret"
+    multiplier_to_all_costs="5" multiplier_to_all_healths="3" damage_multiplier_to_all_weapons="5" multiplier_to_all_fleet_caps="0.2" multiplier_to_all_scales="1"
+   >
+    <ai_ship_group_membership name="TurretTrapWormholeSentinels_FreeforAll" weight="100"/>
+    <ai_ship_group_membership name="AnyTurrets_FreeforAll" weight="2"/>
+	<ai_ship_group_membership name="SpiderTurrets" weight="100"/>
+	<ai_ship_group_membership name="SpiderCounterSniperTurrets" weight="100"/>
+    <ai_ship_group_membership name="SpiderTranslocatorTurrets" weight="100"/>
+    <ai_ship_group_membership name="InterceptorCounterSniperSpiderTritiumTurrets" weight="100"/>
+    <ai_ship_group_membership name="InterceptorHoloceneSpiderTurrets" weight="100"/>	
+	    <system name="SpiderCannon" display_name="Spider Cannon"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="50" range="EssentiallyInfinite" shot_speed="Normal" rate_of_fire="Normal" fires_salvos_sequentially="true"
+				base_engine_stun_per_shot="12" added_engine_stun_per_shot_per_mark="3" engine_stun_to_engine_gx_less_than="14"
+				max_engine_stun_seconds="30" added_target_evaluator="EngineDamageAsMajorPrimary"
+				shots_per_salvo="3"
+				shot_type_data="EngineDisruptingShell" cloaking_percent_loss_from_firing="0.1"
+				>
+    </system>
+  </entity>
+
+  <entity name="MercSpiderTurret" skip_export="true" copy_from="SpiderTurret" starting_mark_level="Mark2" tags="MercTurret" exp_to_grant_on_death="-1">
+  </entity>
+  
+  <entity name="EnsnarerSpiderTurret" skip_export="true" copy_from="AISpiderTurret" display_name="Ensnarer AI Spider Great-Turret" exp_to_grant_on_death="20">
+    <fleet_membership name="EnsnarerTurrets" ship_cap_group="Turret" weight="100" min="25" max="50"/>
+    <ai_ship_group_membership name="EnsnarerTurrets_FreeforAll" weight="100"/>
+	<ai_ship_group_membership name="EnsnarerSpiderTurrets" weight="100"/>
+	<ai_ship_group_membership name="EnsnarerTurretTrapWormholeSentinels_FreeforAll" weight="100"/>
+	<ai_ship_group_membership name="EnsnarerSpiderCounterSniperTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerSpiderTranslocatorTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerInterceptorCounterSniperSpiderTritiumTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerInterceptorHoloceneSpiderTurrets" weight="100"/>	
+  	<system name="TractorBeam" display_name="Tractor Beam"
+				category="Passive"
+				tractor_range="Small5" tractor_count="20" tractor_count_added_per_mark="2" tractor_hits_albedo_less_than="0.5" tractor_hits_engine_gx_less_than="10"
+				>
+    </system>
+    <system name="SpiderCannon" display_name="Spider Cannon"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="50" range="EssentiallyInfinite" shot_speed="Normal" rate_of_fire="Normal" fires_salvos_sequentially="true"
+				base_engine_stun_per_shot="12" added_engine_stun_per_shot_per_mark="3" engine_stun_to_engine_gx_less_than="14"
+				max_engine_stun_seconds="30" added_target_evaluator="EngineDamageAsMajorPrimary"
+				shots_per_salvo="3"
+				shot_type_data="EngineDisruptingShell"
+				>
+    </system>	
+  </entity>
+  
+  <entity name="GhostSpiderTurret" skip_export="true" copy_from="AISpiderTurret" display_name="Ghost AI Spider Great-Turret" exp_to_grant_on_death="20">
+    <ai_ship_group_membership name="GhostTurrets_FreeforAll" weight="100"/>
+	<ai_ship_group_membership name="GhostSpiderTurrets" weight="100"/>
+	<ai_ship_group_membership name="GhostTurretTrapWormholeSentinels_FreeforAll" weight="100"/>
+	<ai_ship_group_membership name="GhostSpiderCounterSniperTurrets" weight="100"/>	
+    <ai_ship_group_membership name="GhostSpiderTranslocatorTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostInterceptorCounterSniperSpiderTritiumTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostInterceptorHoloceneSpiderTurrets" weight="100"/>	
+	  <system name="Cloaker" display_name="Cloaking Device"
+				category="Passive" cloaking_points="2000" cloaking_points_added_per_mark="1000"
+				>
+    </system>
+    <system name="SpiderCannon" display_name="Spider Cannon"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="50" range="EssentiallyInfinite" shot_speed="Normal" rate_of_fire="Normal" fires_salvos_sequentially="true"
+				base_engine_stun_per_shot="12" added_engine_stun_per_shot_per_mark="3" engine_stun_to_engine_gx_less_than="14"
+				max_engine_stun_seconds="30" added_target_evaluator="EngineDamageAsMajorPrimary"
+				shots_per_salvo="3"
+				shot_type_data="EngineDisruptingShell"
+				>
+    </system>	
+  </entity>
+  
+  <entity name="SniperSpiderTurret" copy_from="AISpiderTurret" display_name="Sniper AI Spider Great-Turret" strength_multiplier="0.8" exp_to_grant_on_death="20">
+    <ai_ship_group_membership name="SniperTurrets_FreeforAll" weight="3"/>
+    <ai_ship_group_membership name="SniperTurrets_SpiderCounterSniperTurrets" weight="100"/>		
+    <ai_ship_group_membership name="SniperTurrets_SpiderTranslocatorTurrets" weight="100"/>
+    <ai_ship_group_membership name="SniperTurrets_InterceptorCounterSniperSpiderTritiumTurrets" weight="100"/>
+    <ai_ship_group_membership name="SniperTurrets_InterceptorHoloceneSpiderTurrets" weight="100"/>	
+    <system name="SpiderCannon" display_name="Spider Cannon"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="100" range="EssentiallyInfinite" shot_speed="Normal" rate_of_fire="Normal" fires_salvos_sequentially="true"
+				base_engine_stun_per_shot="16" added_engine_stun_per_shot_per_mark="4" engine_stun_to_engine_gx_less_than="14"
+				max_engine_stun_seconds="40" added_target_evaluator="EngineDamageAsMajorPrimary"
+				shots_per_salvo="3"
+				shot_type_data="EngineDisruptingShell"
+				>
+    </system>
+  </entity>
+  
+  
+  
+  <entity name="BeamCannon"			  
+			visuals="assets/_finalgamemeshes/turrets/beamcannon/beamcannon.prefab"
+			icon_name="Official/MegaTurret" icon_overlay="Official/MegaTurret_Beam"
+			category="Ship" is_turret="true"
+			size_scale="3.06"
+			visuals_scale_multiplier="8.5"
+			collision_priority="1000"
+			display_name="Beam Cannon"
+			description="Tire une arme à faisceau très puissante qui endommage les ennemis en ligne."
+			behavior="Stationary"			
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Splash,Turret"
+			build_sidebar_categories_i_am_part_of="Turrets" destroys_self_until_not_over_ship_cap_if_planetary_command="true"
+			cost_for_ai_to_purchase="613" strength_multiplier="3"
+			hull_points="25000" shield_points="35000" speed="Immobile"
+			metal_cost="45000" energy_consumption="7500"
+			armor_mm="120" albedo="0.45" mass_tx="3"
+			voice_group="Turret"
+			fleet_membership="Planetary"
+			ship_or_structure_explosion_sfx="StructureSmall_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+      exp_to_grant_on_death="20"
+      priority_as_ai_target="NormalTurret" priority_as_frd_target="NormalTurret" priority_to_protect="Expendable"
+      multiplier_to_all_costs="5" multiplier_to_all_healths="5" damage_multiplier_to_all_weapons="5" multiplier_to_all_fleet_caps="0.2" multiplier_to_all_scales="1.7"
+			>
+    <fleet_membership name="AddedToCommandStation" ship_cap_group="Turret" weight="100" min="5" max="5"/>
+    <fleet_membership name="GeneralTurrets" ship_cap_group="Turret" weight="100" min="5" max="10"/>
+    <fleet_membership name="MonochromeTurrets" ship_cap_group="Turret" weight="100" min="10" max="30"/>
+	<fleet_membership name="OtherDefenseFocus" ship_cap_group="Turret" weight="100" min="5" max="10"/>
+    <fleet_membership name="PlayerMilitaryCommand" ship_cap_group="Turret" weight="100" min="5" max="5"/>
+    <metal_flow purpose="SelfConstruction" throughput="1500"/>
+    <system name="HeavyBeamCannon" display_name="Heavy Beam Cannon"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="775" range="AboveAverage4" shot_speed="Normal" rate_of_fire="High"
+				stack_damage_multiplier="1.5"
+				shot_type_data="HeavyBeamInvisible"
+				beam_length_multiplier="1.3"
+				hits_all_intersecting_targets="true"				
+				shots_detonate_immediately="true"
+				maximum_number_of_targets_hit_per_shot="10" cloaking_percent_loss_from_firing="0.1"
+				>
+    </system>
+  </entity>
+
+  <entity name="AIBeamCannon" skip_export="true" copy_from="BeamCannon" range_multiplier_to_all_weapons="0.75" display_name="AI Beam Great-Cannon"
+    multiplier_to_all_costs="5" multiplier_to_all_healths="3" multiplier_to_all_fleet_caps="0.2" multiplier_to_all_scales="1"
+   >
+    <ai_ship_group_membership name="TurretTrapWormholeSentinels_Plasma" weight="20"/>
+    <ai_ship_group_membership name="SniperTurrets_FreeforAll" weight="3"/>
+    <ai_ship_group_membership name="AnyTurrets_FreeforAll" weight="1"/>
+    <ai_ship_group_membership name="BeamCannonTurrets" weight="100"/>
+    <ai_ship_group_membership name="BeamCannonSolarFlareTurrets" weight="100"/>
+    <ai_ship_group_membership name="GeminiBeamCannonTurrets" weight="100"/>		
+  </entity>
+
+  <entity name="MarauderBeamCannon" skip_export="true" copy_from="AIBeamCannon" display_name="Marauder Beam Cannon" starting_mark_level="Mark3" exp_to_grant_on_death="-1"
+    multiplier_to_all_costs="1" multiplier_to_all_healths="1" damage_multiplier_to_all_weapons="1" multiplier_to_all_fleet_caps="1" multiplier_to_all_scales="1"> <!-- No longer spawned by them. !-->   
+  </entity>
+  
+  <entity name="EnsnarerBeamCannon" skip_export="true" copy_from="AIBeamCannon" display_name="Ensnarer AI Beam Great-Cannon" exp_to_grant_on_death="20">
+    <fleet_membership name="EnsnarerTurrets" ship_cap_group="Turret" weight="100" min="10" max="20"/>
+    <ai_ship_group_membership name="EnsnarerTurrets_FreeforAll" weight="100"/>
+	<ai_ship_group_membership name="EnsnarerBeamCannonTurrets" weight="100"/>
+	<ai_ship_group_membership name="EnsnarerTurretTrapWormholeSentinels_Plasma" weight="20"/>
+    <ai_ship_group_membership name="EnsnarerBeamCannonSolarFlareTurrets" weight="100"/>
+    <ai_ship_group_membership name="EnsnarerGeminiBeamCannonTurrets" weight="100"/>	
+  	<system name="TractorBeam" display_name="Tractor Beam"
+				category="Passive"
+				tractor_range="Small5" tractor_count="20" tractor_count_added_per_mark="2" tractor_hits_albedo_less_than="0.5" tractor_hits_engine_gx_less_than="10"
+				>
+    </system>
+  </entity>
+  
+  <entity name="GhostBeamCannon" skip_export="true" copy_from="AIBeamCannon" display_name="Ghost AI Beam Great-Cannon" exp_to_grant_on_death="20">
+    <ai_ship_group_membership name="GhostTurrets_FreeforAll" weight="100"/>
+	<ai_ship_group_membership name="GhostBeamCannonTurrets" weight="100"/>
+	<ai_ship_group_membership name="GhostTurretTrapWormholeSentinels_Plasma" weight="20"/>
+    <ai_ship_group_membership name="GhostBeamCannonSolarFlareTurrets" weight="100"/>
+    <ai_ship_group_membership name="GhostGeminiBeamCannonTurrets" weight="100"/>	
+	  <system name="Cloaker" display_name="Cloaking Device"
+				category="Passive" cloaking_points="2000" cloaking_points_added_per_mark="1000"
+				>
+    </system>
+  </entity>
+  
+</root>

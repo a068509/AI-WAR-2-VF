@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<item name="Immobile" speed="0" />
+  <item name="AlmostNone" speed="80" />
+  <item name="VeryVeryLittle1" speed="150" />
+  <item name="VeryVeryLittle2" speed="200" />
+  <item name="VeryVeryLittle3" speed="250" />
+  <item name="VeryVeryLittle4" speed="300" />
+  <item name="BelowAverage1" speed="400" />
+  <item name="BelowAverage2" speed="500" />
+  <item name="Normal1" speed="600" />
+  <item name="Normal2" speed="700" />
+  <item name="Normal3" speed="800" />
+  <item name="AboveAverage1" speed="1000" />
+  <item name="AboveAverage2" speed="1100" />
+  <item name="AboveAverage3" speed="1200" />
+  <item name="AboveAverage4" speed="1400" />
+  <item name="AboveAverage5" speed="1600" />
+  <item name="AboveAverage6" speed="1800" />
+  <item name="High" speed="2200" />
+  <item name="VeryHigh1" speed="2900" />
+  <item name="VeryHigh2" speed="3100" />
+  <item name="ExtremelyHigh1" speed="4000" />
+  <item name="ExtremelyHigh2" speed="5000" />
+</root>

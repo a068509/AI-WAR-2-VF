@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!--<map_type name="D18Mesh"
+              display_name="Mesh"
+              description="Kinda broken. Don't use. Not very good results anyway. :("
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.Mapgen_D18_Mesh"
+	>
+	</map_type>-->
+	<map_type name="D18Rings"
+              display_name="Linked Rings"
+              description="Generates rings that are themselves generated on rings that are themselves generated on rings."
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.Mapgen_D18_LinkedRings"
+              min_planets="10"
+              max_planets="300"
+	>
+	</map_type>
+	<map_type name="D18Swirl"
+              display_name="Swirl"
+              description="Planets are arranged in concentric elipsoid rings with connections based on proximity. Similar to Concentric."
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.Mapgen_D18_Ellipses"
+              author_line="Credit to Draco18s"
+              min_planets="10"
+              max_planets="300"
+	      >
+          
+	</map_type>
+	<map_type name="D18Bubbles"
+              display_name="Bubbles"
+              description="Kind of looks like soap bubbles. Rings clustered near each other with connections to neighboring rings."
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.Mapgen_D18_Bubbles"
+              min_planets="10"
+              max_planets="300"
+	>
+	</map_type>
+	<!--<map_type name="D18Density Map"
+              display_name="Density Map"
+              description="Generates a map based on a bmp. Works best at 60+ planets"
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.Mapgen_D18_DensityFile"
+              author_line="Credit to Draco18s"
+	>
+		<notes>
+			Reads GameData\Configuration\MapType\map.bmp for additional data.
+			
+			Bitmap data is read in as an array of bytes where Value represents
+			density (how likely a planet can be added there) and color represents
+			connectivity regions. Planets will only connect up with planets in
+			the same region excepting cross-regional boundaries added by MST.
+			
+			Bitmaps must be saved in 24 bit RGB mode (R8 G8 B8) or the data will
+			not be read correctly (inability to use the System.Drawing package)
+			and be no bigger than 65536 x 65536 pixels (largely a non-issue) although
+			practical maximum size is 600 x 600.
+		</notes>
+	</map_type>-->
+</root>

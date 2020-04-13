@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<chamber name="Example">		
+		<!-- Note: the game will run without an Ark on the planet, but the view will start on the galaxy map -->
+		<!--
+
+    <spawn entity="HumanHomeCommandStation" mark_level="1" faction_name="FirstPlayer" x="-3333" y="1669" />
+    
+    Valid factions:
+      NaturalObject
+      FirstPlayer
+      AI
+      AIWardenFleet
+      AIHunterFleet
+      PraetorianGuard
+      AntiAIZombie (this is allied to you, so your stuff won't shoot it)
+      AntiPlayerZombie
+      AntiEveryoneZombie
+		-->
+
+
+                <spawn entity="Abomination" mark_level="1" faction_name="FirstPlayer" x="-1333" y="1669" />
+                <spawn entity="DevourerGolem" mark_level="1" faction_name="FirstPlayer" x="-1333" y="-4669" />
+<!--        
+        <spawn entity="ArmoredGolem" mark_level="1" faction_name="AI" x="-2400" y="400" />
+        <spawn entity="ArtilleryGolem" mark_level="1" faction_name="AI" x="-2400" y="400" />
+        <spawn entity="CursedGolem" mark_level="1" faction_name="AI" x="-2400" y="400" />
+        <spawn entity="RegeneratorGolem" mark_level="1" faction_name="AI" x="-4400" y="400" />
+
+        <spawn entity="BlackWidowGolem" mark_level="1" faction_name="AI" x="-2400" y="400" />
+        <spawn entity="BotnetGolem" mark_level="1" faction_name="AI" x="-2400" y="400" />
+        <spawn entity="HiveGolem" mark_level="1" faction_name="AI" x="-2400" y="400" />
+-->
+<spawn entity="DarkSpireSpecter" mark_level="1" faction_name="FirstPlayer" x="2400" y="400" />
+<spawn entity="DarkSpireEidolon" mark_level="1" faction_name="FirstPlayer" x="2400" y="400" />
+<spawn entity="DarkSpireWraith" mark_level="1" faction_name="FirstPlayer" x="-400" y="400" />
+<spawn entity="DarkSpirePhantom" mark_level="1" faction_name="FirstPlayer" x="2400" y="400" />
+<spawn entity="VWing" mark_level="5" faction_name="AI" x="-4400" y="400" />
+<spawn entity="VWing" mark_level="5" faction_name="AI" x="-4400" y="400" />
+<spawn entity="VWing" mark_level="5" faction_name="AI" x="-4400" y="400" />
+
+    <!--
+    <spawn entity="NeedlerGuardian" mark_level="1" faction_name="FirstPlayer" x="700" y="700" />
+    <spawn entity="NeedlerGuardian" mark_level="2" faction_name="FirstPlayer" x="700" y="700" />
+    <spawn entity="NeedlerGuardian" mark_level="3" faction_name="FirstPlayer" x="700" y="700" />
+    <spawn entity="NeedlerGuardian" mark_level="4" faction_name="FirstPlayer" x="700" y="700" />
+    <spawn entity="NeedlerGuardian" mark_level="5" faction_name="FirstPlayer" x="700" y="700" />
+    -->
+	</chamber>
+</root>

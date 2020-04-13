@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--More documentation: https://docs.unity3d.com/Manual/class-AudioSource.html-->
+  
+  <!--2D (non-spatial) buses)-->
+  <bus name="InterfaceGeneral" max_voice_count="4" spatial_blend="0"
+       min_distance="500" max_distance="10000" doppler_level="0" />
+  <bus name="VoiceRoutine" max_voice_count="7" spatial_blend="0"
+       min_distance="500" max_distance="10000" doppler_level="0" />
+  <bus name="VoiceAI" max_voice_count="1" spatial_blend="0"
+       min_distance="500" max_distance="10000" doppler_level="0" />
+  <bus name="Alert" max_voice_count="1" spatial_blend="0"
+       min_distance="500" max_distance="10000" doppler_level="0" />
+  <bus name="DeathsOtherPlanets" max_voice_count="16" spatial_blend="0"
+       min_distance="500" max_distance="10000" doppler_level="0" />
+  <bus name="DeathsOtherPlanetsMinor" max_voice_count="16" spatial_blend="0"
+       min_distance="500" max_distance="10000" doppler_level="0" />
+
+  <!--3D (spatial) buses)-->
+  <bus name="DeathsRoutine" max_voice_count="16" spatial_blend="1"
+       min_distance="500" max_distance="8000" doppler_level="0" />
+  <bus name="DeathsSubstantial" max_voice_count="5" spatial_blend="1"
+       min_distance="500" max_distance="8000" doppler_level="0" />
+  <bus name="DeathsCritical" max_voice_count="5" spatial_blend="1"
+       min_distance="500" max_distance="8000" doppler_level="0" />
+  <bus name="WeaponsFiring" max_voice_count="40" spatial_blend="1"
+       min_distance="500" max_distance="5000" doppler_level="0" />
+  <bus name="WeaponsHitting" max_voice_count="20"  spatial_blend="1"
+       min_distance="500" max_distance="6000" doppler_level="0" />
+  <bus name="Other" max_voice_count="20" spatial_blend="1"
+       min_distance="500" max_distance="6000" doppler_level="0" />
+</root>

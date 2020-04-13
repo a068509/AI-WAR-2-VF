@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <tutorial category="Basics" name="BasicBasicsScoutingVision" display_name="Tutorial 5 - Basics of Scouting And Vision" sort_priority="5"
+        description="Les bases de la détection de la galaxie, le suivi des mouvements ennemis ainsi que l'onglet Intel." scenario="AftermathOfLosingTheAIWar"
+        do_not_serialize_setup_to_or_from_settings="true"
+        skip_determine_ai_ownership="true" skip_determine_ai_homeworlds="true" skip_assign_player_homeworlds="true"
+        force_map_type="Tutorial_01" force_map_seed="123456" skip_seed_special_entities="true"
+        skip_all_galaxy_wide_capturables_and_obstacles="true" skip_warden_bases="true"
+        debug_all_step_text_on_load="false"
+   >
+    <!--Setup for factions
+        *************************************-->
+    <!--You name any that you add beyond the built-in ones, or the following ones are built in:
+        NaturalObject - owned by nobody
+        AI - main AI
+        FirstPlayer - presumably the only player, given this is a tutorial.
+        PlayerBeyondTheFirst - any and all other players.
+        AIWardenFleet - warden fleet of the main AI.
+        AIHunterFleet - hunter fleet of the main AI.
+        AntiAIZombie, AntiPlayerZombie, AntagonizedDysonSphere - all just kind of plumbing stuff.
+        Instigators - the AI instigators.
+        Mercenary - the outguard, if there are any that seed, etc. -->
+    <faction_initial_setup name="FirstPlayer" starting_planet_index="0"/>
+    <faction_initial_setup name="PlayerBeyondTheFirst" do_not_add_faction="true"/>
+    <faction_initial_setup name="Instigators" do_not_add_faction="true"/>
+    <faction_initial_setup name="Mercenary" do_not_add_faction="true"/>
+    <faction_initial_setup name="AI">
+        <custom_field key="AIType" val="Tutorial_01"/>
+    </faction_initial_setup>
+	<faction_initial_setup name="WardenFleet" do_not_add_faction="true"/>
+	<faction_initial_setup name="HunterFleet" do_not_add_faction="true"/>
+	
+
+    <!--Setup for planet topography
+        *************************************-->
+    <!--Note that these tutorial planets allow you to define planets manually.  This ONLY works with the Tutorial_01 map type.
+        If you want to have a tutorial in a regular other map type of some other sort, you can do so, but these won't be read in in terms of placement and names.-->
+    <tutorial_planet name="Murdoch" x="0" y="0">
+	  <link name="Aalst"/>
+      <link name="Abiteboul"/>
+	  <link name="Agrawal"/>
+    </tutorial_planet>
+	
+    <tutorial_planet name="Aalst" x="-75" y="150"/>
+	<tutorial_planet name="Abiteboul" x="0" y="150"/>
+	<tutorial_planet name="Agrawal" x="75" y="150"/>
+	
+    <tutorial_planet name="Backus" x="-150" y="225">
+	  <link name="Aalst"/>
+    </tutorial_planet>	
+	<tutorial_planet name="Bader" x="0" y="225">
+	  <link name="Abiteboul"/>
+	</tutorial_planet>  
+	<tutorial_planet name="Bahl" x="150" y="225">
+	  <link name="Agrawal"/>
+	</tutorial_planet>
+
+    <tutorial_planet name="Candlin" x="-150" y="300">
+	  <link name="Backus"/>
+    </tutorial_planet>	
+	<tutorial_planet name="Cantrill" x="0" y="300">
+	  <link name="Bader"/>
+	</tutorial_planet>  
+	<tutorial_planet name="Cardelli" x="150" y="300">
+	  <link name="Bahl"/>
+	</tutorial_planet>	
+
+    <tutorial_planet name="Dahl" x="-150" y="375">
+	  <link name="Candlin"/>
+    </tutorial_planet>	
+	<tutorial_planet name="Dam" x="0" y="375">
+	  <link name="Cantrill"/>
+	</tutorial_planet>  
+	<tutorial_planet name="Das" x="150" y="375">
+	  <link name="Cardelli"/>
+	</tutorial_planet>	
+	
+    <tutorial_planet name="Eades" x="-75" y="450">
+	  <link name="Dahl"/>
+    </tutorial_planet>	
+	<tutorial_planet name="Easley" x="0" y="450">
+	  <link name="Dam"/>
+	</tutorial_planet>  
+	<tutorial_planet name="Eckert" x="75" y="450">
+	  <link name="Das"/>
+	</tutorial_planet>
+
+    <tutorial_planet name="Fahlman" x="0" y="600">
+	  <link name="Eades"/>
+      <link name="Easley"/>
+	  <link name="Eckert"/>
+    </tutorial_planet>	
+	
+	
+	
+	
+	
+	
+
+	 
+	  
+
+
+
+
+    <!--Setup for planet ownership, etc
+        *************************************-->
+    <!--Note that these work for even non-manually-created maps.  Ownerships are either whatever you named the factions above, 
+        or are the built-in ones noted above.  You can match planets based on their added-index or their name.-->
+    <planet_ownership_and_spawning match_index="0" linked_faction_name="FirstPlayer" is_homeworld="true"
+          command_station_point="200,1000" skip_player_home_forcefield="false" skip_player_home_engineers="false"
+          skip_player_home_factory="false" skip_player_home_human_settlement="false" skip_player_home_human_cryogenic_pods="false"
+          skip_player_home_initial_combat_fleet="false" skip_player_home_initial_battlestation="false" skip_player_home_initial_support_fleet="false"
+          initial_combat_fleet="ClassicStartingFleet" initial_battlestation_fleet="ClassicStartingDefenses" initial_support_fleet=""
+          number_of_metal_spots="4" >
+    </planet_ownership_and_spawning>
+    <planet_ownership_and_spawning match_name="Aalst" linked_faction_name="AI" mark_level_index="1" number_of_metal_spots="5"
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="false" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="false">
+			<ship_placement faction="NaturalObject" type="GlobalCommandAugmenter" placement_point="1000,1000"/>
+	</planet_ownership_and_spawning>
+	
+    <planet_ownership_and_spawning match_name="Abiteboul" linked_faction_name="AI" mark_level_index="1" number_of_metal_spots="5"
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="false" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="false">
+			<ship_placement faction="NaturalObject" type="TransportFlagship_Base" placement_point="1000,1000"/>
+	</planet_ownership_and_spawning>
+
+    <planet_ownership_and_spawning match_name="Agrawal" linked_faction_name="AI" mark_level_index="1" number_of_metal_spots="5"
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="false" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="false">
+	</planet_ownership_and_spawning>
+
+    <planet_ownership_and_spawning match_name="Backus" linked_faction_name="AI" mark_level_index="2" number_of_metal_spots="5"
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="false" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="false">
+	</planet_ownership_and_spawning>
+	
+    <planet_ownership_and_spawning match_name="Bader" linked_faction_name="AI" mark_level_index="2" number_of_metal_spots="5"
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="false" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="false">
+	</planet_ownership_and_spawning>
+
+    <planet_ownership_and_spawning match_name="Bahl" linked_faction_name="AI" mark_level_index="2" number_of_metal_spots="5"
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="false" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="false">
+	</planet_ownership_and_spawning>
+
+    <planet_ownership_and_spawning match_name="Candlin" linked_faction_name="AI" mark_level_index="3" number_of_metal_spots="5"
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="false" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="false">
+	</planet_ownership_and_spawning>
+	
+    <planet_ownership_and_spawning match_name="Cantrill" linked_faction_name="AI" mark_level_index="3" number_of_metal_spots="5"
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="false" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="false">
+			<ship_placement faction="NaturalObject" type="AdvancedResearchStation" placement_point="1000,1000"/>
+	</planet_ownership_and_spawning>
+
+    <planet_ownership_and_spawning match_name="Cardelli" linked_faction_name="AI" mark_level_index="3" number_of_metal_spots="5"
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="false" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="false">
+			<ship_placement faction="NaturalObject" type="IntraGalacticCoordinatorStrikeCraft" placement_point="1000,1000"/>
+	</planet_ownership_and_spawning>
+
+    <planet_ownership_and_spawning match_name="Dahl" linked_faction_name="AI" mark_level_index="3" number_of_metal_spots="5"
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="false" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="false">
+	</planet_ownership_and_spawning>
+	
+    <planet_ownership_and_spawning match_name="Das" linked_faction_name="AI" mark_level_index="3" number_of_metal_spots="5"
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="false" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="false">
+	</planet_ownership_and_spawning>
+
+    <planet_ownership_and_spawning match_name="Dam" linked_faction_name="AI" mark_level_index="3" number_of_metal_spots="5"
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="false" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="false">
+	</planet_ownership_and_spawning>	
+			
+    <planet_ownership_and_spawning match_name="Eades" linked_faction_name="AI" mark_level_index="3" number_of_metal_spots="5"
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="false" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="false">
+	</planet_ownership_and_spawning>
+	
+    <planet_ownership_and_spawning match_name="Easley" linked_faction_name="AI" mark_level_index="3" number_of_metal_spots="5"
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="false" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="false">
+	</planet_ownership_and_spawning>
+
+    <planet_ownership_and_spawning match_name="Eckert" linked_faction_name="AI" mark_level_index="3" number_of_metal_spots="5"
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="false" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="false">
+	</planet_ownership_and_spawning> 
+
+    <planet_ownership_and_spawning match_name="Fahlman" linked_faction_name="AI" mark_level_index="5" is_homeworld="true" number_of_metal_spots="8"
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="false" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="false">
+	</planet_ownership_and_spawning> 	
+
+    <!--Actual steps of the tutorial itself!
+    
+      For informaton about the conditions that you can use, and how to use them, 
+      please see this wiki page: https://wiki.arcengames.com/index.php?title=AI_War_2:_Tutorial_Step_Conditions
+      *************************************-->
+    <tutorial_step text_to_show="Bienvenue dans le cinquième didacticiel de AI War 2. Celui-ci couvre le dépistage dans la galaxie pour découvrir ce qui existe, les différents types de vision et l'onglet Intel.
+
+Tout d'abord, dirigez-vous vers la carte de la galaxie.">
+      <condition type="PlayerViewIsOnGalaxyMap"/>
+    </tutorial_step>
+	
+    <tutorial_step text_to_show="Quelque chose qui n'a pas du tout été pertinent est le concept de planètes explorées, surveillées et surveillées en permanence.
+
+Jetez un œil aux planètes adjacentes à notre monde natal. Si vous passez la souris dessus, l'info-bulle indiquera Surveillance permanente, et si nous regardons la vue de la planète, nous pouvons tout voir ici en temps réel.
+
+Surveillé en permanence signifie que nous aurons toujours des informations à jour sur ce qui se passe ici pour toujours, s'il y a une bataille, une menace effrayante à laquelle nous devons faire face, peu importe. Les planètes à côté de notre monde d'origine sont toujours surveillées en permanence dans n'importe quel jeu.
+
+Si vous n'y êtes plus, rendez-vous sur la carte de la galaxie.
+
+&lt;color=#999999&gt;Conseil supplémentaire: les nombres à côté des planètes représentent &lt;color=#FFB74B&gt;strength&lt;/color&gt; des forces là-bas, y compris vos forces mobiles (en haut à gauche) et immobiles (en bas à gauche), et la garde ennemie (en haut à droite) et la menace agressive (en bas à droite). Vous pouvez lire l'infobulle de la planète pour en savoir plus.&lt;/color&gt;">
+      <condition type="PlayerViewIsOnGalaxyMap"/>
+    </tutorial_step>
+
+    <tutorial_step text_to_show="Regardons maintenant les planètes un peu plus loin. Le survol de l'info-bulle de ces derniers nous indique qu'ils sont explorés. Regarder la vue de la planète nous donne ce qui semble être encore une vue en temps réel, si granuleuse.
+
+La principale différence ici est que nous ne pouvons voir que des choses que nous avons repérées ici dans le passé. Nous savons qu'ils sont toujours là, et pouvons donc les suivre, mais dès qu'ils quittent la planète, nous n'avons aucune idée où ils se trouvent. De même, nous ne savons pas s'il y a de nouveaux arrivants.
+
+Semblable aux planètes surveillées en permanence près de notre monde natal, toutes les planètes qui sont à 2 connexions ou `` sauts '' de notre monde natal commencent comme explorées.
+
+C'est le bon moment pour mentionner Watched. Si nous avons une unité sur une planète qui est normalement explorée, elle devient surveillée. Pendant que nos unités sont là, nous pouvons tout voir à jour, tout comme en permanence, au moins jusqu'à ce que l'unité meure ou quitte. Une source supplémentaire de cela est les stations logistiques, qui surveillent toutes les planètes adjacentes.
+
+Encore une fois, si vous n'y êtes pas, rendez-vous sur la carte de la galaxie.
+
+&lt;color=#999999&gt;Conseil supplémentaire: si une planète n'est explorée que &lt;color=#FFB74B&gt;strength&lt;/color&gt; les nombres mentionnés plus haut auront un? à côté d'eux, et l'icône de la planète aura un tiret en elle.&lt;/color&gt;">
+      <condition type="PlayerViewIsOnGalaxyMap"/>
+    </tutorial_step>
+
+    <tutorial_step text_to_show="Les planètes plus éloignées que celles explorées sont inexplorées. Nous n'avons absolument aucune idée de ce qui se trouve ici, le cas échéant. Regarder la vue de la planète nous donne une image très déformée - peu utile.
+
+Une partie critique de ce statut est que nos unités ne peuvent même pas aller sur ces planètes - nous sommes essentiellement bloqués. Faisons quelque chose à ce sujet!
+
+Notre flotte de départ aurait dû construire pendant cette période. Dirigez-vous vers la planète {c1.PlanetName} et détruisez la station de commande là-bas.
+
+Certaines informations apparaîtront au bas de cette fenêtre lorsque vous le ferez.">
+      <condition type="EnemyShipsOfSpecialEntityOnPlanetLessThanOrEqualTo" planet_by_name="Aalst" special_entity_type="AICommandStationOriginal" count="0"/>
+    </tutorial_step>	
+
+    <tutorial_step text_to_show="Vous avez peut-être vu la mention de planètes explorées. Cela a été causé par la destruction de la station de commande AI, et c'est ainsi que nous révélons généralement la galaxie.
+
+Faire cela fait qu'un certain nombre de planètes inexplorées, directement adjacentes aux planètes déjà explorées, deviennent explorées. Ainsi, en prenant du territoire et en capturant des choses, nos informations se développent progressivement au fil du temps.
+
+Maintenant, quelques-unes des planètes inexplorées sur lesquelles nous ne pouvions rien voir sont révélées.
+
+Hmm, comment créer une planète surveillée en permanence? Pour cela, rendez-vous sur {c1.PlanetName} et ouvrez le &lt;color=#3DE799&gt;Hacks&lt;/color&gt; tab.">
+      <condition type="PlayerViewIsOnSpecificPlanet" planet_by_name="Backus"/>
+	  <condition type="PlayerHasSidebarMenuOpen_Hacking"/>
+    </tutorial_step>
+	
+    <tutorial_step text_to_show="Ici, nous avons la possibilité de faire un &lt;color=#3DE799&gt;Regarder Planet Hack&lt;/color&gt; sur cette planète. contrairement à la plupart &lt;color=#3DE799&gt;Hacks&lt;/color&gt;, cela peut être fait sans la présence d'un vaisseau amiral, ni même de nos unités.
+
+Cela ne peut être fait que sur une planète explorée et rendra cette planète surveillée en permanence.
+
+Do so now.">
+      <condition type="PlanetIsPermanentlyWatched" planet_by_name="Backus"/>
+    </tutorial_step>
+
+    <tutorial_step text_to_show="Maintenant, nous aurons toujours des informations à jour ici, et les deux? sur les chiffres et le tiret dans l'icône ont disparu. Essayons maintenant l'autre similaire&lt;color=#3DE799&gt;Hack&lt;/color&gt;, utilisé pour explorer les planètes.
+
+Il s'agit d'une alternative à la destruction des postes de commande AI. Cela ne peut être fait que sur des planètes inexplorées adjacentes à Explored, d'une manière similaire à la destruction des stations.
+
+Try it on the planet {c1.PlanetName}.">
+      <condition type="PlanetHasBeenExplored" planet_by_name="Dahl"/>
+    </tutorial_step>
+
+    <tutorial_step text_to_show="Nous allons maintenant jeter un œil à un onglet utile pour savoir quand sur la carte de la galaxie.
+
+Ouvrez l'onglet Intel.
+
+&lt;color=#999999&gt;Astuce supplémentaire: raccourci clavier pour cela est tout simplement moi.&lt;/color&gt;">
+      <condition type="PlayerHasSidebarMenuOpen_Intel"/>
+    </tutorial_step>
+
+    <tutorial_step text_to_show="Nous avons ici une liste de choses que nous connaissons, regroupées en catégories telles que les objectifs principaux, les tourelles, les nouvelles flottes, la collecte de ressources et les conseils pour les débutants.
+
+Ces choses incluent des capturables importants pour nous comme une nouvelle flotte, ou des choses comme la technologie extraterrestre. Sont également inclus des cibles IA importantes, telles que l'Overlord - leur version du roi.
+
+Enfin, cela note tous les bits de&lt;color=#7CE9FF&gt;Science&lt;/color&gt; ou &lt;color=#3DE799&gt;Hacking&lt;/color&gt; 
+les points qu'il vous reste à collecter, ainsi que quelques conseils sur les choses à faire.
+
+En général, c'est un bon onglet à regarder si vous avez besoin de planifier, ou si vous êtes un peu perdu quant à quoi faire. Comme de nombreux autres onglets, survoler les éléments ici vous donnera plus d'informations et, le cas échéant, mettra en évidence l'élément auquel il est fait référence sur la carte de la galaxie.
+
+Notez que vous pouvez définir des priorités sur différents objectifs dans la barre latérale Intel qui seront reflétés sur la carte de la galaxie.
+
+Actuellement, cela conclut les didacticiels de base. J'espère que vous devriez en savoir suffisamment maintenant pour pouvoir faire le premier démarrage rapide de base et faire un bon voyage. Si vous voulez beaucoup plus d'informations, il y a la zone How To Play, accessible depuis le menu ESC ou le menu principal.
+
+&lt;color=#999999&gt;Astuce supplémentaire: pour des choses comme des capturables ou des cibles ennemies, le survol de cette entrée donnera une estimation approximative de la difficulté / de la difficulté à y arriver.&lt;/color&gt;">
+    </tutorial_step>	
+	
+  </tutorial>	
+	
+
+</root>

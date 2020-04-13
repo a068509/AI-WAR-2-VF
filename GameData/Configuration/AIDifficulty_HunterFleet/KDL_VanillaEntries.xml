@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <record name="Difficulty_1"
+       display_name="Difficulty 1"
+       hunter_fleet_starting_strength_in_budget_seconds="1"
+       bonusIncomePerMinute="0.0"
+       overconfidence_ratio="4.0"
+       difficulty="1"
+       can_use_dire_guardians="false"
+       can_wait_for_reinforcements="false"
+  >
+  </record>
+  <record name="Difficulty_2"
+       display_name="Difficulty 2"
+       hunter_fleet_starting_strength_in_budget_seconds="2"
+       bonusIncomePerMinute="0.0"
+       overconfidence_ratio="2.5"
+       difficulty="2"
+       can_use_dire_guardians="false"
+       can_wait_for_reinforcements="false"
+  >
+  </record>
+  <record name="Difficulty_3"
+       display_name="Difficulty 3"
+       hunter_fleet_starting_strength_in_budget_seconds="3"
+       bonusIncomePerMinute="0.0"
+       overconfidence_ratio="2.0"
+       difficulty="3"
+       can_use_dire_guardians="false"
+       can_wait_for_reinforcements="false"
+  >
+  </record>
+  <record name="Difficulty_4"
+       display_name="Difficulty 4"
+       hunter_fleet_starting_strength_in_budget_seconds="4"
+       bonusIncomePerMinute="0.0"
+       overconfidence_ratio="1.5"
+       difficulty="4"
+       can_use_dire_guardians="false"
+       can_wait_for_reinforcements="false"
+       >
+  </record>
+  <record name="Normal"
+       display_name="Difficulty 5"
+       is_default="true"
+       hunter_fleet_starting_strength_in_budget_seconds="100"
+       bonusIncomePerMinute="0.0"
+       overconfidence_ratio="1.4"
+       difficulty="5"
+       can_use_dire_guardians="false"
+       can_wait_for_reinforcements="false"
+  >
+  </record>
+  <record name="Difficulty_6"
+       display_name="Difficulty 6"
+       hunter_fleet_starting_strength_in_budget_seconds="200"
+       bonusIncomePerMinute="0.0"
+       overconfidence_ratio="1.1"
+       difficulty="6"
+       can_use_dire_guardians="false"
+       can_wait_for_reinforcements="true"
+  >
+  </record>
+  <record name="Difficulty_7"
+       display_name="Difficulty 7"
+       hunter_fleet_starting_strength_in_budget_seconds="400"
+       bonusIncomePerMinute="3.0"
+       overconfidence_ratio="1.0"
+       difficulty="7"
+       can_use_dire_guardians="true"
+       aip_for_dire_unlock="300"
+       can_wait_for_reinforcements="true"
+  >
+  </record>
+  <record name="Difficulty_8"
+       display_name="Difficulty 8"
+       hunter_fleet_starting_strength_in_budget_seconds="600"
+       bonusIncomePerMinute="5.25"
+       overconfidence_ratio="1.0"
+       difficulty="8"
+       can_use_dire_guardians="true"
+       aip_for_dire_unlock="250"
+       can_wait_for_reinforcements="true"
+  >
+  </record>
+  <record name="Difficulty_9"
+       display_name="Difficulty 9"
+       hunter_fleet_starting_strength_in_budget_seconds="800"
+       bonusIncomePerMinute="7.5"
+       overconfidence_ratio="1.0"
+       difficulty="9"
+       can_use_dire_guardians="true"
+       aip_for_dire_unlock="200"
+       can_wait_for_reinforcements="true"
+  >
+  </record>
+  <record name="SuperCat"
+       display_name="Difficulty 10"
+       hunter_fleet_starting_strength_in_budget_seconds="1000"
+       bonusIncomePerMinute="13.5"
+       overconfidence_ratio="1.0"
+       difficulty="10"
+       can_use_dire_guardians="true"
+       aip_for_dire_unlock="100"
+       can_wait_for_reinforcements="true"
+  >
+  </record>
+</root>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root
+	extra_space_for_movement_orders_between_ships="60"
+	ai_max_attackers_per_priority_ship_target="20"
+	residual_alert_seconds="30"
+	guard_reabsorbption_distance="50"
+	shield_repulsion_extra_distance="10"
+	waiting_before_wormhole_distance="6500"
+  	ai_overpowering_humans_by_this_factor_causes_audio_alert="5"
+        reconquest_attempt_interval_in_seconds="600"
+        time_for_counterattack_timer="120"
+        min_strength_for_major_alert="5000"
+        adaptive_ai_change_interval="3600"
+        seconds_between_audio_alert_same_planet="300"
+        science_hack_extraction_per_second="5"
+        seconds_for_wormhole_invasion="1000"
+        seconds_for_wormhole_invasion_attack_warning="500"
+        min_attacks_per_wormhole_invasion="2"
+        max_attacks_per_wormhole_invasion="5"
+        fleet_concentration_time_for_aip_increase="30"
+        fleet_concentration_aip_increase="1"
+
+        flagship_counter_attack_budget_multiplier_combat="2.0"
+        flagship_counter_attack_budget_multiplier_fleet="2.0"
+        flagship_counter_attack_budget_multiplier_support="1.0"
+        flagship_counter_attack_budget_multiplier_lonewolf="2.0"
+        flagship_counter_attack_budget_multiplier_battlestation_basic="1.5"
+        flagship_counter_attack_budget_multiplier_citadel="3.0"
+
+        flagship_counter_attack_budget_multiplier_neutral_planet="0.2"
+
+        speed_multiplier_while_hacking="0.1"
+
+  	asset_base_unit_radius="200"
+
+  	distance_scale_gravwell_radius="26000"
+  	distance_scale_unit_radius="75"
+  	distance_scale_shield_radius="575"
+  
+  galaxyplanet_hide_side_text_starts_at_y="2000"
+  galaxyplanet_hide_special_entities_starts_at_y="1700"
+
+	balance_strength_per_cap_general="200"
+	balance_ai_purchase_cost_per_cap_ai_income="400"
+        balance_stacks_per_bonus_shot="5"
+        balance_bonus_damage_for_extra_stacks="5"
+        balance_bonus_damage_for_under_construction="10"
+        balance_stacks_to_halve_knockback="5"
+        balance_stack_min_size_for_bad_status_split="3"
+        balance_stack_max_squads_to_split_per_iteration_for_bad_status="20"
+
+  balance_max_ship_lines_per_fleet="5"
+	balance_science_per_planet="2000"
+	balance_hacking_per_planet="30"
+	balance_starting_science="15000"
+	balance_starting_hacking="0"
+  
+	balance_seconds_per_efficient_fight="7.5"
+	balance_seconds_per_shot="4"
+  balance_warp_gate_aip="5"
+  balance_command_station_aip="15"
+	balance_seconds_times_planets_worth_of_aip_required_to_accumulate_one_cap="50"
+	balance_repair_delay_seconds_after_damaged_by_enemy="5"
+        balance_repair_delay_seconds_after_crippling="300"
+	balance_repair_delay_seconds_after_transforming_command_station="5"	
+  seconds_to_wait_before_recloaking="10"
+  seconds_to_wait_before_brownout_ends="60"
+  balance_seconds_after_death_before_rebuilding="360"
+  balance_seconds_after_death_before_rebuilding_no_enemies="60"
+	balance_rounding_percent_tolerance_for_easy_reading="2"
+        balance_outnumberedness_for_guard_post_deployment="2.5"
+  
+  metal_discount_players_one_mark_lower="0.9"
+  metal_discount_players_two_marks_lower="0.75"
+  metal_discount_players_three_marks_lower="0.55"
+  metal_discount_players_four_marks_lower="0.35"
+  metal_discount_players_five_marks_lower="0.25"
+  metal_discount_players_sixplus_marks_lower="0.1"
+  
+  energy_discount_players_one_mark_lower="0.9"
+  energy_discount_players_two_marks_lower="0.75"
+  energy_discount_players_three_marks_lower="0.6"
+  energy_discount_players_four_marks_lower="0.45"
+  energy_discount_players_five_marks_lower="0.3"
+  energy_discount_players_sixplus_marks_lower="0.2"
+  
+  fleet_level_up_exp_cost_1="8000"
+  fleet_level_up_exp_cost_2="24000"
+  fleet_level_up_exp_cost_3="72000"
+  fleet_level_up_exp_cost_4="216000"
+  fleet_level_up_exp_cost_5="648000"
+  fleet_level_up_exp_cost_6="1944000"
+  
+  command_station_fleet_level_up_science_cost_1="1000"
+  command_station_fleet_level_up_science_cost_2="3000"
+  command_station_fleet_level_up_science_cost_3="6000"
+  command_station_fleet_level_up_science_cost_4="9000"
+  command_station_fleet_level_up_science_cost_5="18000"
+  command_station_fleet_level_up_science_cost_6="36000"
+  
+  balance_repair_cost_multiplier_for_hull_points="0.5"
+  balance_repair_cost_multiplier_for_personal_shields="0.2"
+  balance_repair_cost_multiplier_for_bubble_forcefields="0.75"
+  balance_repair_cost_multiplier_for_engines="0.1"
+  
+  arcen_networking_dllname="ArcenNetworkLib"
+  arcen_networking_typename="Arcen.Universal.Engine_Networking"
+  aiwar2_networking_dllname="ArcenNetworkLib"
+  aiwar2_networking_typename="Arcen.Universal.GameSpecificWorld_Networking"
+  tutorial_step_dllname="AIWarExternalCode"
+  tutorial_step_typename="Arcen.AIW2.External.TutorialStepConditionGenerator"
+	
+	balance_starting_metal="2500000"
+	balance_starting_aip="10"
+	balance_aip_floor_modifier="0.35"
+	balance_ai_special_forces_aip_minutes_to_command_from_single_hideout="10"
+	balance_ai_special_forces_preferred_guardian_count_from_single_hideout="15" 
+  
+	blank_guisprite_bundle="arcenui"
+	blank_guisprite_filename="assets/icons/officialgui/guiships_borders/rallyflag_border.png" 
+  
+  ship_icons_bundle="arcenui"
+  ship_icons_path_white="assets/icons/officialgui/guishipswhite/{0}.png"
+  ship_icons_path_overlay="assets/icons/officialgui/overlays/{0}.png"
+  ship_icons_path_border="assets/icons/officialgui/guiships_borders/{0}_border.png"
+  ship_icons_path_flair="assets/icons/officialgui/guiflair/{0}.png"
+  shark_a_aip_per_command_station="5"
+  shark_b_base_strength_per_command_station="100"
+  shark_b_bonus_strength_per_aip="10"
+  custom_int_examplemod_test_custom_number="9"
+  
+  default_solomesh_ship_object_pool_count="8000"
+  default_solomesh_ship_object_bundle_name="aiwar2goodiebox"
+  default_solomesh_ship_object_filename="assets/_finalgamemeshes/fleetships/fighter/anyshipnocolliders.prefab"
+  
+  thread_manager_class_dll_name="AIWarExternalCode"
+  thread_manager_class_type_name="Arcen.AIW2.External.ArcenThreadManager"
+  
+  sim_planner_class_dll_name="AIWarExternalCode"
+  sim_planner_class_type_name="Arcen.AIW2.External.SimPlannerImplementation"  
+  
+  entity_sim_logic_class_dll_name="AIWarExternalCode"
+  entity_sim_logic_class_type_name="Arcen.AIW2.External.EntitySimLogicImplementation"
+  
+	combat_visual_scale_divisor="20.0"
+	forcefield_visual_scale_divisor="10.0"
+  
+  exp_multipliers_by_player_fleet_count="1,2,1.5,1,0.8,0.6,0.4,0.2,0.1,0.05"
+  exp_multipliers_by_max_fleet_level_difference="1,0.8,0.6,0.4,0.2,0.1,0.05"
+  
+  max_engine_stun="60"
+  engine_stun_multipliers_by_stun_seconds="1,0.9,0.7,0.6,0.5,0.3,0.1,0"
+  max_paralysis_time="40"
+  max_weapon_added_reload_seconds="20"
+  time_to_regen_personal_shields="30"
+  time_to_regen_bubble_forcefields="120"
+  time_for_frd_choices_to_stay="30"
+  min_gravity_multiplier="0.20"
+  min_move_speed_for_mobile="80"
+  small_ai_homeworld_cluster_radius="3"
+
+  custom_int_wavewarning_wavewarningnone="0"
+  custom_int_wavewarning_wavewarningshort="60"
+  custom_int_wavewarning_wavewarningmedium="180"
+  custom_int_wavewarning_wavewarninglong="300"
+  custom_int_wavewarning_wavewarningshortdivide="4"
+  custom_int_wavewarning_wavewarningmediumdivide="2"
+  custom_int_wavewarning_wavewarninglongdivide="1"
+  custom_int_wavewarning_wavewarningshortbase="30"
+  custom_int_wavewarning_wavewarningmediumbase="180"
+  custom_int_wavewarning_wavewarninglongbase="420"
+  
+
+
+
+>
+</root>

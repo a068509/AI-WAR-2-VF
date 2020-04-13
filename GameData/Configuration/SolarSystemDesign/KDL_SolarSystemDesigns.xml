@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <design name="Default"
+          star_type="DefaultStarType"
+          radius="350"
+  >
+    <planet type="DefaultPlanetType"
+            orbital_radius="50"
+            orbital_period_in_minutes="5"
+    />
+    <planet type="DefaultPlanetType"
+            orbital_radius="80"
+            orbital_period_in_minutes="5"
+    />
+    <planet type="DefaultPlanetType"
+            orbital_radius="110"
+            orbital_period_in_minutes="5"
+    />
+    <planet type="DefaultPlanetType"
+            orbital_radius="140"
+            orbital_period_in_minutes="5"
+    />
+    <planet type="DefaultPlanetType"
+            orbital_radius="170"
+            orbital_period_in_minutes="5"
+    />
+    <planet type="DefaultPlanetType"
+            orbital_radius="200"
+            orbital_period_in_minutes="5"
+    />
+    <planet type="DefaultPlanetType"
+            orbital_radius="230"
+            orbital_period_in_minutes="5"
+    />
+    <planet type="DefaultPlanetType"
+            orbital_radius="260"
+            orbital_period_in_minutes="5"
+    />
+  </design>
+</root>

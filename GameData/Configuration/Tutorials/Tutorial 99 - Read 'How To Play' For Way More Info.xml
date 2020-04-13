@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <tutorial category="Basics" name="ReadHowToPlay" display_name="Tutorial 99 - Read 'How To Play' For Way More Info!" sort_priority="5"
+        description="This isn't really a tutorial you need to run, although you can.  All it does is point out the importance of the 'How to Play' section of the game (on the main menu and in the in-game escape menu), which is like a full-fledged wiki.
+        
+Seriously, there are little mini strategy guides in there and everything.  For certain kinds of advice, it's the most concise way to get the info.  Particularly if you're a returning player wanting to know what is different compared to the first game." scenario="AftermathOfLosingTheAIWar"
+        do_not_serialize_setup_to_or_from_settings="true"
+        skip_determine_ai_ownership="true" skip_determine_ai_homeworlds="true" skip_assign_player_homeworlds="true"
+        force_map_type="Tutorial_01" force_map_seed="123456" skip_seed_special_entities="true"
+        skip_all_galaxy_wide_capturables_and_obstacles="true" skip_warden_bases="true"
+        debug_all_step_text_on_load="false"
+   >
+    <!--Setup for factions
+        *************************************-->
+    <!--You name any that you add beyond the built-in ones, or the following ones are built in:
+        NaturalObject - owned by nobody
+        AI - main AI
+        FirstPlayer - presumably the only player, given this is a tutorial.
+        PlayerBeyondTheFirst - any and all other players.
+        AIWardenFleet - warden fleet of the main AI.
+        AIHunterFleet - hunter fleet of the main AI.
+        AntiAIZombie, AntiPlayerZombie, AntagonizedDysonSphere - all just kind of plumbing stuff.
+        Instigators - the AI instigators.
+        Mercenary - the outguard, if there are any that seed, etc. -->
+    <faction_initial_setup name="FirstPlayer" starting_planet_index="0"/>
+    <faction_initial_setup name="PlayerBeyondTheFirst" do_not_add_faction="true"/>
+    <faction_initial_setup name="Instigators" do_not_add_faction="true"/>
+    <faction_initial_setup name="Mercenary" do_not_add_faction="true"/>
+    <faction_initial_setup name="AI">
+        <custom_field key="AIType" val="Tutorial_01"/>
+    </faction_initial_setup>
+	<faction_initial_setup name="WardenFleet" do_not_add_faction="true"/>
+	<faction_initial_setup name="HunterFleet" do_not_add_faction="true"/>
+	
+
+    <!--Setup for planet topography
+        *************************************-->
+    <!--Note that these tutorial planets allow you to define planets manually.  This ONLY works with the Tutorial_01 map type.
+        If you want to have a tutorial in a regular other map type of some other sort, you can do so, but these won't be read in in terms of placement and names.-->
+    <tutorial_planet name="Dudson" x="0" y="0">
+	  <link name="Nowhere"/>
+      <link name="Nothing"/>
+	  <link name="Nevermind"/>
+    </tutorial_planet>
+	
+    <tutorial_planet name="Nowhere" x="-100" y="100"/>
+	<tutorial_planet name="Nothing" x="25" y="-100"/>
+	<tutorial_planet name="Nevermind" x="50" y="-75"/>
+
+
+
+    <!--Setup for planet ownership, etc
+        *************************************-->
+    <!--Note that these work for even non-manually-created maps.  Ownerships are either whatever you named the factions above, 
+        or are the built-in ones noted above.  You can match planets based on their added-index or their name.-->
+    <planet_ownership_and_spawning match_index="0" linked_faction_name="FirstPlayer" is_homeworld="true"
+          command_station_point="200,1000" skip_player_home_forcefield="false" skip_player_home_engineers="false"
+          skip_player_home_factory="false" skip_player_home_human_settlement="false" skip_player_home_human_cryogenic_pods="false"
+          skip_player_home_initial_combat_fleet="false" skip_player_home_initial_battlestation="false" skip_player_home_initial_support_fleet="false"
+          initial_combat_fleet="ClassicStartingFleet" initial_battlestation_fleet="ClassicStartingDefenses" initial_support_fleet=""
+          number_of_metal_spots="4" >
+    </planet_ownership_and_spawning>
+    <planet_ownership_and_spawning match_name="Nowhere" linked_faction_name="AI" mark_level_index="7" number_of_metal_spots="5"
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="false" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="false">
+			<ship_placement faction="NaturalObject" type="GlobalCommandAugmenter" placement_point="1000,1000"/>
+	</planet_ownership_and_spawning>
+	
+    <planet_ownership_and_spawning match_name="Nothing" linked_faction_name="AI" mark_level_index="7" number_of_metal_spots="5"
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="false" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="false">
+			<ship_placement faction="NaturalObject" type="TransportFlagship_Base" placement_point="1000,1000"/>
+	</planet_ownership_and_spawning>
+
+    <planet_ownership_and_spawning match_name="Nevermind" linked_faction_name="AI" mark_level_index="7" number_of_metal_spots="5" is_homeworld="true"
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="false" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="false">
+	</planet_ownership_and_spawning>	
+
+    <!--Actual steps of the tutorial itself!
+    
+      For informaton about the conditions that you can use, and how to use them, 
+      please see this wiki page: https://wiki.arcengames.com/index.php?title=AI_War_2:_Tutorial_Step_Conditions
+      *************************************-->
+    <tutorial_step text_to_show="Bienvenue dans le dernier tutoriel d'AI War 2, qui n'est pas vraiment un tutoriel complet, mais un avis.
+                   
+Peu importe le nombre d'autres didacticiels interactifs que nous ajoutons, ce sera toujours le dernier.">
+    </tutorial_step>
+	
+    <tutorial_step text_to_show="Soyons honnêtes, c'est un gros jeu - et beaucoup de concepts que nous aimerions vous enseigner sont vraiment spécifiques à la situation et longs à expliquer si nous avons essayé de les rendre des didacticiels interactifs.
+                   
+Reconnaissant que différentes informations sont mieux présentées de différentes manières, nous avons un wiki en jeu. Il s'appelle `` Comment jouer '', et vous pouvez le voir dans le menu principal ainsi que dans le menu d'échappement dans lequel vous êtes en jeu.">
+    </tutorial_step>
+
+    <tutorial_step text_to_show="Certaines des entrées `` Comment jouer '' sont de petits guides de stratégie que vous pouvez afficher à tout moment sans quitter le jeu.
+                   
+D'autres sont des explications approfondies de certains sujets spécifiques sur lesquels vous pourriez avoir des questions au fur et à mesure que vous avancez dans le jeu.
+
+Pourtant, d'autres explications rapides sur ce qui est différent entre ce jeu et le premier, pour que les joueurs de retour se mettent rapidement au courant.
+
+Quelques-uns vont même dans les décisions de conception derrière certains mécanismes et comment vous pouvez les utiliser à votre avantage; questions courantes dans ce sens, etc.">
+    </tutorial_step>
+
+    <tutorial_step text_to_show="Le jeu lui-même est également configuré pour avoir des info-bulles et des mises en évidence spécifiques au contexte PARTOUT, ou aussi près de partout que nous pouvons le faire.
+                   
+Certaines info-bulles peuvent être développées pour avoir encore plus d'informations qu'elles ne le montrent à l'origine, et certaines choses qui ont des info-bulles peuvent être cliquées pendant que vous maintenez C enfoncé afin d'obtenir encore PLUS d'informations.
+
+L'onglet Intel dans la barre latérale est également une énorme ressource d'informations sur les objectifs potentiels à court terme, à moyen terme et à long terme que vous avez trouvés sur la carte. Tout ce que vous pouvez voir sur la carte, vous pouvez le voir, bien classé et avec généralement quelques notes sur l'utilité.">
+    </tutorial_step>
+
+    <tutorial_step text_to_show="Divers joueurs ont également créé des didacticiels vidéo ou écrits, ainsi que des vidéos Let's Plays; ces choses peuvent également être une ressource pour apprendre rapidement le jeu si cela correspond davantage à votre style.
+                   
+Le but est qu'il y ait un moyen génial pour tout le monde d'entrer dans le jeu le plus rapidement possible, quel que soit son style d'apprentissage préféré.
+
+Si vous vous en approchez en pensant que perdre est bien et que vous célébrez les victoires que vous avez en cours de route, alors nos didacticiels interactifs et notre wiki en jeu devraient suffire à peu près à toutes fins.">
+    </tutorial_step>
+	
+  </tutorial>	
+	
+
+</root>

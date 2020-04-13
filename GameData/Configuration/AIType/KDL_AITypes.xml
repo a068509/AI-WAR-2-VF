@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <ai_type name="FullEnsemble"
+  	   is_default="true"
+           display_name="Full Ensemble"
+           abbreviation="Ensemble"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.AITypeController_FullEnsemble"
+           ratio_of_superiority_at_which_threat_overruns="10"
+           ratio_of_superiority_at_which_threat_actually_attacks="1.5"
+           ratio_of_inferiority_at_which_threat_retreats="2"
+           ratio_of_inferiority_at_which_defense_hunkers_down="1.5"
+           ratio_of_inferiority_at_which_guard_ships_go_threat="5"
+           ratio_of_fear_of_remote_enemies="0.5"
+           ratio_for_preferring_overriding_high_priority_targets="3.0"
+           ratio_for_preferring_high_priority_targets="1.5"
+	         initial_ai_defenses_guardians_budget_per_mark_3_planet="29000"
+           initial_ai_defenses_strikecraft_budget_per_mark_3_planet="60000"
+           initial_ai_defenses_turret_budget_per_mark_3_planet="18000"
+           initial_ai_defenses_non_turret_defense_budget_per_mark_3_planet="4800"
+           multiplier_for_starting_guardian_budget_on_reconquest="0.125"
+           multiplier_for_game_starting_guardians_from_total_budget="0.200"
+           multiplier_for_game_starting_turrets_from_total_budget="0.200"
+           multiplier_for_game_starting_non_turret_defenses_from_total_budget="0.200"
+           multiplier_for_game_starting_strikecraft_from_total_budget="0.200"
+           modulus_for_turrets_at_reinforcement_location_lower_is_more_frequent="6"
+           modulus_for_non_turret_defenses_at_reinforcement_location_lower_is_more_frequent="3"
+           chance_out_of_100_for_armed_guard_post_planet_mk1="15"
+           chance_out_of_100_for_armed_guard_post_planet_mk2="20"
+           chance_out_of_100_for_armed_guard_post_planet_mk3="30"
+           chance_out_of_100_for_armed_guard_post_planet_mk4="50"
+           chance_out_of_100_for_armed_guard_post_planet_mk5="60"
+           chance_out_of_100_for_armed_guard_post_planet_mk6="80"
+           multiplier_for_budget_reinforcement="2" 
+           multiplier_for_budget_wave="1" 
+           multiplier_for_budget_cpa="1"
+           multiplier_for_budget_warden_fleet="1"
+           multiplier_for_budget_reconquest="1"
+           multiplier_for_budget_hunter_fleet="1"
+           multiplier_for_budget_wormhole_invasion="1"
+           multiplier_for_budget_praetorian_guard="1"
+           type_difficulty="Easier"
+           description="Hugely varied AI in terms of what its planets are like. However, it doesn't use any niche tactics... usually."
+  >
+    <budget_item type="Reinforcement" seconds_between_attempts_to_spend="300" normal_ship_group_cat="AnyReinforcements"
+      spend_on_threshold="true"
+      guard_post_ship_group_cat="AnyBasicGuardPosts"
+      unarmed_guard_post_ship_group_cat="UnarmedGuardPosts"
+      turret_ship_group_cat="AnyTurrets" 
+      non_turret_defense_ship_group_cat="AnyNonTurretDefenses" 
+      wormhole_sentinel_ship_group_cat="AnyWormholeSentinels"
+      guardian_ship_group_cat="AnyBasicGuardians"
+      forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" 
+      dire_guardian_ship_group_cat="DefensiveDireGuardians"
+      decloaker_ship_group_cat="AIDecloakingShips" 
+      dire_guard_post_ship_group_cat="AnyDireGuardPosts"
+      singular_freaky_ship_group_cat="AnySingularFreakySurprises"
+    />
+    <budget_item type="SpecialForces" seconds_between_attempts_to_spend="30" normal_ship_group_cat="AnyReinforcements" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="GolemiteGolems"  spend_on_threshold="true"   decloaker_ship_group_cat="AIDecloakingShips" />
+    <budget_item type="PraetorianGuard" seconds_between_attempts_to_spend="30" normal_ship_group_cat="AnyReinforcements" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="GolemiteGolems"  spend_on_threshold="true"   decloaker_ship_group_cat="AIDecloakingShips" />
+    <budget_item type="HunterFleet" seconds_between_attempts_to_spend="30" normal_ship_group_cat="AnyReinforcements" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="true"   decloaker_ship_group_cat="AIDecloakingShips" />
+  	<budget_item type="Wave" seconds_between_attempts_to_spend="600" normal_ship_group_cat="AnyWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"   decloaker_ship_group_cat="AIDecloakingShips" />
+  	<budget_item type="CPA" seconds_between_attempts_to_spend="7200" normal_ship_group_cat="AnyWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"   decloaker_ship_group_cat="AIDecloakingShips" />
+  	<budget_item type="Reconquest" seconds_between_attempts_to_spend="120" normal_ship_group_cat="AnyWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"   decloaker_ship_group_cat="AIDecloakingShips" />
+    <budget_item type="WormholeInvasion" seconds_between_attempts_to_spend="6260" normal_ship_group_cat="AnyWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"   decloaker_ship_group_cat="AIDecloakingShips" />
+  </ai_type>
+  
+  <ai_type name="SimpleEnsemble" copy_from="FullEnsemble"
+           display_name="Simple Ensemble"
+           abbreviation="Simple"
+           type_name="Arcen.AIW2.External.AITypeController_SimpleEnsemble"
+           type_Difficulty="Easier"
+           description="Like the full ensemble in most respects, but minus some of the more esoteric ship variants. There's plenty going on here, but not quite so much craziness to discover as you explore."
+  >
+    <budget_item type="Reinforcement" seconds_between_attempts_to_spend="300" normal_ship_group_cat="SimpleReinforcements"
+      spend_on_threshold="true"
+      guard_post_ship_group_cat="AnyBasicGuardPosts"
+      unarmed_guard_post_ship_group_cat="UnarmedGuardPosts"
+      turret_ship_group_cat="SimpleTurrets" 
+      non_turret_defense_ship_group_cat="AnyNonTurretDefenses" 
+      wormhole_sentinel_ship_group_cat="AnyWormholeSentinels"
+      guardian_ship_group_cat="SimpleGuardians"
+      forcefield_guardian_ship_group_cat="SimpleForcefieldGuardians" 
+      dire_guardian_ship_group_cat="SimpleDireGuardians"
+      decloaker_ship_group_cat="AIDecloakingShips" 
+      dire_guard_post_ship_group_cat="SimpleDireGuardPosts"
+      singular_freaky_ship_group_cat="AnySingularFreakySurprises"
+    />
+  	<budget_item type="SpecialForces" seconds_between_attempts_to_spend="30" normal_ship_group_cat="SimpleReinforcements" guardian_ship_group_cat="SimpleGuardians" forcefield_guardian_ship_group_cat="SimpleForcefieldGuardians" dire_guardian_ship_group_cat="GolemiteGolems"  spend_on_threshold="true"/>
+    <budget_item type="PraetorianGuard" seconds_between_attempts_to_spend="30" normal_ship_group_cat="SimpleReinforcements" guardian_ship_group_cat="SimpleGuardians" forcefield_guardian_ship_group_cat="SimpleForcefieldGuardians" dire_guardian_ship_group_cat="GolemiteGolems"  spend_on_threshold="true"/>	
+    <budget_item type="HunterFleet" seconds_between_attempts_to_spend="30" normal_ship_group_cat="SimpleReinforcements" guardian_ship_group_cat="SimpleGuardians" forcefield_guardian_ship_group_cat="SimpleForcefieldGuardians" dire_guardian_ship_group_cat="SimpleDireGuardians" spend_on_threshold="true"/>
+  	<budget_item type="Wave" seconds_between_attempts_to_spend="600" normal_ship_group_cat="SimpleWaves" guardian_ship_group_cat="SimpleGuardians" forcefield_guardian_ship_group_cat="SimpleForcefieldGuardians" dire_guardian_ship_group_cat="SimpleDireGuardians" spend_on_threshold="false"/>
+  	<budget_item type="CPA" seconds_between_attempts_to_spend="7200" normal_ship_group_cat="SimpleWaves" guardian_ship_group_cat="SimpleGuardians" forcefield_guardian_ship_group_cat="SimpleForcefieldGuardians" dire_guardian_ship_group_cat="SimpleDireGuardians" spend_on_threshold="false"/>
+  	<budget_item type="Reconquest" seconds_between_attempts_to_spend="120" normal_ship_group_cat="SimpleWaves" guardian_ship_group_cat="SimpleGuardians" forcefield_guardian_ship_group_cat="SimpleForcefieldGuardians" dire_guardian_ship_group_cat="SimpleDireGuardians" spend_on_threshold="false"/>
+    <budget_item type="WormholeInvasion" seconds_between_attempts_to_spend="6260" normal_ship_group_cat="SimpleWaves" guardian_ship_group_cat="SimpleGuardians" forcefield_guardian_ship_group_cat="SimpleForcefieldGuardians" dire_guardian_ship_group_cat="SimpleDireGuardians" spend_on_threshold="false"/>  
+  </ai_type>
+  
+  <ai_type name="Tutorial_01" copy_from="FullEnsemble"
+           is_hidden="true"
+           display_name="Tutorial 01"
+           abbreviation="Tutorial01"
+           type_name="Arcen.AIW2.External.AITypeController_Tutorial_01"
+           type_difficulty="Unset"
+           description="A much more simplified AI that is based around the full ensemble, but just... minus the most distressing stuff."
+  >
+    <budget_item type="Reinforcement" seconds_between_attempts_to_spend="300" normal_ship_group_cat="TutorialReinforcements"
+      spend_on_threshold="true"
+      guard_post_ship_group_cat="TutorialBasicGuardPosts"
+      unarmed_guard_post_ship_group_cat="UnarmedGuardPosts"
+      turret_ship_group_cat="TutorialTurrets" 
+      non_turret_defense_ship_group_cat="TutorialNonTurretDefenses" 
+      wormhole_sentinel_ship_group_cat="TutorialWormholeSentinels"
+      guardian_ship_group_cat="TutorialBasicGuardians"
+      forcefield_guardian_ship_group_cat="TutorialForcefieldGuardians"
+      decloaker_ship_group_cat="AIDecloakingShips" 
+      dire_guardian_ship_group_cat="TutorialDireGuardians" 
+      dire_guard_post_ship_group_cat="TutorialDireGuardPosts"
+      singular_freaky_ship_group_cat="TutorialSingularFreakySurprises"
+    />
+  	<budget_item type="SpecialForces" seconds_between_attempts_to_spend="30" normal_ship_group_cat="TutorialReinforcements" guardian_ship_group_cat="TutorialBasicGuardians" forcefield_guardian_ship_group_cat="TutorialForcefieldGuardians" dire_guardian_ship_group_cat="TutorialDireGuardians"   decloaker_ship_group_cat="AIDecloakingShips"  spend_on_threshold="true"/>
+    <budget_item type="PraetorianGuard" seconds_between_attempts_to_spend="30" normal_ship_group_cat="TutorialReinforcements" guardian_ship_group_cat="TutorialBasicGuardians" forcefield_guardian_ship_group_cat="TutorialForcefieldGuardians" dire_guardian_ship_group_cat="TutorialDireGuardians"  spend_on_threshold="true"/>	
+    <budget_item type="HunterFleet" seconds_between_attempts_to_spend="30" normal_ship_group_cat="TutorialReinforcements" guardian_ship_group_cat="TutorialBasicGuardians" forcefield_guardian_ship_group_cat="TutorialForcefieldGuardians" dire_guardian_ship_group_cat="TutorialDireGuardians"   decloaker_ship_group_cat="AIDecloakingShips" spend_on_threshold="true"/>
+  	<budget_item type="Wave" seconds_between_attempts_to_spend="600" normal_ship_group_cat="TutorialWaves" guardian_ship_group_cat="TutorialBasicGuardians" forcefield_guardian_ship_group_cat="TutorialForcefieldGuardians" dire_guardian_ship_group_cat="TutorialDireGuardians" spend_on_threshold="false"/>
+  	<budget_item type="CPA" seconds_between_attempts_to_spend="7200" normal_ship_group_cat="TutorialWaves" guardian_ship_group_cat="TutorialBasicGuardians" forcefield_guardian_ship_group_cat="TutorialForcefieldGuardians" dire_guardian_ship_group_cat="TutorialDireGuardians" spend_on_threshold="false"/>
+  	<budget_item type="Reconquest" seconds_between_attempts_to_spend="120" normal_ship_group_cat="TutorialWaves" guardian_ship_group_cat="TutorialBasicGuardians" forcefield_guardian_ship_group_cat="TutorialForcefieldGuardians" dire_guardian_ship_group_cat="TutorialDireGuardians" spend_on_threshold="false"/>
+    <budget_item type="WormholeInvasion" seconds_between_attempts_to_spend="6260" normal_ship_group_cat="TutorialWaves" guardian_ship_group_cat="TutorialBasicGuardians" forcefield_guardian_ship_group_cat="TutorialForcefieldGuardians" dire_guardian_ship_group_cat="TutorialDireGuardians" spend_on_threshold="false"/>
+  
+  </ai_type>
+  
+    <ai_type name="Tsunami" copy_from="FullEnsemble"
+           display_name="Tsunami"
+           abbreviation="Tsunami"
+           is_default="false"
+           type_name="Arcen.AIW2.External.AITypeController_Tsunami"
+           description="Focuses on sending lots of Waves against you."
+           type_difficulty="Hard"
+           >
+    </ai_type>
+	
+    <ai_type name="WormholeMaster" copy_from="FullEnsemble"
+           display_name="Wormhole Master"
+           abbreviation="Wormhole Master"
+           is_default="false"
+           type_name="Arcen.AIW2.External.AITypeController_WormholeMaster"
+           type_difficulty="Moderate"
+           description="Specializes in sending forces in via Exogalactic Wormholes that spawn behind your defenses."
+           >
+    <budget_item type="Reinforcement" seconds_between_attempts_to_spend="300" normal_ship_group_cat="AnyReinforcements"
+      spend_on_threshold="true"
+      guard_post_ship_group_cat="AnyBasicGuardPosts"
+      unarmed_guard_post_ship_group_cat="UnarmedGuardPosts"
+      turret_ship_group_cat="AnyTurrets" 
+      non_turret_defense_ship_group_cat="AnyNonTurretDefenses" 
+      wormhole_sentinel_ship_group_cat="WormholeMasterWormholeSentinels"
+      guardian_ship_group_cat="AnyBasicGuardians"
+      forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" 
+      dire_guardian_ship_group_cat="DefensiveDireGuardians"
+      decloaker_ship_group_cat="AIDecloakingShips" 
+      dire_guard_post_ship_group_cat="AnyDireGuardPosts"
+      singular_freaky_ship_group_cat="AnySingularFreakySurprises"
+    />		   
+    </ai_type>
+	
+    <ai_type name="Quadratic" copy_from="FullEnsemble"
+           display_name="Quadratic"
+           abbreviation="Quadratic"
+           is_default="false"
+           type_difficulty="Moderate"
+           description="With every normal wave it sends, it doubles the minimum strength of wave that it is willing to send. This tends to lead to waves that take much longer to 'charge' (before being announced), but eventually leads to VERY large waves."
+           >
+      <budget_item type="Wave" seconds_between_attempts_to_spend="401" normal_ship_group_cat="AnyWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false" double_wave_interval_each_time="true"/>
+  </ai_type>
+
+    <ai_type name="SpecialForcesMaster" copy_from="FullEnsemble"
+           display_name="Special Forces Master"
+           abbreviation="SpecialForcesMaster"
+           is_default="false"
+           type_difficulty="Hard"
+           type_name="Arcen.AIW2.External.AITypeController_SpecialForcesMaster"
+           description="Gets very strong Warden and Hunter fleets."
+           >
+  </ai_type>
+
+  <ai_type name="Sniper" copy_from="FullEnsemble"
+           display_name="Sniper"
+           abbreviation="Sniper"
+           type_difficulty="Moderate"
+           description="Focuses on long range ships and turrets."
+  >
+      <budget_item type="Reinforcement" seconds_between_attempts_to_spend="300" normal_ship_group_cat="SniperReinforcements"
+                 spend_on_threshold="true"
+      guard_post_ship_group_cat="AnyBasicGuardPosts"
+      unarmed_guard_post_ship_group_cat="UnarmedGuardPosts"
+      turret_ship_group_cat="SniperTurrets" 
+      non_turret_defense_ship_group_cat="AnyNonTurretDefenses" 
+      wormhole_sentinel_ship_group_cat="AnyWormholeSentinels"
+      guardian_ship_group_cat="AnyBasicGuardians"
+      forcefield_guardian_ship_group_cat="AnyForcefieldGuardians"
+      dire_guardian_ship_group_cat="DefensiveDireGuardians" 
+      dire_guard_post_ship_group_cat="AnyDireGuardPosts"
+      decloaker_ship_group_cat="AIDecloakingShips" 
+      singular_freaky_ship_group_cat="AnySingularFreakySurprises"
+    />
+  	<budget_item type="SpecialForces" seconds_between_attempts_to_spend="30" normal_ship_group_cat="SniperReinforcements" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="GolemiteGolems"   decloaker_ship_group_cat="AIDecloakingShips"   spend_on_threshold="true"/>
+    <budget_item type="PraetorianGuard" seconds_between_attempts_to_spend="30" normal_ship_group_cat="SniperReinforcements" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="GolemiteGolems"  spend_on_threshold="true"/>	
+    <budget_item type="HunterFleet" seconds_between_attempts_to_spend="30" normal_ship_group_cat="SniperReinforcements" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians"   decloaker_ship_group_cat="AIDecloakingShips"  spend_on_threshold="true"/>
+  	<budget_item type="Wave" seconds_between_attempts_to_spend="600" normal_ship_group_cat="SniperWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>
+  	<budget_item type="CPA" seconds_between_attempts_to_spend="7200" normal_ship_group_cat="SniperWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>
+  	<budget_item type="Reconquest" seconds_between_attempts_to_spend="120" normal_ship_group_cat="SniperWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>
+    <budget_item type="WormholeInvasion" seconds_between_attempts_to_spend="6260" normal_ship_group_cat="SniperWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>	
+  </ai_type>
+  
+  <ai_type name="ShieldHater" copy_from="FullEnsemble"
+           display_name="Shield Hater"
+           abbreviation="Shield Hater"
+           type_difficulty="Easier"
+           description="Likes units that are good against defenses."
+  >
+    <budget_item type="Reinforcement" seconds_between_attempts_to_spend="300" normal_ship_group_cat="AnyReinforcements"
+      spend_on_threshold="true"
+      guard_post_ship_group_cat="AnyBasicGuardPosts"
+      unarmed_guard_post_ship_group_cat="UnarmedGuardPosts"
+      turret_ship_group_cat="ShieldHaterTurrets" 
+      non_turret_defense_ship_group_cat="AnyNonTurretDefenses" 
+      wormhole_sentinel_ship_group_cat="AnyWormholeSentinels"
+      guardian_ship_group_cat="AnyBasicGuardians"
+      forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" 
+      dire_guardian_ship_group_cat="DefensiveDireGuardians"
+      decloaker_ship_group_cat="AIDecloakingShips" 
+      dire_guard_post_ship_group_cat="AnyDireGuardPosts"
+      singular_freaky_ship_group_cat="AnySingularFreakySurprises"
+    />  
+      <budget_item type="Wave" seconds_between_attempts_to_spend="600" normal_ship_group_cat="ShieldHaterWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false" />  
+  </ai_type>
+  
+  <ai_type name="Thief" copy_from="FullEnsemble"
+           display_name="Thief"
+           abbreviation="Thief"
+           type_difficulty="Moderate"
+           description="Steals your stuff, man!"
+  >
+    <budget_item type="Wave" seconds_between_attempts_to_spend="600" normal_ship_group_cat="ThiefWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>
+  	<budget_item type="CPA" seconds_between_attempts_to_spend="7200" normal_ship_group_cat="ThiefWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>
+  	<budget_item type="Reconquest" seconds_between_attempts_to_spend="120" normal_ship_group_cat="ThiefWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>
+    <budget_item type="WormholeInvasion" seconds_between_attempts_to_spend="6260" normal_ship_group_cat="ThiefWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>	
+  </ai_type>
+  
+  <ai_type name="Zombifyier" copy_from="FullEnsemble"
+        display_name="Zombifyier"
+        abbreviation="Zombifyier"
+        type_difficulty="Hard"
+        description="Focuses on turning your stuff into zombies."
+  >
+      <budget_item type="Reinforcement" seconds_between_attempts_to_spend="300" normal_ship_group_cat="ZombifyingReinforcements"
+      spend_on_threshold="true"
+      guard_post_ship_group_cat="AnyBasicGuardPosts"
+      unarmed_guard_post_ship_group_cat="UnarmedGuardPosts"
+      turret_ship_group_cat="ZombifyierTurrets" 
+      non_turret_defense_ship_group_cat="AnyNonTurretDefenses" 
+      wormhole_sentinel_ship_group_cat="AnyWormholeSentinels"
+      guardian_ship_group_cat="AnyBasicGuardians"
+      forcefield_guardian_ship_group_cat="AnyForcefieldGuardians"
+      dire_guardian_ship_group_cat="DefensiveDireGuardians" 
+      dire_guard_post_ship_group_cat="ZombifyierDireGuardPosts"
+      singular_freaky_ship_group_cat="AnySingularFreakySurprises"
+    />
+  	<budget_item type="SpecialForces" seconds_between_attempts_to_spend="30" normal_ship_group_cat="ZombifyingReinforcements" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="GolemiteGolems"   decloaker_ship_group_cat="AIDecloakingShips"   spend_on_threshold="true"/>
+    <budget_item type="PraetorianGuard" seconds_between_attempts_to_spend="30" normal_ship_group_cat="ZombifyingReinforcements" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="GolemiteGolems"  spend_on_threshold="true"/>	
+    <budget_item type="HunterFleet" seconds_between_attempts_to_spend="30" normal_ship_group_cat="ZombifyingReinforcements" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians"   decloaker_ship_group_cat="AIDecloakingShips" spend_on_threshold="true"/>	
+    <budget_item type="Wave" seconds_between_attempts_to_spend="600" normal_ship_group_cat="ZombifyingWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>
+    <budget_item type="CPA" seconds_between_attempts_to_spend="7200" normal_ship_group_cat="ZombifyingWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>
+    <budget_item type="Reconquest" seconds_between_attempts_to_spend="120" normal_ship_group_cat="ZombifyingWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>
+    <budget_item type="WormholeInvasion" seconds_between_attempts_to_spend="6260" normal_ship_group_cat="ZombifyingWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>  
+  </ai_type>
+  
+  <ai_type name="Ensnarer" copy_from="FullEnsemble"
+           display_name="Ensnarer"
+           abbreviation="Ensnarer"
+           type_difficulty="Moderate"
+           description="Focuses on ships and turrets with tractor beams."
+  >
+      <budget_item type="Reinforcement" seconds_between_attempts_to_spend="300" normal_ship_group_cat="EnsnarerReinforcements"
+      spend_on_threshold="true"
+      guard_post_ship_group_cat="AnyBasicGuardPosts"
+      unarmed_guard_post_ship_group_cat="UnarmedGuardPosts"
+      turret_ship_group_cat="EnsnarerTurrets" 
+      non_turret_defense_ship_group_cat="EnsnarerNonTurretDefenses" 
+      wormhole_sentinel_ship_group_cat="EnsnarerWormholeSentinels"
+      guardian_ship_group_cat="AnyBasicGuardians"
+      forcefield_guardian_ship_group_cat="AnyForcefieldGuardians"
+      dire_guardian_ship_group_cat="DefensiveDireGuardians" 
+      dire_guard_post_ship_group_cat="AnyDireGuardPosts"
+      decloaker_ship_group_cat="AIDecloakingShips" 
+      singular_freaky_ship_group_cat="AnySingularFreakySurprises"
+    />
+  	<budget_item type="SpecialForces" seconds_between_attempts_to_spend="30" normal_ship_group_cat="EnsnarerReinforcements" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="GolemiteGolems"   decloaker_ship_group_cat="AIDecloakingShips"  spend_on_threshold="true"/>
+    <budget_item type="PraetorianGuard" seconds_between_attempts_to_spend="30" normal_ship_group_cat="EnsnarerReinforcements" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="GolemiteGolems"  spend_on_threshold="true"/>	
+    <budget_item type="HunterFleet" seconds_between_attempts_to_spend="30" normal_ship_group_cat="EnsnarerReinforcements" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians"   decloaker_ship_group_cat="AIDecloakingShips" spend_on_threshold="true"/>
+  	<budget_item type="Wave" seconds_between_attempts_to_spend="600" normal_ship_group_cat="EnsnarerWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>
+  	<budget_item type="CPA" seconds_between_attempts_to_spend="7200" normal_ship_group_cat="EnsnarerWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>
+  	<budget_item type="Reconquest" seconds_between_attempts_to_spend="120" normal_ship_group_cat="EnsnarerWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>
+    <budget_item type="WormholeInvasion" seconds_between_attempts_to_spend="6260" normal_ship_group_cat="EnsnarerWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>	
+  </ai_type>
+  
+    <ai_type name="Turtle" copy_from="FullEnsemble"
+           display_name="Turtle"
+           abbreviation="Turtle"
+           type_difficulty="Moderate"
+           type_name="Arcen.AIW2.External.AITypeController_Turtle"
+           ratio_of_superiority_at_which_threat_actually_attacks="1.0"
+           initial_ai_defenses_turret_budget_per_mark_3_planet="36000"
+           modulus_for_turrets_at_reinforcement_location_lower_is_more_frequent="1"
+           modulus_for_non_turret_defenses_at_reinforcement_location_lower_is_more_frequent="2"           
+           chance_out_of_100_for_armed_guard_post_planet_mk1="40"
+           chance_out_of_100_for_armed_guard_post_planet_mk2="60"
+           chance_out_of_100_for_armed_guard_post_planet_mk3="70"
+           chance_out_of_100_for_armed_guard_post_planet_mk4="80"
+           chance_out_of_100_for_armed_guard_post_planet_mk5="90"
+           chance_out_of_100_for_armed_guard_post_planet_mk6="100"
+           multiplier_for_budget_reinforcement="4"
+           description="Heavily defends its planets, but sends minimal waves against the player."
+  >
+        <budget_item type="Reinforcement" seconds_between_attempts_to_spend="300" normal_ship_group_cat="TurtleReinforcements"
+                spend_on_threshold="true"
+                guard_post_ship_group_cat="TurtleBasicGuardPosts"
+                unarmed_guard_post_ship_group_cat="UnarmedGuardPosts"
+                turret_ship_group_cat="TurtleTurrets" 
+                non_turret_defense_ship_group_cat="AnyNonTurretDefenses" 
+                wormhole_sentinel_ship_group_cat="AnyWormholeSentinels"
+                guardian_ship_group_cat="AnyBasicGuardians"
+                forcefield_guardian_ship_group_cat="AnyForcefieldGuardians"
+                dire_guardian_ship_group_cat="DefensiveDireGuardians"
+                decloaker_ship_group_cat="AIDecloakingShips" 
+                dire_guard_post_ship_group_cat="TurtleDireGuardPosts"
+                singular_freaky_ship_group_cat="TurtleSingularFreakySurprises"
+                />
+  </ai_type>
+
+  <ai_type name="Reconquista" copy_from="FullEnsemble"
+           display_name="Reconquista"
+           abbreviation="Reconquista"
+           type_difficulty="Moderate"
+           type_name="Arcen.AIW2.External.AITypeController_Reconquista"
+           description="Allocates almost all of its resources into counterattacks and recapturing planets from you."
+  >
+  </ai_type>
+  
+  <ai_type name="BarFighter" copy_from="FullEnsemble"
+           type_difficulty="Easier"
+           display_name="Bar Fighter"
+           abbreviation="BarFighter"
+           ratio_of_inferiority_at_which_threat_retreats="10"
+           ratio_of_inferiority_at_which_defense_hunkers_down="0.2"
+           ratio_of_inferiority_at_which_guard_ships_go_threat="0.2"
+           ratio_of_superiority_at_which_threat_actually_attacks="0.5"
+           initial_ai_defenses_strikecraft_budget_per_mark_3_planet="78000"
+           initial_ai_defenses_turret_budget_per_mark_3_planet="9000"
+           description="Reacts violently to any attacks on its planets."
+  >
+  </ai_type>
+  
+    <ai_type name="Overreactive" copy_from="FullEnsemble"
+           display_name="Overreactive"
+           abbreviation="Overreactive"
+           ratio_of_inferiority_at_which_threat_retreats="2"
+           ratio_of_inferiority_at_which_defense_hunkers_down="2"
+           ratio_of_inferiority_at_which_guard_ships_go_threat="5"
+           description="Sends much larger Counterattacks when human ships spend a lot of time ineffectually dying on its planets."
+           counterattack_multiplier="2.0"
+  >
+    </ai_type>
+	
+  <ai_type name="Ghost" copy_from="FullEnsemble"
+           display_name="Ghost"
+           type_difficulty="Moderate"
+           abbreviation="Ghost"
+           description="Focuses on ships and defenses with cloaking."
+  >
+      <budget_item type="Reinforcement" seconds_between_attempts_to_spend="300" normal_ship_group_cat="CloakingHeavyReinforcements"
+                 spend_on_threshold="true"
+      guard_post_ship_group_cat="GhostGuardPosts"
+      unarmed_guard_post_ship_group_cat="UnarmedGhostGuardPosts"
+      turret_ship_group_cat="GhostTurrets" 
+      non_turret_defense_ship_group_cat="GhostNonTurretDefenses" 
+      wormhole_sentinel_ship_group_cat="GhostWormholeSentinels"
+      guardian_ship_group_cat="AnyBasicGuardians"
+      forcefield_guardian_ship_group_cat="AnyForcefieldGuardians"
+      decloaker_ship_group_cat="AIDecloakingShips" 
+      dire_guardian_ship_group_cat="DefensiveDireGuardians" 
+      dire_guard_post_ship_group_cat="GhostDireGuardPosts"
+      singular_freaky_ship_group_cat="AnySingularFreakySurprises"
+    />
+  	<budget_item type="SpecialForces" seconds_between_attempts_to_spend="30" normal_ship_group_cat="CloakingHeavyReinforcements" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="GolemiteGolems" decloaker_ship_group_cat="AIDecloakingShips"  spend_on_threshold="true"/>
+    <budget_item type="PraetorianGuard" seconds_between_attempts_to_spend="30" normal_ship_group_cat="CloakingHeavyReinforcements" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="GolemiteGolems"  spend_on_threshold="true"/>	
+    <budget_item type="HunterFleet" seconds_between_attempts_to_spend="30" normal_ship_group_cat="CloakingHeavyReinforcements" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" decloaker_ship_group_cat="AIDecloakingShips"  spend_on_threshold="true"/>
+  	<budget_item type="Wave" seconds_between_attempts_to_spend="600" normal_ship_group_cat="CloakingHeavyWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>
+  	<budget_item type="CPA" seconds_between_attempts_to_spend="7200" normal_ship_group_cat="CloakingHeavyWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>
+  	<budget_item type="Reconquest" seconds_between_attempts_to_spend="120" normal_ship_group_cat="CloakingHeavyWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>
+    <budget_item type="WormholeInvasion" seconds_between_attempts_to_spend="6260" normal_ship_group_cat="CloakingHeavyWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>	
+  </ai_type>
+  
+   <ai_type name="SledgeHammer" copy_from="FullEnsemble"
+            display_name="Sledge Hammer"
+            type_difficulty="Moderate"
+           abbreviation="SledgeHammer"
+           description="Takes much longer to send a wave, but as a consequence the waves are also much larger."
+  >
+  <budget_item type="Wave" seconds_between_attempts_to_spend="900" normal_ship_group_cat="AnyWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>
+  </ai_type>
+  
+  <ai_type name="Golemite" copy_from="FullEnsemble"
+           display_name="Golemite"
+           type_difficulty="Brutal"
+           abbreviation="Golemite"
+           description="Uses AI Golems on some of its planets. Painful."
+           type_name="Arcen.AIW2.External.AITypeController_Golemite"
+  >
+    <budget_item type="Reinforcement" seconds_between_attempts_to_spend="300" normal_ship_group_cat="AnyReinforcements"
+      spend_on_threshold="true"
+      guard_post_ship_group_cat="AnyBasicGuardPosts"
+      unarmed_guard_post_ship_group_cat="UnarmedGuardPosts"
+      turret_ship_group_cat="AnyTurrets" 
+      non_turret_defense_ship_group_cat="AnyNonTurretDefenses" 
+      wormhole_sentinel_ship_group_cat="AnyWormholeSentinels"
+      guardian_ship_group_cat="AnyBasicGuardians"
+      forcefield_guardian_ship_group_cat="AnyForcefieldGuardians"
+      decloaker_ship_group_cat="AIDecloakingShips" 
+      dire_guardian_ship_group_cat="DefensiveDireGuardians" 
+      dire_guard_post_ship_group_cat="AnyDireGuardPosts"
+      singular_freaky_ship_group_cat="GolemiteGolems"
+    />  
+  </ai_type>
+  
+  <ai_type name="ViciousRaider" copy_from="FullEnsemble"
+           display_name="Vicious Raider"
+           abbreviation="ViciousRaider"
+           type_difficulty="Hard"
+           description="Extremely offensive orientated, and very keen on raiding units."
+           multiplier_for_budget_wave="2.2"
+  >
+    <budget_item type="Reinforcement" seconds_between_attempts_to_spend="300" normal_ship_group_cat="ViciousRaiderReinforcements"
+      spend_on_threshold="true"
+      guard_post_ship_group_cat="AnyBasicGuardPosts"
+      unarmed_guard_post_ship_group_cat="UnarmedGuardPosts"
+      turret_ship_group_cat="AnyTurrets" 
+      non_turret_defense_ship_group_cat="AnyNonTurretDefenses" 
+      wormhole_sentinel_ship_group_cat="AnyWormholeSentinels"
+      guardian_ship_group_cat="AnyBasicGuardians"
+      forcefield_guardian_ship_group_cat="AnyForcefieldGuardians"
+      decloaker_ship_group_cat="AIDecloakingShips" 
+      dire_guardian_ship_group_cat="DefensiveDireGuardians" 
+      dire_guard_post_ship_group_cat="AnyDireGuardPosts"
+      singular_freaky_ship_group_cat="AnySingularFreakySurprises"
+    />
+  	<budget_item type="SpecialForces" seconds_between_attempts_to_spend="30" normal_ship_group_cat="ViciousRaiderReinforcements" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="GolemiteGolems"   decloaker_ship_group_cat="AIDecloakingShips"  spend_on_threshold="true"/>
+    <budget_item type="PraetorianGuard" seconds_between_attempts_to_spend="30" normal_ship_group_cat="ViciousRaiderReinforcements" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="GolemiteGolems"  spend_on_threshold="true"/>	
+    <budget_item type="HunterFleet" seconds_between_attempts_to_spend="30" normal_ship_group_cat="ViciousRaiderReinforcements" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians"   decloaker_ship_group_cat="AIDecloakingShips"  spend_on_threshold="true"/>
+  	<budget_item type="Wave" seconds_between_attempts_to_spend="600" normal_ship_group_cat="ViciousRaiderWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>
+  	<budget_item type="CPA" seconds_between_attempts_to_spend="7200" normal_ship_group_cat="ViciousRaiderWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>
+  	<budget_item type="Reconquest" seconds_between_attempts_to_spend="120" normal_ship_group_cat="ViciousRaiderWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>
+    <budget_item type="WormholeInvasion" seconds_between_attempts_to_spend="6260" normal_ship_group_cat="ViciousRaiderWaves" guardian_ship_group_cat="AnyBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>  
+  </ai_type>
+  
+  <ai_type name="Swarmer" copy_from="FullEnsemble"
+           display_name="Swarmer"
+           abbreviation="Swarmer"
+           type_difficulty="Brutal"
+           description="Rather fond of having lots of swarmer type units, as well as those which spawn more on death."
+  >
+    <budget_item type="Reinforcement" seconds_between_attempts_to_spend="300" normal_ship_group_cat="SwarmerReinforcements"
+                 spend_on_threshold="true"
+      guard_post_ship_group_cat="SwarmerGuardPosts"
+      unarmed_guard_post_ship_group_cat="UnarmedSwarmerGuardPosts"
+      turret_ship_group_cat="SwarmerTurrets" 
+      non_turret_defense_ship_group_cat="AnyNonTurretDefenses" 
+      wormhole_sentinel_ship_group_cat="AnyWormholeSentinels"
+      guardian_ship_group_cat="SwarmerBasicGuardians"
+      forcefield_guardian_ship_group_cat="AnyForcefieldGuardians"
+      dire_guardian_ship_group_cat="DefensiveDireGuardians"
+      decloaker_ship_group_cat="AIDecloakingShips" 
+      dire_guard_post_ship_group_cat="SwarmerDireGuardPosts"
+      singular_freaky_ship_group_cat="AnySingularFreakySurprises"
+    />
+  	<budget_item type="SpecialForces" seconds_between_attempts_to_spend="30" normal_ship_group_cat="SwarmerReinforcements" guardian_ship_group_cat="SwarmerBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="GolemiteGolems"   decloaker_ship_group_cat="AIDecloakingShips"  spend_on_threshold="true"/>
+    <budget_item type="PraetorianGuard" seconds_between_attempts_to_spend="30" normal_ship_group_cat="SwarmerReinforcements" guardian_ship_group_cat="SwarmerBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="GolemiteGolems"  spend_on_threshold="true"/>	
+    <budget_item type="HunterFleet" seconds_between_attempts_to_spend="30" normal_ship_group_cat="SwarmerReinforcements" guardian_ship_group_cat="SwarmerBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians"   decloaker_ship_group_cat="AIDecloakingShips"  spend_on_threshold="true"/>
+  	<budget_item type="Wave" seconds_between_attempts_to_spend="600" normal_ship_group_cat="SwarmerWaves" guardian_ship_group_cat="SwarmerBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>
+  	<budget_item type="CPA" seconds_between_attempts_to_spend="7200" normal_ship_group_cat="SwarmerWaves" guardian_ship_group_cat="SwarmerBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>
+  	<budget_item type="Reconquest" seconds_between_attempts_to_spend="120" normal_ship_group_cat="SwarmerWaves" guardian_ship_group_cat="SwarmerBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>
+    <budget_item type="WormholeInvasion" seconds_between_attempts_to_spend="6260" normal_ship_group_cat="SwarmerWaves" guardian_ship_group_cat="SwarmerBasicGuardians" forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" dire_guardian_ship_group_cat="AnyDireGuardians" spend_on_threshold="false"/>  
+  </ai_type>
+  
+  <ai_type name="FortressBaron" copy_from="FullEnsemble"
+           display_name="Fortress Baron"
+           abbreviation="FortressBaron"
+           type_difficulty="Moderate"
+           description="Defends planets heavily, using extra Fortresses as well as the rare Super Fortress in addition."
+           type_name="Arcen.AIW2.External.AITypeController_FortressBaron"
+           initial_ai_defenses_turret_budget_per_mark_3_planet="40000"
+           modulus_for_turrets_at_reinforcement_location_lower_is_more_frequent="2"
+           modulus_for_non_turret_defenses_at_reinforcement_location_lower_is_more_frequent="3"
+           chance_out_of_100_for_armed_guard_post_planet_mk1="60"
+           chance_out_of_100_for_armed_guard_post_planet_mk2="60"
+           chance_out_of_100_for_armed_guard_post_planet_mk3="70"
+           chance_out_of_100_for_armed_guard_post_planet_mk4="80"
+           chance_out_of_100_for_armed_guard_post_planet_mk5="80"
+           chance_out_of_100_for_armed_guard_post_planet_mk6="90"
+  >
+    <budget_item type="Reinforcement" seconds_between_attempts_to_spend="300" normal_ship_group_cat="AnyReinforcements"
+      spend_on_threshold="true"
+      guard_post_ship_group_cat="AnyBasicGuardPosts"
+      unarmed_guard_post_ship_group_cat="UnarmedGuardPosts"
+      turret_ship_group_cat="FortressBaronTurrets" 
+      non_turret_defense_ship_group_cat="AnyNonTurretDefenses" 
+      wormhole_sentinel_ship_group_cat="AnyWormholeSentinels"
+      guardian_ship_group_cat="AnyBasicGuardians"
+      forcefield_guardian_ship_group_cat="AnyForcefieldGuardians" 
+      dire_guardian_ship_group_cat="DefensiveDireGuardians"
+      decloaker_ship_group_cat="AIDecloakingShips" 
+      dire_guard_post_ship_group_cat="AnyDireGuardPosts"
+      singular_freaky_ship_group_cat="AnySingularFreakySurprises"
+    />	  
+  </ai_type> 
+  
+  <ai_type name="PeaceMaker" copy_from="FullEnsemble"
+           display_name="Peace Maker"
+           abbreviation="PeaceMaker"
+           type_difficulty="Moderate"
+           description="Has far more Orbital Mass Drivers and a few more Ion Cannons than normal guarding their planets, alongside additional normal defenses."
+           type_name="Arcen.AIW2.External.AITypeController_PeaceMaker"
+           initial_ai_defenses_turret_budget_per_mark_3_planet="36000"
+           modulus_for_turrets_at_reinforcement_location_lower_is_more_frequent="3"
+           modulus_for_non_turret_defenses_at_reinforcement_location_lower_is_more_frequent="3"
+           chance_out_of_100_for_armed_guard_post_planet_mk1="30"
+           chance_out_of_100_for_armed_guard_post_planet_mk2="30"
+           chance_out_of_100_for_armed_guard_post_planet_mk3="40"
+           chance_out_of_100_for_armed_guard_post_planet_mk4="50"
+           chance_out_of_100_for_armed_guard_post_planet_mk5="70"
+           chance_out_of_100_for_armed_guard_post_planet_mk6="80"
+  >
+  </ai_type>
+  
+  <ai_type name="Royal" copy_from="FullEnsemble"
+           display_name="Royal"
+           abbreviation="Royal"
+           type_difficulty="Brutal"
+           description="Uses far stronger Guardians, plus has more of them in general compared to normal."
+		   type_name="Arcen.AIW2.External.AITypeController_Royal"           
+	     initial_ai_defenses_guardians_budget_per_mark_3_planet="170000"
+       initial_ai_defenses_strikecraft_budget_per_mark_3_planet="4800"
+       initial_ai_defenses_turret_budget_per_mark_3_planet="1200"
+       initial_ai_defenses_non_turret_defense_budget_per_mark_3_planet="2400"
+           ignore_guardian_restrictions_in_waves="true"
+           multiplier_for_starting_guardian_budget_on_reconquest="0.001"
+  >
+    <budget_item type="Reinforcement" seconds_between_attempts_to_spend="300" normal_ship_group_cat="AnyReinforcements"
+      spend_on_threshold="true"
+      guard_post_ship_group_cat="AnyBasicGuardPosts"
+      unarmed_guard_post_ship_group_cat="UnarmedGuardPosts"
+      turret_ship_group_cat="AnyTurrets" 
+      non_turret_defense_ship_group_cat="AnyNonTurretDefenses" 
+      wormhole_sentinel_ship_group_cat="AnyWormholeSentinels"
+      guardian_ship_group_cat="RoyalBasicGuardians"
+      forcefield_guardian_ship_group_cat="RoyalForcefieldGuardians"
+      decloaker_ship_group_cat="AIDecloakingShips" 
+      dire_guardian_ship_group_cat="RoyalDefensiveDireGuardians" 
+      dire_guard_post_ship_group_cat="AnyDireGuardPosts"
+      singular_freaky_ship_group_cat="AnySingularFreakySurprises"
+    />
+  	<budget_item type="SpecialForces" seconds_between_attempts_to_spend="30" normal_ship_group_cat="RoyalReinforcements" guardian_ship_group_cat="RoyalBasicGuardians" forcefield_guardian_ship_group_cat="RoyalForcefieldGuardians" dire_guardian_ship_group_cat="RoyalDireGuardians"  decloaker_ship_group_cat="AIDecloakingShips"  spend_on_threshold="true"/>
+    <budget_item type="PraetorianGuard" seconds_between_attempts_to_spend="30" normal_ship_group_cat="RoyalReinforcements" guardian_ship_group_cat="RoyalBasicGuardians" forcefield_guardian_ship_group_cat="RoyalForcefieldGuardians" dire_guardian_ship_group_cat="RoyalDireGuardians"   decloaker_ship_group_cat="AIDecloakingShips"  spend_on_threshold="true"/>	
+    <budget_item type="HunterFleet" seconds_between_attempts_to_spend="30" normal_ship_group_cat="RoyalReinforcements" guardian_ship_group_cat="RoyalBasicGuardians" forcefield_guardian_ship_group_cat="RoyalForcefieldGuardians" dire_guardian_ship_group_cat="RoyalDireGuardians" spend_on_threshold="true"/>
+  	<budget_item type="Wave" seconds_between_attempts_to_spend="600" normal_ship_group_cat="RoyalWaves" guardian_ship_group_cat="RoyalBasicGuardians" forcefield_guardian_ship_group_cat="RoyalForcefieldGuardians" dire_guardian_ship_group_cat="RoyalDireGuardians" spend_on_threshold="false"/>
+  	<budget_item type="CPA" seconds_between_attempts_to_spend="7200" normal_ship_group_cat="RoyalWaves" guardian_ship_group_cat="RoyalBasicGuardians" forcefield_guardian_ship_group_cat="RoyalForcefieldGuardians" dire_guardian_ship_group_cat="RoyalDireGuardians" spend_on_threshold="false"/>
+  	<budget_item type="Reconquest" seconds_between_attempts_to_spend="120" normal_ship_group_cat="RoyalWaves" guardian_ship_group_cat="RoyalBasicGuardians" forcefield_guardian_ship_group_cat="RoyalForcefieldGuardians" dire_guardian_ship_group_cat="RoyalDireGuardians" spend_on_threshold="false"/>
+        <budget_item type="WormholeInvasion" seconds_between_attempts_to_spend="6260" normal_ship_group_cat="RoyalWaves" guardian_ship_group_cat="RoyalBasicGuardians" forcefield_guardian_ship_group_cat="RoyalForcefieldGuardians" dire_guardian_ship_group_cat="RoyalDireGuardians" spend_on_threshold="false"/>
+  </ai_type>   
+
+  <ai_type name="OneWayDoormaster" copy_from="FullEnsemble"
+           display_name="One-Way Doormaster"
+           abbreviation="OneWayDoormaster"
+           type_difficulty="Easier"
+           description="Has many Black Hole Machines on its planets, which prevent most ships from leaving while intact."
+           type_name="Arcen.AIW2.External.AITypeController_OneWayDoormaster"
+  >
+  </ai_type>  
+
+  <ai_type name="Random" copy_from="FullEnsemble"
+           display_name="Random"
+           abbreviation="Random"
+           description="Picks a completely random AI type"
+           type_name="Arcen.AIW2.External.AITypeController_Random"
+           random_difficulty="Any"
+  >
+  </ai_type>
+  <ai_type name="RandomEasier" copy_from="FullEnsemble"
+           display_name="Random Easier"
+           abbreviation="Random Easier"
+           description="Picks a random Easy AI type"
+           type_name="Arcen.AIW2.External.AITypeController_Random"
+           random_difficulty="Easier"
+  >
+  </ai_type>  
+  <ai_type name="RandomModerate" copy_from="FullEnsemble"
+           display_name="Random Moderate"
+           abbreviation="Random Moderate"
+           description="Picks a random Moderate AI type"
+           type_name="Arcen.AIW2.External.AITypeController_Random"
+           random_difficulty="Moderate"
+  >
+  </ai_type>  
+  <ai_type name="RandomHard" copy_from="FullEnsemble"
+           display_name="Random Hard"
+           abbreviation="Random Hard"
+           description="Picks a random Hard AI type"
+           type_name="Arcen.AIW2.External.AITypeController_Random"
+           random_difficulty="Hard"
+  >
+  </ai_type>  
+  <ai_type name="RandomBrutal" copy_from="FullEnsemble"
+           display_name="Random Brutal"
+           abbreviation="Random Brutal"
+           description="Picks a random Brutal AI type"
+           type_name="Arcen.AIW2.External.AITypeController_Random"
+           random_difficulty="Brutal"
+  >
+  </ai_type>  
+
+    <ai_type name="Adaptive" copy_from="FullEnsemble"
+           display_name="Adaptive Full"
+           abbreviation="Adaptive F"
+           description="Cycles between completely random AI types"
+           type_name="Arcen.AIW2.External.AITypeController_Adaptive"
+           adaptive_difficulty="Any"
+  >
+  </ai_type>  
+
+  <ai_type name="AdaptiveEasier" copy_from="FullEnsemble"
+           display_name="Adaptive Easier"
+           abbreviation="Adaptive E"
+           description="Cycles between adaptive Easy AI types"
+           type_name="Arcen.AIW2.External.AITypeController_Adaptive"
+           adaptive_difficulty="Easier"
+  >
+  </ai_type>  
+  <ai_type name="AdaptiveModerate" copy_from="FullEnsemble"
+           display_name="Adaptive Moderate"
+           abbreviation="Adaptive M"
+           description="Cycles between adaptive Moderate AI types"
+           type_name="Arcen.AIW2.External.AITypeController_Adaptive"
+           adaptive_difficulty="Moderate"
+  >
+  </ai_type>  
+  <ai_type name="AdaptiveHard" copy_from="FullEnsemble"
+           display_name="Adaptive Hard"
+           abbreviation="Adaptive H"
+           description="Cycles between adaptive Hard AI types"
+           type_name="Arcen.AIW2.External.AITypeController_Adaptive"
+           adaptive_difficulty="Hard"
+  >
+  </ai_type>  
+  <ai_type name="AdaptiveBrutal" copy_from="FullEnsemble"
+           display_name="Adaptive Brutal"
+           abbreviation="Adaptive B"
+           description="Cycles between adaptive Brutal AI types"
+           type_name="Arcen.AIW2.External.AITypeController_Adaptive"
+           adaptive_difficulty="Brutal"
+  >
+  </ai_type>  
+
+</root>

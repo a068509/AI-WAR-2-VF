@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <swap name="Fortified TeslaTurret" new_name="Fortified_TeslaCoil" />
+  
+  <swap name="ExtragalacticTrespasser" new_name="ExtragalacticPoltergeist" />
+  <swap name="ExtragalacticTrespasser_FusionBomb" new_name="ExtragalacticPoltergeist_FusionBomb" />
+
+  <swap name="ExtragalacticCentruroid" new_name="ExtragalacticPhoenix" />
+  <swap name="ExtragalacticCentruroid_FusionBomb" new_name="ExtragalacticPhoenix_AblativeCannon" />
+
+  <swap name="ExtragalacticReanimator" new_name="ExtragalacticWendigo" />
+  <swap name="ExtragalacticReanimator_ParasiteBolt" new_name="ExtragalacticWendigo_ParasiteBolt" /> 
+
+  <swap name="ExtragalacticShellshocker" new_name="ExtragalacticWyrm" />
+  <swap name="ExtragalacticShellshocker_Grenade" new_name="ExtragalacticWyrm_Grenade" />
+
+  <swap name="ExtragalacticWarspiteArtillery" new_name="ExtragalacticChimeraArtillery" />
+  <swap name="ExtragalacticWarspiteArtillery_MassDriver" new_name="ExtragalacticChimeraArtillery_PlasmaTorpedo" />
+
+  <swap name="ExtragalacticWarspite" new_name="ExtragalacticChimera" />
+  <swap name="ExtragalacticWarspite_PlasmaTorpedo" new_name="ExtragalacticChimera_ConcussionMissile" />
+
+  <swap name="MaugrimDrone_ConcussionMissile" new_name="MaugrimDrone_LaserPulse" />    
+</root>

@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  
+  <!--**************************************************Weapons**************************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+  
+  <sfx name="ArmorPiercingShell_Large_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx" 
+       filename="assets/sounds/weapons/armorpiercingshell/large/firing/aaa_sfx.prefab" />
+  <sfx name="ArmorPiercingShell_Large_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/armorpiercingshell/large/hitting/aaa_sfx.prefab" />
+
+  <sfx name="ArmorPiercingShell_Medium_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/armorpiercingshell/medium/firing/aaa_sfx.prefab" />
+  <sfx name="ArmorPiercingShell_Medium_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/armorpiercingshell/medium/hitting/aaa_sfx.prefab" />
+
+  <sfx name="ArmorPiercingShell_Small_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/armorpiercingshell/small/firing/aaa_sfx.prefab" />
+  <sfx name="ArmorPiercingShell_Small_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/armorpiercingshell/small/hitting/aaa_sfx.prefab" />
+
+  <sfx name="Artillery_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/artillery/firing/aaa_sfx.prefab" />
+  <sfx name="Artillery_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/artillery/hitting/aaa_sfx.prefab" />
+
+  <sfx name="BasicLaunchWhine_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/basiclaunchwhine/firing/aaa_sfx.prefab" />
+  <sfx name="BasicLaunchWhine_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/basiclaunchwhine/hitting/aaa_sfx.prefab" />
+
+  <sfx name="BasicShell_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/basicshell/firing/aaa_sfx.prefab" />
+  <sfx name="BasicShell_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/basicshell/hitting/aaa_sfx.prefab" />
+
+  <sfx name="BasicShell2_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/basicshell2/firing/aaa_sfx.prefab" />
+  <sfx name="BasicShell2_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/basicshell2/hitting/aaa_sfx.prefab" />
+
+  <sfx name="EnergyWave_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/energywave/firing/aaa_sfx.prefab" />
+  <sfx name="EnergyWave_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/energywave/hitting/aaa_sfx.prefab" />
+
+  <sfx name="EngineDisruptingShell_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/enginedisruptingshell/firing/aaa_sfx.prefab" />
+  <sfx name="EngineDisruptingShell_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/enginedisruptingshell/hitting/aaa_sfx.prefab" />
+
+  <sfx name="ExplosivePop_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/explosivepop/firing/aaa_sfx.prefab" />
+  <sfx name="ExplosivePop_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/explosivepop/hitting/aaa_sfx.prefab" />
+
+  <sfx name="ExplosivePopLarger_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/explosivepoplarger/firing/aaa_sfx.prefab" />
+  <sfx name="ExplosivePopLarger_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/explosivepoplarger/hitting/aaa_sfx.prefab" />
+
+  <sfx name="ExtremeLongRangeRailgun_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/extremelongrangerailgun/firing/aaa_sfx.prefab" />
+  <sfx name="ExtremeLongRangeRailgun_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/extremelongrangerailgun/hitting/aaa_sfx.prefab" />
+
+  <sfx name="FlakLauncher_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/flak launcher/firing/aaa_sfx.prefab" />
+  <sfx name="FlakLauncher_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/flak launcher/hitting/aaa_sfx.prefab" />
+
+  <sfx name="FusionBomb_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/fusion bomb/firing/aaa_sfx.prefab" />
+  <sfx name="FusionBomb_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/fusion bomb/hitting/aaa_sfx.prefab" />
+
+  <sfx name="FusionRocket_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/fusion rocket/firing/aaa_sfx.prefab" />
+  <sfx name="FusionRocket_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/fusion rocket/hitting/aaa_sfx.prefab" />
+
+  <sfx name="GuidedMissile_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/guided missile/firing/aaa_sfx.prefab" />
+  <sfx name="GuidedMissile_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/guided missile/hitting/aaa_sfx.prefab" />
+
+  <sfx name="HeavyBeam_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/heavybeam/firing/aaa_sfx.prefab" />
+  <sfx name="HeavyBeam_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/heavybeam/hitting/aaa_sfx.prefab" />
+
+  <sfx name="Laser_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/laser/firing/aaa_sfx.prefab" />
+  <sfx name="Laser_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/laser/hitting/aaa_sfx.prefab" />
+
+  <sfx name="Laser2_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/laser2/firing/aaa_sfx.prefab" />
+  <sfx name="Laser2_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/laser2/hitting/aaa_sfx.prefab" />
+
+  <sfx name="LaserCluster_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/lasercluster/firing/aaa_sfx.prefab" />
+  <sfx name="LaserCluster_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/lasercluster/hitting/aaa_sfx.prefab" />
+
+  <sfx name="Lightning_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/lightning/firing/aaa_sfx.prefab" />
+  <sfx name="Lightning_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/lightning/hitting/aaa_sfx.prefab" />
+
+  <sfx name="Missile_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/missile/firing/aaa_sfx.prefab" />
+  <sfx name="Missile_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/missile/hitting/aaa_sfx.prefab" />
+
+  <sfx name="PlasmaBolt_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/plasma bolt/firing/aaa_sfx.prefab" />
+  <sfx name="PlasmaBolt_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/plasma bolt/hitting/aaa_sfx.prefab" />
+
+  <sfx name="PlasmaTorpedo_Firing" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/plasma torpedo/firing/aaa_sfx.prefab" />
+  <sfx name="PlasmaTorpedo_Hitting" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/weapons/plasma torpedo/hitting/aaa_sfx.prefab" />
+
+
+  <!--***********************************************Explosions**************************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+
+  <sfx name="Attrition_Explosion" bus="DeathsSubstantial" bundle_name="aiwar2sfx"
+       filename="assets/sounds/explosions/attrition/aaa_sfx.prefab" />
+
+  <sfx name="Mine_Explosion" bus="WeaponsFiring" bundle_name="aiwar2sfx"
+       filename="assets/sounds/explosions/mineexplosion/aaa_sfx.prefab" />
+
+  <sfx name="ShipGuardian_Explosion" bus="DeathsSubstantial" bundle_name="aiwar2sfx"
+       filename="assets/sounds/explosions/shipguardian/aaa_sfx.prefab" />
+
+  <sfx name="ShipLarge_Explosion" bus="DeathsRoutine" bundle_name="aiwar2sfx"
+       filename="assets/sounds/explosions/shiplarge/aaa_sfx.prefab" />
+
+  <sfx name="ShipLostMassive_Explosion" bus="DeathsCritical" bundle_name="aiwar2sfx"
+       filename="assets/sounds/explosions/shiplostmassive/aaa_sfx.prefab" />
+
+  <sfx name="ShipLargeLostOnOtherPlanet_Explosion" bus="DeathsOtherPlanets" bundle_name="aiwar2sfx"
+       filename="assets/sounds/explosions/shiplargelostonotherplanet/aaa_sfx.prefab" />
+
+  <sfx name="ShipLostOnOtherPlanet_Explosion" bus="DeathsOtherPlanets" bundle_name="aiwar2sfx"
+       filename="assets/sounds/explosions/shiplostonotherplanet/aaa_sfx.prefab" />
+
+  <sfx name="ShipMidsize_Explosion" bus="DeathsRoutine" bundle_name="aiwar2sfx"
+       filename="assets/sounds/explosions/shipmidsize/aaa_sfx.prefab" />
+
+  <sfx name="ShipSmall_Explosion" bus="DeathsRoutine" bundle_name="aiwar2sfx"
+       filename="assets/sounds/explosions/shipsmall/aaa_sfx.prefab" />
+
+  <sfx name="ShipStarship_Explosion" bus="DeathsSubstantial" bundle_name="aiwar2sfx"
+       filename="assets/sounds/explosions/shipstarship/aaa_sfx.prefab" />
+
+  <sfx name="StructureLarge_Explosion" bus="DeathsSubstantial" bundle_name="aiwar2sfx"
+       filename="assets/sounds/explosions/structurelarge/aaa_sfx.prefab" />
+
+  <sfx name="StructureLostOnOtherPlanet_Explosion" bus="DeathsOtherPlanets" bundle_name="aiwar2sfx"
+       filename="assets/sounds/explosions/structurelostonotherplanet/aaa_sfx.prefab" />
+
+  <sfx name="StructureMidsize_Explosion" bus="DeathsRoutine" bundle_name="aiwar2sfx"
+       filename="assets/sounds/explosions/structuremidsize/aaa_sfx.prefab" />
+
+  <sfx name="StructureSmall_Explosion" bus="DeathsRoutine" bundle_name="aiwar2sfx"
+       filename="assets/sounds/explosions/structuresmall/aaa_sfx.prefab" />
+
+  <sfx name="Turret_Explosion" bus="DeathsRoutine" bundle_name="aiwar2sfx"
+       filename="assets/sounds/explosions/turret/aaa_sfx.prefab" />
+
+  <sfx name="WarheadLarger_Explosion" bus="DeathsCritical" bundle_name="aiwar2sfx"
+       filename="assets/sounds/explosions/warheadlarger/aaa_sfx.prefab" />
+
+  <sfx name="WarheadSmaller_Explosion" bus="DeathsSubstantial" bundle_name="aiwar2sfx"
+       filename="assets/sounds/explosions/warheadsmaller/aaa_sfx.prefab" />
+
+  <sfx name="ShipInSquadOnOtherPlanet_Explosion" bus="DeathsOtherPlanetsMinor" bundle_name="aiwar2sfx"
+       filename="assets/sounds/explosions/shipinsquadonotherplanet/muffled/aaa_sfx.prefab" />
+
+
+  <!--************************************************Alerts*****************************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+
+
+  <sfx name="AnyEnemiesAlarm" bus="Alert" bundle_name="aiwar2sfx"
+       filename="assets/sounds/alerts/anyenemiesalarm/aaa_sfx.prefab" />
+
+  <sfx name="ArkTakingDamage" bus="Alert" bundle_name="aiwar2sfx"
+       filename="assets/sounds/alerts/arktakingdamage/aaa_sfx.prefab" />
+
+  <sfx name="ArkDestroyed" bus="Alert" bundle_name="aiwar2sfx"
+       filename="assets/sounds/alerts/arkdestroyed/aaa_sfx.prefab" />
+
+  <sfx name="PlanetLost" bus="Alert" bundle_name="aiwar2sfx"
+       filename="assets/sounds/alerts/planetlost/aaa_sfx.prefab" />
+
+  <!--******************************************Ark Chief of Staff***********************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+
+  <sfx name="ArkChiefOfStaff_ArkHullDamage" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/arkhulldamage/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_CPADetected" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/cpadetected/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_FuelLow" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/fuellow/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_HackingDone" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/hackingdone/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_HackingFail" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/hackingfail/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_HackingStart" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/hackingstart/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_LargeEnemiesInAlliedTerritory" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/largeenemiesinalliedterritory/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_LostPlanet" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/lostplanet/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_PowerLow" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/powerlow/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_ScienceExhausted" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/scienceexhausted/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_UnderAttack_BorderTerritory" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/underattack_borderterritory/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_UnderAttack_EnemyTerritory" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/underattack_enemyterritory/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_UnderAttack_NeutralTerritory" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/underattack_neutralterritory/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_WaveArrival" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/wavearrival/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_Brownout" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/resources/brownout/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_LowOnEnergy" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/resources/low on energy/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_LowOnMetal" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/resources/low on metal/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_MetalExhausted" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/resources/metal exhausted/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_DefeatWarpOut" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/human resistance fighters/defeat warp out/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_VictoryWarpOut" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/human resistance fighters/victory warp out/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_VictoryWarpIn" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/human resistance fighters/warp in/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_FriendlyMaraudersReinforcingPlayer" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/marauders/friendly marauders reinforcing player/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_MaraudersAttackingEnemyPlanet" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/marauders/marauders attacking enemy planet/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_MaraudersAttackingFriendlyPlanet" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/marauders/marauders attacking friendly planet/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_MaraudersAttackingPlanetPlayerIsAttacking" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/marauders/marauders attacking planet player is attacking/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_MaraudersAttackingPlayerPlanet" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/marauders/marauders attacking player planet/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_RiskAnalyzersActivate" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/risk analyzers/risk analyzers activate/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_AstroTrainSpawned" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/astro train depot/astro train spawned/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_AstroTrainDepotSpawned" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/astro train depot/astro train depot spawned/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_InstigatorBaseConstructed" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/ai instigators/instigator base constructed/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_PlayerPlanetUnderAttack" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/ai attack/player planet under attack/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_HomeWorldUnderAttack" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/ai attack/home world under attack/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_CriticalPlanetUnderAttack" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/ai attack/critical planet under attack/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_WaveTargetingHomePlanet" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/ai attack/wave targeting home world/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_HomeCommandStationUnderAttack" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/ai attack/home command station under attack/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_WaveTargetingCriticalPlanet" bus="Alert" bundle_name="aiwar2voice"
+       filename="Assets/Voice/ArkChiefOfStaff/AI Attack/Wave Targeting Critical Planet/000_Voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_MacrophageAttacking" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/macrophage/macrophage attacking/000_voice.prefab" />	
+
+  <sfx name="ArkChiefOfStaff_TeliumSpawn" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/macrophage/telium spawn/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_VengeanceGeneratorSpawn" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/dark spire/vengeance generator spawn/000_voice.prefab" />	
+
+  <sfx name="ArkChiefOfStaff_VengeanceGeneratorStrike" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/dark spire/vengeance generator strike/000_voice.prefab" />
+
+  <!-- Stuff from here on isn't done -->
+
+
+
+  <sfx name="ArkChiefOfStaff_DevourerArrivedOnPlayerPlanet" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/devourer/devourer arrived on player planet/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_DevourerHeadingForPlayerPlanet" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/devourer/devourer heading for player planet/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_PlayerGainsDevourerIntel" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/devourer/player gains devourer intel/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_DysonAntagonized" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/dyson sphere/dyson antagonized/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_DysonLiberatedFromAI" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/dyson sphere/dyson liberated from ai/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_DysonLiberatedFromPlayer" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/dyson sphere/dyson liberated from player/000_voice.prefab" />	
+
+  <sfx name="ArkChiefOfStaff_DysonNoLongerAntagonized" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/dyson sphere/dyson no longer antagonized/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_DysonPlanetCapturedByAI" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/dyson sphere/dyson planet captured by ai/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_DysonPlanetCapturedByPlayer" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/dyson sphere/dyson planet captured by player/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_PlayerGainsDysonIntel" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/dyson sphere/player gains dyson intel/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_ExoGalacticAttackDetectedHomePlanet" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/exo-galactic attack/exo-galactic attack detected (home planet)/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_ExoGalacticAttackDetectedOtherPlanet" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/exo-galactic attack/exo-galactic attack detected (other planet)/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_MaraudersPresentOnUnownedPlanet" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/marauders/marauders present on unowned planet/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_NanocaustFrenziesAgainstBorderWorld" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/nanocaust/nanocaust frenzies against border world/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_NanocaustFrenziesAgainstCriticalWorld" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/nanocaust/nanocaust frenzies against critical world/000_voice.prefab" />	
+
+  <sfx name="ArkChiefOfStaff_NanocaustFrenziesAgainstHomeWorld" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/nanocaust/nanocaust frenzies against home world/000_voice.prefab" />	
+
+  <sfx name="ArkChiefOfStaff_NanocaustFrenziesAgainstNonPlayer" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/nanocaust/nanocaust frenzies against non-player/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_NanocaustHacked" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/nanocaust/nanocaust hacked/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_PlayerGainsNanocaustCoreHiveIntel" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/nanocaust/player gains nanocaust core hive intel/000_voice.prefab" />	
+
+  <sfx name="ArkChiefOfStaff_PlayerGainsNanocaustIntel" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/nanocaust/player gains nanocaust intel/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_NewBluePrintDiscoveredStolen" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/science/new blueprint discovered-stolen/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_ZenithTraderArrivedOnHumanPlanet" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/zenith trader/arrived on human planet/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_ZenithTraderDestroyed" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/zenith trader/destroyed/000_voice.prefab" />	
+
+  <sfx name="ArkChiefOfStaff_ZenithTraderRespawns" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/zenith trader/respawns/000_voice.prefab" />
+
+  <sfx name="ArkChiefOfStaff_ZenithTraderReadyToTrade" bus="Alert" bundle_name="aiwar2voice"
+       filename="assets/voice/arkchiefofstaff/zenith trader/zenith trader ready to trade/000_voice.prefab" />	   
+
+<!-- End of Not Done Yet section -->  
+
+  <!--************************************************Other******************************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+  
+  <sfx name="WormholeTransit" bus="Other" bundle_name="aiwar2sfx"
+       filename="assets/sounds/other/wormholetransit/aaa_sfx.prefab" />
+
+  <sfx name="ForcefieldAbsorbsShot" bus="WeaponsHitting" bundle_name="aiwar2sfx"
+       filename="assets/sounds/other/forcefieldabsorbsshot/aaa_sfx.prefab" />
+  
+  
+
+  <!--*********************************************Interface*****************************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+
+  <sfx name="AttackOrder" bus="InterfaceGeneral" bundle_name="aiwar2sfx"
+       filename="assets/sounds/interface/attackorder/aaa_sfx.prefab" />
+
+  <sfx name="ConstructionOrder_NonVerbal" bus="InterfaceGeneral" bundle_name="aiwar2sfx"
+       filename="assets/sounds/interface/constructionorder/aaa_sfx.prefab" />
+
+  <sfx name="FRDMoveOrder" bus="InterfaceGeneral" bundle_name="aiwar2sfx"
+       filename="assets/sounds/interface/frdmoveorder/aaa_sfx.prefab" />
+
+  <sfx name="MoveOrder" bus="InterfaceGeneral" bundle_name="aiwar2sfx"
+       filename="assets/sounds/interface/moveorder/aaa_sfx.prefab" />
+
+  <sfx name="SetWaypoint" bus="InterfaceGeneral" bundle_name="aiwar2sfx"
+       filename="assets/sounds/interface/setwaypoint/aaa_sfx.prefab" />
+
+  <sfx name="WormholeMoveOrder" bus="InterfaceGeneral" bundle_name="aiwar2sfx"
+       filename="assets/sounds/interface/wormholemoveorder/aaa_sfx.prefab" />
+
+  <sfx name="AlterBuildQueue" bus="InterfaceGeneral" bundle_name="aiwar2sfx"
+       filename="assets/sounds/interface/alterbuildqueue/aaa_sfx.prefab" />
+
+  <sfx name="FleetAlterations" bus="InterfaceGeneral" bundle_name="aiwar2sfx"
+       filename="assets/sounds/interface/controlgroupalterations/aaa_sfx.prefab" />
+
+  <sfx name="GeneralTweak" bus="InterfaceGeneral" bundle_name="aiwar2sfx"
+       filename="assets/sounds/interface/generaltweak/aaa_sfx.prefab" />
+
+  <sfx name="LaunchWarhead" bus="InterfaceGeneral" bundle_name="aiwar2sfx"
+       filename="assets/sounds/interface/launchwarhead/aaa_sfx.prefab" />
+
+  <sfx name="ScrapUnits" bus="InterfaceGeneral" bundle_name="aiwar2sfx"
+       filename="assets/sounds/interface/scrapunits/aaa_sfx.prefab" />
+
+  <sfx name="SetActiveHack" bus="InterfaceGeneral" bundle_name="aiwar2sfx"
+       filename="assets/sounds/interface/setactivehack/aaa_sfx.prefab" />
+
+  <sfx name="SetHoldFireMode" bus="InterfaceGeneral" bundle_name="aiwar2sfx"
+       filename="assets/sounds/interface/setholdfiremode/aaa_sfx.prefab" />
+
+  <sfx name="TogglePause" bus="InterfaceGeneral" bundle_name="aiwar2sfx"
+       filename="assets/sounds/interface/togglepause/aaa_sfx.prefab" />
+
+  <sfx name="UnlockTech" bus="InterfaceGeneral" bundle_name="aiwar2sfx"
+       filename="assets/sounds/interface/unlocktech/aaa_sfx.prefab" />
+
+
+
+  <!--***********************************************Buttons*****************************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+
+
+  <sfx name="ButtonNormal" bus="InterfaceGeneral" bundle_name="aiwar2sfx"
+       filename="assets/sounds/buttons/normal/aaa_sfx.prefab" />
+
+  <sfx name="ButtonStartGame" bus="InterfaceGeneral" bundle_name="aiwar2sfx"
+       filename="assets/sounds/buttons/startgame/aaa_sfx.prefab" />
+
+  <sfx name="ButtonDenied" bus="InterfaceGeneral" bundle_name="aiwar2sfx"
+       filename="assets/sounds/buttons/buttondenied/aaa_sfx.prefab" />
+
+
+
+  <!--***********************************************Voice*******************************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+
+
+  <sfx name="ConstructionOrder_Calm" bus="InterfaceGeneral" bundle_name="aiwar2voice"
+       filename="assets/voice/engineering/calm/000_voice.prefab" fallback="ConstructionOrder_NonVerbal" />
+  <sfx name="ConstructionOrder_UnderFire" bus="InterfaceGeneral" bundle_name="aiwar2voice"
+       filename="assets/voice/engineering/underfire/000_voice.prefab" fallback="ConstructionOrder_NonVerbal" />
+
+  <sfx name="Civilian_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/civilian/1calm/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="Civilian_MoveOrder_2MildlyAnnoyed" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/civilian/2mildlyannoyed/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="Civilian_MoveOrder_3VeryAnnoyed" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/civilian/3veryannoyed/000_voice.prefab" fallback="MoveOrder" />
+
+  <sfx name="Spire_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/spire/move/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="Spire_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/spire/attack/000_voice.prefab" fallback="AttackOrder" />
+
+  <sfx name="Zenith_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/zenith/move/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="Zenith_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/zenith/attack/000_voice.prefab" fallback="AttackOrder" />
+
+  <sfx name="Fighter_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/fightersquadron/move/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="Fighter_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/fightersquadron/attack/000_voice.prefab" fallback="AttackOrder" />
+  
+  <sfx name="Bomber_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/bomber/move/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="Bomber_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/bomber/attack/000_voice.prefab" fallback="AttackOrder" />
+
+  <sfx name="AreaOfEffect_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/aoe/move/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="AreaOfEffect_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/aoe/attack/000_voice.prefab" fallback="AttackOrder" />
+  
+  <sfx name="Turret_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/turrets/attack/000_voice.prefab" fallback="AttackOrder" />
+
+  <sfx name="Flagship_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/flagship/move/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="Flagship_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/flagship/attack/000_voice.prefab" fallback="AttackOrder" />
+
+  <sfx name="Melee_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/melee/move/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="Melee_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/melee/attack/000_voice.prefab" fallback="AttackOrder" />
+
+  <sfx name="MasterCombatant_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/mastercombatant/move/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="MasterCombatant_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/mastercombatant/attack/000_voice.prefab" fallback="AttackOrder" />
+
+  <sfx name="MLRS_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/mlrs/move/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="MLRS_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/mlrs/attack/000_voice.prefab" fallback="AttackOrder" />
+
+  <sfx name="Raider_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/raider/move/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="Raider_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/raider/attack/000_voice.prefab" fallback="AttackOrder" />
+
+  <sfx name="Starship_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/starship/move/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="Starship_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/starship/attack/000_voice.prefab" fallback="AttackOrder" />
+
+  <sfx name="Sniper_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/sniper/move/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="Sniper_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/sniper/attack/000_voice.prefab" fallback="AttackOrder" />
+
+  <sfx name="Saboteur_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/saboteur/move/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="Saboteur_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/saboteur/attack/000_voice.prefab" fallback="AttackOrder" />
+
+  <sfx name="Corvette_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/missilecorvette/move/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="Corvette_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/missilecorvette/attack/000_voice.prefab" fallback="AttackOrder" />
+  
+
+  <!--******************************************Chief Advisers***************************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+  
+  <sfx name="Ark_AlanEdwards_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/chiefadviser_alanedwards/move/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="Ark_AlanEdwards_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/chiefadviser_alanedwards/attack/000_voice.prefab" fallback="AttackOrder" />
+
+  <sfx name="Ark_CherylHarris_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/chiefadviser_cherylharris/move/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="Ark_CherylHarris_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/chiefadviser_cherylharris/attack/000_voice.prefab" fallback="AttackOrder" />
+
+  <sfx name="Ark_ElijahFreeman_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/chiefadviser_elijahfreeman/move/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="Ark_ElijahFreeman_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/chiefadviser_elijahfreeman/attack/000_voice.prefab" fallback="AttackOrder" />
+
+  <sfx name="Ark_JackBishop_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/chiefadviser_jackbishop/move/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="Ark_JackBishop_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/chiefadviser_jackbishop/attack/000_voice.prefab" fallback="AttackOrder" />
+
+  <sfx name="Ark_LeeSen_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/chiefadviser_leesen/move/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="Ark_LeeSen_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/chiefadviser_leesen/attack/000_voice.prefab" fallback="AttackOrder" />
+
+  <sfx name="Ark_LucieLeroux_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/chiefadviser_lucieleroux/move/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="Ark_LucieLeroux_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/chiefadviser_lucieleroux/attack/000_voice.prefab" fallback="AttackOrder" />
+
+  <sfx name="Ark_NiklasWagner_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/chiefadviser_niklaswagner/move/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="Ark_NiklasWagner_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/chiefadviser_niklaswagner/attack/000_voice.prefab" fallback="AttackOrder" />
+
+  <sfx name="Ark_ThomasWalker_MoveOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/chiefadviser_thomaswalker/move/000_voice.prefab" fallback="MoveOrder" />
+  <sfx name="Ark_ThomasWalker_AttackOrder_1Calm" bus="VoiceRoutine" bundle_name="aiwar2voice"
+       filename="assets/voice/chiefadviser_thomaswalker/attack/000_voice.prefab" fallback="AttackOrder" />
+
+  <!--******************************************AI Taunts***************************************************-->
+  <!--***********************************************************************************************************-->
+  <!--***********************************************************************************************************-->
+
+  <sfx name="AITaunt_AIDestroysPlayerCommandStation" bus="VoiceAI" bundle_name="aiwar2voice"
+       filename="assets/voice/aitaunts/ai destroys player command station/000_voice.prefab" />   
+  
+  <sfx name="AITaunt_AIDestroysPlayerGolem" bus="VoiceAI" bundle_name="aiwar2voice"
+       filename="assets/voice/aitaunts/ai destroys player golem/000_voice.prefab" />
+
+  <sfx name="AITaunt_AIRecapturesPlanet" bus="VoiceAI" bundle_name="aiwar2voice"
+       filename="assets/voice/aitaunts/ai recaptures planet/000_voice.prefab" />
+
+  <sfx name="AITaunt_AISendsWave" bus="VoiceAI" bundle_name="aiwar2voice"
+       filename="assets/voice/aitaunts/ai sends wave/000_voice.prefab" />
+
+  <sfx name="AITaunt_DysonSphere" bus="VoiceAI" bundle_name="aiwar2voice"
+       filename="assets/voice/aitaunts/dysonsphere/000_voice.prefab" />
+
+  <sfx name="AITaunt_HunterFleetArrives" bus="VoiceAI" bundle_name="aiwar2voice"
+       filename="assets/voice/aitaunts/hunter fleet arrives/000_voice.prefab" />
+
+  <sfx name="AITaunt_OverlordTransforms" bus="VoiceAI" bundle_name="aiwar2voice"
+       filename="assets/voice/aitaunts/overlordtransforms/000_voice 6.prefab" />  	   
+  
+  <sfx name="AITaunt_PlayerClaimsFlagship" bus="VoiceAI" bundle_name="aiwar2voice"
+       filename="assets/voice/aitaunts/player claims flagship/000_voice.prefab" />
+	   
+  <sfx name="AITaunt_PlayerClaimsGolem" bus="VoiceAI" bundle_name="aiwar2voice"
+       filename="assets/voice/aitaunts/player claims golem/000_voice.prefab" />
+
+  <sfx name="AITaunt_PlayerDestroysAICommandStationHard" bus="VoiceAI" bundle_name="aiwar2voice"
+       filename="assets/voice/aitaunts/player destroys ai command station (hard)/000_voice.prefab" />
+
+  <sfx name="AITaunt_PlayerDestroysAICommandStationNormal" bus="VoiceAI" bundle_name="aiwar2voice"
+       filename="assets/voice/aitaunts/player destroys ai command station (normal)/000_voice.prefab" />
+
+  <sfx name="AITaunt_PlayerDestroysWardenFleetBase" bus="VoiceAI" bundle_name="aiwar2voice"
+       filename="assets/voice/aitaunts/player destroys warden fleet base/000_voice.prefab" />
+
+  <sfx name="AITaunt_PlayerFindsAIOverlord" bus="VoiceAI" bundle_name="aiwar2voice"
+       filename="assets/voice/aitaunts/player finds ai overlord/000_voice.prefab" />
+
+  <sfx name="AITaunt_PlayerFortressDestroyed" bus="VoiceAI" bundle_name="aiwar2voice"
+       filename="assets/voice/aitaunts/player fortress destroyed/000_voice.prefab" />
+
+  <sfx name="AITaunt_PlayerHomeCommandStationUnderAttack" bus="VoiceAI" bundle_name="aiwar2voice"
+       filename="assets/voice/aitaunts/player home command station under attack/000_voice.prefab" />
+
+  <sfx name="AITaunt_PlayerStationaryConstructorDestroyed" bus="VoiceAI" bundle_name="aiwar2voice"
+       filename="assets/voice/aitaunts/player stationary constructor destroyed/000_voice.prefab" />
+
+  <sfx name="AITaunt_PlayerTriesAndFailsToDoSomethingBig" bus="VoiceAI" bundle_name="aiwar2voice"
+       filename="assets/voice/aitaunts/player tries and fails to do something big/000_voice.prefab" />
+
+  <sfx name="AITaunt_WardenFleetArrives" bus="VoiceAI" bundle_name="aiwar2voice"
+       filename="assets/voice/aitaunts/warden fleet arrives/000_voice.prefab" />
+
+  <sfx name="AITaunt_WardenFleetRetreats" bus="VoiceAI" bundle_name="aiwar2voice"
+       filename="assets/voice/aitaunts/warden fleet retreats/000_voice.prefab" />	   
+
+</root>

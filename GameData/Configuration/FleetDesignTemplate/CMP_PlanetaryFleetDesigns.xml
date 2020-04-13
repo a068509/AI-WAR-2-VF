@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  
+  <!--These fleets are used by battlestations, and chosen completely at random for any given battlestation.
+      The weight on them iss how likely they are to show up at all.
+      
+      The potential_ships lines define a min and max number of types of ships that are subscribed to that category for this fleet.
+      Aka "I'll have two types of turrets for sure, but maybe up to five, and I might or might not have an 'OtherDefense' thrown in."
+      If there aren't enough of a type of category, like turrets for instance, then it just gives double doses of whatever it is short on.
+      So if it only has 4 types of turrets, for example, then it will just add an addition caps' worth to one of them since it doens't have a 5th type to add.
+      
+      The ships themselves are filled elsewhere by ships saying "I'm in that fleet" versus this file referencing them directly.-->
+
+  <fleet_design name="GeneralTurrets" design_logic="Planetary" weight="100">
+    <potential_ships category="Turret" min="2" max="5"/>
+    <potential_ships category="OtherDefense" min="0" max="1"/>
+    <potential_ships category="Civilian" min="0" max="1"/>
+  </fleet_design>
+
+  <fleet_design name="MonochromeTurrets" design_logic="Planetary" weight="50">
+    <potential_ships category="Turret" min="1" max="2"/>
+    <potential_ships category="Civilian" min="0" max="1"/>
+  </fleet_design>
+
+  <fleet_design name="OtherDefenseFocus" design_logic="Planetary" weight="50">
+    <potential_ships category="Turret" min="2" max="3"/>
+    <potential_ships category="OtherDefense" min="2" max="3"/>
+    <potential_ships category="Civilian" min="0" max="1"/>
+  </fleet_design>
+
+  <fleet_design name="Minelayer" design_logic="Planetary" weight="10">
+    <potential_ships category="OtherDefense" min="2" max="3"/>
+    <potential_ships category="Civilian" min="1" max="1"/>
+  </fleet_design>
+
+  <fleet_design name="EnsnarerTurrets" design_logic="Planetary" weight="1">
+    <potential_ships category="Turret" min="2" max="5"/>
+    <potential_ships category="OtherDefense" min="0" max="1"/>
+    <potential_ships category="Civilian" min="0" max="1"/>
+  </fleet_design>
+
+</root>

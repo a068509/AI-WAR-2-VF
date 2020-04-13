@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <input_action name="ScrapUnits"
+      category="Ship Controls" display_name="Scrap Units"
+      description="Sometimes you need to get rid of something in order to free up ship cap somewhere else, or -- more likely -- free up Energy."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="896_RevisedControls"
+      key="Delete" />
+
+  <input_action name="TogglePause"
+      category="Critical" display_name="Pause"
+      description="Toggle the game between running and paused states.  You can still give orders and look around while paused."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="896_RevisedControls"
+      key="Space" />
+  <input_action name="TogglePauseAlt"
+      category="Critical" display_name="Pause (Alt)"
+      description="Toggle the game between running and paused states.  You can still give orders and look around while paused."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="896_RevisedControls"
+      key="Pause" />
+
+  <input_action name="OpenBuildTab"
+      category="Sidebar" display_name="Open Build Tabs"
+      description="Switch to the build tab of the sidebar."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="896_RevisedControls"
+      key="B" />
+  <input_action name="OpenTechTab"
+      category="Sidebar" display_name="Open Tech Tab"
+      description="Switch to the tech tab of the sidebar."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="896_RevisedControls"
+      key="T" />
+  <input_action name="OpenOpsTab"
+      category="Sidebar" display_name="Open Outguard Tab"
+      description="Switch to the outguard tab of the sidebar (remnants of other human settlements who wish to help you)."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="O" />
+  <input_action name="OpenShipsTab"
+      category="Sidebar" display_name="Open Planet Tab"
+      description="Switch to the 'at local planet' tab of the sidebar."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="896_RevisedControls"
+      key="P" />
+  <input_action name="OpenFleetsTab"
+      category="Sidebar" display_name="Open Fleets Tab"
+      description="Switch to the fleets tab of the sidebar."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="896_RevisedControls"
+      key="F" />
+  <input_action name="OpenHackingTab"
+      category="Sidebar" display_name="Open Hacking Tab"
+      description="Switch to the hacking tab of the sidebar."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="Cameras_745"
+      key="H" />
+  <input_action name="OpenObjectivesTab"
+      category="Sidebar" display_name="Open Intel Tab"
+      description="Switch to the intel tab of the sidebar."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="I" />
+
+  <input_action name="ToggleFRD"
+      category="Ship Controls" display_name="Toggle Pursuit Mode"
+      description="Switch the selected ships into or out of pursuit mode (was once called 'FRD').  While in pursuit mode, military ships will make their own choices about who to go attack, then will go fly off to fight them.  In pursuit mode, engineers and rebuilders will go anywhere on the planet they feel they are needed."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="V" />
+  
+  <input_action name="ToggleAttackMove"
+      category="Ship Controls" display_name="Toggle Attack-Move Mode"
+      description="Switch the selected ships into or out of attack-move mode.  While in attack-move mode, military ships will make their own choices about who to go attack that they see in range of themselves, and then will kite them and potentially chase them.  Unlike in pursuit mode, they will not start chasing something that is out of their range, however."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="803_NewAttackMove"
+      key="X" />
+
+  <input_action name="ToggleEnabled"
+      category="Common" display_name="Hold Fire/ Disable Ship Systems"
+      description="Switch the selected ships into or out of functioning ('hold fire' mode for military ships).  While disabled, military ships will not attack anything they see.  This is very useful for ships that are cloaked that you want to keep stealthy. 
+      
+When disabled, you can also save metal: engineers will not spend metal doing work, and factories will not run, under-construction ships and structures won't build, etc."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      key="N" />
+  
+  <input_action name="OpenSystemMenu"
+      category="Critical" display_name="Open System Menu"
+      description="This button opens the menu from which you can save, quit, etc.  It also acts as a cancel button on a lot of screens."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MasterMenuHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="Escape" />
+
+  <input_action name="ApplyGroupMoveLogic"
+      category="Ship Controls" display_name="Toggle Group Move"
+      description="Switch the selected ships to all keep track of each other's speeds and move only as fast as the slowest among them.  Or take them out of that mode if they're all already grouped together in that way."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      key="G" />
+  <input_action name="ApplyAttackMoveLogic"
+      category="Ship Controls" display_name="Toggle Stop-To-Shoot"
+      description="Your ships will always shoot at enemies they pass as they head where they are going.  Toggle on this mode to make them actually stop to fight anything they run across."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="888_ContentsClick"
+      key="K" />
+
+  <input_action name="UnloadTransports"
+      category="Ship Controls" display_name="Unload Transports"
+      description="Any mobile fleet flagships that you have selected will immediately unload any ships they are presently transporting."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="803_NewAttackMove"
+      key="U" />
+  
+  <input_action name="LoadTransports"
+      category="Ship Controls" display_name="Load Transports"
+      description="Any mobile fleet flagships that you have selected will immediately go into 'load mode', causing any new ships that are added to their fleet to appear inside them instead of next to them, and for all their existing ships will cause them to move at 3x their normal speed to get inside their flagship for transport if their flagship is on the same planet."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="803_NewAttackMove"
+      key="L" />
+
+  <input_action name="Return"
+      category="Hidden" display_name="Enter Key"
+      description="Determines which key functions as the Enter/Return key in the menus."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="Return" />
+  
+  
+  <input_action name="SelectAllMobileMilitary"
+      category="Selection" display_name="Select All Mobile Military"
+      description="Can it not only shoot, but also move?  Pressing this button will select it if it belongs to you and is on this planet."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="M" />
+
+  <input_action name="SelectCloakingUnits"
+      category="Selection" display_name="Select Cloaking Units"
+      description="Is it able to cloak?  Pressing this button combo will select it if it belongs to you and is on this planet."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="X" modifier_1="E" />
+  <input_action name="SelectMobileFlagships"
+      category="Selection" display_name="Select Mobile Flagships"
+      description="Is it a mobile flagship (officer or otherwise)?  Pressing this button combo will select it if it belongs to you and is on this planet."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="V" modifier_1="E" />
+  
+    <input_action name="SelectAllNonFlagshipMilitary"
+      category="Selection" display_name="Select All Non-Flagship Military"
+      description="This selects all non-flagship military forces."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="None" />
+
+  <input_action name="SelectBattlestationsAndCitadels"
+      category="Selection" display_name="Select Battlestations And Citadels"
+      description="Is it a battlestation or citadel?  Pressing this button combo will select it if it belongs to you and is on this planet."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="B" modifier_1="E" />
+  <input_action name="SelectSnipers"
+      category="Selection" display_name="Select Snipers"
+      description="Is it a sniper-ranged unit?  Pressing this button combo will select it if it belongs to you and is on this planet."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="N" modifier_1="E" />
+  <input_action name="SelectMelee"
+      category="Selection" display_name="Select Melee"
+      description="Is it a melee-ranged unit?  Pressing this button combo will select it if it belongs to you and is on this planet."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="M" modifier_1="E" />
+  <input_action name="SelectFactories"
+      category="Selection" display_name="Select Factories"
+      description="Is it a factory?  Pressing this button combo will select it if it belongs to you and is on this planet."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="F" modifier_1="E" />
+  <input_action name="SelectCommandStation"
+      category="Selection" display_name="Select Command Station"
+      description="Is it your command station on this planet?  Pressing this button combo will select it if it belongs to you and is on this planet."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="H" modifier_1="E" />
+  <input_action name="SelectTractors"
+      category="Selection" display_name="Select Tractors"
+      description="Is it a tractor-equipped unit?  Pressing this button combo will select it if it belongs to you and is on this planet."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="2011_ChatWindow"
+      key="T" modifier_1="E" />	  
+	  
+  
+  <input_action name="SplitSelection"
+	  category="Selection" display_name="Split Selection"
+	  description="Splits your current selection in half.  (Aka, if you have 4 V-Wings selected, now you'll have 2 selected.)"
+	  dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+	  default_should_override_saved_if_older_than_version="896_RevisedControls"
+	  key="None" />
+	
+  <input_action name="OpenChat"
+      category="Sidebar" display_name="Open Chat Window"
+      description="Opens the Chat and Message log window"
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="2023_BetterChatKey"
+      key="Return" />
+</root>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <item name="DecodingNanobots" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Nanocaust_Hive_Hacking" display_name="Decode Nanobots" description="Hack the core Nanobot Hive in order to subvert them into being your allies. From then on, the Hive will devote all of its energy to destroying the AI. This will not be easy."
+        hack_duration="600"
+        primary_hacking_response_interval="30"
+        primary_response_strength_per_interval="10.5"
+	secondary_hacking_response_interval="10"
+	secondary_response_strength_per_interval="0.1"
+        cost_in_hacking_points="20"
+        response_strength_on_completion="1"
+        local_hacker_required="true"
+/>
+</root>

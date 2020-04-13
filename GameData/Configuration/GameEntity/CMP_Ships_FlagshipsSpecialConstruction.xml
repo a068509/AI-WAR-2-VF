@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  
+  <!--  This basic version is not directly used.-->
+  <entity name="TransportFlagship_SpecialShipBase"
+      special_entity_type="MobileCustomStrikeCombatFleetFlagship"
+			voice_group="Silent" gimbal_icon_size_multiplier="1.5"
+			visuals="assets/_finalgamemeshes/humanoddities/colonyship/colonyship.prefab"
+			icon_name="Official/ColonyShip"
+			draw_in_galaxy_view="true"
+			tags="ShowsOnNormalDisplayMode,Capturable" capturable_seed_weight="1" capturable_max_per_galaxy="999"
+			size_scale="10"
+			visuals_scale_multiplier="12"
+			y_offset_of_icon="25"
+			uses_large_health_bar="true"
+			category="Ship"
+			collision_priority="10000"
+			display_name="Special Transport Flagship"
+			description="Ne doit jamais être semé directement; si vous voyez cela, c'est un oubli."
+			aip_to_claim="0"
+			metal_to_claim="50000"
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="UpgradeMeFromFleetOnly" is_upgraded_via_fleet_exp="true"
+			cost_for_ai_to_purchase="200" strength_multiplier="0.25"
+			hull_points="350000" shield_points="350000" speed="High"
+			metal_cost="100000" energy_consumption="500"
+      assist_range="Normal1"			
+			armor_mm="120" albedo="0.7" engine_gx="18" mass_tx="7"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+      priority_as_ai_target="NotDangerous" priority_as_frd_target="NotDangerous" priority_to_protect="MajorPlanetLevelObjective"
+      exp_to_grant_on_death="-1" is_combatant_despite_no_weapons="true" shows_on_galaxy_map_for_explored_planets="true" always_visible_to_players="true"
+			capturable_can_seed_at_all="false"
+                        firing_delay_for_transported_ships="6"
+			>
+	  <metal_flow purpose="RebuildingRemains" throughput="100" increase_per_mark_level="100"/>
+    <metal_flow purpose="SelfConstruction" throughput="500"/>
+  </entity>
+
+  <!--Note from Chris: this one is the new replacement.-->
+  <entity name="TransportFlagship_Custom" copy_from="TransportFlagship_SpecialShipBase" capturable_seed_weight="1" tags="ShowsOnNormalDisplayMode,Capturable"
+      display_name="Custom Fleet Leader"
+			description="Flagship très rapide et relativement durable sans flotte par défaut. Si vous avez différentes lignes de navires complémentaires d'autres flottes que vous souhaitez échanger en un seul groupe, alors c'est un centre d'organisation pour elles. Puisqu'ils sont multiples, ils peuvent être organisés autour de différents thèmes avec des noms de flotte que vous définissez comme vous le souhaitez."
+			capturable_can_seed_at_all="false"
+			special_entity_type="MobileCustomStrikeCombatFleetFlagship"
+      build_sidebar_categories_i_am_part_of="CustomFleetFlagships"
+      exp_to_grant_on_death="-1" galaxy_wide_cap_for_players_constructing="9">
+    <fleet_membership name="PlayerHomeCommand" ship_cap_group="OtherDefense" weight="100" min="9" max="9"/>
+    <fleet_membership name="PlayerEconomicCommand" ship_cap_group="OtherDefense" weight="100" min="9" max="9"/>
+    <fleet_membership name="PlayerMilitaryCommand" ship_cap_group="OtherDefense" weight="100" min="9" max="9"/>
+    <fleet_membership name="PlayerLogisticalCommand" ship_cap_group="OtherDefense" weight="100" min="9" max="9"/>
+  </entity>
+
+  <!--Note from Chris: ALL of the things below are deprecated.-->
+  
+  <!--Stealth-->
+  <entity name="TransportFlagship_StealthAlpha" copy_from="TransportFlagship_SpecialShipBase" capturable_seed_weight="1" tags="ShowsOnNormalDisplayMode,Capturable"
+      display_name="Stealth Alpha"
+			description="Flagship rapide, masqué et relativement durable sans flotte par défaut. Si vous avez des lignes de navires masquées d'autres flottes que vous souhaitez échanger en un seul groupe, alors c'est un centre d'organisation pour elles. Puisqu'ils sont multiples, ils peuvent être organisés autour de différents thèmes avec des noms de flotte que vous définissez comme vous le souhaitez."
+			capturable_can_seed_at_all="false"
+			special_entity_type="MobileCustomStrikeCombatFleetFlagship" fleet_design_templates_i_always_grant="StealthAlpha"
+      speed="AboveAverage4" exp_to_grant_on_death="-1" galaxy_wide_cap_for_players_constructing="1">
+    <system name="Cloaker" display_name="Cloaking Device" category="Passive" cloaking_points="1000" cloaking_points_added_per_mark="500" > </system>
+  </entity>
+
+  <entity name="TransportFlagship_StealthBravo" copy_from="TransportFlagship_StealthAlpha" capturable_seed_weight="1" tags="ShowsOnNormalDisplayMode,Capturable"
+      display_name="Stealth Bravo" 
+      capturable_can_seed_at_all="false"
+      special_entity_type="MobileCustomStrikeCombatFleetFlagship" fleet_design_templates_i_always_grant="StealthBravo"
+      speed="AboveAverage4" exp_to_grant_on_death="-1" galaxy_wide_cap_for_players_constructing="1">
+    <system name="Cloaker" display_name="Cloaking Device" category="Passive" cloaking_points="1000" cloaking_points_added_per_mark="500" > </system>
+  </entity>
+
+  <entity name="TransportFlagship_StealthFoxtrot" copy_from="TransportFlagship_StealthAlpha" capturable_seed_weight="1" tags="ShowsOnNormalDisplayMode,Capturable"
+      display_name="Stealth Foxtrot"
+			capturable_can_seed_at_all="false"
+			special_entity_type="MobileCustomStrikeCombatFleetFlagship" fleet_design_templates_i_always_grant="StealthFoxtrot"
+      speed="AboveAverage4" exp_to_grant_on_death="-1" galaxy_wide_cap_for_players_constructing="1">
+    <system name="Cloaker" display_name="Cloaking Device" category="Passive" cloaking_points="1000" cloaking_points_added_per_mark="500" > </system>
+  </entity>
+
+  <!--Velocity-->
+  <entity name="TransportFlagship_VelocityAlpha" copy_from="TransportFlagship_SpecialShipBase" capturable_seed_weight="1" tags="ShowsOnNormalDisplayMode,Capturable"
+      display_name="Velocity Alpha"
+			description="Flagship extrêmement rapide mais moins durable sans flotte par défaut. Si vous avez des lignes de mêlée, des raids ou des lignes de navires similaires d'autres flottes que vous souhaitez échanger dans un groupe, alors c'est un centre d'organisation pour eux. Puisqu'ils sont multiples, ils peuvent être organisés autour de différents thèmes avec des noms de flotte que vous définissez comme vous le souhaitez."
+			capturable_can_seed_at_all="false"
+			special_entity_type="MobileCustomStrikeCombatFleetFlagship" fleet_design_templates_i_always_grant="VelocityAlpha"
+      speed="VeryHigh1" hull_points="200000" shield_points="200000" exp_to_grant_on_death="-1" galaxy_wide_cap_for_players_constructing="1">
+  </entity>
+  
+  <entity name="TransportFlagship_VelocityBravo" copy_from="TransportFlagship_VelocityAlpha" capturable_seed_weight="1" tags="ShowsOnNormalDisplayMode,Capturable"
+      display_name="Velocity Bravo"
+			capturable_can_seed_at_all="false"
+			special_entity_type="MobileCustomStrikeCombatFleetFlagship" fleet_design_templates_i_always_grant="VelocityBravo"
+      speed="VeryHigh1" hull_points="200000" shield_points="200000" exp_to_grant_on_death="-1" galaxy_wide_cap_for_players_constructing="1">
+  </entity>
+
+  <entity name="TransportFlagship_VelocityFoxtrot" copy_from="TransportFlagship_VelocityAlpha" capturable_seed_weight="1" tags="ShowsOnNormalDisplayMode,Capturable"
+      display_name="Velocity Foxtrot"
+			capturable_can_seed_at_all="false"
+			special_entity_type="MobileCustomStrikeCombatFleetFlagship" fleet_design_templates_i_always_grant="VelocityFoxtrot"
+      speed="VeryHigh1" hull_points="200000" shield_points="200000" exp_to_grant_on_death="-1" galaxy_wide_cap_for_players_constructing="1">
+  </entity>
+
+  <!--Workhorse-->
+  <entity name="TransportFlagship_WorkhorseAlpha" copy_from="TransportFlagship_SpecialShipBase" capturable_seed_weight="1" tags="ShowsOnNormalDisplayMode,Capturable"
+      display_name="Workhorse Alpha"
+			description="Flagship très rapide et relativement durable sans flotte par défaut. Si vous avez différentes lignes de navires complémentaires d'autres flottes que vous souhaitez échanger en un seul groupe, alors c'est un centre d'organisation pour elles. Puisqu'ils sont multiples, ils peuvent être organisés autour de différents thèmes avec des noms de flotte que vous définissez comme vous le souhaitez."
+			capturable_can_seed_at_all="false"
+			special_entity_type="MobileCustomStrikeCombatFleetFlagship" fleet_design_templates_i_always_grant="WorkhorseAlpha"
+      exp_to_grant_on_death="-1" galaxy_wide_cap_for_players_constructing="1">
+  </entity>
+
+  <entity name="TransportFlagship_WorkhorseBravo" copy_from="TransportFlagship_WorkhorseAlpha" capturable_seed_weight="1" tags="ShowsOnNormalDisplayMode,Capturable"
+      display_name="Workhorse Bravo"
+			capturable_can_seed_at_all="false"
+			special_entity_type="MobileCustomStrikeCombatFleetFlagship" fleet_design_templates_i_always_grant="WorkhorseBravo"
+      exp_to_grant_on_death="-1" galaxy_wide_cap_for_players_constructing="1">
+  </entity>
+
+  <entity name="TransportFlagship_WorkhorseFoxtrot" copy_from="TransportFlagship_WorkhorseAlpha" capturable_seed_weight="1" tags="ShowsOnNormalDisplayMode,Capturable"
+      display_name="Workhorse Foxtrot"
+			capturable_can_seed_at_all="false"
+			special_entity_type="MobileCustomStrikeCombatFleetFlagship" fleet_design_templates_i_always_grant="WorkhorseFoxtrot"
+      exp_to_grant_on_death="-1" galaxy_wide_cap_for_players_constructing="1">
+  </entity>
+  
+</root>

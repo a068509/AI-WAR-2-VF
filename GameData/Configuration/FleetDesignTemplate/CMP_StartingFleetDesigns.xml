@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--These "InitialPlayerFleet" are completely hand-designed fleets that are very inflexible by design.
+      They are intended to be basic starting points that you can choose at the start of the game,
+      which you can then use to further supplement yourself later on.  Each one is a major archetype,
+      focused on a different style of play, and they use both their display name and description in the lobby.
+      
+      Creating too many of these would be a Bad Thing, because it creates paralysis for players.
+      
+      Note that ONLY the description and the name are shown, so the description had better be 
+      clear enough to let players choose things.  THAT said, the description for each ship will automatically
+      be appended if you use append_each_ship_description_to_main_description="true", so that will help.-->
+
+
+  <fleet_design name="ClassicStartingFleet"
+        display_name="Classic Fleet"
+        description="This classic mix isn't good at any one particular thing, but is well-rounded against any foe.  The forcefields just make things even better."
+        design_logic="InitialPlayerFleet" weight="100" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="TransportFlagship_Starter" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="VWing" ship_cap_group="Strike" weight="100" min="40" max="40"/>
+    <ship_membership name="FusionBomber" ship_cap_group="Strike" weight="100" min="40" max="40"/>
+    <ship_membership name="ConcussionCorvette" ship_cap_group="Strike" weight="100" min="40" max="40"/>
+    <ship_membership name="ForcefieldFrigate" ship_cap_group="Frigate" weight="100" min="1" max="1"/>
+  </fleet_design>
+  
+  
+  
+  <fleet_design name="CloakedStartingFleet" 
+        display_name="Cloaked Fleet"
+        description="Get in unseen, then wreck stuff as you see fit, with this powerful and optionally-invisible force."
+        design_logic="InitialPlayerFleet" weight="100" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="TransportFlagship_Cloaked" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="Raptor" ship_cap_group="Strike" weight="100" min="40" max="40"/>
+    <ship_membership name="AgravicPod" ship_cap_group="Strike" weight="100" min="40" max="40"/>
+    <ship_membership name="Gunbot" ship_cap_group="Strike" weight="100" min="80" max="80"/>
+    <ship_membership name="WarbirdFrigate" ship_cap_group="Frigate" weight="100" min="2" max="2"/>
+  </fleet_design>
+
+  
+  
+  <fleet_design name="ParasiticStartingFleet"
+        display_name="Parasitic Fleet"
+        description="Steal from the enemy and use their own strength against them, even though this fleet is not directly as strong by itself."
+        design_logic="InitialPlayerFleet" weight="100" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="TransportFlagship_Starter" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="Parasite" ship_cap_group="Strike" weight="100" min="40" max="40"/>
+    <ship_membership name="Mugger" ship_cap_group="Frigate" weight="100" min="4" max="4"/>
+  </fleet_design>
+
+
+
+  <fleet_design name="RaidStartingFleet"
+        display_name="Raid Fleet"
+        description="Move fast, strike hard."
+        design_logic="InitialPlayerFleet" weight="100" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="TransportFlagship_Agile" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="Velociraptor" ship_cap_group="Strike" weight="100" min="40" max="40"/>
+    <ship_membership name="Dagger" ship_cap_group="Strike" weight="100" min="40" max="40"/>
+    <ship_membership name="TurboStingray" ship_cap_group="Strike" weight="100" min="80" max="80"/>
+    <ship_membership name="RaidFrigate" ship_cap_group="Frigate" weight="100" min="3" max="3"/>
+  </fleet_design>
+
+
+
+  <fleet_design name="DoorkickerStartingFleet"
+        display_name="Doorkicker Fleet"
+        description="Bit of a focus on breaching units, with a touch of crowd control and some siege frigates along to punch giant holes in large targets when required."
+        design_logic="InitialPlayerFleet" weight="100" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="TransportFlagship_Starter" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="PulsarTank" ship_cap_group="Strike" weight="100" min="20" max="20"/>
+    <ship_membership name="VanguardHydra" ship_cap_group="Strike" weight="100" min="25" max="25"/>
+    <ship_membership name="InhibitingTeslaCorvette" ship_cap_group="Strike" weight="100" min="15" max="15"/>
+    <ship_membership name="SiegeFrigate" ship_cap_group="Frigate" weight="100" min="2" max="2"/>
+  </fleet_design>
+
+
+
+  <fleet_design name="ConsumerStartingFleet"
+        display_name="Consumer Fleet"
+        description="Mostly focused on eating enemy ships and structures, but also has a healthy complement of bombers for smashing things, and a large sniper starship for adding fire support from afar."
+        design_logic="InitialPlayerFleet" weight="100" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="TransportFlagship_Starter" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="MetabolizingGangsaw" ship_cap_group="Strike" weight="100" min="40" max="40"/>
+    <ship_membership name="Absorber" ship_cap_group="Strike" weight="100" min="40" max="40"/>
+    <ship_membership name="FusionBomber" ship_cap_group="Strike" weight="100" min="30" max="30"/>
+    <ship_membership name="TritiumSniperFrigate" ship_cap_group="Frigate" weight="100" min="1" max="1"/>
+  </fleet_design>
+
+  <!--These fleets are deprecated from seeding by having skip_adding_to_seed_lists="true" on them.
+      But they remain in the xml and so forth so that they can continue to function in older savegames.-->
+  <fleet_design name="BomberStartingFleet"
+        display_name="Bomber Fleet" skip_adding_to_seed_lists="true"
+        description="This mix is specially designed for aggressive smashing of enemy structures.  It includes multiple lines of bombers that can be swapped to other fleets if desired."
+        design_logic="InitialPlayerFleet" weight="100" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="TransportFlagship_Starter" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="FusionBomber" ship_cap_group="Strike" weight="100" min="40" max="40"/>
+    <ship_membership name="FusionBomber" ship_cap_group="Strike" weight="100" min="30" max="30"/>
+    <ship_membership name="ParasiticFusionBomber" ship_cap_group="Strike" weight="100" min="25" max="25"/>
+  </fleet_design>
+</root>

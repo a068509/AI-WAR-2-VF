@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  
+  <shipGroup name="Civilian" skip_attack_orders="true" annoyance_added_per_command="4" speed_of_annoyance_reduction="3"
+             mildly_annoyed_threshold="16" very_annoyed_threshold="24"/>
+  
+  <shipGroup name="Starship" weight_added_per_squad="5" />
+  <shipGroup name="Flagship" weight_added_per_squad="9" />
+  <shipGroup name="Ark_AlanEdwards" weight_added_per_squad="10" />
+  <shipGroup name="Ark_CherylHarris" weight_added_per_squad="10" />
+  <shipGroup name="Ark_ElijahFreeman" weight_added_per_squad="10" />
+  <shipGroup name="Ark_JackBishop" weight_added_per_squad="10" />
+  <shipGroup name="Ark_LeeSen" weight_added_per_squad="10" />
+  <shipGroup name="Ark_LucieLeroux" weight_added_per_squad="10" />
+  <shipGroup name="Ark_NiklasWagner" weight_added_per_squad="10" />
+  <shipGroup name="Ark_ThomasWalker" weight_added_per_squad="10" />
+  <shipGroup name="Turret" skip_movement_orders="true" />
+  <shipGroup name="Spire" />
+  <shipGroup name="Zenith" />
+  <shipGroup name="Bomber" />
+  <shipGroup name="Fighter" />
+  <shipGroup name="Corvette" />
+  <shipGroup name="Melee" />
+  <shipGroup name="MLRS" />
+  <shipGroup name="Sniper" />
+  <shipGroup name="Raider" />
+  <shipGroup name="MasterCombatant" weight_added_per_squad="5" />
+  <shipGroup name="Saboteur" />
+  <shipGroup name="AreaOfEffect" />
+  <shipGroup name="Silent" skip_attack_orders="true" skip_movement_orders="true" />
+  
+</root>

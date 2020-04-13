@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <tip category="FleetExperience" name="Experience_WhatItDoes" display_name="What It Does" sort_priority="100"
+        full_text="Les flottes ont un niveau et une fois qu'elles ont accumulé suffisamment de points d'expérience, elles passent au niveau suivant. Une variété d'unités augmentera leur niveau de marque lorsque leur flotte augmentera, avec des effets variant par unité.
+
+Par exemple, un vaisseau amiral de transport serait tout simplement plus difficile, car il n'a pas vraiment d'armes ou d'effets spéciaux à améliorer. Cependant, cette durabilité est vraiment importante et utile si vous êtes en profondeur, car elle peut amener les unités à la cible en toute sécurité.
+
+Plus tard, des choses comme un Golem blindé gagneraient vraiment à monter de niveau, étant de grandes unités effrayantes avec beaucoup de puissance de feu. Les flottes de type Lone Wolf, comme un Golem de ruche, adorent monter de niveau, car elles ont elles-mêmes une puissance folle.
+
+Seules vos flottes mobiles en bénéficient - vos flottes de Command Station, par exemple, n'obtiennent rien et peuvent à la place être mises à niveau avec un coût scientifique, affectant tout ce qu'elles contiennent."/>
+
+  <tip category="FleetExperience" name="Experience_HowDoYouGet" display_name="How Do You Get It?" sort_priority="200"
+        full_text="Tout simplement en détruisant les ennemis. La plupart des unités hostiles donnent une certaine expérience, et le montant est indiqué dans leur info-bulle. L'expérience est répartie entre chaque flotte actuellement présente, même s'il n'y a qu'une seule unité.
+
+Les choses qui produisent sans cesse des ennemis, comme les drones d'un Carrier Guardian, ne donnent jamais d'expérience. En général, les factions comme la sphère Dyson non plus." />
+
+  <tip category="FleetExperience" name="Experience_WhatInfluencesHowMuch" display_name="What Influences How Much You Get?" sort_priority="300"
+        full_text="Tout comme la façon dont plusieurs flottes sont présentes divise le montant gagné, cela entraîne également une pénalité sur le montant réellement gagné en premier lieu:
+
+Une flotte vous donne un bonus, 200% d'EXP normal.
+Deux flottes est toujours un bonus, 150% de l'EXP normal.
+Trois flottes est juste la quantité normale d'EXP.
+Quatre flottes et plus sont passibles de pénalités, commençant à 80% pour 4, 60% pour 5, 40% pour 6, 20% pour 7, 10% pour 8 et 5% pour 9 ou plus.
+
+Il y a aussi un autre facteur dans la quantité d'expérience acquise, et cela dépend de votre niveau de marque le plus élevé dans les flottes actuelles, par rapport au niveau de marque des ennemis que vous tuez. Encore une fois, une seule unité d'une flotte doit être présente pour provoquer cela, même si l'unité n'est que de la marque 1.
+
+Si vous êtes supérieur d'une marque au maximum à l'ennemi que vous venez de tuer, alors vous n'obtenez que 80% de l'EXP.
+Deux points est de 60%, trois de 40%, quatre de 20%, cinq de 10%, six ou plus de 5%." />
+
+</root>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <galaxy_setting category="AI Behavior" name="AICivilWar" display_name="Sandbox: AI Civil War" type="BoolToggle" default="false"
+        description="If there are multiple AI factions, they all hate each other and will fight each other.  They still hate YOU, too, but all this chaos and infighting is assumedly to your benefit.  Then again, you might just find yourself in the crossfire of AIs who are getting more powerful more rapidly due to aggroing each other... so it's anyone's guess as to how long you'll last. This is much harder than a normal game, and is intended more for people who want to watch the AI fight it out with eachother and powerful minor factions."
+        optional_dll_name="AIWarExternalCode" optional_type_name="Arcen.AIW2.External.GalaxySetting_AICivilWar" />
+    <galaxy_setting category="AI Behavior" name="AllyAI" display_name="Experimental: Ally with AI" type="BoolToggle" default="false"
+        description="Enabling this makes the AI and players friendly, used for Sandbox-style players. Generally this is enabled with the Civil War or lots of minor factions. This makes playing a 'normal' game impossible.
+
+Note that player-allied factions are all friendly to eachother, so player-allied Marauders and a player-allied AI are friends too."
+        optional_dll_name="AIWarExternalCode" optional_type_name="Arcen.AIW2.External.GalaxySetting_AllyWithAI" />
+
+<galaxy_setting category="Units" name="ConcentratedFRD" display_name="Concentrate Unit Firepower" type="BoolToggle" default="true" changeable_during_gameplay="true"
+                description="Pursuit mode defaults to having your units concentrate firepower on a few targets at a time, and being grouped up more. Disabling this setting causes units in pursuit mode to spread out and engage more targets, but can lead to units between two targets unable to choose and just sitting there."/>
+    <galaxy_setting category="Units" name="MethodicalFRD" display_name="Ships Attack Methodically" type="BoolToggle" default="true" changeable_during_gameplay="true"
+                    default_should_override_user_value_if_older_than_version="1018_MarauderFireteamTweaks"
+                    description="This is the default for FRD; with  for testing some changes to pursuit mode to make ships move more methodically through a planet. Disabling this makes your units spread out more; so if you significantly outnumber a planet you are attacking, you will win the battle faster by disabling this."/>
+
+    <galaxy_setting category="Units" name="DefensiveZombies" display_name="Defensive Zombies Only" type="BoolToggle" default="false" changeable_during_gameplay="true"
+                    description="Anti-AI Zombies by default can fly off and attack the AI. With this enabled Anti-AI Zombies will only move to friendly or neutral planets, but the zombies will attrition much more quickly."/>
+
+    <galaxy_setting category="Units" name="RepairAllies" display_name="Repair Allied Units" type="BoolToggle" default="true" changeable_during_gameplay="true"
+                    description="With this enabled, your engineers will repair the units of allied factions."/>
+
+    <galaxy_setting category="Balance" name="AlliedFactionsGenerateAIP" display_name="Allied Factions Generate AIP" type="BoolToggle" default="true" changeable_during_gameplay="true"
+                    description="By default, Allied factions like Marauders and Nanocaust will generate AIP when they take planets, since you can also use those planets. Disabling this will make the game much easier. Perfect for learning."/>
+
+    <galaxy_setting category="Balance" name="MaraudersKillCommandStations" display_name="Allied factions destroy command stations" type="BoolToggle" default="false" changeable_during_gameplay="true"
+                    description="Allied factions always destroy warp gates, but leave Command Stations behind. For more of a challenge, those factions will also kill the Command Stations."/>
+
+    <galaxy_setting category="Balance" name="MDCExos" display_name="Major Data Centers Cause Exogalactic Strikeforces" type="BoolToggle" default="true" changeable_during_gameplay="true"
+                    description="By default, owning a Major Data Center will cause the AI to send exogalactic strikeforces against you for difficulty >= 7. Disabling these exos makes the game easier."/>
+
+    <galaxy_setting category="Balance" name="ZombifyEverything" display_name="Allow Everything To Zombify" type="BoolToggle" default="false" changeable_during_gameplay="true"
+                    description="By default, only strikecraft, guardians and frigates can be zombified. Things like Dyson ships or Dire Guardians are immune to zombification. Enabling this setting allows Dire Guardians and other powerful units to be zombified. This makes the game much easier if you have lots of zombification."/>
+
+    <galaxy_setting category="Balance" name="EnableInstigators" display_name="Instigator Bases Spawn" type="BoolToggle" default="true" changeable_during_gameplay="true"
+                    description="The AI will periodically spawn Instigator Bases that will help the AI defeat you. If the AI isn't allowed to spawn Instigator Bases then the game becomes much easier."/>
+
+    <galaxy_setting category="Balance" name="ExtragalacticWarIgnoreMinorFactions" display_name="Extragalactic War: Ignore Minor Factions" type="BoolToggle" default="false" changeable_during_gameplay="true"
+                    description="If the player or minor factions get too powerful, the AI will unleash its Extragalactic War ships on you. This setting will mean that the AI will ignore all minor factions when deciding to unleash its ships."/>
+    <galaxy_setting category="Balance" name="ExtragalacticWarIgnorePlayerAlliedMinorFactions" display_name="Extragalactic War: Ignore Player-Allied Minor Factions" type="BoolToggle" default="false" changeable_during_gameplay="true"
+                    description="If the player or minor factions get too powerful, the AI will unleash its Extragalactic War ships on you. This setting will mean that the AI will ignore minor factions allied to the player when deciding to unleash its ships."/>
+    <galaxy_setting category="Balance" name="ExtragalacticWarIgnorePlayers" display_name="Extragalactic War: Ignore Players" type="BoolToggle" default="false" changeable_during_gameplay="true"
+                    description="If the player or minor factions get too powerful, the AI will unleash its Extragalactic War ships on you. This setting will mean that the AI will ignore player strength when deciding to unleash its ships."/>
+
+    
+  <galaxy_setting name="FireteamTargetsToScan" category="Performance" display_name="Max targets Fireteams can scan in one iteration " type="IntSlider" default="2500" min="100" max="5000" changeable_during_gameplay="true"
+           description="Fireteams can only scan so many potential targets per thread per iteration. If you see slow Long Range Planning threads, decreasing this value may help." />
+
+
+</root>

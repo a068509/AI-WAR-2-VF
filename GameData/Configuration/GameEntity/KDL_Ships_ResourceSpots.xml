@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <entity name="MetalGenerator"
+			tags="MetalGenerator"
+			visuals="assets/_finalgamemeshes/resources/MetalHarvester/MetalHarvester.prefab"
+			icon_name="Official/Metal"
+			category="Ship"
+			size_scale="1.65"
+			visuals_scale_multiplier="3"
+			display_name="Metal Harvester"
+			description="Astéroïde riche en métaux avec mine et raffinerie attachées."
+			behavior="Stationary"
+			reverts_to_neutral_on_death_if_permadeath_setting_is_false="MetalHarvesterPermadeath"
+			is_scrapping_by_player_disallowed="true" is_scrapping_by_player_to_turn_unclaimed="true"
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="MetalGeneration"
+			cost_for_ai_to_purchase="200"
+			skip_drawing_ship_cap="true"
+			hull_points="200" shield_points="300" speed="Immobile"
+			metal_cost="0" energy_consumption="0"
+			armor_mm="10" albedo="0.2" mass_tx="0.6"
+			metal_to_claim="2000" fleet_membership="Planetary"
+			ship_or_structure_explosion_sfx="StructureMidsize_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="StructureLostOnOtherPlanet_Explosion"
+			voice_group="Civilian"      
+      exp_to_grant_on_death="-1"
+      priority_as_ai_target="MinorResourceGeneration" priority_as_frd_target="IgnoreMe" priority_to_protect="SlightlyLessExpendable"
+			>
+    <resource_production type="Metal" amount="60" increase_per_mark_level="30"/>
+    <side_specific_visual side_type="NaturalObject" visuals="assets/_finalgamemeshes/resources/MetalHarvesterEmpty/MetalHarvesterEmpty.prefab" />
+  </entity>
+</root>

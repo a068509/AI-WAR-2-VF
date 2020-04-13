@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <entity name="Wormhole"
+          special_entity_type="Wormhole" category="NaturalObject" size_scale="4" 
+          display_name="Wormhole" description="An instant pathway between planets."
+          visuals="assets/arcenbundle/other/wormhole.prefab"
+          gimbal_name_extra_offset_y="12" gimbal_name_text_size="1.2" 
+  />
+</root>

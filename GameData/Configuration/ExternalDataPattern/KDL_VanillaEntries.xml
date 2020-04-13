@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<item name="DoomData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.DoomData" />
+	<item name="ExternalData_GroupTargetSorting" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.ExternalData_GroupTargetSorting" />
+    <item name="ExternalData_AI" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.AI_PlannedWave_Data" />
+    <item name="ExternalData_MinorFactionCommon" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.ExternalData_MinorFactionCommon" />
+    <item name="ExternalData_AIFactionCommon" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.ExternalData_AIFactionCommon" />
+    <item name="ExternalData_FactionCommon" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.ExternalData_FactionCommon" />
+    <item name="HRFDataExt" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.HRFDataExt" />
+    <item name="AIReservesDataExt" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.AIReservesDataExt" />
+    <item name="MarauderDataExt" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.MarauderDataExt" />
+    <item name="SpawnAnimationData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.SpawnAnimationData" />
+    <item name="DespawnAnimationData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.DespawnAnimationData" />
+    <item name="AutosaveDataExt" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.AutosaveDataExt" />
+    <item name="RiskAnalyzerData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.RiskAnalyzerData" />
+    <item name="DarkSpireData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.DarkSpireExternalData" />
+    <item name="AstroTrainGlobalData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.AstroTrainsGlobalExternalData" />
+    <item name="AstroTrainPerDepotData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.AstroTrainsPerDepotExternalData" />
+    <item name="AstroTrainPerTrainData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.AstroTrainsPerTrainExternalData" />
+    <item name="MacrophageGlobalData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.MacrophageGlobalExternalData" />
+    <item name="MacrophagePerTeliumData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.MacrophagePerTeliumExternalData" />
+    <item name="MacrophagePerSporeData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.MacrophagePerSporeExternalData" />
+    <item name="MacrophagePerHarvesterData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.MacrophagePerHarvesterExternalData" />
+    <item name="DysonExternalData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.DysonExternalData" />
+    <item name="MercenaryUnitExternalData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.MercenaryUnitExternalData" />
+    <item name="MercenaryGlobalExternalData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.MercenaryGlobalExternalData" />
+    <item name="MarauderOutpostRaiderSpawnDataExt" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.MarauderOutpostRaiderSpawnDataExt" />
+    <item name="ExoDataExt" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.ExoDataExt" />
+    <item name="MDCExoDataExt" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.MDCExoDataExt" />
+    <item name="MinorFactionWaveDataExt" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.AntiMinorFactionWaveDataExt" />
+    <item name="InstigatorDataExternal" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.InstigatorDataExternal" />
+    <item name="InstigatorPerUnitDataExternal" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.InstigatorPerUnitDataExternal" />
+    <item name="WormholeInvasionDataExternal" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.WormholeInvasionDataExternal" />
+    <item name="DysonAntagonizerExternalData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.DysonAntagonizerExternalData" />
+</root>

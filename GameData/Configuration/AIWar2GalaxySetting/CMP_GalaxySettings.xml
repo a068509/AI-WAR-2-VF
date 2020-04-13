@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- Scouting -->
+  <galaxy_setting category="Scouting" name="ScoutAdjacentOnly" display_name="Scout Adjacent Only" type="BoolToggle" default="false" changeable_during_gameplay="true"
+        description="TLDR: This is harder and will make you take a lot of planets.  For advanced players only.
+
+Details: Normally when you capture a planet, all planets adjacent to ANY explored planets become explored.  Unless the map is very narrow, this causes you to get exponentially more planets you can see as the game goes on.  Even further than that, there is a minimum number of planets it will explore for you when you take a planet, depending on the number of planets in your galaxy, so that snake maps and other really narrow maps aren't unplayably hard.
+
+With 'Scout Adjacent Only' enabled, it tosses all that out the window.  Instead it just explores any planets adjacent to the planet you just captured.  This will make snake maps almost impossible to play (so that's a bad combo), but on maps with more cross-connections it can lead to... a certain added strategic challenge.  This still seems masochistic even in the best case, but have fun with that if you want."
+ />
+  <galaxy_setting category="Scouting" name="MaxPlanetsToScoutAtOnce" display_name="Max Planets To Scout At Once" type="IntSlider" default="8" min="3" max="40" changeable_during_gameplay="true"
+      description="Depending on the topography of your map, capturing a planet may cause a TON of planets to suddenly be revealed.   Rather than this getting TOO crazy and showing you the whole map after you capture one planet, this lets it be more gradual.  The default is 8.  Does not apply when 'scout adjacent only' is on." />
+
+  <!-- AI Waves -->
+  <galaxy_setting category="AI Waves" name="WaveWarning" display_name="Wave Advance Warning" type="CustomDropdownArbitraryOptions" arbitrary_options="None,Short,Medium,Long" default_option="Medium"
+      description="When a wave is going to be launched against you, how long inadvance does it tell you?  Or in fact does it just not warn you at all?" />
+  <galaxy_setting category="AI Waves" name="ThreatWave" display_name="Allow Threat Waves" type="BoolToggle" default="false"
+      description="Enabling this allows some Waves to become threat instead of attacking immediately." />
+  <galaxy_setting category="AI Waves" name="CrossPlanetWave" display_name="Allow Cross Planet Waves" type="BoolToggle" default="false"
+      description="Enabling this allows some Waves to spawn at nearby Warp Gates and travel to their target through normal space." />
+  <galaxy_setting category="AI Waves" name="DirectWave" display_name="Allow Direct Waves" type="BoolToggle" default="true"
+      description="Enabling this allows some Waves to spawn directly on the target." />
+  
+  <!-- AI Behavior -->
+  <galaxy_setting category="AI Behavior" name="ReconquestWave" display_name="AI Can Retake Planets" type="BoolToggle" default="true"
+      description="Is the AI allowed to launch reconquest waves and take territory back that they previously lost?  Note: if you then capture it back from them again, it won't cost you more AIP.  This simply makes the AI a lot more dynamic in an interesting way.  The AI can't do this until you hit a certain AIP threshold based on the AI difficulty." />
+  <galaxy_setting category="AI Behavior" name="SharkA" display_name="Shark A (AIP on Human Cmd Death)" type="BoolToggle" default="false"
+      description="Enabling this gives the AI more AIP with each human Command Station death. 'Blood in the water'" />
+  <galaxy_setting category="AI Behavior" name="SharkB" display_name="Shark B (Attacks on Human Cmd Death)" type="BoolToggle" default="false"
+      description="Enabling this gives the Hunter Fleet a new 'Go for the throat' force with each human Command Station death. 'Blood in the water'" />
+
+  <galaxy_setting category="AI Behavior" name="GuardAggroDistance" display_name="Guard Aggro Distance" type="IntSlider" default="5000" min="3000" max="10000"
+      description="At what distance from an enemy will a guard post release its internal ships, or will a ship standing near a guard post leave its post to attack the enemy?  Default is 5000.
+      
+Note that if the guard post or one of its ships get shot, then they immediately aggro no matter what the distance.  This is about them noticing someone who is being passive." />
+
+  <!-- Capturables -->
+  <galaxy_setting category="Capturables" name="FleetNameType" display_name="Fleet Naming Style" type="CustomDropdownCoreTable" related_table="FleetNameType" default_option="Random"
+      description="Choose your style of fleet naming:
+" />
+  
+  <galaxy_setting category="Capturables" name="RegularFleetsToSeed" display_name="Regular Fleets To Seed" type="CustomDropdownArbitraryOptions" arbitrary_options="0x,0.5x,0.75x,1x,1.25x,1.5x,1.75x,2x,2.5x,3x" default_option="1x"
+      description="Depending on the number of planets in your galaxy, it will seed a certain number of regular offensive fleets (with transports at the center) for you to find.
+      
+It will always seed 2 pretty close to your homeworld, but if you want more (or fewer) seeded out in the galaxy at large, this lets you control that." />
+
+  <galaxy_setting category="Capturables" name="OfficerFleetsToSeed" display_name="Officer Fleets To Seed" type="CustomDropdownArbitraryOptions" arbitrary_options="0x,0.5x,0.75x,1x,1.25x,1.5x,1.75x,2x,2.5x,3x" default_option="1x"
+      description="Depending on the number of planets in your galaxy, it will seed a certain number of officer-based offensive fleets (with transports at the center) for you to find.  These are like regular fleets, but they happen to have a very powerful flagship at their core (that also acts as a transport) rather than a non-combat transport carrier.
+      
+It will always seed 1 pretty close to your homeworld, but if you want more (or fewer) seeded out in the galaxy at large, this lets you control that." />
+
+  <galaxy_setting category="Capturables" name="GlobalCommandAugmentersToSeed" display_name="Global Command Augmenters To Seed" type="CustomDropdownArbitraryOptions" arbitrary_options="0x,0.5x,0.75x,1x,1.25x,1.5x,1.75x,2x,2.5x,3x" default_option="1x"
+      description="Depending on the number of planets in your galaxy, it will seed a certain number of basic Global Command Augmenters (GCAs) for you to find. These are how you get more turrets and other defensive options, so are pretty critical to capture if you want to have much in the way of defenses!  Each one that you capture gives you new turrets, mines, tractor beams, and/or other goodies to use at ALL your command stations.
+      
+It will always seed 1 planet with them pretty close to your homeworld, but if you want more (or fewer) seeded out in the galaxy at large, this lets you control that.
+
+Key note: you have to hold onto these structures in order to get the ongoing benefits from them... OR you can hack them to destroy them, get the bonus permanently, and no longer have to worry about it." />
+
+  <galaxy_setting category="Capturables" name="AdvancedResearchStationsToSeed" display_name="Advanced Research Stations To Seed" type="CustomDropdownArbitraryOptions" arbitrary_options="0x,0.5x,0.75x,1x,1.25x,1.5x,1.75x,2x,2.5x,3x" default_option="1x"
+      description="Depending on the number of planets in your galaxy, it will seed a certain number of basic Advanced Research Stations (ARSs) for you to find. These can be hacked to give one of your Fleets additional ship lines, making them much more powerful. .
+      
+It will always seed 1 planet with them pretty close to your homeworld, but if you want more (or fewer) seeded out in the galaxy at large, this lets you control that." />
+
+  <galaxy_setting category="Capturables" name="BattlestationBasicFleetsToSeed" display_name="Basic Battlestations To Seed" type="CustomDropdownArbitraryOptions" arbitrary_options="0x,0.5x,0.75x,1x,1.25x,1.5x,1.75x,2x,2.5x,3x" default_option="1x"
+      description="Depending on the number of planets in your galaxy, it will seed a certain number of basic battlestations for you to find. These are how you get turrets and other defensive options that you can deploy on enemy or neutral planets, so can be quite handy!" />
+
+  <galaxy_setting category="Capturables" name="BattlestationCitadelsToSeed" display_name="Citadels To Seed" type="CustomDropdownArbitraryOptions" arbitrary_options="0x,0.5x,0.75x,1x,1.25x,1.5x,1.75x,2x,2.5x,3x" default_option="1x"
+      description="Depending on the number of planets in your galaxy, it will seed a certain number of citadel battlestations for you to find.  These are large, strong, fortress-like structures that are powerful defensive units on their own.  These are also another way to get more turrets and other defensive options, so are particularly great to capture for use at chokepoints or on key planets you control." />
+  
+  <galaxy_setting category="Capturables" name="MobileSupportFleetsToSeed" display_name="Support Fleets To Seed" type="CustomDropdownArbitraryOptions" arbitrary_options="0x,0.5x,0.75x,1x,1.25x,1.5x,1.75x,2x,2.5x,3x" default_option="1x"
+      description="Depending on the number of planets in your galaxy, it will seed a certain number of support fleets for you to find.  These are typically non-combat in nature and do neat things like provide mobile factories or a bunch of engineer, etc.
+      
+It will always seed 1 pretty close to your homeworld, but if you want more (or fewer) seeded out in the galaxy at large, this lets you control that." />
+
+  <galaxy_setting category="Capturables" name="MobileLoneWolfFleetsToSeed" display_name="Lone Wolf Fleets To Seed" type="CustomDropdownArbitraryOptions" arbitrary_options="0x,1x,2x,3x,4x,5x,6x,7x,8x" default_option="1x"
+      description="Depending on the number of planets in your galaxy, it will seed a certain number of lone wolf fleets for you to find.  Not very many, normally!  These are rare and powerful units that are a one-ship fleet unto themselves.
+      
+Note that depending on what mods and expansions and whatever else you have installed, it may not be able to seed as many as you'd like due to caps on the individual units per-galaxy." />
+
+  <galaxy_setting category="Capturables" name="RemoveUnlockVariance" display_name="Remove Unlock Variance in Capturables" type="BoolToggle" default="false"
+      description="By default the number of turrets and ships provided by a capturable (ARS, GCA, etc) can vary within a set range. This option removes this randomness, providing the average value every time." />
+
+
+  <!-- Destroyables -->
+  <galaxy_setting name="NormalDataCentersToSeed" category="Destroyables" display_name="Normal Data Centers" type="IntSlider" default="6" min="0" max="10"
+           description="Data Centers are scattered around the galaxy and are something you can use to lower the AI Progress (AIP) if you raid and destroy them.
+           
+The number of these used to vary by AI difficulty, but that wasn't entirely fair because you need AIP reduction equally at all difficulty levels.  The default is now the new maximum (6), but if you want a harder game you can reduce the number of data centers as far as zero if you really so desire." />
+
+  <galaxy_setting name="MajorDataCentersToSeed" category="Destroyables" display_name="Major Data Centers" type="IntSlider" default="2" min="0" max="4"
+           description="Major Data Centers are scattered around the galaxy, and come with a lot more of a risk/reward dynamic.  If you capture and hold them, the AI Progress (AIP) drops by a massive amount.  But the AI will start targeting them, and if they are ever destroyed after you capture them, the AIP goes UP by that huge amount that it was previously reduced.
+           
+More of these being seeded can give you more chances to seriously reduce the AIP, but can also put you in the position of having to capture them when you don't really want to.  The default of 2 is a good balance against this." />
+
+  <galaxy_setting name="DistributionNodesToSeed" category="Destroyables" display_name="Distribution Nodes" type="IntSlider" default="6" min="0" max="10"
+         description="Distribution Nodes are scattered around the galaxy, and grant you a boost of both science and hacking points if you destroy them -- at the cost of a very low AI Progress (AIP) increase." />
+  
+  <!-- Performance -->
+  <galaxy_setting name="StackingCutoffNPCs" category="Performance" display_name="Num NPC Units To Start Stacking" type="IntSlider" default="50" min="6" max="200" changeable_during_gameplay="true"
+           description="If there are this many non-player units of a given type on a planet, the game will start trying to stack them together. Making this value too high can result in performance problems in larger battles.
+           
+This is something you can go back in and change during gameplay as much as you need to." />
+
+  <galaxy_setting name="StackingCutoffPlayers" category="Performance" display_name="Num Player Units To Start Stacking" type="IntSlider" default="30" min="6" max="90" changeable_during_gameplay="true"
+           description="If there are this many mobile player units of a given type on a planet IN THE SAME FLEET, the game will start trying to stack them together. Making this value too high can result in performance problems just with ships even sitting around, let alone battles.
+           
+This is something you can go back in and change during gameplay as much as you need to." />
+
+  <galaxy_setting name="CoarseProcessBackgroundPlanets" category="Performance" display_name="Advanced: Coarse-Process BG Planets" type="BoolToggle" default="true" changeable_during_gameplay="true"
+           description="Unless you are having a problem with the simulation for some reason, this should be left on.  This makes background planets take up far less processing than they otherwise would, particularly when a bunch of third party factions are battling and you can't even see." />
+  
+  <!-- Balance -->
+  <galaxy_setting name="StrikecraftHullAndShields" category="Balance" display_name="Strikecraft Hull And Shields" type="CustomDropdownArbitraryOptions" arbitrary_options="0.5x,0.75x,1x,1.5x,2x,2.5x,3x,3.5x,4x,5x,6x" default_option="2x"
+           description="Strikecraft are all the small ships used by you and the AIs.  Adjusting their hull and shields up or down makes them more or less of a core presence in the game.  At the moment, their default hull and shields is set to 2x.  If you want faster battles with small ships that evaporate fast, then you can tone that down." />
+
+  <galaxy_setting name="StrikecraftAttackPower" category="Balance" display_name="Strikecraft Attack Power" type="CustomDropdownArbitraryOptions" arbitrary_options="0.5x,0.75x,1x,1.5x,2x,2.5x,3x,3.5x,4x,5x,6x" default_option="1.5x"
+           description="Strikecraft are all the small ships used by you and the AIs.  Adjusting their attack power up or down makes them more or less of a core presence in the game.  At the moment, their default attack power is set to 1.5x.  If you want slower battles with small ships that don't contribute as much, then you can tone that down." />
+
+  <galaxy_setting name="TurretGuardPostsHullAndShields" category="Balance" display_name="Turret/Guard Post Hull And Shields" type="CustomDropdownArbitraryOptions" arbitrary_options="0.5x,0.75x,1x,1.5x,2x,2.5x,3x,3.5x,4x,5x,6x" default_option="1x"
+           description="Turrets and guard posts are all the small and midsize fixed-position units used by you and the AIs.  Adjusting their hull and shields up or down makes them more or less of a core presence in the game.  At the moment, their default hull and shields is set to 1x." />
+
+  <galaxy_setting name="TurretsGuardPostsAttackPower" category="Balance" display_name="Turret/Guard Post Attack Power" type="CustomDropdownArbitraryOptions" arbitrary_options="0.5x,0.75x,1x,1.5x,2x,2.5x,3x,3.5x,4x,5x,6x" default_option="1x"
+           description="Turrets and guard posts are all the small and midsize fixed-position units used by you and the AIs.  Adjusting their attack power up or down makes them more or less of a core presence in the game.  At the moment, their default attack power is set to 1x." />
+
+  <galaxy_setting name="FrigatesGuardiansHullAndShields" category="Balance" display_name="Frigate/Guardian Hull And Shields" type="CustomDropdownArbitraryOptions" arbitrary_options="0.5x,0.75x,1x,1.5x,2x,2.5x,3x,3.5x,4x,5x,6x" default_option="1x"
+           description="Frigates and Guardians are all the midsize mobile ships used by you and the AIs.  Adjusting their hull and shields up or down makes them more or less of a core presence in the game.  At the moment, their default hull and shields is set to 1x." />
+
+  <galaxy_setting name="FrigatesGuardiansAttackPower" category="Balance" display_name="Frigate/Guardian Attack Power" type="CustomDropdownArbitraryOptions" arbitrary_options="0.5x,0.75x,1x,1.5x,2x,2.5x,3x,3.5x,4x,5x,6x" default_option="1x"
+           description="Frigates and Guardians are all the midsize mobile ships used by you and the AIs.  Adjusting their attack power up or down makes them more or less of a core presence in the game.  At the moment, their default attack power is set to 1x." />
+
+  <galaxy_setting name="AllShipAttackRanges" category="Balance" display_name="All Ship Attack Ranges" type="CustomDropdownArbitraryOptions" arbitrary_options="0.1x,0.2x,0.3x,0.4x,0.5x,0.6x,0.7x,0.8x,0.9x,1x,1.1x,1.2x,1.3x" default_option="0.8x"
+           description="Lets you adjust the effective range of all of the ships in the galaxy -- yours and enemies.  Does not affect 'infinite' sniper ranges, naturally.  Also does impact tractor beams.  The default is 0.8x in order to avoid the 'small world' problem where all the enemies are fighting you at once on a planet.
+           
+This does make it so that you need to be slightly more strategic with placements of your own turrets, of course.  Your turrets naturally have 2x the range of their AI great-turret counterparts, though." />
+
+  <!-- Permadeath -->
+  <galaxy_setting name="MetalHarvesterPermadeath" category="Permadeath" display_name="Metal Harvesters" type="BoolToggle" default="false"
+           description="Metal Harvesters are one of your most major sources of metal, and normally can be rebuilt if you lose them.  Turning on permadeath for them (not the default!) makes the game vastly harder." />
+  
+  <galaxy_setting name="ZenithGeneratorsPermadeath" category="Permadeath" display_name="Zenith Generators" type="BoolToggle" default="true"
+           description="Zenith Power Generators and Matter Converters are rare-but-huge sources of power or metal, respectively.  Normally they disappear forever once killed, but if you'd prefer them to die to remains to make for less pressure on protecting them, you can turn this option to off." />
+
+  <galaxy_setting name="IntraGalacticCoordinatorPermadeath" category="Permadeath" display_name="Intra Galactic Coordinators" type="BoolToggle" default="true"
+           description="Intra Galactic Coordinators (IGCs) are rare structures that increase the ship caps of large number of your unit types while you have them captured and held.  Normally they disappear forever once killed, but if you'd prefer them to die to remains to make for less pressure on protecting them, you can turn this option to off.
+           
+Bear in mind that these can also be hacked in order to give you the bonus without you having to hold them, so normally that's supposed to be the workaround if you just feel you can't (or don't want to) protect them on the planet you find them on for whatever reason." />
+
+  <galaxy_setting name="GlobalCommandAugmenterPermadeath" category="Permadeath" display_name="Global Command Augmenters" type="BoolToggle" default="true"
+         description="Global Command Augmenters (GCAs) are fairly common structures that give you more turrets and other defenses at all your command stations while you have them captured and held.  Normally they disappear forever once killed, but if you'd prefer them to die to remains to make for less pressure on protecting them, you can turn this option to off.
+           
+Bear in mind that these can also be hacked in order to give you the bonus without you having to hold them, so normally that's supposed to be the workaround if you just feel you can't (or don't want to) protect them on the planet you find them on for whatever reason." />
+
+<galaxy_setting name="MeleeRammingLogic" category="Units" display_name="Melee Ships Ramming Logic" type="BoolToggle" default="true"
+         description="Most ships in this game use special kiting logic to have them retain optimal firing distance from their target. Enabling this causes Melee ships to forgo this logic and simply try to ram their targets instead." />
+
+</root>

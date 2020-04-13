@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  
+<g name="MissileHit">
+	<p name="MissileHit" y="0" offs="0, 0, 0, 0"  rot="0, 0, 0, 0"
+	anim="60" shad="Normal" perframe="1" ondeath="1" stayrelative="false" />
+</g>
+  
+</root>

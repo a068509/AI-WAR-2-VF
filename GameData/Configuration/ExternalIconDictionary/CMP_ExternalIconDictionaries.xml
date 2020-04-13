@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <icon_dict name="Official" image_bundle="arcencolors" image_path="assets/icons/official_completelist.png" xml_path="Official_CompleteList.xml" />
+</root>

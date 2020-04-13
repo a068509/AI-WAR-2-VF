@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--These command station "fleets" actually define what is available for you on the sidebar to build
+      based on which type of command station you have chosen.
+      
+      Given that we want this to be predictable, it doesn't use potential_ships or randomized ship caps:
+      any ships that are subscribed to this fleet design will show up with max cap, 100% of the time.
+      
+      Essentially these are hand-designed fleets... or another way to think of it is hand-designed ship caps 
+      that you can construct from the sidebar.-->
+
+  <fleet_design name="PlayerHomeCommand" design_logic="Special" weight="100" include_full_cap_of_each_type="true" />
+  <fleet_design name="PlayerEconomicCommand" design_logic="Special" weight="100" include_full_cap_of_each_type="true" />
+  <fleet_design name="PlayerMilitaryCommand" design_logic="Special" weight="100" include_full_cap_of_each_type="true" />
+  <fleet_design name="PlayerLogisticalCommand" design_logic="Special" weight="100" include_full_cap_of_each_type="true" />
+
+  <!--Ugh... this one is confusing as can be.  It's the Zenith Trader stuff - as you might guess.
+      But the tricky part is that it has, in theory, categories and caps and so forth.
+      None of that is used at all.  The potential_ships categories, under the hood, never get shown
+      for anything that is on the sidebar.  So basically, anything that gets assigned here gets shown at its full cap.
+      And then it doesn't really obey caps at all, because the purchases immediately go to the player's planetary fleet
+      rather than the zenith fleet.-->
+
+  <fleet_design name="ZenithPurchases" design_logic="PurchaseForPlanetary" weight="100" include_full_cap_of_each_type="true" />
+
+  <!--This is another confusing-ish one.  Basically the "turrets granter" structures give things out of here.
+      That could be a turret, or a station-keeper, or whatever else that is okay being direct-placed as part of the
+      basic command station fleets.-->
+
+  <fleet_design name="AddedToCommandStation" design_logic="AddedToCommandStation" weight="100" />
+
+  <!-- This is where we set all the extra ship types the player can get during the game  -->
+  <fleet_design name="AddedToFleet" design_logic="AddedToPlayerFleet" weight="100" />
+</root>

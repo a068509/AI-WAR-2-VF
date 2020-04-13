@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+<effect name="MissileHit"
+	animator_sprite_size="256"
+	animator_frames="48"
+	animator_creation_sprite_dict_size="2048"
+>
+</effect>
+
+</root>

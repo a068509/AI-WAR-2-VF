@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <objective_generator name="CoreObjectiveGenerator" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.CoreObjectiveGenerator" />
+</root>

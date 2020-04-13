@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>  
+  <entity name="Graphics_RallyFlag"
+      visuals="assets/arcenbundle/other/smalltemporaryrock.prefab"
+      icon_name="Official/RallyFlag" gimbal_icon_size_multiplier="0.7"
+      does_not_need_sidebar_icon="true"
+      category="Ship" skip_export="true"
+      size_scale="0.80"
+      collision_priority="9000"
+      display_name="(You shouldn't be seeing this)"
+      description="(Vous ne devriez pas voir ça)"
+      behavior="Stationary"
+      target_type_for_player="AutotargetIfTakingPlanet"
+      starting_mark_level="Markless"
+      cost_for_ai_to_purchase="200"
+      hull_points="50000" shield_points="1000" speed="Immobile"
+      metal_cost="80000" energy_consumption="0"
+      armor_mm="180" albedo="1" mass_tx="5"
+      ship_or_structure_explosion_sfx="StructureLarge_Explosion"
+      ship_or_structure_explosion_if_on_other_planet_sfx="StructureLostOnOtherPlanet_Explosion"
+      ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+      voice_group="Silent"
+      exp_to_grant_on_death="-1"
+      priority_as_ai_target="IgnoreMe" priority_as_frd_target="IgnoreMe" priority_to_protect="IgnoreMe"
+  />
+
+  <!--Chris notes: the Planet_Mark1 and whatnot overlays are things that have to be recompiled into the sprite atlas
+                   via TexturePacker before they will show up.  Otherwise if you just update the gui images directly,
+                   it won't work out well and will seem like unity is glitching.  Wow that can take up a lot of useless time.-->
+  <entity copy_from="Graphics_RallyFlag"
+      name="Mark1_NotVisible" icon_name="Official/AI_NotVisible" icon_overlay="Official/Planet_Mark1"
+      exp_to_grant_on_death="-1"/>
+  <entity copy_from="Graphics_RallyFlag"
+      name="Mark1_Visible" icon_name="Official/AI_Visible" icon_overlay="Official/Planet_Mark1"
+      exp_to_grant_on_death="-1"/>
+
+  <entity copy_from="Graphics_RallyFlag"
+      name="Mark2_NotVisible" icon_name="Official/AI_NotVisible" icon_overlay="Official/Planet_Mark2"
+      exp_to_grant_on_death="-1"/>
+  <entity copy_from="Graphics_RallyFlag"
+      name="Mark2_Visible" icon_name="Official/AI_Visible" icon_overlay="Official/Planet_Mark2"
+      exp_to_grant_on_death="-1"/>
+
+  <entity copy_from="Graphics_RallyFlag"
+      name="Mark3_NotVisible" icon_name="Official/AI_NotVisible" icon_overlay="Official/Planet_Mark3"
+      exp_to_grant_on_death="-1"/>
+  <entity copy_from="Graphics_RallyFlag"
+      name="Mark3_Visible" icon_name="Official/AI_Visible" icon_overlay="Official/Planet_Mark3"
+      exp_to_grant_on_death="-1"/>
+
+  <entity copy_from="Graphics_RallyFlag"
+      name="Mark4_NotVisible" icon_name="Official/AI_NotVisible" icon_overlay="Official/Planet_Mark4"
+      exp_to_grant_on_death="-1"/>
+  <entity copy_from="Graphics_RallyFlag"
+      name="Mark4_Visible" icon_name="Official/AI_Visible" icon_overlay="Official/Planet_Mark4"
+      exp_to_grant_on_death="-1"/>
+
+  <entity copy_from="Graphics_RallyFlag"
+      name="Mark5_NotVisible" icon_name="Official/AI_NotVisible" icon_overlay="Official/Planet_Mark5"
+      exp_to_grant_on_death="-1"/>
+  <entity copy_from="Graphics_RallyFlag"
+      name="Mark5_Visible" icon_name="Official/AI_Visible" icon_overlay="Official/Planet_Mark5"
+      exp_to_grant_on_death="-1"/>
+
+  <entity copy_from="Graphics_RallyFlag"
+      name="Mark6_NotVisible" icon_name="Official/AI_NotVisible" icon_overlay="Official/Planet_Mark6"
+      exp_to_grant_on_death="-1"/>
+  <entity copy_from="Graphics_RallyFlag"
+      name="Mark6_Visible" icon_name="Official/AI_Visible" icon_overlay="Official/Planet_Mark6"
+      exp_to_grant_on_death="-1"/>
+
+  <entity copy_from="Graphics_RallyFlag"
+      name="Mark7_NotVisible" icon_name="Official/AI_NotVisible" icon_overlay="Official/Planet_Mark7"
+      exp_to_grant_on_death="-1"/>
+  <entity copy_from="Graphics_RallyFlag"
+      name="Mark7_Visible" icon_name="Official/AI_Visible" icon_overlay="Official/Planet_Mark7"
+      exp_to_grant_on_death="-1"/>
+  
+
+  <entity copy_from="Graphics_RallyFlag"
+      name="NonAIPlanet_NotVisible" icon_name="Official/NonAIPlanet_NotVisible"
+      exp_to_grant_on_death="-1"/>
+  <entity copy_from="Graphics_RallyFlag"
+      name="NonAIPlanet_Visible" icon_name="Official/NonAIPlanet_Visible"
+      exp_to_grant_on_death="-1"/>
+
+  <entity copy_from="Graphics_RallyFlag"
+      name="AIHome_NotVisible" icon_name="Official/AIHome_NotVisible"
+      exp_to_grant_on_death="-1"/>
+  <entity copy_from="Graphics_RallyFlag"
+      name="AIHome_Visible" icon_name="Official/AIHome_Visible"
+      exp_to_grant_on_death="-1"/>
+
+  <entity copy_from="Graphics_RallyFlag"
+      name="OwnedByNobody_NotVisible" icon_name="Official/OwnedByNobody_NotVisible"
+      exp_to_grant_on_death="-1"/>
+  <entity copy_from="Graphics_RallyFlag"
+      name="OwnedByNobody_Visible" icon_name="Official/OwnedByNobody_Visible"
+      exp_to_grant_on_death="-1"/>
+  
+  <entity copy_from="Graphics_RallyFlag"
+      name="Unexplored" icon_name="Official/Unexplored"
+      exp_to_grant_on_death="-1"/>
+  <entity copy_from="Graphics_RallyFlag"
+      name="NonAIPlanetHome" icon_name="Official/NonAIPlanetHome"
+      exp_to_grant_on_death="-1"/>
+
+</root>

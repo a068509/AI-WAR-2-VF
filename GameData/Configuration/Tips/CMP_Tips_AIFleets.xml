@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <tip category="AIFleets" name="SubFleets" display_name="The AI Sub-Fleets" sort_priority="100"
+        full_text="L'IA a un certain nombre de sous-parcs qu'elle utilise à différentes fins dans le jeu. Chaque sous-flotte a son propre budget, ses forces et ses faiblesses." />
+
+  <tip category="AIFleets" name="WardenFleet" display_name="Warden Fleet" sort_priority="200"
+        full_text="La flotte des gardes est une force purement défensive. Il reste sur des planètes appartenant à l'IA ou des planètes neutres." />
+  <tip category="AIFleets" name="HunterFleet" display_name="Hunter Fleet" sort_priority="300"
+        full_text="La flotte de chasseurs est une flotte principalement offensive utilisée par l'IA pour trouver des faiblesses dans vos défenses et vos attaques. Il peut également être utilisé pour la défense en cas d'urgence." />
+  <tip category="AIFleets" name="PraetorianGuard" display_name="Praetorian Guard" sort_priority="400"
+        full_text="La garde prétorienne est le garde du corps du suzerain de l'IA. Il est limité aux planètes proches de l'AI Overlord, bien qu'elles n'aient aucune restriction sur qui possède les planètes. Donc, si vous capturez une planète près du monde d'origine de l'IA, vous pouvez vous attendre à ce que les prétoriens aient quelque chose à dire à ce sujet." />
+  <tip category="AIFleets" name="Instigators" display_name="Instigators" sort_priority="500"
+       full_text="Toutes les heures environ, les instigateurs AI feront apparaître une base dans la galaxie. Chaque base fait une chose différente; certains vont buff les forces de l'IA, d'autres vont générer des AIP, d'autres vont faire apparaître des unités, etc ... Vous voulez tuer rapidement les bases Instigator." />
+  <tip category="AIFleets" name="Reserves" display_name="Reserves" sort_priority="500"
+       full_text="Si vous êtes 'Deepstriking', alias combattre l'IA loin de l'une de vos planètes, l'IA a une chance de générer des vaisseaux supplémentaires pour vous repousser." />
+
+</root>

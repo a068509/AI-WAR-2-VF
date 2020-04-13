@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <tip category="ReturningPlayers" name="Returning_MarkLevels" display_name="Mark Levels Go To 7 Instead of 5" sort_priority="1000"
+        full_text="The first game made it really hard for you to get mark 4 and mark 5 ships, making you get things like advanced factories, core fabricators, etc.
+        
+In this sequel, those sorts of capturables don't exist.  Instead you capture fleets, and those have a variety of new ships in them, which you can upgrade through a combination of spending science (at the Tech sidebar tab), and having fleets level up by gaining EXP in battle.
+
+In other words, it's far easier for you to get all the way to mark 7... and boy, you'll need to do so.  There are loads of capturables, but the highest marks aren't gated off like they were in the first game.  That just didn't feel right in our testing in this game.
+
+The AI itself uses mark 7 homeworlds instead of mark 5, and you'll need to upgrade yourself far more in order to take them on.  Basically, the way that you upgrade yourself is different in this game, but you have just as many things to capture and upgrade -- more, really, considering the procedural nature of fleets you capture and some of the other goodies out there..." />
+
+  
+  
+  <tip category="ReturningPlayers" name="Returning_Fleets" display_name="All Your Ships Are Organized Into Fleets" sort_priority="1000"
+        full_text="The first game had just a global ship cap (for most ships) and a per-planet ship cap (for turrets) that you could build from.  Those are gone.
+        
+Now there are various fleets, which might be 'the fleet for a planet' (equivalent to the old per-planet ship cap), or which might be offensive strike groups with either a strong (officer) flagship or a transport at the center.
+
+This helps organizationally, but also has many other benefits that you'll notice as you play.  Essentially this lets you manage multiple fronts far more easily, and has a number of ways of discouraging 'fleetballing.'  It also lets you have interesting forces that you choose where to deploy as a unit, versus trying to micro all the small things.
+
+This actually cuts out a lot of the small logistical wrangling that the first game had, where you had things like rally points and whatnot.  Now your factories (formerly space docks) simply build ships that appear at fleets that are near them.
+
+You have a lot more choice in terms of where you deploy things, and you have far more ships than in the first game as well as a larger variety of ships, but the basics are far more streamlined to let you focus on the big picture." />
+
+  
+  
+  <tip category="ReturningPlayers" name="Returning_BuildQueues" display_name="Build Queues Are Out, Factories Are Automated" sort_priority="1000"
+        full_text="The first game required you to manage build queues to get specific numbers of units at specific parts of the galaxy.
+        
+Now that things are organized by fleets, each fleet has a specific cap of each type of ship in the fleet, and if it's within 1 planet of a factory, then any factories will automatically simultaneously build for that fleet, all at once (no queue, it's all just divided out evenly).
+
+The idea is to make it vastly quicker for you to 're-fleet' and in general to just get your fleets up to full strength, but you can also turn off specific units from building, or an entire fleet, from the fleet management screen (on the Fleets tab on the sidebar).
+
+Note that there are some conveniences in there to make it a lot less likely that you'll need to do much of that: for instance, lower-mark ships that are in a fleet that include at least some high-mark ships will get progressively cheaper.  You should let them build; they're useful as 'chaff' bullet sponges, after all.  And the price is right, economically speaking." />
+
+
+
+  <tip category="ReturningPlayers" name="Returning_ControlGroups" display_name="Control Groups Are Out, Fleets Are In" sort_priority="1000"
+        full_text="The first game let you make arbitrary groups of units called 'control groups,' which is pretty common in strategy games, and was really important because you otherwise just had one big lump of ships.
+        
+This game has all of your units already organized into fleets, and your offensive-oriented ones are assigned to hotkeys (like control groups were) as you capture them.
+
+However, you can go into the fleet management screen (Fleets tab on the sidebar) and change which fleet(s) use which of the 10 number keys.  Multiple fleets can share a single number, so that you automatically select multiple fleets just by hitting one key.  Very useful if you always use those ones together.
+
+Fleets are meant to be used as a group, and choosing the right fleet for the location is a big part of the sequel.  Partly because of all these changes, you get access to a lot more fleets, so you can afford to let some hang back and do less during certain offensives.  You shouldn't have to 'fleetball' every time you attack an enemy planet (and in fact, the Hunter Fleet of the AI may exploit your distraction if you do so and come destroy you).
+
+The first game was smaller and had more of an emphasis on individual ships, while the sequel is larger and has an emphasis on how to use larger groups of ships over a wider area than before." />
+
+
+
+  <tip category="ReturningPlayers" name="Returning_MultipleAIs" display_name="There Are No Longer 2 AIs: There are 1-n" sort_priority="1000"
+        full_text="The first game ALWAYS had two AIs for you to face off against.  This gave you two homeworlds to assault, and also gave you some variance in how the two AIs each acted.  There were a lot of different AI types.
+        
+The sequel is... well, it's different in general.  Each individual AI now already makes each of its planets way more specialized than the first game ever did.  So expect each planet to have a bunch of surprises.
+
+There are still a lot of AI types, but not so many focused around using specialized ship types.  They're more behavior-oriented only, because ALL the AI types now use more ships in more ways throughout the galaxy.
+
+With that in mind, you don't really have to have two AIs to have a good time.  If you want two homeworld assaults, then sure you need that (and can easily add that).  If you want three or five or 10 AIs, you can also set that up, too.
+
+The default is just one AI, using the 'Full Ensemble' AI type, which uses the default AI tactics and strategy but a huge variety of ships and their attendant sub-strategies.  That's a good place to start on your first few campaigns." />
+
+
+
+  <tip category="ReturningPlayers" name="Returning_MinorFactions" display_name="Factions Are No Longer 'Minor'" sort_priority="1000"
+        full_text="The first game had a variety of 'minor factions' that you could turn on for some interesting extra flavor and extra activity.  But the engine wasn't really built around that sort of thing, so they were kind of limited in what they could do.
+        
+This sequel has no such restriction, and the factions in this game are fully-fledged and in some cases just as capable of taking over the galaxy as the AI or you are.
+
+If you were always wanting more of a battle royale type situation, where many independent alien groups are all trying to meet their own agenda and causing chaos as they go, then turning on the Nanocaust and the Macrophage is a good place to start.  The game flow can be absolutely completely different from what you're used to." />
+  
+
+
+  <tip category="ReturningPlayers" name="Returning_Reconquest" display_name="The AI Will Recapture Planets" sort_priority="1000"
+        full_text="This only happens above a certain AI Progress (AIP) depending on the difficulty level of the AI you have selected, but it's a major new behavior that was not in the first game.
+        
+This makes it so that you can't always just leave neutral planets sitting there empty as a buffer.  You might find yourself facing down a deadly Usurper and its attendant forces that are going to take that planet back.  They come in a wave that does give you some warning, so there is that.
+
+If the AI does take a planet back, don't worry that it will cost you AIP again if you take it back from them a second time.  If you've captured it once before in the past, you don't have to pay the AIP penalty a second time." />
+
+
+
+  <tip category="ReturningPlayers" name="Returning_HackingEtc" display_name="Hackers, Colony Ships, and Science Labs Are Out" sort_priority="1000"
+        full_text="Any of your offensive fleets (officer or transport-based) can do the job of a hacker or a colony ship if you take them to a planet.
+        
+We had these other units in the sequel for quite some time, but ultimately it was just making a two-step process out of it for no good reason.  Just bring along the centerpiece of an offensive fleet and that's all you need, now: it keeps things moving and doesn't actually remove any strategy.
+
+Science, on the other hand, is gathered by command stations now.  If you need capture a planet, then it will automatically work on gathering the science until it is exhausted.
+
+As far as capturing science from neutral planets goes... well, you can either temporarily capture it until you have all the science you wanted, or you can use a hack to get it.  One example of a reason not to temporarily capture a planet is if a Dyson Sphere is sitting on it: you'll really piss that thing off.  So that's a case where it's worth the hacking points to just get that science on the sly." />
+
+
+
+  <tip category="ReturningPlayers" name="Returning_Scouting" display_name="Scouts Are Out, Scouting Is Semi-Automated" sort_priority="1000"
+        full_text="The first game basically had scouting as a minigame of sorts, but it wasn't a particularly fun one.  Most people automated it with just sending lots of scouts out on paths that they defined, and they hoped for the best and tried again later with higher-level scouts or more scouts if they couldn't get through some part.
+        
+It was possible, and in some ways optimal, to dawdle around at the start of the game and just focus on scouting everything, and then start really going out into the galaxy only after you had perfect knowledge of it.  This was really suboptimal for a lot of reasons (including it not being fun, and including it kind of ruining any sense of discovery as you go).
+
+We tried a number of different methods for scouting in this sequel, but what we settled on was basically the intended flow: as you capture planets, it auto-scouts a certain number around the periphery of your known space.  This makes it so that you're constantly learning more about the map as you play, and so that you have to make decisions based on incomplete information early in the game.  You can't just grind the scouting in an un-fun way to play more optimally.
+
+There is a way to send spy nanites (via hacking) to any planet if you just absolutely want to see what is there, and/or have permanent vision of that planet (like placing a scout picket in the prior game).  But now that's all handled through the Hacking tab of the sidebar when you click around planets on the galaxy map, versus you having to fiddle with units in a really micro-manage-y sort of way." />
+
+  
+  
+  <tip category="ReturningPlayers" name="Returning_TechGroups" display_name="Techs Are Not Just For A Single Ship Type Anymore" sort_priority="1000"
+      full_text="In the first game, you could unlock new ship lines via techs, and you could also upgrade individual ship types via techs.  This was... problematic once you started having too many ship types to choose from.  A lot of things just never got upgraded.
+      
+Instead, now there are a variety of themed techs, and invidual ship types subscribe to one or more of them.  Upgrading one of your techs potentially causes a bunch of your ship lines to gain a mark all at once.
+
+Note that many of the techs can only be researched 3-5 times, not the full 7.  You'll have to either take advantage of ships that subscribe to multiple techs (those are additive), and some EXP-based leveling up of your fleets.
+
+You have way more types of ships, now, although there are only a few types in each fleet.  So looking for synergies is definitely a smart thing to do." />
+
+
+
+  <tip category="ReturningPlayers" name="Returning_MarkLevelsMax" display_name="Your Ships Generally Are Max Mark Level Only" sort_priority="1000"
+      full_text="In the first game, unlocking a tech would give you a smaller ship cap of the higher-mark ships in addition to the lower-mark ships you already had.  That had many benefits, but also led to certain kinds of micromanagement that was unpleasant.
+      
+In this sequel, if you upgrade (for instance) Fusion Bombers by one mark level, then ALL of them become the higher mark immediately, and the ship cap increases a bit.  They don't become more expensive, so you don't have to worry about that tanking your economy.
+
+It is possible to have Engineers (or some other ship types) of multiple mark levels in your empire, because if they gained marks from some techs and also from some fleet-specific EXP-based upgrades, then one fleet might have stronger Engineers than another.  But beyond that, you're looking at the same max level at all times." />
+
+
+
+  <tip category="ReturningPlayers" name="Returning_GCAs" display_name="Global Command Augmenters (GCAs) Are Critical For Defending" sort_priority="1000"
+      full_text="In the first game, you had per-planet caps of turrets and other defenses.  You got more by unlocking new ship lines.
+      
+In this sequel, you really get very little for defending yourself at the start of the game.  You can use battlestations, but there are very few of them in the galaxy.
+
+Instead, what you want to do is either capture or hack (both have pros and cons -- see the defensive strategies section) Global Command Augmenters (GCAs), and it will give you some additional turrets, minefields, or other defenses at ALL your command stations.
+
+This is basically the same sort of per-planet cap system as before, but it's driven by capturing or hacking GCAs rather than spending science.  More than on GCA might give you to a specific turret type, which in turn would just additively give you a larger cap for that type.
+
+Even beyond this, however, the type of command station you use gives you a bonus to the turret types you get from this.  Logistical get the default amount.  Military get 2x the default amount.  Economic get half the normal amount." />
+</root>

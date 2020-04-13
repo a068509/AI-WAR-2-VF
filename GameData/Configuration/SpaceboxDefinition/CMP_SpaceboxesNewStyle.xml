@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <spacebox name="CalmRibs_Blue" weight="100" visuals="assets/spacebg/materials/forusing/calmribs_blue.mat"  />
+  <spacebox name="CalmRibs_BlueRed" weight="100" visuals="assets/spacebg/materials/forusing/calmribs_bluered.mat"  />
+  <spacebox name="CalmRibs_Green" weight="80" visuals="assets/spacebg/materials/forusing/calmribs_green.mat"  />
+  <spacebox name="CalmRibs_Purple" weight="50" visuals="assets/spacebg/materials/forusing/calmribs_purple.mat"  />
+  <spacebox name="CalmRibs_Teal" weight="80" visuals="assets/spacebg/materials/forusing/calmribs_teal.mat"  />
+  
+  <spacebox name="ChunksAndSlashes_Blue" weight="100" visuals="assets/spacebg/materials/forusing/chunksandslashes_blue.mat"   />
+  <spacebox name="ChunksAndSlashes_Gold" weight="200" visuals="assets/spacebg/materials/forusing/chunksandslashes_gold.mat"  />
+  <spacebox name="ChunksAndSlashes_GreenDeep" weight="100" visuals="assets/spacebg/materials/forusing/chunksandslashes_greendeep.mat"  />
+  <spacebox name="ChunksAndSlashes_GreenPale" weight="100" visuals="assets/spacebg/materials/forusing/chunksandslashes_greenpale.mat"  />
+  <spacebox name="ChunksAndSlashes_Purple" weight="50" visuals="assets/spacebg/materials/forusing/chunksandslashes_purple.mat"  />
+  <spacebox name="ChunksAndSlashes_Red" weight="80" visuals="assets/spacebg/materials/forusing/chunksandslashes_red.mat"   />
+  <spacebox name="ChunksAndSlashes_TealDark" weight="100" visuals="assets/spacebg/materials/forusing/chunksandslashes_tealdark.mat"  />
+
+  <spacebox name="CloudyWisps_Blue" weight="100" visuals="assets/spacebg/materials/forusing/cloudywisps_blue.mat"  />
+  <spacebox name="CloudyWisps_Gold" weight="100" visuals="assets/spacebg/materials/forusing/cloudywisps_gold.mat"  />
+  <spacebox name="CloudyWisps_PaleGreen" weight="80" visuals="assets/spacebg/materials/forusing/cloudywisps_palegreen.mat"  />
+  <spacebox name="CloudyWisps_Purple" weight="100" visuals="assets/spacebg/materials/forusing/cloudywisps_purple.mat"  />
+  <spacebox name="CloudyWisps_Red" weight="100" visuals="assets/spacebg/materials/forusing/cloudywisps_red.mat"   />
+  <spacebox name="CloudyWisps_Teal" weight="80" visuals="assets/spacebg/materials/forusing/cloudywisps_teal.mat"  />
+  
+  <spacebox name="DeepSmallClusters_Blue" weight="50" visuals="assets/spacebg/materials/forusing/deepsmallclusters_blue.mat"  />
+  <spacebox name="DeepSmallClusters_Blue2" weight="50" visuals="assets/spacebg/materials/forusing/deepsmallclusters_blue2.mat"   />
+  <spacebox name="DeepSmallClusters_Green" weight="100" visuals="assets/spacebg/materials/forusing/deepsmallclusters_green.mat"  />
+  <spacebox name="DeepSmallClusters_Purple" weight="60" visuals="assets/spacebg/materials/forusing/deepsmallclusters_purple.mat"  />
+  <spacebox name="DeepSmallClusters_Red" weight="100" visuals="assets/spacebg/materials/forusing/deepsmallclusters_red.mat"  />
+  <spacebox name="DeepSmallClusters_Teal" weight="80" visuals="assets/spacebg/materials/forusing/deepsmallclusters_teal.mat"  />
+  
+  <spacebox name="StormyBats_Blue" weight="100" visuals="assets/spacebg/materials/forusing/stormybats_blue.mat"  />
+  <spacebox name="StormyBats_Green" weight="80" visuals="assets/spacebg/materials/forusing/stormybats_green.mat"   />
+  <spacebox name="StormyBats_Purple" weight="50" visuals="assets/spacebg/materials/forusing/stormybats_purple.mat"  />
+  <spacebox name="StormyBats_Red" weight="100" visuals="assets/spacebg/materials/forusing/stormybats_red.mat"  />
+  <spacebox name="StormyBats_Teal" weight="50" visuals="assets/spacebg/materials/forusing/stormybats_teal.mat"  />
+
+  <spacebox name="Morning_Blue" weight="80" visuals="assets/spacebg/materials/forusing/morning_blue.mat"  />
+  <spacebox name="Morning_BlueOrange" weight="200" visuals="assets/spacebg/materials/forusing/morning_blueorange.mat"  />
+  <spacebox name="Morning_Gold" weight="80" visuals="assets/spacebg/materials/forusing/morning_gold.mat"  />
+  <spacebox name="Morning_Green" weight="80" visuals="assets/spacebg/materials/forusing/morning_green.mat"  />
+  <spacebox name="Morning_Purple" weight="50" visuals="assets/spacebg/materials/forusing/morning_purple.mat"  />
+  <spacebox name="Morning_Red" weight="100" visuals="assets/spacebg/materials/forusing/morning_red.mat"  />
+  <spacebox name="Morning_Teal" weight="10" visuals="assets/spacebg/materials/forusing/morning_teal.mat"  />
+</root>

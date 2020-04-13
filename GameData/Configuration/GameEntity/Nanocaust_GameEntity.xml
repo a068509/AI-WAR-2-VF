@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- The Hive is the first Nanobot Center created -->
+  <entity name="NanobotCenter_Hive"
+			tags="NanobotCenter,NanobotHive,ShowsOnNormalDisplayMode"
+			draw_in_galaxy_view="true"
+			visuals="Assets/_FinalGameMeshes/Nanocaust/HiveAndCenterBase/NanobotHive.prefab" gimbal_name="Nanobot Hive"
+			icon_name="Official/Nanobot_Hive" gimbal_icon_size_multiplier="1.5"
+			category="Ship"
+			size_scale="9"
+			visuals_scale_multiplier="4"
+			y_offset_of_icon="30"
+			collision_priority="810"
+			display_name="Nanobot Hive"
+			description="La planète d'origine de l'infestation de nanobots."
+			target_type_for_player="NeverAutotargetButAllowManualTarget"
+			behavior="Stationary"
+			voice_group="Silent"
+			starting_mark_level="Markless"
+			eligible_for_hacks="DecodingNanobots"
+			cost_for_ai_to_purchase="12000"
+                        grants_minor_faction_planet_control="true"
+			hull_points="700000" shield_points="700000" speed="Immobile"
+			metal_cost="270000" energy_consumption="0"
+			armor_mm="220" albedo="0.95" mass_tx="8"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+      assist_range="High1"
+			description_appender_dll="AIWarExternalCode"
+			description_appender_type="Arcen.AIW2.External.NanobotCenterDescriptionAppender"
+      exp_to_grant_on_death="-1"
+      priority_as_ai_target="IrreplaceableBigAsTheyCome" priority_as_frd_target="IgnoreMe" priority_to_protect="Irreplaceable"
+			>
+    <!-- All nanocaust buildings repair engines. Unmoving nanocaust ships can cause confusion since some of the
+         code in the faction will wait till all ships in a Fleet arrive -->
+    <metal_flow purpose="RepairingEnginesOfFriendlies" throughput="1000"/>
+    <system name="BallisticDoubleshot" display_name="Helminth Doubleshot"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="5600" range="Normal5" shot_speed="Fast" rate_of_fire="Normal" fires_salvos_sequentially="true"
+				shot_type_data="DoubleShot_Green"				
+				>
+      <death_effect_damage type="Nanocaustation" tier_name="LargeNanocaustShip"/>
+    </system>
+          <system name="TachyonArray" display_name="Tachyon Array"
+	      category="Passive"
+	      tachyon_points="500" tachyon_points_added_per_mark="25" tachyon_range="EssentiallyInfinite" tachyon_hits_albedo_less_than="99"
+	      >
+      </system>
+
+  </entity>
+
+  <entity name="NanobotCenter_Hacked_Hive" skip_export="true" copy_from="NanobotCenter_Hive" tags="NanobotCenter,NanobotHackedHive,ShowsOnNormalDisplayMode" 
+          display_name="Nanobot Hacked Hive" description="Planète d'origine de l'infestation de nanobots. Maintenant sous une nouvelle direction."
+      exp_to_grant_on_death="-1" />
+  <!-- The NanobotCenter will upgrade itself in the C# code after time elapses -->
+
+  <entity name="WarpingInNanobotCenter"
+			tags="WarpingInNanobotCenter"
+			draw_in_galaxy_view="true"
+			visuals="Assets/_FinalGameMeshes/Nanocaust/HiveAndCenterBase/NanobotCenter.prefab" gimbal_name="Nanobot Center"
+			icon_name="Official/Nanobot_Center" gimbal_icon_size_multiplier="1.5"
+			category="Ship"
+			size_scale="6"
+			visuals_scale_multiplier="4"
+			y_offset_of_icon="30"
+			collision_priority="810"
+			display_name="Warping in Nanobot Center"
+			description="Le Nanocauste crée un centre de construction pour construire des navires."
+			behavior="Stationary"
+			voice_group="Silent"
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Unused"
+			cost_for_ai_to_purchase="2000"			
+			hull_points="70000" shield_points="70000" speed="Immobile"
+			metal_cost="120000" energy_consumption="0"
+			armor_mm="210" albedo="0.95" mass_tx="7"
+                        grants_minor_faction_planet_control="true"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+                        assist_range="High1"
+                        exp_to_grant_on_death="-1"
+                        priority_as_frd_target="MajorPlanetLevelObjective" priority_as_ai_target="MajorPlanetLevelObjective" priority_to_protect="MajorPlanetLevelObjective"
+			>
+  </entity>
+
+  <entity name="NanobotCenter"
+			tags="NanobotCenter"
+			draw_in_galaxy_view="true"
+			visuals="Assets/_FinalGameMeshes/Nanocaust/HiveAndCenterBase/NanobotCenter.prefab" gimbal_name="Nanobot Center"
+			icon_name="Official/Nanobot_Center" gimbal_icon_size_multiplier="1.5"
+			category="Ship"
+			size_scale="6"
+			visuals_scale_multiplier="4"
+			y_offset_of_icon="30"
+			collision_priority="810"
+			display_name="Nanobot Center"
+			description="Construit des navires Nanobot pour conquérir la galaxie."
+			behavior="Stationary"
+			voice_group="Silent"
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Unused"
+			cost_for_ai_to_purchase="2000"			
+			hull_points="70000" shield_points="70000" speed="Immobile"
+			metal_cost="120000" energy_consumption="0"
+			armor_mm="210" albedo="0.95" mass_tx="7"
+                        grants_minor_faction_planet_control="true"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+      assist_range="High1"
+			description_appender_dll="AIWarExternalCode"
+			description_appender_type="Arcen.AIW2.External.NanobotCenterDescriptionAppender"
+      exp_to_grant_on_death="-1"
+      priority_as_frd_target="MajorPlanetLevelObjective" priority_as_ai_target="MajorPlanetLevelObjective" priority_to_protect="MajorPlanetLevelObjective"
+			>
+    <metal_flow purpose="RepairingEnginesOfFriendlies" throughput="1000"/>
+    <system name="BallisticDoubleshot" display_name="Helminth Doubleshot"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="5600" range="Normal5" shot_speed="Fast" rate_of_fire="Normal" fires_salvos_sequentially="true"
+				shot_type_data="DoubleShot_Green"				
+				>
+      <death_effect_damage type="Nanocaustation" tier_name="LargeNanocaustShip"/>      
+    </system>
+          <system name="TachyonArray" display_name="Tachyon Array"
+	      category="Passive"
+	      tachyon_points="500" tachyon_points_added_per_mark="25" tachyon_range="EssentiallyInfinite" tachyon_hits_albedo_less_than="99"
+	      >
+      </system>
+  </entity>
+
+
+  <!-- There are 3 "base level" nanobot ships, stolen directly from Fighter (Mutation)/Bomber (Anomaly)/Missile Frigate (Deviant)
+     There are 2 more powerful ships, the Aberration and the Abomination (this is the strongest). These 2 can only
+     be produced from the highest tier Nanobot Constructor-->
+
+  <entity name="Mutation"
+			tags="MarkBasedNanocaustShip"
+			special_entity_type="SmallShipYesStacks"
+			visuals="Assets/_FinalGameMeshes/Nanocaust/FighterMutation/FighterMutation.prefab"
+			icon_name="Official/Nanobot_Mutation"
+			category="Ship"
+			size_scale="0.9"
+			visuals_scale_multiplier="6"
+			collision_priority="100"
+			display_name="Mutation"
+			description="Chasseur infesté de nanobots. Possède un petit émetteur de tachyon."
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Unused"
+			cost_for_ai_to_purchase="20"			
+			hull_points="10000" shield_points="5000" speed="BelowAverage1"
+			metal_cost="5000" energy_consumption="25"
+			armor_mm="50" albedo="0.4" engine_gx="13" mass_tx="0.24"
+			voice_group="Silent"
+      assist_range="High1"
+			ship_or_structure_explosion_sfx="ShipSmall_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+      exp_to_grant_on_death="-1"
+      priority_as_ai_target="NormalFleetship" priority_as_frd_target="BiggerFleetship" priority_to_protect="Expendable"
+	  should_never_be_captured_by_another_faction="true"
+			>
+    <system name="BallisticDoubleshot" display_name="Helminth Doubleshot"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="600" range="Small3" shot_speed="Fast" rate_of_fire="Normal" fires_salvos_sequentially="true"
+				shot_type_data="DoubleShot_Green"				
+				>
+      <death_effect_damage type="Nanocaustation" tier_name="Major"/>
+    </system>
+    <!-- One of them needed a tachyon emitter to deal with cloaking -->
+    <system name="TachyonArray" display_name="Tachyon Array"
+				category="Passive" tachyon_points="50" tachyon_points_added_per_mark="25" tachyon_range="EssentiallyInfinite" tachyon_hits_albedo_less_than="0.65"></system>
+  </entity>
+
+
+  <entity name="Anomaly"
+			tags="MarkBasedNanocaustShip"
+			special_entity_type="SmallShipYesStacks"
+			visuals="Assets/_FinalGameMeshes/Nanocaust/BomberAnomaly/BomberAnomaly.prefab"
+			icon_name="Official/Nanobot_Anomaly"
+			category="Ship"
+			size_scale="1.1"
+			visuals_scale_multiplier="4.5"
+			collision_priority="100"
+			display_name="Anomaly"
+			description="Bombardier infesté de nanobots."
+			starting_mark_level="Mark1" max_mark_level="3" tech_upgrades_that_benefit_me="Unused"
+			cost_for_ai_to_purchase="10"			
+			hull_points="15000" shield_points="2000" speed="BelowAverage1"
+			metal_cost="5000" energy_consumption="25"
+			armor_mm="60" albedo="0.3" engine_gx="13" mass_tx="0.24"
+			voice_group="Silent"
+			ship_or_structure_explosion_sfx="ShipSmall_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+      priority_as_ai_target="NormalFleetship" priority_as_frd_target="BiggerFleetship" priority_to_protect="Expendable"
+	  should_never_be_captured_by_another_faction="true"
+      exp_to_grant_on_death="-1"
+			>
+    <system name="ViralBomb" display_name="Viral Bomb"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="1040" range="Small3" shot_speed="Slow" rate_of_fire="ExtremelyLow" fires_salvos_sequentially="true"
+				shot_type_data="FusionBomb_Viral"
+				base_percent_damage_bypasses_personal_shields="0.9" added_percent_damage_bypasses_personal_shields_per_mark="0.05"
+				>
+      <death_effect_damage type="Nanocaustation" tier_name="Major"/>
+    </system>
+  </entity>
+
+
+  <entity name="Deviant"
+			tags="MarkBasedNanocaustShip"
+			special_entity_type="SmallShipYesStacks"
+			visuals="Assets/_FinalGameMeshes/Nanocaust/MissileCorvetteDeviant/MissileCorvetteDeviant.prefab"
+			icon_name="Official/Nanobot_Deviant"
+			category="Ship"
+			size_scale="3"
+			visuals_scale_multiplier="16"
+			collision_priority="100"
+			display_name="Deviant"
+			description="Corvette de missiles infestée de nanobots."
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Unused"
+			cost_for_ai_to_purchase="10"			
+			hull_points="5000" shield_points="2000" speed="BelowAverage1"
+			metal_cost="5000" energy_consumption="25"
+			armor_mm="50" albedo="0.7" engine_gx="14" mass_tx="0.24"
+			voice_group="Silent"
+			ship_or_structure_explosion_sfx="ShipMidsize_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+      priority_as_ai_target="NormalFleetship" priority_as_frd_target="BiggerFleetship" priority_to_protect="Expendable"
+	  should_never_be_captured_by_another_faction="true"
+      exp_to_grant_on_death="-1"
+			>
+    <system name="SickleShot" display_name="Nematode Sickle-Shot"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="630" range="Normal4" shot_speed="Normal" rate_of_fire="VeryLow" fires_salvos_sequentially="true"
+				shot_type_data="NanocaustCurvedSicklyGreenShot"				
+				>
+      <death_effect_damage type="Nanocaustation" tier_name="Major"/>
+    </system>
+  </entity>
+
+
+  <entity name="Aberration"
+			tags="ScaryNanobot,ScaryNanobotBasic"
+			special_entity_type="LargeShipYesStacks"
+			visuals="Assets/_FinalGameMeshes/Nanocaust/Aberration/Aberration.prefab"
+			icon_name="Official/Nanobot_Aberration"
+			uses_large_health_bar="true"
+			category="Ship"
+			size_scale="3.3"
+			visuals_scale_multiplier="1.6"
+			y_offset_of_icon="10"
+			collision_priority="100"
+			display_name="Aberration"
+			description="Navire puissant infesté de nanobots."
+			blocks_enemy_claim_flows="true"
+			voice_group="Silent"
+			starting_mark_level="Markless"
+			cost_for_ai_to_purchase="1800"			
+			hull_points="150000" shield_points="20000" speed="BelowAverage1"
+			metal_cost="160000" energy_consumption="5000"
+			armor_mm="120" albedo="0.8" engine_gx="18" mass_tx="4"
+			ship_or_structure_explosion_sfx="ShipGuardian_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+      priority_as_ai_target="NormalStarship" priority_as_frd_target="BiggerStarship" priority_to_protect="SlightlyLessExpendable"
+	  should_never_be_captured_by_another_faction="true"
+      exp_to_grant_on_death="-1"
+			>
+    -
+    <system name="LaserPulse" display_name="Viral Emitter"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="1200" range="AboveAverage3" shot_speed="Normal" rate_of_fire="High" fires_salvos_sequentially="true"
+				shot_type_data="LaserPulse_SicklyGreen"				
+				>
+				<outgoing_damage_modifier based_on="Armor_mm" comparison_type="AtLeast" compared_to="90" multiplier="4"/>
+        <death_effect_damage type="Nanocaustation" tier_name="LargeNanocaustShip"/>
+    </system>
+    <system name="HeavyBeamCannon" display_name="Prion Beam"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="1200" range="Small3" shot_speed="Normal" rate_of_fire="Normal" fires_salvos_sequentially="true"
+				stack_damage_multiplier="2"
+				shot_type_data="HeavyBeamInvisible"
+				beam_length_multiplier="1.3" hits_all_intersecting_targets="true" shots_detonate_immediately="true"
+				maximum_number_of_targets_hit_per_shot="10"
+				>
+      <death_effect_damage type="Nanocaustation" tier_name="LargeNanocaustShip"/>
+    </system>
+  </entity>
+  <entity name="AberrationV2" skip_export="true" copy_from="Aberration"
+      exp_to_grant_on_death="-1"/>
+  <!--Simply so that we can have multiple variants from the RNG in one game-->
+  <entity name="AberrationV3" skip_export="true" copy_from="Aberration"
+      exp_to_grant_on_death="-1"/>
+  <!--Simply so that we can have multiple variants from the RNG in one game-->
+  <entity name="AberrationZenithTrader" skip_export="true" copy_from="Aberration" is_auto_scrapping_skipped_when_command_station_type_changes="true"
+        metal_cost="160000" build_sidebar_categories_i_am_part_of="StationKeepers" 
+        fleet_membership="Planetary" display_name="Scrubbed Aberration"
+        description="Navire puissant frotté de ses nanobots par le Zenith Trader, pas aussi contagieux qu'auparavant mais toujours capable de zombifier les choses. Le commerçant ne vous vendra pas cela si vous en avez déjà deux dans la galaxie."
+		galaxy_wide_cap_for_players_constructing="2"
+      exp_to_grant_on_death="-1">
+    <fleet_membership name="ZenithPurchases" ship_cap_group="OtherDefense" weight="100" min="1" max="1"/>
+    <metal_flow purpose="SelfConstruction" throughput="1000"/>
+    <system name="LaserPulse" >
+      <death_effect_damage type="Nanocaustation" tier_name="None"/>
+	  <death_effect_damage type="Zombification" tier_name="Parasite"/>
+    </system>
+    <system name="HeavyBeamCannon" >
+      <death_effect_damage type="Nanocaustation" tier_name="None"/>
+	  <death_effect_damage type="Zombification" tier_name="Parasite"/>
+    </system>	
+  </entity>
+
+
+  <entity name="Abomination"
+			tags="ScaryNanobot,ScaryNanobotBasic"
+			special_entity_type="LargeShipYesStacks"	
+			visuals="Assets/_FinalGameMeshes/Nanocaust/Abomination/Abomination.prefab"
+			icon_name="Official/Nanobot_Abominatino"
+			uses_large_health_bar="true"
+			category="Ship"
+			size_scale="5"
+			visuals_scale_multiplier="1.6"
+			y_offset_of_icon="10"
+			collision_priority="100"
+			display_name="Abomination"
+			description="Navire très puissant infesté de nanobots."
+			blocks_enemy_claim_flows="true"
+			voice_group="Silent"
+			starting_mark_level="Markless"
+			cost_for_ai_to_purchase="4800"			
+			hull_points="200000" shield_points="70000" speed="BelowAverage1"
+			metal_cost="350000" energy_consumption="7000"
+			armor_mm="120" albedo="0.8" engine_gx="18" mass_tx="4"
+			ship_or_structure_explosion_sfx="ShipGuardian_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+      priority_as_ai_target="NormalStarship" priority_as_frd_target="BiggerStarship" priority_to_protect="SlightlyLessExpendable"
+	  should_never_be_captured_by_another_faction="true"
+      exp_to_grant_on_death="-1"
+			>
+    <system name="SickleShot" display_name="Nematode Sickle-Shot"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="2800" range="Small3" shot_speed="Normal" rate_of_fire="Misery"
+				shots_per_salvo="16" fires_salvos_sequentially="false"
+				shot_type_data="NanocaustCurvedSicklyGreenShot"
+				>
+      <death_effect_damage type="Nanocaustation" tier_name="LargeNanocaustShip"/>
+    </system>
+    <system name="HeavyBeamCannon" display_name="Prion Beam"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="1800" range="Small3" shot_speed="Normal" rate_of_fire="Normal" fires_salvos_sequentially="true"
+				stack_damage_multiplier="2"
+				shot_type_data="HeavyBeamInvisible"
+				beam_length_multiplier="1.3" hits_all_intersecting_targets="true" shots_detonate_immediately="true"
+				maximum_number_of_targets_hit_per_shot="10"
+				>
+      <death_effect_damage type="Nanocaustation" tier_name="LargeNanocaustShip"/>
+    </system>
+	    <system name="TachyonArray" display_name="Tachyon Array"
+				category="Passive" tachyon_points="50" tachyon_range="VeryTiny2" tachyon_hits_albedo_less_than="0.65"></system>
+    <system name="LaserPulse" display_name="Viral Emitter"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="1800" range="AboveAverage3" shot_speed="Normal" rate_of_fire="High" fires_salvos_sequentially="true"
+				shot_type_data="LaserPulse_SicklyGreen"				
+				>
+				<outgoing_damage_modifier based_on="Armor_mm" comparison_type="AtLeast" compared_to="90" multiplier="4"/>
+        <death_effect_damage type="Nanocaustation" tier_name="LargeNanocaustShip"/>
+    </system>
+
+  </entity>
+  <entity name="AbominationV2" skip_export="true" copy_from="Abomination"
+      exp_to_grant_on_death="-1"/>
+  <!--Simply so that we can have multiple variants from the RNG in one game-->
+  <entity name="AbominationV3" skip_export="true" copy_from="Abomination"
+      exp_to_grant_on_death="-1"/>
+  <!--Simply so that we can have multiple variants from the RNG in one game-->
+  <entity name="AbominationZenithTrader" skip_export="true" copy_from="Abomination" is_auto_scrapping_skipped_when_command_station_type_changes="true"
+        metal_cost="350000" build_sidebar_categories_i_am_part_of="StationKeepers" 
+        fleet_membership="Planetary" display_name="Scrubbed Abomination" display_name_for_sidebar="Scrubbed Abomin."
+        description="Navire très puissant frotté de ses nanobots par le Zenith Trader, pas aussi contagieux qu'auparavant mais toujours très capable de zombifier les choses. Le commerçant ne vous vendra pas cela si vous en avez déjà deux dans la galaxie."
+		galaxy_wide_cap_for_players_constructing="2"
+      exp_to_grant_on_death="-1">
+    <fleet_membership name="ZenithPurchases" ship_cap_group="OtherDefense" weight="100" min="1" max="1"/>
+    <metal_flow purpose="SelfConstruction" throughput="1000"/>
+    <system name="SickleShot" >
+      <death_effect_damage type="Nanocaustation" tier_name="None"/>
+	  <death_effect_damage type="Zombification" tier_name="Parasite"/>
+    </system>	
+    <system name="LaserPulse" >
+      <death_effect_damage type="Nanocaustation" tier_name="None"/>
+	  <death_effect_damage type="Zombification" tier_name="Parasite"/>
+    </system>
+    <system name="HeavyBeamCannon" >
+      <death_effect_damage type="Nanocaustation" tier_name="None"/>
+	  <death_effect_damage type="Zombification" tier_name="Parasite"/>
+    </system>		
+  </entity>
+  
+</root>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <surrogate_table name="AIType"
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.AITypeDataTable"
+  >
+  </surrogate_table>
+  <surrogate_table name="AISpecialForcesType"
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.AISpecialForcesTypeDataTable"
+  >
+  </surrogate_table>
+  <surrogate_table name="HunterFleetType"
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.HunterFleetTypeTable"
+  >
+  </surrogate_table>
+  <surrogate_table name="PraetorianGuardType"
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.PraetorianGuardTypeDataTable"
+  >
+  </surrogate_table>
+
+  <surrogate_table name="AIDifficulty"
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.AIDifficultyTable"
+  >
+  </surrogate_table>
+  <surrogate_table name="AIDifficulty_HunterFleet"
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.AIDifficulty_HunterFleetTable"
+  >
+  </surrogate_table>
+  <surrogate_table name="AIDifficulty_WardenFleet"
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.AIDifficulty_WardenFleetTable"
+  >
+  </surrogate_table>
+  <surrogate_table name="AIDifficulty_PraetorianGuard"
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.AIDifficulty_PraetorianGuardTable"
+  >
+  </surrogate_table>
+
+  <surrogate_table name="AstroTrainData"
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.AstroTrainDataTable"
+  >
+  </surrogate_table>
+
+  <surrogate_table name="DarkSpireHarvestData"
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.DarkSpireHarvestDataTable"
+  >
+  </surrogate_table>
+  <surrogate_table name="MercenaryGroupDataTable"
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.MercenaryGroupDataTable"
+  >
+  </surrogate_table>
+      <surrogate_table name="InstigatorDataTable"
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.InstigatorDataTable"
+  >
+  </surrogate_table>
+
+</root>

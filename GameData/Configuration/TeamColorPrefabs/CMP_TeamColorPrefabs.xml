@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <teamcolorprefab name="PrefabCyans" body_color="c007FFF" trim_color="Turquoise" />
+  <teamcolorprefab name="PrefabBlues" body_color="ByzantineBlue" trim_color="c3E8EDE" />
+  <teamcolorprefab name="PrefabDarkBlues" body_color="c120A8F" trim_color="c72A0C1" />
+  <teamcolorprefab name="PrefabGreens" body_color="c009E60" trim_color="c00FF7F" />
+  <teamcolorprefab name="PrefabGreens2" body_color="c1E4D2B" trim_color="c93C572" />
+  <teamcolorprefab name="PrefabGreens3" body_color="c7FFF00" trim_color="cE1A95F" />
+  <teamcolorprefab name="PrefabYellows" body_color="cFFC40C" trim_color="cFFFDD0" />
+  <teamcolorprefab name="PrefabYellows2" body_color="cFFBA00" trim_color="GoldByShade" />
+  <teamcolorprefab name="PrefabOrange" body_color="Orange" trim_color="cFFA000" />
+  <teamcolorprefab name="PrefabReds" body_color="c65000B" trim_color="cFF003F" />
+  <teamcolorprefab name="PrefabReds2" body_color="cFF3800" trim_color="cB22222" />
+  <teamcolorprefab name="PrefabReds3" body_color="Red" trim_color="White" />
+  <teamcolorprefab name="PrefabGray" body_color="Gunmetal" trim_color="c808080" />
+  <teamcolorprefab name="PrefabPinks" body_color="cCF3476" trim_color="cFFA6C9" />
+  <teamcolorprefab name="PrefabPinks2" body_color="Pink" trim_color="c660000" />
+  <teamcolorprefab name="PrefabPurple" body_color="Purple" trim_color="c8F00FF" />
+  <teamcolorprefab name="PrefabDarkPurple" body_color="c800080" trim_color="cC9A0DC" />
+  <teamcolorprefab name="PrefabWhite" body_color="White" trim_color="Pink" />
+  <teamcolorprefab name="PrefabBrown" body_color="Brown" trim_color="Ash" />
+</root>

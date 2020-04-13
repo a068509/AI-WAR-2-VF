@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <entity name="LaserPulse_DeepBlue"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/laserpulse_deepblue.prefab"
+          shot_fired_sfx="Laser_Firing" shot_hitting_sfx="Laser_Hitting"
+  >
+  </entity>
+  
+  <entity name="LaserPulse_SicklyGreen"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/laserpulse_sicklygreen.prefab"
+          shot_fired_sfx="Laser_Firing" shot_hitting_sfx="Laser_Hitting"
+  >
+  </entity>
+
+  <entity name="NanocaustCurvedSicklyGreenShot"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/nanocaustcurvedsicklygreenshot.prefab"
+          shot_fired_sfx="Laser_Firing" shot_hitting_sfx="Laser_Hitting"
+  >
+  </entity>
+
+  <entity name="LaserPulse_Pink"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/laserpulse_pink.prefab"
+          shot_fired_sfx="Laser_Firing" shot_hitting_sfx="Laser_Hitting"
+  >
+  </entity>
+
+  <entity name="LaserPulse_RedLevel1"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/laserpulse_redlevel1.prefab"
+          shot_fired_sfx="Laser_Firing" shot_hitting_sfx="Laser_Hitting"
+  >
+  </entity>
+
+  <entity name="LaserPulse_RedLevel2"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/laserpulse_redlevel2.prefab"
+          shot_fired_sfx="Laser_Firing" shot_hitting_sfx="Laser_Hitting"
+  >
+  </entity>
+
+  <entity name="LaserPulse_RedLevel3"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/laserpulse_redlevel3.prefab"
+          shot_fired_sfx="Laser_Firing" shot_hitting_sfx="Laser_Hitting"
+  >
+  </entity>
+
+  <entity name="PikeShot_Gold"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/pikeshot_gold.prefab"
+          shot_fired_sfx="Laser_Firing" shot_hitting_sfx="Laser_Hitting"
+  >
+  </entity>
+
+  <entity name="MeleeInvisible"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiw2_lines_shots" visuals="assets/visualshotsandlines/shots/simplebulletsbyspeed/invisiblebullet.prefab"
+          shot_fired_sfx="FlakLauncher_Firing" shot_hitting_sfx="FlakLauncher_Hitting"
+  >
+  </entity>
+
+  <entity name="HeavyBeamInvisible"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiw2_lines_shots" visuals="assets/visualshotsandlines/shots/simplebulletsbyspeed/invisiblebullet.prefab"
+          shot_fired_sfx="HeavyBeam_Firing" shot_hitting_sfx="HeavyBeam_Hitting"
+  >
+  </entity>
+
+  <entity name="ExplosiveInvisible"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiw2_lines_shots" visuals="assets/visualshotsandlines/shots/simplebulletsbyspeed/invisiblebullet.prefab"
+          shot_fired_sfx="Turret_Explosion" shot_hitting_sfx="Turret_Explosion"
+  >
+  </entity>
+
+  <entity name="LightningExplosionAOEShot"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiw2_lines_shots" visuals="assets/visualshotsandlines/shots/simplebulletsbyspeed/invisiblebullet.prefab"
+          shot_fired_sfx="Lightning_Firing" shot_hitting_sfx="Lightning_Hitting"
+          effects_death_bundle="aiw2_effects" effects_death="assets/effects/lightningexplosionradius50.prefab"
+  >
+  </entity>
+
+  <entity name="LightningGuardianExplosionAOEShot"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiw2_lines_shots" visuals="assets/visualshotsandlines/shots/simplebulletsbyspeed/invisiblebullet.prefab"
+          shot_fired_sfx="Lightning_Firing" shot_hitting_sfx="Lightning_Hitting"
+          effects_death_bundle="aiw2_effects" effects_death="assets/effects/lightningguardianexplosionradius50.prefab"
+  >
+  </entity>
+
+  <entity name="FlakShotAOEBurstAtEnd"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/flakshot.prefab"
+          shot_fired_sfx="FlakLauncher_Firing" shot_hitting_sfx="FlakLauncher_Hitting"
+          effects_death_bundle="aiw2_effects" effects_death="assets/effects/flakexplosionradius50.prefab"
+  >
+  </entity>
+
+  <entity name="ArmorPiercingShell"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/armorpiercingshell.prefab"
+          shot_fired_sfx="ArmorPiercingShell_Small_Firing" shot_hitting_sfx="ArmorPiercingShell_Small_Hitting"
+  >
+  </entity>
+
+  <entity name="Sabot"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/sabot.prefab"
+          shot_fired_sfx="ArmorPiercingShell_Small_Firing" shot_hitting_sfx="ArmorPiercingShell_Small_Hitting"
+  >
+  </entity>
+
+  <entity name="Ambush"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/ambush.prefab"
+          shot_fired_sfx="ArmorPiercingShell_Small_Firing" shot_hitting_sfx="ArmorPiercingShell_Small_Hitting"
+  >
+  </entity>
+
+  <entity name="ElegantCurl"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/elegantcurl.prefab"
+          shot_fired_sfx="ArmorPiercingShell_Small_Firing" shot_hitting_sfx="ArmorPiercingShell_Small_Hitting"
+  >
+  </entity>
+
+  <entity name="EnergyWave"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/energywave.prefab"
+          shot_fired_sfx="EnergyWave_Firing" shot_hitting_sfx="EnergyWave_Hitting"
+  >
+  </entity>
+
+  <entity name="EngineDisruptingShell"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/enginedisruptingshell.prefab"
+          shot_fired_sfx="EngineDisruptingShell_Firing" shot_hitting_sfx="EngineDisruptingShell_Hitting"
+  >
+  </entity>
+
+  <entity name="ParalysisProngedShot_Blue"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/paralysisprongedshot_blue.prefab"
+          shot_fired_sfx="EngineDisruptingShell_Firing" shot_hitting_sfx="EngineDisruptingShell_Hitting"
+  >
+  </entity>
+
+  <entity name="DoubleShot_Blue"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/doubleshot_blue.prefab"
+          shot_fired_sfx="BasicShell_Firing" shot_hitting_sfx="BasicShell_Hitting"
+  >
+  </entity>
+
+  <entity name="DoubleShot_Gold"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/doubleshot_gold.prefab"
+          shot_fired_sfx="BasicShell_Firing" shot_hitting_sfx="BasicShell_Hitting"
+  >
+  </entity>
+
+  <entity name="DoubleShot_Red"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/doubleshot_red.prefab"
+          shot_fired_sfx="BasicShell_Firing" shot_hitting_sfx="BasicShell_Hitting"
+  >
+  </entity>
+
+  <entity name="DoubleShot_Green"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/doubleshot_green.prefab"
+          shot_fired_sfx="BasicShell_Firing" shot_hitting_sfx="BasicShell_Hitting"
+  >
+  </entity>
+
+  <entity name="ExtremeLongRangeRailgun"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/extremelongrangerailgun.prefab"
+          shot_fired_sfx="ExtremeLongRangeRailgun_Firing" shot_hitting_sfx="ExtremeLongRangeRailgun_Hitting"
+  >
+  </entity>
+
+  <entity name="FusionBomb"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/fusionbomb.prefab"
+          shot_fired_sfx="FusionBomb_Firing" shot_hitting_sfx="FusionBomb_Hitting"
+  >
+  </entity>
+
+  <entity name="FusionBomb_Viral"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/fusionbomb_viral.prefab"
+          shot_fired_sfx="FusionBomb_Firing" shot_hitting_sfx="FusionBomb_Hitting"
+  >
+  </entity>
+
+  <entity name="FusionBomb_Agravic"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/fusionbomb_agravic.prefab"
+          shot_fired_sfx="FusionBomb_Firing" shot_hitting_sfx="FusionBomb_Hitting"
+  >
+  </entity>
+
+  <entity name="FusionRocket"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/fusionrocket.prefab"
+          shot_fired_sfx="FusionRocket_Firing" shot_hitting_sfx="FusionRocket_Hitting"
+  >
+  </entity>
+
+  <entity name="GuidedMissile"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/guidedmissile.prefab"
+          shot_fired_sfx="GuidedMissile_Firing" shot_hitting_sfx="GuidedMissile_Hitting"
+  >
+  </entity>
+
+  <entity name="PlasmaTorpedo"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/plasmatorpedonoexplosion.prefab"
+          shot_fired_sfx="PlasmaTorpedo_Firing" shot_hitting_sfx="PlasmaTorpedo_Hitting"
+  >
+  </entity>
+
+  <entity name="DevourerShot"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/devourershot.prefab"
+          shot_fired_sfx="PlasmaTorpedo_Firing" shot_hitting_sfx="PlasmaTorpedo_Hitting"
+  >
+  </entity>
+
+  <entity name="DevourerShot_Nemesis"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/devourershot_nemesis.prefab"
+          shot_fired_sfx="PlasmaTorpedo_Firing" shot_hitting_sfx="PlasmaTorpedo_Hitting"
+  >
+  </entity>
+
+  <entity name="PlasmaTorpedoAOEBurstAtEnd"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/plasmatorpedo.prefab"
+          shot_fired_sfx="PlasmaTorpedo_Firing" shot_hitting_sfx="PlasmaTorpedo_Hitting"
+          effects_death_bundle="aiw2_effects" effects_death="assets/effects/plasmaexplosionradius50.prefab"
+  >
+  </entity>
+
+  <entity name="PlasmaBolt"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/plasmabolt.prefab"
+          shot_fired_sfx="PlasmaBolt_Firing" shot_hitting_sfx="PlasmaBolt_Hitting"
+  >
+  </entity>
+
+  <entity name="StingerBolt"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/plasmabolt_stinger.prefab"
+          shot_fired_sfx="PlasmaBolt_Firing" shot_hitting_sfx="PlasmaBolt_Hitting"
+  >
+  </entity>
+
+  <entity name="FusionBolt"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/plasmabolt_fusion.prefab"
+          shot_fired_sfx="PlasmaBolt_Firing" shot_hitting_sfx="PlasmaBolt_Hitting"
+  >
+  </entity>
+
+  <entity name="ParasiteCurvedPinkShot"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/parasitecurvedpinkshot.prefab"
+          shot_fired_sfx="PlasmaBolt_Firing" shot_hitting_sfx="PlasmaBolt_Hitting"
+  >
+  </entity>
+
+  <entity name="ExtremelyLongRangeIon"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/extremelylongrangeion.prefab"
+          shot_fired_sfx="BasicLaunchWhine_Firing" shot_hitting_sfx="BasicLaunchWhine_Hitting"
+  >
+  </entity>
+
+  <entity name="MassDriver"
+          category="Shot" size_scale="0.06"
+          visuals_bundle="aiwar2goodiebox" visuals="assets/arcenbundle/shots/new/massdriver.prefab"
+          shot_fired_sfx="BasicLaunchWhine_Firing" shot_hitting_sfx="BasicLaunchWhine_Hitting"
+  >
+  </entity>
+  
+</root>

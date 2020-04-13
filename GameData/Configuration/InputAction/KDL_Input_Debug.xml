@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <input_action name="Debug_StartTestChamber"
+      category="Debug" display_name="Start Test Chamber"
+      description="If you're wanting to test ship balance, you can use the 'test chamber' to do so.  Fill in the xml file in [install_location]/GameData/Configuration/TestChamber/, and then hit this key while on the main menu to go enter it."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_DebugHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="None" />
+  <input_action name="Debug_InstantStopSim"
+      category="Unused" display_name="InstantStopSim"
+      description="~*~"
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_DebugHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="None" />
+  <input_action name="Debug_InstantStopSimAndVisualUpdates"
+      category="Unused" display_name="InstantStopSimAndVisualUpdates"
+      description="~*~"
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_DebugHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="None" />
+  <input_action name="Debug_ResumeFromInstantStop"
+      category="Unused" display_name="ResumeFromInstantStop"
+      description="~*~"
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_DebugHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="None" />
+  <input_action name="Debug_RunExactlyNMoreSimSteps"
+      category="Unused" display_name="RunExactlyNMoreSimSteps"
+      description="~*~"
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_DebugHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="None" />
+  <input_action name="Debug_RunNMoreVisualUpdateSeconds"
+      category="Unused" display_name="RunNMoreVisualUpdateSeconds"
+      description="~*~"
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_DebugHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="None" />
+  <input_action name="Debug_BarfSquadData"
+      category="Debug" display_name="Barf Squad Data"
+      description="Output a bunch of data about all squads that you currently have selected into the console and into the output log."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_DebugHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="None" />
+  <input_action name="Debug_ToggleConsole"
+      category="Unused" display_name="ToggleConsole"
+      description="~*~"
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_DebugHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="None" />
+  <input_action name="Debug_ConsoleAutocomplete"
+      category="Unused" display_name="ConsoleAutocomplete"
+      description="~*~"
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_DebugHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="Tab" />
+  <input_action name="Debug_ReloadSelectXmlData"
+      category="Utility" display_name="Reload Select Xml Data"
+      description="Useful mainly for developers.  Reads a few xml bits out of specific fields we might want to change frequently."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_DebugHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="F8"/>
+  <input_action name="Debug_ToggleHideGUI"
+      category="Utility" display_name="Toggle Hide GUI"
+      description="Hides the UI, useful for screenshots. Press again to uh-hide the GUI."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_DebugHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="F12" modifier_1="LeftControl"/>
+  <input_action name="Debug_ToggleHideGimbals"
+      category="Utility" display_name="Toggle Hide Gimbals"
+      description="Hides the Ship Gimbals, useful for screenshots. Press again to un-hide the Gimbals."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_DebugHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="F11" modifier_1="LeftControl" />
+  <input_action name="Debug_DumpInfoFromUI"
+      category="Debug" display_name="Dump Info From UI"
+      description="Dump all of the info about currrently-displayed UI windows, and anything to do with why textboxes might be blocked as well, both to the log and to a popup window."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_DebugHandler"
+      key="F5" />
+  
+    <input_action name="IncreaseAIDifficulty"
+      category="Debug" display_name="Increase AI Difficulty"
+      description="~*~"
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_DebugHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="None" />
+  <input_action name="DecreaseAIDifficulty"
+      category="Debug" display_name="Decrease AI Difficulty"
+      description="~*~"
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_DebugHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="None" />
+</root>

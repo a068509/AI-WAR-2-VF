@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<range name="None" display_name="None" range="0" />
+	<range name="AlmostNone" display_name="Almost None" range="300" is_melee="true" />
+	<range name="VeryTiny1" display_name="VeryTiny1" range="1000" />
+	<range name="VeryTiny2" display_name="VeryTiny2" range="1125" />
+	<range name="VeryTiny3" display_name="VeryTiny3" range="1250" />
+	<range name="Tiny1" display_name="Tiny1" range="1700" />
+  <range name="Tiny2" display_name="Tiny2" range="2000" />
+  <range name="Tiny3" display_name="Tiny3" range="2500" />
+  <range name="Tiny4" display_name="Tiny4" range="2800" />
+  <range name="Small1" display_name="Small1" range="3200" />
+  <range name="Small2" display_name="Small2" range="3500" />
+  <range name="Small3" display_name="Small3" range="3800" />
+  <range name="Small4" display_name="Small4" range="4000" />
+  <range name="Small5" display_name="Small5" range="4200" />
+  <range name="Normal1" display_name="Normal1" range="5000" />
+  <range name="Normal2" display_name="Normal2" range="5200" />
+  <range name="Normal3" display_name="Normal3" range="5600" />
+  <range name="Normal4" display_name="Normal4" range="6000" />
+  <range name="Normal5" display_name="Normal5" range="6500" />
+  <range name="Normal6" display_name="Normal6" range="7100" />
+  <range name="AboveAverage1" display_name="AboveAverage1" range="8000" />
+  <range name="AboveAverage2" display_name="AboveAverage2" range="9000" />
+  <range name="AboveAverage3" display_name="AboveAverage3" range="10100" />
+  <range name="AboveAverage4" display_name="AboveAverage4" range="12000" />
+  <range name="High1" display_name="High1" range="15000" />
+  <range name="High2" display_name="High2" range="18000" />
+  <range name="ExtremelyHigh" display_name="ExtremelyHigh" range="30000" />
+  <range name="InsanelyHigh" display_name="InsanelyHigh" range="124000" />
+  <range name="EssentiallyInfinite" display_name="EssentiallyInfinite" range="9990999" is_sniper="true" />
+</root>

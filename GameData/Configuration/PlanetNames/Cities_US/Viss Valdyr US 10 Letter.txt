@@ -1,0 +1,1262 @@
+Ajo
+Ely
+Rye
+Ada
+Troy
+Nome
+Mesa
+Yuma
+Hope
+Brea
+Lodi
+Napa
+Ojai
+Vail
+Rome
+Hilo
+Laie
+Zion
+Gary
+Peru
+Ames
+Hays
+Bath
+Saco
+York
+Lynn
+Alma
+Elko
+Reno
+Taos
+Kent
+Lima
+Alva
+Enid
+Hugo
+Bend
+Erie
+Lead
+Waco
+Alta
+Lehi
+Moab
+Orem
+Cody
+Ozark
+Selma
+Homer
+Sitka
+Globe
+Tempe
+Walpi
+Chico
+Davis
+Indio
+Ukiah
+Watts
+Aspen
+Ouray
+Derby
+Dover
+Lewes
+Largo
+Miami
+Ocala
+Tampa
+Macon
+Kapaa
+Boise
+Nampa
+Alton
+Cairo
+Dixon
+Elgin
+Lisle
+Pekin
+Salem
+Boone
+Berea
+Paris
+Houma
+Lubec
+Orono
+Bowie
+Adams
+Athol
+Lenox
+Truro
+Flint
+Niles
+Lamar
+Rolla
+Butte
+Havre
+Omaha
+Genoa
+Derry
+Keene
+Union
+Wayne
+Acoma
+Belen
+Hobbs
+Raton
+Bronx
+Ilion
+Nyack
+Olean
+Utica
+Fargo
+Minot
+Rugby
+Akron
+Milan
+Parma
+Piqua
+Xenia
+Altus
+Moore
+Perry
+Pryor
+Tulsa
+Burns
+Aiken
+Huron
+Alcoa
+Bryan
+Pampa
+Pecos
+Pharr
+Plano
+Tyler
+Delta
+Kanab
+Logan
+Manti
+Nephi
+Ogden
+Price
+Provo
+Barre
+Essex
+Kelso
+Pasco
+Welch
+Ripon
+Athens
+Atmore
+Auburn
+Dothan
+Jasper
+Marion
+Mobile
+Haines
+Juneau
+Kodiak
+Palmer
+Seward
+Valdez
+Bisbee
+Oraibi
+Tucson
+Benton
+Camden
+Conway
+Helena
+Rogers
+Searcy
+Carmel
+Corona
+Downey
+Eureka
+Fresno
+Irvine
+Lompoc
+Malibu
+Merced
+Novato
+Orange
+Oxnard
+Pomona
+Sonoma
+Aurora
+Climax
+Cortez
+Denver
+Golden
+Pueblo
+Berlin
+Darien
+Groton
+Hamden
+Mystic
+Newark
+Smyrna
+Bartow
+Naples
+Venice
+Albany
+Dalton
+Plains
+Toccoa
+Waimea
+Moscow
+Arthur
+Canton
+Cicero
+DeKalb
+Galena
+Herrin
+Joliet
+Macomb
+Moline
+Nauvoo
+Normal
+Oregon
+Ottawa
+Peoria
+Quincy
+Skokie
+Summit
+Urbana
+Virden
+Elwood
+Geneva
+Goshen
+Hobart
+Kokomo
+Muncie
+Wabash
+Keokuk
+Newton
+Olathe
+Salina
+Topeka
+Harlan
+Hazard
+Gretna
+Monroe
+Ruston
+Bangor
+Calais
+Easton
+Elkton
+Laurel
+Towson
+Boston
+Bourne
+Dedham
+Dennis
+Lowell
+Ludlow
+Malden
+Milton
+Nahant
+Natick
+Norton
+Revere
+Saugus
+Woburn
+Adrian
+Ecorse
+Warren
+Austin
+Duluth
+Winona
+Biloxi
+Oxford
+Tupelo
+Fulton
+Joplin
+Mexico
+Monett
+Neosho
+Dillon
+McCook
+Minden
+Sidney
+Fallon
+Sparks
+Durham
+Exeter
+Nashua
+Edison
+Totowa
+Clovis
+Deming
+Gallup
+Grants
+Beacon
+Cohoes
+Elmira
+Harlem
+Hudson
+Ithaca
+Oneida
+Oswego
+Queens
+Shelby
+Wilson
+Mandan
+Dayton
+Elyria
+Euclid
+Lorain
+Mentor
+Tiffin
+Toledo
+Duncan
+Durant
+Edmond
+Guymon
+Lawton
+Norman
+Vinita
+Wewoka
+Eugene
+Sharon
+Sumter
+Custer
+Pierre
+Norris
+Alpine
+Borger
+Canyon
+Dallas
+Denton
+Goliad
+Irving
+Laredo
+Lufkin
+Odessa
+Temple
+Uvalde
+Ysleta
+Layton
+Murray
+Payson
+Tooele
+Vernal
+Reston
+Renton
+Tacoma
+Yakima
+Elkins
+Hinton
+Keyser
+Romney
+Weston
+Beloit
+Neenah
+Oconto
+Racine
+Wausau
+Casper
+Lander
+Powell
+Clanton
+Cullman
+Decatur
+Eufaula
+Gadsden
+Opelika
+Cordova
+Skagway
+Clifton
+Douglas
+Kingman
+Nogales
+Phoenix
+Winslow
+Newport
+Osceola
+Alameda
+Anaheim
+Antioch
+Arcadia
+Barstow
+Belmont
+Burbank
+Compton
+Concord
+Fontana
+Fremont
+Hayward
+Modesto
+Needles
+Norwalk
+Oakland
+Ontario
+Redding
+Salinas
+Turlock
+Vallejo
+Ventura
+Visalia
+Alamosa
+Boulder
+Durango
+Greeley
+Ansonia
+Bristol
+Danbury
+Enfield
+Lebanon
+Meriden
+Milford
+Norwich
+Seymour
+Shelton
+Windham
+Windsor
+Winsted
+De Land
+Hialeah
+Orlando
+Palatka
+Sanford
+Sebring
+Atlanta
+Augusta
+Calhoun
+Hanalei
+Kahului
+Kaneohe
+Lahaina
+Wahiawa
+Wailuku
+Kellogg
+Rexburg
+Cahokia
+Chester
+Chicago
+Kewanee
+Lincoln
+Lombard
+Mattoon
+Pontiac
+Rantoul
+Wheaton
+Bedford
+Corydon
+Elkhart
+Hammond
+Madison
+Clinton
+Dubuque
+Ottumwa
+Abilene
+Chanute
+Emporia
+Liberal
+Shawnee
+Wichita
+Ashland
+Paducah
+Bastrop
+Belfast
+Caribou
+Castine
+Houlton
+Kittery
+Machias
+Rumford
+Amherst
+Andover
+Beverly
+Chelsea
+Danvers
+Duxbury
+Eastham
+Everett
+Harwich
+Hingham
+Holyoke
+Hyannis
+Ipswich
+Medford
+Norwood
+Peabody
+Sudbury
+Taunton
+Webster
+Whitman
+Detroit
+Hancock
+Holland
+Jackson
+Lansing
+Livonia
+Midland
+Saginaw
+Trenton
+Bemidji
+Eveleth
+Hibbing
+Mankato
+New Ulm
+Willmar
+Corinth
+Grenada
+Natchez
+Branson
+Clayton
+Sedalia
+Bozeman
+Chadron
+Kearney
+Norfolk
+Hanover
+Laconia
+Bayonne
+Hoboken
+Passaic
+Roselle
+Artesia
+Roswell
+Socorro
+Babylon
+Batavia
+Buffalo
+Corning
+Dunkirk
+Massena
+Mineola
+Oneonta
+Palmyra
+Potsdam
+Yonkers
+Edenton
+Halifax
+Hickory
+Kinston
+Raleigh
+Findlay
+Oberlin
+Wooster
+Ardmore
+Bethany
+Cushing
+El Reno
+Guthrie
+Sapulpa
+Astoria
+Newberg
+Redmond
+Seaside
+Altoona
+Harmony
+Hershey
+Indiana
+Reading
+Sunbury
+Tamaqua
+Warwick
+Gaffney
+De Smet
+Milbank
+Sturgis
+Yankton
+Memphis
+Baytown
+Del Rio
+Denison
+El Paso
+Garland
+Houston
+Kilgore
+Killeen
+Lubbock
+McAllen
+Mission
+Sherman
+Rutland
+Fairfax
+Hampton
+Roanoke
+Suffolk
+Ephrata
+Hoquiam
+Olympia
+Pullman
+Seattle
+Spokane
+Beckley
+Grafton
+Weirton
+Baraboo
+Kenosha
+Menasha
+Oshkosh
+Portage
+Laramie
+Rawlins
+Worland
+Anniston
+Bessemer
+Florence
+Prichard
+Tuskegee
+Kotzebue
+Avondale
+Chandler
+Glendale
+Prescott
+Crossett
+Harrison
+Magnolia
+Alhambra
+Berkeley
+Calexico
+Carlsbad
+Coronado
+El Monte
+La Habra
+Martinez
+Monterey
+Oroville
+Palmdale
+Pasadena
+Petaluma
+Redlands
+Richmond
+San Jose
+Stockton
+Torrance
+Whittier
+Woodland
+Brighton
+Gunnison
+La Junta
+Longmont
+Loveland
+Montrose
+Sterling
+Trinidad
+Branford
+Coventry
+Guilford
+Hartford
+Simsbury
+Stamford
+Westport
+Key West
+Lakeland
+Palm Bay
+Sarasota
+Americus
+Columbus
+Marietta
+Savannah
+Valdosta
+Waycross
+Honaunau
+Honolulu
+Kawaihae
+Caldwell
+Lewiston
+Carthage
+Danville
+Elmhurst
+Evanston
+Freeport
+Glenview
+Kankakee
+La Salle
+Monmouth
+Oak Park
+Palatine
+Rockford
+Streator
+Vandalia
+Waukegan
+Wilmette
+Winnetka
+Anderson
+Nappanee
+Plymouth
+Cherokee
+Grinnell
+Waterloo
+Atchison
+Lawrence
+Mayfield
+Bogalusa
+Eastport
+Gardiner
+Portland
+Rockland
+Aberdeen
+Columbia
+Abington
+Amesbury
+Brockton
+Chicopee
+Cohasset
+Falmouth
+Randolph
+Sandwich
+Weymouth
+Bay City
+Cadillac
+Dearborn
+Escanaba
+Grayling
+Houghton
+Ironwood
+Manistee
+Muskegon
+Petoskey
+Brainerd
+Hastings
+Moorhead
+Owatonna
+Red Wing
+Virginia
+Gulfport
+Meridian
+Ferguson
+Hannibal
+Anaconda
+Billings
+Glendive
+Missoula
+Beatrice
+Bellevue
+Franklin
+Cape May
+Cranford
+Fort Lee
+Lakewood
+Millburn
+Paterson
+Vineland
+Portales
+Santa Fe
+Shiprock
+Brooklyn
+Cortland
+Flushing
+Fredonia
+Herkimer
+Kingston
+Lockport
+Newburgh
+Ossining
+Syracuse
+Asheboro
+Beaufort
+Gastonia
+New Bern
+Bismarck
+Wahpeton
+Alliance
+Conneaut
+Defiance
+Delaware
+Hamilton
+Sandusky
+Anadarko
+Elk City
+Muskogee
+Okmulgee
+Pawhuska
+Sallisaw
+Seminole
+Woodward
+Coos Bay
+John Day
+Lakeview
+Roseburg
+Ambridge
+Bradford
+Carlisle
+Hazleton
+New Hope
+Oil City
+Scranton
+Shamokin
+Cranston
+Tiverton
+Westerly
+Wickford
+Deadwood
+Mitchell
+Mobridge
+Gallatin
+Amarillo
+Beaumont
+Cleburne
+Edinburg
+Longview
+Marshall
+McKinney
+Mesquite
+Victoria
+Fillmore
+Winooski
+Abingdon
+Hopewell
+Manassas
+Staunton
+Puyallup
+Richland
+Fairmont
+Philippi
+Wheeling
+Appleton
+Peshtigo
+Superior
+Waukesha
+Cheyenne
+Gillette
+Riverton
+Sheridan
+Andalusia
+Chickasaw
+Demopolis
+Sheffield
+Sylacauga
+Talladega
+Tuscumbia
+Anchorage
+Fairbanks
+Ketchikan
+Flagstaff
+Gila Bend
+Tombstone
+El Dorado
+Jonesboro
+Morrilton
+Stuttgart
+Van Buren
+Calistoga
+Claremont
+Daly City
+El Centro
+Escondido
+Fairfield
+Fullerton
+Hollywood
+Inglewood
+Lancaster
+Livermore
+Oceanside
+Palo Alto
+Red Bluff
+Riverside
+Roseville
+San Diego
+San Mateo
+San Pedro
+Santa Ana
+Sausalito
+Sunnyvale
+Yuba City
+Englewood
+Leadville
+Littleton
+Silverton
+Telluride
+Greenwich
+Mansfield
+Naugatuck
+New Haven
+Stratford
+Waterbury
+Waterford
+Watertown
+Bradenton
+Homestead
+Lake City
+Melbourne
+Pensacola
+Brunswick
+Dahlonega
+La Grange
+Blackfoot
+Pocatello
+Belvidere
+Centralia
+Champaign
+Effingham
+Galesburg
+Kaskaskia
+Mundelein
+Lafayette
+Mishawaka
+Nashville
+Vincennes
+Davenport
+Indianola
+Iowa City
+Muscatine
+Oskaloosa
+Manhattan
+McPherson
+Pittsburg
+Bardstown
+Covington
+Frankfort
+Henderson
+Lexington
+Maysville
+Owensboro
+Abbeville
+Opelousas
+Thibodaux
+Biddeford
+Ellsworth
+Fort Kent
+Annapolis
+Baltimore
+Cambridge
+Frederick
+Greenbelt
+Rockville
+Salisbury
+Arlington
+Attleboro
+Braintree
+Brookline
+Dartmouth
+Edgartown
+Fairhaven
+Fitchburg
+Haverhill
+Stoughton
+Tewksbury
+Wellesley
+Wellfleet
+Westfield
+Worcester
+Ann Arbor
+Cheboygan
+Ishpeming
+Kalamazoo
+Ludington
+Marquette
+Menominee
+Royal Oak
+Wyandotte
+Ypsilanti
+Crookston
+Faribault
+Pipestone
+Rochester
+Greenwood
+Vicksburg
+Boonville
+Maryville
+Kalispell
+Lewistown
+Boys Town
+Red Cloud
+Goldfield
+Las Vegas
+Bridgeton
+Elizabeth
+Glassboro
+Irvington
+Lakehurst
+Millville
+Montclair
+Princeton
+Ridgewood
+Weehawken
+Lovington
+Tucumcari
+Amsterdam
+Hempstead
+Hyde Park
+Jamestown
+Johnstown
+Levittown
+New Paltz
+Peekskill
+Rotterdam
+Scarsdale
+Tarrytown
+Tonawanda
+Woodstock
+Asheville
+Charlotte
+Goldsboro
+Lumberton
+Morganton
+Nags Head
+Pinehurst
+Dickinson
+Williston
+Ashtabula
+Barberton
+Cleveland
+Kettering
+Massillon
+Chickasha
+Claremore
+McAlester
+Tahlequah
+Beaverton
+Brookings
+Corvallis
+Hillsboro
+La Grande
+Pendleton
+Reedsport
+Tillamook
+Aliquippa
+Allentown
+Bethlehem
+Honesdale
+Jeannette
+Meadville
+Nanticoke
+Pottstown
+Uniontown
+Pawtucket
+Rock Hill
+Spearfish
+Kingsport
+Knoxville
+Oak Ridge
+Tullahoma
+Galveston
+Harlingen
+Plainview
+Texarkana
+Bountiful
+Panguitch
+Park City
+Lynchburg
+Anacortes
+Bremerton
+Kennewick
+Vancouver
+Wenatchee
+Bluefield
+Lewisburg
+Wellsburg
+Green Bay
+La Crosse
+Manitowoc
+Marinette
+Milwaukee
+Sheboygan
+Wauwatosa
+West Bend
+Newcastle
+Ten Sleep
+Birmingham
+Enterprise
+Fort Payne
+Greenville
+Huntsville
+Montgomery
+Scottsboro
+Tuscaloosa
+Scottsdale
+Batesville
+Fort Smith
+Pine Bluff
+Buena Park
+Costa Mesa
+El Cerrito
+Long Beach
+Marysville
+Menlo Park
+Sacramento
+San Marino
+San Rafael
+San Simeon
+Santa Cruz
+Santa Rosa
+Susanville
+Canon City
+Estes Park
+Georgetown
+Walsenburg
+Bloomfield
+Bridgeport
+East Haven
+Farmington
+Litchfield
+Manchester
+Middletown
+New London
+Stonington
+Torrington
+West Haven
+New Castle
+Wilmington
+Boca Raton
+Cape Coral
+Clearwater
+Fort Myers
+Lake Wales
+Palm Beach
+Titusville
+Bainbridge
+Carrollton
+East Point
+Fitzgerald
+Washington
+Idaho City
+Sun Valley
+Twin Falls
+Belleville
+Brookfield
+Carbondale
+Charleston
+Glen Ellyn
+Harrisburg
+Naperville
+Park Ridge
+Petersburg
+Wood River
+Evansville
+Fort Wayne
+Greenfield
+Huntington
+New Albany
+South Bend
+Valparaiso
+Burlington
+Des Moines
+Fort Dodge
+Mason City
+Sioux City
+Dodge City
+Fort Scott
+Great Bend
+Hutchinson
+Osawatomie
+Louisville
+Alexandria
+New Iberia
+Shreveport
+Bar Harbor
+Waterville
+Cumberland
+Emmitsburg
+Hagerstown
+Ocean City
+Barnstable
+Chelmsford
+Fall River
+Framingham
+Gloucester
+Leominster
+Marblehead
+Pittsfield
+Somerville
+Sturbridge
+Woods Hole
+Charlevoix
+Eastpointe
+Port Huron
+Albert Lea
+Northfield
+Saint Paul
+Stillwater
+Clarksdale
+Pascagoula
+Starkville
+West Point
+Yazoo City
+Florissant
+Kirksville
+New Madrid
+Livingston
+Miles City
+Winnemucca
+Portsmouth
+Bordentown
+Hackensack
+Morristown
+Plainfield
+Rutherford
+Union City
+Woodbridge
+Alamogordo
+Las Cruces
+Los Alamos
+Binghamton
+Chautauqua
+Great Neck
+Lackawanna
+Mamaroneck
+Ogdensburg
+Oyster Bay
+Rensselaer
+Sag Harbor
+Watervliet
+Greensboro
+High Point
+Kitty Hawk
+Cincinnati
+Gallipolis
+Put-in-Bay
+Youngstown
+Zanesville
+Ponca City
+Baker City
+Hood River
+Prineville
+The Dalles
+Bloomsburg
+Germantown
+Gettysburg
+Greensburg
+Jim Thorpe
+Lock Haven
+McKeesport
+Norristown
+Pittsburgh
+Pottsville
+Swarthmore
+Barrington
+Providence
+Woonsocket
+Darlington
+Hartsville
+Orangeburg
+Rapid City
+Vermillion
+Cookeville
+Gatlinburg
+Big Spring
+Eagle Pass
+Fort Worth
+Kingsville
+Richardson
+San Angelo
+San Felipe
+San Marcos
+Sweetwater
+Texas City
+Cedar City
+Clearfield
+Heber City
+Monticello
+Orderville
+Bennington
+Middlebury
+Montpelier
+Chesapeake
+New Market
+Waynesboro
+Winchester
+Bellingham
+Coulee Dam
+Coupeville
+Ellensburg
+Moses Lake
+Oak Harbor
+Buckhannon
+Clarksburg
+Morgantown
+Williamson
+Eau Claire
+Janesville
+New Glarus

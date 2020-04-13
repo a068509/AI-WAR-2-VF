@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<defense name="Structure" display_name="Structure" />
+	<defense name="Armor" display_name="Armor" />
+	<defense name="Evasion" display_name="Jammers" />
+	<defense name="Shields" display_name="Shields" />
+	<defense name="Deflectors" display_name="Deflectors" />
+	<defense name="Artillery" display_name="Artillery" />
+	<defense name="CloseCombat" display_name="CloseCombat" />
+	<defense name="CommandGrade" display_name="CommandGrade" />
+	<defense name="Composite" display_name="Composite" />
+	<defense name="Heavy" display_name="Heavy" />
+	<defense name="Light" display_name="Light" />
+	<defense name="Medium" display_name="Medium" />
+	<defense name="Neutron" display_name="Neutron" />
+	<defense name="Polycrystal" display_name="Polycrystal" />
+	<defense name="Refractive" display_name="Refractive" />
+	<defense name="Scout" display_name="Scout" />
+	<defense name="Structural" display_name="Structural" />
+	<defense name="Swarmer" display_name="Swarmer" />
+	<defense name="Turret" display_name="Turret" />
+	<defense name="UltraHeavy" display_name="UltraHeavy" />
+	<defense name="UltraLight" display_name="UltraLight" />
+</root>

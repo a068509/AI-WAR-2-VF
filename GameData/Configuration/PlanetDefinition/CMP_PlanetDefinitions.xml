@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <planet name="BlueOcean1" visuals="assets/planets/blueocean1.prefab" />
+  <planet name="BlueOcean2" visuals="assets/planets/blueocean2.prefab" />
+  <planet name="TanSaturn" visuals="assets/planets/tansaturn.prefab" />
+  <planet name="TanGasGiant" visuals="assets/planets/tangasgiant.prefab" />
+  <planet name="BlueGasGiant" visuals="assets/planets/bluegasgiant.prefab" />
+  <planet name="BlueSaturn" visuals="assets/planets/bluesaturn.prefab" />
+  <planet name="GreenGasGiant" visuals="assets/planets/greengasgiant.prefab" />
+  <planet name="GreenSaturn" visuals="assets/planets/greensaturn.prefab" />
+  <planet name="DarkSaturn" visuals="assets/planets/darksaturn.prefab" />
+  <planet name="DarkGasGiant" visuals="assets/planets/darkgasgiant.prefab" />
+  <planet name="Lava1" visuals="assets/planets/lava1.prefab" />
+  <planet name="Lava2" visuals="assets/planets/lava2.prefab" />
+  <planet name="Lava3" visuals="assets/planets/lava3.prefab" />
+  <planet name="Lava4" visuals="assets/planets/lava4.prefab" />
+  <planet name="TealOcean1" visuals="assets/planets/ice2.prefab" />
+  <planet name="PurpleOcean1" visuals="assets/planets/purpleocean1.prefab" />
+  <planet name="GreenOcean1" visuals="assets/planets/greenocean1.prefab" />
+  <planet name="GreenOcean2" visuals="assets/planets/greenocean2.prefab" />
+  <planet name="RedOcean1" visuals="assets/planets/redocean1.prefab" />
+  <planet name="RedOcean2" visuals="assets/planets/redocean2.prefab" />
+  <planet name="Sandstorm1" visuals="assets/planets/sandstorm1.prefab" />
+  <planet name="Sandstorm2" visuals="assets/planets/sandstorm2.prefab" />
+  <planet name="Sandstorm3" visuals="assets/planets/sandstorm3.prefab" />
+  <planet name="Sandstorm4" visuals="assets/planets/sandstorm4.prefab" />
+  <planet name="Sandstorm5" visuals="assets/planets/ice1.prefab" />
+  <planet name="Terrestrial1" visuals="assets/planets/terrestrial1.prefab" />
+  <planet name="Terrestrial2" visuals="assets/planets/terrestrial2.prefab" />
+  <planet name="Terrestrial3" visuals="assets/planets/terrestrial3.prefab" />
+  <planet name="Terrestrial4" visuals="assets/planets/terrestrial4.prefab" />
+  <planet name="Terrestrial5" visuals="assets/planets/terrestrial5.prefab" />
+  <planet name="Thunderstorm1" visuals="assets/planets/thunderstorm1.prefab" />
+  <planet name="Thunderstorm2" visuals="assets/planets/thunderstorm2.prefab" />
+  <planet name="Thunderstorm3" visuals="assets/planets/thunderstorm3.prefab" />
+  <planet name="DysonSphere" do_not_randomly_seed="true" visuals="assets/planets/dysonsphere.prefab" />
+  <planet name="BandedGasGiant" visuals="assets/planets/bandedgasgiant.prefab" />
+  <planet name="BlueMarble" visuals="assets/planets/bluemarble.prefab" />
+  <planet name="GreenPollutedPlanet" visuals="assets/planets/greenpollutedplanet.prefab" />
+  <planet name="JungleWorld" visuals="assets/planets/jungleworld.prefab" />
+  <planet name="JupiterStyle" visuals="assets/planets/jupiterstyle.prefab" />
+  <planet name="PollutedGreen" visuals="assets/planets/pollutedgreen.prefab" />
+  <planet name="PurplePopulated" visuals="assets/planets/purplepopulated.prefab" />
+  <planet name="RedDesertWorld" visuals="assets/planets/reddesertworld.prefab" />
+  <planet name="SaturnStyle" visuals="assets/planets/saturnstyle.prefab" />
+  <planet name="SnowWorld" visuals="assets/planets/snowworld.prefab" />
+</root>

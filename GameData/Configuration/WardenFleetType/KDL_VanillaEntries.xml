@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <warden_type name="BaseOriented"
+  	   is_default="true"
+           display_name="Base Oriented"
+           abbreviation="BaseOriented"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.AISpecialForcesType_BaseOriented"
+          description="The easiest (but standard) behavior, causing the Warden Fleet to have to sit by a Warden Fleet Base before it can move to defend a planet. This gives you a much larger window to attack before the Warden shows up to defend, depending on how close the nearest Warden Fleet Base is to the planet you want to attack.  Tip: destroy Warden Fleet Bases to give yourself even more time!"
+  >
+  </warden_type>
+  <warden_type name="Normal"
+           display_name="Anticipatory"
+           abbreviation="Anticipatory"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.AISpecialForcesType_Normal"
+          description="An upgrade to the standard behavior, where the Warden Fleet uses intelligence (based on its difficulty level) to position itself on (or near) planets that it thinks you are likely to attack. Higher Warden difficulties are smarter."
+  >
+  </warden_type>
+    <warden_type name="KiteMaster"
+           display_name="Kite Master"
+           abbreviation="KiteMaster"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.AISpecialForcesType_KiteMaster"
+          description="Same as the Anticipatory Warden Fleet in most ways, but its ships start using the kiting behavior that yours are also able to use. Makes them much more tricky to chase down!"
+  >
+  </warden_type>
+
+  
+</root>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <tip category="QuickTips" name="QT_PursuitMode" display_name="Pursuit Mode" sort_priority="888"
+        full_text="While you have ships selected, tap 'v' key to put those ships into 'pursuit' mode, which basically puts them on automated guard duty for that planet.
+        
+This is great for defense, but very dangerous on enemy planets." />
+
+
+  <tip category="QuickTips" name="QT_HowHack" display_name="How To Hack" sort_priority="888"
+        full_text="Any of your offensive fleet leaders (transports, Arks, Golems, etc) can act as a hacker.  Take them to an enemy planet and get to work." />
+
+
+  <tip category="QuickTips" name="QT_HowColonize" display_name="How To Colonize A Planet" sort_priority="888"
+        full_text="Once you've destroyed the enemy command station on a planet, you can build your own and take the planet for yourself.  Any one of your offensive fleet leaders (transports, Arks, Golems, etc) simply has to be present, and then you can choose the type of command station you want from the Build menu in the sidebar." />
+
+  
+  <tip category="QuickTips" name="QT_HowScience" display_name="How To Get More Science" sort_priority="888"
+        full_text="Once you've destroyed the enemy command station on a planet, you can build your own and it will automatically gather the science for you.  Even if you don't plan on keeping the planet permanently, this is a good idea to do since you 'paid' AIP to capture that planet.  You can also use hacks to gain science, but that uses up valuable hacking points." />
+
+  
+  <tip category="QuickTips" name="QT_StackedForceF" display_name="Stacking Forcefields" sort_priority="888"
+        full_text="Placing multiple forcefields over your home command station (or other key structure) can protect it against a sustained enemy attack and give you time to bring in reinforcements." />
+
+
+  <tip category="QuickTips" name="QT_CClick" display_name="C-Click for Details On Contents" sort_priority="888"
+        full_text="If you hold C and click various ships/structures that contain other ships, OR click things like tech or enemy-wave buttons, then you can get a lot of extra information on the ships contained inside or otherwise contextually relevant.  It makes planning so much easier!" />
+  
+
+  <tip category="QuickTips" name="QT_LoadUnload" display_name="Loading And Unloading Transports" sort_priority="888"
+        full_text="Any of your offensive fleet leaders (transports, Arks, Golems, etc) can load all of their ships inside them and then act as a transport.
+        
+Press L to load the selected fleets into their fleet leaders.  Press U to unload any transported ships when you're ready." />
+
+
+  <tip category="QuickTips" name="QT_Crippled" display_name="Fleet Leaders Only Get Crippled" sort_priority="888"
+        full_text="Your offensive fleet leaders (transports, Arks, Golems, etc) and defensive battlestations/citadels can't die.
+        
+However, at lower than 10% remaining health they become 'crippled' and need to be repaired before they can again perform most of their functions." />
+
+
+  <tip category="QuickTips" name="QT_BlockingWormholes" display_name="Blocking Wormholes With Forcefields" sort_priority="888"
+        full_text="If you place a forcefield over the enemy side of a wormhole, then enemies flying through regular space won't be able to pass by.  However, any enemies warping in with a wave can still exit directly on the other side." />
+
+  <tip category="QuickTips" name="QT_ValueOfTransports" display_name="Actually Use Your Transports!" sort_priority="888"
+        full_text="Don't neglect transports!  They let you bypass planets that are dangerous, but which you don't want to capture.  You'll end up with a fragmented empire if you hop planets, but a much healthier AI Progress.
+
+All of your offensive fleet centerpieces work as transports for the members of their fleet, even your Arks and Golems.  The L key loads all of the units in a selected fleet into their fleet leader, and the U key unloads them afterwards." />
+
+
+  <tip category="QuickTips" name="QT_AttackRanges" display_name="Weapons Range" sort_priority="888"
+        full_text="Pay attention to attack ranges!  You can see them by pressing 'z' for your ships, or 'shift' + 'z' to see it for all ships.  When you have a smaller force against multiple guard posts, try to stay in the attack ranges of as few as possible at any given time.
+     
+Most guard posts of the enemy have a whole bunch of ships stockpiled inside themselves, and if you aggro them too soon you'll be facing a much harder battle." />
+  
+  <tip category="QuickTips" name="QT_Scouting" display_name="Scouting" sort_priority="888"
+        full_text="Scouting is fairly automated.  Each planet that you capture gives you more scout intel.  But if you really want to see something sooner than later, you can select the planet and there are a couple of options in the Hacking sidebar menu." />
+
+
+  <tip category="QuickTips" name="QT_IntelTab" display_name="Intel Tab Of the Sidebar" sort_priority="888"
+        full_text="If you aren't sure what to do next in a game, check the Intel tab of the sidebar.  It aggregates and organizes all the information you've discovered about the galaxy to provide you with a high-level list of targets and goals.  
+
+You can get more info by hovering your mouse cursor over a piece of intel, and (in most cases) can view the target by clicking on it. You can also set Priorities on different objectives which will be reflected on the Galaxy Map." />
+
+
+  <tip category="QuickTips" name="QT_BS_Cit" display_name="Battlestations and Citadels" sort_priority="888"
+        full_text="Battlestations and Citadels can be important, but are rare.  You can capture these to get a mobile force of turrets, forcefields, minefields, and whatever else to use on your planets or enemy planets.
+        
+These can be great for beachheads on enemy planets or to help defend chokepoints on your planets." />
+
+
+  <tip category="QuickTips" name="QT_GCAs" display_name="Global Command Augmenters (GCAs)" sort_priority="888"
+        full_text="Global Command Augmenters (GCAs) are super important, as they grant more turrets and other defensive options to ALL your command stations.  You absolutely need to capture some of these if you want to defend more than a few planets." />
+
+  <tip category="QuickTips" name="QT_Selection" display_name="Drag Select Is Military Only By Default" sort_priority="888"
+        full_text="Normally when you drag a selection box around ships, if there are any military ships under the box then only military ships will be selected.  This is generally best, but in cases where you want to select all ships under the selection box regardless of military status, just hold the Ctrl key!" />
+
+  <tip category="QuickTips" name="QT_RCFleets" display_name="Right-Click Fleets In Sidebar" sort_priority="888"
+        full_text="In the Fleets tab of the sidebar, you can right-click to select that entire fleet.  Hold shift and right click fleets to select multiple.  You can also double-click a fleet centerpiece to select that entire fleet." />
+
+</root>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <entity name="Mercenary Beacon"
+			tags="MercBeacon,ShowsOnNormalDisplayMode"
+			draw_in_galaxy_view="true"
+			visuals="assets/_finalgamemeshes/resources/reactor/reactor.prefab"  gimbal_name="Outguard Beacon"
+			icon_name="Official/MercenaryBeacon"
+			category="Ship"
+			size_scale="1.30"
+			visuals_scale_multiplier="3.8"
+			y_offset_of_icon="15"
+			collision_priority="810"
+			display_name="Outguard Beacon"
+			description="Cette balise peut être piratée à distance et vous permettra de contacter certains groupes de gardes. S'ils ont suffisamment de forces, vous pouvez faire appel à eux pour vous aider."
+			target_type_for_player="NeverTarget"
+            eligible_for_hacks="AccessMercenaryBeacon"
+			behavior="Stationary"
+			starting_mark_level="Markless"
+			cost_for_ai_to_purchase="1400"
+			hull_points="70000" shield_points="70000" speed="Immobile"
+			metal_cost="1085000" energy_consumption="0"
+			armor_mm="10" albedo="0.9" mass_tx="0.8"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			voice_group="Spire"
+			description_appender_dll="AIWarExternalCode"
+			description_appender_type="Arcen.AIW2.External.MercenaryBeaconDescriptionAppender"
+      exp_to_grant_on_death="-1"
+      priority_as_ai_target="IgnoreMe" priority_as_frd_target="IgnoreMe" priority_to_protect="IgnoreMe"
+			>
+  </entity>
+  
+  <entity name="HackedMercBeacon" skip_export="true" copy_from="Mercenary Beacon" tags="HackedMercBeacon" draw_in_galaxy_view="false"
+			description="Cette balise a été piratée et vous a permis de contacter ses groupes de gardes."
+  >
+  </entity>
+
+
+  <entity name="MercFlagship"
+			tags="MercFlagship" gimbal_icon_size_multiplier="1.25"
+      tech_upgrades_that_benefit_me="Heavy,Fusion"
+			visuals="assets/_finalgamemeshes/humanoddities/hacker/hacker.prefab"
+			icon_name="Official/Starship" icon_overlay="Official/Starship_MercFlagship"
+			size_scale="4.2"
+			visuals_scale_multiplier="16"
+			category="Ship"
+			y_offset_of_icon="10"
+			collision_priority="100"
+			display_name="Outguard Flagship"
+			description="C'est le fleuron d'un groupe de gardes."
+			starting_mark_level="Mark1"
+			cost_for_ai_to_purchase="600"
+			hull_points="250000" shield_points="250000" speed="Normal1"
+			metal_cost="80000" energy_consumption="20000"
+			armor_mm="90" albedo="0.4" engine_gx="15" mass_tx="4"
+			voice_group="Starship"
+			ship_or_structure_explosion_sfx="ShipStarship_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			description_appender_dll="AIWarExternalCode"
+			description_appender_type="Arcen.AIW2.External.MercenaryShipDescriptionAppender"
+      exp_to_grant_on_death="-1"
+      priority_as_ai_target="NormalStarship" priority_as_frd_target="NormalStarship" priority_to_protect="SlightlyLessExpendable"
+			>
+    <system name="FusionBomb" display_name="Fusion Bomb"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="2120" range="Normal6" shot_speed="Normal" rate_of_fire="Normal" fires_salvos_sequentially="true"
+				shot_type_data="FusionBomb"
+				base_percent_damage_bypasses_personal_shields="0.6" added_percent_damage_bypasses_personal_shields_per_mark="0.05"
+				>
+    </system>
+	<incoming_damage_modifier based_on="AttackDistance" comparison_type="GreaterThan" compared_to="7100" multiplier="0.01" />
+  </entity>
+
+
+
+
+
+
+
+
+  <entity name="MercFlagship_Distractor"
+			tags="WardenDistractor" gimbal_icon_size_multiplier="1.25"
+      tech_upgrades_that_benefit_me="Heavy,Fusion"
+			visuals="assets/_finalgamemeshes/starships/stealthstarship/stealth_starship.prefab"
+			icon_name="Official/Starship" icon_overlay="Official/Starship_MercFlagship_Distractor"
+			size_scale="3.6"
+			visuals_scale_multiplier="4.5"
+			category="Ship"
+			y_offset_of_icon="10"
+			collision_priority="100"
+			display_name="Outguard 'Distractor' Flagship"
+			description="Il s'agit du vaisseau amiral masqué d'un groupe d'Outguard envoyé pour distraire la flotte des Gardiens."
+			behavior="Stationary"
+			starting_mark_level="Mark1"
+			fleet_design_template_i_use_for_drones="DecoyDrones"
+			drone_starting_behavior_type="Attacker_Full"
+			cost_for_ai_to_purchase="600"
+			hull_points="400000" shield_points="400000" speed="Normal1"
+			metal_cost="80000" energy_consumption="20000"
+			armor_mm="100" albedo="0.4" engine_gx="13" mass_tx="5"
+			voice_group="Flagship"
+			ship_or_structure_explosion_sfx="ShipStarship_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			description_appender_dll="AIWarExternalCode"
+			description_appender_type="Arcen.AIW2.External.MercenaryShipDescriptionAppender"
+			exp_to_grant_on_death="-1"
+			priority_as_ai_target="NormalStarship" priority_as_frd_target="BiggerStarship" priority_to_protect="SlightlyLessExpendable"
+			>
+    <system name="FusionBomb" display_name="Fusion Bomb"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="2120" range="Tiny2" shot_speed="Normal" rate_of_fire="Normal" fires_salvos_sequentially="true"
+				shot_type_data="FusionBomb"
+				base_percent_damage_bypasses_personal_shields="0.6" added_percent_damage_bypasses_personal_shields_per_mark="0.05"
+				>
+    </system>
+	<system name="Distractor_Cloaker" display_name="Cloaking Device"
+				category="Passive"
+				cloaking_points="1000"
+				>
+    </system>
+	<incoming_damage_modifier based_on="AttackDistance" comparison_type="GreaterThan" compared_to="2000" multiplier="0.01" />
+	<metal_flow purpose="BuildingDronesInternally" throughput="2500"  increase_per_mark_level="1250"/>
+  </entity>
+
+
+
+
+</root>

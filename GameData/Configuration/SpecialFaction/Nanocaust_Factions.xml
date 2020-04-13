@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <faction name="Nanocaust"
+           display_name="Nanocaust"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_Nanocaust"
+           team_center_color="Gold" team_border_color="cFF5A36"
+           type="SpecialFaction"
+           description="The Nanocaust is a horde of nanobots that take over other ships. Hates the Humans and AI alike.
+		   
+&lt;color=#f25e1c&gt;EXTREMELY HIGH IMPACT:&lt;/color&gt; This faction expands, and can do irrepairable damage. It is also one of the strongest, capable of steamrolling most enemies due to being able to capture their ships. Even a low Intensity will be dangerous. They will likely dominate any game they appear in, and require specialised strategies to deal with."
+           can_be_targeted_by_annoyed_non_human_units="true"
+           player_discoverable="true"
+           can_use_spire_debris="true"
+  >
+      <custom_field name="Intensity" display_name="Strength" description="Just how terrifying is this faction?"
+          sort_group="200" setting_type="IntSlider" default="5" min="1" max="10" />
+      <custom_field name="Allegiance" display_name="Allegiance" description="Is this faction friendly to the AI(s), humans, or nobody? Note that player-allied Nanocaust will drive up AIP very quickly. You can modify this by some Galaxy Settings."
+                    sort_group="250" setting_type="CustomDropdownArbitraryOptions" arbitrary_options="Hostile To All,Friendly To Players,Hostile To Players Only,Minor Faction Team Red,Minor Faction Team Blue,Minor Faction Team Green" default_option="Hostile To All" />
+      <custom_field name="ImmediateAppearance" display_name="Immediate Invasion" description="The Nanocaust will invade at the beginning of the game instead of needing to be unleashed by the player."
+                    sort_group="300" setting_type="BoolToggle" default="false" />
+      <custom_field name="Intelligence" display_name="Intelligence" description="What strategies should the Nanocaust use when expanding? Tactician is smart, Brute Force is dumb."
+          sort_group="250" setting_type="CustomDropdownArbitraryOptions" arbitrary_options="Tactician,Brute Force" default_option="Tactician" />
+  </faction>
+
+</root>

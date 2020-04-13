@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <spacebox name="_BlueDark" weight="100" visuals="assets/traditionalskyboxes/_BlueDark.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_BlueGold_PastelVibrant" weight="100" visuals="assets/traditionalskyboxes/_BlueGold_PastelVibrant.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_BlueGoldFromPoison" weight="100" visuals="assets/traditionalskyboxes/_BlueGoldFromPoison.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_BlueOrangeVibrant" weight="100" visuals="assets/traditionalskyboxes/_BlueOrangeVibrant.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_BluePastelVibrant" weight="100" visuals="assets/traditionalskyboxes/_BluePastelVibrant.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_BlueShadesFromGold" weight="100" visuals="assets/traditionalskyboxes/_BlueShadesFromGold.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_CyanCloudy" weight="100" visuals="assets/traditionalskyboxes/_CyanCloudy.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_CyanPinkFilled" weight="100" visuals="assets/traditionalskyboxes/_CyanPinkFilled.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_CyanPurple" weight="100" visuals="assets/traditionalskyboxes/_CyanPurple.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_CyanVibrant" weight="100" visuals="assets/traditionalskyboxes/_CyanVibrant.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_CyanVibrant2" weight="100" visuals="assets/traditionalskyboxes/_CyanVibrant2.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_FadedRedCloudy" weight="100" visuals="assets/traditionalskyboxes/_FadedRedCloudy.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_GoldBlueFilled" weight="100" visuals="assets/traditionalskyboxes/_GoldBlueFilled.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_GoldCloudy" weight="100" visuals="assets/traditionalskyboxes/_GoldCloudy.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_GoldVibrant" weight="100" visuals="assets/traditionalskyboxes/_GoldVibrant.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_GoldVibrant2" weight="100" visuals="assets/traditionalskyboxes/_GoldVibrant2.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_GreenCloudy" weight="100" visuals="assets/traditionalskyboxes/_GreenCloudy.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_GreenCloudy2" weight="100" visuals="assets/traditionalskyboxes/_GreenCloudy2.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_GreenOrange_PastelVibrant2" weight="100" visuals="assets/traditionalskyboxes/_GreenOrange_PastelVibrant2.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_GreenWhiteFilled" weight="100" visuals="assets/traditionalskyboxes/_GreenWhiteFilled.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_MulticoloredGreenRed" weight="100" visuals="assets/traditionalskyboxes/_MulticoloredGreenRed.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_PurpleVibrant" weight="100" visuals="assets/traditionalskyboxes/_PurpleVibrant.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_RedPastelVibrant" weight="100" visuals="assets/traditionalskyboxes/_RedPastelVibrant.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_RedPurpleWhiteVibrant" weight="100" visuals="assets/traditionalskyboxes/_RedPurpleWhiteVibrant.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_TanCloudy2" weight="100" visuals="assets/traditionalskyboxes/_TanCloudy2.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_WhiteCloudyVibrant" weight="100" visuals="assets/traditionalskyboxes/_WhiteCloudyVibrant.mat"  uses_traditional_skybox="true" for_modal_menu_as_well="true"  />
+  <spacebox name="Black2_64joxcns9v80" weight="100" visuals="assets/traditionalskyboxes/Black2_64joxcns9v80.mat"  uses_traditional_skybox="true" />
+  <spacebox name="Black3_47ac76xxuwo0" weight="100" visuals="assets/traditionalskyboxes/Black3_47ac76xxuwo0.mat"  uses_traditional_skybox="true" />
+  <spacebox name="Black4_1u34v34p4xmo" weight="100" visuals="assets/traditionalskyboxes/Black4_1u34v34p4xmo.mat"  uses_traditional_skybox="true" />
+  <spacebox name="Black_4kb58c3cl4m0" weight="100" visuals="assets/traditionalskyboxes/Black_4kb58c3cl4m0.mat"  uses_traditional_skybox="true" />
+  <spacebox name="Blue2_6y7vckbsrnk0" weight="100" visuals="assets/traditionalskyboxes/Blue2_6y7vckbsrnk0.mat"  uses_traditional_skybox="true" />
+  <spacebox name="Blue_5t4krmw1nsk0" weight="100" visuals="assets/traditionalskyboxes/Blue_5t4krmw1nsk0.mat"  uses_traditional_skybox="true" />
+  <spacebox name="BlueMulticolored_2xg40gbomew0" weight="100" visuals="assets/traditionalskyboxes/BlueMulticolored_2xg40gbomew0.mat"  uses_traditional_skybox="true" />
+  <spacebox name="BlueTan_o11zxotj9wg" weight="100" visuals="assets/traditionalskyboxes/BlueTan_o11zxotj9wg.mat"  uses_traditional_skybox="true" />
+  <spacebox name="Cyan_7g9egna4gl40" weight="100" visuals="assets/traditionalskyboxes/Cyan_7g9egna4gl40.mat"  uses_traditional_skybox="true" />
+  <spacebox name="CyanTanVibrant_4v07jvsdao40" weight="100" visuals="assets/traditionalskyboxes/CyanTanVibrant_4v07jvsdao40.mat"  uses_traditional_skybox="true" />
+  <spacebox name="Gold2_6daom6zbkds0" weight="100" visuals="assets/traditionalskyboxes/Gold2_6daom6zbkds0.mat"  uses_traditional_skybox="true" />
+  <spacebox name="GoldPoison_7jzrk00mgns0" weight="100" visuals="assets/traditionalskyboxes/GoldPoison_7jzrk00mgns0.mat"  uses_traditional_skybox="true" />
+  <spacebox name="Green2_uky43hfk22o" weight="100" visuals="assets/traditionalskyboxes/Green2_uky43hfk22o.mat"  uses_traditional_skybox="true" />
+  <spacebox name="Green_622jgvcmukg0" weight="100" visuals="assets/traditionalskyboxes/Green_622jgvcmukg0.mat"  uses_traditional_skybox="true" />
+  <spacebox name="GreenOrangeFilled_zubzwhwewjk" weight="100" visuals="assets/traditionalskyboxes/GreenOrangeFilled_zubzwhwewjk.mat"  uses_traditional_skybox="true" />
+  <spacebox name="ManyColorVibrant_w250aqvyo80" weight="100" visuals="assets/traditionalskyboxes/ManyColorVibrant_w250aqvyo80.mat"  uses_traditional_skybox="true" />
+  <spacebox name="Multicolored_gkipmczga3s" weight="100" visuals="assets/traditionalskyboxes/Multicolored_gkipmczga3s.mat"  uses_traditional_skybox="true" />
+  <spacebox name="Orange_4kb58c3cl4m0" weight="100" visuals="assets/traditionalskyboxes/Orange_4kb58c3cl4m0.mat"  uses_traditional_skybox="true" />
+  <spacebox name="OrangeDark_206u1rh1oiv4" weight="100" visuals="assets/traditionalskyboxes/OrangeDark_206u1rh1oiv4.mat"  uses_traditional_skybox="true" />
+  <spacebox name="OrangeGreenVibrant_43ykj1sg3ye0" weight="100" visuals="assets/traditionalskyboxes/OrangeGreenVibrant_43ykj1sg3ye0.mat"  uses_traditional_skybox="true" />
+  <spacebox name="OrangeVibrant_3df7so8jw5q0" weight="100" visuals="assets/traditionalskyboxes/OrangeVibrant_3df7so8jw5q0.mat"  uses_traditional_skybox="true" />
+  <spacebox name="PastelDimmer_19zgsh4oubds" weight="100" visuals="assets/traditionalskyboxes/PastelDimmer_19zgsh4oubds.mat"  uses_traditional_skybox="true" />
+  <spacebox name="PastelVibrant2_2akrxfzlfm3o" weight="100" visuals="assets/traditionalskyboxes/PastelVibrant2_2akrxfzlfm3o.mat"  uses_traditional_skybox="true" />
+  <spacebox name="PastelVibrant_5lw1wswcy3w0" weight="100" visuals="assets/traditionalskyboxes/PastelVibrant_5lw1wswcy3w0.mat"  uses_traditional_skybox="true" />
+  <spacebox name="PeachVibrant_6gh6vzu8oo80" weight="100" visuals="assets/traditionalskyboxes/PeachVibrant_6gh6vzu8oo80.mat"  uses_traditional_skybox="true" />
+  <spacebox name="PinkVibrant_djf4vbiwap9" weight="100" visuals="assets/traditionalskyboxes/PinkVibrant_djf4vbiwap9.mat"  uses_traditional_skybox="true" />
+  <spacebox name="Purple_4kb58c3cl4m0" weight="100" visuals="assets/traditionalskyboxes/Purple_4kb58c3cl4m0.mat"  uses_traditional_skybox="true" />
+  <spacebox name="PurplePoison_4ufce6u1n5k0" weight="100" visuals="assets/traditionalskyboxes/PurplePoison_4ufce6u1n5k0.mat"  uses_traditional_skybox="true" />
+  <spacebox name="PurpleRed_65bvep7w6280" weight="100" visuals="assets/traditionalskyboxes/PurpleRed_65bvep7w6280.mat"  uses_traditional_skybox="true" />
+  <spacebox name="Red2_4n4c4zjb8g80" weight="100" visuals="assets/traditionalskyboxes/Red2_4n4c4zjb8g80.mat"  uses_traditional_skybox="true" />
+  <spacebox name="Red_571njjtf1rc0" weight="100" visuals="assets/traditionalskyboxes/Red_571njjtf1rc0.mat"  uses_traditional_skybox="true" />
+  <spacebox name="RedFaded_udnjtff1vqo" weight="100" visuals="assets/traditionalskyboxes/RedFaded_udnjtff1vqo.mat"  uses_traditional_skybox="true" />
+  <spacebox name="RedPurple_6yg5o7lfuj80" weight="100" visuals="assets/traditionalskyboxes/RedPurple_6yg5o7lfuj80.mat"  uses_traditional_skybox="true" />
+  <spacebox name="White_3kzbuqsdghm0" weight="100" visuals="assets/traditionalskyboxes/White_3kzbuqsdghm0.mat"  uses_traditional_skybox="true" for_modal_menu_as_well="true"/>
+
+  "<!--Batch2-->
+  <spacebox name="_Black5" weight="100" visuals="assets/traditionalskyboxes/batch2/_Black5.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_BlackHole" weight="100" visuals="assets/traditionalskyboxes/batch2/_BlackHole.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_BlueHole" weight="100" visuals="assets/traditionalskyboxes/batch2/_BlueHole.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_BlueHole2" weight="100" visuals="assets/traditionalskyboxes/batch2/_BlueHole2.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_BluesFaded" weight="100" visuals="assets/traditionalskyboxes/batch2/_BluesFaded.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_BluesGreens" weight="100" visuals="assets/traditionalskyboxes/batch2/_BluesGreens.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_BlueTan" weight="100" visuals="assets/traditionalskyboxes/batch2/_BlueTan.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_BrightBlack" weight="100" visuals="assets/traditionalskyboxes/batch2/_BrightBlack.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_BrightGreenBlue" weight="100" visuals="assets/traditionalskyboxes/batch2/_BrightGreenBlue.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_BrightOrangePurple" weight="100" visuals="assets/traditionalskyboxes/batch2/_BrightOrangePurple.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_BrightPurpleCyan" weight="100" visuals="assets/traditionalskyboxes/batch2/_BrightPurpleCyan.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_BrightRedGreen" weight="100" visuals="assets/traditionalskyboxes/batch2/_BrightRedGreen.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_BrightYellowGreen" weight="100" visuals="assets/traditionalskyboxes/batch2/_BrightYellowGreen.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_Cyans" weight="100" visuals="assets/traditionalskyboxes/batch2/_Cyans.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_CyansGreens" weight="100" visuals="assets/traditionalskyboxes/batch2/_CyansGreens.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_GoldCyan" weight="100" visuals="assets/traditionalskyboxes/batch2/_GoldCyan.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_GreenBlue" weight="100" visuals="assets/traditionalskyboxes/batch2/_GreenBlue.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_GreenPurpleFaded" weight="100" visuals="assets/traditionalskyboxes/batch2/_GreenPurpleFaded.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_GreenPurplePoison" weight="100" visuals="assets/traditionalskyboxes/batch2/_GreenPurplePoison.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_OrangeHole" weight="100" visuals="assets/traditionalskyboxes/batch2/_OrangeHole.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_PurpleGoldPoison" weight="100" visuals="assets/traditionalskyboxes/batch2/_PurpleGoldPoison.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_RedGreen" weight="100" visuals="assets/traditionalskyboxes/batch2/_RedGreen.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_RedsBlues" weight="100" visuals="assets/traditionalskyboxes/batch2/_RedsBlues.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_SuperBlue" weight="100" visuals="assets/traditionalskyboxes/batch2/_SuperBlue.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_SuperCyan" weight="100" visuals="assets/traditionalskyboxes/batch2/_SuperCyan.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_SuperGold" weight="100" visuals="assets/traditionalskyboxes/batch2/_SuperGold.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_SuperGold2" weight="100" visuals="assets/traditionalskyboxes/batch2/_SuperGold2.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_SuperLightGreen" weight="100" visuals="assets/traditionalskyboxes/batch2/_SuperLightGreen.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_SuperLightPurple" weight="100" visuals="assets/traditionalskyboxes/batch2/_SuperLightPurple.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_SuperPeach" weight="100" visuals="assets/traditionalskyboxes/batch2/_SuperPeach.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_SwirlyBlack" weight="100" visuals="assets/traditionalskyboxes/batch2/_SwirlyBlack.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_SwirlyCyan" weight="100" visuals="assets/traditionalskyboxes/batch2/_SwirlyCyan.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_SwirlyGreen" weight="100" visuals="assets/traditionalskyboxes/batch2/_SwirlyGreen.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_SwirlyPeach" weight="100" visuals="assets/traditionalskyboxes/batch2/_SwirlyPeach.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_SwirlyPink" weight="100" visuals="assets/traditionalskyboxes/batch2/_SwirlyPink.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_SwirlyPurple" weight="100" visuals="assets/traditionalskyboxes/batch2/_SwirlyPurple.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_SwirlyWhite" weight="100" visuals="assets/traditionalskyboxes/batch2/_SwirlyWhite.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_SwirlyYellow" weight="100" visuals="assets/traditionalskyboxes/batch2/_SwirlyYellow.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_TansBlues" weight="100" visuals="assets/traditionalskyboxes/batch2/_TansBlues.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_WhiteHole" weight="100" visuals="assets/traditionalskyboxes/batch2/_WhiteHole.mat"  uses_traditional_skybox="true" />
+  <spacebox name="_Whites" weight="100" visuals="assets/traditionalskyboxes/batch2/_Whites.mat"  uses_traditional_skybox="true" />
+  <spacebox name="BlueGreenPoison_5klyfil6vts0" weight="100" visuals="assets/traditionalskyboxes/batch2/BlueGreenPoison_5klyfil6vts0.mat"  uses_traditional_skybox="true" />
+  <spacebox name="BlueRed_2wpte370s1a0" weight="100" visuals="assets/traditionalskyboxes/batch2/BlueRed_2wpte370s1a0.mat"  uses_traditional_skybox="true" />
+  <spacebox name="BrightPurples_6f8f5sbc85s0" weight="100" visuals="assets/traditionalskyboxes/batch2/BrightPurples_6f8f5sbc85s0.mat"  uses_traditional_skybox="true" />
+  <spacebox name="Browns_6n393re9g7g0" weight="100" visuals="assets/traditionalskyboxes/batch2/Browns_6n393re9g7g0.mat"  uses_traditional_skybox="true" />
+  <spacebox name="GreenBluePoison_2y0qdj39hgs0" weight="100" visuals="assets/traditionalskyboxes/batch2/GreenBluePoison_2y0qdj39hgs0.mat"  uses_traditional_skybox="true" />
+  <spacebox name="RedHole_1kycjwq8t734" weight="100" visuals="assets/traditionalskyboxes/batch2/RedHole_1kycjwq8t734.mat"  uses_traditional_skybox="true" />
+  <spacebox name="SuperGreen_37pvd5cb5qs0" weight="100" visuals="assets/traditionalskyboxes/batch2/SuperGreen_37pvd5cb5qs0.mat"  uses_traditional_skybox="true" />
+  <spacebox name="SwirlyGreen_6qs4i4sd1ds0" weight="100" visuals="assets/traditionalskyboxes/batch2/SwirlyGreen_6qs4i4sd1ds0.mat"  uses_traditional_skybox="true" />
+  
+  "<!--Galaxy ones-->
+  <spacebox for_galxy_map="true" name="Galaxy_Black5" weight="100" visuals="assets/traditionalskyboxes/batch2/_black5.mat"  uses_traditional_skybox="true" />
+  <spacebox for_galxy_map="true" name="Galaxy_SwirlyBlack" weight="100" visuals="assets/traditionalskyboxes/batch2/_swirlyblack.mat"  uses_traditional_skybox="true" />
+  <spacebox for_galxy_map="true" name="Galaxy_BlackHole" weight="100" visuals="assets/traditionalskyboxes/batch2/_blackhole.mat"  uses_traditional_skybox="true" />
+  <spacebox for_galxy_map="true" name="Galaxy_BrightBlack" weight="100" visuals="assets/traditionalskyboxes/batch2/_brightblack.mat"  uses_traditional_skybox="true" />
+</root>

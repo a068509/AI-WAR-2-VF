@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+	<!--	The Hydran Flagship breaks apart into many different layers. A beautifully terrifying ship... that couldn't hurt a fly. -->
+	<entity name="HydraMercFlagship"
+			tags="HydraMercFlagship,Hydral Hobbyist" gimbal_icon_size_multiplier="1.25"
+			visuals="assets/_finalgamemeshes/humanoddities/hacker/hacker.prefab"
+			icon_name="Official/Starship" icon_overlay="Official/Starship_MercFlagship"
+			size_scale="4.2"
+			visuals_scale_multiplier="16"
+			category="Ship"
+			y_offset_of_icon="10"
+			collision_priority="100"
+			display_name="Hydran Outguard Flagship"
+			description="C'est le seul vaisseau amiral piloté par le Hydran Hobbyist Outguard. Il semble être construit avec la redondance à l'esprit."
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Subterfuge,Heavy"
+			cost_for_ai_to_purchase="600"
+			hull_points="100000" shield_points="100000" speed="Normal1"
+			metal_cost="80000" energy_consumption="30000"
+			armor_mm="90" albedo="0.4" engine_gx="15" mass_tx="4"
+			voice_group="Starship"
+			ship_or_structure_explosion_sfx="ShipStarship_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			description_appender_dll="AIWarExternalCode"
+			description_appender_type="Arcen.AIW2.External.MercenaryShipDescriptionAppender"
+			exp_to_grant_on_death="-1"
+			spawns_on_death="HydraMercFlagshipMajorHead"
+			count_to_spawn_on_death="3"
+			priority_as_ai_target="NormalStarship" priority_as_frd_target="NormalStarship" priority_to_protect="SlightlyLessExpendable"
+			>
+    <system name="ParalysisBolt" display_name="Multi-Paralysis Sprayer"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="128" range="Normal4" shot_speed="Normal" rate_of_fire="Misery"
+				shots_per_salvo="16" fires_salvos_sequentially="false"
+				shot_type_data="ParalysisProngedShot_Blue" added_target_evaluator="ParalyzerAsPrimary"
+				base_paralysis_seconds_per_shot="3" paralysis_to_ships_mass_tx_less_than="6"
+				>
+    </system>
+	<incoming_damage_modifier based_on="AttackDistance" comparison_type="GreaterThan" compared_to="3000" multiplier="0.1" />
+  </entity>
+  
+  <entity name="HydraMercFlagshipMajorHead" copy_from="HydraMercFlagship" tags="Hydral Hobbyist"
+		  self_attritions_X_percent_per_second_if_parent_ship_not_on_planet="2"
+		  always_self_attritions="true"
+			display_name="Hydran Outguard Flagship Major Head"
+			description="Une tête majeure est apparue du navire amiral Hydran Outguard. Il semble encore capable de se dédoubler."
+			energy_consumption="10000"
+			exp_to_grant_on_death="-1" immune_to_swapping_between_fleets="true"
+			spawns_on_death="HydraMercFlagshipHead"
+			count_to_spawn_on_death="3"
+			>
+  </entity>
+  
+  <entity name="HydraMercFlagshipHead" copy_from="HydraMercFlagship" tags="Hydral Hobbyist"
+		  self_attritions_X_percent_per_second_if_parent_ship_not_on_planet="2"
+		  always_self_attritions="true"
+			display_name="Hydran Outguard Flagship Head"
+			description="Une tête est apparue à partir du navire amiral Hydran Outguard. Il semble encore capable de se dédoubler."
+			energy_consumption="3000"
+			exp_to_grant_on_death="-1" immune_to_swapping_between_fleets="true"
+			spawns_on_death="HydraMercFlagshipMinorHead"
+			count_to_spawn_on_death="3"
+			>
+  </entity>
+  
+  <entity name="HydraMercFlagshipMinorHead" copy_from="HydraMercFlagship" tags="Hydral Hobbyist"
+		  self_attritions_X_percent_per_second_if_parent_ship_not_on_planet="2"
+		  always_self_attritions="true"
+			display_name="Hydran Outguard Flagship Minor Head"
+			description="Une tête mineure est apparue à partir du navire amiral Hydran Outguard."
+			energy_consumption="1000"
+			exp_to_grant_on_death="-1" immune_to_swapping_between_fleets="true"
+			spawns_on_death=""
+			count_to_spawn_on_death=""
+			>
+  </entity>
+  
+  <!--		Special carrier that spawns decoy drones. -->
+  <entity 	name="MercDistractorCarrier" tech_upgrades_that_benefit_me="Subterfuge,Heavy"
+			tags="MercDistractorCarrier" gimbal_icon_size_multiplier="1.25"
+			visuals="assets/_finalgamemeshes/guardians/carrierguardian/carrierguardian.prefab"
+			icon_name="Official/Guardian" icon_overlay="Official/Guardian_Carrier"
+			size_scale="4.5"
+			visuals_scale_multiplier="4"
+			category="Ship"
+			y_offset_of_icon="10"
+			collision_priority="100"
+			display_name="Decoy Drone Carrier"
+			description="Un porte-avions rempli de drones conçus pour attirer les tirs ennemis."
+			fleet_design_template_i_use_for_drones="DecoyDrones"
+			drone_starting_behavior_type="Attacker_Full"
+			starting_mark_level="Mark1"
+			cost_for_ai_to_purchase="300"
+			hull_points="100000" shield_points="100000" speed="BelowAverage1"
+			metal_cost="16000" energy_consumption="4500"
+			armor_mm="120" albedo="0.4" engine_gx="18" mass_tx="5"
+			voice_group="Starship"
+			ship_or_structure_explosion_sfx="ShipStarship_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			exp_to_grant_on_death="-1"
+			priority_as_ai_target="NormalStarship" priority_as_frd_target="BiggerStarship" priority_to_protect="SlightlyLessExpendable"
+	>
+		<system name="BallisticCannon" display_name="Ballistic Cannon"
+			category="Weapon" firing_timing="OnlyInRange"
+			damage_per_shot="1000" range="Normal4" shot_speed="Normal" rate_of_fire="Normal" fires_salvos_sequentially="true"
+			shot_type_data="ArmorPiercingShell"
+		/>
+		<incoming_damage_modifier based_on="AttackDistance" comparison_type="GreaterThan" compared_to="2000" multiplier="0.01" />
+		<metal_flow purpose="BuildingDronesInternally" throughput="500"  increase_per_mark_level="250"/>
+  </entity>
+  
+</root>

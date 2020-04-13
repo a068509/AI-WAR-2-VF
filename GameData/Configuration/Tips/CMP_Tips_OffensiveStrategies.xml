@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <tip category="OffensiveStrategies" name="Offensive_Beachheads" display_name="Use Battlestations or Citadels for Beachheads" sort_priority="1000"
+        full_text="Are your offensive fleets having trouble on an enemy planet?  You may want to enlist the help of some turrets, forcefields, engineers, mobile factories, or otherwise.
+      
+With that in mind, you can take one or more of your battlestations and bring them to the enemy planet, and there you can use the Build tab from the sidebar to construct anything that battlestation has available." />
+
+  
+  
+  <tip category="OffensiveStrategies" name="Offensive_DeepStriking" display_name="'Deep Strike' Using Transports" sort_priority="1000"
+        full_text="If you need to skip past a few enemy planets (a very valid thing to do, when it's not worth the AI Progress -- AIP -- increase of taking those intermediate worlds), then you need a way to get there with speed and safety.
+        
+Many of the fleets have centerpieces (fleet leaders) that are specifically called transports.  But actually, ALL of your offensive fleets (officer types included, with Arks and Golems and similar at their core) can act as transports for the smaller members of their fleet.
+
+Select any units of the fleet that you wish to have get into their own fleet centerpiece, and hit the L key to have them all load into their respective proper places.  Then you can fly to your destination with just the big centerpieces.
+
+You can put those fleet leaders into 'hold fire' mode (N key) to make it even less likely they will aggro enemies along the way, and then when you reach the destination both turn them out of hold fire mode (N again), and unload all their ships (U key) to wreak havoc." />
+
+
+
+  <tip category="OffensiveStrategies" name="Offensive_DontWhittle" display_name="Don't Try To Cheese Things By Whittling A High-Level Planet" sort_priority="1000"
+        full_text="Hypothetical: your fleets rebuild themselves in a fairly automated fashion, and your economy is going well (hopefully), so why not just try to attack that mark 6 planet 30 times in a row and get a little bit more whittled down each time, even though you're far outclassed with your mark 3 fleets?
+        
+Answer: Counter Attacks. If you keep attacking and failing, you're leaving a bunch of salvage (wreckage from your ships) on that enemy planet.  The AI will build a messload of ships out of that, and send a counter attack that will seriously hurt and potentially lose you the game if you keep up at it long enough.
+
+Trying and failing to attack a planet is part of the game, and often you will want to take 3-4 passes to go in and destroy a planet that is just slightly out of reach.  So all of that should be quite ok.
+
+But if you try to push that too far -- basically trying to use wall-clock time to get an advantage over the AI -- that could actually be a game-ending situation you place yourself in.  You'll notice the counter attacks getting more intense and hopefully stop that folly in time, but basically the AI is wise to that trick." />
+
+
+  
+  <tip category="OffensiveStrategies" name="Offensive_BringChaff" display_name="Bring Low-Mark Ships As Chaff" sort_priority="1000"
+        full_text="There's not a reason to intentionally cultivate low-mark ships in your fleets, but if you happen to have some low-mark ships in a fleet with high-mark ships in them, they will be exceedingly cheap to produce.
+        
+        Don't leave those ships at home, or stop them from constructing, unless you're really hurting economically.  Bring those along and even if they don't do a lot of damage, they will work well as a bullet sponge to make your nicer higher-mark ships last a bit longer." />
+
+        <tip category="OffensiveStrategies" name="Targeting_SpecificUnitTypes" display_name="Targeting High Value Unit Types" sort_priority="1000"
+        full_text="You can make your forces focus-fire certain unit types by selecting ships and right clicking a certain target. For example, if you want your units to focus down a Sabot Guard Post or a group of glass cannon attacking ships then selecting units and right clicking on one of those unit types will make the selected ships strongly prefer to shoot the unit type you selected.
+
+To unset this, just issue a move command to those units." />
+
+  <tip category="OffensiveStrategies" name="Offensive_PlanetBitByBit" display_name="Take Scary Planets Out Carefully Bit By Bit" sort_priority="1000"
+        full_text="Some planets can be fairly scary, their strength value far beyond everything you have combined. But! Most of that won't immediately attack you if you go in, and with a bit of thought, you can still win.
+		
+Instead, a good part of that is in stationary defenses such as Guard Posts and Turrets, then another large chunk are in guards stored inside those Posts.
+
+If you're careful, you can move from area to area and clear them out, avoiding being in the range of any Guard Posts and Turrets, and not waking up the stored guards until ready. Even the Guardians, which like to patrol, you can intercept and fight on your own terms individually.
+
+Lastly, take a look at the planet you're thinking of attacking. You might notice things such as the Guardians all have similar weaknesses or strengths, or every guard unit is something really fast, or is cloaked, etc. This can help you plan what to bring, and what to leave home." />
+
+
+
+</root>

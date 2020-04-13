@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <tutorial category="Basics" name="BasicPlanetaryControls" display_name="Tutorial 1 - Basic Planetary Controls" sort_priority="1"
+        description="Les bases mêmes des contrôles dans la vue planète." scenario="AftermathOfLosingTheAIWar"
+        do_not_serialize_setup_to_or_from_settings="true"
+        skip_determine_ai_ownership="true" skip_determine_ai_homeworlds="true" skip_assign_player_homeworlds="true"
+        force_map_type="Tutorial_01" force_map_seed="123456" skip_seed_special_entities="true"
+        skip_all_galaxy_wide_capturables_and_obstacles="true" skip_warden_bases="true"
+        debug_all_step_text_on_load="false"
+   >
+    <!--Setup for factions
+        *************************************-->
+    <!--You name any that you add beyond the built-in ones, or the following ones are built in:
+        NaturalObject - owned by nobody
+        AI - main AI
+        FirstPlayer - presumably the only player, given this is a tutorial.
+        PlayerBeyondTheFirst - any and all other players.
+        AIWardenFleet - warden fleet of the main AI.
+        AIHunterFleet - hunter fleet of the main AI.
+        AntiAIZombie, AntiPlayerZombie, AntagonizedDysonSphere - all just kind of plumbing stuff.
+        Instigators - the AI instigators.
+        Mercenary - the outguard, if there are any that seed, etc. -->
+    <faction_initial_setup name="FirstPlayer" starting_planet_index="0"/>
+    <faction_initial_setup name="PlayerBeyondTheFirst" do_not_add_faction="true"/>
+    <faction_initial_setup name="Instigators" do_not_add_faction="true"/>
+    <faction_initial_setup name="Mercenary" do_not_add_faction="true"/>
+    <faction_initial_setup name="AI">
+        <custom_field key="AIType" val="Tutorial_01"/>
+    </faction_initial_setup>
+	<faction_initial_setup name="WardenFleet" do_not_add_faction="true"/>
+	<faction_initial_setup name="HunterFleet" do_not_add_faction="true"/>
+	
+
+    <!--Setup for planet topography
+        *************************************-->
+    <!--Note that these tutorial planets allow you to define planets manually.  This ONLY works with the Tutorial_01 map type.
+        If you want to have a tutorial in a regular other map type of some other sort, you can do so, but these won't be read in in terms of placement and names.-->
+    <tutorial_planet name="Murdoch" x="0" y="0"/>
+    <tutorial_planet name="Midlander" x="100" y="-20">
+      <link name="Murdoch"/>
+      <link name="Farland"/>
+    </tutorial_planet>
+    <tutorial_planet name="Farland" x="200" y="20"/>
+
+
+
+    <!--Setup for planet ownership, etc
+        *************************************-->
+    <!--Note that these work for even non-manually-created maps.  Ownerships are either whatever you named the factions above, 
+        or are the built-in ones noted above.  You can match planets based on their added-index or their name.-->
+    <planet_ownership_and_spawning match_index="0" linked_faction_name="FirstPlayer" is_homeworld="true"
+          command_station_point="200,1000" skip_player_home_forcefield="true" skip_player_home_engineers="false"
+          skip_player_home_factory="true" skip_player_home_human_settlement="true" skip_player_home_human_cryogenic_pods="true"
+          skip_player_home_initial_combat_fleet="true" skip_player_home_initial_battlestation="true" skip_player_home_initial_support_fleet="true"
+          initial_combat_fleet="ClassicStartingFleet" initial_battlestation_fleet="" initial_support_fleet=""
+          number_of_metal_spots="4" >
+	  <ship_placement faction="FirstPlayer" type="AssaultFrigate" placement_point="200,5000"/>
+	  <ship_placement faction="AI" type="TargetDrone" placement_point="200,22000"/>
+	  <ship_placement faction="AI" type="TargetDrone" placement_point="4200,22000"/>
+	  <ship_placement faction="AI" type="TargetDrone" placement_point="-3800,22000"/>
+
+    </planet_ownership_and_spawning>
+    <planet_ownership_and_spawning match_name="Midlander" linked_faction_name="AI" mark_level_index="1"
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="true" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="true"/>
+    <planet_ownership_and_spawning match_name="Farland" linked_faction_name="AI" mark_level_index="5" is_homeworld="true" number_of_metal_spots="8"
+            skip_ai_guard_posts="true" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="true"/>
+
+    <!--Actual steps of the tutorial itself!
+    
+      For informaton about the conditions that you can use, and how to use them, 
+      please see this wiki page: https://wiki.arcengames.com/index.php?title=AI_War_2:_Tutorial_Step_Conditions
+      *************************************-->
+    <tutorial_step text_to_show="Bienvenue dans le premier didacticiel d'AI War 2. Celui-ci concerne le déplacement de la caméra, ainsi que la sélection et la commande d'unités.
+
+Actuellement, nous examinons notre planète de départ. Jetons un coup d'œil autour, tout d'abord en déplaçant la caméra.
+
+Tout d'abord, déplacez le curseur de la souris sur le bord de votre écran. Cela déplacera la caméra dans cette direction. Cela peut être assez ennuyeux pour certaines personnes, alors vous pouvez le désactiver si vous le souhaitez.
+
+Essayons quelque chose de plus conventionnel: utilisez les touches ZQSD pour déplacer votre caméra afin que nous puissions passer à l'étape suivante.
+
+&lt;color=#999999&gt;Astuce supplémentaire: vous pouvez saisir le panoramique si vous maintenez enfoncé le bouton central de la souris (ou la molette de défilement selon le cas), ce qui est très pratique.&lt;/color&gt;">
+      <condition type="PlayerHasDoneAnyOnPlanetCameraPanning" /> 
+    </tutorial_step>
+
+    <tutorial_step text_to_show="Essayez maintenant d'effectuer un zoom avant ou arrière. Vous pouvez utiliser la molette de défilement de votre souris (de préférence) ou les touches de page précédente et suivante de votre clavier.
+                   
+Vous pouvez vous approcher assez près de l'action, ou au loin, en mesure de tout voir sur cette planète.
+
+&lt;color=#999999&gt;Astuce supplémentaire: le zoom avant se concentre sur le curseur de votre souris par défaut, mais vous pouvez le désactiver dans les paramètres si vous préférez.&lt;/color&gt;">
+      <condition type="PlayerHasDoneAnyOnPlanetCameraZooming" />
+    </tutorial_step>
+
+    <tutorial_step text_to_show="Enfin, vous pouvez maintenir Q (tu dois surement changer la touche pour A) sur votre clavier - ou votre quatrième bouton de souris si vous avez une souris à 4 boutons - et déplacer la souris pour incliner la caméra.
+                   
+&lt;color=#999999&gt;À noter: ce n'est pas exactement utile dans le gameplay, mais cela vous donne très rapidement des vues cinématographiques amusantes. Et bon, vous remarquerez peut-être quelque chose sous ces angles que vous n'avez pas fait autrement.&lt;/color&gt;">
+      <condition type="PlayerHasDoneAnyOnPlanetCameraAngling" />
+    </tutorial_step>
+	
+    <tutorial_step text_to_show="Vous avez peut-être remarqué ce qui semble être une forme de navire. Il s'agit d'un {c1.EntityName}. Pour le sélectionner, faites un clic gauche directement dessus, ou maintenez un clic gauche à proximité, et faites glisser pour créer une boîte de sélection, puis relâchez pour tout sélectionner à l'intérieur.
+
+Lorsque vous avez sélectionné la frégate, il est temps de la faire bouger! Déplacez la souris n'importe où sur la planète que vous aimez et faites un clic droit. La frégate commencera à y aller.
+
+Remarque importante: la zone jouable d'une planète s'appelle le «puits de gravité» et est marquée par la ceinture d'astéroïdes flottante. Les unités ne peuvent jamais aller au-delà de cela.
+
+&lt;color=#999999&gt;Astuce supplémentaire: pour mettre le jeu en pause, vous pouvez appuyer sur la barre d'espace du clavier ou simplement ouvrir le menu ESC. N'hésitez pas à faire une pause autant ou aussi peu que vous le souhaitez.&lt;/color&gt;">
+      <condition type="PlayerHasSelectedCountOfSpecificShip" entity_type="AssaultFrigate" count="1"/>
+    </tutorial_step>
+
+    <tutorial_step text_to_show="Maintenant, nous voulons des cibles pour notre frégate. Il y a quelques drones cibles que nous avons installés à l'avance sur cette planète, près du sommet du puits de gravité (vous devrez peut-être faire un zoom arrière pour les voir).
+
+Pour dire à votre frégate d'en attaquer un, faites simplement un clic droit dessus. Détruisez tous les drones.
+
+&lt;color=#aaaaaa&gt;Astuce supplémentaire 1: vous en apprendrez plus sur les modes à l'avenir, mais vous pouvez mettre ce vaisseau en mode Poursuite en appuyant sur V et le faire chasser automatiquement les drones lui-même.&lt;/color&gt;
+
+&lt;color=#888888&gt;Astuce supplémentaire 2: Vous pouvez facilement modifier la vitesse du temps en utilisant les touches plus et moins, ou les boutons en bas à gauche de l'écran, pour accélérer la bataille si vous le souhaitez.&lt;/color&gt;">
+      <condition type="EnemyShipsOfSpecificTypeOnPlanetLessThanOrEqualTo" planet_by_name="Murdoch" entity_type="TargetDrone" count="0"/>
+    </tutorial_step>	
+	
+  </tutorial>
+</root>

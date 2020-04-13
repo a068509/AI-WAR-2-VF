@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <camType name="Versatile Strategic" sort_for_settings="50" is_available_for_galaxy_map="false"
+       	dll_name="PrivateVisExtensions" type_name="Arcen.AIW2.PrivateVisExtensions.BasicStrategyCam"/>
+  
+  <camType name="Top-Down Only" sort_for_settings="51" is_available_for_galaxy_map="true"
+       	dll_name="PrivateVisExtensions" type_name="Arcen.AIW2.PrivateVisExtensions.DirectTopDownCam"/>
+  <!--
+  <camType name="Top Down" sort_for_settings="100" is_available_for_galaxy_map="true"
+       	dll_name="AIWarExternalVisualizationCode" type_name="Arcen.AIW2.ExternalVisualization.TopDown"/>
+  
+  <camType name="Angled View" sort_for_settings="200" is_available_for_galaxy_map="true"
+       	dll_name="AIWarExternalVisualizationCode" type_name="Arcen.AIW2.ExternalVisualization.Angled"/>
+
+  <camType name="Free-look Only" sort_for_settings="600" is_available_for_galaxy_map="true"
+       	dll_name="AIWarExternalVisualizationCode" type_name="Arcen.AIW2.ExternalVisualization.FreelookOnly"/>
+  
+  <camType name="Old Strategic" sort_for_settings="1300" is_available_for_galaxy_map="true"
+       	dll_name="AIWarExternalVisualizationCode" type_name="Arcen.AIW2.ExternalVisualization.OldStyleCamera_Strategic"/>
+  
+	<camType name="Old Deep Angles" sort_for_settings="1200" is_available_for_galaxy_map="true"
+       	dll_name="AIWarExternalVisualizationCode" type_name="Arcen.AIW2.ExternalVisualization.OldStyleCamera_DeepAngles"/>-->
+</root>

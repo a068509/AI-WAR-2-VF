@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <entity name="RorqualHegira"
+			special_entity_type="MobileOfficerCombatFleetFlagship" fleet_design_logic_i_grant_one_from="MobileCombatFleet"
+			voice_group="Ark_JackBishop" gimbal_icon_size_multiplier="1.5"
+			visuals="assets/_finalgamemeshes/arks/arkrorqualhegira/rorqualhegira.prefab"
+			icon_name="Official/Ark"
+			draw_in_galaxy_view="true"
+			tags="ShowsOnNormalDisplayMode,Capturable" capturable_seed_weight="100" capturable_max_per_galaxy="1"
+			size_scale="9"
+			visuals_scale_multiplier="3"
+			y_offset_of_icon="40"
+			uses_large_health_bar="true"
+			category="Ship"
+			collision_priority="10000"
+			display_name="Rorqual Hegira Ark"
+			description="Ce vaisseau amiral possède un générateur de champ de force assez puissant, qu'il peut régénérer en endommageant les ennemis. Prend également moins de dégâts après avoir utilisé un trou de ver. Les unités protégées par cela infligeront la moitié des dégâts habituels."
+			aip_to_claim="10"
+			metal_to_claim="500000"
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="UpgradeMeFromFleetOnly" is_upgraded_via_fleet_exp="true"
+			health_change_per_damage_dealt="2"
+			cost_for_ai_to_purchase="200"			
+      shield_size_scale="5" my_forcefield_does_not_shrink="true"
+			hull_points="250000" shield_points="1500000" speed="AboveAverage4"
+			metal_cost="500000" energy_consumption="7000"
+      assist_range="Normal1"			
+			armor_mm="85" albedo="0.8" engine_gx="18" mass_tx="7"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"                        
+            pushes_enemy_shields="true"
+	        speed_multiplier_first_5_seconds_on_planet="1.5"
+		exp_to_grant_on_death="-1"
+                firing_delay_for_transported_ships="6"
+				shows_on_galaxy_map_for_explored_planets="true" always_visible_to_players="true"
+      priority_as_ai_target="NormalStarship" priority_as_frd_target="NormalStarship" priority_to_protect="MajorPlanetLevelObjective"
+			>
+	<metal_flow purpose="RebuildingRemains" throughput="100" increase_per_mark_level="100"/>		
+    <system name="BallisticDoubleshot" display_name="Ballistic Doubleshot"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="15000" range="Normal6" shot_speed="Normal" rate_of_fire="Misery" fires_salvos_sequentially="true"
+				shot_type_data="DoubleShot_Blue"		
+				>
+				<outgoing_damage_modifier based_on="CurrentPersonalShieldPercentage" applies_to="Everything" comparison_type="AtLeast" compared_to="50" multiplier="2" added_multiplier_per_mark="0.4" />
+    </system>
+	<incoming_damage_modifier based_on="MyTimeAtPlanet" comparison_type="LessThan" compared_to="5" multiplier="0.5" />
+  </entity>
+
+  <entity name="Thanatos"
+			special_entity_type="MobileOfficerCombatFleetFlagship" fleet_design_logic_i_grant_one_from="MobileCombatFleet"	
+			voice_group="Ark_LeeSen" gimbal_icon_size_multiplier="1.5"
+			visuals="assets/_finalgamemeshes/arks/arkthanatos/arkthanatos.prefab"
+			icon_name="Official/Ark"
+			draw_in_galaxy_view="true"
+			tags="ShowsOnNormalDisplayMode,Capturable" capturable_seed_weight="100" capturable_max_per_galaxy="1"
+			size_scale="12"
+			visuals_scale_multiplier="3"
+			y_offset_of_icon="40"
+			uses_large_health_bar="true"
+			category="Ship"
+			collision_priority="10000"
+			display_name="Thanatos Ark"
+			description="Ce vaisseau amiral a des dégâts assez élevés et transforme les ennemis en zombies alliés pour combattre pour vous."
+			aip_to_claim="10"
+			metal_to_claim="500000"
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="UpgradeMeFromFleetOnly" is_upgraded_via_fleet_exp="true"
+			cost_for_ai_to_purchase="200"		
+			hull_points="650000" shield_points="350000" speed="AboveAverage4"
+			metal_cost="500000" energy_consumption="7000"
+      assist_range="Normal1"			
+			armor_mm="120" albedo="0.8" engine_gx="18" mass_tx="7"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			speed_multiplier_first_5_seconds_on_planet="1.5"
+			exp_to_grant_on_death="-1"
+                        priority_as_ai_target="NormalStarship" priority_as_frd_target="NormalStarship" priority_to_protect="MajorPlanetLevelObjective"
+                        firing_delay_for_transported_ships="6"
+						shows_on_galaxy_map_for_explored_planets="true" always_visible_to_players="true"
+			>
+	<metal_flow purpose="RebuildingRemains" throughput="100" increase_per_mark_level="100"/>		
+    <system name="BallisticVortex" display_name="Ballistic Vortex"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="12000" range="AboveAverage2" shot_speed="Normal" rate_of_fire="Misery" fires_salvos_sequentially="true"
+				shot_type_data="ElegantCurl"				
+				>	
+    </system>
+    <system name="ParasiteBolt" display_name="Parasite Bolt"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="2000" range="AboveAverage2" shot_speed="Normal" rate_of_fire="Misery"
+				shots_per_salvo="16" fires_salvos_sequentially="false"
+				shot_type_data="ParasiteCurvedPinkShot" added_target_evaluator="ZombifyAsPrimary"
+				>
+      <death_effect_damage type="Zombification" tier_name="Thanatos"/>
+    </system>
+  </entity>
+
+
+  <entity name="Gyrn"
+			special_entity_type="MobileOfficerCombatFleetFlagship" fleet_design_logic_i_grant_one_from="MobileCombatFleet"			
+			voice_group="Ark_LucieLeroux" gimbal_icon_size_multiplier="1.5"
+			visuals="assets/_finalgamemeshes/arks/arkgyrnthevoidhome/arkgyrnthevoidhome.prefab"
+			icon_name="Official/Ark"
+			draw_in_galaxy_view="true"
+			tags="ShowsOnNormalDisplayMode,Capturable" capturable_seed_weight="40" capturable_max_per_galaxy="1"
+			size_scale="8"
+			visuals_scale_multiplier="3"
+			y_offset_of_icon="40"
+			uses_large_health_bar="true"
+			category="Ship"
+			collision_priority="10000"
+			display_name="Gyrn, the Voidhome Ark"
+			description=" Flagship d'installation mobile très puissant. Si un vaisseau amiral de la flotte se trouve sur la même planète ou sur une planète adjacente et qu'il manque des navires, cela produira automatiquement des remplacements qui se déformeront directement sur ce navire amiral. Produit également des drones et produit de l'énergie."
+			fleet_design_template_i_use_for_drones="GrynDrones"
+			drone_starting_behavior_type="Attacker_Full"
+			aip_to_claim="10"
+			metal_to_claim="500000"
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="UpgradeMeFromFleetOnly" is_upgraded_via_fleet_exp="true"
+            pushes_enemy_shields="true"
+			cost_for_ai_to_purchase="200"		
+			hull_points="650000" shield_points="350000" speed="AboveAverage4"
+			metal_cost="500000" energy_consumption="7000"
+      assist_range="Normal1"			
+			armor_mm="120" albedo="0.8" engine_gx="18" mass_tx="7"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			speed_multiplier_first_5_seconds_on_planet="1.5"
+			exp_to_grant_on_death="-1"
+                        priority_as_ai_target="NormalStarship" priority_as_frd_target="NormalStarship" priority_to_protect="MajorPlanetLevelObjective"                        
+                        firing_delay_for_transported_ships="6"
+						shows_on_galaxy_map_for_explored_planets="true" always_visible_to_players="true"
+			>
+	<metal_flow purpose="BuildingDronesInternally" throughput="7000"/>
+	<metal_flow purpose="RebuildingRemains" throughput="100" increase_per_mark_level="100"/>
+    <resource_production type="Energy" amount="150000"/>	
+    <system name="BallisticVortex" display_name="Ballistic Vortex"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="16000" range="Normal3" shot_speed="Normal" rate_of_fire="Misery" fires_salvos_sequentially="true"
+				shot_type_data="ElegantCurl"				
+				>	
+    </system>
+    <metal_flow purpose="FactoryConstructionForPlayerMobileFleets" throughput="10000" increase_per_mark_level="5000" ignore_when_zero_or_negative="true"/>
+  </entity>
+
+
+  <entity name="Orchid"
+			special_entity_type="MobileOfficerCombatFleetFlagship" fleet_design_logic_i_grant_one_from="MobileCombatFleet"			
+			voice_group="Ark_ThomasWalker" gimbal_icon_size_multiplier="1.5"
+			visuals="assets/_finalgamemeshes/arks/arktheorchid/arktheorchid.prefab"
+			icon_name="Official/Ark"
+			draw_in_galaxy_view="true"
+			tags="ShowsOnNormalDisplayMode,Capturable" capturable_seed_weight="70" capturable_max_per_galaxy="2"
+			size_scale="10"
+			visuals_scale_multiplier="3"
+			y_offset_of_icon="40"
+			uses_large_health_bar="true"
+			category="Ship"
+			collision_priority="10000"
+			display_name="Orchid Ark"
+			description="Ce vaisseau amiral est axé sur la guérison ultra-rapide."
+			aip_to_claim="10"
+			metal_to_claim="500000"
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="UpgradeMeFromFleetOnly" is_upgraded_via_fleet_exp="true"
+			health_change_per_damage_dealt="1"
+			cost_for_ai_to_purchase="200"
+			
+			assist_range="AboveAverage4"
+			hull_points="650000" shield_points="350000" speed="AboveAverage6"
+			metal_cost="500000" energy_consumption="7000"
+			armor_mm="120" albedo="0.8" engine_gx="18" mass_tx="7"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			speed_multiplier_first_5_seconds_on_planet="1.5"
+			exp_to_grant_on_death="-1"
+                        firing_delay_for_transported_ships="6"
+						shows_on_galaxy_map_for_explored_planets="true" always_visible_to_players="true"
+                        priority_as_ai_target="NormalStarship" priority_as_frd_target="NormalStarship" priority_to_protect="MajorPlanetLevelObjective"
+			>
+	<metal_flow purpose="RebuildingRemains" throughput="100" increase_per_mark_level="100"/>		
+    <metal_flow purpose="RepairingHullsOfFriendlies" throughput="12000" increase_per_mark_level="6000"/>
+    <metal_flow purpose="RepairingShieldsOfFriendlies" throughput="12000" increase_per_mark_level="6000"/>
+    <metal_flow purpose="RepairingEnginesOfFriendlies" throughput="12000" increase_per_mark_level="6000"/>
+    <system name="FusionBomb" display_name="Fusion Spore Bomb"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="14000" range="Normal3" shot_speed="Normal" rate_of_fire="Misery" fires_salvos_sequentially="true"
+				shot_type_data="FusionBomb"
+				base_percent_damage_bypasses_personal_shields="1"				
+				>
+    </system>
+  </entity>
+
+
+  <entity name="ArkOne"
+			special_entity_type="MobileOfficerCombatFleetFlagship" fleet_design_logic_i_grant_one_from="MobileCombatFleet"			
+			voice_group="Ark_AlanEdwards" gimbal_icon_size_multiplier="1.5"
+			visuals="assets/_finalgamemeshes/arks/arkone/arkone.prefab"
+			icon_name="Official/Ark"
+			draw_in_galaxy_view="true"
+			tags="ShowsOnNormalDisplayMode,Capturable" capturable_seed_weight="100" capturable_max_per_galaxy="2"
+			size_scale="6"
+			visuals_scale_multiplier="3"
+			y_offset_of_icon="40"
+			uses_large_health_bar="true"
+			category="Ship"
+			collision_priority="10000"
+			display_name="Ark One"
+			description="Ce vaisseau amiral se concentre sur le ralentissement et le renversement de groupes d'hostiles à distance."
+			aip_to_claim="10"
+			metal_to_claim="500000"
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="UpgradeMeFromFleetOnly" is_upgraded_via_fleet_exp="true"
+			cost_for_ai_to_purchase="200"			
+			hull_points="650000" shield_points="350000" speed="AboveAverage4"
+			metal_cost="500000" energy_consumption="7000"
+      assist_range="Normal1"			
+			armor_mm="120" albedo="0.8" engine_gx="18" mass_tx="7"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			speed_multiplier_first_5_seconds_on_planet="1.5"
+			exp_to_grant_on_death="-1"
+                        priority_as_ai_target="NormalStarship" priority_as_frd_target="NormalStarship" priority_to_protect="MajorPlanetLevelObjective"
+                        firing_delay_for_transported_ships="6"
+						shows_on_galaxy_map_for_explored_planets="true" always_visible_to_players="true"
+                        
+			>
+	<metal_flow purpose="RebuildingRemains" throughput="100" increase_per_mark_level="100"/>		
+   <system name="SpiderCannon" display_name="Spider Cannon"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="1050" range="AboveAverage3" shot_speed="Normal" rate_of_fire="Misery" 
+				shots_per_salvo="30" fires_salvos_sequentially="false"
+				base_engine_stun_per_shot="16" added_engine_stun_per_shot_per_mark="4" engine_stun_to_engine_gx_less_than="16"
+				max_engine_stun_seconds="40" added_target_evaluator="EngineDamageAsMajorPrimary"
+				base_knockback_per_shot="2000" added_knockback_per_shot_per_mark="500" knockback_to_ships_mass_tx_less_than="2"
+				shot_type_data="EngineDisruptingShell"
+				>	
+    </system>
+  </entity>
+
+  <!--Presently unused.-->
+  <entity name="CloakedArkOne" copy_from="ArkOne" display_name="Cloaked Ark One" tags="ShowsOnNormalDisplayMode,Capturable"
+			description="Cette arche se concentre sur le ralentissement et le renversement de groupes d'hostiles à distance ... et se cache."
+			capturable_can_seed_at_all="false">
+      <system name="Cloaker" display_name="Cloaking Device" category="Passive" cloaking_points="1000" cloaking_points_added_per_mark="500" > </system>
+  </entity>
+  
+</root>

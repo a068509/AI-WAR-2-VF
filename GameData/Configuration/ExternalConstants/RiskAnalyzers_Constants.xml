@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root
+    is_partial_record="true"
+    custom_int_RiskAnalyzer_TimeIntervalInSeconds="3600"
+    custom_int_RiskAnalyzer_AIPIncrease="1"
+    custom_int_RiskAnalyzer_AIPIncreaseOnDeath="10"
+    custom_int_RiskAnalyzer_AIPDecrease="2"
+    custom_FInt_RiskAnalyzer_BaseExoWaveStrength="20000"
+    custom_FInt_RiskAnalyzer_MaxExoWaveStrength="90000"
+    custom_FInt_RiskAnalyzer_NextExoMultiplier="1.25"
+    custom_int_RiskAnalyzer_ExoPercentForWarning="60"
+    custom_int_RiskAnalyzer_MinutesInToStartChargingExo="40"
+    custom_FInt_RiskAnalyzer_ExoIncomePerAIRiskAnalyzer="15"
+    custom_FInt_RiskAnalyzer_ExoIncomePerNeutralRiskAnalyzer="50"
+    custom_FInt_RiskAnalyzer_ExoIncomePerPlayerRiskAnalyzer="150"
+    custom_int_RiskAnalyzer_HighExoIntensity="7"
+    custom_FInt_RiskAnalyzer_ExoIncomePerAIRiskAnalyzerHigh="15"
+    custom_FInt_RiskAnalyzer_ExoIncomePerNeutralRiskAnalyzerHigh="40"
+    custom_FInt_RiskAnalyzer_ExoIncomePerPlayerRiskAnalyzerHigh="100"
+
+>
+</root>

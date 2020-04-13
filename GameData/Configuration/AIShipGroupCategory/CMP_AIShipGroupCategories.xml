@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  
+  <!--The purpose of these "AI Ship Group Categories" (there's a mouthful)
+      is for the AIs to be able to reference them.  AIs specify which 
+      category (as shown below) they wish to use for a given purpose.
+      
+      And THEN, whichever actual AI Ship Groups have inserted themselves 
+      into that category become usable by that AI in the circumstances that
+      the AI has chosen the category for.
+      
+      For example: a bunch of AI Ship Groups like to put themselves in the "SimpleWaves"
+      category.  There's a single AI type that uses these simpler types of waves
+      in place of the usual "AnyWaves" that most ofthe AI types use.-->
+  
+  <ship_group_cat name="AnyWaves" />
+  <ship_group_cat name="AnyReinforcements" />
+  <ship_group_cat name="AnyBasicGuardPosts" />
+  <ship_group_cat name="AnyDireGuardPosts" />
+  <ship_group_cat name="AnyTurrets" />
+  <ship_group_cat name="AnyNonTurretDefenses" />
+  <ship_group_cat name="AnyBasicGuardians" />
+  <ship_group_cat name="AnyDireGuardians" />
+  <ship_group_cat name="DefensiveDireGuardians" />
+  <ship_group_cat name="AnyForcefieldGuardians" />
+  <ship_group_cat name="AnyWormholeSentinels" />
+  <ship_group_cat name="AnySingularFreakySurprises" />
+
+  <ship_group_cat name="UnarmedGuardPosts" />
+  <ship_group_cat name="UnarmedGhostGuardPosts" />
+  <ship_group_cat name="UnarmedSwarmerGuardPosts" />
+
+  <ship_group_cat name="SimpleWaves" />
+  <ship_group_cat name="SimpleReinforcements" />
+  <ship_group_cat name="SimpleTurrets" /> 
+  <ship_group_cat name="SimpleGuardians" />
+  <ship_group_cat name="SimpleDireGuardians" />
+  <ship_group_cat name="SimpleForcefieldGuardians" />
+  <ship_group_cat name="SimpleDireGuardPosts" />   
+  
+  <ship_group_cat name="TutorialWaves" />
+  <ship_group_cat name="TutorialReinforcements" />
+  <ship_group_cat name="TutorialBasicGuardPosts" />
+  <ship_group_cat name="TutorialDireGuardPosts" />
+  <ship_group_cat name="TutorialTurrets" />
+  <ship_group_cat name="TutorialNonTurretDefenses" />
+  <ship_group_cat name="TutorialBasicGuardians" />
+  <ship_group_cat name="TutorialDireGuardians" />
+  <ship_group_cat name="TutorialForcefieldGuardians" />
+  <ship_group_cat name="TutorialWormholeSentinels" />
+  <ship_group_cat name="TutorialSingularFreakySurprises" />
+
+  <ship_group_cat name="ShieldHaterWaves" />
+  <ship_group_cat name="ShieldHaterTurrets" />  
+  <ship_group_cat name="ThiefWaves" />
+  
+  <ship_group_cat name="TurtleReinforcements" />
+  <ship_group_cat name="TurtleBasicGuardPosts" />
+  <ship_group_cat name="TurtleDireGuardPosts" />
+  <ship_group_cat name="TurtleTurrets" />
+  <ship_group_cat name="TurtleSingularFreakySurprises" />
+
+  <ship_group_cat name="CloakingHeavyWaves" />
+  <ship_group_cat name="CloakingHeavyReinforcements" />
+  <ship_group_cat name="ZombifyingWaves" />
+  <ship_group_cat name="ZombifyingReinforcements" />
+  
+  <ship_group_cat name="ViciousRaiderWaves" />
+  <ship_group_cat name="ViciousRaiderReinforcements" />  
+
+  <ship_group_cat name="RoyalWaves" />
+  <ship_group_cat name="RoyalReinforcements" />
+  <ship_group_cat name="RoyalBasicGuardians" />
+  <ship_group_cat name="RoyalDireGuardians" />
+  <ship_group_cat name="RoyalDefensiveDireGuardians" />
+  <ship_group_cat name="RoyalForcefieldGuardians" />
+
+  <ship_group_cat name="SwarmerWaves" />
+  <ship_group_cat name="SwarmerReinforcements" />   
+  <ship_group_cat name="SwarmerBasicGuardians" />
+  <ship_group_cat name="SwarmerGuardPosts" />
+  <ship_group_cat name="SwarmerDireGuardPosts" />
+
+  <ship_group_cat name="EnsnarerWaves" />
+  <ship_group_cat name="EnsnarerReinforcements" />  
+  <ship_group_cat name="EnsnarerTurrets" />
+  <ship_group_cat name="EnsnarerNonTurretDefenses" />
+  <ship_group_cat name="EnsnarerWormholeSentinels" />
+
+  <ship_group_cat name="GhostTurrets" />
+  <ship_group_cat name="GhostNonTurretDefenses" />
+  <ship_group_cat name="GhostGuardPosts" />
+  <ship_group_cat name="GhostDireGuardPosts" />
+  <ship_group_cat name="GhostWormholeSentinels" />
+
+  <ship_group_cat name="SniperWaves" />
+  <ship_group_cat name="SniperReinforcements" />  
+  <ship_group_cat name="SniperTurrets" />
+  
+  <ship_group_cat name="FortressBaronTurrets" />  
+
+  <ship_group_cat name="GolemiteGolems" />
+  <ship_group_cat name="AIDecloakingShips" />
+  
+  <ship_group_cat name="ZombifyierTurrets" />
+  <ship_group_cat name="ZombifyierDireGuardPosts" />  
+  
+  <ship_group_cat name="SwarmerTurrets" />  
+  
+  <ship_group_cat name="WormholeMasterWormholeSentinels" />  
+</root>

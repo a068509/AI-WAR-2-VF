@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  
+  <tut_category name="Basics" display_name="Basics" sort_priority="100"
+        description="Les didacticiels de démarrage sur la façon de jouer." />
+
+  <tut_category name="Factions" display_name="Factions" sort_priority="500"
+        description="Tutoriels sur la façon de jouer avec des factions spécifiques." />
+
+  <tut_category name="Examples" display_name="Examples" sort_priority="999"
+        description="Pas de vrais tutoriels, mais des exemples sur la façon de mettre en place des tutoriels ou des scénarios pour les personnes qui cherchent à le faire (aucun codage requis!)." />
+
+</root>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <tip category="OtherFactions" name="Factions_DysonSphere" display_name="Dyson Spheres" sort_priority="1000"
+        full_text="A giant structure enveloping an entire STAR in order to harness its power is not something you want to tangle with... probably.  At any rate, you can't destroy a dyson sphere, so it all comes down to how you interact with it.
+        
+These spheres spawn alien ships that will periodically attack neighbors depending on what their allegience is (you can set this up at the game start, but the default is for them to hate everyone).
+
+If the AI controls their planet, then they will be particularly mad at the AI.  If you come and free them, then they may actually choose to help you out in the vicinity of their star for a while.
+
+If you, on the other hand, capture the dyson sphere planet for yourself... prepare for them to be very angry and constantly harassing you from then on.
+
+Multiple Dyson Spheres can be enabled at a time, and each can have a different colour and intensity. Enabling X dyson spheres divides the income of a given sphere by X so multiple Dysons won't be able to just crush the Galaxy.
+
+Dyson Spheres can be Antagonized. If a Dyson Antagonizer exists, all the Dyson Spheres drop what they are doing and start sending units to attack you. Previously created Dyson Sphere ships will keep their previous alignment (so if they were friendly before, they will fight Antagonized ships).  If an Antagonizer shows up, you'll want to make it a priority to get rid of it!" />
+
+  
+
+  <tip category="OtherFactions" name="Factions_DevourerGolem" display_name="Devourer Golem" sort_priority="1000"
+        full_text="These invincible world-eating planetoids are something to avoid including in your campaigns unless you are okay with a fair bit of luck influencing how things go.
+        
+If the devourer wanders into your main planets, it could be game over with very little you can do about it -- although, arguably, you could be devourer-proofing yourself by spreading your empire out a bit more.  They won't actually destroy your home command station, and they won't stay forever.
+
+On the other hand, they can be SUPER helpful in that they might pass through a bunch of AI planets, cleaning them out for you and giving you a critical opening to make some inroads.  Heck, you might even be able to lure the Hunter or Warden fleets over to where the devourer is, and get those chomped down without you having to directly do all that much work yourself.
+
+This is basically playing with a very large and scary godlike amoral entity roaming around, and if you're not prepared for the fallout of that you might have a very bad time.  But if you're smart about things, then it can be one way to win on the higher difficulties by using the chaos sown to your advantage." />
+
+
+
+  <tip category="OtherFactions" name="Factions_Macrophage" display_name="Macrophage" sort_priority="1000"
+        full_text="This faction is an invasion of giant organic Macrophage. They prey on Metal, devouring ships and structures they come across, and in particular they prey on the AI (since you haven't encountered them yet).
+        
+Macrophage live in colonies called Telium, which are hidden from the AI. A Telium sends out Macrophage to harvest metal by destroying human or AI ships. When a Colony has been fed enough metal it will create cloaked and harmless Spores which wander the galaxy. When spores encounter spores from other Telium they can reproduce to spawn a new Telium.
+
+By default, they are hostile to humans and AI alike -- but thankfully they are not very intelligent.
+
+If a Telium produces enough Macrophage, some of the Macrophage will be transformed into an Aggressive form and then go try to kill the human player. If a Telium is destroyed, all of the Macrophages associated with it will attack the player.
+
+This faction is a bit like reimagining the Devourer Golem as a part of an ecosystem.  They are far easier to deal with than the devourer since they are not so darn monolithic, but it's like the entire galaxy is infected... and mostly that is worse news for the AI than you if you play your cards right." />
+
+
+
+
+  <tip category="OtherFactions" name="Factions_Nanocaust" display_name="The Nanocaust" sort_priority="1000"
+        full_text="In some far flung corner of the galaxy, a plague of nanobots has arisen.  Some say they were a last ditch effort to destroy the AI from renegade human scientists; others say they were a forgotten weapon from a long dead race.  But wherever they came from, these nanobots are an insatiable plague.  They will conquer planet after planet with their zombification weapons, and once they conquer a planet they will continue to build more of their race.  If you've ever wondered what the AI dealing with when it wasn't fighting you, well...
+        
+This faction can be one of the biggest competitors to the AI in terms of outright territory capture if you raise their Strength high enough in the lobby.  This can be both good and bad for you, but at least makes it so that it's now a three-sided war.
+
+As with all the factions, you still only have to defeat the AI itself in order to win.  And if you're feeling like you want an alien buddy to play with, you can make the Nanocaust outright allied to you from the start using the lobby settings." />
+
+  <tip category="OtherFactions" name="Factions_HumanResistanceFighters" display_name="Human Resistance Fighters" sort_priority="1000"
+        full_text="Pockets of human allies still live in deep space around AI planets; when they see you attacking the AI, sometimes they will reveal themselves and join you.
+
+When you or an allied faction are in combat, the Human Resistance Fighters can warp in to help for the duration of a battle, and will warp out at the end of the fight." />
+
+  <tip category="OtherFactions" name="Factions_RiskAnalyzers" display_name="Risk Analyzers" sort_priority="1000"
+        full_text="The AI uses Risk Analyzers to detect threats; for each Risk Analyzer the AI controls, AI Progress will go up each hour. If you capture them then you can feed the AI bad intel and reduce AIP instead.
+
+The AI uses the information from Risk Analyzers to justify sending periodic Exogalactic Strikeforces against you." />
+
+  <tip category="OtherFactions" name="Factions_DarkSpire" display_name="Dark Spire" sort_priority="1000"
+        full_text="Several mysterious, ancient structures exist on AI planets throughout the galaxy. They cannot be harmed, and do not have any weapons, but they absorb energy when a ship dies on the same planet. What happens when they absorb too much?
+
+When enough units die on planets with Dark Spire Vengeance Generators, the Vengeance Generator will unleash a powerful force to attack everything in sight." />
+
+<tip category="OtherFactions" name="Factions_ZenithTrader" display_name="Zenith Trader" sort_priority="1000"
+        full_text="These alien traders are happy to do business with anyone who can pay. They travel around the galaxy, providing special ships (for a hefty fee) to both human and AI players alike." />
+
+<tip category="OtherFactions" name="Factions_Marauders" display_name="Marauders" sort_priority="1000"
+        full_text="Marauders are a powerful force that lives in deep space and will occasionally raid human or AI planets via traditional propulsion methods (and thus come in from the edge of a system, not a wormhole). Noone knows their origin, but they seem to use a fusion of human and AI technology.
+
+Marauders are capable of capturing planets and fortifying them. If you allow the Marauders to hold planets long enough then they will build fleets and conquer an empire." />
+
+<tip category="OtherFactions" name="Factions_AstroTrains" display_name="Astro Trains" sort_priority="1000"
+        full_text="These robotic couriers are used by the AI only. They travel between train Stations at random, eventually heading to a Depot where they will assist in the AI's war effort. 
+
+There are a variety of different Depots with different effects; the higher the Intensity of this faction the more powerful of effects Depots can have. Killing Trains gives the player some resources and will delay the Depot's effect." />
+
+<tip category="OtherFactions" name="Factions_NoFreePlanets" display_name="No Using Factions To Capture Planets For Free!" sort_priority="1100"
+        full_text="Some factions, such as the Marauders and Nanocaust, will destroy AI Command Stations in the process of capturing planets for themselves.
+		
+Since you destroy those Stations, as a player, to be able to capture the planet, it might seem that this is a 'free planet' - it's already gone, why would there be a penalty? However, that's not the case!
+
+The AI will still notice that you tried to move into territory it once had, and you'll get the AIP gain anyway, once your Command Station is fully built.
+
+You can see what it would cost, if anything, to capture a planet by hovering over it and checking the tooltip." />
+
+
+</root>

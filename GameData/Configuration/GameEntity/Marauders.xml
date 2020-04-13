@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <entity name="Marauder_Raider"
+            special_entity_type="Frigate"
+			tags="MarauderRaider,MarauderRaiderBasic" gimbal_icon_size_multiplier="1.25"
+			visuals="assets/_finalgamemeshes/guardians/implosionguardian/implosionguardian.prefab"
+			icon_name="Official/MarauderRaider"
+			size_scale="4.5"
+			visuals_scale_multiplier="5"
+			category="Ship"
+			y_offset_of_icon="10"
+			collision_priority="100"
+			display_name="Raider Frigate"
+			description="Ces pillards semblent être une infusion cyborg de la technologie de l'IA avec les Marauders."
+			starting_mark_level="Mark3" does_not_use_multipliers_from_mark_level="true"
+			cost_for_ai_to_purchase="3000"
+			hull_points="100000" shield_points="32000" speed="BelowAverage1"
+			metal_cost="160000" energy_consumption="7000"
+			armor_mm="120" albedo="0.4" engine_gx="18" mass_tx="5"
+			voice_group="Starship"
+			ship_or_structure_explosion_sfx="ShipStarship_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+      exp_to_grant_on_death="-1"
+      priority_as_ai_target="NormalStarship" priority_as_frd_target="BiggerStarship" priority_to_protect="SlightlyLessExpendable"
+			>
+    <system name="FusionRockets" display_name="Fusion Rockets"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="520" range="Small3" shot_speed="Normal" rate_of_fire="Misery"
+				shots_per_salvo="16" fires_salvos_sequentially="true"
+				shot_type_data="FusionRocket"				
+				>
+    </system>
+    <system name="PlasmaTorpedo" display_name="Plasma Torpedo"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="520" range="Small3" shot_speed="Slow" rate_of_fire="VeryLow" fires_salvos_sequentially="true"
+				shot_type_data="PlasmaTorpedoAOEBurstAtEnd"
+				area_of_effect_size="500"				
+				aoe_spreads_damage_among_available_targets="true"
+				>
+    </system>
+    <system name="HeavyBeamCannon" display_name="Heavy Beam Cannon"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="520" range="Small3" shot_speed="Normal" rate_of_fire="VeryLow" fires_salvos_sequentially="true"
+				stack_damage_multiplier="2"
+				shot_type_data="HeavyBeamInvisible"
+				beam_length_multiplier="1.3" hits_all_intersecting_targets="true" shots_detonate_immediately="true"
+				maximum_number_of_targets_hit_per_shot="10"
+				>
+    </system>
+	<system name="TachyonArray" display_name="Tachyon Array"
+				category="Passive" tachyon_points="50" tachyon_range="Small1" tachyon_hits_albedo_less_than="0.75"></system>
+  </entity>
+  
+  <entity name="Marauder_Drone_Raider"
+            special_entity_type="Frigate"
+			tags="MarauderRaider,MarauderRaiderBasic" gimbal_icon_size_multiplier="1.25"
+			visuals="assets/_finalgamemeshes/guardians/implosionguardian/implosionguardiancarrier.prefab"
+			icon_name="Official/MarauderRaider" icon_overlay="Official/Starship_Carrier"
+			size_scale="4.5"
+			visuals_scale_multiplier="16"
+			category="Ship"
+			y_offset_of_icon="10"
+			collision_priority="100"
+			display_name="Raider Drone Frigate"
+			description="Ces pillards semblent être une infusion cyborg-like de technologie AI avec les Marauders."
+			fleet_design_template_i_use_for_drones="CarrierStarshipDrones"
+			drone_starting_behavior_type="Attacker_Full"
+			starting_mark_level="Mark3" does_not_use_multipliers_from_mark_level="true"
+			cost_for_ai_to_purchase="3000"
+			hull_points="100000" shield_points="32000" speed="BelowAverage1"
+			metal_cost="160000" energy_consumption="7000"
+			armor_mm="120" albedo="0.4" engine_gx="18" mass_tx="5"
+			voice_group="Starship"
+			ship_or_structure_explosion_sfx="ShipStarship_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+      exp_to_grant_on_death="-1"
+      priority_as_ai_target="NormalStarship" priority_as_frd_target="BiggerStarship" priority_to_protect="SlightlyLessExpendable"
+			>
+     <metal_flow purpose="BuildingDronesInternally" throughput="500"  increase_per_mark_level="250"/>
+    <system name="FusionRockets" display_name="Fusion Rockets"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="260" range="Normal6" shot_speed="Normal" rate_of_fire="Misery"
+				shots_per_salvo="16" fires_salvos_sequentially="true"
+				shot_type_data="FusionRocket"				
+				>
+    </system>
+    <system name="PlasmaTorpedo" display_name="Plasma Torpedo"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="420" range="Normal6" shot_speed="Slow" rate_of_fire="VeryLow" fires_salvos_sequentially="true"
+				shot_type_data="PlasmaTorpedoAOEBurstAtEnd"
+				area_of_effect_size="500"				
+				aoe_spreads_damage_among_available_targets="true"
+				>
+    </system>
+    <system name="HeavyBeamCannon" display_name="Heavy Beam Cannon"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="300" range="Normal6" shot_speed="Normal" rate_of_fire="VeryLow" fires_salvos_sequentially="true"
+				stack_damage_multiplier="2"
+				shot_type_data="HeavyBeamInvisible"
+				beam_length_multiplier="1.3" hits_all_intersecting_targets="true" shots_detonate_immediately="true"
+				maximum_number_of_targets_hit_per_shot="10"
+				>
+    </system>
+	<system name="TachyonArray" display_name="Tachyon Array"
+				category="Passive" tachyon_points="50" tachyon_range="Small1" tachyon_hits_albedo_less_than="0.75"></system>
+  </entity>
+  
+
+
+
+  <entity name="MarauderOutpost" special_entity_type="NPCFactionCenterpiece"
+			tags="MarauderOutpost" cannot_be_stacked="true"
+			visuals="Assets/_FinalGameMeshes/HumanOddities/MarauderOutpost/MarauderOutpost.prefab" gimbal_name="Marauder Outpost"
+			icon_name="Official/MarauderOutpost" gimbal_icon_size_multiplier="1.4"
+			category="Ship"
+			visuals_scale_multiplier="3.5"
+            size_scale="8"
+			y_offset_of_icon="30"
+			collision_priority="810"
+			display_name="Marauder Outpost"
+			description="Les Maraudeurs ont l'intention de tenir cette planète. Cet avant-poste sera le centre des défenses des Maraudeurs."
+			fleet_design_template_i_use_for_drones="MarauderDrones"
+			drone_starting_behavior_type="Attacker_Full"
+			behavior="Stationary"
+			starting_mark_level="Mark1"
+			cost_for_ai_to_purchase="200"
+			hull_points="50000" shield_points="100000" speed="Immobile"
+			metal_cost="120000" energy_consumption="0"
+			armor_mm="140" albedo="0.4" mass_tx="5"
+                        grants_minor_faction_planet_control="true"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			voice_group="Silent"
+			description_appender_dll="AIWarExternalCode"
+			description_appender_type="Arcen.AIW2.External.MarauderOutpostDescriptionAppender"
+      exp_to_grant_on_death="-1"
+      priority_as_ai_target="IrreplaceableMisc" priority_as_frd_target="NotDangerous" priority_to_protect="BigFavoriteToy"
+			>
+    <metal_flow purpose="BuildingDronesInternally" throughput="250"  increase_per_mark_level="500"/>
+              <system name="FusionRockets" display_name="Fusion Rockets"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="120" range="Small3" shot_speed="Normal" rate_of_fire="Sloth"
+				shots_per_salvo="5" fires_salvos_sequentially="true"
+				shot_type_data="FusionRocket"				
+				>
+    </system>
+
+    <system name="TachyonArray" display_name="Tachyon Array"
+	    category="Passive"
+	    tachyon_points="50" tachyon_points_added_per_mark="25" tachyon_range="EssentiallyInfinite" tachyon_hits_albedo_less_than="99"
+	    >
+
+      </system>
+
+  </entity>
+  <entity name="WarpingInMarauderOutpost" special_entity_type="NPCFactionCenterpiece"
+			tags="WarpingInMarauderOutpost" cannot_be_stacked="true"
+			visuals="Assets/_FinalGameMeshes/HumanOddities/MarauderOutpost/MarauderOutpost.prefab" gimbal_name="Marauder Outpost"
+			icon_name="Official/MarauderOutpost" gimbal_icon_size_multiplier="1.4"
+			category="Ship"
+			visuals_scale_multiplier="3.5"
+            size_scale="8"
+			y_offset_of_icon="30"
+			collision_priority="810"
+			display_name="Warping-In Marauder Outpost"
+			description="Les Maraudeurs se déforment dans un avant-poste de Maraudeurs."
+			fleet_design_template_i_use_for_drones="MarauderDrones"
+			drone_starting_behavior_type="Attacker_Full"
+			behavior="Stationary"
+			starting_mark_level="Mark1"
+			cost_for_ai_to_purchase="200"
+			hull_points="5000" shield_points="100000" speed="Immobile"
+			metal_cost="12000" energy_consumption="0"
+			armor_mm="140" albedo="0.4" mass_tx="5"
+                        grants_minor_faction_planet_control="true"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			voice_group="Silent"
+                        exp_to_grant_on_death="-1"
+                        priority_as_ai_target="IrreplaceableMisc" priority_as_frd_target="NotDangerous" priority_to_protect="BigFavoriteToy"
+			>
+
+  </entity>
+
+</root>

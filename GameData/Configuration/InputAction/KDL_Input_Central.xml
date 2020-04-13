@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <input_action name="SelectUnit"
+      category="Critical" display_name="Select Unit"
+      description="Press this button with the mouse hovered over it to select it, or hold this button and drag the mouse to create a selection area."
+      check_type="Custom" key="LeftMouse" />
+  <input_action name="GiveOrdersToUnit"
+      category="Critical" display_name="Give Orders To Unit"
+      description="With one or more units selected, press this button to give them an order.  Clicking empty space is a move order; clicking another unit is attack, repair, etc."
+      check_type="Custom" key="RightMouse" />
+
+  <input_action name="ToggleGalaxyMap"
+      category="Critical" display_name="Toggle Galaxy Map"
+      description="There are two main views in the game, and this toggles between them.
+
+The galaxy map shows an overview of all the planets.  At different zoom levels, you can see various intel.  Paired with the objectives tab of your sidebar, all strategic decisions are at your fingertips.
+
+The planet view, or 'main view,' shows the battlefield around a single planet.  This is where you do all your constructing, fighting, and so on.  You'll move your view between planets fairly often."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      key="Tab" />
+
+  <input_action name="SendThroughWormhole"
+      category="Critical" display_name="Send Through Wormhole"
+      description="Normally clicking on or near a wormhole does nothing, because you'd accidentally send your units or camera through all the time.  However, holding down this button lets you interact with the wormhole to send units through (by default right-click) or your camera through (by default left-click).  Holding this also makes the name of the planet on the other side appear."
+      check_type="Custom" key="LeftControl" />
+  <input_action name="SuppressTooltips"
+      category="Tooltips/Details" display_name="Suppress Tooltips"
+      description="Sometimes you just want to look around without tooltips coming up at all.  Hold this key to do so."
+      check_type="Custom" key="LeftShift" />
+  <input_action name="ToggleShipAndPlanetTooltipDetailMode"
+      category="Hidden" display_name="Deprecated Toggle"
+      description="Deprecated"
+      check_type="Custom" key="None" />
+  
+  <input_action name="IncreaseShipAndPlanetTooltipDetailBy1_Key1"
+      category="Tooltips/Details" display_name="Increase Ship And Planet Tooltip Detail (Key 1)"
+      description="By default, the amount of information about ships and planets is heavily abbreviated.  Hold this key alone to see the medium detail view.  Hold this AND the other 'increase detail' key to see the max detail.
+      
+In the tooltips section of the settings menu, you can adjust the default up to show medium or high detail.  In those cases, there's no way to see the abbreviated versions."
+      check_type="Custom" key="LeftControl" />
+  <input_action name="IncreaseShipAndPlanetTooltipDetailBy1_Key2"
+      category="Tooltips/Details" display_name=" (Key 1) Ship And Planet Tooltip Detail (Key 2)"
+      description="By default, the amount of information about ships and planets is heavily abbreviated.  Hold this key alone to see the medium detail view.  Hold this AND the other 'increase detail' key to see the max detail.
+      
+In the tooltips section of the settings menu, you can adjust the default up to show medium or high detail.  In those cases, there's no way to see the abbreviated versions."
+      check_type="Custom" key="LeftAlt" />
+  <input_action name="HoldAndClickToViewDetailsOfContents"
+      category="Tooltips/Details" display_name="Hold And Click To View Details Of Contents"
+      description="Hold this key down when clicking a button or a ship in order to view the details of any ships contained within that clicked item (ships in a wave, ships in a transport, ships in a fleet, ships improved by a tech).
+      
+This is SUPER important for finding out what the actual stats are of ships that otherwise would just be a list of names."
+      check_type="Custom" key="C" />
+
+  <input_action name="TakeSafestPath"
+      category="Selection" display_name="Take Safest Path Through Galaxy"
+      description="When sending orders to move ships between planets, hold this button to make sure your ships take the safest path through the galaxy."
+      check_type="Custom" key="X" />
+
+  <input_action name="TakeShortestPath"
+      category="Selection" display_name="Take Shortest Path Through Galaxy"
+      description="When sending orders to move ships between planets, hold this button to make sure your ships take the shortest path."
+      check_type="Custom" key="Y" />
+
+  <input_action name="SuppressTechUpgradePrompt"
+      category="Tooltips/Details" display_name="Holding this suppresses the tech upgrade 'Are you sure?' prompt"
+      description="Hold this button to suppress the tech upgrade 'Are you sure?' prompt, without needing to disable it altogether."
+      check_type="Custom" key="X" />
+
+  <input_action name="HoldToSeeShipStrengthsAndWeaknesses"
+      category="Tooltips/Details" display_name="Hold To See Ship Strengths And Weaknesses"
+      description="Hold this key down when you're viewing a ship tooltip, and the regular tooltip will be replaced with what this ship is strong against or weak against."
+      check_type="Custom" key="R" />
+
+  <input_action name="AddToSelection"
+      category="Selection" display_name="Add To Selection"
+      description="Normally when you select units, you replace what was previously selected.  Hold this button down to add the new selection to the old one, instead."
+      check_type="Custom" key="LeftShift" />
+  <input_action name="RemoveFromSelection"
+      category="Selection" display_name="Remove From Selection"
+      description="Normally when you select units, you replace what was previously selected.  Hold this button down to keep the existing selection, but remove any units you're selecting now that were in the selection."
+      check_type="Custom" key="LeftAlt" />
+  <input_action name="Build5xUnits"
+      category="Common" display_name="Build 5x Units"
+      description="Normally when you click to place a turret or similar, it just builds the one unit there.  Hold down this key, and it will instead build a cluster of 5 (assuming you have the cap free for that).
+      
+Hold this AND the 'Build 10x' button to build 50 at a time."
+      check_type="Custom" key="LeftControl" />
+  <input_action name="Build10xUnits"
+      category="Common" display_name="Build 10x Units"
+      description="Normally when you click to place a turret or similar, it just builds the one unit there.  Hold down this key, and it will instead build a cluster of 10 (assuming you have the cap free for that).
+      
+Hold this AND the 'Build 5x' button to build 50 at a time."
+      check_type="Custom" key="LeftAlt" />
+</root>

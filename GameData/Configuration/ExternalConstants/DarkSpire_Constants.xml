@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root
+    is_partial_record="true"
+    custom_int_DarkSpire_DefaultConversionRatioLowIntensity="30"
+    custom_int_DarkSpire_DefaultConversionRatioMediumIntensity="50"
+    custom_int_DarkSpire_DefaultConversionRatioHighIntensity="70"
+    custom_FInt_DarkSpire_DefaultEnergyThreshold="3500.0"
+    custom_int_DarkSpire_EnergyToShare="500"
+    custom_int_DarkSpire_LocusWarpInTime="300"
+    custom_int_DarkSpire_IntervalBetweenAttempedLoci="1800"
+    custom_int_DarkSpire_IntervalBetweenAttempedLociConquest="60"
+    custom_int_DarkSpire_BonusConversionRatioForIntensity="5"
+    custom_int_DarkSpire_BonusConversionRatioPerAttack="10"
+    custom_int_DarkSpire_BonusConversionRatioPerAttackLow="2"
+    custom_int_DarkSpire_BonusConversionRatioPerAttackMed="5"
+    custom_int_DarkSpire_BonusConversionRatioPerAttackHigh="10"
+    custom_int_DarkSpire_ConversionRatioCapLow="100"
+    custom_int_DarkSpire_ConversionRatioCapMed="120"
+    custom_int_DarkSpire_ConversionRatioCapHigh="500"
+    custom_int_DarkSpire_PercentToShareEnergy="25"
+    custom_int_DarkSpire_BaseMinutesBetweenVengeanceStrike="121"
+    custom_int_DarkSpire_TimeInMinutesForFirstVengeanceStrike="115"
+    custom_FInt_DarkSpire_VengeanceStrikeEnergyMultiplier="2.5"
+    custom_int_DarkSpire_MinTimeInMinutesBeforeLocusesAreAllowed="10"
+    custom_int_DarkSpire_EnergyThresholdIncreasePerAttack="1000"
+    custom_int_DarkSpire_EnergyIncomePerAIPPerMinute="4"
+    custom_FInt_DarkSpire_EnergyIncomeMultiplierLowIntensity="0.7"
+    custom_FInt_DarkSpire_EnergyIncomeMultiplierMediumIntensity="1.0"
+    custom_FInt_DarkSpire_EnergyIncomeMultiplierHighIntensity="2.0"
+    custom_int_DarkSpire_NumShipDesignsDownloadable="3"
+    >
+  <!-- energy income is from having the player steal a Dark Spire ship -->
+</root>

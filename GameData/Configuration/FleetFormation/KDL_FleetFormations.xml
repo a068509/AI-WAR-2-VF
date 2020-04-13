@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <formation name="Blob"
+           display_name="Blob"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.Formation_Blob"
+  >
+  </formation>
+  <formation name="ReverseBlob"
+           display_name="Reverse Blob"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.Formation_ReverseBlob"
+  >
+  </formation>
+</root>

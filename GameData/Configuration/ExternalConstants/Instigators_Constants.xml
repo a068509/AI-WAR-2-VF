@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root
+    is_partial_record="true"
+    custom_int_Instigators_IntervalBetweenBaseSpawnsLow="5200"
+    custom_int_Instigators_IntervalBetweenBaseSpawnsMed="4600"
+    custom_int_Instigators_IntervalBetweenBaseSpawnsHigh="4000"
+    custom_int_Instigators_TimeForInitialBaseSpawn="4400"
+>
+</root>

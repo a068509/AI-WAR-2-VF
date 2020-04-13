@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <entity name="AssaultFrigate"
+			special_entity_type="Frigate" gimbal_icon_size_multiplier="1.25"			
+			visuals="assets/_finalgamemeshes/starships/prototypeflagship/prototypeflagship.prefab"
+			icon_name="Official/Starship" icon_overlay="Official/Starship_Assault"
+			size_scale="5"
+			visuals_scale_multiplier="2"
+			category="Ship"
+			y_offset_of_icon="15"
+			collision_priority="500"
+			display_name="Assault Frigate"
+			description="Frappeur lourd Frégate qui martèle des cibles plus blindées, tout en contournant certains boucliers personnels."
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Heavy,Fusion"
+			cost_for_ai_to_purchase="982"			
+			hull_points="165000" shield_points="82500" speed="Normal1"
+			metal_cost="120000" energy_consumption="12500"
+			armor_mm="140" engine_gx="16" albedo="0.4" mass_tx="5"
+			voice_group="Starship"
+			ship_or_structure_explosion_sfx="ShipStarship_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+      exp_to_grant_on_death="40"
+      priority_as_ai_target="NormalStarship" priority_as_frd_target="NormalStarship" priority_to_protect="SlightlyLessExpendable"
+      >
+    <fleet_membership name="AddedToFleet" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+    <fleet_membership name="BasicOffensiveMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+    <fleet_membership name="ClassicTrioMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+    <fleet_membership name="FrigatesWithSupport" ship_cap_group="Frigate" weight="100" min="2" max="2"/>
+    <fleet_membership name="SelfSacrificingOffensiveMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+	<fleet_membership name="AbductorBomberMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+	<fleet_membership name="CooperativeFusionMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+    <ai_ship_group_membership name="LotsOfFrigates" weight="100"/>
+	<ai_ship_group_membership name="AssaultFrigateFusionBomber" weight="25"/>
+	<ai_ship_group_membership name="AntiHighArmourMix" weight="10"/>	
+    <system name="FusionBomb" display_name="Reactive Fusion Bomb"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="2100" range="Normal2" shot_speed="Normal" rate_of_fire="High" fires_salvos_sequentially="true"
+				shot_type_data="FusionBomb"	
+				base_percent_damage_bypasses_personal_shields="0.6"
+				>
+        <outgoing_damage_modifier based_on="Armor_mm" comparison_type="AtLeast" compared_to="90" multiplier="3" />
+    </system>
+	 <system name="BallisticCannon" display_name="Point Defense"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="400" range="Normal2" shot_speed="Normal" rate_of_fire="High" fires_salvos_sequentially="false"
+				shots_per_salvo="8"
+				shot_type_data="ArmorPiercingShell"	
+				>
+    </system>
+  </entity>
+
+  <entity name="HRFAssaultFrigate" skip_export="true" copy_from="AssaultFrigate"  starting_mark_level="Mark2" tags="HighHRFSpawn" exp_to_grant_on_death="-1"></entity>
+
+  <entity name="Brawler" copy_from="AssaultFrigate" tech_upgrades_that_benefit_me="Heavy,Concussion"
+      display_name="Brawler Frigate"	
+			description="Frégate durable et lente qui tire de nombreux missiles qui repoussent les ennemis, les ralentissent et blessent lourdement les cibles lentes."
+			hull_points="262500" shield_points="127500" metal_cost="240000" energy_consumption="25000"
+			speed="BelowAverage1"
+      exp_to_grant_on_death="40" cost_for_ai_to_purchase="1532"
+      >
+    <fleet_membership name="AddedToFleet" ship_cap_group="Frigate" weight="10" min="1" max="1"/>
+    <fleet_membership name="UnusualMix" ship_cap_group="Frigate" weight="100" min="1" max="1"/>
+    <fleet_membership name="SturdyOffensiveMix" ship_cap_group="Frigate" weight="100" min="1" max="1"/>
+	<fleet_membership name="DebufferMix" ship_cap_group="Frigate" weight="100" min="1" max="1"/>
+	<fleet_membership name="EngineStunMix" ship_cap_group="Frigate" weight="100" min="1" max="1"/>
+	<fleet_membership name="MissileMix" ship_cap_group="Frigate" weight="100" min="1" max="1"/>
+	<ai_ship_group_membership name="BrawlerFrigateTarantula" weight="25"/>
+	<ai_ship_group_membership name="BrawlerFrigateSiegeFrigate" weight="100"/>	
+	<ai_ship_group_membership name="FootballMix" weight="25"/>
+	<ai_ship_group_membership name="SniperAIFootballMix" weight="25"/>
+    <system name="FusionBomb" range="Small5" max_mark_level_to_function="0" />
+    <system name="BallisticCannon" damage_per_shot="200" rate_of_fire="Misery" shots_per_salvo="25" range="Small5" shot_type_data="GuidedMissile" display_name="Repulsor Missile"
+            base_knockback_per_shot="1500" added_knockback_per_shot_per_mark="250" knockback_to_ships_mass_tx_less_than="2"
+			base_engine_stun_per_shot="8" added_engine_stun_per_shot_per_mark="2" engine_stun_to_engine_gx_less_than="14" max_engine_stun_seconds="30" added_target_evaluator="EngineDamageAsMinorPart">
+	<outgoing_damage_modifier based_on="CurrentSpeedIfMoving" comparison_type="AtMost" compared_to="400" multiplier="2" /> 	</system>			
+  </entity>
+  
+  <entity name="DefensiveAssaultFrigate" skip_export="true" copy_from="AssaultFrigate"
+          build_sidebar_categories_i_am_part_of="StationKeepers" fleet_membership="Planetary" destroys_self_until_not_over_ship_cap_if_planetary_command="true"
+          tags="DefensiveAssaultFrigate"
+      display_name="Station-Keeping Assault Frigate" display_name_for_sidebar="Assault Frigate"
+			description="Frégate de maintien en position de frappeur lourd qui martèle plus de cibles blindées, tout en contournant certains boucliers personnels."
+      exp_to_grant_on_death="40">
+    <fleet_membership name="PlayerHomeCommand" ship_cap_group="OtherDefense" weight="100" min="2" max="2"/>
+    <fleet_membership name="PlayerMilitaryCommand" ship_cap_group="OtherDefense" weight="100" min="2" max="2"/>
+    <fleet_membership name="PlayerLogisticalCommand" ship_cap_group="OtherDefense" weight="100" min="1" max="1"/>
+    <metal_flow purpose="SelfConstruction" throughput="500"/>
+  </entity>
+
+  <entity name="Mugger" copy_from="AssaultFrigate"
+      display_name="Mugger Frigate"
+			description="Frégate durable et lente dotée d'une arme à bombe fusion zombifiante."
+			hull_points="262500" shield_points="127500" metal_cost="240000" energy_consumption="25000"
+			speed="BelowAverage1"
+      exp_to_grant_on_death="40" cost_for_ai_to_purchase="1500"
+			>
+    <fleet_membership name="UnusualMix" ship_cap_group="Frigate" weight="100" min="1" max="1"/>
+    <fleet_membership name="SturdyOffensiveMix" ship_cap_group="Frigate" weight="100" min="1" max="1"/>
+	<fleet_membership name="ZombificationMix" ship_cap_group="Frigate" weight="100" min="1" max="1"/>
+	<fleet_membership name="ZombificationAntiCounterMix" ship_cap_group="Frigate" weight="100" min="1" max="1"/>
+    <fleet_membership name="AddedToFleet" ship_cap_group="Frigate" weight="10" min="1" max="1"/>
+	<ai_ship_group_membership name="MuggerParasiticFusionBomber" weight="25"/>
+	<ai_ship_group_membership name="ZombifyingStrikecraftAndFrigates" weight="25"/>
+    <system name="FusionBomb" damage_per_shot="1700" added_target_evaluator="ZombifyAsPrimary" >
+      <death_effect_damage type="Zombification" tier_name="Mugger"/>
+    </system>
+  </entity>
+
+  <entity name="CloakedMugger" copy_from="AssaultFrigate"
+      display_name="Cloaked Mugger Frigate"
+			description="Frégate durable et lente dotée d'une arme à bombe fusion zombifiante et d'un camouflage."
+			hull_points="175000" shield_points="85000" metal_cost="240000" energy_consumption="25000"
+			speed="BelowAverage1" albedo="0.7"
+      exp_to_grant_on_death="40"
+			>
+    <fleet_membership name="CloakedMix" ship_cap_group="Frigate" weight="100" min="1" max="1"/>
+    <fleet_membership name="AddedToFleet" ship_cap_group="Frigate" weight="10" min="1" max="1"/>
+    <system name="Cloaker" display_name="Cloaking Device"
+				category="Passive"
+				cloaking_points="2000"
+				cloaking_points_added_per_mark="1000" cloaking_percent_loss_from_firing="0.5"
+				>
+    </system>
+    <system name="FusionBomb" damage_per_shot="1700" added_target_evaluator="ZombifyAsPrimary" >
+      <death_effect_damage type="Zombification" tier_name="Mugger"/>
+    </system>
+  </entity>
+
+
+  
+  
+  <entity name="RaidFrigate"
+			special_entity_type="Frigate" gimbal_icon_size_multiplier="1.25"			 
+			visuals="assets/_finalgamemeshes/starships/raidstarship/raidstarship.prefab"
+			icon_name="Official/Starship" icon_overlay="Official/Starship_Raid"
+			size_scale="2.8"
+			visuals_scale_multiplier="4.5"
+			category="Ship"
+			y_offset_of_icon="15"
+			collision_priority="500"
+			display_name="Raid Frigate"
+			description="Frégate masquée rapide, qui contourne la plupart des blindages personnels, mais fragile et une cible hautement prioritaire pour l'IA. Bon pour les raids hit and run."
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Raid,Light"
+			cost_for_ai_to_purchase="500"
+			hull_points="21000" shield_points="39000" speed="VeryHigh1"
+			metal_cost="80000" energy_consumption="7500"
+			armor_mm="50" engine_gx="18" albedo="0.7" mass_tx="5"
+			voice_group="Starship"
+			ship_or_structure_explosion_sfx="ShipStarship_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+      exp_to_grant_on_death="40"
+      priority_as_ai_target="MidNasty" priority_as_frd_target="MidNasty" priority_to_protect="SlightlyLessExpendable"
+			>
+	<fleet_membership name="FrigatesWithSupport" ship_cap_group="Frigate" weight="10" min="3" max="3"/>		
+    <fleet_membership name="AddedToFleet" ship_cap_group="Frigate" weight="100" min="2" max="3"/>			
+    <fleet_membership name="RaidOffensiveMix" ship_cap_group="Frigate" weight="100" min="3" max="3"/>
+    <fleet_membership name="FragileOffensiveMix" ship_cap_group="Frigate" weight="50" min="2" max="3"/>
+    <fleet_membership name="CloakedMix" ship_cap_group="Frigate" weight="100" min="2" max="3"/>
+    <system name="FusionBolt" display_name="Fusion Bolt"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="3500" range="Normal3" shot_speed="Fast" rate_of_fire="Low" fires_salvos_sequentially="true"
+				shot_type_data="FusionBolt"
+				base_percent_damage_bypasses_personal_shields="0.9"
+				>
+				<outgoing_damage_modifier based_on="MyTimeAtPlanet" comparison_type="LessThan" compared_to="12" multiplier="3" />
+    </system>
+    <system name="Cloaker" display_name="Cloaking Device"
+				category="Passive"
+				cloaking_points="2000"
+				cloaking_points_added_per_mark="1000"
+				>
+    </system>
+	<incoming_damage_modifier based_on="AttackDistance" comparison_type="GreaterThan" compared_to="4400" multiplier="0.25" />
+  </entity>
+ 
+  <entity name="BountyHunter" copy_from="RaidFrigate" display_name="Bounty Hunter Frigate"	
+			description="Frégate masquée rapide, qui fait que les ennemis touchés donnent du métal à la mort et endommage considérablement les nouveaux arrivants sur la planète."
+			>
+    <fleet_membership name="RaidOffensiveMix" ship_cap_group="Frigate" weight="100" min="2" max="3"/>
+    <fleet_membership name="FragileOffensiveMix" ship_cap_group="Frigate" weight="25" min="2" max="3"/>
+    <fleet_membership name="CloakedMix" ship_cap_group="Frigate" weight="100" min="2" max="3"/>
+	<fleet_membership name="SelfSacrificingOffensiveMix" ship_cap_group="Frigate" weight="100" min="2" max="3"/>
+	<fleet_membership name="BullyMix" ship_cap_group="Frigate" weight="100" min="2" max="3"/>
+	<fleet_membership name="GluttonyMix" ship_cap_group="Frigate" weight="100" min="2" max="3"/>
+	<fleet_membership name="AddedToFleet" ship_cap_group="Frigate" weight="10" min="2" max="3"/>
+    <system name="FusionBolt" damage_per_shot="3500" base_percent_damage_bypasses_personal_shields="0" shot_type_data="Ambush" display_name="Metabolizing Deadline Injector" >
+	<outgoing_damage_modifier based_on="TargetTimeAtPlanet" comparison_type="LessThan" compared_to="15" multiplier="6" />
+    <death_effect_damage type="GreaterMetabolization" tier_name="BountyHunter"/> </system>	
+  </entity> 
+ 
+  <entity name="Apparition" copy_from="RaidFrigate" display_name="Apparition Frigate"	
+			description="Frégate masquée rapide, qui contourne la plupart des boucliers personnels avec de faibles dégâts généraux, mais beaucoup plus que les cibles saines. Résiste également aux hostiles éloignés."
+			>
+    <fleet_membership name="RaidOffensiveMix" ship_cap_group="Frigate" weight="100" min="3" max="3"/>
+    <fleet_membership name="FragileOffensiveMix" ship_cap_group="Frigate" weight="25" min="2" max="3"/>
+    <fleet_membership name="CloakedMix" ship_cap_group="Frigate" weight="100" min="2" max="3"/>
+	<fleet_membership name="CooperativeFusionMix" ship_cap_group="Frigate" weight="100" min="2" max="3"/>
+	<fleet_membership name="AddedToFleet" ship_cap_group="Frigate" weight="10" min="2" max="3"/>
+	<ai_ship_group_membership name="MirageApparitionFrigate" weight="25"/>
+    <system name="FusionBolt" damage_per_shot="2000" >
+	<outgoing_damage_modifier based_on="CurrentHullPercentage" applies_to="HullOnly" comparison_type="AtLeast" compared_to="50" multiplier="4" /> 	</system>
+	<incoming_damage_modifier based_on="AttackDistance" comparison_type="GreaterThan" compared_to="4400" multiplier="0.01" />
+  </entity>  
+
+
+  <entity name="AIRaidFrigate"
+			special_entity_type="Frigate" gimbal_icon_size_multiplier="1.25"			
+			visuals="assets/_finalgamemeshes/starships/raidstarship/raidstarship.prefab"
+			icon_name="Official/Starship" icon_overlay="Official/Starship_Raid"
+			size_scale="2.4"
+			visuals_scale_multiplier="4.5"
+			category="Ship"
+			y_offset_of_icon="15"
+			collision_priority="500"
+			display_name="AI Raid Frigate"
+			description="Frégate masquée rapide qui ignore presque tous les boucliers personnels des cibles. Il faut se méfier. "
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Unused"
+			cost_for_ai_to_purchase="600"			
+			hull_points="21000" shield_points="39000" speed="VeryHigh1"
+			metal_cost="80000" energy_consumption="7500"
+			armor_mm="50" engine_gx="18" albedo="0.7" mass_tx="4"
+			voice_group="Starship"
+			ship_or_structure_explosion_sfx="ShipStarship_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+      exp_to_grant_on_death="40"
+      priority_as_ai_target="MidNasty" priority_as_frd_target="MidNasty" priority_to_protect="SlightlyLessExpendable"
+			>
+    <ai_ship_group_membership name="RaidStrikecraftAndFrigates" weight="5"/>
+    <ai_ship_group_membership name="LotsOfFrigates" weight="100"/>
+    <system name="FusionBolt" display_name="Fusion Bolt"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="3500" range="Normal3" shot_speed="Fast" rate_of_fire="Low" fires_salvos_sequentially="true"
+				shot_type_data="FusionBolt"
+				base_percent_damage_bypasses_personal_shields="0.9"
+				>
+				<outgoing_damage_modifier based_on="MyTimeAtPlanet" comparison_type="LessThan" compared_to="12" multiplier="3" />
+    </system>
+    <system name="Cloaker" display_name="Cloaking Device"
+				category="Passive"
+				cloaking_points="2000"
+				cloaking_points_added_per_mark="1000"
+				>
+    </system>
+	<incoming_damage_modifier based_on="AttackDistance" comparison_type="GreaterThan" compared_to="4400" multiplier="0.25" />
+  </entity>
+  
+   <entity name="ViciousRaidFrigate" copy_from="AIRaidFrigate" display_name="Vicious Raid Frigate"  
+	  description="Frégate masquée rapide qui ignore presque tous les boucliers personnels sur les cibles et dévaste les champs de force à bulles."
+	  starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Raid,Light"
+	  strength_multiplier="4"
+      exp_to_grant_on_death="40"
+	  >
+     <fleet_membership name="UnusualMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+	 <fleet_membership name="VeteranViciousMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+	 <ai_ship_group_membership name="ViciousRaidStrikecraftAndFrigates" weight="20"/>
+    <system name="FusionBolt">
+      <outgoing_damage_modifier applies_to="AllShields" based_on="MaxBubbleForcefield" comparison_type="GreaterThan" compared_to="10000" multiplier="5" />
+    </system>
+
+  </entity>
+
+  
+  <entity name="WatchmanFrigate"
+          build_sidebar_categories_i_am_part_of="StationKeepers" fleet_membership="Planetary" destroys_self_until_not_over_ship_cap_if_planetary_command="true"
+          tags="WatchmanFrigate"
+      special_entity_type="Frigate" gimbal_icon_size_multiplier="1.25"			 
+			visuals="assets/_finalgamemeshes/starships/raidstarship/raidstarship.prefab"
+			icon_name="Official/Starship" icon_overlay="Official/Starship_Raid"
+			size_scale="2.8"
+			visuals_scale_multiplier="4.5"
+			category="Ship"
+			y_offset_of_icon="15"
+			collision_priority="500"
+      display_name="Station-Keeping Watchman Frigate" display_name_for_sidebar="Watchman Frigate"
+			description="Petite frégate à maintien rapide qui aide à nettoyer les ennemis retardataires qui pourraient autrement camper sur vos planètes ou se cacher juste hors de portée de vos tourelles."
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Raid,Light"
+			cost_for_ai_to_purchase="800"
+			hull_points="60000" shield_points="30000" speed="VeryHigh1"
+			metal_cost="70000" energy_consumption="3000"
+			armor_mm="50" engine_gx="18" albedo="0.4" mass_tx="4"
+			voice_group="Starship"
+			ship_or_structure_explosion_sfx="ShipStarship_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+      exp_to_grant_on_death="40"
+      priority_as_ai_target="MidNasty" priority_as_frd_target="MidNasty" priority_to_protect="SlightlyLessExpendable">
+    <system name="BallisticCannon" display_name="Ballistic Cannon"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="1000" range="Normal4" shot_speed="Normal" rate_of_fire="Normal" fires_salvos_sequentially="true"
+				shot_type_data="ArmorPiercingShell"
+				/>
+    <fleet_membership name="PlayerHomeCommand" ship_cap_group="OtherDefense" weight="100" min="4" max="4"/>
+    <fleet_membership name="PlayerMilitaryCommand" ship_cap_group="OtherDefense" weight="100" min="4" max="4"/>
+    <fleet_membership name="PlayerLogisticalCommand" ship_cap_group="OtherDefense" weight="100" min="3" max="3"/>
+    <fleet_membership name="PlayerEconomicCommand" ship_cap_group="OtherDefense" weight="100" min="2" max="2"/>    
+    <metal_flow purpose="SelfConstruction" throughput="500"/>
+  </entity>
+
+
+  <entity name="ForcefieldFrigate"
+			special_entity_type="Frigate" gimbal_icon_size_multiplier="1.25"
+			visuals="assets/_finalgamemeshes/starships/shieldstarship/shieldstarship.prefab"
+			icon_name="Official/Starship" icon_overlay="Official/Starship_Shield"
+			category="Ship"
+			size_scale="4.5"
+			visuals_scale_multiplier="4"
+			y_offset_of_icon="15"
+			collision_priority="600"
+			display_name="Forcefield Frigate"
+			description="Se protège et attaque les navires proches. Les unités protégées par cela infligeront la moitié des dégâts habituels."
+			shield_size_scale="5" my_forcefield_does_not_shrink="true"
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Forcefields"
+			cost_for_ai_to_purchase="1200"
+			max_count_per_npc_faction_before_stack="3"
+			hull_points="32000" shield_points="250000" speed="Normal2"
+			metal_cost="120000" energy_consumption="12500"
+			armor_mm="85" engine_gx="16" albedo="0.4" mass_tx="5"
+			voice_group="Starship"
+			ship_or_structure_explosion_sfx="ShipStarship_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+      exp_to_grant_on_death="40"
+      priority_as_ai_target="ShieldGenerator" priority_as_frd_target="ShieldGenerator" priority_to_protect="SlightlyLessExpendable"
+			>
+    <fleet_membership name="AddedToFleet" ship_cap_group="Frigate" weight="50" min="1" max="1"/>			
+    <fleet_membership name="SelfSacrificingOffensiveMix" ship_cap_group="Frigate" weight="5" min="1" max="1"/>
+    <fleet_membership name="SturdyOffensiveMix" ship_cap_group="Frigate" weight="25" min="1" max="1"/>
+    <ai_ship_group_membership name="LotsOfFrigates" weight="1"/>
+    <system name="BallisticCannon" display_name="Ballistic Cannon"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="1000" range="Normal6" shot_speed="Normal" rate_of_fire="Normal" fires_salvos_sequentially="true"
+				shot_type_data="ArmorPiercingShell"				
+				>
+    </system>
+  </entity>
+
+  <entity name="AnvilSecuritiesForcefieldFrigate" skip_export="true" copy_from="ForcefieldFrigate" tags="AnvilSecuritiesForcefieldFrigate"
+          display_name="Anvil Securities Forcefield Frigate" max_count_per_npc_faction_before_stack="3" exp_to_grant_on_death="-1"
+			 >  
+  </entity>
+			 
+  <entity name="Siphoner" copy_from="ForcefieldFrigate"
+            display_name="Siphoner Frigate"	
+			description="Se protège et attaque les navires à proximité, tout en se régénérant en endommageant les ennemis. Les unités protégées par cela infligeront la moitié des dégâts habituels."
+            shield_points="160000"
+            health_change_per_damage_dealt="7"
+      exp_to_grant_on_death="40"
+			>
+    <fleet_membership name="UnusualMix" ship_cap_group="Frigate" weight="5" min="1" max="1"/>
+    <fleet_membership name="AddedToFleet" ship_cap_group="Frigate" weight="10" min="1" max="1"/>
+	<fleet_membership name="AttritionerMix" ship_cap_group="Frigate" weight="25" min="1" max="1"/>
+    <system name="BallisticCannon" damage_per_shot="250" rate_of_fire="Devourer">
+	<outgoing_damage_modifier based_on="CurrentPersonalShieldPercentage" applies_to="Everything" comparison_type="AtLeast" compared_to="50" multiplier="5" /> 	</system>	
+  </entity>
+
+  <entity name="Suppressor" copy_from="ForcefieldFrigate" tech_upgrades_that_benefit_me="Medium,Disruptive"
+            display_name="Suppressor Frigate"
+            hull_points="35000" shield_points="70000" metal_cost="37500" energy_consumption="3750"
+            shield_size_scale="0" my_forcefield_does_not_shrink="false" mass_tx="4"
+			cost_for_ai_to_purchase="740"
+			description="Soutenez la frégate, équipée pour garder les ennemis passifs et loin des amis."
+      exp_to_grant_on_death="40"
+			>
+	<fleet_membership name="DebufferMix" ship_cap_group="Frigate" weight="50" min="2" max="4"/>
+    <fleet_membership name="AddedToFleet" ship_cap_group="Frigate" weight="10" min="2" max="4"/>
+	<fleet_membership name="FrigatesWithSupport" ship_cap_group="Frigate" weight="10" min="2" max="4"/>
+	<fleet_membership name="TractorMix" ship_cap_group="Frigate" weight="100" min="2" max="4"/>
+	<fleet_membership name="CrowdControlMix" ship_cap_group="Frigate" weight="100" min="2" max="4"/>
+	<fleet_membership name="AttritionerMix" ship_cap_group="Frigate" weight="100" min="2" max="4"/>
+	<fleet_membership name="MeleeWithSupportMix" ship_cap_group="Frigate" weight="100" min="2" max="4"/>
+	<fleet_membership name="AbductorBomberMix" ship_cap_group="Frigate" weight="100" min="2" max="4"/>
+	<fleet_membership name="BullyMix" ship_cap_group="Frigate" weight="50" min="2" max="4"/>
+	<ai_ship_group_membership name="AnyForcefieldGuardians" weight="50"/>
+	<ai_ship_group_membership name="AbductorMix" weight="25"/>
+	<ai_ship_group_membership name="EnsnarerAbductorMix" weight="25"/>
+	<ai_ship_group_membership name="AblativeAbductorMix" weight="25"/>
+	<ai_ship_group_membership name="EnsnarerAblativeAbductorMix" weight="25"/>
+	<ai_ship_group_membership name="AbductorMixWithGunboatSupport" weight="25"/>
+	<ai_ship_group_membership name="EnsnarerAbductorMixWithGunboatSupport" weight="25"/>
+	<ai_ship_group_membership name="AbsorberSuppressor" weight="25"/>	
+    <system name="BallisticCannon" damage_per_shot="40" rate_of_fire="Devourer" shots_per_salvo="16" range="AboveAverage3" fires_salvos_sequentially="true" display_name="Suppression Gatling"
+            base_enemy_weapon_reload_slowing_seconds_per_shot="2" added_enemy_weapon_reload_slowing_seconds_per_shot_per_mark="1" enemy_weapon_reload_slowing_to_armor_mm_less_than="80" max_enemy_weapon_reload_slowing_seconds="10" added_target_evaluator="WeaponJamAsPrimary"/>	
+	<system name="TractorBeam" display_name="Tractor Beam"
+			category="Passive"
+			tractor_range="AboveAverage1" tractor_count="50" tractor_count_added_per_mark="10" tractor_hits_albedo_less_than="0.5" tractor_hits_engine_gx_less_than="14"/>
+  </entity>  
+
+  
+  
+  
+  <entity name="SiegeFrigate"
+			special_entity_type="Frigate" gimbal_icon_size_multiplier="1.25"		
+			visuals="assets/_finalgamemeshes/starships/siegestarship/siege_starship.prefab"
+			icon_name="Official/Starship" icon_overlay="Official/Starship_Siege"
+			category="Ship"
+			size_scale="4.5"
+			visuals_scale_multiplier="6"
+			y_offset_of_icon="15"
+			collision_priority="500"
+			display_name="Siege Frigate"
+			description="Frégate fragile qui tire des tirs à longue portée capables d'endommager fortement des cibles ou des groupes uniques."
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Light,Concussion"
+			cost_for_ai_to_purchase="1336" strength_multiplier="2"
+			hull_points="105000" shield_points="52500" speed="BelowAverage1"
+			metal_cost="120000" energy_consumption="12500"
+			armor_mm="40" engine_gx="16" albedo="0.4" mass_tx="5"
+			voice_group="Starship"
+			ship_or_structure_explosion_sfx="ShipStarship_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+      exp_to_grant_on_death="40"
+      priority_as_ai_target="NormalStarship" priority_as_frd_target="NormalStarship" priority_to_protect="SlightlyLessExpendable"
+      >
+    <fleet_membership name="AddedToFleet" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+    <fleet_membership name="BasicOffensiveMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+    <fleet_membership name="FrigatesWithSupport" ship_cap_group="Frigate" weight="100" min="2" max="2"/>
+    <fleet_membership name="ReplicatingOffensiveMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+    <fleet_membership name="SelfSacrificingOffensiveMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+	<fleet_membership name="ClassicTrioMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+	<fleet_membership name="SniperMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+    <ai_ship_group_membership name="LotsOfFrigates" weight="100"/>
+	<ai_ship_group_membership name="BrawlerFrigateSiegeFrigate" weight="100"/>	
+    <system name="PlasmaTorpedo" display_name="Plasma Torpedo"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="24000" range="AboveAverage3" shot_speed="Slow" rate_of_fire="ExtremelyLow" fires_salvos_sequentially="true"
+				shot_type_data="PlasmaTorpedoAOEBurstAtEnd"
+				area_of_effect_size="600"
+				aoe_spreads_damage_among_available_targets="true"
+				>
+    </system>
+  </entity>
+
+  <entity name="Devestator" copy_from="SiegeFrigate" display_name="Devastator Frigate"    
+			description="Frégate fragile qui tire des salves de missiles, infligeant des dégâts paralysants aux ennemis faiblement blindés et affaiblis."
+            exp_to_grant_on_death="40"
+			>
+	<fleet_membership name="AddedToFleet" ship_cap_group="Frigate" weight="10" min="1" max="2"/>		
+    <fleet_membership name="ClassicTrioMix" ship_cap_group="Frigate" weight="10" min="1" max="2"/>
+    <fleet_membership name="UnusualMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+    <fleet_membership name="FragileOffensiveMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+	<fleet_membership name="CrowdControlMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+	<fleet_membership name="MissileMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+	<ai_ship_group_membership name="DevastatorFrigateMLRSConcussionCorvette" weight="25"/>	
+    <system name="PlasmaTorpedo" damage_per_shot="500" shots_per_salvo="20" rate_of_fire="Low" shot_type_data="GuidedMissile" display_name="Inferno Missiles"
+	        aoe_spreads_damage_among_available_targets="false" area_of_effect_size="0" >
+	<outgoing_damage_modifier based_on="CurrentHullPercentage" comparison_type="AtMost" compared_to="30" multiplier="2" />
+	<outgoing_damage_modifier based_on="Armor_mm" comparison_type="AtMost" compared_to="50" multiplier="4" /> 	</system>			
+  </entity>
+
+  <entity name="IonDisruptor" copy_from="SiegeFrigate" display_name="Ion Disruptor Frigate"    
+			description="Frégate fragile qui ne peut attaquer que les structures, mais qui peut souvent la désactiver ainsi que d'autres à proximité."
+            exp_to_grant_on_death="40" cost_for_ai_to_purchase="1262"
+			>
+	<fleet_membership name="AddedToFleet" ship_cap_group="Frigate" weight="10" min="1" max="2"/>
+    <fleet_membership name="UnusualMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+    <fleet_membership name="FragileOffensiveMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+    <fleet_membership name="DebufferMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+	<fleet_membership name="AntiStructureMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+    <fleet_membership name="FrigatesWithSupport" ship_cap_group="Frigate" weight="10" min="2" max="2"/>
+	<ai_ship_group_membership name="IonDisruptorFusionBomber" weight="25"/>	
+    <system name="PlasmaTorpedo" damage_per_shot="4500" shots_per_salvo="10" shot_type_data="ExtremelyLongRangeIon" display_name="Ion Disruption Blast"
+	        aoe_spreads_damage_among_available_targets="false" area_of_effect_size="0"	
+            base_paralysis_seconds_per_shot="6" added_paralysis_seconds_per_shot_per_mark="1" paralysis_to_ships_mass_tx_less_than="6"
+            only_targets_static_units="true" />			
+  </entity>  
+  
+  
+  <entity name="TritiumSniperFrigate"
+			special_entity_type="Frigate" gimbal_icon_size_multiplier="1.25"			
+			visuals="assets/_finalgamemeshes/starships/sniperstarship/sniper_starship.prefab"
+			icon_name="Official/Starship" icon_overlay="Official/Starship_Sniper"
+			size_scale="6.2"
+			visuals_scale_multiplier="6"
+			category="Ship"
+			y_offset_of_icon="15"
+			collision_priority="500"
+			display_name="Tritium Sniper Frigate"
+			description="Conçu pour effacer les navires avec une faible protection contre les radiations à n'importe quelle distance."
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Generalist,Light"
+			cost_for_ai_to_purchase="1000" strength_multiplier="2"
+			hull_points="90000" shield_points="45000" speed="AboveAverage2"
+			metal_cost="120000" energy_consumption="12500"
+			armor_mm="40" engine_gx="16" albedo="0.4" mass_tx="5"
+			voice_group="Starship"
+			ship_or_structure_explosion_sfx="ShipStarship_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+      exp_to_grant_on_death="40"
+      priority_as_ai_target="NormalStarship" priority_as_frd_target="NormalStarship" priority_to_protect="SlightlyLessExpendable"
+      >
+    <fleet_membership name="AddedToFleet" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+    <fleet_membership name="UnusualMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+    <fleet_membership name="FrigatesWithSupport" ship_cap_group="Frigate" weight="100" min="2" max="2"/>
+    <fleet_membership name="ReplicatingOffensiveMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+    <fleet_membership name="SelfSacrificingOffensiveMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+	<fleet_membership name="SniperMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+    <ai_ship_group_membership name="SniperStrikecraft" weight="1"/>
+    <system name="TritiumRailcannon" display_name="Tritium Railcannon"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="600" range="EssentiallyInfinite" shot_speed="VeryFast" rate_of_fire="Misery" fires_salvos_sequentially="true"
+				shot_type_data="ExtremeLongRangeRailgun"				
+				>
+        <outgoing_damage_modifier based_on="Albedo" comparison_type="AtMost" compared_to="0.3" multiplier="8" />
+    </system>
+    <system name="BallisticCannon" display_name="Ballistic Cannon"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="444" range="Small5" shot_speed="Normal" rate_of_fire="Normal" fires_salvos_sequentially="true"
+				shot_type_data="ArmorPiercingShell"				
+				>
+    </system>
+  </entity>
+  
+  <entity name="Ramifier" copy_from="TritiumSniperFrigate" display_name="Ramifier Frigate"    
+			description="Tire de gros tirs radioactifs avec un bonus à la fois sur des cibles à faible albédo et à masse élevée à n'importe quelle distance."
+            exp_to_grant_on_death="40"
+			>
+	<fleet_membership name="AddedToFleet" ship_cap_group="Frigate" weight="10" min="1" max="2"/>		
+    <fleet_membership name="UnusualMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+    <fleet_membership name="FragileOffensiveMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+	<fleet_membership name="SniperMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+	<fleet_membership name="AntiLargeMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+	<fleet_membership name="ZombificationAntiCounterMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+	<ai_ship_group_membership name="RamRamifierFrigate" weight="25"/>
+	<ai_ship_group_membership name="RamifierFrigateRipperFrigate" weight="100"/>
+    <system name="TritiumRailcannon" damage_per_shot="600" rate_of_fire="Normal" shot_type_data="MassDriver" display_name="Ramification Railcannon" shot_speed="Slow">
+	<outgoing_damage_modifier based_on="mass_tx" comparison_type="AtLeast" compared_to="5" multiplier="5" /> </system>			
+  </entity>   
+  
+  <entity name="WarbirdFrigate"
+			special_entity_type="Frigate" gimbal_icon_size_multiplier="1.25"			 
+			visuals="assets/_finalgamemeshes/starships/assaultstarship/assaultstarship.prefab"
+			icon_name="Official/Starship" icon_overlay="Official/Starship_Warbird"
+			size_scale="4.8"
+			visuals_scale_multiplier="6"
+			category="Ship"
+			y_offset_of_icon="15"
+			collision_priority="500"
+			display_name="Warbird Frigate"
+			description="Frégate rapide et masquée avec une arme de fusée de paralysie à plusieurs coups."
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="Subterfuge,Light"
+			cost_for_ai_to_purchase="1200" strength_multiplier="1.2"
+			hull_points="165000" shield_points="82500" speed="High"
+			metal_cost="120000" energy_consumption="12500"
+			armor_mm="40" engine_gx="16" albedo="0.7" mass_tx="5"
+			voice_group="Starship"
+			ship_or_structure_explosion_sfx="ShipStarship_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+      exp_to_grant_on_death="40"
+      priority_as_ai_target="NormalStarship" priority_as_frd_target="NormalStarship" priority_to_protect="SlightlyLessExpendable"
+      >
+    <fleet_membership name="AddedToFleet" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+    <fleet_membership name="RaidOffensiveMix" ship_cap_group="Frigate" weight="100" min="2" max="2"/>
+    <fleet_membership name="FragileOffensiveMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+    <fleet_membership name="CloakedMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+	<fleet_membership name="DebufferMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+	<fleet_membership name="ZombificationMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+	<fleet_membership name="EngineStunMix" ship_cap_group="Frigate" weight="50" min="1" max="2"/>
+	<fleet_membership name="MeleeWithSupportMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+	<fleet_membership name="FrigatesWithSupport" ship_cap_group="Frigate" weight="50" min="2" max="2"/>
+    <ai_ship_group_membership name="LotsOfFrigates" weight="100"/>
+	<ai_ship_group_membership name="ParalyserWarbird" weight="25"/>
+    <ai_ship_group_membership name="ParalyserDaggerWarbird" weight="25"/>	
+     <system name="ParalysisBolt" display_name="Multi-Paralysis Sprayer"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="560" range="Normal4" shot_speed="Normal" rate_of_fire="Normal"
+				shots_per_salvo="16" fires_salvos_sequentially="false"
+				shot_type_data="ParalysisProngedShot_Blue" added_target_evaluator="ParalyzerAsPrimary"
+				base_paralysis_seconds_per_shot="4" paralysis_to_ships_mass_tx_less_than="2" cloaking_percent_loss_from_firing="0.2"
+				>
+    </system>
+	<system name="Cloaker" display_name="Cloaking Device" category="Passive" cloaking_points="2000" cloaking_points_added_per_mark="1000"  >
+    </system>
+  </entity>
+
+  <entity name="Ripper" copy_from="WarbirdFrigate" display_name="Ripper Frigate"
+			description="Frégate rapide et masquée qui peut faire des dégâts décents et paralyser une seule cible."
+      exp_to_grant_on_death="40"
+      >
+    <fleet_membership name="AddedToFleet" ship_cap_group="Frigate" weight="10" min="1" max="2"/>
+    <fleet_membership name="SelfSacrificingOffensiveMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+    <fleet_membership name="UnusualMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+    <fleet_membership name="CloakedMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+	<fleet_membership name="DebufferMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+	<fleet_membership name="FrigatesWithSupport" ship_cap_group="Frigate" weight="10" min="1" max="2"/>
+	<fleet_membership name="AntiLargeMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+	<fleet_membership name="RaidOffensiveMix" ship_cap_group="Frigate" weight="100" min="2" max="2"/>
+	<ai_ship_group_membership name="RamifierFrigateRipperFrigate" weight="100"/>	
+    <system name="ParalysisBolt"  display_name="Paralysis Sprayer" damage_per_shot="8000" shots_per_salvo="1" base_paralysis_seconds_per_shot="4" paralysis_to_ships_mass_tx_less_than="6" rate_of_fire="Normal" />
+  </entity>
+
+  <entity name="WarbirdFrigateHydra" copy_from="WarbirdFrigate" display_name="Warbird Hydra Frigate"
+			description="Frégate rapide et masquée avec une arme de fusée de paralysie à plusieurs coups, et génère des copies d'elle-même quand elle meurt."
+			spawns_on_death="WarbirdFrigateHydraHead"
+			count_to_spawn_on_death="2" exp_to_grant_on_death="20"
+			>
+    <fleet_membership name="AddedToFleet" ship_cap_group="Frigate" weight="10" min="1" max="2"/>
+    <fleet_membership name="HydraOffensiveMix" ship_cap_group="Frigate" weight="100" min="1" max="2"/>
+  </entity>
+
+  <entity name="WarbirdFrigateHydraHead" copy_from="WarbirdFrigate"
+		  self_attritions_X_percent_per_second_if_parent_ship_not_on_planet="2"
+		  always_self_attritions="true"
+      display_name="Warbird Hydra Frigate Head"
+			description="Une tête est née d'une frégate Warbird Hydra."
+			energy_consumption="0" exp_to_grant_on_death="5" immune_to_swapping_between_fleets="true"
+			>
+  </entity>
+  
+  
+</root>

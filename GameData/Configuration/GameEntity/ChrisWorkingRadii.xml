@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--Base definition; do not change-->
+  <entity name="ChrisTestBase"
+			icon_name="Official/Bomber"
+			category="Ship"
+			skip_export="true"
+			visuals="assets/_finalgamemeshes/fleetships/fighter/fighterold.prefab"
+			size_scale="0.56"
+			collision_priority="100"
+			display_name="ChrisTestBase"
+			description="Juste pour tester!"
+			starting_mark_level="Mark1"
+			cost_for_ai_to_purchase="200"
+			hull_points="50000" shield_points="10000" speed="VeryVeryLittle3"
+			metal_cost="60000" energy_consumption="500"
+			armor_mm="180" albedo="1" engine_gx="18" mass_tx="5"
+			ship_or_structure_explosion_sfx="ShipSmall_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+			voice_group="Silent"
+      exp_to_grant_on_death="-1"
+      priority_as_ai_target="NormalFleetship" priority_as_frd_target="NormalFleetship" priority_to_protect="Expendable"
+			>
+    <system name="BallisticCannon" display_name="Ballistic Cannon"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="310" range="VeryTiny3" shot_speed="Normal" rate_of_fire="Normal" fires_salvos_sequentially="true"
+				shot_type_data="ArmorPiercingShell"				
+				>
+    </system>
+  </entity>
+
+  <!--
+  ******************************************************************
+    Definitions for graphics; change name, visuals, and size scale.
+  ******************************************************************  
+  -->
+
+  <!--This visuals and size_scale should be used for the Usurper whenever it is reimplemented. -->
+  <entity copy_from="ChrisTestBase" name="ChrisTest_Usurper" display_name="Usurper"
+			visuals="assets/_finalgamemeshes/aibuildings/usurper/usurper.prefab" gimbal_icon_size_multiplier="1.5"
+			size_scale="4.5" y_offset_of_icon="20"
+			icon_name="Official/Usurper"
+      exp_to_grant_on_death="-1"
+			/>
+
+  <entity copy_from="ChrisTestBase" name="ChrisTest_humancommandstation" display_name="Human Command Station"
+			visuals="assets/_finalgamemeshes/buildings/commandstations/humancommandstation/humancommandstation.prefab"
+			size_scale="1.8" y_offset_of_ship_in_visual_space="10" y_offset_of_icon="15" gimbal_icon_size_multiplier="1.5"
+			icon_name="Official/CommandStation"
+      exp_to_grant_on_death="-1"
+			/>
+
+</root>

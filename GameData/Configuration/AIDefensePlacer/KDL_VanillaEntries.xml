@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <defense_placer name="SoloStrongPoint_Central"
+    dll_name="AIWarExternalCode"
+    type_name="Arcen.AIW2.External.AIDefensePlacer_Default"
+    custom_FInt_defensePlacer_min_distance_percent_center_to_controller="0.15" custom_FInt_defensePlacer_max_distance_percent_center_to_controller="0.35" 
+    custom_int_defensePlacer_min_number_of_non_controller_strong_areas="0" custom_int_defensePlacer_max_number_of_non_controller_strong_areas="0"
+    custom_FInt_defensePlacer_min_distance_percent_controller_to_strong_area="0" custom_FInt_defensePlacer_max_distance_percent_controller_to_strong_area="0"
+  />
+  <defense_placer name="SoloStrongPoint_MidZone"
+    dll_name="AIWarExternalCode"
+    type_name="Arcen.AIW2.External.AIDefensePlacer_Default"
+    custom_FInt_defensePlacer_min_distance_percent_center_to_controller="0.35" custom_FInt_defensePlacer_max_distance_percent_center_to_controller="0.65" 
+    custom_int_defensePlacer_min_number_of_non_controller_strong_areas="0" custom_int_defensePlacer_max_number_of_non_controller_strong_areas="0"
+    custom_FInt_defensePlacer_min_distance_percent_controller_to_strong_area="0" custom_FInt_defensePlacer_max_distance_percent_controller_to_strong_area="0"
+  />
+  <defense_placer name="SoloStrongPoint_FarZone"
+    dll_name="AIWarExternalCode"
+    type_name="Arcen.AIW2.External.AIDefensePlacer_Default"
+    custom_FInt_defensePlacer_min_distance_percent_center_to_controller="0.65" custom_FInt_defensePlacer_max_distance_percent_center_to_controller="0.75" 
+    custom_int_defensePlacer_min_number_of_non_controller_strong_areas="0" custom_int_defensePlacer_max_number_of_non_controller_strong_areas="0"
+    custom_FInt_defensePlacer_min_distance_percent_controller_to_strong_area="0" custom_FInt_defensePlacer_max_distance_percent_controller_to_strong_area="0"
+  />
+  <defense_placer name="TwoStrongPoints"
+    dll_name="AIWarExternalCode"
+    type_name="Arcen.AIW2.External.AIDefensePlacer_Default"
+    custom_FInt_defensePlacer_min_distance_percent_center_to_controller="0.15" custom_FInt_defensePlacer_max_distance_percent_center_to_controller="0.75" 
+    custom_int_defensePlacer_min_number_of_non_controller_strong_areas="1" custom_int_defensePlacer_max_number_of_non_controller_strong_areas="1"
+    custom_FInt_defensePlacer_min_distance_percent_controller_to_strong_area="0.4" custom_FInt_defensePlacer_max_distance_percent_controller_to_strong_area="0.5"
+  />
+  <defense_placer name="ThreeStrongPoints"
+    dll_name="AIWarExternalCode"
+    type_name="Arcen.AIW2.External.AIDefensePlacer_Default"
+    custom_FInt_defensePlacer_min_distance_percent_center_to_controller="0.15" custom_FInt_defensePlacer_max_distance_percent_center_to_controller="0.75" 
+    custom_int_defensePlacer_min_number_of_non_controller_strong_areas="2" custom_int_defensePlacer_max_number_of_non_controller_strong_areas="2"
+    custom_FInt_defensePlacer_min_distance_percent_controller_to_strong_area="0.6" custom_FInt_defensePlacer_max_distance_percent_controller_to_strong_area="0.7"
+  />
+  <defense_placer name="ShieldNinny" is_hidden="true"
+    dll_name="AIWarExternalCode"
+    type_name="Arcen.AIW2.External.AIDefensePlacer_ShieldNinny"
+  />
+</root>

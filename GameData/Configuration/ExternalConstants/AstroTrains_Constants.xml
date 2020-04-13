@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root
+    is_partial_record="true"
+    custom_int_AstroTrains_BaseMaxDepots="4"
+    custom_int_AstroTrains_DepotSpawnIntervalLow="3600"
+    custom_int_AstroTrains_DepotSpawnIntervalMed="3000"
+    custom_int_AstroTrains_DepotSpawnIntervalHigh="2400"
+    custom_int_AstroTrains_BaseTrainSpawnIntervalLow="1500"
+    custom_int_AstroTrains_BaseTrainSpawnIntervalMed="1200"
+    custom_int_AstroTrains_BaseTrainSpawnIntervalHigh="900"
+    custom_int_AstroTrains_PercentForMultiSpawnIntensity1="0"
+    custom_int_AstroTrains_PercentForMultiSpawnIntensity2="0"
+    custom_int_AstroTrains_PercentForMultiSpawnIntensity3="0"
+    custom_int_AstroTrains_PercentForMultiSpawnIntensity4="0"
+    custom_int_AstroTrains_PercentForMultiSpawnIntensity5="10"
+    custom_int_AstroTrains_PercentForMultiSpawnIntensity6="20"
+    custom_int_AstroTrains_PercentForMultiSpawnIntensity7="30"
+    custom_int_AstroTrains_PercentForMultiSpawnIntensity8="40"
+    custom_int_AstroTrains_PercentForMultiSpawnIntensity9="50"
+    custom_int_AstroTrains_PercentForMultiSpawnIntensity10="60"
+    custom_FInt_AstroTrains_HunterFleetStrengthPerTrain="500.0"
+    custom_int_AstroTrains_MaxStationsRequiredBeforeDepot="8"
+    custom_int_AstroTrains_MinStationsRequiredBeforeDepot="2"
+    custom_int_AstroTrains_TrainsAllowedOnMapPerDepot="1"
+    custom_bool_AstroTrains_DebugEarlySpawnDepot="false"
+    custom_int_AstroTrains_DebugEarlySpawnDepotId="10"
+>
+</root>

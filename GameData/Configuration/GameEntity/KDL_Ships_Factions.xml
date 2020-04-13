@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <entity name="MinorFactionBeacon"
+	  tags="MinorFactionBeacon" is_auto_scrapping_skipped_when_command_station_type_changes="true"
+          visuals="assets/_finalgamemeshes/aibuildings/ruinednetworknode/ruinednetworknode.prefab"
+	  icon_name="Official/MinorFactionBeacon" gimbal_icon_size_multiplier="1.25"
+	  y_offset_of_icon="30"
+          draw_in_galaxy_view="true"
+	  category="Ship"
+	  size_scale="4.5"
+	  visuals_scale_multiplier="10"
+	  collision_priority="900"
+          target_type_for_player="NeverTarget"
+	  display_name="Minor Faction Beacon" display_name_for_sidebar="Beacon"
+	  description="Cela devrait être annulé par différents types pour chaque faction mineure qui veut une balise"
+	  behavior="Stationary"
+	  starting_mark_level="Markless"
+	  cost_for_ai_to_purchase="200"
+	  hull_points="90000" shield_points="210000" speed="Immobile"
+	  metal_cost="6500000" energy_consumption="0"
+	  armor_mm="80" albedo="0.9" mass_tx="2"
+	  ship_or_structure_explosion_sfx="StructureMidsize_Explosion"
+	  ship_or_structure_explosion_if_on_other_planet_sfx="StructureLostOnOtherPlanet_Explosion"
+	  voice_group="Civilian"
+	  fleet_membership="Planetary"
+          exp_to_grant_on_death="-1"
+          priority_as_ai_target="IgnoreMe" priority_as_frd_target="IgnoreMe" priority_to_protect="IgnoreMe"
+          >
+  </entity>
+  <entity skip_export="true" copy_from="MinorFactionBeacon" name="NanocaustBeacon"
+          tags="Beacon,NanocaustBeacon"
+          display_name="Nanocaust Suppression Field Emitter"
+          description="Cet artefact extraterrestre semble émettre un champ de suppression extraordinairement puissant, comme s'il empêchait quelque chose de très dangereux de se réveiller. La détruire pourrait avoir des conséquences inattendues, mais rendrait l'étude fascinante.
+
+Votre officier scientifique en chef note que son ouverture peut être une fin pour l'humanité. L'un de vos conseillers militaires estime qu'il y a une chance que l'humanité puisse tenir cette nouvelle menace à distance pendant qu'elle ravage l'IA. De toute façon, les choses sont susceptibles d'être ... animées.
+
+&lt;color=#f25e1c&gt;IMPACT EXTRÊMEMENT ÉLEVÉ:&lt;/color&gt; Cette faction se développe et peut faire des dégâts irréparables. Il est également l'un des plus puissants, capable de faire rouler la plupart des ennemis en raison de sa capacité à capturer ses navires. Ils auront probablement un effet dominant sur ce jeu et nécessiteront des stratégies spécialisées pour y faire face."
+	  target_type_for_player="NeverAutotargetButAllowManualTarget"
+          science_to_grant_on_death="5000"
+          >
+   </entity>
+   <entity skip_export="true" copy_from="MinorFactionBeacon" name="DevourerBeacon"
+           tags="Beacon,DevourerBeacon"
+          display_name="Zenith Devourer Beacon"
+          description="Cette balise désactivée semble pouvoir être piratée. Je me demande ce que ça attirerait? Probablement quelque chose de faim ...
+
+Votre officier scientifique en chef suggère que le piratage de cette balise invoquera un géant Zenith Golem qui parcourra la galaxie, attaquant tout sur son passage.
+
+&lt;color=#f25e1c&gt;FAIBLE IMPACT:&lt;/color&gt; Cette faction ne s'étend pas et ne fait aucun dégât irréparable. Peut parfois créer des changements massifs dans un combat, cependant."
+	  target_type_for_player="NeverTarget"
+          eligible_for_hacks="SummonDevourerGolem"
+          >
+   </entity>
+   <entity skip_export="true" copy_from="MinorFactionBeacon" name="MarauderBeacon"
+           tags="Beacon,MarauderBeacon"
+          display_name="Anti-Marauder Phlebotinum Emitter"
+          description="Cet artefact extraterrestre semble émettre des faisceaux de rayonnement de Phlébotonium extraordinairement puissants, comme s'il perturbait une forme de propulsion inconnue. La détruire pourrait avoir des conséquences inattendues, mais rendrait l'étude fascinante.
+
+Vos conseillers militaires craignent que leur destruction ne permette à un puissant groupe d'ennemis d'attaquer la galaxie.
+
+&lt;color=#f25e1c&gt;IMPACT VARIABLE:&lt;/color&gt; Cette faction se développe et peut faire des dégâts irréparables. S'ils sont autorisés à se développer suffisamment, ils peuvent représenter une menace énorme, mais peuvent avoir du mal à démarrer au départ. Leur première méthode d'attaque peut également imposer différentes stratégies au joueur."
+	  target_type_for_player="NeverTarget"
+          science_to_grant_on_death="2000"
+          >
+   </entity>
+   <entity skip_export="true" copy_from="MinorFactionBeacon" name="HRFBeacon"
+           tags="Beacon,HRFBeacon"
+          display_name="Disabled Resistance Fighter Beacon"
+          description="Cette balise cassée peut vous permettre de contacter des alliés inattendus si vous pouvez la pirater pour qu'elle fonctionne à nouveau.
+
+Vos conseillers militaires soupçonnent que le piratage de cela permettrait à d'autres forces anti-AI de rejoindre votre combat.
+
+&lt;color=#f25e1c&gt;FAIBLE IMPACT:&lt;/color&gt; Cette faction ne s'étend pas et ne fait aucun dégât irréparable. Ils sont un bon coup de pouce pour votre pouvoir, mais ils ne gagneront pas de parties pour vous tout seuls."
+	  target_type_for_player="NeverTarget"
+          eligible_for_hacks="EnableHRF"
+          >
+   </entity>
+
+  <entity name="DevourerGolem"
+			tags="Devourer,ShowsOnNormalDisplayMode" voice_group="Zenith" gimbal_icon_size_multiplier="2"
+			draw_in_galaxy_view="true"
+			visuals="assets/_finalgamemeshes/golems/devourergolem/devourergolem.prefab"
+			icon_name="Official/DevourerGolem"
+			uses_large_health_bar="true"
+			category="Ship"
+			size_scale="19.2"
+			visuals_scale_multiplier="1.2"
+			y_offset_of_icon="150"
+			collision_priority="810"
+			display_name="Devourer Golem"
+			description="Ce Golem presque invincible parcourt la galaxie, absorbant les navires mobiles qu'il trouve pour s'alimenter et se réparer. Les unités ne viseront pas cela automatiquement, et il est préférable de simplement s'enfuir."
+			behavior="Stationary"
+			health_change_per_damage_dealt="0.4"
+			starting_mark_level="Markless"
+			cost_for_ai_to_purchase="140000"
+			hull_points="60000000" shield_points="19000000" speed="VeryVeryLittle1"
+			armor_mm="400" albedo="1" engine_gx="25" mass_tx="19"
+			metal_cost="1085000" energy_consumption="0"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			pushes_enemy_shields="true"
+			exp_to_grant_on_death="-1"
+                        shows_on_galaxy_map_for_explored_planets="true"
+      priority_as_ai_target="IgnoreMe" priority_as_frd_target="IgnoreMe" priority_to_protect="IgnoreMe"
+			>
+    <system name="AntimatterRockets" display_name="Antimatter Jaws"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="30000" range="Normal6" shot_speed="Normal" rate_of_fire="Devourer"
+				shots_per_salvo="30" fires_salvos_sequentially="false"
+				shot_type_data="DevourerShot"				
+                only_targets_mobile_units="true"
+				>
+                
+    </system>
+  </entity>
+  <entity name="ZenithTrader"
+			special_entity_type="ThirdPartySellerToPlayers" tags="ZenithTrader,ShowsOnNormalDisplayMode" voice_group="Zenith" gimbal_icon_size_multiplier="1.7"
+			draw_in_galaxy_view="true"
+			visuals="assets/_finalgamemeshes/golems/zenithtrader/zenithtrader.prefab"
+			icon_name="Official/Zenith_Trader"
+			uses_large_health_bar="true"
+			category="Ship"
+			size_scale="13.5"
+			visuals_scale_multiplier="1.8"
+			y_offset_of_icon="25"
+			collision_priority="810"
+			display_name="Zenith Trader"
+			description="Vend une technologie extraterrestre avancée à toute personne possédant suffisamment de métal."
+			behavior="Stationary"
+			starting_mark_level="Markless"
+      fleet_design_templates_i_always_grant="ZenithPurchases"
+			cost_for_ai_to_purchase="1000000"
+			hull_points="600000" shield_points="300000" speed="VeryVeryLittle3"
+			armor_mm="220" albedo="0.9" engine_gx="25" mass_tx="12"
+			metal_cost="605000" energy_consumption="0"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			exp_to_grant_on_death="-1"
+                        shows_on_galaxy_map_for_explored_planets="true"
+                        priority_as_ai_target="NotDangerous" priority_as_frd_target="NotDangerous" priority_to_protect="IgnoreMe"
+			>
+  </entity>
+  
+  
+   <entity name="RavenousShadow"
+			tags="RavenousShadow,ShowsOnNormalDisplayMode" voice_group="Zenith" gimbal_icon_size_multiplier="2"
+			draw_in_galaxy_view="true"
+			visuals="assets/_finalgamemeshes/golems/devourergolem/devourergolem.prefab"
+			icon_name="Official/DevourerGolem" icon_overlay="Official/DevourerGolem_RavenousShadow"
+			uses_large_health_bar="true"
+			category="Ship"
+			size_scale="12"
+			y_offset_of_icon="150"
+			collision_priority="810"
+			display_name="Ravenous Shadow"
+			description="Imitation IA plus faible du Golem dévoreur. Toujours aussi faim que l'original ... et vous regarde."
+			behavior="Attacker_Full"
+			starting_mark_level="Markless"
+			cost_for_ai_to_purchase="140000"
+			hull_points="35000000" shield_points="4500000" speed="VeryVeryLittle1"
+			armor_mm="400" albedo="1" engine_gx="25" mass_tx="19"
+			metal_cost="1085000" energy_consumption="0"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			exp_to_grant_on_death="-1"
+      priority_as_ai_target="BigThreateningWeapon" priority_as_frd_target="BigThreateningWeapon" priority_to_protect="BigFavoriteToy"
+	  should_never_be_captured_by_another_faction="true"
+			>
+    <system name="AntimatterRockets" display_name="Antimatter Jaws"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="10000" range="Small3" shot_speed="Normal" rate_of_fire="Devourer"
+				shots_per_salvo="30" fires_salvos_sequentially="false"
+				shot_type_data="DevourerShot"
+				area_of_effect_size="200"				
+				aoe_spreads_damage_among_available_targets="true"
+				>
+                
+    </system>
+  </entity>
+</root>

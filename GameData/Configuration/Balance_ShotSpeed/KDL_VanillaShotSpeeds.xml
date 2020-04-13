@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<shot_speed name="Instant" shot_speed="9999999" />
+	<shot_speed name="VeryFast" shot_speed="36000" />
+	<shot_speed name="Fast" shot_speed="24000" />
+	<shot_speed name="Normal" shot_speed="16000" />
+	<shot_speed name="Slow" shot_speed="12000" />
+</root>

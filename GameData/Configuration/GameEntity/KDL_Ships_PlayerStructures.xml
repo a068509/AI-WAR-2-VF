@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <entity name="HumanHomeCommandStation"
+			special_entity_type="HumanHomeCommand" voice_group="Ark_AlanEdwards" gimbal_icon_size_multiplier="2"
+			draw_in_galaxy_view="true" is_critical_infrastructure="true" commandstation_addedtocommandstation_multiplier="2"
+			tags="ShowsOnNormalDisplayMode,DirectBuilder"
+			visuals="assets/_finalgamemeshes/buildings/commandstations/humanhomecommandstation/humanhomecommandstation.prefab"
+			icon_name="Official/King"
+			y_offset_of_icon="20"
+			uses_large_health_bar="true"
+			category="Ship"
+			size_scale="5.1" rotation_z_of_ship="-27.432"
+			visuals_scale_multiplier="1.5"
+			y_offset_of_ship_emission_and_hit_point="-10" y_offset_of_ship_in_visual_space="9"
+			collision_priority="10000"
+			display_name="Human Home Command Station"
+			description="Votre centre de commande. Tu vis ici. Si cela est détruit, vous perdez."
+			player_loses_if_any_die="true"
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="UpgradeMeFromFleetOnly"
+      fleet_design_templates_i_always_grant="PlayerHomeCommand"
+			cost_for_ai_to_purchase="200"			
+			hull_points="64000" shield_points="180000" speed="Immobile"
+			metal_cost="200000" energy_consumption="0"
+			assist_range="InsanelyHigh"
+			armor_mm="120" albedo="0.7" mass_tx="7"
+			metal_storage="2500000"
+			aip_on_death="90"
+			allied_speed_multiplier="2"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+      exp_to_grant_on_death="-1"
+      priority_as_ai_target="MajorFullGameObjective" priority_as_frd_target="MidNasty" priority_to_protect="MajorFullGameObjective"
+			>
+    <resource_production type="Metal" amount="2200" increase_per_mark_level="400"/>
+    <resource_production type="Energy" amount="350000" increase_per_mark_level="25000"/>
+	<resource_production type="Science" amount="2"/>
+	 <resource_production type="Hacking" amount="2"/>
+    <metal_flow purpose="ClaimingNeutrals" throughput="900" increase_per_mark_level="100"/>
+	<metal_flow purpose="RebuildingRemains" throughput="100" increase_per_mark_level="100"/>
+  </entity>
+
+  <entity name="HumanHomeCommandStationCore"
+			voice_group="Ark_AlanEdwards" gimbal_icon_size_multiplier="2"
+			draw_in_galaxy_view="true" is_critical_infrastructure="true" commandstation_addedtocommandstation_multiplier="2"
+			tags="ShowsOnNormalDisplayMode,DirectBuilder"
+			visuals="assets/_finalgamemeshes/buildings/commandstations/humanhomecommandstationcore/humanhomecommandstationcore.prefab"
+			icon_name="Official/King"
+			y_offset_of_icon="20"
+			uses_large_health_bar="true"
+			category="Ship"
+			size_scale="5.1" rotation_x_of_ship="-62.1"
+			visuals_scale_multiplier="1.5"
+			y_offset_of_ship_emission_and_hit_point="-10" y_offset_of_ship_in_visual_space="9"
+			collision_priority="10000"
+			display_name="Human Home Command Station Core"
+			description="Votre centre de commande. Tu vis ici. Si une autre faction humaine a toujours son poste de commandement complet, vous pouvez continuer à aider ses efforts de guerre. Cette structure peut être détruite un certain nombre de fois et réémerger, mais l'IA devient de plus en plus en colère et forte à chaque fois."
+			player_loses_if_any_die="true"
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="UpgradeMeFromFleetOnly"
+      fleet_design_templates_i_always_grant="PlayerHomeCommand"
+			cost_for_ai_to_purchase="200"			
+			hull_points="88000" shield_points="360000" speed="BelowAverage1"
+			metal_cost="200000" energy_consumption="0"
+			armor_mm="120" albedo="0.9" engine_gx="25" mass_tx="7"
+			metal_storage="2500000"
+			aip_on_death="60"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+      immune_to_all_damage_for_seconds_after_creation="480"
+      exp_to_grant_on_death="-1"
+      priority_as_ai_target="MajorFullGameObjective_SlightlyLower" priority_as_frd_target="MidNasty" priority_to_protect="MajorFullGameObjective_SlightlyLower"
+			>
+    <!--Chris says: The human home command station core respawns repeatedly after your death in order to let you keep having a king unit at all.
+                    The idea is that you'll get it somewhere safe and continue on with your game, hopefully. -->
+    <resource_production type="Metal" amount="700"/>
+    <resource_production type="Energy" amount="340000" increase_per_mark_level="25000"/>
+	<resource_production type="Science" amount="2"/>
+	 <resource_production type="Hacking" amount="2"/>
+    <system name="BallisticCannon" display_name="Ballistic Doubleshot"
+     category="Weapon" firing_timing="OnlyInRange" shots_per_salvo="6"
+     damage_per_shot="800" range="Normal3" shot_speed="Normal" rate_of_fire="Normal" fires_salvos_sequentially="true"
+     shot_type_data="DoubleShot_Gold"     
+				>
+    </system>
+  </entity>
+
+
+  <entity name="EconomicCommandStation"
+			special_entity_type="NormalHumanCommandStation" tags="DirectBuilder" commandstation_addedtocommandstation_multiplier="0.5"
+			visuals="assets/_finalgamemeshes/buildings/commandstations/economiccommandstation/economiccommandstation.prefab"
+			icon_name="Official/CommandStation" icon_overlay="Official/CommandStation_Economic" icon_overlay_galaxy_map="Official/CommandStation_Economic_Small" gimbal_icon_size_multiplier="2"
+			uses_large_health_bar="true"
+			category="Ship"
+			size_scale="4.5" y_offset_of_ship_in_visual_space="10" y_offset_of_icon="25"
+			visuals_scale_multiplier="2.5"
+			collision_priority="10000"
+			display_name="Economic Command Station" display_name_for_sidebar="Economic Cmd"
+			description="Centre de commandement économique. S'il est détruit, vous perdez le contrôle de la planète. Production de métal et d'énergie grandement améliorée, mais n'a pas la capacité de se défendre directement très bien. Doit être protégé par une puissante Citadelle ou Battlestation, ou si loin des lignes de front qu'ils sont en sécurité."
+			description_short="Axé sur l'économie, avec une production élevée de métaux et d'énergie, mais peu de capacités défensives."
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="CommandEconomic"
+			build_sidebar_categories_i_am_part_of="CommandStations,CommandStationUpgrades"
+      fleet_design_templates_i_always_grant="PlayerEconomicCommand"
+			cost_for_ai_to_purchase="20"
+			hull_points="7500" shield_points="20000" speed="Immobile"
+			metal_cost="45000" energy_consumption="0"
+			assist_range="InsanelyHigh"
+			armor_mm="90" albedo="0.6" mass_tx="6"
+			metal_storage="300000"
+			allied_speed_multiplier="2"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			voice_group="Flagship"
+			external_invulnerability_unit_type="Buttress"
+      external_invulnerability_region="ThisPlanet"
+      exp_to_grant_on_death="-1"
+      priority_as_frd_target="MajorPlanetLevelObjective" priority_as_ai_target="MajorPlanetLevelObjective" priority_to_protect="MajorPlanetLevelObjective"
+			>
+    <resource_production type="Metal" amount="250" increase_per_mark_level="150"/>
+    <resource_production type="Energy" amount="400000" increase_per_mark_level="100000"/>
+	<resource_production type="Science" amount="2"/>
+	 <resource_production type="Hacking" amount="2"/>
+    <metal_flow purpose="SelfConstruction" throughput="750"/>
+    <metal_flow purpose="ClaimingNeutrals" throughput="900" increase_per_mark_level="100"/>
+	<metal_flow purpose="RebuildingRemains" throughput="100" increase_per_mark_level="100"/>
+  </entity>
+
+
+  <entity name="LogisticalCommandStation"
+			special_entity_type="NormalHumanCommandStation" tags="DirectBuilder" commandstation_addedtocommandstation_multiplier="1"
+			visuals="assets/_finalgamemeshes/buildings/commandstations/logisticalcommandstation/logisticalcommandstation.prefab"
+			icon_name="Official/CommandStation" icon_overlay="Official/CommandStation_Logistical" icon_overlay_galaxy_map="Official/CommandStation_Logistical_Small" gimbal_icon_size_multiplier="2"
+			uses_large_health_bar="true"
+			category="Ship"
+			size_scale="4.5" y_offset_of_ship_in_visual_space="10" y_offset_of_icon="25"
+			visuals_scale_multiplier="2.5"
+			collision_priority="10000"
+			display_name="Logistical Command Station" display_name_for_sidebar="Logistical Cmd"
+			description="Centre de commandement logistique. S'il est détruit, vous perdez le contrôle de la planète. Mélange équilibré d'économie et de défense, en particulier pour retarder les ennemis et couvrir les structures et les trous de ver avec plus de champs de force. A également plus d'ingénieurs pour la production de masse, et observe les planètes voisines."
+			description_short="Économie équilibrée et capacité défensive. A plus de champs de force, de tracteurs et d'ingénieurs et de montres planètes voisines."
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="CommandLogistical"
+      build_sidebar_categories_i_am_part_of="CommandStations,CommandStationUpgrades"
+			fleet_design_templates_i_always_grant="PlayerLogisticalCommand"
+			cost_for_ai_to_purchase="20"
+			hull_points="15000" shield_points="40000" speed="Immobile"
+			metal_cost="45000" energy_consumption="0"
+			assist_range="InsanelyHigh"
+			armor_mm="90" albedo="0.6" mass_tx="6"
+			metal_storage="300000"
+			allied_speed_multiplier="3.5"
+			allied_speed_multiplier_added_per_mark="0.5"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			voice_group="Flagship"
+			external_invulnerability_unit_type="Buttress"
+      external_invulnerability_region="ThisPlanet"
+      exp_to_grant_on_death="-1"
+      priority_as_frd_target="MajorPlanetLevelObjective" priority_as_ai_target="MajorPlanetLevelObjective" priority_to_protect="MajorPlanetLevelObjective"
+      watch_planets_at_X_hops="1"
+			>
+    <resource_production type="Metal" amount="60" increase_per_mark_level="20"/>
+    <resource_production type="Energy" amount="200000" increase_per_mark_level="50000"/>
+	<resource_production type="Science" amount="2"/>
+	 <resource_production type="Hacking" amount="2"/>
+    <metal_flow purpose="SelfConstruction" throughput="750"/>
+    <metal_flow purpose="ClaimingNeutrals" throughput="900" increase_per_mark_level="100"/>
+	<metal_flow purpose="RebuildingRemains" throughput="100" increase_per_mark_level="100"/>
+  </entity>
+
+  <entity name="MilitaryCommandStation"
+			special_entity_type="NormalHumanCommandStation" tags="DirectBuilder" commandstation_addedtocommandstation_multiplier="2"
+			visuals="assets/_finalgamemeshes/buildings/commandstations/militarycommandstation/militarycommandstation.prefab"
+			icon_name="Official/CommandStation" icon_overlay="Official/CommandStation_Military" icon_overlay_galaxy_map="Official/CommandStation_Military_Small" gimbal_icon_size_multiplier="2"
+			uses_large_health_bar="true"
+			category="Ship"
+			size_scale="4.5" y_offset_of_ship_in_visual_space="10" y_offset_of_icon="25"
+			visuals_scale_multiplier="2.5"
+			collision_priority="10000"
+			display_name="Military Command Station" display_name_for_sidebar="Military Cmd"
+			description="Centre de commandement militaire. S'il est détruit, vous perdez le contrôle de la planète. Combattant assez décent et idéal pour les planètes frontalières dangereuses, bien qu'il ne soit pas aussi efficace pour empêcher les ennemis de glisser vers les mondes intérieurs à moins d'être associé à quelque chose avec plus de tracteurs et de tachyons. La production économique est pathétique, surtout en termes d'énergie, alors ne comptez pas trop sur eux."
+			description_short="Capacité défensive élevée, avec presque aucune économie. Accorde un bonus de dégâts aux alliés sur cette planète et possède le plus de tourelles."
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="CommandMilitary"
+      build_sidebar_categories_i_am_part_of="CommandStations,CommandStationUpgrades"
+			fleet_design_templates_i_always_grant="PlayerMilitaryCommand"
+			cost_for_ai_to_purchase="20" strength_multiplier="2"
+			hull_points="100000" shield_points="180000" speed="Immobile"
+			metal_cost="45000" energy_consumption="0"
+			assist_range="InsanelyHigh"
+			armor_mm="140" albedo="0.7" mass_tx="6"
+			metal_storage="300000"
+			allied_speed_multiplier="2"
+			allied_speed_multiplier_added_per_mark="0.25"
+			allied_attack_multiplier="1.25"
+			allied_attack_multiplier_added_per_mark="0.25"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			voice_group="Flagship"
+			external_invulnerability_unit_type="Buttress"
+      external_invulnerability_region="ThisPlanet"
+      exp_to_grant_on_death="-1"
+      priority_as_frd_target="MajorPlanetLevelObjective" priority_as_ai_target="MajorPlanetLevelObjective" priority_to_protect="MajorPlanetLevelObjective"
+			>
+    <resource_production type="Metal" amount="20" increase_per_mark_level="20"/>
+    <resource_production type="Energy" amount="20000" increase_per_mark_level="5000"/>
+	<resource_production type="Science" amount="2"/>
+	 <resource_production type="Hacking" amount="2"/>
+    <metal_flow purpose="SelfConstruction" throughput="750"/>
+    <metal_flow purpose="ClaimingNeutrals" throughput="900" increase_per_mark_level="100"/>
+
+    <metal_flow purpose="RebuildingRemains" throughput="100" increase_per_mark_level="100"/>
+    <system name="EnergyWave" display_name="Energy Wave"
+				category="Weapon" firing_timing="OnlyInRange"
+				damage_per_shot="1200" range="ExtremelyHigh" shot_speed="Normal" rate_of_fire="Misery"
+                shots_per_salvo="12" added_shots_per_salvo_per_mark="4"	fires_salvos_sequentially="false"
+                base_paralysis_seconds_per_shot="4" added_paralysis_seconds_per_shot_per_mark="2" paralysis_to_ships_mass_tx_less_than="2" added_target_evaluator="ParalyzerAsPrimary"
+				base_knockback_per_shot="3000" added_knockback_per_shot_per_mark="750" knockback_to_ships_mass_tx_less_than="2"
+				shot_type_data="EnergyWave"
+				>
+    </system>
+  </entity>
+
+
+  
+
+  
+
+  <entity name="MatterConverter"
+			visuals="assets/_finalgamemeshes/resources/MatterConverter/MatterConverter.prefab"
+			icon_name="Official/MetalBecomesPower" gimbal_icon_size_multiplier="0.75"
+			category="Ship"
+			size_scale="1.5"
+			collision_priority="900"
+			display_name="Matter Converter"
+			description="Convertit une partie importante du métal en énergie. Ce processus est inefficace, vous devez donc vous efforcer de contrôler suffisamment de territoire pour fournir l'énergie dont vous avez besoin."
+			behavior="Stationary"
+			starting_mark_level="Markless"
+      build_sidebar_categories_i_am_part_of="Infrastructure" destroys_self_until_not_over_ship_cap_if_planetary_command="true"
+			cost_for_ai_to_purchase="200"
+			hull_points="2000" shield_points="4000" speed="Immobile"
+			metal_cost="1250" energy_consumption="0"
+			armor_mm="10" albedo="0.2" mass_tx="0.6"
+			ship_or_structure_explosion_sfx="StructureMidsize_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="StructureLostOnOtherPlanet_Explosion"
+			voice_group="Civilian"
+			fleet_membership="Planetary"
+      exp_to_grant_on_death="-1" absolute_max_cap_when_in_fleets="10"
+      priority_as_ai_target="MinorResourceGeneration" priority_as_frd_target="IgnoreMe" priority_to_protect="SlightlyLessExpendable"
+			>
+    <fleet_membership name="PlayerHomeCommand" ship_cap_group="OtherDefense" weight="100" min="10" max="10"/>
+    <fleet_membership name="PlayerEconomicCommand" ship_cap_group="OtherDefense" weight="100" min="6" max="6"/>
+    <fleet_membership name="PlayerMilitaryCommand" ship_cap_group="OtherDefense" weight="100" min="3" max="3"/>
+    <fleet_membership name="PlayerLogisticalCommand" ship_cap_group="OtherDefense" weight="100" min="3" max="3"/>
+    <resource_production type="Metal" amount="-500"/>
+    <resource_production type="Energy" amount="50000"/>
+    <metal_flow purpose="SelfConstruction" throughput="500"/>
+  </entity>
+
+
+  
+  <entity name="Factory"
+			tags="StationaryConstructor,Factory"
+			visuals="assets/_finalgamemeshes/humanbuildings/spacedock/spacedock.prefab"
+			icon_name="Official/SpaceDock" gimbal_icon_size_multiplier="1.5"
+			category="Ship"
+			visuals_scale_multiplier="4.8" size_scale="3.9"
+			y_offset_of_icon="20"
+			collision_priority="1000"
+			display_name="Factory"
+			description="Installation stationnaire. Si un vaisseau amiral de la flotte se trouve sur la même planète ou sur une planète adjacente et qu'il manque des navires, cela produira automatiquement des remplacements qui se déformeront directement sur ce navire amiral."
+      description_short="Remplace automatiquement les pertes de flotte à proximité."
+			behavior="Stationary"
+			special_entity_type="FactoryForPlayerMobileFleets"
+			starting_mark_level="Markless"
+			build_sidebar_categories_i_am_part_of="Infrastructure" destroys_self_until_not_over_ship_cap_if_planetary_command="true"
+			fleet_membership="Planetary"
+			cost_for_ai_to_purchase="200"
+			hull_points="4000" shield_points="8000" speed="Immobile"
+			metal_cost="25000" energy_consumption="500"
+			armor_mm="90" albedo="0.2" mass_tx="3"
+			ship_or_structure_explosion_sfx="StructureLarge_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="StructureLostOnOtherPlanet_Explosion"
+			voice_group="Civilian"
+      exp_to_grant_on_death="-1" absolute_max_cap_when_in_fleets="3"
+      priority_as_ai_target="MidNasty" priority_as_frd_target="NotDangerous" priority_to_protect="MidFavoriteToy"
+			>
+    <fleet_membership name="PlayerHomeCommand" ship_cap_group="OtherDefense" weight="100" min="1" max="1"/>
+    <fleet_membership name="PlayerEconomicCommand" ship_cap_group="OtherDefense" weight="100" min="1" max="1"/>
+    <fleet_membership name="PlayerMilitaryCommand" ship_cap_group="OtherDefense" weight="100" min="3" max="3"/>
+    <fleet_membership name="PlayerLogisticalCommand" ship_cap_group="OtherDefense" weight="100" min="2" max="2"/>
+    <metal_flow purpose="SelfConstruction" throughput="500"/>
+    <metal_flow purpose="FactoryConstructionForPlayerMobileFleets" throughput="2000" increase_per_mark_level="1000"/>
+  </entity>
+
+  
+  
+  <entity name="HomeHumanSettlement"
+			tags="HomeHumanSettlement"
+			visuals="assets/_finalgamemeshes/humanoddities/HomeHumanSettlement/HomeHumanSettlement.prefab"
+			icon_name="Official/HomeHumanSettlement" gimbal_icon_size_multiplier="0.75"
+			category="Ship" is_critical_infrastructure="true" is_auto_scrapping_skipped_when_command_station_type_changes="true"
+			size_scale="2"
+			visuals_scale_multiplier="2"
+			collision_priority="900"
+			display_name="Home Human Settlement"
+			description="L'une des dernières villes civiles libres, remplie d'humains vivants. Ils aident votre cause en produisant une quantité modérée de métal, mais la progression de l'IA augmentera de 5 si la ville est détruite."
+			behavior="Stationary"
+			starting_mark_level="Mark1" tech_upgrades_that_benefit_me="MetalGeneration"
+			cost_for_ai_to_purchase="200"
+			hull_points="120000" shield_points="150000" speed="Immobile"
+			metal_cost="80000" energy_consumption="0"
+			armor_mm="120" albedo="0.4" mass_tx="2"
+			aip_on_death="5"
+			ship_or_structure_explosion_sfx="StructureMidsize_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="StructureLostOnOtherPlanet_Explosion"
+			voice_group="Civilian"
+			fleet_membership="Planetary"
+      exp_to_grant_on_death="-1"
+      priority_as_ai_target="IrreplaceableAIPIncreaser" priority_as_frd_target="IgnoreMe" priority_to_protect="Irreplaceable"
+			>
+    <resource_production type="Metal" amount="520" increase_per_mark_level="260"/>
+  </entity>
+
+
+  
+  <entity name="HumanCryogenicPod"
+			tags="HumanCryogenicPod"
+			visuals="assets/_finalgamemeshes/humanoddities/cryotubes/cryotubes.prefab"
+			icon_name="Official/CryoTubes" gimbal_icon_size_multiplier="0.75"
+			category="Ship" is_critical_infrastructure="true" is_auto_scrapping_skipped_when_command_station_type_changes="true"
+			size_scale="1.2"
+			visuals_scale_multiplier="2"
+			collision_priority="900"
+			display_name="Human Cryogenic Pod"
+			description="En raison de la surpopulation dans les dernières villes humaines, une bonne partie de la population humaine restante doit rester dans le sommeil cryogénique. Une fois la guerre terminée, ils peuvent être ramenés à la vie, mais en attendant, ils contribuent à l'effort de guerre grâce à l'énergie solaire excédentaire produite comme sous-produit de leurs chambres de congélation."
+			behavior="Stationary"
+			starting_mark_level="Mark1"
+			cost_for_ai_to_purchase="200"
+			hull_points="15000" shield_points="75000" speed="Immobile"
+			metal_cost="80000" energy_consumption="0"
+			armor_mm="40" albedo="0.5" mass_tx="0.01"
+			aip_on_death="1"
+			ship_or_structure_explosion_sfx="StructureMidsize_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="StructureLostOnOtherPlanet_Explosion"
+			voice_group="Civilian"
+			fleet_membership="Planetary"
+      exp_to_grant_on_death="-1"
+      priority_as_ai_target="IrreplaceableAIPIncreaser" priority_as_frd_target="IgnoreMe" priority_to_protect="Irreplaceable"
+			>
+    <resource_production type="Energy" amount="7500" increase_per_mark_level="2500"/>
+  </entity>
+
+
+  
+  <entity name="ZenithPowerGenerator"
+			tags="ZenithPowerGenerator,Capturable" is_auto_scrapping_skipped_when_command_station_type_changes="true"
+			draw_in_galaxy_view="true"
+			visuals="Assets/_FinalGameMeshes/AIBuildings/PlanetaryCloaker/PlanetaryCloaker.prefab"
+			icon_name="Official/SpecialEnergyGenerator" gimbal_icon_size_multiplier="1.25"
+			y_offset_of_icon="30"
+			category="Ship" is_critical_infrastructure="true"
+			size_scale="4.5"
+			visuals_scale_multiplier="0.6"
+			collision_priority="900"
+			display_name="Zenith Power Generator" display_name_for_sidebar="Zenith Power Gen"
+			description="Ancien appareil Zenith qui exploite d'énormes quantités d'énergie provenant d'une source mystérieuse."
+			behavior="Stationary"
+			build_sidebar_categories_i_am_part_of="Infrastructure"
+			reverts_to_neutral_on_death_if_permadeath_setting_is_false="ZenithGeneratorsPermadeath"
+			never_leaves_remains="true"
+			metal_to_claim="10000"
+			starting_mark_level="Markless"
+			cost_for_ai_to_purchase="200"			
+			hull_points="90000" shield_points="210000" speed="Immobile"
+			metal_cost="6500000" energy_consumption="0"
+			armor_mm="80" albedo="0.9" mass_tx="2"
+			aip_on_death="10"
+			ship_or_structure_explosion_sfx="StructureMidsize_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="StructureLostOnOtherPlanet_Explosion"
+			voice_group="Civilian"
+			fleet_membership="Planetary"
+      exp_to_grant_on_death="-1"
+      priority_as_ai_target="IrreplaceableBigAsTheyCome" priority_as_frd_target="IgnoreMe" priority_to_protect="Irreplaceable"
+			>
+    <resource_production type="Energy" amount="600000"/>
+    <metal_flow purpose="SelfConstruction" throughput="500"/>
+  </entity>
+
+  <entity name="LesserZenithPowerGenerator" copy_from="ZenithPowerGenerator"
+			tags="Capturable" is_auto_scrapping_skipped_when_command_station_type_changes="true"			
+			display_name="Lesser Zenith Power Generator" display_name_for_sidebar="Zenith Power Gen"
+			description="Ancien appareil Zenith qui exploite d'énormes quantités d'énergie provenant d'une source mystérieuse. Le commerçant ne vous vendra pas cela si vous en avez déjà deux dans la galaxie."
+			behavior="Stationary"
+			build_sidebar_categories_i_am_part_of="Infrastructure"
+			reverts_to_neutral_on_death_if_permadeath_setting_is_false="ZenithGeneratorsPermadeath"
+			never_leaves_remains="true"
+			metal_cost="5500000"
+      galaxy_wide_cap_for_players_constructing="2"
+			>
+    <fleet_membership name="ZenithPurchases" ship_cap_group="OtherDefense" weight="100" min="1" max="1"/>
+    <resource_production type="Energy" amount="500000"/>
+    <metal_flow purpose="SelfConstruction" throughput="1000"/>
+  </entity>
+
+  <entity name="ZenithMatterConverter"
+			tags="ZenithMatterConverter,Capturable" is_auto_scrapping_skipped_when_command_station_type_changes="true"
+			draw_in_galaxy_view="true"
+			visuals="Assets/_FinalGameMeshes/Zenith/ZenithMatterConverter/ZenithMatterConverter.prefab"
+			icon_name="Official/ZenithMatterConverter" gimbal_icon_size_multiplier="1.25"
+			y_offset_of_icon="30"
+			category="Ship" is_critical_infrastructure="true"
+			size_scale="4.5"
+			visuals_scale_multiplier="9"
+			collision_priority="900"
+			display_name="Zenith Matter Converter"
+			description="Ancien appareil Zenith qui produit de grandes quantités de métal à partir d'une source mystérieuse."
+			behavior="Stationary"
+			reverts_to_neutral_on_death_if_permadeath_setting_is_false="ZenithGeneratorsPermadeath"
+			metal_to_claim="10000"
+			starting_mark_level="Markless"
+			cost_for_ai_to_purchase="200"			
+			hull_points="90000" shield_points="210000" speed="Immobile"
+			metal_cost="2500000" energy_consumption="0"
+			armor_mm="80" albedo="0.9" mass_tx="2"
+			aip_on_death="10"
+			ship_or_structure_explosion_sfx="StructureMidsize_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="StructureLostOnOtherPlanet_Explosion"
+			voice_group="Civilian"
+			fleet_membership="Planetary"
+      exp_to_grant_on_death="-1"
+      priority_as_ai_target="IrreplaceableBigAsTheyCome" priority_as_frd_target="IgnoreMe" priority_to_protect="Irreplaceable"
+			>
+    <resource_production type="Metal" amount="3000"/>
+  </entity>
+
+
+  <entity name="IntraGalacticCoordinatorTurret" voice_group="Silent"
+     tags="IntraGalacticCoordinatorTurret,Capturable" is_auto_scrapping_skipped_when_command_station_type_changes="true"
+     draw_in_galaxy_view="true"
+     visuals="assets/_finalgamemeshes/aibuildings/advancedfactory/advancedfactory.prefab"
+     icon_name="Official/SchematicServer" icon_overlay="Official/SchematicServer_Turret" gimbal_icon_size_multiplier="1.25"
+	 y_offset_of_icon="25"
+     uses_large_health_bar="true"
+     category="Ship" is_critical_infrastructure="true"
+     size_scale="7.2"
+	 visuals_scale_multiplier="8"
+     collision_priority="1000"
+     display_name="Intra-Galactic Coordinator (Turrets)"
+     description="Technologie d'IA abandonnée obsolète, la capture de cette structure permet aux systèmes de votre empire de maintenir plus de tourelles qu'ils ne le feraient normalement."
+     behavior="Stationary"
+     reverts_to_neutral_on_death_if_permadeath_setting_is_false="IntraGalacticCoordinatorPermadeath"
+     starting_mark_level="Markless"
+	   cost_for_ai_to_purchase="200"
+	    aip_on_death="10"
+     hull_points="60000" shield_points="120000" speed="Immobile"
+     metal_cost="0" energy_consumption="1000"
+     armor_mm="80" albedo="0.9" mass_tx="5"
+     metal_to_claim="10000"
+     ship_or_structure_explosion_sfx="StructureMidsize_Explosion"
+     ship_or_structure_explosion_if_on_other_planet_sfx="StructureLostOnOtherPlanet_Explosion"
+     ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+     ship_cap_multiplier_turret="1.3"
+	 eligible_for_hacks="HackingIntraGalacticCoordinators"
+      exp_to_grant_on_death="-1"
+     priority_as_ai_target="IrreplaceableBigAsTheyCome" priority_as_frd_target="IgnoreMe" priority_to_protect="Irreplaceable"
+>
+</entity>
+  <entity name="IntraGalacticCoordinatorFrigate" voice_group="Silent"
+     tags="IntraGalacticCoordinatorFrigate,Capturable" is_auto_scrapping_skipped_when_command_station_type_changes="true"
+     draw_in_galaxy_view="true"
+     visuals="assets/_finalgamemeshes/aibuildings/advancedfactory/advancedfactory.prefab"
+     icon_name="Official/SchematicServer" icon_overlay="Official/SchematicServer_Starship" gimbal_icon_size_multiplier="1.25"
+	 y_offset_of_icon="25"
+     uses_large_health_bar="true"
+     category="Ship" is_critical_infrastructure="true"
+     size_scale="7.2"
+	 visuals_scale_multiplier="8"
+     collision_priority="1000"
+     display_name="Intra-Galactic Coordinator (Frigates)"
+     description="Technologie d'IA abandonnée obsolète, la capture de cette structure permet aux systèmes de votre empire de maintenir plus de frégates qu'ils ne le pourraient normalement."
+     behavior="Stationary"
+     reverts_to_neutral_on_death_if_permadeath_setting_is_false="IntraGalacticCoordinatorPermadeath"
+     starting_mark_level="Markless"
+	  cost_for_ai_to_purchase="200"
+	  aip_on_death="10"
+     hull_points="60000" shield_points="120000" speed="Immobile"
+     metal_cost="0" energy_consumption="1000"
+     armor_mm="80" albedo="0.9" mass_tx="5"
+     metal_to_claim="10000"
+	 eligible_for_hacks="HackingIntraGalacticCoordinators"
+     ship_or_structure_explosion_sfx="StructureMidsize_Explosion"
+     ship_or_structure_explosion_if_on_other_planet_sfx="StructureLostOnOtherPlanet_Explosion"
+     ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+     ship_cap_multiplier_frigate="1.3"
+      exp_to_grant_on_death="-1"
+     priority_as_ai_target="IrreplaceableBigAsTheyCome" priority_as_frd_target="IgnoreMe" priority_to_protect="Irreplaceable"
+>
+</entity>
+  <entity name="IntraGalacticCoordinatorStrikeCraft" voice_group="Silent"
+     tags="IntraGalacticCoordinatorStrikeCraft,Capturable" is_auto_scrapping_skipped_when_command_station_type_changes="true"
+     draw_in_galaxy_view="true"
+     visuals="assets/_finalgamemeshes/aibuildings/advancedfactory/advancedfactory.prefab"
+     icon_name="Official/SchematicServer" icon_overlay="Official/SchematicServer_Fleetship" gimbal_icon_size_multiplier="1.25"
+	 y_offset_of_icon="25"
+     uses_large_health_bar="true" 
+     category="Ship" is_critical_infrastructure="true"
+     size_scale="7.2"
+	 visuals_scale_multiplier="8"
+     collision_priority="1000"
+     display_name="Intra-Galactic Coordinator (Strikecraft)"
+     description="Technologie d'IA abandonnée obsolète, la capture de cette structure permet aux systèmes de votre empire de maintenir plus de Strike Craft qu'ils ne le pourraient normalement."
+     behavior="Stationary"
+     reverts_to_neutral_on_death_if_permadeath_setting_is_false="IntraGalacticCoordinatorPermadeath"
+     starting_mark_level="Markless"
+	 cost_for_ai_to_purchase="200"
+	aip_on_death="10"
+     hull_points="60000" shield_points="120000" speed="Immobile"
+     metal_cost="0" energy_consumption="1000"
+     armor_mm="80" albedo="0.9" mass_tx="5"
+     metal_to_claim="10000"
+	 eligible_for_hacks="HackingIntraGalacticCoordinators"
+     ship_or_structure_explosion_sfx="StructureMidsize_Explosion"
+     ship_or_structure_explosion_if_on_other_planet_sfx="StructureLostOnOtherPlanet_Explosion"
+     ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+     ship_cap_multiplier_strikecraft="1.3"
+      exp_to_grant_on_death="-1"
+     priority_as_ai_target="IrreplaceableBigAsTheyCome" priority_as_frd_target="IgnoreMe" priority_to_protect="Irreplaceable"
+>
+</entity>
+
+
+  <entity name="GlobalCommandAugmenter" voice_group="Silent"
+     tags="GlobalCommandAugmenter,Capturable" is_auto_scrapping_skipped_when_command_station_type_changes="true"
+     draw_in_galaxy_view="true"
+     visuals="Assets/_FinalGameMeshes/AIBuildings/AdvancedStarshipConstructor/AdvancedStarshipConstructor.prefab" lod_distance_overrides="1500,3000,15000"
+     icon_name="Official/GlobalCommandAugmenter" gimbal_icon_size_multiplier="1.25"
+	 y_offset_of_icon="30"
+     uses_large_health_bar="true"
+     category="Ship" is_critical_infrastructure="true"
+     size_scale="8"
+	 visuals_scale_multiplier="8"
+     collision_priority="1000"
+     display_name="Global Command Augmenter"
+     description="La capture de cette structure permet à TOUTES vos stations de commandement de construire des structures plus défensives (comme indiqué ci-dessous). Différents types de stations de commande en obtiennent plus ou moins en fonction de leur 'Multiplicateur d'augmentation de commande globale' Les postes de commandement militaire d'Aka obtiennent beaucoup plus, les économies économiques moins, etc."
+	 description_short="Une fois capturé, confère à toutes les flottes de la station de commandement plus de structures défensives. Le montant varie en fonction du type de station."
+     behavior="Stationary"
+     reverts_to_neutral_on_death_if_permadeath_setting_is_false="GlobalCommandAugmenterPermadeath"
+     starting_mark_level="Markless"
+	   cost_for_ai_to_purchase="200"
+	   aip_on_death="10"
+     hull_points="60000" shield_points="120000" speed="Immobile"
+     metal_cost="0" energy_consumption="1000"
+     armor_mm="80" albedo="0.9" mass_tx="5"
+     metal_to_claim="1000"
+	 eligible_for_hacks="HackingGlobalCommandAugmenter,RerollGlobalCommandAugmenter"
+     ship_or_structure_explosion_sfx="StructureMidsize_Explosion"
+     ship_or_structure_explosion_if_on_other_planet_sfx="StructureLostOnOtherPlanet_Explosion"
+     ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+     grants_stuff_to_be_added_to_player_command_stations="true"
+     exp_to_grant_on_death="-1"
+     priority_as_ai_target="IrreplaceableBigAsTheyCome" priority_as_frd_target="IgnoreMe" priority_to_protect="Irreplaceable"
+>
+  </entity>
+
+    <entity name="AdvancedResearchStation" voice_group="Silent"
+     tags="ARS,HackForShipType,ShowsOnNormalDisplayMode" is_auto_scrapping_skipped_when_command_station_type_changes="true"
+     draw_in_galaxy_view="true"
+     visuals="assets/_finalgamemeshes/aibuildings/advancedresearchstation/advancedresearchstation.prefab"
+     icon_name="Official/AdvancedResearchStation" gimbal_icon_size_multiplier="1.25" 
+     y_offset_of_icon="20"
+     uses_large_health_bar="true"
+     category="Ship"
+     size_scale="5"
+     visuals_scale_multiplier="10"
+     collision_priority="1000"
+     display_name="Advanced Research Station"
+     description="Le piratage de cette structure accorde l'un des types de navires suivants à la flotte qui a effectué le piratage (répertoriée ci-dessous). "
+     behavior="Stationary"
+     starting_mark_level="Markless"
+     cost_for_ai_to_purchase="200"
+     aip_on_death="0"
+     hull_points="60000" shield_points="120000" speed="Immobile"
+     metal_cost="0" energy_consumption="1000"
+     armor_mm="80" albedo="0.9" mass_tx="5"
+     eligible_for_hacks="HackToGrantShipLine,RerollARS,ConvertARSToScience"
+     ship_or_structure_explosion_sfx="StructureMidsize_Explosion"
+     ship_or_structure_explosion_if_on_other_planet_sfx="StructureLostOnOtherPlanet_Explosion"
+     ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+     grants_stuff_to_be_added_to_player_fleets="true"
+     exp_to_grant_on_death="-1"
+     target_type_for_player="NeverTarget"
+     priority_as_ai_target="IrreplaceableBigAsTheyCome" priority_as_frd_target="IgnoreMe" priority_to_protect="Irreplaceable"
+>
+  </entity>
+
+  
+  <entity name="FleetCapacityExtender" voice_group="Silent"
+   tags="FleetCapacity,HackForShipTypeCapIncrease,ShowsOnNormalDisplayMode" is_auto_scrapping_skipped_when_command_station_type_changes="true"
+   draw_in_galaxy_view="true"
+   visuals="assets/_finalgamemeshes/aibuildings/advancedresearchstation/fleetcapacityextender.prefab"
+   icon_name="Official/SomethingBooth" gimbal_icon_size_multiplier="1.25"
+   y_offset_of_icon="20"
+   uses_large_health_bar="true"
+   category="Ship"
+   size_scale="5"
+   visuals_scale_multiplier="10"
+   collision_priority="1000"
+   display_name="Fleet Capacity Extender"
+   description="Le piratage de cette structure double le plafond du navire pour l'un des types d'attaquants appartenant à la flotte qui a fait le piratage (votre choix quant au type). "
+   behavior="Stationary"
+   starting_mark_level="Markless"
+   cost_for_ai_to_purchase="200"
+   aip_on_death="0"
+   hull_points="60000" shield_points="120000" speed="Immobile"
+   metal_cost="0" energy_consumption="1000"
+   armor_mm="80" albedo="0.9" mass_tx="5"
+   eligible_for_hacks="HackToDoubleShipLineCap"
+   ship_or_structure_explosion_sfx="StructureMidsize_Explosion"
+   ship_or_structure_explosion_if_on_other_planet_sfx="StructureLostOnOtherPlanet_Explosion"
+   ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+   exp_to_grant_on_death="-1"
+   target_type_for_player="NeverTarget"
+   priority_as_ai_target="IrreplaceableBigAsTheyCome" priority_as_frd_target="IgnoreMe" priority_to_protect="Irreplaceable"
+>
+  </entity>
+
+  <entity name="TechnologyVault" voice_group="Silent"
+     tags="TechVault,GrantsTech,ShowsOnNormalDisplayMode" is_auto_scrapping_skipped_when_command_station_type_changes="true"
+     draw_in_galaxy_view="true"
+     visuals="assets/_finalgamemeshes/aibuildings/advancedresearchstation/techvault.prefab"
+     icon_name="Official/SomethingCrazyLock" gimbal_icon_size_multiplier="1.25" 
+     y_offset_of_icon="20"
+     uses_large_health_bar="true"
+     category="Ship"
+     size_scale="5"
+     visuals_scale_multiplier="10"
+     collision_priority="1000"
+     display_name="Technology Vault"
+     description="Le piratage de cette structure confère au joueur un peu de Tech."
+     behavior="Stationary"
+     starting_mark_level="Markless"
+     cost_for_ai_to_purchase="200"
+     aip_on_death="0"
+     hull_points="60000" shield_points="120000" speed="Immobile"
+     metal_cost="0" energy_consumption="1000"
+     armor_mm="80" albedo="0.9" mass_tx="5"
+     eligible_for_hacks="HackToGrantTech,ConvertTVToScience,RerollTV"
+     ship_or_structure_explosion_sfx="StructureMidsize_Explosion"
+     ship_or_structure_explosion_if_on_other_planet_sfx="StructureLostOnOtherPlanet_Explosion"
+     ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+     grants_tech="true"
+     target_type_for_player="NeverTarget"
+     exp_to_grant_on_death="-1"
+     priority_as_ai_target="IrreplaceableBigAsTheyCome" priority_as_frd_target="IgnoreMe" priority_to_protect="Irreplaceable"
+>
+  </entity>
+
+
+</root>

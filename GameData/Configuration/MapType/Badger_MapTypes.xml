@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <map_type name="Octopus"
+            display_name="Octopus"
+            description="A central block of planets with multiple 'Arms' spreading out from it."
+            dll_name="AIWarExternalCode"
+            type_name="Arcen.AIW2.External.Mapgen_Octopus"
+            author_line="Credit to tadrinth (some work from BadgerBadger)"
+            min_planets="40"
+            max_planets="200"
+            >
+  </map_type>
+
+  <!-- Solar systems Lite, Nebula and Asteroid still exist and the code works (or did last time I checked)
+       but Keith didn't really like them. They are still defined though -->
+  <map_type name="Solar_Systems_Lite"
+            is_hidden="true"
+              display_name="Solar Systems Lite"
+              description="~*~"
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.Mapgen_Circles"
+              min_planets="40"
+              max_planets="120"
+
+              >
+     </map_type>
+     <map_type name="Nebula"
+               is_hidden="true"
+            display_name="Nebula"
+            description="Available as an option under Clusters"
+            dll_name="AIWarExternalCode"
+            type_name="Arcen.AIW2.External.Mapgen_Nebula"
+            min_planets="40"
+            max_planets="120"
+            >
+  </map_type>
+  <map_type name="Asteroid"
+            is_hidden="true"
+            display_name="Asteroid Belt"
+            description="Available as an option under Clusters"
+            dll_name="AIWarExternalCode"
+            type_name="Arcen.AIW2.External.Mapgen_Nebula"
+            min_planets="40"
+            max_planets="120"
+            >
+  </map_type>
+
+  
+
+    <map_type name="Simple"
+              display_name="Simple"
+              description="A generalist map: planets are spread evenly and connected to their nearest neighbors."
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.Mapgen_Graph"
+              author_line="Credit to BadgerBadger"
+              min_planets="40"
+              max_planets="200"
+              >
+    </map_type>
+    <map_type name="Realistic"
+              display_name="Realistic"
+              is_default="true"
+              description="Feels more messy and organic."
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.Mapgen_Graph"
+              author_line="Credit to BadgerBadger"
+              min_planets="40"
+              max_planets="100"
+              >
+      </map_type>
+
+<!--
+<map_type name="Tutorial"
+  display_name="ExampleForAspiringModders"
+  description="~*~"
+  dll_name="AIWarExternalCode"
+  type_name="Arcen.AIW2.External.Mapgen_Tutorial"
+>
+</map_type>
+-->
+</root>

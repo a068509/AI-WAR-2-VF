@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<!-- these solar ones don't work properly, were just proof-of-concept stuff
+  <map_type name="SolarSnake"
+              display_name="SolarSnake"
+              description="~*~"
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.Mapgen_SolarSnake"
+  >
+  </map_type>
+  <map_type name="SolarSimple"
+              display_name="SolarSimple"
+              description="~*~"
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.Mapgen_SolarSimple"
+  >
+  </map_type>
+  <map_type name="SolarWide"
+              display_name="SolarWide"
+              description="~*~"
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.Mapgen_SolarWide"
+  >
+  </map_type>
+  <map_type name="SolarMaze"
+              display_name="SolarMaze"
+              description="~*~"
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.Mapgen_SolarMaze"
+  >
+  </map_type>
+-->
+  <map_type name="ClustersMicrocosm"
+            display_name="Clusters Microcosm"
+            description="Clusters are arranged in highly regular shapes."
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.Mapgen_ClustersRoot"
+              min_planets="40"
+              max_planets="120"
+
+  >
+  </map_type>
+
+  <map_type name="Tutorial_01"
+              is_hidden="true"
+              display_name="Tutorial 01"
+              description="(unneeded)"
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.Mapgen_Tutorial_01"
+              min_planets="40"
+              max_planets="120"
+
+  />
+  <map_type name="Snake"
+              display_name="Spiral Snake"
+              description="Planets are organized into a spiral, with only one path between all planets."
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.Mapgen_Concentric"
+              min_planets="40"
+              max_planets="160"
+  >
+  </map_type>
+  <map_type name="Concentric"
+              display_name="Concentric"
+              description="Planets are arranged in concentric rings."
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.Mapgen_Concentric"
+              min_planets="40"
+              max_planets="250"
+
+  >
+  </map_type>
+  <map_type name="X"
+              display_name="X"
+              description="Planets are organized into four distinct groups only connected via a single central planet."
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.Mapgen_X"
+              min_planets="40"
+              max_planets="200"
+  >
+  </map_type>
+  <map_type name="Grid"
+              display_name="Grid"
+              description="Planets are organized into an orderly grid."
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.RootLatticeTypeGenerator"
+              min_planets="40"
+              max_planets="200"
+  >
+  </map_type>
+  <map_type name="Maze"
+              display_name="Maze"
+              description="Planets are organized into a maze-like grid."
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.RootLatticeTypeGenerator"
+              min_planets="40"
+              max_planets="200"
+  >
+  </map_type>
+  <map_type name="Clusters"
+              display_name="Clusters"
+              description="Planets are organized into a number of clusters, each of which has only a few wormholes that lead to other clusters. Planets within a cluster each have a moderate number of connections to other planets within the cluster."
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.Mapgen_ClustersRoot"
+              min_planets="40"
+              max_planets="200"
+  >
+  </map_type>
+  <map_type name="Wheel"
+              display_name="Wheel"
+              description="Planets are arranged in a wheel-like shape with a number of spokes and a rim."
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.Mapgen_Wheel"
+              min_planets="40"
+              max_planets="200"
+  >
+  </map_type>
+  <map_type name="Honeycomb"
+              display_name="Honeycomb"
+              description="Planets are arranged in a hexagonal pattern."
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.Mapgen_Honeycomb"
+              min_planets="40"
+              max_planets="200"
+  >
+  </map_type>
+  <map_type name="Encapsulated"
+              display_name="Encapsulated"
+              description="Planets are arranged in small and large clusters inside an outer rim. Sometimes the clusters all connect to each other, other times you have to traverse the rim to get to the other clusters."
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.Mapgen_Encapsulated"
+              min_planets="40"
+              max_planets="200"
+  >
+  </map_type>
+  <map_type name="TestChamber"
+              is_hidden="true"
+              display_name="TestChamber"
+              description="~*~"
+              dll_name="AIWarExternalCode"
+              type_name="Arcen.AIW2.External.Mapgen_TestChamber"
+              is_test_chamber="true"
+              min_planets="40"
+              max_planets="200"
+  >
+  </map_type>
+</root>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <display_mode name="Normal"
+           is_default="true"
+           display_name="Normal"
+           dll_name="AIWarExternalVisualizationCode"
+           type_name="Arcen.AIW2.ExternalVisualization.GalaxyMapDisplayMode_Normal"
+  >
+  </display_mode>
+  <display_mode name="Resources"
+           display_name="Resources"
+           dll_name="AIWarExternalVisualizationCode"
+           type_name="Arcen.AIW2.ExternalVisualization.GalaxyMapDisplayMode_Resources"
+  >
+  </display_mode>
+  <display_mode name="Roamers"
+           display_name="Roamers"
+           dll_name="AIWarExternalVisualizationCode"
+           type_name="Arcen.AIW2.ExternalVisualization.GalaxyMapDisplayMode_Roamers"
+  >
+  </display_mode>
+</root>

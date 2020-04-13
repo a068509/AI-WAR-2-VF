@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <faction name="NaturalObject"
+           display_name="Natural Objects"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_NaturalObject"
+           team_center_color="Gray" team_border_color="cF8F8FF"
+           type="NaturalObject"
+           must_be_at_most_one="true"
+           should_not_be_shown="true"
+           description="A generic feature of the galaxy (like a wormhole)"
+  >
+  </faction>
+  <faction name="Human"
+           display_name="Human Remnant"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_Human"
+           team_center_color="c009E60" team_border_color="c00FF7F"
+           team_center_colors_beyond_the_first="c007FFF,cFFC40C,cCF3476"
+           team_border_colors_beyond_the_first="Turquoise,cFFFDD0,cFFA6C9"
+           type="Player"
+           description="The last remnant of humanity unconquered by the AI."
+           is_allowed_to_buy_from_zenith_trader="true"
+           counts_as_part_of_player_strength_at_planet_for_counterattack_blocking="true"
+           sort_group="100"
+  >
+    <custom_field name="StartingFleet" display_name="Starting Fleet" related_table="InitialPlayerFleets" description="Choose the starting flagship for this human faction's offensive operations."
+          sort_group="200" setting_type="CustomDropdownCoreTableSubset" default_option="ClassicStartingFleet" />
+    <custom_field name="StartingBattlestation" display_name="Starting Battlestation" related_table="InitialPlayerBattlestations" description="Choose the starting battlestation for this human faction's initial defenses."
+          sort_group="210" setting_type="CustomDropdownCoreTableSubset" default_option="ClassicStartingDefenses" />
+    <custom_field name="StartingSupportFleet" display_name="Starting Support Fleet" related_table="InitialPlayerSupportFleets" description="Choose the starting support fleet for this human faction."
+          sort_group="220" setting_type="CustomDropdownCoreTableSubset" default_option="StartingCombatEngineerAndFactoryCombo" />
+    <custom_field name="HumanCryogenicPodsToStartWith" display_name="&lt;color=#ff7e64&gt;Advanced:&lt;/color&gt; Number of Cryogenic Pods" 
+          sort_group="300" setting_type="IntSlider" default="10" min="0" max="30"
+      description="On this faction's homeworld, some number of Human Cryogenic Pods can be placed.  These give you a major boost in energy, particularly in the early game, but they are very vulnerable and increase the AI Progress by 1 if they are destroyed.
+      
+Where you fall on the risk/reward spectrum and how confident you are in defending your homeworld is really going to determine if you want the default 10 of these, or more of them, or none at all." />
+    <custom_field name="HomeHumanSettlementsToStartWith" display_name="&lt;color=#ff7e64&gt;Advanced:&lt;/color&gt; Number of Home Settlements"
+          sort_group="310" setting_type="IntSlider" default="2" min="0" max="5"
+      description="On this faction's homeworld, some number of Home Human Settlements can be placed.  These give you a major boost in metal income, particularly in the early game, but they are fairly vulnerable and increase the AI Progress by 5 if they are destroyed.
+      
+Where you fall on the risk/reward spectrum and how confident you are in defending your homeworld is really going to determine if you want the default 2 of these, or more of them, or none at all." />
+  </faction>
+  <faction name="AI"
+           display_name="AI Sentinels"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_AI"
+           team_center_color="cCC5500" team_border_color="cFFEFD5"
+           team_center_colors_beyond_the_first="c882D17"
+           type="AI"
+           description="The AI.
+		   
+Adding more AIs has a large impact on the game. If there are 2 or 3 AIs, each have only 75% of the income they would normally have. 4 and above have only 50% each. More AIs mean more things such as Waves at once, and multiple AI Overlords to defeat in order to win.
+
+This also opens the game up to an AI Civil War, in which case they would have their full 100% income, regardless of how many AIs there are."
+           can_be_targeted_by_annoyed_non_human_units="true"
+           is_allowed_to_buy_from_zenith_trader="true"
+           sort_group="200"
+           allied_to_ai_by_default="true"
+           can_use_spire_debris="true"
+  >
+    <custom_field name="AIType" display_name="AI Type" related_table="AIType" default_option="FullEnsemble"
+          sort_group="200" setting_type="CustomDropdownSurrogateTable" />    
+    <custom_field name="AIDifficulty" display_name="AI Main Difficulty" related_table="AIDifficulty" default_option="Normal"
+          sort_group="250" setting_type="CustomDropdownSurrogateTable" />
+    
+    <custom_field name="AISpecialForces_BorderColor" display_name="Warden Fleet Border Color" related_table="TeamColorDefinition"
+        sort_group="400" setting_type="TeamColorPopup_BorderOnly" default_option="cF4C431" description="The Warden Fleet defends AI planets against your attacks." />
+    <custom_field name="SpecialForcesType" display_name="Warden Fleet Type" related_table="AISpecialForcesType" default_option="BaseOriented"
+          sort_group="410" setting_type="CustomDropdownSurrogateTable" description="The Warden Fleet defends AI planets against your attacks." />
+    <custom_field name="AIDifficulty_WardenFleet" display_name="Warden Fleet Difficulty" related_table="AIDifficulty_WardenFleet" default_option="Normal"
+          sort_group="420" setting_type="CustomDropdownSurrogateTable" description="The Warden Fleet defends AI planets against your attacks." />
+    
+    <custom_field name="HunterFleet_BorderColor" display_name="Hunter Fleet Border Color" related_table="TeamColorDefinition"
+        sort_group="500" setting_type="TeamColorPopup_BorderOnly" default_option="cFF3365" description="The Hunter Fleet looks for weaknesses in your defenses and attacks." />
+    <custom_field name="HunterFleetType" display_name="Hunter Fleet Type" related_table="HunterFleetType" default_option="Normal"
+          sort_group="510" setting_type="CustomDropdownSurrogateTable" description="The Hunter Fleet looks for weaknesses in your defenses and attacks." />
+    <custom_field name="AIDifficulty_HunterFleet" display_name="Hunter Fleet Difficulty" related_table="AIDifficulty_HunterFleet" default_option="Normal"
+                  sort_group="520" setting_type="CustomDropdownSurrogateTable" description="The Hunter Fleet looks for weaknesses in your defenses and attacks." />
+    <custom_field name="PraetorianGuard_BorderColor" display_name="Praetorian Guard Border Color" related_table="TeamColorDefinition"
+                  sort_group="600" setting_type="TeamColorPopup_BorderOnly" default_option="c009E60" description="The Praetorian Guard is an elite force that defends AI homeworlds." />
+
+</faction>
+  <faction name="AISpecialForces"
+           display_name="AI Warden Fleet"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_AISpecialForces"
+           team_center_color="c882D17" team_border_color="cF4C431"
+           type="SpecialFaction"
+           should_not_be_shown="true"
+           description="The Warden Fleet defends AI planets against your attacks."
+           takes_on_current_general_mark_level_of_the_ai_factions="true"
+           takes_on_center_color_of_the_preceding_ai_faction="true"
+           allied_to_ai_by_default="true"
+           sort_group="210"
+  >
+  </faction>
+  <faction name="HunterFleet"
+           display_name="AI Hunter Fleet"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_HunterFleet"
+           team_center_color="Red" team_border_color="cF5F5DC"
+           type="SpecialFaction"
+           should_not_be_shown="true"
+           description="The Hunter Fleet looks for weaknesses in your defenses and attacks."
+           takes_on_current_general_mark_level_of_the_ai_factions="true"
+           takes_on_center_color_of_the_preceding_ai_faction="true"
+           allied_to_ai_by_default="true"
+           sort_group="220"
+  >
+  </faction>
+    <faction name="PraetorianGuard"
+           display_name="AI Praetorian Guard"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_PraetorianGuard"
+           team_center_color="Red" team_border_color="c009E60"
+           type="SpecialFaction"
+           should_not_be_shown="true"
+           description="The Praetorian Guard is an elite force that defends AI homeworlds."
+           takes_on_current_general_mark_level_of_the_ai_factions="true"
+           takes_on_center_color_of_the_preceding_ai_faction="true"
+           allied_to_ai_by_default="true"
+           sort_group="220"
+  >
+    </faction>
+    <faction name="AIReserves"
+           display_name="AI Reserves"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_AIReserves"
+           team_center_color="c00563B" team_border_color="cBFFF00"
+           type="SpecialFaction"
+           must_be_at_most_one="true"
+           should_not_be_shown="true"
+           auto_add_one_of_faction_if_missing_on_save_load="true"
+           takes_on_current_general_mark_level_of_the_ai_factions="true"
+           takes_on_center_color_of_the_preceding_ai_faction="true"
+           allied_to_ai_by_default="true"
+           description="."
+           >
+  </faction>
+
+
+  <faction name="AntiAIZombie"
+           display_name="Anti-AI Zombie"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_AntiAIZombie"
+           team_center_color="c1B1B1B" team_border_color="Yellow2"
+           type="SpecialFaction"
+           must_be_at_most_one="true"
+           should_not_be_shown="true"
+           description="This zombie hates the AI"
+           ai_can_send_waves_against_this="false"
+           ai_threat_against_this_faction_goes_back_to_guarding="true"
+           counts_as_part_of_player_strength_at_planet_for_counterattack_blocking="true"
+  >
+  </faction>
+  <faction name="AntiPlayerZombie"
+           display_name="Anti-Player Zombie"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_AntiPlayerZombie"
+           team_center_color="c1B1B1B" team_border_color="cE52B50"
+           type="SpecialFaction"
+           must_be_at_most_one="true"
+           should_not_be_shown="true"
+           allied_to_ai_by_default="true"
+           description="This zombie hates humans"
+  >
+  </faction>
+  <faction name="AntiEveryoneZombie"
+           display_name="Anti-Everyone Zombie"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_AntiEveryoneZombie"
+           team_center_color="c1B1B1B" team_border_color="cFE28A2"
+           type="SpecialFaction"
+           must_be_at_most_one="true"
+           should_not_be_shown="true"
+           ai_threat_against_this_faction_goes_back_to_guarding="true"
+           description="This zombie hates everyone"
+           ai_can_send_waves_against_this="false"
+  >
+  </faction>
+  <faction name="DevourerGolem"
+           display_name="Devourer Golem"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_Devourer"
+           team_center_color="c191970" team_border_color="c00FF7F"
+           type="SpecialFaction"
+           must_be_at_most_one="true"
+           ai_can_send_waves_against_this="false"
+           ai_does_not_generate_threat_against="true"
+           description="The nigh-indestructible Devourer Golem makes its way slowly around the galaxy, absorbing all of the mobile military forces it finds in order to power and repair itself.
+		   
+&lt;color=#f25e1c&gt;LOW IMPACT:&lt;/color&gt; This faction does not expand, and doesn't do any irrepairable damage. Can sometimes create massive shifts in a fight, however."
+           can_be_targeted_by_annoyed_non_human_units="true"
+           ai_threat_against_this_faction_goes_back_to_guarding="true"
+           player_discoverable="true"
+  >
+    <custom_field name="Allegiance" display_name="Allegiance" description="Is this faction friendly to the AI(s), humans, or nobody?"
+          sort_group="200" setting_type="CustomDropdownArbitraryOptions" arbitrary_options="Hostile To All,Friendly To Players,Hostile To Players Only,Minor Faction Team Red,Minor Faction Team Blue,Minor Faction Team Green" default_option="Hostile To All" />
+  </faction>
+  <faction name="ZenithDysonSphere"
+           display_name="Zenith Dyson Sphere"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_DysonSphere"
+           team_center_color="c324AB2" team_border_color="c90EE90"
+           type="SpecialFaction"
+           description="The massive Dyson Sphere Golem exists at one of the AI planets, and is basically a massive fortress that will attack humans and AIs alike. However, if you free the planet from the AI, the sphere will realize your benign intent and will help you fight the AI on nearby planets. If you take the planet for yourself, the sphere will attack you until you give up the planet.
+		   
+&lt;color=#f25e1c&gt;MEDIUM IMPACT:&lt;/color&gt; This faction does not expand, and doesn't do any irrepairable damage. It can be boosted to a level much higher than it starts, but can occasionally be a bit wimpy if it has a bad start."
+           can_be_targeted_by_annoyed_non_human_units="true"
+           ai_threat_against_this_faction_goes_back_to_guarding="true"
+           is_affected_by_dyson_antagonizer="true"
+  >
+    <custom_field name="Intensity" display_name="Intensity" description="How much of an impact are they likely to have on gameplay?"
+          sort_group="200" setting_type="IntSlider" default="5" min="1" max="10"/>
+  </faction>
+
+    <faction name="AntagonizedDysonSphere"
+           display_name="Antagonized Dyson Sphere"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_AntagonizedDysonSphere"
+           team_center_color="cE32636" team_border_color="cA52A2A"
+           type="SpecialFaction"
+           must_be_at_most_one="true"
+           description="The massive Dyson Sphere Golem has been antagonized by the AI and is going to attack you"
+           can_be_targeted_by_annoyed_non_human_units="true"
+           should_not_be_shown="true"
+           takes_on_color_of_the_first_ai_faction="true"
+           allied_to_ai_by_default="true"
+  >
+  </faction>
+      <faction name="Instigators"
+           display_name="AI Instigators"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_Instigators"
+           team_center_color="cE32636" team_border_color="cA52A2A"
+           type="SpecialFaction"
+           must_be_at_most_one="true"
+           description="This AI faction generates bonus strength and power for the AI."
+           can_be_targeted_by_annoyed_non_human_units="true"
+           should_not_be_shown="true"
+           takes_on_current_general_mark_level_of_the_ai_factions="true"
+           takes_on_color_of_the_first_ai_faction="true"
+           allied_to_ai_by_default="true"
+  >
+  </faction>
+
+  <faction name="ZenithTrader"
+           display_name="Zenith Trader"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_ZenithTraitor"
+           team_center_color="c1560BD" team_border_color="c2E8B57"
+           type="SpecialFaction"
+           must_be_at_most_one="true"
+           description="These alien traders are happy to do business with anyone who can pay. They travel around the galaxy, providing special structures (for a hefty fee) to both human and AI players alike.
+		   
+&lt;color=#f25e1c&gt;LOW IMPACT:&lt;/color&gt; This faction does not expand, and isn't a combatant in any way. Can be helpful, hinderance, or both, but not usually to a large degree. "
+           can_be_targeted_by_annoyed_non_human_units="true"
+  >
+  </faction>
+    <faction name="HumanResistanceFighters"
+           display_name="Human Resistance Fighters"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_HumanResistanceFighters"
+           team_center_color="c00563B" team_border_color="cBFFF00"
+           type="SpecialFaction"
+           must_be_at_most_one="true"
+           counts_as_part_of_player_strength_at_planet_for_counterattack_blocking="true"
+           player_discoverable="true"
+           description="Pockets of human allies still live in deep space around AI planets; when they see you fighting the AI, sometimes they will reveal themselves and join you.
+		   
+&lt;color=#f25e1c&gt;LOW IMPACT:&lt;/color&gt; This faction does not expand, and doesn't do any irrepairable damage. They are a nice boost to your power, but they won't win games for you on their own."
+           >
+      <custom_field name="Intensity" display_name="Intensity" description="How much of an impact are they likely to have on gameplay?"
+          sort_group="200" setting_type="IntSlider" default="5" min="1" max="10"/>
+      <!--      <custom_field name="HRFBehaviour" display_name="HitAndRun" option_source="ArbitraryOptions" arbitrary_options="HitAndRun,Patrol" default_option="HitAndRun" />
+      -->
+  </faction>
+    <faction name="HumanMarauders"
+           display_name="Marauders"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_HumanMarauders"
+           team_center_color="c00563B" team_border_color="cFF5A36"
+           type="SpecialFaction"
+           description="Hostile human vagabonds who live in deep space will occasionally raid human or AI planets via traditional propulsion methods (and thus come in from the edge of a system, not a wormhole). If they capture a planet then they will fortify it and use its resources to strengthen future attacks. Higher intensity gives this faction stronger and more frequent attacks.
+		   
+&lt;color=#f25e1c&gt;VARIABLE IMPACT:&lt;/color&gt; This faction expands, and can do irrepairable damage. If allowed to expand enough, they can be an enormous threat, but can struggle to get going initially. Their first method of attack can force some different strategies on the player as well."
+           can_be_targeted_by_annoyed_non_human_units="true"
+           player_discoverable="true"
+           can_use_spire_debris="true"
+           >
+      <custom_field name="Intensity" display_name="Intensity" description="How much of an impact are they likely to have on gameplay?"
+          sort_group="200" setting_type="IntSlider" default="5" min="1" max="10"/>
+      <custom_field name="Allegiance" display_name="Allegiance" description="Is this faction friendly to the AI(s), humans, or nobody?"
+                    sort_group="250" setting_type="CustomDropdownArbitraryOptions" arbitrary_options="Hostile To All,Friendly To Players,Hostile To Players Only,Minor Faction Team Red,Minor Faction Team Blue,Minor Faction Team Green" default_option="Hostile To All" />
+      <custom_field name="Intelligence" display_name="Intelligence" description="What strategies should Marauder Raiders use when expanding? Tactician is smart, Brute Force is dumb"
+          sort_group="250" setting_type="CustomDropdownArbitraryOptions" arbitrary_options="Tactician,Brute Force" default_option="Tactician" />
+
+  </faction>
+    <faction name="AI Risk Analyzers"
+           display_name="AI Risk Analyzers"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_RiskAnalyzer"
+           team_center_color="cE32636" team_border_color="cA52A2A"
+           type="SpecialFaction"
+           must_be_at_most_one="true"
+           description="Up to 10 Risk Analyzers are scattered throughout the galaxy. Each hour the AI uses them to analyze your presence, causing the AIP to go up 1. If you destroy one then it generates 10 AIP. If you capture them then you can feed the AI bad data; each captured Risk Analyzer brings the AIP down 2 per hour. The AI will launch Exogalactic Strikeforces against you with greater force the more Risk Analyzers you take. If an Analyzer is on an AI planet, it only adds a little progress. If it's on a neutral planet, it adds a fair bit more. If you own the planet, it adds a LOT more progress over time.
+		   
+&lt;color=#f25e1c&gt;HIGH IMPACT:&lt;/color&gt; This is a notable boost to the AI, both increasing your AI Progress (AIP) and creating more attacks against you, the frequency and power of which depends on how you interact with them. Can open up some interesting strategies with the AIP reduction."
+           takes_on_current_general_mark_level_of_the_ai_factions="true"
+           allied_to_ai_by_default="true"
+           >
+      <custom_field name="NumberToSeed" display_name="Analyzers To Seed" description="Number of these units to seed initially. More units means more impact on gameplay"
+          sort_group="200" setting_type="IntSlider" default="5" min="1" max="10"/>
+      <!--      <custom_field name="HRFBehaviour" display_name="HitAndRun" option_source="ArbitraryOptions" arbitrary_options="HitAndRun,Patrol" default_option="HitAndRun" />
+      -->
+  </faction>
+    <faction name="Dark Spire"
+           display_name="Dark Spire"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_DarkSpire"
+           team_center_color="cFFF8DC" team_border_color="cC41E3A"
+           type="SpecialFaction"
+           must_be_at_most_one="true"
+           description="Several mysterious, ancient structures exist on AI Planets throughout the galaxy. They cannot be harmed and do not have any weapons, but they absorb energy when a ship dies on the same planet. What happens when they absorb too much?
+		   
+&lt;color=#f25e1c&gt;HIGH IMPACT:&lt;/color&gt; This faction plays very differently, and is generally reactive. They can range from essentially doing near nothing, to dominating the galaxy depending on events."
+           ai_can_send_waves_against_this="false"
+           >
+      <custom_field name="Intensity" display_name="Intensity" description="Just how terrifying is this faction?"
+          sort_group="200" setting_type="IntSlider" default="5" min="1" max="10"/>
+  </faction>
+    <faction name="AstroTrains"
+           display_name="Astro Trains"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_AstroTrains"
+           team_center_color="cA81C07" team_border_color="cFF7F50"
+           type="SpecialFaction"
+           must_be_at_most_one="true"
+           description="The AI periodically spawns Depots that are the focal points of various AI anti-human countermeasures. Trains will spawn and travel between Stations on the way to the Depot to increase the power of these attacks. Intercept and destroy the trains to weaken those attacks.
+		   
+&lt;color=#f25e1c&gt;MEDIUM IMPACT:&lt;/color&gt; This is a notable boost to the AI, boosting it and creating new unique units to fight you, the types of both depending on the selected Intensity. You can however perform some robberies on the Trains for some usually limited resources, so if done right they can be a net boost to you."
+           takes_on_current_general_mark_level_of_the_ai_factions="true"
+           allied_to_ai_by_default="true"
+           >
+      <custom_field name="Intensity" display_name="Intensity" description="How much of an impact are they likely to have on gameplay? Intensity affects how fast they build Depots and Trains, as well as what projects it can undertake."
+          sort_group="200" setting_type="IntSlider" default="5" min="1" max="10"/>
+  </faction>
+
+      <faction name="MacrophageInfestation"
+           display_name="Macrophage Infestation"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_MacrophageInfestation"
+           team_center_color="c50C878" team_border_color="cC41E3A"
+           type="SpecialFaction"
+           ai_does_not_generate_threat_against="true"
+           ai_threat_against_this_faction_goes_back_to_guarding="true"
+           description="The galaxy is being invaded by enormous biological Macrophages. They prey on the AI for metal, and will try to eat your ships too.
+		   
+&lt;color=#f25e1c&gt;MEDIUM IMPACT:&lt;/color&gt; This faction plays differently, being capable of expanding but not in a traditional manner. Depending on their start, they can be extremely strong, or a bit more low impact."
+           ai_can_send_waves_against_this="false"
+		   can_use_spire_debris="true"
+           >
+      <custom_field name="Intensity" display_name="Intensity" description="Just how terrifying is this faction?"
+          sort_group="200" setting_type="IntSlider" default="5" min="1" max="10"/>
+      <custom_field name="Allegiance" display_name="Allegiance" description="Is this faction friendly to the AI(s), humans, or nobody?"
+          sort_group="250" setting_type="CustomDropdownArbitraryOptions" arbitrary_options="Hostile To All,Friendly To Players,Hostile To Players Only,Minor Faction Team Red,Minor Faction Team Blue,Minor Faction Team Green" default_option="Hostile To All" />
+	  <custom_field name="SpawningOptions" display_name="Spawning Options" description="Modifies the spawning style of this faction.
+Default spawns a single Telium on a scaling number of planets based on Intensity.
+Lone Telium spawns a single angry Telium that never expands but has vastly increased production capabilities.
+Clustered Telia spawns Telia in groups of 2 across the galaxy based on Intensity."
+          sort_group="300" setting_type="CustomDropdownArbitraryOptions" arbitrary_options="Default,Lone Telium,Clustered Telia" default_option="Default" />
+
+  </faction>
+  <faction name="TamedMacrophage"
+           display_name="Tamed Macrophage Infestation"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_MacrophageInfestationTamed"
+           team_center_color="c0095B6" team_border_color="cC41E3A"
+           type="SpecialFaction"
+           must_be_at_most_one="true"
+		   should_not_be_shown="true"
+           ai_does_not_generate_threat_against="true"
+           ai_threat_against_this_faction_goes_back_to_guarding="true"
+           description="The galaxy is being invaded by enormous biological Macrophages. They prey on the AI for metal, and will try to eat your ships too."
+           ai_can_send_waves_against_this="false"
+		   player_discoverable="true"
+		   can_use_spire_debris="true"
+           >
+   </faction>
+		   <faction name="EnragedMacrophage"
+           display_name="Enraged Macrophage Infestation"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_MacrophageInfestationEnraged"
+           team_center_color="cE9967A" team_border_color="cC41E3A"
+           type="SpecialFaction"
+           must_be_at_most_one="true"
+		   should_not_be_shown="true"
+           ai_does_not_generate_threat_against="true"
+           ai_threat_against_this_faction_goes_back_to_guarding="true"
+           description="The galaxy is being invaded by enormous biological Macrophages. They prey on the AI for metal, and will try to eat your ships too."
+           ai_can_send_waves_against_this="false"
+           >
+   </faction>
+  <faction name="Mercenary"
+           display_name="Outguard"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_Mercenary"
+           team_center_color="Gunmetal2" team_border_color="cE52B50"
+           type="SpecialFaction"
+           must_be_at_most_one="true"
+           should_not_be_shown="true"
+           counts_as_part_of_player_strength_at_planet_for_counterattack_blocking="true"
+           description="Outguard are independent units summoned by the player. Capture Outguard Communicators on the map to gain access to these powerful forces."
+  >
+  </faction>
+  <faction name="MissingFaction"
+           display_name="Missing Faction"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.SpecialFaction_Missing"
+           team_center_color="Gunmetal2" team_border_color="cE52B50"
+           type="SpecialFaction"
+           should_not_be_shown="true"
+           description="This is used for factions that can't be found for some reason to keep them from erroring."
+  >
+  </faction>
+
+</root>

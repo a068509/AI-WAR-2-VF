@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<item name="Zombification" scale="10000"
+       	dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.DeathEffect_Zombification"
+        description_prefix="ZOMBIFICATION"
+        description_damage_name="zombification"
+        description_conditions="if the target is a mobile combatant (minus some immune)"
+        description_of_effects="this ship's faction gains an allied copy of that target"
+        description_added_note_for_player="The zombie will move and attack on its own."
+        >
+		<offense_tier name="None" ability_multiplier="0" />
+		<offense_tier name="Minor" ability_multiplier="0.1" />
+		<offense_tier name="Major" ability_multiplier="1" />
+		<offense_tier name="Overlord" ability_multiplier="2" />
+		<offense_tier name="Mugger" ability_multiplier="3" />
+		<offense_tier name="Thanatos" ability_multiplier="4" />
+		<offense_tier name="Botnet" ability_multiplier="5" />
+		<offense_tier name="ParasiteFusionBomber" ability_multiplier="10" />
+		<offense_tier name="ParasitePikeCorvette" ability_multiplier="10" />
+        <offense_tier name="Tethuida" ability_multiplier="10" />		
+		<offense_tier name="Parasite" ability_multiplier="20" />
+
+	</item>
+
+  <item name="Metabolization" scale="10000"
+       	dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.DeathEffect_Metabolization"
+        description_prefix="METABOLIZATION"
+        description_damage_name="metabolic"
+        description_conditions=""
+        description_of_effects="this ship's faction immediately gains 20% of that target's metal cost, up to 5000 metal."
+        description_added_note_for_player=""
+        >
+    <offense_tier name="None" ability_multiplier="0" />
+    <offense_tier name="Minor" ability_multiplier="0.1" />
+    <offense_tier name="Major" ability_multiplier="1" />
+	<offense_tier name="Gangsaw" ability_multiplier="10" />
+  </item>
+  
+  <item name="GreaterMetabolization" scale="10000"
+       	dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.DeathEffect_GreaterMetabolization"
+        description_prefix="GREATER METABOLIZATION"
+        description_damage_name="metabolic"
+        description_conditions=""
+        description_of_effects="this ship's faction immediately gains 50% of that target's metal cost, up to 50000 metal."
+        description_added_note_for_player=""
+        >
+    <offense_tier name="None" ability_multiplier="0" />
+    <offense_tier name="Minor" ability_multiplier="0.1" />
+    <offense_tier name="Major" ability_multiplier="1" />
+	<offense_tier name="BountyHunter" ability_multiplier="10" />
+  </item>  
+</root>

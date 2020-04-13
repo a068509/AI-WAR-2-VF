@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <tip category="Hacking" name="Hacking_Basic" display_name="Hacking Basics" sort_priority="1"
+        full_text="As you capture planets from the AI, you gain hacking points -- same as you are able to gather science.  But while science is spent on tech upgrades, hacking points are spent on disrupting your enemies or giving you new advantages.
+        
+To do a hack, look in the Hacking tab of the left sidebar.  That will show you all of the hacks available at the planet you are currently viewing.  Different planets have different options available, depending on what enemy units are there.
+
+Each hack visible in the sidebar will show the cost in hacking points and the time it will take for the hack. Looking at the colour of the time will give you an approximate sense of how much AI response you can expect from your hack (the more red the text, the scarier the response).
+
+Unexplored planets have hacks that allow for early exploration/scouting, but that can be a big hacking-point sink." />
+
+  
+  <tip category="Hacking" name="Hacking_GettingMore" display_name="Getting More Hacking Points" sort_priority="50"
+        full_text="Hacking points are a non-renewable, finite resource.  Like science!  The only way to get more is by capturing more planets.
+        
+But you shouldn't feel like you can't spend hacking points; that's just a waste of an important resource.
+
+There's nothing that is absolutely critical that REQUIRES hacking.  Hackable enemy units are either optional side ventures, or can be claimed in an alternative fashion by capturing the planet they sit on." />
+  
+  
+  <tip category="Hacking" name="Hacking_Closest" display_name="The Closest Hacker Gets The Reward" sort_priority="100"
+      full_text="When there are multiple hackers on a planet (you have multiple flagships present), then whatever hacker is closest to the target will be the one to run the hack.
+      
+This is really important for things that give a bonus to the hacker's fleet: hacking Advanced Research Stations grant an extra ship line to the hacker's fleet, hacking a Dyson Sphere grants you some unique Spire ships to the hacker's fleet, and so on." />
+
+  
+  <tip category="Hacking" name="Hacking_Styles" display_name="The Three Styles of Hacks" sort_priority="200"
+      full_text="There are a few hacks that are planet-targeting, and which usually don't require any local hackers on your part.  You can just select an unexplored planet on the galaxy map, and then deploy spy nanites from the hacking sidebar tab, for instance.
+
+Most hacks are ship/structure-targeting, however: there's some enemy unit that you can disrupt, capture for yourself, weaken, extract a benefit from... the list goes on.  For these you need to bring a hacker -- aka any Flagship of any of your mobile fleets -- and usually you need to keep the hacker in place for a short while.  The harder the hack, the longer you have to stick around.
+
+There are a very few hacks that you can run for a while and then cancel when you're ready to stop.  The SuperTerminal is the classic example of this: you gain more and more benefit the longer you hack it, but more and more enemy forces rain down on you.  So you hack for as long as you think you can manage it, then cancel the hack and deal with the enemy that is now VERY aware of you." />
+
+</root>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  
+  <!--These are the main fleets used by players, that get assigned to Flagships - aka Arks or Golems.
+      These have typically a certain number of types of strikecraft in them (fewer is better, within reason),
+      and then some frigates to play support (or no frigates, in some cases).
+      
+      The actual ships that might be in each category are assigned on the ships themselves;
+      this file just defines how frequently the fleet design should show up, and what the overall
+      number of types are that can be in there.-->
+
+  <!--Focus on basic ships, anything that is not too strange but it's a big random mix.-->
+  <fleet_design name="BasicOffensiveMix" design_logic="MobileCombatFleet" weight="100">
+    <potential_ships category="Strike" min="2" max="3"/>
+    <potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+
+  <!--Focus on cloaked ships, but beyond that it's a big random mix.-->
+  <fleet_design name="CloakedMix" design_logic="MobileCombatFleet" weight="5">
+    <potential_ships category="Strike" min="2" max="3"/>
+    <potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+
+  <!--Focus on basic ships but with more frigates included.-->
+  <fleet_design name="FrigatesWithSupport" design_logic="MobileCombatFleet" weight="50">
+    <potential_ships category="Strike" min="1" max="1"/>
+    <potential_ships category="Frigate" min="2" max="3"/>
+  </fleet_design>
+
+  <!--Focus on ships that are more-fragile but higher-dps variants of basic ship types.-->
+  <fleet_design name="FragileOffensiveMix" design_logic="MobileCombatFleet" weight="5">
+    <potential_ships category="Strike" min="2" max="3"/>
+    <potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+
+  <!--Focus on ships that split after death or other circumstances, whether that's hydras or other types of replication.-->
+  <fleet_design name="ReplicatingOffensiveMix" design_logic="MobileCombatFleet" weight="5">
+    <potential_ships category="Strike" min="2" max="3"/>
+    <potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+
+  <!--Focus on ships that are hydras, along with whatever else they are.-->
+  <fleet_design name="HydraOffensiveMix" design_logic="MobileCombatFleet" weight="5">
+    <potential_ships category="Strike" min="2" max="3"/>
+    <potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+
+  <!--Focus on ships that are anything and everything strange.-->
+  <fleet_design name="UnusualMix" design_logic="MobileCombatFleet" weight="5">
+    <potential_ships category="Strike" min="2" max="3"/>
+    <potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+
+  <!--Focus on ships that are sturdier variants of basic ship types.-->
+  <fleet_design name="SturdyOffensiveMix" design_logic="MobileCombatFleet" weight="5">
+    <potential_ships category="Strike" min="2" max="3"/>
+    <potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+
+  <!--Focus on ships that are great at raiding.-->
+  <fleet_design name="RaidOffensiveMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="1" max="3"/>
+    <potential_ships category="Frigate" min="1" max="1"/>
+  </fleet_design>
+
+  <!--Focus on ships that kill themselves as they attack, with some ships useful for their utility here.-->
+  <fleet_design name="SelfSacrificingOffensiveMix" design_logic="MobileCombatFleet" weight="5">
+    <potential_ships category="Strike" min="2" max="3"/>
+    <potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+
+  <!--Focus on ships just the old-school basic trio.-->
+  <fleet_design name="ClassicTrioMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="3" max="3"/>
+    <potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+
+  <!--Focus on ships that may not be fast, but hit hard and also are sturdy.-->
+  <fleet_design name="SlowHeavyMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="4"/>
+  </fleet_design>
+
+  <!--Focus on taking down large targets faster.-->
+  <fleet_design name="AntiLargeMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="3"/>
+	<potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+
+  <!--Focus on killing small ships quicker.-->
+  <fleet_design name="AntiSmallMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="4"/>
+  </fleet_design>
+
+  <!--Focus on destroying structures, mainly, or getting through forcefields fast-->
+  <fleet_design name="AntiStructureMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="3"/>
+	<potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+
+  <!--Focus on AOE damage, mainly, or hitting lots of small targets-->
+  <fleet_design name="CrowdControlMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="3"/>
+	<potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+  
+  <!--Focus on things like engine stun, knockback, etc.-->
+  <fleet_design name="DebufferMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="3"/>
+    <potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+
+  <!--Focus on sniper/artillery like units.-->
+  <fleet_design name="SniperMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="3"/>
+    <potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+
+  <!--Focus on units with zombification.-->
+  <fleet_design name="ZombificationMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="3"/>
+	<potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+  
+  <!--Focus on stuff that combine to be really good at kiting, i.e slow the enemy, move fast ourselves.-->
+  <fleet_design name="KiteMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="3"/>
+	<potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+
+  <!--Focus on stuff that uses tractor beams, plus some complementary units.-->
+  <fleet_design name="TractorMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="3"/>
+	<potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+
+  <!--Focus on stuff that cause engine stun, plus some complementary units.-->
+  <fleet_design name="EngineStunMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="3"/>
+	<potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+
+  <!--Focus on stuff that are weak but numerous.-->
+  <fleet_design name="SwarmerMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="4"/>
+  </fleet_design>  
+
+  <!--Focus on stuff that wears the enemy down.-->
+  <fleet_design name="AttritionerMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="3"/>
+	<potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+
+  <!--Focus on stuff that can charge into hostile planets and is stronger for it, then some extra types to back them up.-->
+  <fleet_design name="BreacherMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="4"/>
+  </fleet_design>
+  
+  <!--Focus on basic Corvette stuff.-->
+  <fleet_design name="CorvetteMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="4"/>
+  </fleet_design>
+
+  <!--Focus on some zombification (but not all), but then some units that deal with the things usually immune.-->
+  <fleet_design name="ZombificationAntiCounterMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="3"/>
+	<potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+  
+  <!--Focus on some melee, with units that keep enemies slow/in place/disabled for them to munch on.-->
+  <fleet_design name="MeleeWithSupportMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="3"/>
+	<potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+
+  <!--Focus on the upgraded versions of units.-->
+  <fleet_design name="VeteranViciousMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="3"/>
+	<potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>  
+
+  <!--Focus on things that are great at dealing with hack response, plus some Stalkers and Eyebots for the Guardians.-->
+  <fleet_design name="BullyMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="3"/>
+	<potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>  
+
+   <!--Focus on things that eat the enemy for resources, then units that are primarily based around destroying themselves to attack.-->
+  <fleet_design name="GluttonyMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="3"/>
+	<potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+
+   <!--Focus on missiles. All of them.-->
+  <fleet_design name="MissileMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="3"/>
+	<potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+
+   <!--Focus on units that can abduct enemies from things like Posts, then some Bombers to destroy said Post.-->
+  <fleet_design name="AbductorBomberMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="3"/>
+	<potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>
+
+   <!--Focus on units with shield bypass and hull percentage bonuses, then just simple shield bypass to finish them off.-->
+  <fleet_design name="CooperativeFusionMix" design_logic="MobileCombatFleet" weight="10">
+    <potential_ships category="Strike" min="2" max="3"/>
+	<potential_ships category="Frigate" min="0" max="1"/>
+  </fleet_design>  
+
+ 
+</root>

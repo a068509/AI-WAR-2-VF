@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root
+    is_partial_record="true"
+    custom_FInt_HumanResistanceFighters_BudgetPerSecond="8"
+    custom_int_HumanResistanceFighters_IneligibleSeconds="900"
+    custom_FInt_HumanResistanceFighters_FriendlyMinStrength="500"
+    custom_FInt_HumanResistanceFighters_EnemyMinStrength="1000"
+    custom_FInt_HumanResistanceFighters_RatioForEnemyPlanet="0.75"
+    custom_FInt_HumanResistanceFighters_RatioForFriendlyPlanet="0.5"
+    custom_FInt_HumanResistanceFighters_RatioForNeutralPlanet="0.25"
+    custom_FInt_HumanResistanceFighters_OverkillRatio="3.0"
+    custom_FInt_HumanResistanceFighters_BravenessConstant="3"
+    custom_FInt_HumanResistanceFighters_StartingBudget="0"
+    custom_FInt_HumanResistanceFighters_BaseMaxBudget="12500"
+	custom_FInt_HumanResistanceFighters_MinBudgetToHelp="3000.0"
+    custom_int_HumanResistanceFighters_ChanceToHelpHumansModifier="10"
+    custom_FInt_HumanResistanceFighters_BudgetMultiplierIntensity1="0.5"
+    custom_FInt_HumanResistanceFighters_BudgetMultiplierIntensity2="0.6"
+    custom_FInt_HumanResistanceFighters_BudgetMultiplierIntensity3="0.7"
+    custom_FInt_HumanResistanceFighters_BudgetMultiplierIntensity4="0.9"
+    custom_FInt_HumanResistanceFighters_BudgetMultiplierIntensity5="1.0"
+    custom_FInt_HumanResistanceFighters_BudgetMultiplierIntensity6="1.5"
+    custom_FInt_HumanResistanceFighters_BudgetMultiplierIntensity7="1.7"
+    custom_FInt_HumanResistanceFighters_BudgetMultiplierIntensity8="2.5"
+    custom_FInt_HumanResistanceFighters_BudgetMultiplierIntensity9="3.5"
+    custom_FInt_HumanResistanceFighters_BudgetMultiplierIntensity10="5.0"
+
+>
+</root>

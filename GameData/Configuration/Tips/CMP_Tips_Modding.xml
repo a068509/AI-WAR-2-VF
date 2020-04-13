@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <tip category="Modding" name="Modding_Basic" display_name="Visit &lt;color=#ffd929&gt;wiki.arcengames.com" sort_priority="1"
+        full_text="The wiki has an AI War 2 section, which in turn not only has a variety of topics on modding, but also has a link to video tutorials on how to do various mods.
+        
+We'll also be adding tips in here, over time." />
+
+  <tip category="Modding" name="MakingQuickStarts" display_name="Making your own Quick Starts" sort_priority="10"
+        full_text="Go through the custom lobby and set things up just the way you want. Start the game, then immediately save (at 0 seconds elapsed).
+
+Now quit the game and find your save file. It will be in ~/AIWar2/PlayerData/Save/Your_campaign_name (assuming you've installed the game in ~/AIWar2; otherwise find where the game is installed). Rename the file from Save_Game_File.save (or whatever name you used to save it) to 'YourQuickStartName.save'
+
+Copy the file into ~/AIWar2/GameData/QuickStarts2/Community
+
+Now you'll want to create a tooltip file so people will know what sort of game they're getting into. The tooltip file is names YourQuickStartName.tooltip.
+
+So at the end of this you have a file called YourQuickStartName.save and YourQuickStartName.tooltip in ~/AIWar2/GameData/QuickStarts2/Community. Now you'll be able to find that quick start under the 'Community' section of the Quick Starts menu
+
+If you have one you really like then upload the save and tooltip to the forums and they might get added to the base game!
+
+Note also that you could make 'Quick Starts' that are some time into a campaign. For example, you might want to see if anyone can survive a bad situation, so you could make a Quick Start called 'Last Stand' where the tooltip tells the player 'I lasted 10 minutes; can you last longer?'
+
+
+For more details, see &lt;color=#ffd929&gt;https://wiki.arcengames.com/index.php?title=AI_War_2:_Making_Quick_Starts" />
+
+<tip category="Modding" name="NewPlanetNames" display_name="Creating your own planet names file" sort_priority="10"
+     full_text="See &lt;color=#ffd929&gt;https://wiki.arcengames.com/index.php?title=AI_War_2:_Defining_your_own_planet_names" />
+/>
+</root>

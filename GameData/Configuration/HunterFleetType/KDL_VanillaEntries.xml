@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <sub_type name="Normal"
+  	   is_default="true"
+           display_name="Intelligent Predator"
+           abbreviation="Intelligent Predator"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.HunterFleetType_Normal"
+          description="The standard behavior, where the Hunter Fleet uses intelligence (based on its difficulty level) to decide when the optimal time is to attack you and truly overwhelm you. Higher hunter difficulties are smarter. The whole Hunter Fleet operates as a unit"
+  >
+  </sub_type>
+  <!--deprecated_in_favor_of="Normal"-->
+    <sub_type name="Assassin"  is_hidden="true"
+           display_name="Assassin"
+           abbreviation="Assassin"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.HunterFleetType_Assassin"
+          description="The Hunter Fleet can split up into smaller groups and try to assassinate important targets. Experimental; feedback is requested"
+  >
+  </sub_type>
+
+    <sub_type name="Defense"
+           display_name="Defensive Only"
+           abbreviation="Defense"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.HunterFleetType_Defense"
+          description="Rather than attacking you aggressively and causing potential devastating losses on your end, the Hunter Fleet acts almost like a second Warden Fleet -- things get very hairy for you when you are attacking the AI, then."
+  >
+  </sub_type>
+  <sub_type name="Kamikaze"
+           display_name="Kamikaze"
+           abbreviation="Kamikaze"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.HunterFleetType_Kamikaze"
+          description="Makes it far more aggressive in deciding to attack. Normally it'll wait until a certain ratio of power compared to yours, but Kamikaze has a much lower requirement."
+  >
+  </sub_type>
+  <sub_type name="KiteMaster"
+           display_name="Kite Master"
+           abbreviation="Kite Master"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.HunterFleetType_KiteMaster"
+          description="Same as the Intelligent Predator hunter fleet in most ways, but its ships start using the kiting behavior that yours are also able to use. Makes them much more tricky to chase down!"
+  >
+  </sub_type>
+
+</root>

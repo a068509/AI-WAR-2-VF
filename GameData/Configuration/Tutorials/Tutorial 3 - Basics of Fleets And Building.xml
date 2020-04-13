@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <tutorial category="Basics" name="BasicFleetsAndBuilding" display_name="Tutorial 3 - Basics of Fleets And Building" sort_priority="3"
+        description="Les bases du système Fleet et des structures des bâtiments." scenario="AftermathOfLosingTheAIWar"
+        do_not_serialize_setup_to_or_from_settings="true"
+        skip_determine_ai_ownership="true" skip_determine_ai_homeworlds="true" skip_assign_player_homeworlds="true"
+        force_map_type="Tutorial_01" force_map_seed="123456" skip_seed_special_entities="true"
+        skip_all_galaxy_wide_capturables_and_obstacles="true" skip_warden_bases="true"
+        debug_all_step_text_on_load="false"
+   >
+    <!--Setup for factions
+        *************************************-->
+    <!--You name any that you add beyond the built-in ones, or the following ones are built in:
+        NaturalObject - owned by nobody
+        AI - main AI
+        FirstPlayer - presumably the only player, given this is a tutorial.
+        PlayerBeyondTheFirst - any and all other players.
+        AIWardenFleet - warden fleet of the main AI.
+        AIHunterFleet - hunter fleet of the main AI.
+        AntiAIZombie, AntiPlayerZombie, AntagonizedDysonSphere - all just kind of plumbing stuff.
+        Instigators - the AI instigators.
+        Mercenary - the outguard, if there are any that seed, etc. -->
+    <faction_initial_setup name="FirstPlayer" starting_planet_index="0"/>
+    <faction_initial_setup name="PlayerBeyondTheFirst" do_not_add_faction="true"/>
+    <faction_initial_setup name="Instigators" do_not_add_faction="true"/>
+    <faction_initial_setup name="Mercenary" do_not_add_faction="true"/>
+    <faction_initial_setup name="AI">
+        <custom_field key="AIType" val="Tutorial_01"/>
+    </faction_initial_setup>
+	<faction_initial_setup name="WardenFleet" do_not_add_faction="true"/>
+	<faction_initial_setup name="HunterFleet" do_not_add_faction="true"/>
+	
+
+    <!--Setup for planet topography
+        *************************************-->
+    <!--Note that these tutorial planets allow you to define planets manually.  This ONLY works with the Tutorial_01 map type.
+        If you want to have a tutorial in a regular other map type of some other sort, you can do so, but these won't be read in in terms of placement and names.-->
+    <tutorial_planet name="Murdoch" x="0" y="0"/>
+    <tutorial_planet name="Midlander" x="100" y="-20">
+      <link name="Murdoch"/>
+      <link name="Farland"/>
+    </tutorial_planet>
+    <tutorial_planet name="Farland" x="200" y="20"/>
+	<tutorial_planet name="Sidelander" x="-150" y="200">
+	  <link name="Murdoch"/>
+	</tutorial_planet>
+
+
+
+    <!--Setup for planet ownership, etc
+        *************************************-->
+    <!--Note that these work for even non-manually-created maps.  Ownerships are either whatever you named the factions above, 
+        or are the built-in ones noted above.  You can match planets based on their added-index or their name.-->
+    <planet_ownership_and_spawning match_index="0" linked_faction_name="FirstPlayer" is_homeworld="true"
+          command_station_point="200,1000" skip_player_home_forcefield="true" skip_player_home_engineers="false"
+          skip_player_home_factory="true" skip_player_home_human_settlement="false" skip_player_home_human_cryogenic_pods="false"
+          skip_player_home_initial_combat_fleet="false" skip_player_home_initial_battlestation="false" skip_player_home_initial_support_fleet="true"
+          initial_combat_fleet="ClassicStartingFleet" initial_battlestation_fleet="ClassicStartingDefenses" initial_support_fleet=""
+          number_of_metal_spots="4" >
+    </planet_ownership_and_spawning>
+    <planet_ownership_and_spawning match_name="Midlander" linked_faction_name="AI" mark_level_index="1"
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="true" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="true"/>
+			
+    <planet_ownership_and_spawning match_name="Farland" linked_faction_name="AI" mark_level_index="5" is_homeworld="true" number_of_metal_spots="8"
+            skip_ai_guard_posts="true" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="true"/>
+
+    <planet_ownership_and_spawning match_name="Sidelander" mark_level_index="1"  number_of_metal_spots="8" 
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="true" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="true">
+      <ship_placement faction="NaturalObject" type="TransportFlagship_Base" placement_point="1000,1000"/>
+    </planet_ownership_and_spawning>	  
+
+    <!--Actual steps of the tutorial itself!
+    
+      For informaton about the conditions that you can use, and how to use them, 
+      please see this wiki page: https://wiki.arcengames.com/index.php?title=AI_War_2:_Tutorial_Step_Conditions
+      *************************************-->
+    <tutorial_step text_to_show="Bienvenue dans le troisième didacticiel de AI War 2. Celui-ci concerne les bases du système de flotte, dans lequel se trouve chaque unité, ainsi que la construction de ces unités, à la fois des navires et des structures.
+
+Vous verrez deux nouvelles unités sur cette planète, un Transport Flagship et un Gravitic Battlestation.
+
+Sélectionnez le navire amiral de transport.">
+      <condition type="PlayerHasSelectedCountOfSpecificShip" entity_type="TransportFlagship_Starter" count="1"/>
+    </tutorial_step>
+	
+    <tutorial_step text_to_show="Le Transport Flagship est le leader d'une flotte de combat mobile, composée d'unités telles que les Frégates que nous avons vues auparavant. Pour plus de simplicité, ces frégates spécifiques ont été gardées en dehors de ce système.
+
+En passant votre souris dessus, vous verrez dans la description la mention de choses comme les V-Wings, les Fusion Bombers et les Concussion Corvettes. Ce sont les types d'unités, les quantités actuelles et maximales qui se trouvent dans cette flotte. Actuellement, nous n'en avons pas construit.
+
+Sélectionnez maintenant le Gravitic Battlestation.">
+      <condition type="PlayerHasSelectedCountOfSpecificShip" entity_type="GraviticBattlestation" count="1"/>
+    </tutorial_step>	
+	
+	    <tutorial_step text_to_show="Le Gravitic Battlestation est le leader d'une flotte défensive, qui est composée de choses comme des tourelles et des champs de mines, des structures immobiles que nous pouvons utiliser pour défendre notre territoire.
+
+En passant votre souris dessus, vous verrez la mention au lieu de plusieurs types de tourelles et leurs quantités actuelles et maximales. Nous n'en avons pas non plus construit.
+
+La dernière chose a été là dans les tutoriels précédents, mais n'a pas été pertinente jusqu'à présent, et c'est la Home Command Station.
+
+Sélectionnez-le maintenant.">
+      <condition type="PlayerHasSelectedCountOfSpecificShip" entity_type="HumanHomeCommandStation" count="1"/>
+    </tutorial_step>
+
+	<tutorial_step text_to_show="Les stations de commandement sont la façon dont nous contrôlons une planète et utilisons les ressources qui s'y trouvent. Ils sont essentiellement le Fleet Leader de la planète, en quelque sorte.
+
+Cette station particulière est notre maison, ce qui, si elle est détruite, signifie que nous perdons. C'est un peu comme un roi d'échecs.
+
+En passant votre souris dessus, vous verrez un tas d'autres choses, comme les ingénieurs, les usines et certaines tourelles.
+
+Que diriez-vous de construire certaines des unités que ces flottes contiennent? Jetez un œil sur le côté gauche de l'écran, dans la barre latérale. Il y a un certain nombre d'onglets ici.
+
+N'hésitez pas à jeter un coup d'œil, mais lorsque vous êtes prêt, gardez l'onglet Build ouvert - nous allons créer une usine.
+
+&lt;color=#ff0000&gt;Extra tip: TRADUIT PAR Knight-HD discord Knight-HD#0001. http;//teamhd.fr .&lt;/color&gt;
+
+&lt;color=#999999&gt;Astuce supplémentaire: chaque onglet de la barre latérale a un raccourci clavier pour l'ouvrir, tous étant la première lettre de leur nom, à savoir B pour Build.&lt;/color&gt;">
+      <condition type="PlayerHasSidebarMenuOpen_Build"/>
+    </tutorial_step>
+
+    <tutorial_step text_to_show="Vous verrez une liste d'options possibles ici, regroupées sous des éléments tels que l'infrastructure, les tourelles, les autres défenses et les gardiens de station. Chaque élément ici vous indique le nom de celui-ci, à quelle flotte il appartient en dessous, et affiche l'icône à gauche.
+
+Nous voulons construire une usine, qui est très près du sommet, sous Infrastructure. Cliquez dessus, puis cliquez n'importe où sur la planète pour le placer.
+
+Il ne faudra pas longtemps pour terminer.">
+      <condition type="PlayerHasCountOfSpecificShipOnPlanet" planet_by_name="Murdoch" entity_type="Factory" count="1"/>
+    </tutorial_step>
+	
+    <tutorial_step text_to_show="Vous devriez maintenant voir des unités sortir du navire amiral de transport lorsque l'usine est terminée. Les usines sont la façon dont nous renforçons les flottes de combat mobiles qui ne sont actuellement pas à pleine capacité. Ceci est complètement automatique et se produit chaque fois qu'une telle flotte se trouve sur la même planète ou adjacente à l'endroit où se trouve une usine. Les unités construites par l'usine apparaissent simplement sur les vaisseaux amiraux.
+
+Cette usine faisait partie de la flotte de la station de commande. Si vous passez la souris sur celle que nous venons de construire, elle vous indiquera de quelle flotte elle fait partie, en haut de l'infobulle (c'est-à-dire 'pour la planète Murdoch'). Si vous survolez les unités qui sont sorties du vaisseau amiral comme une V-Wing, vous verrez une chose similaire («flotte Strike Holsis»).
+
+Essayons de construire des tourelles à partir de notre Battlestation, qui est une flotte différente. Recherchez sous la partie Tourelles de l'onglet Générer et recherchez le {c1.EntityName}.
+
+Notez sous le nom qu'il indique de quelle flotte il fait partie (c'est-à-dire Jorvia Guard). Le survol du Battlestation nous indique que c'est le chef de Jorvia Guard, toujours en haut de l'infobulle («Battlestation Jorvia Guard»).
+
+Créez des {c1.EntityName} s.
+
+&lt;color=#999999&gt;Astuce supplémentaire 1: vous pouvez maintenir CTRL tout en construisant pour placer 5 unités à la fois au lieu de 1. Maintenir ALT placera 10 et les deux maintiendront 50!&lt;/color&gt;
+
+&lt;color=#999999&gt;Astuce supplémentaire 2: si vous souhaitez quitter le mode construction, vous pouvez cliquer avec le bouton droit sur un espace vide.&lt;/color&gt;
+
+&lt;color=#999999&gt;Astuce supplémentaire 3: le grand cercle autour de votre souris lors de la construction d'une tourelle est la portée dans laquelle il peut attaquer les ennemis.&lt;/color&gt;">
+      <condition type="PlayerHasCountOfSpecificShipOnPlanet" planet_by_name="Murdoch" entity_type="AmbushTurret" count="1"/>
+    </tutorial_step>	
+
+    <tutorial_step text_to_show="Alors que les structures telles que l'usine et les tourelles ne peuvent pas bouger, les Battlestations (et plus tard les Citadelles, une chose très similaire aux Battlestations) le peuvent. C'est important, car nous ne pouvons construire des structures à partir d'une flotte que si le chef est présent. Après, le chef peut partir et aller n'importe où. Naturellement, les postes de commandement ne peuvent pas se déplacer et ne peuvent donc avoir que des structures sur leur propre planète.
+
+Essayons de construire des tourelles sur une autre planète. Envoyez le Battlestation à {c1.PlanetName}, dans le coin supérieur gauche, et créez des {c1.EntityName} s.
+
+&lt;color=#999999&gt;Conseil supplémentaire: vous pouvez sélectionner les chefs de flotte sur la carte de la galaxie. Cliquez simplement sur leur icône près de la planète sur laquelle ils se trouvent ou faites glisser la sélection, de la même manière que la sélection d'unités dans la vue de la planète. Des icônes pour des choses importantes, telles que les chefs de flotte et les capturables, sont souvent visibles sur la carte de la galaxie.&lt;/color&gt;">
+      <condition type="PlayerHasCountOfSpecificShipOnPlanet" planet_by_name="Sidelander" entity_type="ConcussionTurret" count="1"/>
+    </tutorial_step>
+
+    <tutorial_step text_to_show="Hm, maintenant que nous regardons ici, nous pouvons voir un autre navire amiral de transport, mais il est actuellement neutre. Que diriez-vous de capturer cela afin que nous puissions renforcer nos forces mobiles?
+
+Nous ne pouvons capturer des choses comme ça que si nous contrôlons réellement la planète. Heureusement, cette planète est déjà neutre et nous pouvons construire notre Station sans combattre. Si l'IA possède la planète, nous devons d'abord détruire leur Station.
+
+Cependant, seul le vaisseau amiral d'une flotte de combat mobile peut construire une station de commandement, nous devons donc amener notre vaisseau amiral de transport ici.
+
+Lorsque vous avez fait cela, l'onglet Build affichera maintenant une section Command Station. Choisissez une logistique et construisez-la. Une fois terminé, il capturera ou revendiquera le nouveau vaisseau amiral.
+
+&lt;color=#999999&gt;Astuce supplémentaire: cela peut prendre un certain temps car nous n'avons pas d'ingénieurs ici pour vous aider, alors rappelez-vous que vous pouvez facilement changer la vitesse du temps en utilisant les touches plus et moins ou les boutons en bas à gauche de l'écran.&lt;/color&gt;">
+      <condition type="PlayerHasCountOfSpecificShipOnPlanet" planet_by_name="Sidelander" entity_type="TransportFlagship_Base" count="1"/>
+    </tutorial_step>
+	
+    <tutorial_step text_to_show="Nous avons maintenant une deuxième flotte! Il s'agit d'un bond notable dans notre force mobile.
+
+Il existe d'autres types de goodies capturables dans la galaxie, et ils sont pris exactement de la même manière. Des choses comme les Metal Harvesters, dont il y en a quelques-uns ici et qui nous donnent la majorité d'une de nos ressources,
+
+Lorsque le vaisseau amiral est réparé, les unités de la flotte devraient commencer à apparaître, car l'usine que nous avons construite plus tôt fonctionne.
+
+Nous n'avons pas besoin que nos flottes soient ici, cependant, c'est donc le bon moment pour regarder l'onglet Flottes.
+
+&lt;color=#999999&gt;Astuce supplémentaire: tout comme B pour Build, vous pouvez appuyer sur F sur le clavier pour ouvrir l'onglet Flottes..&lt;/color&gt;">
+      <condition type="PlayerHasSidebarMenuOpen_Fleets"/>
+    </tutorial_step>
+
+    <tutorial_step text_to_show="Cet onglet affiche toutes les flottes que vous possédez actuellement, regroupées sous des éléments tels que Current Planet, Mobile Strike, Battlestations et Command Stations.
+
+Nos deux navires phares de transport apparaissent sous Mobile Strike, le premier appelé Strike Holsis et le nouveau Strike Holent. Les survoler vous donnera quelques détails, tels que le nombre actuel et maximal d'unités, si une usine est à portée, et quelques autres petits morceaux.
+
+Si vous cliquez avec le bouton droit sur l'un d'entre eux, il sélectionnera l'ensemble de la flotte pour nous. Cela nous permet de le commander ensemble. Un clic gauche ouvrira l'écran de gestion de cette flotte particulière.
+
+Si vous cliquez avec le bouton gauche sur l'une des flottes de grève mobile, des options telles que pour empêcher les usines de produire des unités pour cette flotte, pour supprimer ou supprimer des unités actuellement sur différentes planètes vers le navire amiral, ou pour basculer le mode de transport seront disponibles. Nous nous intéressons au mode de transport.
+
+Sélectionnez la nouvelle flotte (Strike Holent) dans ce menu en cliquant dessus avec le bouton droit.
+
+&lt;color=#999999&gt;Astuce supplémentaire 1: vous pouvez également sélectionner des flottes avec des raccourcis clavier. Chaque chef de flotte mobile affiche son raccourci clavier actuel sur l'icône. Vous pouvez changer cela dans l'écran de gestion.&lt;/color&gt;
+
+&lt;color=#999999&gt;Conseil supplémentaire 2: vous pouvez accéder très rapidement à l'écran de gestion d'une flotte spécifique en maintenant C puis en cliquant sur le leader.&lt;/color&gt;">
+      <condition type="PlayerHasSelectedCountOfSpecificShip" entity_type="TransportFlagship_Base" count="1"/>
+    </tutorial_step>
+
+    <tutorial_step text_to_show="Activez maintenant le mode de transport. Toutes les unités actuellement construites entreront dans le vaisseau amiral, et toutes celles qui sont construites alors que cela est activé sont stockées automatiquement à l'intérieur pour nous.
+
+Ramenez la flotte à {c1.PlanetName}. Vous pouvez essayer de désactiver le mode de transport pour voir les unités sortir.
+
+&lt;color=#999999&gt;Astuce supplémentaire 1: si vous avez la flotte ou le navire amiral sélectionné, vous pouvez appuyer sur le bouton L pour charger. De même, vous pouvez appuyer sur le bouton U pour décharger, le tout sans avoir besoin de l'onglet Flottes. Cependant, cela peut être utile pour sélectionner les flottes!&lt;/color&gt;
+
+&lt;color=#999999&gt;Conseil supplémentaire 2: quel est l'avantage du transport? Cela signifie que vous pouvez déplacer la flotte plus rapidement, en fonction du navire amiral. Il protège également les unités des tirs ennemis, ce qui est pratique si vous prévoyez de vous précipiter devant des planètes IA vers quelque chose que vous voulez attaquer.&lt;/color&gt;">
+      <condition type="PlayerHasCountOfSpecificShipOnPlanet" planet_by_name="Murdoch" entity_type="TransportFlagship_Base" count="1"/>
+    </tutorial_step>	
+	
+  </tutorial>	
+	
+
+</root>

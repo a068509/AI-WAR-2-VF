@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <item name="NanocaustMgrData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.NanocaustMgrData" /> 
+  <item name="NanocaustPerUnitData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.NanocaustPerUnitDataExt" />
+  <item name="LastSpawnTimestamp" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.LastSpawnTimestamp" />
+</root>

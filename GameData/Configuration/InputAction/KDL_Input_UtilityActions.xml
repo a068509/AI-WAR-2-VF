@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <input_action name="HoldToAdjustFrameFrequencyInUI"
+      category="Hidden" display_name="Hold To Adjust Game Speed Style"
+      description="~*~"
+      check_type="Custom" key="LeftControl" />
+  <input_action name="IncreaseFrameSize"
+      category="Utility" display_name="Simulation Speed Up"
+      description="Fast forward the entire simulation.  Makes the clock run faster, events happen faster, and everything -- it's literally a fast forward function in every sense of the word.  Won't cause extra CPU load, either!"
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="760_KeybindingsAgain"
+      key="Plus" />
+  <input_action name="DecreaseFrameSize"
+      category="Utility" display_name="Simulation Speed Down"
+      description="Slow the entire simulation down.  Makes the clock run slower, events happen slower, and everything -- it's literally running the game in slow-motion, so it won't cause a shift to balance like changing the game speed styles."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="760_KeybindingsAgain"
+      key="Minus" />
+  <input_action name="IncreaseFrameFrequency"
+      category="Utility" display_name="More Intense Game Speed Style"
+      description="Ship movement speeds and attack powers get progressively higher the more times you press this.  Leads to faster battles and the need to be a faster clicker.  Does inherently have an impact on balance."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="760_KeybindingsAgain"
+      key="Plus" modifier_1="LeftControl" />
+  <input_action name="DecreaseFrameFrequency"
+      category="Utility" display_name="More Stately Game Speed Style"
+      description="Ship movement speeds and attack powers get progressively slower the more times you press this.  Leads to more contemplative battles and less rush.  Does inherently have an impact on balance."
+      dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
+      default_should_override_saved_if_older_than_version="760_KeybindingsAgain"
+      key="Minus" modifier_1="LeftControl" />
+  <input_action name="ShowShipRanges_All"
+      category="Overlays" display_name="Show Ship Ranges (All Ships)"
+      description="Show the attack ranges of all weapons of all ships on this planet."
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      check_type="Custom" key="Z" modifier_1="LeftShift" />
+  <input_action name="ShowShipRanges_Selected"
+      category="Overlays" display_name="Show Ship Ranges (Selected Ships Only)"
+      description="Show the attack ranges of all weapons of all ships you have selected on this planet."
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      check_type="Custom" key="Z" />
+  <input_action name="ShowShipRanges_Hovered"
+      category="Overlays" display_name="Show Ship Ranges (Ship Hovered Over Only)"
+      description="Show the attack ranges of all weapons of whatever ship you're hovering over."
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      check_type="Custom" key="Z" />
+  <input_action name="ShowShipOrders"
+      category="Overlays" display_name="Show Ship Orders (Players Only)"
+      description="Show lines that indicate what the movement orders are for any ships you have selected."
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      check_type="Custom" key="LeftShift" />
+  <input_action name="MakePlanetClickSelectAndSwitchView"
+      category="Common" display_name="Make It So Clicking A Planet Selects And Switches Your View"
+      description="Normally when you left-click a planet on the galaxy map the game selects that planet, but does not immediately switch to planet view. Holding this keybind will make it not only select the planet, but also 'switch to planet view' in one step for you."
+      default_should_override_saved_if_older_than_version="KeyRebindings_744"
+      check_type="Custom" key="LeftControl" />
+
+  <input_action name="ShowPlanetNamesOnSinglePlanet"
+      category="Overlays" display_name="Show Planet Names (Single Planet View)"
+      description="Show the names of planets on the single-planet view."
+      check_type="Custom" key="LeftControl" />
+
+  <input_action name="ShowPlanetNamesOnGalaxyMap"
+      category="Overlays" display_name="Show Planet Names (Galaxy Map)"
+      description="Show all the names of planets on the galaxy map view."
+      check_type="Custom" key="LeftControl" />
+</root>

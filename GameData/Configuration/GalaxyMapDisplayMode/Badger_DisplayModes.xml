@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <display_mode name="Reducers"
+           display_name="AIP Reducers"
+           dll_name="AIWarExternalVisualizationCode"
+           type_name="Arcen.AIW2.ExternalVisualization.GalaxyMapDisplayMode_Reducers"
+  >
+  </display_mode>
+    <display_mode name="AIDefenses"
+           display_name="AI Defenses"
+           dll_name="AIWarExternalVisualizationCode"
+           type_name="Arcen.AIW2.ExternalVisualization.GalaxyMapDisplayMode_AIDefenses"
+  >
+  </display_mode>
+    <display_mode name="Capturables"
+           display_name="Capturables"
+           dll_name="AIWarExternalVisualizationCode"
+           type_name="Arcen.AIW2.ExternalVisualization.GalaxyMapDisplayMode_Targets" 
+  >
+  </display_mode>
+</root>

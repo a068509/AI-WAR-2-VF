@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--These "InitialPlayerBattlestation" are completely hand-designed battlestation-stlye fleets that are very inflexible by design.
+      They are intended to be basic starting points that you can choose at the start of the game,
+      which you can then use to further supplement yourself later on.  Each one is a major archetype,
+      focused on a different style of defensive play, and they use both their display name and description in the lobby.
+      
+      Creating too many of these would be a Bad Thing, because it creates paralysis for players.
+      
+      Note that ONLY the description and the name are shown, so the description had better be 
+      clear enough to let players choose things.  THAT said, the description for each turret or mine type will automatically
+      be appended if you use append_each_ship_description_to_main_description="true", so that will help.-->
+
+
+  <fleet_design name="ClassicStartingDefenses"
+        display_name="Classic Defenses"
+        description="This classic mix is good at stopping or slowing things as they come through your wormholes, and has good firepower against midsized foes."
+        design_logic="InitialPlayerBattlestation" weight="100" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="GraviticBattlestation" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="AmbushTurret" ship_cap_group="Turret" weight="100" min="100" max="100"/>
+    <ship_membership name="GrenadeLauncherTurret" ship_cap_group="Turret" weight="100" min="50" max="50"/>
+    <ship_membership name="ConcussionTurret" ship_cap_group="Turret" weight="100" min="50" max="50"/>
+    <ship_membership name="TractorArray" ship_cap_group="OtherDefense" weight="100" min="10" max="10"/>
+	<ship_membership name="TachyonArray" ship_cap_group="OtherDefense" weight="100" min="5" max="5"/>
+  </fleet_design>
+  
+  
+  
+  <fleet_design name="ShieldStartingDefenses" 
+        display_name="Shield Defenses"
+        description="Start with an extra forcefield on your home planet, and some very powerful turrets in small quantities.  Also snipers."
+        design_logic="InitialPlayerBattlestation" weight="100" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="ShieldwallBattlestation" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="PlasmaTurret" ship_cap_group="Turret" weight="100" min="10" max="10"/>
+    <ship_membership name="BeamCannon" ship_cap_group="Turret" weight="100" min="10" max="10"/>
+    <ship_membership name="TritiumSniperTurret" ship_cap_group="Turret" weight="100" min="50" max="50"/>
+    <ship_membership name="TractorArray" ship_cap_group="OtherDefense" weight="100" min="10" max="10"/>
+	<ship_membership name="TachyonArray" ship_cap_group="OtherDefense" weight="100" min="5" max="5"/>
+  </fleet_design>
+
+  
+  
+  <fleet_design name="EclecticStartingDefenses"
+        display_name="Eclectic Defenses"
+        description="Wow this is all over the place.  Engineering boosts, some regular turrets, minefields, extra tractor beams, and some mobile sentry frigates.  Be prepared for anything!"
+        design_logic="InitialPlayerBattlestation" weight="100" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="EngineeringBattlestation" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="ConcussionTurret" ship_cap_group="Turret" weight="100" min="50" max="50"/>
+    <ship_membership name="PlasmaTurret" ship_cap_group="Turret" weight="100" min="10" max="10"/>
+    <ship_membership name="AreaMinefield" ship_cap_group="OtherDefense" weight="100" min="24" max="24"/>
+    <ship_membership name="TractorArray" ship_cap_group="OtherDefense" weight="100" min="15" max="15"/>
+    <ship_membership name="SentryFrigate" ship_cap_group="OtherDefense" weight="100" min="2" max="2"/>
+	<ship_membership name="TachyonArray" ship_cap_group="OtherDefense" weight="100" min="5" max="5"/>
+  </fleet_design>
+
+
+
+  <fleet_design name="MinelayerStartingDefenses"
+        display_name="Minelayer Defenses"
+        description="Large numbers of all the kinds of minefields, plus area-of-effect type turrets, for when you really want to booby-trap the heck out of your homeworld."
+        design_logic="InitialPlayerBattlestation" weight="100" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="EnsnarerBattlestation" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="GrenadeLauncherTurret" ship_cap_group="Turret" weight="100" min="50" max="50"/>
+    <ship_membership name="FortifiedTeslaTurret" ship_cap_group="Turret" weight="100" min="25" max="25"/>
+    <ship_membership name="Minefield" ship_cap_group="OtherDefense" weight="100" min="24" max="24"/>
+    <ship_membership name="AreaMinefield" ship_cap_group="OtherDefense" weight="100" min="24" max="24"/>
+    <ship_membership name="ParalysisMinefield" ship_cap_group="OtherDefense" weight="100" min="24" max="24"/>
+	<ship_membership name="TachyonArray" ship_cap_group="OtherDefense" weight="100" min="5" max="5"/>
+  </fleet_design>
+  
+
+  <fleet_design name="WebbedStartingDefenses"
+        display_name="Webbed Defenses"
+        description="This mix is great against cloaking ships, ships with weak engines, groups of small ships, and ships with high energy operation costs."
+        design_logic="InitialPlayerBattlestation" weight="100" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="RevealerBattlestation" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="SpiderTurret" ship_cap_group="Turret" weight="100" min="50" max="50"/>
+    <ship_membership name="MLRSTurret" ship_cap_group="Turret" weight="100" min="50" max="50"/>
+    <ship_membership name="NucleophilicTurret" ship_cap_group="Turret" weight="100" min="50" max="50"/>
+    <ship_membership name="TractorArray" ship_cap_group="OtherDefense" weight="100" min="10" max="10"/>
+	<ship_membership name="TachyonArray" ship_cap_group="OtherDefense" weight="100" min="5" max="5"/>
+  </fleet_design>
+</root>

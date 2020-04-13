@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <tip category="GettingStarted" name="DoIReallyNeedAllThis" display_name="&lt;color=#ffd929&gt;Do I Need To Read All This??" sort_priority="1"
+        full_text="Non. Nous pensons que l'exploration et la découverte sont amusantes. Les info-bulles, l'onglet Intel et d'autres mécanismes se mettent également en quatre pour vous enseigner la plupart des choses à mesure qu'elles se présentent.
+
+En aveugle, vous pouvez vous attendre ... eh bien, à perdre. J'espère que vous passerez un bon moment à le faire, et chaque perte illumine une nouvelle idée intelligente que vous proposez vous-même.
+
+Ceci est censé être plus un guide de référence que quelque chose que vous venez de vous asseoir et de lire, de toute façon. Si vous ne savez pas comment gérer une situation ou un mécanicien, c'est parti.
+
+Certaines mécaniques, comme AI Progresss (AIP) sont plus susceptibles de vous mordre que d'autres si vous venez d'autres jeux de stratégie. Ceux-ci sont donc traités dans la section `` Mise en route '' pour vous donner un petit coup de pouce.
+
+Si vous prévoyez de passer des dizaines ou des centaines d'heures avec le jeu, vous trouverez peut-être que tous ces conseils sont un peu un trésor.
+
+Tout dépend de ce que vous voulez retirer du jeu, mais notre objectif est que la plupart des gens puissent simplement s'asseoir et passer un bon moment à apprendre par l'expérimentation." />
+
+
+
+  <tip category="GettingStarted" name="Explanation101" display_name="AI War 2: The Full 101-Level Explanation" sort_priority="500"
+        full_text="Essayons d'expliquer tout, de manière concise, en une seule entrée.
+        
+D'abord l'idée principale du jeu. Vous commencez avec une planète et quelques forces de départ. L'IA détient tout le reste. Vous verrez un symbole en haut avec le numéro 10 à côté. C'est `` AI Progress '' et c'est essentiellement à quel point il est conscient de vous et à quel point il est puissant.
+       
+Vous voulez vous promener dans la galaxie, en gardant cela aussi bas que possible, tout en vous assurant de capturer et de détruire les bonnes choses. Si vous essayez de capturer chaque planète sans se soucier des avantages que cela apporterait, vous perdrez très probablement rapidement. Vous devez vous assurer que ce que vous payez l'AIP en vaut la peine, essentiellement.
+
+Finalement, vous deviendrez assez fort pour attaquer le monde d'origine AI (s) et gagner. Vous perdez si l'IA est capable de détruire la vôtre.
+---
+
+Pour les unités et les structures, tout est pré-organisé en «flottes». Ils ont tous un vaisseau amiral, ainsi que des unités qui en font partie. Lorsque vous commencez une partie, il devrait y avoir trois choses que nous espérons visibles: un vaisseau amiral de transport (unités offensives mobiles), un bataillon (pensez aux tourelles, aux champs de mines) et une usine de combat (reconstruit toutes les pertes de vos équipements offensifs mobiles). Si vous passez la souris sur chacun d'eux, vous verrez au bas de l'infobulle ce qu'il y a dedans (40 ailes en V, 30 tourelles de commotion cérébrale, des choses comme ça).
+
+Les flottes sont comme des groupes de contrôle, principalement? Une sélection d'unités que vous pouvez commander ensemble, mais c'est une composition pré-faite avec une unité Leader spécifique liée (le vaisseau amiral). Sur le côté gauche de l'écran, dans la barre latérale, vous devriez voir un onglet «FLOTTES». Il y aura chaque flotte que vous avez. Si vous cliquez sur l'un d'eux, vous pouvez voir plus d'informations et changer le nom (par défaut, ils sont randomisés).
+
+Certaines flottes fonctionnent différemment, comme les tourelles défensives par rapport aux unités de combat mobiles:
+
+Pour les flottes de combat mobiles, les unités ne sont pas construites via un onglet de la barre latérale, ni commandées à partir d'un menu d'interface ou quoi que ce soit. Vous verrez une icône de bras ou de grue robotique sur votre planète de départ - c'est une usine. Lorsque le navire amiral d'une telle flotte manque actuellement d'unités (c.-à-d. 10/40 V-Wings) et se trouve sur la même planète ou une planète à côté d'une usine, ladite usine construira automatiquement des remplacements pour la flotte et la déformera vers le navire amiral . Lorsque vous démarrez un jeu, vous verrez que cela se produit.
+
+Pour les flottes avec des tourelles par exemple, accordées via le Battlestation avec lequel vous commencez ou la station de commande d'une planète, celles-ci sont construites via la barre latérale, comme beaucoup de jeux RTS comme Command and Conquer 3 dans l'onglet `` CONSTRUIRE ''. Vous ne pouvez construire des tourelles à partir d'une telle flotte que si le vaisseau amiral est sur cette planète. Les postes de combat peuvent se déplacer, et peuvent donc placer leurs tourelles n'importe où (même attaquer l'ennemi avec eux), mais les postes de commandement ne peuvent construire que sur leur propre planète. Ces règles s'appliquent également à d'autres structures de support, comme les usines et les collecteurs d'énergie.
+---
+
+Les stations de commande sont la façon dont vous ou l'IA contrôle une planète. Si vous détruisez la station AI, la planète devient neutre. Si vous construisez ensuite le vôtre, vous en prenez le contrôle et pouvez capturer n'importe quoi dessus, comme une nouvelle flotte (c'est le principal moyen d'obtenir de nouveaux navires ou types de navires). Pour construire une nouvelle station, vous avez besoin d'un vaisseau amiral là-bas, comme le vaisseau amiral de transport mentionné précédemment. Ensuite, les options apparaissent dans l'onglet «CONSTRUIRE».
+
+La capture de planètes est le principal moyen d'obtenir des ressources: métal (crédits, tiberium, etc.), énergie (une sorte d'entretien? C'est comme une affaire de popcap totale), science (points que vous dépensez pour des améliorations techniques) et piratage (points à dépenser pour faire des choses sournoises, comme affaiblir une planète IA ou avoir les effets de quelque chose de façon permanente, ou jouer avec une sphère Dyson). Lorsque vous capturez une planète, toutes les structures de ressources (Metal Harvesters et Energy Collectors) sont construites automatiquement, et la Station collecte elle-même toutes les sciences et le piratage.
+---
+
+Quelques autres notes rapides aléatoires:
+
+Si vous double-cliquez sur une icône phare sur une planète, elle sélectionnera tout ce qui fait partie de cette flotte là-bas.
+
+Si vous maintenez C et cliquez sur divers navires / structures qui contiennent d'autres navires, OU cliquez sur des éléments comme la technologie ou les boutons de vague ennemie, vous pouvez obtenir de nombreuses informations supplémentaires sur les navires contenus à l'intérieur ou autrement contextuellement pertinents. Cela rend la planification tellement plus facile!
+
+Si vous cliquez avec le bouton droit sur une flotte dans l'onglet `` FLOTTES '', cela fera le même comportement ci-dessus si vous visualisez une planète, ou si vous regardez la carte Galaxy, sélectionnez tout dans la galaxie. Les deux vous permettent de vous déplacer et de les rallier plus facilement.
+
+Si des unités d'une flotte mobile sont sélectionnées et que leur vaisseau amiral est présent, appuyez sur «L» pour y charger ces unités. 'U' à décharger. Seules les unités mobiles peuvent être chargées.
+
+Vous pouvez explorer de nouveaux mondes en les piratant. Le piratage est l'un des onglets de la barre latérale gauche de l'interface utilisateur. Cependant, une meilleure façon de rechercher est simplement de capturer de nouvelles planètes. Ce faisant, les planètes proches de vos frontières sont automatiquement révélées. Vous voudrez peut-être enregistrer vos points de piratage pour quelque chose de plus juteux.
+
+Enfin, vous avez peut-être remarqué certains `` modes '' dans le coin inférieur droit, comme Attack Move, Pursuit Mode, etc. Si vous placez un vaisseau amiral dans l'un de ces modes, toute unité de remplacement héritera de ce mode."/>
+
+
+
+  <tip category="GettingStarted" name="BigPictureObjectives" display_name="Big Picture Objectives - What To Do, In General?" sort_priority="1000"
+        full_text="Vous voulez détruire l'IA. Pour ce faire, vous détruisez l'unité AI Overlord - s'il y a plusieurs IA, elles en ont chacune une.
+        
+Vous gagnez le jeu dès que tous ceux-ci sont détruits, donc dans un sens très réel, rien d'autre n'a d'importance.
+
+Le problème est que vous êtes faible et qu'ils sont très forts. Ils contrôlent également toute la galaxie, et vous en avez très peu.
+
+Donc, le flux ENTIER du jeu est essentiellement que vous devez trouver un moyen de vous rendre suffisamment fort, mais sans rendre les IA si fortes qu'elles vous écrasent en cours de route.
+
+Cela signifie, principalement, que vous devez rassembler la science, les flottes offensives et les postes de combat défensifs, ainsi que capturer au moins quelques planètes à utiliser pour votre économie.
+
+Il y a beaucoup d'autres choses que vous pouvez également faire pour vous rendre plus fort, mais nous ne parlons que de bases absolues." />
+
+  
+  
+  
+  <tip category="GettingStarted" name="AIProgress" display_name="AI Progress - How The AI Grows In Response To You" sort_priority="1050"
+        full_text="Ce n'est pas comme la plupart des jeux de stratégie, où s'il y a une force ennemie faible, vous devez prendre ce qu'elle a.
+
+Si vous essayez de tout conquérir, VOUS PERDREZ - ou vous jouez avec un niveau de difficulté trop bas pour votre niveau de compétence.
+
+Diverses actions que vous effectuez - en détruisant principalement les postes de commande ou les portes de distorsion de l'IA, mais aussi d'autres choses - font augmenter la progression de l'IA (AIP).
+
+L'AIP augmentera de plusieurs centaines au cours d'un jeu normal de plusieurs heures, et c'est essentiellement l'IA qui vous reconnaît plus et est plus intéressée à vous étouffer. Au début du jeu, vous n'êtes pas vraiment digne d'attention et il est distrait par quelque chose d'invisible.
+
+Lorsque vous capturez des planètes - ce que vous devez faire pour capturer de nouvelles flottes et stations de combat, obtenir plus de points de science et de piratage, améliorer votre économie, etc. - l'IA commence à se rendre compte que vous êtes plus une menace qu'elle pensé, et décide de vous consacrer plus d'attention et de ressources plutôt que la distraction invisible à laquelle il commence à faire face.
+
+Le jeu deviendra beaucoup plus difficile chaque fois que l'AIP augmente suffisamment pour accorder à l'IA un nouveau niveau de marque. Vous pouvez voir quand cela se produira en survolant la section AIP de la barre de ressources en haut de l'écran.
+
+L'AIP est, de bien des manières très réelles, votre ressource la plus importante. En capturant une planète et en encourant une augmentation de l'AIP, vous renforcez essentiellement l'IA ... mais vous venez également d'obtenir de nouvelles choses pour vous-même. Si vous choisissez bien vos cibles, votre force augmente de plus que l'AIP équivalent. Aka, vous avez fait un gain net. Parlons de cela dans un sujet séparé, cependant. " />
+
+
+
+
+  <tip category="GettingStarted" name="HowToChooseTargets" display_name="How To Choose What Planets To Attack" sort_priority="1100"
+        full_text="Assurez-vous que vous avez déjà lu sur AI Progress, sinon cela n'aura aucun sens.
+        
+La conception principale du jeu est essentiellement que les planètes vous coûtent toutes AIP lorsque vous les capturez, et que vous devez donc choisir judicieusement les cibles.
+
+Donc, si, par exemple, vous voyez une planète super faible qui n'a pas de véritables capturables (pas de flottes, etc.), alors la capture est ... discutable.
+
+De manière générale, vous souhaitez capturer uniquement des planètes qui vous donnent des capturables intéressants (nouvelles flottes, etc.), puis vous voudrez exploiter la science et les points de piratage.
+
+Si vous le souhaitez, vous pouvez également essayer de conserver n'importe quelle planète que vous capturez comme une détention à long terme et ainsi avoir un flux de métal accru et plus d'endroits pour construire des réacteurs à énergie. Mais selon le positionnement de la planète, cela peut être difficile.
+
+Perdre la planète ne vous coûtera rien de permanent, cependant, vous pouvez donc aussi essayer - diable, parfois cela peut fournir une excellente distraction à l'IA, où ils attaquent votre planète au milieu de nulle part et la ramènent plutôt que d'attaquer quelque chose qui vous semble plus critique pour votre empire.
+
+Capturer N'IMPORTE QUELLE planète vous donnera la même quantité de points de science et de piratage (si vous maintenez ensuite la planète pendant un certain temps), c'est donc un avantage quoi qu'il arrive. Et certains sont plus riches en métal que d'autres. Il y a donc toujours CERTAINS avantages pour n'importe quelle planète.
+
+Certaines planètes ont également de la valeur simplement en raison de leur position. Une planète super inintéressante qui se trouve à côté de votre monde natal pourrait être quelque chose que vous décidez d'éteindre parce que vous voulez garder votre porte arrière, pour ainsi dire. Ou une autre planète pourrait être au milieu de nulle part près du monde natal de l'IA et vous choisissez de le prendre afin d'avoir une zone de transit pratique à partir de laquelle lancer des attaques contre l'IA.
+
+Il y a des goodies partout pour vous à capturer, donc l'essentiel est de les regarder et de voir ce qui correspond à votre style de jeu et à votre stratégie, puis de les choisir. Si vous devez vous remplir de planètes de moindre valeur pour vous donner une zone tampon ou une zone de mise en scène supplémentaire, vous commencerez probablement à ressentir ce besoin de plus en plus fort lorsque vous jouerez une campagne donnée.
+
+L'écran de la carte de la galaxie (onglet pour y arriver) et l'onglet Intel de la barre latérale, vous donnent une tonne d'informations sur des choses intéressantes à capturer. L'un dans un format de carte spatiale et l'autre dans un format de liste." />
+
+
+
+
+  <tip category="GettingStarted" name="HowToGetMoreShips" display_name="How To Get More Ships" sort_priority="1150"
+        full_text="Il y a deux façons de gagner plus de navires: la science et les flottes.
+        
+En dépensant de la science pour déverrouiller une technologie dans l'onglet technologie, non seulement vous renforcez un tas de navires (augmentez leur niveau de marque de 1), mais vous augmentez également leur cap de navires. Vos flottes existantes deviennent donc un peu plus grandes.
+
+En capturant de nouvelles flottes de quelque nature que ce soit (les postes de combat / citadelles sont défensifs, et le reste est principalement offensif), ceux-ci viennent immédiatement avec une quantité massive de nouveaux navires (et souvent de nouveaux types de navires).
+
+Les stations de commandement ont des flottes de base, certaines plus grandes que d'autres (les stations de commandement militaires ont les plus grandes flottes, mais les revenus les plus faibles). Mais pour vraiment défendre une planète, vous DEVEZ aller capturer des stations de combat ou des citadelles, puis à partir de là, vous pouvez les utiliser pour construire un tas de tourelles, de champs de mines et de quoi que ce soit d'autre sur vos planètes.
+
+Vos flottes mobiles (de type officier ou grève) sont généralement utilisées pour l'attaque, mais elles peuvent également être utilisées pour défendre vos planètes à la rigueur. Cependant, il peut être ennuyeux de devoir retirer vos flottes offensives pour vous défendre contre toutes les incursions mineures, donc les postes de combat / citadelles sont une grande victoire.
+
+Également? Les tourelles sont plus solides que leur type de navire mobile équivalent (avec les inconvénients d'être immobiles et plus chères).
+
+Il y a certains événements majeurs que vous pouvez rencontrer, comme des attaques planétaires croisées (APC) ou des vagues de représailles, ou simplement une incursion par une flotte de chasseurs trop forte si vous n'avez pas géré votre menace (vous ne connaissez pas ces pour l'instant), et ceux-ci sont suffisamment rares pour que vous souhaitiez retirer vos flottes offensives pour avoir toutes les mains sur le pont pendant que vous vous défendez." />
+
+
+
+  <tip category="GettingStarted" name="HowToBuildShipsGettingStarted" display_name="How To Construct Ships and Structures" sort_priority="1150"
+        full_text="Il existe deux types de navires: les trucs qui peuvent voyager entre les planètes et les trucs qui ne le sont pas:
+        
+----
+      
+La plupart de vos vaisseaux qui peuvent voyager entre les planètes sont des flottes mobiles en quelque sorte, avec un transport comme vaisseau amiral, ou une arche ou un golem ou similaire si c'est plus tard dans le jeu. Les navires de ces flottes apparaissent directement sur le navire amiral, MAIS ils sont en fait construits par des usines - et non par les navires eux-mêmes.
+
+Les usines sont construites sur vos propres planètes (généralement - vous pouvez trouver des usines mobiles spéciales) et peuvent être assistées par des ingénieurs pour les accélérer. Ils répartissent uniformément leur charge de travail de construction entre tous les types de navires dans toutes les flottes qui vous appartiennent sur la même planète que l'usine, ou sur les planètes adjacentes de l'usine.
+
+Note clé: le vaisseau amiral de la flotte ne peut pas être paralysé s'il va recevoir une aide à la construction des usines. Mais si un vaisseau amiral est paralysé, vous ne perdez aucun progrès sur tout ce qui était en cours de construction; ça fait juste une pause.
+
+Si vous ne voulez PAS que les navires d'une flotte soient construits - tous ou certains d'entre eux - alors vous devez aller dans l'onglet Flottes dans la barre latérale, sélectionner la flotte en question et désactiver la construction de la flotte ou pour des lignes de navires spécifiques. Ce n'est généralement pas souhaitable, mais utile si votre économie est temporairement aux toilettes.
+----
+       
+Les AUTRES types de navires sont ceux qui sont verrouillés sur une seule planète. Ceux-ci sont construits manuellement par vous, en utilisant l'onglet Build de la barre latérale. Vous pouvez maintenir Shift pour en placer 5 à la fois, si c'est quelque chose comme des tourelles ou des champs de mines où vous voulez juste une grosse goutte dans une zone générale.
+
+Ces types de vaisseaux spécifiques à la planète sont généralement le genre de chose qui «meurt pour rester», alias une tourelle à brochet se transformera en tourelle à brochet quand elle mourra. Lorsque la présence ennemie a disparu ou qu'elle n'a pas été tirée depuis un moment, la chose qui l'a créée la remettra généralement automatiquement en place là où elle était afin que vous n'ayez pas à y penser et à constamment reconstruire vos défenses .
+
+La plupart de ces types de choses sont des tourelles ou des navires de gardien de station, et sont construits par vos postes de commandement eux-mêmes.
+
+Cependant, il y a des Battlestations et des Citadelles qui peuvent se déplacer entre les planètes et construire des choses en plus de vos stations de commandement - ou sur des planètes ennemies ou neutres. Vous pouvez essentiellement prendre une Citadelle et toutes ses tourelles et la ramener sur une de vos planètes qui est un point d'étranglement spécial, et ajouter ses trucs à ce que la station de commande y fait déjà. Ou vous pouvez utiliser cette même citadelle pour installer une «tête de pont» sur une planète ennemie si besoin est.
+
+Les Battlestations et les Citadelles sont capables de se déplacer entre les planètes spécifiquement pour vous donner de la flexibilité dans les planètes qu'elles renforcent - mais les structures et les vaisseaux qu'elles construisent sont limités à ne pas bouger de la planète sur laquelle vous les construisez. Vous devrez les supprimer (supprimer la clé) pour les mettre dans un nouvel endroit, si vous le souhaitez." />
+
+
+
+
+  <tip category="GettingStarted" name="ReprisalWaves" display_name="Reprisal Waves - Aka Don't Just Try To Whittle A Planet Down" sort_priority="1200"
+        full_text="Parfois, vous allez trouver une planète séduisante, mais vous n'êtes tout simplement pas assez fort pour l'emporter avec vos forces actuelles.
+        
+Si vous essayez d'attaquer cette planète et échouez, attendez-vous à ce que l'IA fasse une contre-attaque puissante.
+
+C'est tout à fait correct si cela se produit de temps en temps, mais le problème survient lorsque vous voyez une planète que vous n'êtes presque pas en mesure de prendre, et vous pensez que vous voudrez peut-être l'attaquer 30 fois de suite et cela devrait faire l'affaire. Attendez-vous à ce que la réponse de l'IA soit ... beaucoup plus extrême, au point que cela pourrait vous coûter la partie.
+
+Essayer d'attaquer une cible et n'en retirer qu'une partie est absolument essentiel au jeu, c'est sûr. Mais c'est plus dans le sens de prendre 3-5 passes contre quelque chose qui est trop gros pour vous mais pas incroyablement maîtrisé. Attendez-vous à des vagues de représailles de ce va-et-vient, et c'est tout à fait correct.
+
+En général, si vous voyez quelque chose qui vous surpasse absolument, vous devez vous concentrer sur le renforcement et le retour." />
+
+
+
+
+  <tip category="GettingStarted" name="Transports" display_name="Transports - How To Skip Planets" sort_priority="1250"
+        full_text="Toutes vos forces de combat mobiles ont un vaisseau amiral, qui pourrait être un transport, une arche, un golem ou quelque chose d'autre dans ce sens.
+        
+Ces vaisseaux amiraux fournissent un approvisionnement crucial à leurs forces, mais ils agissent également comme transport. Avec le navire amiral sélectionné, appuyez simplement sur la touche L pour que les navires de la flotte se chargent dans leur navire amiral, ou sur la touche U pour décharger les navires du transport.
+
+Pendant que les vaisseaux se trouvent à l'intérieur du transport, ils ne subiront pas de dégâts et n'aggraveront pas accidentellement l'IA. De plus, c'est parfois un bon moyen de déplacer les navires lents plus rapidement sur une longue distance. Les navires bénéficient même d'un bonus de vitesse de 3 fois lorsqu'ils se déplacent à travers une planète pour entrer dans leur transport.
+
+S'il y a quelques planètes ennemies que vous NE VOULEZ PAS capturer (pas assez précieuses) entre vous et la planète sur laquelle vous avez l'œil, alors vous devriez prendre toutes les flottes que vous prévoyez d'utiliser, les charger en tant que transports (L clé), éventuellement mettre les transports / golems / arches en attente de tir (touche N), et voler vers votre cible. Ensuite, désactivez le mode de tir de maintien (N à nouveau) et déchargez ces transports (touche U).
+
+Notez que si les usines fournissent de nouveaux navires à une flotte alors qu'elle a des navires chargés dans son navire amiral, alors tous les nouveaux navires iront dans le navire amiral en tant que navires transportés. Il n'est pas possible de dire à certains de vos navires dans une seule flotte d'entrer dans leur vaisseau amiral (sauf par défaut lorsque les vaisseaux sont sur une planète différente de leur vaisseau amiral et ne peuvent donc pas obéir). Il n'est pas non plus possible de faire accidentellement entrer des navires dans le mauvais transport, ou qu'un transport soit complet. Tout est bien rangé!" />
+
+  
+  
+  <tip category="GettingStarted" name="ScoutingBasics" display_name="How To Scout New Planets" sort_priority="1300"
+        full_text="Vous pouvez explorer de nouveaux mondes en les piratant. Le piratage est l'un des onglets de la barre latérale gauche de l'interface utilisateur.
+        
+Cependant, une meilleure façon de rechercher est simplement de capturer de nouvelles planètes. Ce faisant, les planètes proches de vos frontières sont automatiquement révélées. Vous voudrez peut-être enregistrer vos points de piratage pour quelque chose de plus juteux.
+
+Il n'y a pas d'unités «éclaireurs», et vous ne pouvez envoyer aucun de vos vaisseaux sur des planètes que vous n'avez pas explorées par l'une des méthodes ci-dessus. Il y a une raison de conception longue et impliquée pour cela (consultez nos forums si vous le souhaitez), mais la version courte est que cette méthode conduit à des décisions plus intéressantes pour vous en tant que joueur, et moins d'ennui." />
+
+  <tip category="GettingStarted" name="Automation" display_name="Automating common tasks" sort_priority="1300"
+        full_text="Vous voudrez souvent simplement «Toujours construire des ingénieurs» ou «Toujours construire des usines» sur vos planètes.
+
+Sous «Paramètres», il y a un onglet Automatisation pour éviter d'automatiser bon nombre de ces choses." />
+
+
+  <tip category="GettingStarted" name="InGameStats" display_name="Understanding in-game unit stats" sort_priority="1300"
+        full_text="Les unités du jeu ont un certain nombre de statistiques; Albédo, armure, etc ...
+
+Ces statistiques sont des propriétés décrivant les unités, elles n'ont aucun impact mécanique inhérent. La vitesse d'une unité n'est pas directement affectée par ses statistiques de moteur, par exemple.
+
+Certains systèmes d'armes interagissent avec ces statistiques. Les armes peuvent infliger des dégâts supplémentaires aux unités avec certains types d'armure (ou moins de dégâts aux unités avec certains types d'armure), mais l'armure d'une unité n'a aucun impact mécanique sur quoi que ce soit d'autre dans le jeu. Il en va de même pour les autres statistiques.
+
+Voir https://wiki.arcengames.com/index.php?title=AI_War_2:_Units_of_Measurement" />
+
+</root>

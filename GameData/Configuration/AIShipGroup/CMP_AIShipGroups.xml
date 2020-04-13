@@ -1,0 +1,2577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <!--The purpose of these "AI Ship Groups" is to define a mix of ships that can be used
+      to populate a planet, or an offensive wave, or similar.  
+      This does not affect the player's fleets directly, it is AI-only.
+      
+      The weight on these says how frequently they will appear inside of each category
+      that they say they are a part of.  Basically these are children defining how many "raffle tickets"
+      they have bought inside their parent.  100 is the standard, and anything less makes them comparably more rare.
+      
+      There's no way for any one child group to know how many other groups have added themselves to the parent category,
+      so going with this "100 means regular, less means more rare" mentality keeps things feeling consistent
+      despite the fact that mods and further additions may diltute the value of any given ticket.
+      
+      By the same token, these ship groups don't define what ships are in them;
+      instead, the ships themselves say which groups they belong to, and what their weight is.
+      
+      This might seem a bit on the complicated side, but it's what lets mods play nicely together.
+      This also gives us a good mix of hand-designed and procedural aspects, since these groups
+      are each thematic in their own way (based on Puffin's work), but the game will wind up
+      choosing a randomized subset from the groups in most cases.  And further ships
+      can be designed and added that we never thought about, which carries it even further.-->
+  
+  
+  <!--Basic Ones
+      ********************************************************************************************************-->
+  
+  
+  
+  <ship_group name="SneakyStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="10"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SimpleWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SimpleReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="CloakingHeavyWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="CloakingHeavyReinforcements" weight="100"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="100"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="100"/>		
+  </ship_group>
+
+  <ship_group name="ArtilleristStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="30"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="30"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="30"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="30"/>		
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SimpleWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="SimpleReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="30"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="30"/>	
+  </ship_group>
+
+  <ship_group name="SniperStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="3"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="3"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="3"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="3"/>		
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="3"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="3"/>	
+  </ship_group>
+
+  <ship_group name="HeavyStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="100"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="100"/>		
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SimpleWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="SimpleReinforcements" weight="100"/>
+    <ai_ship_cat_i_am_in category="TutorialWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="TutorialReinforcements" weight="100"/>
+	<ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="25"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="100"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="100"/>	
+  </ship_group>
+
+  <ship_group name="MediumStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="100"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="100"/>		
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SimpleWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="SimpleReinforcements" weight="100"/>
+    <ai_ship_cat_i_am_in category="TutorialWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="TutorialReinforcements" weight="100"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="25"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="100"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="100"/>	
+  </ship_group>
+
+  <ship_group name="LightStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="100"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="100"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SimpleWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="SimpleReinforcements" weight="100"/>
+    <ai_ship_cat_i_am_in category="TutorialWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="TutorialReinforcements" weight="100"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="100"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="100"/>	
+  </ship_group>
+
+  <ship_group name="DisruptiveStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="40"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="40"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="40"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="40"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SimpleWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SimpleReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="25"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="40"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="40"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="40"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="40"/>	
+  </ship_group>
+
+  <ship_group name="AmbushStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="2"/>	
+  </ship_group>
+
+  <ship_group name="RaidStrikecraftAndFrigates">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="2"/>	
+    <ai_ship_cat_i_am_in category="SimpleWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="2"/>
+  </ship_group>
+
+  <ship_group name="AttritionerStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="25"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="25"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SimpleWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SimpleReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="25"/>	
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="25"/>	
+  </ship_group>
+
+  <ship_group name="AntiAlbedoStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="150"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="150"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="10"/>	
+  </ship_group>
+
+  <ship_group name="DefensiveStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="3"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="3"/>
+    <ai_ship_cat_i_am_in category="SimpleReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="5"/>	
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="3"/>	
+  </ship_group>
+  
+  <ship_group name="ClassicTrioStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="20"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="20"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="20"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="20"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SimpleWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SimpleReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="5"/>	
+  </ship_group>
+
+  
+  
+  
+  <!--Wacky Generalist Ones
+      ********************************************************************************************************-->
+  
+  
+  
+  <ship_group name="FragileFreakyStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="10"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="ZombifyingWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="ZombifyingReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="15"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="10"/>	
+  </ship_group>
+
+  <ship_group name="DurableFreakyStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="1"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="ZombifyingWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="ZombifyingReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="TurtleReinforcements" weight="100"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="30"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="30"/>	
+  </ship_group>
+
+  <ship_group name="HugelyVariedStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="1"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="ThiefWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="30"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="30"/>	
+  </ship_group>
+
+  <ship_group name="SmallSwarmerStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="150"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="150"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="15"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="1"/>	
+  </ship_group>
+  
+  <ship_group name="StrangeSmallSwarmerStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="150"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="150"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="15"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="1"/>	
+  </ship_group>  
+
+  <ship_group name="BullyStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="5"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="ShieldHaterWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="ThiefWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="1"/>
+  </ship_group>
+
+  <ship_group name="SupporterStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="5"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="ShieldHaterWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="ThiefWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="TurtleReinforcements" weight="20"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="30"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="30"/>	
+  </ship_group>
+
+  <ship_group name="JustStrangeStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="1"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="ShieldHaterWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="ThiefWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="1"/>	
+  </ship_group>
+
+  <ship_group name="AntiStructureStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="10"/>	
+    <ai_ship_cat_i_am_in category="ShieldHaterWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="CloakingHeavyWaves" weight="1"/>
+	<ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="20"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="10"/>	
+  </ship_group>
+
+  <ship_group name="SelfSacrificingStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="1"/>	
+    <ai_ship_cat_i_am_in category="ThiefWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="CloakingHeavyWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="1"/>	
+  </ship_group>
+
+  <ship_group name="AntiShieldStrikecraftAndFrigates">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="1"/>	
+    <ai_ship_cat_i_am_in category="ShieldHaterWaves" weight="150"/>
+    <ai_ship_cat_i_am_in category="CloakingHeavyWaves" weight="1"/>
+	<ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="1"/>
+  </ship_group>
+
+  <ship_group name="AntiEngineStrikecraftAndFrigates">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="1"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="CloakingHeavyWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="TurtleReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="50"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="50"/>	
+  </ship_group>
+
+  <ship_group name="AbductorMix">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="5"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="2"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="ThiefWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="ZombifyingWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="ZombifyingReinforcements" weight="25"/>	
+  </ship_group>
+  
+  <ship_group name="AblativeAbductorMix">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="5"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="2"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="ThiefWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="ZombifyingWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="ZombifyingReinforcements" weight="25"/>	
+  </ship_group>
+
+  <ship_group name="AbductorMixWithGunboatSupport">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="3"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="3"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="3"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="3"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="ThiefWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="3"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="ZombifyingWaves" weight="15"/>
+    <ai_ship_cat_i_am_in category="ZombifyingReinforcements" weight="15"/>	
+  </ship_group>
+
+  <ship_group name="AntiLowArmourStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="25"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="25"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="ThiefWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="25"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="25"/>
+    <ai_ship_cat_i_am_in category="ZombifyingWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="ZombifyingReinforcements" weight="25"/>
+	<ai_ship_cat_i_am_in category="TurtleReinforcements" weight="25"/>
+  </ship_group>
+  
+  <ship_group name="StrangeAntiLowArmourStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="15"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="15"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="15"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="15"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="2"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="ThiefWaves" weight="15"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="15"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="15"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="15"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="15"/>
+    <ai_ship_cat_i_am_in category="ZombifyingWaves" weight="15"/>
+    <ai_ship_cat_i_am_in category="ZombifyingReinforcements" weight="15"/>
+	<ai_ship_cat_i_am_in category="TurtleReinforcements" weight="15"/>
+  </ship_group>  
+
+  <ship_group name="AntiHighArmourMix">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="25"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="25"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="ThiefWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="25"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="25"/>
+    <ai_ship_cat_i_am_in category="ZombifyingWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="ZombifyingReinforcements" weight="25"/>
+	<ai_ship_cat_i_am_in category="TurtleReinforcements" weight="25"/>
+  </ship_group>
+  
+  <ship_group name="FragileAntiHighArmourMix">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="15"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="15"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="15"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="15"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="2"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="ThiefWaves" weight="15"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="15"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="15"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="15"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="15"/>
+    <ai_ship_cat_i_am_in category="ZombifyingWaves" weight="15"/>
+    <ai_ship_cat_i_am_in category="ZombifyingReinforcements" weight="15"/>
+	<ai_ship_cat_i_am_in category="TurtleReinforcements" weight="25"/>
+  </ship_group>  
+
+  <ship_group name="ZombifyingStrikecraftWithVariants">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="5"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="3"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="3"/>
+    <ai_ship_cat_i_am_in category="ThiefWaves" weight="75"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="ZombifyingWaves" weight="75"/>
+    <ai_ship_cat_i_am_in category="ZombifyingReinforcements" weight="75"/>	
+  </ship_group>
+
+  <ship_group name="KiteMix">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="5"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="3"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="3"/>
+    <ai_ship_cat_i_am_in category="ThiefWaves" weight="75"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="ZombifyingWaves" weight="75"/>
+    <ai_ship_cat_i_am_in category="ZombifyingReinforcements" weight="75"/>	
+  </ship_group>
+  
+  <ship_group name="FootballMix">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="5"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="3"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="3"/>
+    <ai_ship_cat_i_am_in category="ThiefWaves" weight="75"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="ZombifyingWaves" weight="75"/>
+    <ai_ship_cat_i_am_in category="ZombifyingReinforcements" weight="75"/>	
+  </ship_group>  
+
+
+  
+  <!--More Specific Ones
+      ********************************************************************************************************-->
+  
+  
+  
+  <ship_group name="GhostStrikecraft">
+    <ai_ship_cat_i_am_in category="CloakingHeavyWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="CloakingHeavyReinforcements" weight="100"/>
+  </ship_group>
+
+  <ship_group name="ThiefStrikecraftAndFrigates">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="1"/>	
+    <ai_ship_cat_i_am_in category="ThiefWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="1"/>	
+  </ship_group>
+
+  <ship_group name="ReplicatingStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="150"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="150"/>	
+    <ai_ship_cat_i_am_in category="ZombifyingWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="ZombifyingReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="1"/>	
+  </ship_group>
+
+  <ship_group name="HarassmentStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="1"/>	
+    <ai_ship_cat_i_am_in category="CloakingHeavyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="ZombifyingWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="1"/>
+  </ship_group>
+
+  <ship_group name="OffensiveMeleeStrikecraft">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="4"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="4"/>	
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="4"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="4"/>
+  </ship_group>
+
+  <ship_group name="ZombifyingStrikecraftAndFrigates">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="1"/>	
+    <ai_ship_cat_i_am_in category="ZombifyingWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="ZombifyingReinforcements" weight="100"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="1"/>	
+  </ship_group>
+  
+  <ship_group name="ViciousRaidStrikecraftAndFrigates">
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="150"/>
+	<ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="150"/>
+  </ship_group> 
+
+  <ship_group name="ViciousSneakyStrikecraft">
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="150"/>
+	<ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="150"/>
+  </ship_group> 
+
+  <ship_group name="ViciousLightStrikecraft">
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="150"/>
+	<ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="150"/>
+  </ship_group>
+
+  <ship_group name="SniperAISniperStrikecraft">
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="150"/>
+	<ai_ship_cat_i_am_in category="SniperReinforcements" weight="150"/>
+  </ship_group> 
+
+  <ship_group name="SniperAIArtilleristStrikecraft">
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="150"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="150"/>
+  </ship_group>
+
+  <ship_group name="SniperAIDefensiveStrikecraft">
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="150"/>	
+  </ship_group>
+  
+  <ship_group name="SniperAIFootballMix">
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="5"/>
+  </ship_group>   
+
+  <ship_group name="EnsnarerStrikecraft">
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="150"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="150"/>		
+  </ship_group>
+
+  <ship_group name="EnsnarerBullyStrikecraft">
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="150"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="150"/>	
+  </ship_group>
+
+  <ship_group name="EnsnarerHarassmentStrikecraft">
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="150"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="150"/>	
+  </ship_group>
+
+  <ship_group name="EnsnarerAbductorMix">
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="150"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="150"/>	
+  </ship_group>
+
+  <ship_group name="EnsnarerAblativeAbductorMix">
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="150"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="150"/>	
+  </ship_group>
+
+  <ship_group name="EnsnarerAbductorMixWithGunboatSupport">
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="150"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="150"/>	
+  </ship_group>  
+
+  <ship_group name="LotsOfFrigates">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="2"/>	
+    <ai_ship_cat_i_am_in category="TurtleReinforcements" weight="2"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="2"/>	
+  </ship_group>
+  
+  <!--Ones that are more about particular unit combinations. 
+      ********************************************************************************************************-->  
+
+  <ship_group name="AgravicVWing">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="10"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="2"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="SimpleWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="SimpleReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="10"/>
+	<ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleReinforcements" weight="15"/>	
+  </ship_group>
+  
+  <ship_group name="AblativeVWing">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="10"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="2"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="SimpleWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="SimpleReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="10"/>
+	<ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleReinforcements" weight="15"/>	
+  </ship_group> 
+  
+  <ship_group name="ParalyserWarbird">
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="10"/>	
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="10"/>
+	<ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleReinforcements" weight="15"/>
+    <ai_ship_cat_i_am_in category="ThiefWaves" weight="100"/>
+  </ship_group>
+  
+  <ship_group name="ParalyserDaggerWarbird">
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="10"/>	
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="15"/>
+	<ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="15"/>
+    <ai_ship_cat_i_am_in category="TurtleReinforcements" weight="15"/>
+    <ai_ship_cat_i_am_in category="ThiefWaves" weight="100"/>
+  </ship_group>  
+
+  <ship_group name="TripperAgravicPod">
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="10"/>	
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="10"/>
+	<ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleReinforcements" weight="15"/>	
+  </ship_group>
+  
+  <ship_group name="RaptorAggressor">
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="10"/>	
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="10"/>
+	<ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleReinforcements" weight="20"/>	
+  </ship_group>
+  
+  <ship_group name="RaptorAggressorParasite">
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="ZombifyingWaves" weight="30"/>
+    <ai_ship_cat_i_am_in category="ZombifyingReinforcements" weight="30"/>	
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="10"/>
+	<ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleReinforcements" weight="20"/>	
+  </ship_group>  
+
+  <ship_group name="MuggerParasiticFusionBomber">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="1"/>	
+    <ai_ship_cat_i_am_in category="ZombifyingWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="ZombifyingReinforcements" weight="100"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="1"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="1"/>	
+  </ship_group>
+
+  <ship_group name="AssaultFrigateFusionBomber">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="5"/>	
+    <ai_ship_cat_i_am_in category="ShieldHaterWaves" weight="100"/>	
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="5"/>	
+  </ship_group>
+  
+  <ship_group name="IonDisruptorFusionBomber">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="5"/>	
+    <ai_ship_cat_i_am_in category="ShieldHaterWaves" weight="100"/>	
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="5"/>
+  </ship_group>  
+
+  <ship_group name="RamRamifierFrigate">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="1"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="1"/>	
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="50"/>
+	<ai_ship_cat_i_am_in category="SniperReinforcements" weight="50"/>
+    <ai_ship_cat_i_am_in category="TurtleReinforcements" weight="20"/>		
+  </ship_group>
+
+  <ship_group name="FusionBomberStingray">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="5"/>	
+    <ai_ship_cat_i_am_in category="ShieldHaterWaves" weight="100"/>	
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="5"/>	
+  </ship_group>
+
+  <ship_group name="NanoswarmPersuader">
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="5"/>	
+    <ai_ship_cat_i_am_in category="ZombifyingWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="ZombifyingReinforcements" weight="100"/>
+    <ai_ship_cat_i_am_in category="ThiefWaves" weight="100"/>	
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="5"/>	
+  </ship_group>
+
+  <ship_group name="ClusterBombPersuader">
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="5"/>	
+    <ai_ship_cat_i_am_in category="ZombifyingWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="ZombifyingReinforcements" weight="100"/>
+    <ai_ship_cat_i_am_in category="ThiefWaves" weight="100"/>	
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="5"/>	
+  </ship_group>  
+
+  <ship_group name="RamifierFrigateRipperFrigate">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="5"/>
+	<ai_ship_cat_i_am_in category="ShieldHaterWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="10"/>
+	<ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleReinforcements" weight="20"/>		
+  </ship_group>
+
+  <ship_group name="MirageApparitionFrigate">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="5"/>
+	<ai_ship_cat_i_am_in category="ShieldHaterWaves" weight="75"/>
+    <ai_ship_cat_i_am_in category="SniperWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SniperReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="50"/>
+	<ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="50"/>
+    <ai_ship_cat_i_am_in category="CloakingHeavyWaves" weight="100"/>
+    <ai_ship_cat_i_am_in category="CloakingHeavyReinforcements" weight="100"/>	
+  </ship_group>
+
+  <ship_group name="MassVanguardHydra">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="25"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="2"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="5"/>
+	<ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="TurtleReinforcements" weight="25"/>	
+  </ship_group>
+
+  <ship_group name="AblativeRanger">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="5"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="2"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="5"/>
+	<ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="TurtleReinforcements" weight="10"/>	
+  </ship_group>
+
+  <ship_group name="AbsorberParasiteTeslaCorvette">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="5"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="2"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="10"/>
+	<ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleReinforcements" weight="10"/>	
+  </ship_group>
+  
+  <ship_group name="AbsorberSuppressor">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="5"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="2"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="10"/>
+	<ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleReinforcements" weight="10"/>	
+  </ship_group>  
+
+  <ship_group name="VanguardMLRSCorvette">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="5"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="2"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="5"/>
+	<ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="TurtleReinforcements" weight="10"/>	
+  </ship_group>
+  
+  <ship_group name="AutocannonMinipodBombard">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="5"/>
+	<ai_ship_cat_i_am_in category="ShieldHaterWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="2"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="5"/>
+	<ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="TurtleReinforcements" weight="15"/>	
+  </ship_group>  
+
+  <ship_group name="DevastatorFrigateMLRSConcussionCorvette">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="5"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="2"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="ViciousRaiderWaves" weight="10"/>
+	<ai_ship_cat_i_am_in category="ViciousRaiderReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleReinforcements" weight="10"/>	
+  </ship_group>  
+
+  <ship_group name="BrawlerFrigateTarantula">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="5"/>	
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="2"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleReinforcements" weight="25"/>	
+  </ship_group>
+
+  <ship_group name="BrawlerFrigateSiegeFrigate">
+    <ai_ship_cat_i_am_in category="AnyWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="AnyReinforcements" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerWaves" weight="5"/>
+    <ai_ship_cat_i_am_in category="SwarmerReinforcements" weight="5"/>
+	<ai_ship_cat_i_am_in category="ShieldHaterWaves" weight="25"/>
+    <ai_ship_cat_i_am_in category="RoyalReinforcements" weight="2"/>
+    <ai_ship_cat_i_am_in category="RoyalWaves" weight="2"/>
+    <ai_ship_cat_i_am_in category="EnsnarerWaves" weight="10"/>
+    <ai_ship_cat_i_am_in category="EnsnarerReinforcements" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleReinforcements" weight="25"/>	
+  </ship_group>  
+  
+  
+  <!--Guardians
+      *****************************************
+      ********************************************************************************************************-->
+
+  <ship_group name="PoliceGuardians">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardians" weight="100"/>
+	<ai_ship_cat_i_am_in category="SwarmerBasicGuardians" weight="100"/>
+    <ai_ship_cat_i_am_in category="SimpleGuardians" weight="100"/>	
+  </ship_group>
+
+  <ship_group name="BombardmentGuardiansWithSupport">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardians" weight="100"/>
+	<ai_ship_cat_i_am_in category="SwarmerBasicGuardians" weight="100"/>
+    <ai_ship_cat_i_am_in category="SimpleGuardians" weight="100"/>	
+  </ship_group>
+  
+  <ship_group name="EyeGuardiansWithAOESupport">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardians" weight="20"/>
+	<ai_ship_cat_i_am_in category="SwarmerBasicGuardians" weight="20"/>
+  </ship_group>  
+  
+  <ship_group name="EyeGuardiansWithAntiLargeSupport">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardians" weight="20"/>
+	<ai_ship_cat_i_am_in category="SwarmerBasicGuardians" weight="20"/>
+  </ship_group>
+
+  <ship_group name="ParalysisAndVampireGuardians">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardians" weight="100"/>
+	<ai_ship_cat_i_am_in category="SwarmerBasicGuardians" weight="100"/>
+    <ai_ship_cat_i_am_in category="SimpleGuardians" weight="100"/>	
+  </ship_group>
+  
+  <ship_group name="AOEGuardiansWithMovementSupport">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardians" weight="100"/>
+	<ai_ship_cat_i_am_in category="SwarmerBasicGuardians" weight="100"/>
+    <ai_ship_cat_i_am_in category="SimpleGuardians" weight="100"/>	
+  </ship_group>    
+  
+  <ship_group name="AntiMeleeGuardians">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardians" weight="100"/>
+	<ai_ship_cat_i_am_in category="SwarmerBasicGuardians" weight="100"/>
+    <ai_ship_cat_i_am_in category="SimpleGuardians" weight="100"/>	
+  </ship_group>
+  
+  <ship_group name="LeecherGuardians">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardians" weight="100"/>
+	<ai_ship_cat_i_am_in category="SwarmerBasicGuardians" weight="100"/>
+    <ai_ship_cat_i_am_in category="SimpleGuardians" weight="100"/>	
+  </ship_group> 
+
+  <ship_group name="HullPercentageGuardians">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardians" weight="100"/>
+	<ai_ship_cat_i_am_in category="SwarmerBasicGuardians" weight="100"/>
+    <ai_ship_cat_i_am_in category="SimpleGuardians" weight="100"/>	
+  </ship_group> 
+  
+  <ship_group name="OverrunnerGuardians">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardians" weight="100"/>
+    <ai_ship_cat_i_am_in category="SimpleGuardians" weight="100"/>	
+  </ship_group>  
+
+  <ship_group name="AntiLargeGuardians">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardians" weight="100"/>
+	<ai_ship_cat_i_am_in category="SwarmerBasicGuardians" weight="100"/>
+    <ai_ship_cat_i_am_in category="SimpleGuardians" weight="100"/> 	
+  </ship_group>
+
+  <ship_group name="AntiStructureGuardians">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardians" weight="100"/>  
+	<ai_ship_cat_i_am_in category="SwarmerBasicGuardians" weight="100"/>
+    <ai_ship_cat_i_am_in category="SimpleGuardians" weight="100"/> 	
+  </ship_group>
+
+  <ship_group name="MassCarrierGuardiansWithSupport">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardians" weight="100"/>  
+  </ship_group>   
+
+  <ship_group name="TemperamentalsWithSupport">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardians" weight="20"/>  
+  </ship_group>
+  
+  <ship_group name="CloakingForcefieldAndCarrierGuardians">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardians" weight="100"/>
+    <ai_ship_cat_i_am_in category="SimpleGuardians" weight="100"/>	
+  </ship_group>
+
+  <ship_group name="SpecialForcesGuardians">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardians" weight="100"/>  
+	<ai_ship_cat_i_am_in category="SwarmerBasicGuardians" weight="100"/>
+    <ai_ship_cat_i_am_in category="SimpleGuardians" weight="100"/> 	
+  </ship_group>  
+
+  <ship_group name="UndeadGuardians">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardians" weight="100"/>  
+	<ai_ship_cat_i_am_in category="SwarmerBasicGuardians" weight="100"/>
+    <ai_ship_cat_i_am_in category="SimpleGuardians" weight="100"/> 	
+  </ship_group>
+
+  <ship_group name="EnergeticGuardians">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardians" weight="100"/>  
+	<ai_ship_cat_i_am_in category="SwarmerBasicGuardians" weight="100"/>
+    <ai_ship_cat_i_am_in category="SimpleGuardians" weight="100"/> 	
+  </ship_group> 
+
+  <ship_group name="CoreGuardians">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardians" weight="100"/>  
+	<ai_ship_cat_i_am_in category="SwarmerBasicGuardians" weight="100"/>
+    <ai_ship_cat_i_am_in category="SimpleGuardians" weight="100"/>  	
+  </ship_group>
+
+  <ship_group name="RiotPoliceGuardians">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardians" weight="100"/>  
+	<ai_ship_cat_i_am_in category="SwarmerBasicGuardians" weight="100"/>
+    <ai_ship_cat_i_am_in category="SimpleGuardians" weight="100"/>	
+  </ship_group>
+
+  <ship_group name="AntiArmorGuardians">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardians" weight="100"/>  
+	<ai_ship_cat_i_am_in category="SwarmerBasicGuardians" weight="100"/>
+    <ai_ship_cat_i_am_in category="SimpleGuardians" weight="100"/> 	
+  </ship_group>   
+
+ 
+ 
+  <ship_group name="AIDecloakers">
+    <ai_ship_cat_i_am_in category="AIDecloakingShips" weight="100"/>
+  </ship_group>
+
+  <ship_group name="AnyDireGuardians">
+    <ai_ship_cat_i_am_in category="AnyDireGuardians" weight="100"/>
+    <ai_ship_cat_i_am_in category="SimpleDireGuardians" weight="100"/>	
+  </ship_group>
+  
+  <ship_group name="DefensiveDireGuardians">
+    <ai_ship_cat_i_am_in category="DefensiveDireGuardians" weight="100"/>
+  </ship_group> 
+  
+  <ship_group name="AnyForcefieldGuardians">
+    <ai_ship_cat_i_am_in category="AnyForcefieldGuardians" weight="100"/>
+  </ship_group>
+  
+  <ship_group name="SimpleForcefieldGuardians">
+    <ai_ship_cat_i_am_in category="SimpleForcefieldGuardians" weight="100"/>
+  </ship_group>  
+
+  
+  <ship_group name="TutorialBasicGuardians">
+    <ai_ship_cat_i_am_in category="TutorialBasicGuardians" weight="100"/>
+  </ship_group>
+  
+  <ship_group name="TutorialDireGuardians">
+    <ai_ship_cat_i_am_in category="TutorialDireGuardians" weight="100"/>
+  </ship_group>
+  
+  <ship_group name="TutorialForcefieldGuardians">
+    <ai_ship_cat_i_am_in category="TutorialForcefieldGuardians" weight="100"/>
+  </ship_group>
+
+  
+  <ship_group name="RoyalPoliceGuardians">
+    <ai_ship_cat_i_am_in category="RoyalBasicGuardians" weight="100"/>
+	<ai_ship_cat_i_am_in category="RoyalWaves" weight="100"/>
+  </ship_group>
+
+  <ship_group name="RoyalBombardmentGuardiansWithSupport">
+    <ai_ship_cat_i_am_in category="RoyalBasicGuardians" weight="100"/>
+	<ai_ship_cat_i_am_in category="RoyalWaves" weight="100"/>
+  </ship_group>
+  
+  <ship_group name="RoyalEyeGuardiansWithAOESupport">
+    <ai_ship_cat_i_am_in category="RoyalBasicGuardians" weight="20"/>
+  </ship_group>  
+  
+  <ship_group name="RoyalEyeGuardiansWithAntiLargeSupport">
+    <ai_ship_cat_i_am_in category="RoyalBasicGuardians" weight="20"/>
+  </ship_group>
+
+  <ship_group name="RoyalParalysisAndVampireGuardians">
+    <ai_ship_cat_i_am_in category="RoyalBasicGuardians" weight="100"/>
+	<ai_ship_cat_i_am_in category="RoyalWaves" weight="100"/>
+  </ship_group>
+  
+  <ship_group name="RoyalAOEGuardiansWithMovementSupport">
+    <ai_ship_cat_i_am_in category="RoyalBasicGuardians" weight="100"/>
+	<ai_ship_cat_i_am_in category="RoyalWaves" weight="100"/>
+  </ship_group>    
+  
+  <ship_group name="RoyalAntiMeleeGuardians">
+    <ai_ship_cat_i_am_in category="RoyalBasicGuardians" weight="100"/>
+	<ai_ship_cat_i_am_in category="RoyalWaves" weight="100"/>
+  </ship_group>
+  
+  <ship_group name="RoyalLeecherGuardians">
+    <ai_ship_cat_i_am_in category="RoyalBasicGuardians" weight="100"/>
+	<ai_ship_cat_i_am_in category="RoyalWaves" weight="100"/>
+  </ship_group> 
+
+  <ship_group name="RoyalHullPercentageGuardians">
+    <ai_ship_cat_i_am_in category="RoyalBasicGuardians" weight="100"/>
+	<ai_ship_cat_i_am_in category="RoyalWaves" weight="100"/>
+  </ship_group>
+
+  <ship_group name="RoyalAntiLargeGuardians">
+    <ai_ship_cat_i_am_in category="RoyalBasicGuardians" weight="100"/>
+	<ai_ship_cat_i_am_in category="RoyalWaves" weight="100"/>
+  </ship_group>   
+  
+  <ship_group name="RoyalAntiStructureGuardians">
+    <ai_ship_cat_i_am_in category="RoyalBasicGuardians" weight="100"/>  
+	<ai_ship_cat_i_am_in category="RoyalWaves" weight="100"/>
+  </ship_group>
+  
+  <ship_group name="RoyalSpecialForcesGuardians">
+    <ai_ship_cat_i_am_in category="RoyalBasicGuardians" weight="100"/>  
+	<ai_ship_cat_i_am_in category="RoyalWaves" weight="100"/>
+  </ship_group>
+
+  <ship_group name="RoyalUndeadGuardians">
+    <ai_ship_cat_i_am_in category="RoyalBasicGuardians" weight="100"/>  
+	<ai_ship_cat_i_am_in category="RoyalWaves" weight="100"/>
+  </ship_group>
+
+  <ship_group name="RoyalEnergeticGuardians">
+    <ai_ship_cat_i_am_in category="RoyalBasicGuardians" weight="100"/>  
+	<ai_ship_cat_i_am_in category="RoyalWaves" weight="100"/>
+  </ship_group> 
+
+  <ship_group name="RoyalCoreGuardians">
+    <ai_ship_cat_i_am_in category="RoyalBasicGuardians" weight="100"/>  
+	<ai_ship_cat_i_am_in category="RoyalWaves" weight="100"/>
+  </ship_group>
+
+  <ship_group name="RoyalRiotPoliceGuardians">
+    <ai_ship_cat_i_am_in category="RoyalBasicGuardians" weight="100"/>  
+	<ai_ship_cat_i_am_in category="RoyalWaves" weight="100"/>
+  </ship_group>
+
+  <ship_group name="RoyalAntiArmorGuardians">
+    <ai_ship_cat_i_am_in category="RoyalBasicGuardians" weight="100"/>  
+	<ai_ship_cat_i_am_in category="RoyalWaves" weight="100"/>
+  </ship_group>   
+  
+  
+  
+  <ship_group name="RoyalDireGuardians">
+    <ai_ship_cat_i_am_in category="RoyalDireGuardians" weight="100"/>
+  </ship_group>
+  
+   <ship_group name="RoyalDefensiveDireGuardians">
+    <ai_ship_cat_i_am_in category="RoyalDefensiveDireGuardians" weight="100"/>
+  </ship_group> 
+  
+  <ship_group name="RoyalForcefieldGuardians">
+    <ai_ship_cat_i_am_in category="RoyalForcefieldGuardians" weight="100"/>
+  </ship_group>
+  
+  <ship_group name="SwarmerOverrunnerGuardians">
+    <ai_ship_cat_i_am_in category="SwarmerBasicGuardians" weight="100"/>
+  </ship_group> 
+
+  <ship_group name="SwarmerMassCarrierGuardiansWithSupport">
+    <ai_ship_cat_i_am_in category="SwarmerBasicGuardians" weight="100"/>  
+  </ship_group>
+
+  <ship_group name="SwarmerTemperamentalsWithSupport">
+    <ai_ship_cat_i_am_in category="SwarmerBasicGuardians" weight="20"/>  
+  </ship_group>
+
+  <ship_group name="SwarmerCloakingForcefieldAndCarrierGuardians">
+    <ai_ship_cat_i_am_in category="SwarmerBasicGuardians" weight="100"/>  
+  </ship_group>  
+  
+ 
+  
+  <!--Wormhole Sentinels
+      *****************************************
+      ********************************************************************************************************-->
+
+
+
+  <ship_group name="StealthWormholeSentinels">
+    <ai_ship_cat_i_am_in category="AnyWormholeSentinels" weight="300"/>
+    <ai_ship_cat_i_am_in category="TutorialWormholeSentinels" weight="150"/>
+	<ai_ship_cat_i_am_in category="WormholeMasterWormholeSentinels" weight="300"/>
+  </ship_group>
+
+  <ship_group name="NobodyHereWormholeSentinels">
+    <ai_ship_cat_i_am_in category="AnyWormholeSentinels" weight="750"/>
+    <ai_ship_cat_i_am_in category="TutorialWormholeSentinels" weight="1000"/>
+	<ai_ship_cat_i_am_in category="EnsnarerWormholeSentinels" weight="750"/>
+	<ai_ship_cat_i_am_in category="GhostWormholeSentinels" weight="750"/>
+	<ai_ship_cat_i_am_in category="WormholeMasterWormholeSentinels" weight="250"/>
+  </ship_group>
+
+  <ship_group name="BasicMinefieldWormholeSentinels">
+    <ai_ship_cat_i_am_in category="AnyWormholeSentinels" weight="1"/>
+	<ai_ship_cat_i_am_in category="EnsnarerWormholeSentinels" weight="1"/>
+	<ai_ship_cat_i_am_in category="GhostWormholeSentinels" weight="1"/>
+	<ai_ship_cat_i_am_in category="WormholeMasterWormholeSentinels" weight="1"/>
+  </ship_group>
+
+  <ship_group name="TurretTrapWormholeSentinels_GravityPikes">
+    <ai_ship_cat_i_am_in category="AnyWormholeSentinels" weight="33"/>
+    <ai_ship_cat_i_am_in category="TutorialWormholeSentinels" weight="5"/>
+	<ai_ship_cat_i_am_in category="WormholeMasterWormholeSentinels" weight="33"/>
+  </ship_group>
+
+  <ship_group name="TurretTrapWormholeSentinels_TractorAmbushes">
+    <ai_ship_cat_i_am_in category="AnyWormholeSentinels" weight="33"/>
+    <ai_ship_cat_i_am_in category="TutorialWormholeSentinels" weight="10"/>
+	<ai_ship_cat_i_am_in category="WormholeMasterWormholeSentinels" weight="33"/>
+  </ship_group>
+  
+  <ship_group name="TurretTrapWormholeSentinels_FreeforAll">
+    <ai_ship_cat_i_am_in category="AnyWormholeSentinels" weight="33"/>
+	<ai_ship_cat_i_am_in category="WormholeMasterWormholeSentinels" weight="33"/>
+  </ship_group>
+
+  <ship_group name="TurretTrapWormholeSentinels_Teslas">
+    <ai_ship_cat_i_am_in category="AnyWormholeSentinels" weight="10"/>
+	<ai_ship_cat_i_am_in category="WormholeMasterWormholeSentinels" weight="33"/>
+  </ship_group>
+
+  <ship_group name="TurretTrapWormholeSentinels_Plasma">
+    <ai_ship_cat_i_am_in category="AnyWormholeSentinels" weight="10"/>
+    <ai_ship_cat_i_am_in category="TutorialWormholeSentinels" weight="20"/>
+	<ai_ship_cat_i_am_in category="WormholeMasterWormholeSentinels" weight="33"/>
+  </ship_group>    
+ 
+  <ship_group name="GhostTurretTrapWormholeSentinels_GravityPikes">
+    <ai_ship_cat_i_am_in category="GhostWormholeSentinels" weight="33"/>
+  </ship_group>
+
+  <ship_group name="GhostTurretTrapWormholeSentinels_TractorAmbushes">
+    <ai_ship_cat_i_am_in category="GhostWormholeSentinels" weight="33"/>
+  </ship_group> 
+
+  <ship_group name="GhostTurretTrapWormholeSentinels_FreeforAll">
+    <ai_ship_cat_i_am_in category="GhostWormholeSentinels" weight="33"/>
+  </ship_group>
+
+  <ship_group name="GhostTurretTrapWormholeSentinels_Teslas">
+    <ai_ship_cat_i_am_in category="GhostWormholeSentinels" weight="10"/>
+  </ship_group>
+
+  <ship_group name="GhostTurretTrapWormholeSentinels_Plasma">
+    <ai_ship_cat_i_am_in category="GhostWormholeSentinels" weight="10"/>
+  </ship_group>
+
+--
+
+  <ship_group name="EnsnarerTurretTrapWormholeSentinels_GravityPikes">
+    <ai_ship_cat_i_am_in category="EnsnarerWormholeSentinels" weight="33"/>
+  </ship_group>
+
+  <ship_group name="EnsnarerTurretTrapWormholeSentinels_TractorAmbushes">
+    <ai_ship_cat_i_am_in category="EnsnarerWormholeSentinels" weight="33"/>
+  </ship_group> 
+
+  <ship_group name="EnsnarerTurretTrapWormholeSentinels_FreeforAll">
+    <ai_ship_cat_i_am_in category="EnsnarerWormholeSentinels" weight="33"/>
+  </ship_group>
+
+  <ship_group name="EnsnarerTurretTrapWormholeSentinels_Teslas">
+    <ai_ship_cat_i_am_in category="EnsnarerWormholeSentinels" weight="10"/>
+  </ship_group>
+
+  <ship_group name="EnsnarerTurretTrapWormholeSentinels_Plasma">
+    <ai_ship_cat_i_am_in category="EnsnarerWormholeSentinels" weight="10"/>
+  </ship_group>  
+ 
+  <!--Turrets-As-Used-Elsewhere
+      *****************************************
+      ********************************************************************************************************-->
+
+
+
+  <ship_group name="AnyTurrets_FreeforAll">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="100"/>
+    <ai_ship_cat_i_am_in category="SimpleTurrets" weight="100"/>	
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="100"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="100"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="100"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="100"/>
+	<ai_ship_cat_i_am_in category="ShieldHaterTurrets" weight="100"/>
+  </ship_group>
+
+  <ship_group name="TutorialTurrets_FreeforAll">
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="100"/>
+  </ship_group>
+
+  <ship_group name="NucleophilicTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="80"/>
+    <ai_ship_cat_i_am_in category="SimpleTurrets" weight="80"/>	
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="20"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="ShieldHaterTurrets" weight="80"/>	
+  </ship_group>
+  
+  <ship_group name="PikeTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="80"/>
+    <ai_ship_cat_i_am_in category="SimpleTurrets" weight="80"/>	
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="20"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="ShieldHaterTurrets" weight="80"/>
+  </ship_group>
+
+  <ship_group name="AmbushTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="10"/>
+	<ai_ship_cat_i_am_in category="SimpleTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="3"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="10"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="10"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="10"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="10"/>
+	<ai_ship_cat_i_am_in category="ShieldHaterTurrets" weight="10"/>	
+  </ship_group> 
+
+  <ship_group name="GrenadeLauncherTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="SimpleTurrets" weight="80"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="20"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="ShieldHaterTurrets" weight="80"/>	
+  </ship_group>
+
+  <ship_group name="FortifiedTeslaTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="SimpleTurrets" weight="80"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="20"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="ShieldHaterTurrets" weight="80"/>	
+  </ship_group>
+
+  <ship_group name="ConcussionTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="SimpleTurrets" weight="80"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="20"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="ShieldHaterTurrets" weight="80"/>	
+  </ship_group> 
+
+  <ship_group name="MLRSTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="SimpleTurrets" weight="80"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="20"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="80"/>
+	<ai_ship_cat_i_am_in category="ShieldHaterTurrets" weight="80"/>	
+  </ship_group> 
+
+  <ship_group name="TritiumSniperTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SimpleTurrets" weight="50"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="20"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ShieldHaterTurrets" weight="50"/>	
+  </ship_group>
+
+  <ship_group name="SpiderTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SimpleTurrets" weight="50"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="20"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ShieldHaterTurrets" weight="50"/>	
+  </ship_group>
+
+  <ship_group name="PlasmaTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="30"/>
+	<ai_ship_cat_i_am_in category="SimpleTurrets" weight="30"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="20"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="30"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="30"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="30"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="30"/>
+	<ai_ship_cat_i_am_in category="ShieldHaterTurrets" weight="200"/>	
+  </ship_group>
+
+  <ship_group name="BeamCannonTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="30"/>
+	<ai_ship_cat_i_am_in category="SimpleTurrets" weight="30"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="20"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="30"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="30"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="30"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="30"/>
+	<ai_ship_cat_i_am_in category="ShieldHaterTurrets" weight="30"/>	
+  </ship_group>   
+  
+  <!-- Part of these requires DLC 1 (The Spire Rises) in order to work properly. Without the DLC, it'll just spawn the base game part and be like the existing groups. !-->  
+
+  <ship_group name="SpiderCounterSniperTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="SpiderTranslocatorTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="AcidMLRSTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="AblativeFortifiedTeslaTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="PikeSubverterTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="PikeImploderTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>	
+  </ship_group>
+
+  <ship_group name="MicroConcussionGrenadeHailstormTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="AcidAmbushTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="3"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="10"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="10"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="10"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="10"/>		
+  </ship_group>
+
+  <ship_group name="InterceptorCounterSniperSpiderTritiumTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="3"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="10"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="10"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="10"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="10"/>		
+  </ship_group>
+
+  <ship_group name="BeamCannonSolarFlareTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="PlasmaNucleophilicTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ShieldHaterTurrets" weight="150"/>	
+  </ship_group>
+
+  <ship_group name="MLRSImploderTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="SeekerPlasmaTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ShieldHaterTurrets" weight="150"/>	
+  </ship_group>
+
+  <ship_group name="GrenadeHailstormFortifiedTeslaHoloceneTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="TritiumAblativeTurrets">
+    <ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+    <ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="AblativeHailstormGrenadeTurrets">
+	<ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>	
+  </ship_group>
+  
+  <ship_group name="InterceptorHoloceneSpiderTurrets">
+	<ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>	
+  </ship_group>
+
+  <ship_group name="BlasterMLRSPlasmaTurrets">
+	<ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ShieldHaterTurrets" weight="150"/>	
+  </ship_group>  
+ 
+  <ship_group name="ConcussionMicroConcussionTurrets">
+	<ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>	
+  </ship_group>
+  
+  <ship_group name="CounterSniperHoloceneTritiumTurrets">
+	<ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>	
+  </ship_group>
+
+  <ship_group name="GeminiBeamCannonTurrets">
+	<ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>	
+  </ship_group>
+
+  <ship_group name="JammerFortifiedTeslaTurrets">
+	<ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>	
+  </ship_group>
+
+  <ship_group name="NucleophilicBlasterTurrets">
+	<ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>	
+  </ship_group>
+
+  <ship_group name="NucleophilicSeekerTurrets">
+	<ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>	
+  </ship_group>
+
+  <ship_group name="PikeBlasterTurrets">
+	<ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>	
+  </ship_group>
+
+  <ship_group name="CounterSniperPlasmaTurrets">
+	<ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ShieldHaterTurrets" weight="150"/>	
+  </ship_group>
+
+  <ship_group name="PlasmaSolarFlareTurrets">
+	<ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ShieldHaterTurrets" weight="150"/>	
+  </ship_group>
+
+  <ship_group name="RuffianFortifiedTeslaTurrets">
+	<ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>	
+  </ship_group>
+
+  <ship_group name="TranslocatorFortifiedTeslaTurrets">
+	<ai_ship_cat_i_am_in category="AnyTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="TutorialTurrets" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="FortressBaronTurrets" weight="50"/>
+	<ai_ship_cat_i_am_in category="SwarmerTurrets" weight="50"/>	
+  </ship_group>  
+
+ 
+
+  
+  
+  <ship_group name="EnsnarerTurrets_FreeforAll">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="100"/>
+  </ship_group>
+
+  <ship_group name="EnsnarerNucleophilicTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="80"/>
+  </ship_group> 
+ 
+  <ship_group name="EnsnarerPikeTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="80"/>
+  </ship_group> 
+  
+  <ship_group name="EnsnarerGrenadeLauncherTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="80"/>
+  </ship_group> 
+
+  <ship_group name="EnsnarerFortifiedTeslaTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="80"/>
+  </ship_group> 
+
+  <ship_group name="EnsnarerConcussionTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="80"/>
+  </ship_group> 
+ 
+  <ship_group name="EnsnarerMLRSTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="80"/>
+  </ship_group> 
+
+  <ship_group name="EnsnarerTritiumSniperTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>
+  </ship_group> 
+ 
+  <ship_group name="EnsnarerSpiderTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>
+  </ship_group> 
+
+  <ship_group name="EnsnarerPlasmaTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="30"/>
+  </ship_group> 
+
+  <ship_group name="EnsnarerBeamCannonTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="30"/>
+  </ship_group>
+
+  <ship_group name="EnsnarerSpiderCounterSniperTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>
+  </ship_group>
+
+  <ship_group name="EnsnarerSpiderTranslocatorTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>
+  </ship_group>
+
+  <ship_group name="EnsnarerAcidMLRSTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>
+  </ship_group>
+
+  <ship_group name="EnsnarerAblativeFortifiedTeslaTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>
+  </ship_group>
+
+  <ship_group name="EnsnarerPikeSubverterTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>
+  </ship_group>
+
+  <ship_group name="EnsnarerPikeImploderTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>
+  </ship_group>
+
+  <ship_group name="EnsnarerMicroConcussionGrenadeHailstormTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>
+  </ship_group>
+
+  <ship_group name="EnsnarerInterceptorCounterSniperSpiderTritiumTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="EnsnarerBeamCannonSolarFlareTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="EnsnarerPlasmaNucleophilicTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>		
+  </ship_group>   
+
+  <ship_group name="EnsnarerMLRSImploderTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="EnsnarerSeekerPlasmaTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="EnsnarerGrenadeHailstormFortifiedTeslaHoloceneTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="EnsnarerTritiumAblativeTurrets">
+    <ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>		
+  </ship_group>  
+
+  <ship_group name="EnsnarerAblativeHailstormGrenadeTurrets">
+	<ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>		
+  </ship_group> 
+  
+  <ship_group name="EnsnarerInterceptorHoloceneSpiderTurrets">
+	<ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>		
+  </ship_group>  
+ 
+  <ship_group name="EnsnarerBlasterMLRSPlasmaTurrets">
+	<ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>		
+  </ship_group> 
+ 
+  <ship_group name="EnsnarerConcussionMicroConcussionTurrets">
+	<ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="EnsnarerCounterSniperHoloceneTritiumTurrets">
+	<ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="EnsnarerGeminiBeamCannonTurrets">
+	<ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="EnsnarerJammerFortifiedTeslaTurrets">
+	<ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="EnsnarerNucleophilicBlasterTurrets">
+	<ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>		
+  </ship_group> 
+
+  <ship_group name="EnsnarerNucleophilicSeekerTurrets">
+	<ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="EnsnarerPikeBlasterTurrets">
+	<ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="EnsnarerCounterSniperPlasmaTurrets">
+	<ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="EnsnarerPlasmaSolarFlareTurrets">
+	<ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>		
+  </ship_group>  
+  
+  <ship_group name="EnsnarerRuffianFortifiedTeslaTurrets">
+	<ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>		
+  </ship_group> 
+
+  <ship_group name="EnsnarerTranslocatorFortifiedTeslaTurrets">
+	<ai_ship_cat_i_am_in category="EnsnarerTurrets" weight="50"/>		
+  </ship_group>  
+  
+ 
+
+ 
+  <ship_group name="GhostTurrets_FreeforAll">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="100"/>
+  </ship_group>
+
+  <ship_group name="GhostNucleophilicTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="80"/>
+  </ship_group> 
+ 
+  <ship_group name="GhostPikeTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="80"/>
+  </ship_group> 
+  
+  <ship_group name="GhostGrenadeLauncherTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="80"/>
+  </ship_group> 
+
+  <ship_group name="GhostFortifiedTeslaTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="80"/>
+  </ship_group> 
+
+  <ship_group name="GhostConcussionTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="80"/>
+  </ship_group> 
+ 
+  <ship_group name="GhostMLRSTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="80"/>
+  </ship_group> 
+
+  <ship_group name="GhostTritiumSniperTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>
+  </ship_group> 
+ 
+  <ship_group name="GhostSpiderTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>
+  </ship_group> 
+
+  <ship_group name="GhostPlasmaTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="30"/>
+  </ship_group> 
+
+  <ship_group name="GhostBeamCannonTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="30"/>
+  </ship_group>
+
+  <ship_group name="GhostSpiderCounterSniperTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>
+  </ship_group>
+
+  <ship_group name="GhostSpiderTranslocatorTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>
+  </ship_group>
+  
+  <ship_group name="GhostAcidMLRSTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>
+  </ship_group>
+
+  <ship_group name="GhostAblativeFortifiedTeslaTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>
+  </ship_group>
+
+  <ship_group name="GhostPikeSubverterTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>
+  </ship_group>
+
+  <ship_group name="GhostPikeImploderTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>
+  </ship_group>
+
+  <ship_group name="GhostMicroConcussionGrenadeHailstormTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>
+  </ship_group>
+
+  <ship_group name="GhostInterceptorCounterSniperSpiderTritiumTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="GhostBeamCannonSolarFlareTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="GhostPlasmaNucleophilicTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>		
+  </ship_group>    
+
+  <ship_group name="GhostMLRSImploderTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="GhostSeekerPlasmaTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>		
+  </ship_group> 
+
+  <ship_group name="GhostGrenadeHailstormFortifiedTeslaHoloceneTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="GhostTritiumAblativeTurrets">
+    <ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="GhostAblativeHailstormGrenadeTurrets">
+	<ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>		
+  </ship_group>  
+  
+  <ship_group name="GhostInterceptorHoloceneSpiderTurrets">
+	<ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="GhostBlasterMLRSPlasmaTurrets">
+	<ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="GhostConcussionMicroConcussionTurrets">
+	<ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="GhostCounterSniperHoloceneTritiumTurrets">
+	<ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="GhostGeminiBeamCannonTurrets">
+	<ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="GhostJammerFortifiedTeslaTurrets">
+	<ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="GhostNucleophilicBlasterTurrets">
+	<ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>		
+  </ship_group> 
+
+  <ship_group name="GhostNucleophilicSeekerTurrets">
+	<ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="GhostPikeBlasterTurrets">
+	<ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="GhostCounterSniperPlasmaTurrets">
+	<ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="GhostPlasmaSolarFlareTurrets">
+	<ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>		
+  </ship_group> 
+
+  <ship_group name="GhostRuffianFortifiedTeslaTurrets">
+	<ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>		
+  </ship_group>   
+
+  <ship_group name="GhostTranslocatorFortifiedTeslaTurrets">
+	<ai_ship_cat_i_am_in category="GhostTurrets" weight="50"/>		
+  </ship_group>    
+
+  
+  
+  <ship_group name="SniperTurrets_FreeforAll">
+    <ai_ship_cat_i_am_in category="SniperTurrets" weight="100"/>
+    <ai_ship_cat_i_am_in category="TurtleTurrets" weight="2"/>
+  </ship_group>
+  
+  <ship_group name="SniperTurrets_SpiderCounterSniperTurrets">
+    <ai_ship_cat_i_am_in category="SniperTurrets" weight="50"/>
+  </ship_group>
+
+  <ship_group name="SniperTurrets_SpiderTranslocatorTurrets">
+    <ai_ship_cat_i_am_in category="SniperTurrets" weight="50"/>
+  </ship_group>
+
+  <ship_group name="SniperTurrets_InterceptorCounterSniperSpiderTritiumTurrets">
+    <ai_ship_cat_i_am_in category="SniperTurrets" weight="50"/>		
+  </ship_group>  
+
+  <ship_group name="SniperTurrets_TritiumAblativeTurrets">
+    <ai_ship_cat_i_am_in category="SniperTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="SniperTurrets_InterceptorHoloceneSpiderTurrets">
+    <ai_ship_cat_i_am_in category="SniperTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="SniperTurrets_CounterSniperHoloceneTritiumTurrets">
+    <ai_ship_cat_i_am_in category="SniperTurrets" weight="50"/>		
+  </ship_group>
+
+  <ship_group name="SniperTurrets_CounterSniperPlasmaTurrets">
+	<ai_ship_cat_i_am_in category="SniperTurrets" weight="50"/>		
+  </ship_group>    
+  
+  
+  <!--Non-Turret Defenses
+      *****************************************
+      ********************************************************************************************************-->
+
+
+
+  <ship_group name="AnyNonTurretDefenses_FreeforAll">
+    <ai_ship_cat_i_am_in category="AnyNonTurretDefenses" weight="100"/>
+  </ship_group>
+  <ship_group name="TractorArrays">
+    <ai_ship_cat_i_am_in category="AnyNonTurretDefenses" weight="100"/>
+  </ship_group>
+  <ship_group name="FocusedGravityGenerators">
+    <ai_ship_cat_i_am_in category="AnyNonTurretDefenses" weight="100"/>
+  </ship_group>
+  <ship_group name="Mines">
+    <ai_ship_cat_i_am_in category="AnyNonTurretDefenses" weight="50"/>
+	<ai_ship_cat_i_am_in category="EnsnarerNonTurretDefenses" weight="50"/>
+	<ai_ship_cat_i_am_in category="GhostNonTurretDefenses" weight="100"/>
+  </ship_group>
+  <ship_group name="Forcefields">
+    <ai_ship_cat_i_am_in category="AnyNonTurretDefenses" weight="10"/>
+	<ai_ship_cat_i_am_in category="EnsnarerNonTurretDefenses" weight="10"/>
+  </ship_group>  
+
+  <ship_group name="TutorialNonTurretDefenses_FreeforAll">
+    <ai_ship_cat_i_am_in category="TutorialNonTurretDefenses" weight="100"/>
+  </ship_group>
+
+  <ship_group name="EnsnarerNonTurretDefenses_FreeforAll">
+    <ai_ship_cat_i_am_in category="EnsnarerNonTurretDefenses" weight="100"/>
+  </ship_group>
+  <ship_group name="EnsnarerTractorArrays">
+    <ai_ship_cat_i_am_in category="EnsnarerNonTurretDefenses" weight="100"/>
+  </ship_group>
+  <ship_group name="EnsnarerFocusedGravityGenerators">
+    <ai_ship_cat_i_am_in category="EnsnarerNonTurretDefenses" weight="100"/>
+  </ship_group>  
+
+  <ship_group name="GhostNonTurretDefenses_FreeforAll">
+    <ai_ship_cat_i_am_in category="GhostNonTurretDefenses" weight="100"/>
+  </ship_group>
+  <ship_group name="GhostTractorArrays">
+    <ai_ship_cat_i_am_in category="GhostNonTurretDefenses" weight="100"/>
+  </ship_group>
+  <ship_group name="GhostFocusedGravityGenerators">
+    <ai_ship_cat_i_am_in category="GhostNonTurretDefenses" weight="100"/>
+  </ship_group>  
+
+  
+  
+  
+  <!--Guard Posts
+      *****************************************
+      ********************************************************************************************************-->
+  <ship_group name="UnarmedGuardPosts">
+    <ai_ship_cat_i_am_in category="UnarmedGuardPosts" weight="100"/>
+  </ship_group>
+  <ship_group name="UnarmedGhostGuardPosts">
+    <ai_ship_cat_i_am_in category="UnarmedGhostGuardPosts" weight="100"/>
+  </ship_group>
+  <ship_group name="UnarmedSwarmerGuardPosts">
+    <ai_ship_cat_i_am_in category="UnarmedSwarmerGuardPosts" weight="100"/>
+  </ship_group>
+
+
+  <ship_group name="AnyGuardPosts_FreeforAll">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardPosts" weight="100"/>
+    <ai_ship_cat_i_am_in category="TurtleBasicGuardPosts" weight="100"/>
+  </ship_group>
+  
+  <ship_group name="PikeGuardPosts">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardPosts" weight="80"/>
+    <ai_ship_cat_i_am_in category="TurtleBasicGuardPosts" weight="80"/>
+  </ship_group> 
+
+  <ship_group name="ConcussionGuardPosts">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardPosts" weight="80"/>
+    <ai_ship_cat_i_am_in category="TurtleBasicGuardPosts" weight="80"/>
+  </ship_group>
+
+  <ship_group name="MLRSGuardPosts">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardPosts" weight="80"/>
+    <ai_ship_cat_i_am_in category="TurtleBasicGuardPosts" weight="80"/>
+  </ship_group>
+
+  <ship_group name="StealthGuardPosts">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardPosts" weight="80"/>
+    <ai_ship_cat_i_am_in category="TurtleBasicGuardPosts" weight="80"/>
+	<ai_ship_cat_i_am_in category="GhostGuardPosts" weight="80"/>
+  </ship_group>  
+
+  <ship_group name="ShieldGuardPosts">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardPosts" weight="10"/>
+    <ai_ship_cat_i_am_in category="TurtleBasicGuardPosts" weight="10"/>
+  </ship_group>    
+  
+  <ship_group name="NucleophilicSabotGuardPosts">
+    <ai_ship_cat_i_am_in category="AnyBasicGuardPosts" weight="80"/>
+    <ai_ship_cat_i_am_in category="TurtleBasicGuardPosts" weight="80"/>
+  </ship_group>  
+ 
+ 
+  <ship_group name="TutorialGuardPosts_FreeforAll">
+    <ai_ship_cat_i_am_in category="TutorialBasicGuardPosts" weight="100"/>
+  </ship_group> 
+
+  
+  <ship_group name="GhostGuardPosts_FreeforAll">
+    <ai_ship_cat_i_am_in category="GhostGuardPosts" weight="100"/>
+  </ship_group>
+  
+  <ship_group name="GhostPikeGuardPosts">
+    <ai_ship_cat_i_am_in category="GhostGuardPosts" weight="80"/>
+  </ship_group> 
+  
+  <ship_group name="GhostConcussionGuardPosts">
+    <ai_ship_cat_i_am_in category="GhostGuardPosts" weight="80"/>
+  </ship_group>   
+
+  <ship_group name="GhostMLRSGuardPosts">
+    <ai_ship_cat_i_am_in category="GhostGuardPosts" weight="80"/>
+  </ship_group> 
+
+  <ship_group name="GhostNucleophilicSabotGuardPosts">
+    <ai_ship_cat_i_am_in category="GhostGuardPosts" weight="80"/>
+  </ship_group>    
+
+  
+  <ship_group name="SwarmerGuardPosts_FreeforAll">
+    <ai_ship_cat_i_am_in category="SwarmerGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="SwarmerPikeGuardPosts">
+    <ai_ship_cat_i_am_in category="SwarmerGuardPosts" weight="80"/>
+  </ship_group>
+
+  <ship_group name="SwarmerConcussionGuardPosts">
+    <ai_ship_cat_i_am_in category="SwarmerGuardPosts" weight="80"/>
+  </ship_group>  
+
+  <ship_group name="SwarmerMLRSGuardPosts">
+    <ai_ship_cat_i_am_in category="SwarmerGuardPosts" weight="80"/>
+  </ship_group> 
+
+  <ship_group name="SwarmerStealthGuardPosts">
+    <ai_ship_cat_i_am_in category="SwarmerGuardPosts" weight="80"/>
+  </ship_group>    
+
+  <ship_group name="SwarmerShieldGuardPosts">
+    <ai_ship_cat_i_am_in category="SwarmerGuardPosts" weight="10"/>
+  </ship_group>
+
+  <ship_group name="SwarmerNucleophilicSabotGuardPosts">
+    <ai_ship_cat_i_am_in category="SwarmerGuardPosts" weight="80"/>
+  </ship_group>    
+  
+  <!--Dire Guard Posts
+      *****************************************
+      ********************************************************************************************************-->
+
+
+
+  <ship_group name="AnyDireGuardPosts_FreeforAll">
+    <ai_ship_cat_i_am_in category="AnyDireGuardPosts" weight="100"/>
+	<ai_ship_cat_i_am_in category="SimpleDireGuardPosts" weight="100"/>
+    <ai_ship_cat_i_am_in category="TurtleDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="TutorialDireGuardPosts_FreeforAll">
+    <ai_ship_cat_i_am_in category="TutorialDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="HeavyBeamNucleophilicSabotDireGuardPosts">
+    <ai_ship_cat_i_am_in category="AnyDireGuardPosts" weight="100"/>
+	<ai_ship_cat_i_am_in category="SimpleDireGuardPosts" weight="100"/>
+	<ai_ship_cat_i_am_in category="ZombifyierDireGuardPosts" weight="100"/>
+    <ai_ship_cat_i_am_in category="TurtleDireGuardPosts" weight="100"/>
+  </ship_group>
+  
+  <ship_group name="GravitySpiderShredderTethuidaDireGuardPosts">
+    <ai_ship_cat_i_am_in category="AnyDireGuardPosts" weight="100"/>
+	<ai_ship_cat_i_am_in category="ZombifyierDireGuardPosts" weight="100"/>
+    <ai_ship_cat_i_am_in category="TurtleDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="NucleophilicSabotDireGuardPosts">
+    <ai_ship_cat_i_am_in category="AnyDireGuardPosts" weight="100"/>
+	<ai_ship_cat_i_am_in category="SimpleDireGuardPosts" weight="100"/>
+	<ai_ship_cat_i_am_in category="ZombifyierDireGuardPosts" weight="100"/>
+    <ai_ship_cat_i_am_in category="TurtleDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="MassTethuidaDireGuardPosts">
+    <ai_ship_cat_i_am_in category="AnyDireGuardPosts" weight="5"/>
+	<ai_ship_cat_i_am_in category="ZombifyierDireGuardPosts" weight="50"/>
+    <ai_ship_cat_i_am_in category="TurtleDireGuardPosts" weight="10"/>
+  </ship_group>
+
+  <ship_group name="NucleophilicSabotShredderDireGuardPosts">
+    <ai_ship_cat_i_am_in category="AnyDireGuardPosts" weight="100"/>
+	<ai_ship_cat_i_am_in category="SimpleDireGuardPosts" weight="100"/>
+	<ai_ship_cat_i_am_in category="ZombifyierDireGuardPosts" weight="100"/>
+    <ai_ship_cat_i_am_in category="TurtleDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="ParasiteConcussionDireGuardPosts">
+    <ai_ship_cat_i_am_in category="AnyDireGuardPosts" weight="100"/>
+	<ai_ship_cat_i_am_in category="ZombifyierDireGuardPosts" weight="150"/>
+    <ai_ship_cat_i_am_in category="TurtleDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="ParasiteTethuidaDireGuardPosts">
+    <ai_ship_cat_i_am_in category="AnyDireGuardPosts" weight="5"/>
+	<ai_ship_cat_i_am_in category="ZombifyierDireGuardPosts" weight="50"/>
+    <ai_ship_cat_i_am_in category="TurtleDireGuardPosts" weight="10"/>
+  </ship_group>
+
+  <ship_group name="SpiderParasiteDireGuardPosts">
+    <ai_ship_cat_i_am_in category="AnyDireGuardPosts" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierDireGuardPosts" weight="100"/>
+    <ai_ship_cat_i_am_in category="TurtleDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="SpiderParasiteShredderDireGuardPosts">
+    <ai_ship_cat_i_am_in category="AnyDireGuardPosts" weight="50"/>
+	<ai_ship_cat_i_am_in category="ZombifyierDireGuardPosts" weight="100"/>
+    <ai_ship_cat_i_am_in category="TurtleDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="HeavyBeamTeslaDireGuardPosts">
+    <ai_ship_cat_i_am_in category="AnyDireGuardPosts" weight="100"/>
+	<ai_ship_cat_i_am_in category="SimpleDireGuardPosts" weight="100"/>
+	<ai_ship_cat_i_am_in category="ZombifyierDireGuardPosts" weight="100"/>
+    <ai_ship_cat_i_am_in category="TurtleDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="GravityTeslaDireGuardPosts">
+    <ai_ship_cat_i_am_in category="AnyDireGuardPosts" weight="100"/>
+	<ai_ship_cat_i_am_in category="SimpleDireGuardPosts" weight="100"/>
+	<ai_ship_cat_i_am_in category="ZombifyierDireGuardPosts" weight="100"/>
+    <ai_ship_cat_i_am_in category="TurtleDireGuardPosts" weight="100"/> 
+  </ship_group>
+
+  <ship_group name="SpiderConcussionDireGuardPosts">
+    <ai_ship_cat_i_am_in category="AnyDireGuardPosts" weight="100"/>
+	<ai_ship_cat_i_am_in category="SimpleDireGuardPosts" weight="100"/>
+	<ai_ship_cat_i_am_in category="ZombifyierDireGuardPosts" weight="100"/>
+    <ai_ship_cat_i_am_in category="TurtleDireGuardPosts" weight="100"/> 
+  </ship_group>
+
+  <ship_group name="SpiderHeavyBeamDireGuardPosts">
+    <ai_ship_cat_i_am_in category="AnyDireGuardPosts" weight="100"/>
+	<ai_ship_cat_i_am_in category="SimpleDireGuardPosts" weight="100"/>
+	<ai_ship_cat_i_am_in category="ZombifyierDireGuardPosts" weight="100"/>
+    <ai_ship_cat_i_am_in category="TurtleDireGuardPosts" weight="100"/> 
+  </ship_group>
+
+  <ship_group name="ShredderTeslaDireGuardPosts">
+    <ai_ship_cat_i_am_in category="AnyDireGuardPosts" weight="100"/>
+	<ai_ship_cat_i_am_in category="SimpleDireGuardPosts" weight="100"/>
+	<ai_ship_cat_i_am_in category="ZombifyierDireGuardPosts" weight="100"/>
+    <ai_ship_cat_i_am_in category="TurtleDireGuardPosts" weight="100"/> 
+  </ship_group>   
+  
+  
+  
+  
+  <ship_group name="GhostDireGuardPosts_FreeforAll">
+    <ai_ship_cat_i_am_in category="GhostDireGuardPosts" weight="100"/>
+  </ship_group>  
+
+  <ship_group name="GhostHeavyBeamNucleophilicSabotDireGuardPosts">
+    <ai_ship_cat_i_am_in category="GhostDireGuardPosts" weight="100"/>
+  </ship_group>
+  
+  <ship_group name="GhostGravitySpiderShredderTethuidaDireGuardPosts">
+    <ai_ship_cat_i_am_in category="GhostDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="GhostNucleophilicSabotDireGuardPosts">
+    <ai_ship_cat_i_am_in category="GhostDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="GhostMassTethuidaDireGuardPosts">
+    <ai_ship_cat_i_am_in category="GhostDireGuardPosts" weight="5"/>
+  </ship_group> 
+
+  <ship_group name="GhostNucleophilicSabotShredderDireGuardPosts">
+    <ai_ship_cat_i_am_in category="GhostDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="GhostParasiteConcussionDireGuardPosts">
+    <ai_ship_cat_i_am_in category="GhostDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="GhostParasiteTethuidaDireGuardPosts">
+    <ai_ship_cat_i_am_in category="GhostDireGuardPosts" weight="5"/>
+  </ship_group>
+
+  <ship_group name="GhostSpiderParasiteDireGuardPosts">
+    <ai_ship_cat_i_am_in category="GhostDireGuardPosts" weight="50"/>
+  </ship_group>
+
+  <ship_group name="GhostSpiderParasiteShredderDireGuardPosts">
+    <ai_ship_cat_i_am_in category="GhostDireGuardPosts" weight="50"/>
+  </ship_group>
+
+  <ship_group name="GhostHeavyBeamTeslaDireGuardPosts">
+    <ai_ship_cat_i_am_in category="GhostDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="GhostGravityTeslaDireGuardPosts">
+    <ai_ship_cat_i_am_in category="GhostDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="GhostSpiderConcussionDireGuardPosts">
+    <ai_ship_cat_i_am_in category="GhostDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="GhostSpiderHeavyBeamDireGuardPosts">
+    <ai_ship_cat_i_am_in category="GhostDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="GhostShredderTeslaDireGuardPosts">
+    <ai_ship_cat_i_am_in category="GhostDireGuardPosts" weight="100"/>
+  </ship_group>  
+  
+  
+  
+  
+  <ship_group name="SwarmerDireGuardPosts_FreeforAll">
+    <ai_ship_cat_i_am_in category="SwarmerDireGuardPosts" weight="100"/>
+  </ship_group>  
+
+  <ship_group name="SwarmerHeavyBeamNucleophilicSabotDireGuardPosts">
+    <ai_ship_cat_i_am_in category="SwarmerDireGuardPosts" weight="100"/>
+  </ship_group>   
+  
+  <ship_group name="SwarmerGravitySpiderShredderTethuidaDireGuardPosts">
+    <ai_ship_cat_i_am_in category="SwarmerDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="SwarmerNucleophilicSabotDireGuardPosts">
+    <ai_ship_cat_i_am_in category="SwarmerDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="SwarmerMassTethuidaDireGuardPosts">
+    <ai_ship_cat_i_am_in category="SwarmerDireGuardPosts" weight="5"/>
+  </ship_group> 
+
+  <ship_group name="SwarmerNucleophilicSabotShredderDireGuardPosts">
+    <ai_ship_cat_i_am_in category="SwarmerDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="SwarmerParasiteConcussionDireGuardPosts">
+    <ai_ship_cat_i_am_in category="SwarmerDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="SwarmerParasiteTethuidaDireGuardPosts">
+    <ai_ship_cat_i_am_in category="SwarmerDireGuardPosts" weight="5"/>
+  </ship_group>
+
+  <ship_group name="SwarmerSpiderParasiteDireGuardPosts">
+    <ai_ship_cat_i_am_in category="SwarmerDireGuardPosts" weight="50"/>
+  </ship_group>
+
+  <ship_group name="SwarmerSpiderParasiteShredderDireGuardPosts">
+    <ai_ship_cat_i_am_in category="SwarmerDireGuardPosts" weight="50"/>
+  </ship_group> 
+
+  <ship_group name="SwarmerHeavyBeamTeslaDireGuardPosts">
+    <ai_ship_cat_i_am_in category="SwarmerDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="SwarmerGravityTeslaDireGuardPosts">
+    <ai_ship_cat_i_am_in category="SwarmerDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="SwarmerSpiderConcussionDireGuardPosts">
+    <ai_ship_cat_i_am_in category="SwarmerDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="SwarmerSpiderHeavyBeamDireGuardPosts">
+    <ai_ship_cat_i_am_in category="SwarmerDireGuardPosts" weight="100"/>
+  </ship_group>
+
+  <ship_group name="SwarmerShredderTeslaDireGuardPosts">
+    <ai_ship_cat_i_am_in category="SwarmerDireGuardPosts" weight="100"/>
+  </ship_group>   
+  
+  
+  <!--Singular Freaky Surprises
+      *****************************************
+      ********************************************************************************************************-->
+
+
+
+  <ship_group name="AnySingularFreakySurprises_Golems">
+    <ai_ship_cat_i_am_in category="AnySingularFreakySurprises" weight="1"/>
+  </ship_group>
+  
+  <ship_group name="AnySingularFreakySurprises_AISentryFrigate">
+    <ai_ship_cat_i_am_in category="AnySingularFreakySurprises" weight="100"/>
+  </ship_group>  
+
+  <ship_group name="AnySingularFreakySurprises_NobodyHere">
+    <ai_ship_cat_i_am_in category="AnySingularFreakySurprises" weight="1000"/>
+  </ship_group>
+
+  <ship_group name="TutorialSingularFreakySurprises_NobodyHere">
+    <ai_ship_cat_i_am_in category="TutorialSingularFreakySurprises" weight="1000"/>
+  </ship_group>
+
+  <ship_group name="Golemite_SingularFreakySurprises">
+    <ai_ship_cat_i_am_in category="GolemiteGolems" weight="60"/>
+  </ship_group>
+  
+  <ship_group name="Golemite_SingularFreakySurprises_AISentryFrigate">
+    <ai_ship_cat_i_am_in category="GolemiteGolems" weight="10"/>
+  </ship_group>   
+
+  <ship_group name="Golemite_NobodyHere">
+    <ai_ship_cat_i_am_in category="GolemiteGolems" weight="100"/>
+  </ship_group>
+
+  <ship_group name="TurtleSingularFreaky_SingularFreakySurprises">
+    <ai_ship_cat_i_am_in category="TurtleSingularFreakySurprises" weight="20"/>
+  </ship_group>
+
+  <ship_group name="TurtleSingularFreaky_NobodyHere">
+    <ai_ship_cat_i_am_in category="TurtleSingularFreakySurprises" weight="100"/>
+  </ship_group>
+
+</root>

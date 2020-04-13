@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--These "InitialPlayerSupportFleet" are completely hand-designed support-stlye fleets that are very inflexible by design.
+      They are intended to be basic starting points that you can choose at the start of the game,
+      which you can then use to further supplement yourself later on.  Each one is a major archetype,
+      focused on a different style of defensive play, and they use both their display name and description in the lobby.
+      
+      Creating too many of these would be a Bad Thing, because it creates paralysis for players.
+      
+      Note that ONLY the description and the name are shown, so the description had better be 
+      clear enough to let players choose things.  THAT said, the description for each ship type will automatically
+      be appended if you use append_each_ship_description_to_main_description="true", so that will help.-->
+
+
+  <fleet_design name="StartingCombatEngineerAndFactoryCombo"
+        display_name="Combat Engineers And Factory"
+        description="A decent number of Combat Engineers that can go anywhere you please, enemy planets or otherwise -- plus a mobile factory with basic combat drones that you can take with you even deep into enemy territory!"
+        design_logic="InitialPlayerSupportFleet" weight="100" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="CombatFactory" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="CombatEngineer" ship_cap_group="Strike" weight="100" min="5" max="5"/>
+	<ship_membership name="CombatSentryFrigate" ship_cap_group="Frigate" weight="100" min="1" max="1"/>
+  </fleet_design>
+  
+
+  <fleet_design name="StartingCombatEngineerAndRejuvenatorFactoryCombo"
+        display_name="Combat Engineers And Rejuvenator Factory"
+        description="Lots of Engineers that can go anywhere you please, enemy planets or otherwise -- plus a mobile factory with decoy drones that soak up enemy fire that you can take with you even deep into enemy territory!"
+        design_logic="InitialPlayerSupportFleet" weight="100" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="RejuvenatorCombatFactory" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="CombatEngineer" ship_cap_group="Strike" weight="100" min="10" max="10"/>
+	<ship_membership name="CombatSentryFrigate" ship_cap_group="Frigate" weight="100" min="1" max="1"/>
+  </fleet_design>
+
+
+  <fleet_design name="StartingCombatEngineerAndOverloaderFactoryCombo"
+        display_name="Combat Engineers And Overloader Factory"
+        description="A small number of Combat Engineers that can go anywhere you please, enemy planets or otherwise -- plus a mobile factory with structure disabling drones that you can take with you even deep into enemy territory... that also speeds up allied ships when it is around!"
+        design_logic="InitialPlayerSupportFleet" weight="100" include_full_cap_of_each_type="true"
+        append_each_ship_description_to_main_description="true"
+        >
+    <ship_membership name="OverloaderCombatFactory" ship_cap_group="Centerpiece" weight="100" min="1" max="1"/>
+    <ship_membership name="CombatEngineer" ship_cap_group="Strike" weight="100" min="3" max="3"/>
+	<ship_membership name="CombatSentryFrigate" ship_cap_group="Frigate" weight="100" min="1" max="1"/>
+  </fleet_design>
+  
+</root>

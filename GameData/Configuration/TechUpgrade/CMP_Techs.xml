@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <item name="Unused" display_name="Cannot be upgraded." is_visible_on_menus="false" sort_group="1" sort_index="1" science_cost_per_time_unlocked="99999,99999,99999,99999,99999,99999" />
+  <item name="UpgradeMeFromFleetOnly" display_name="Upgraded only when the parent fleet upgrades." sort_group="2" sort_index="2" is_visible_on_menus="false" science_cost_per_time_unlocked="99999,99999,99999,99999,99999,99999" />
+
+  <item name="Ambush" sort_group="20" sort_index="1" display_name="&lt;color=#ffb37b&gt;Weapon:&lt;/color&gt; Ambush" science_cost_per_time_unlocked="1500,2750,5000,6750" icon_path="assets/sci-fi_game_icons/icons/png/transparent/58_b.png" weapon_upgrade="true"/>
+  <item name="Concussion" sort_group="20" sort_index="1" display_name="&lt;color=#ffb37b&gt;Weapon:&lt;/color&gt; Concussion" science_cost_per_time_unlocked="1500,2750,5000,6750" icon_path="assets/sci-fi_game_icons/icons/png/transparent/12_b.png" weapon_upgrade="true"/>
+  <item name="Disruptive" sort_group="20" sort_index="1" display_name="&lt;color=#ffb37b&gt;Weapon:&lt;/color&gt; Disruptive" science_cost_per_time_unlocked="1500,2750,5000,6750" icon_path="assets/sci-fi_game_icons/icons/png/transparent/99_b.png" weapon_upgrade="true"/>
+  <item name="Fusion" sort_group="20" sort_index="1" display_name="&lt;color=#ffb37b&gt;Weapon:&lt;/color&gt; Fusion" science_cost_per_time_unlocked="1500,2750,5000,6750" icon_path="assets/sci-fi_game_icons/icons/png/transparent/97_b.png" weapon_upgrade="true"/>
+  <item name="Generalist" sort_group="20" sort_index="1" display_name="&lt;color=#ffb37b&gt;Weapon:&lt;/color&gt; Generalist" science_cost_per_time_unlocked="1500,2750,5000,6750" icon_path="assets/sci-fi_game_icons/icons/png/transparent/2_b.png" weapon_upgrade="true"/>
+  <item name="Melee" sort_group="20" sort_index="1" display_name="&lt;color=#ffb37b&gt;Weapon:&lt;/color&gt; Melee" science_cost_per_time_unlocked="1500,2750,5000,6750" icon_path="assets/sci-fi_game_icons/icons/png/transparent/57_b.png" weapon_upgrade="true"/>
+  <item name="Raid" sort_group="20" sort_index="1" display_name="&lt;color=#ffb37b&gt;Weapon:&lt;/color&gt; Raid" science_cost_per_time_unlocked="1500,2750,5000,6750" icon_path="assets/sci-fi_game_icons/icons/png/transparent/61_b.png" weapon_upgrade="true"/>
+  <item name="Splash" sort_group="20" sort_index="1" display_name="&lt;color=#ffb37b&gt;Weapon:&lt;/color&gt; Splash" science_cost_per_time_unlocked="1500,2750,5000,6750" icon_path="assets/sci-fi_game_icons/icons/png/transparent/13_b.png" weapon_upgrade="true"/>
+  <item name="Subterfuge" sort_group="20" sort_index="1" display_name="&lt;color=#ffb37b&gt;Weapon:&lt;/color&gt; Subterfuge" science_cost_per_time_unlocked="1500,2750,5000,6750" icon_path="assets/sci-fi_game_icons/icons/png/transparent/107_b.png" weapon_upgrade="true"/>
+  <item name="Technologist" sort_group="20" sort_index="1" display_name="&lt;color=#ffb37b&gt;Weapon:&lt;/color&gt; Technologist" science_cost_per_time_unlocked="1500,2750,5000,6750"  icon_path="assets/sci-fi_game_icons/icons/png/transparent/20_b.png" weapon_upgrade="true"/>
+
+  <item name="Light" sort_group="50" sort_index="100" display_name="&lt;color=#fa7bff&gt;Hull:&lt;/color&gt; Light" science_cost_per_time_unlocked="10000,10000" icon_path="assets/sci-fi_game_icons/icons/png/transparent/8_b.png"/>
+  <item name="Medium" sort_group="50" sort_index="100" display_name="&lt;color=#fa7bff&gt;Hull:&lt;/color&gt; Medium" science_cost_per_time_unlocked="10000,10000" icon_path="assets/sci-fi_game_icons/icons/png/transparent/18_b.png"/>
+  <item name="Heavy" sort_group="50" sort_index="200" display_name="&lt;color=#fa7bff&gt;Hull:&lt;/color&gt; Heavy" science_cost_per_time_unlocked="10000,10000" icon_path="assets/sci-fi_game_icons/icons/png/transparent/25_b.png"/>
+  <item name="Turret" sort_group="50" sort_index="200" display_name="&lt;color=#fa7bff&gt;Hull:&lt;/color&gt; Turret" science_cost_per_time_unlocked="7500,7500" icon_path="assets/sci-fi_game_icons/icons/png/transparent/42_b.png"/>
+    
+  <item name="Engineering" sort_group="60" sort_index="410" display_name="&lt;color=#f7fe8d&gt;Civilian:&lt;/color&gt; Engineering" science_cost_per_time_unlocked="1000,1500,2000" icon_path="assets/sci-fi_game_icons/icons/png/transparent/1_b.png"/>
+  <item name="MetalGeneration" sort_group="60" sort_index="430" display_name="&lt;color=#f7fe8d&gt;Civilian:&lt;/color&gt; Metal Generation" science_cost_per_time_unlocked="4000,4000,4000" icon_path="assets/sci-fi_game_icons/icons/png/transparent/106_b.png"/>
+  
+  <item name="CommandEconomic" sort_group="70" sort_index="420" display_name="&lt;color=#7bffcc&gt;Command:&lt;/color&gt; Economic" science_cost_per_time_unlocked="4000,4000,4000,4000" icon_path="assets/sci-fi_game_icons/icons/png/transparent/15_b.png"/>
+  <item name="CommandMilitary" sort_group="70" sort_index="430" display_name="&lt;color=#7bffcc&gt;Command:&lt;/color&gt; Military" science_cost_per_time_unlocked="2000,3750,3750,4250" icon_path="assets/sci-fi_game_icons/icons/png/transparent/5_b.png"/>
+  <item name="CommandLogistical" sort_group="70" sort_index="440" display_name="&lt;color=#7bffcc&gt;Command:&lt;/color&gt; Logistical" science_cost_per_time_unlocked="3000,3000,3000,3000" icon_path="assets/sci-fi_game_icons/icons/png/transparent/28_b.png"/>
+  
+  <item name="Forcefields" sort_group="80" sort_index="400" display_name="&lt;color=#908dfe&gt;Defense:&lt;/color&gt; Forcefields" science_cost_per_time_unlocked="2500,4750,10500,11500" icon_path="assets/sci-fi_game_icons/icons/png/transparent/24_b.png"/>
+  <item name="Citadels" sort_group="80" sort_index="410" display_name="&lt;color=#908dfe&gt;Defense:&lt;/color&gt; Citadels" science_cost_per_time_unlocked="1500,2625,2625,3000" icon_path="assets/sci-fi_game_icons/icons/png/transparent/9_b.png"/>
+  <item name="Minefields" sort_group="80" sort_index="420" display_name="&lt;color=#908dfe&gt;Defense:&lt;/color&gt; Minefields" science_cost_per_time_unlocked="1000,1850,3250,4500" icon_path="assets/sci-fi_game_icons/icons/png/transparent/88_b.png"/>
+  <item name="Sentries" sort_group="80" sort_index="430" display_name="&lt;color=#908dfe&gt;Defense:&lt;/color&gt; Sentries" science_cost_per_time_unlocked="750,1500,3250,3500" icon_path="assets/sci-fi_game_icons/icons/png/transparent/73_b.png"/>
+  
+  
+
+  
+  <!--All of the centerpiece items are now deprecated.
+      These upgrade via the fleet EXP instead.-->
+  <item name="ArkSpirit" sort_group="50" sort_index="300" display_name="Ark Spirit" science_cost_per_time_unlocked="3000,4500,6000,7500" is_visible_on_menus="false" />
+  <item name="ArkHeart" sort_group="50" sort_index="305" display_name="Ark Heart" science_cost_per_time_unlocked="3000,4500,6000,7500" is_visible_on_menus="false" />
+  <item name="ArkArmor" sort_group="50" sort_index="310" display_name="Ark Armor" science_cost_per_time_unlocked="5000,6500,8000,9500" is_visible_on_menus="false" />
+  <item name="ArkFist" sort_group="50" sort_index="320" display_name="Ark Fist" science_cost_per_time_unlocked="6000,7500,9000" is_visible_on_menus="false" />
+  
+  <item name="BattlestationShelter" sort_group="60" sort_index="400" display_name="Battlestation Shelter" science_cost_per_time_unlocked="2500,3500,5500" is_visible_on_menus="false" />
+  <item name="BattlestationHand" sort_group="60" sort_index="410" display_name="Battlestation Hand" science_cost_per_time_unlocked="2500,3500,5500" is_visible_on_menus="false" />
+  <item name="BattlestationArchitect" sort_group="60" sort_index="420" display_name="Battlestation Architect" science_cost_per_time_unlocked="2500,3500,5500" is_visible_on_menus="false" />
+
+  <item name="CitadelExecutioner" sort_group="70" sort_index="400" display_name="Citadel Executioner" science_cost_per_time_unlocked="3500,5000,6500" is_visible_on_menus="false" />
+  <item name="CitadelProtector" sort_group="70" sort_index="410" display_name="Citadel Protector" science_cost_per_time_unlocked="3000,4500,6000" is_visible_on_menus="false" />
+  <item name="CitadelConsumer" sort_group="70" sort_index="420" display_name="Citadel Consumer" science_cost_per_time_unlocked="4000,5500" is_visible_on_menus="false" />
+
+  <!--Also deprecated now.-->
+  <item name="EnergyCollector" sort_group="60" sort_index="420" display_name="Energy Collection" science_cost_per_time_unlocked="3000,4500,7000" is_visible_on_menus="false" />
+  <item name="TractorBeams" sort_group="80" sort_index="420" display_name="&lt;color=#908dfe&gt;Defense:&lt;/color&gt; Tractor Beams" science_cost_per_time_unlocked="1500,2750,5000,6750"  icon_path="assets/sci-fi_game_icons/icons/png/transparent/103_b.png" is_visible_on_menus="false"/>
+  <item name="SpireCore" sort_group="90" sort_index="600" display_name="&lt;color=#ff607a&gt;Alien:&lt;/color&gt; Spire Core" science_cost_per_time_unlocked="5000,6500,8000,9500" icon_path="assets/sci-fi_game_icons/icons/png/transparent/27_b.png" is_visible_on_menus="false"/>
+
+</root>

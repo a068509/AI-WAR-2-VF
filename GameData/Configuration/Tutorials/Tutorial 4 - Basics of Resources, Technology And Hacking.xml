@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <tutorial category="Basics" name="BasicResourcesTechnologyAndHacking" display_name="Tutorial 4 - Basics of Resources, Technology and Hacking" sort_priority="4"
+        description="Les bases mêmes des ressources utilisables, le système technologique, ainsi que le fonctionnement du Hacking." scenario="AftermathOfLosingTheAIWar"
+        do_not_serialize_setup_to_or_from_settings="true"
+        skip_determine_ai_ownership="true" skip_determine_ai_homeworlds="true" skip_assign_player_homeworlds="true"
+        force_map_type="Tutorial_01" force_map_seed="123456" skip_seed_special_entities="true"
+        skip_all_galaxy_wide_capturables_and_obstacles="true" skip_warden_bases="true"
+        debug_all_step_text_on_load="false"
+   >
+    <!--Setup for factions
+        *************************************-->
+    <!--You name any that you add beyond the built-in ones, or the following ones are built in:
+        NaturalObject - owned by nobody
+        AI - main AI
+        FirstPlayer - presumably the only player, given this is a tutorial.
+        PlayerBeyondTheFirst - any and all other players.
+        AIWardenFleet - warden fleet of the main AI.
+        AIHunterFleet - hunter fleet of the main AI.
+        AntiAIZombie, AntiPlayerZombie, AntagonizedDysonSphere - all just kind of plumbing stuff.
+        Instigators - the AI instigators.
+        Mercenary - the outguard, if there are any that seed, etc. -->
+    <faction_initial_setup name="FirstPlayer" starting_planet_index="0"/>
+    <faction_initial_setup name="PlayerBeyondTheFirst" do_not_add_faction="true"/>
+    <faction_initial_setup name="Instigators" do_not_add_faction="true"/>
+    <faction_initial_setup name="Mercenary" do_not_add_faction="true"/>
+    <faction_initial_setup name="AI">
+        <custom_field key="AIType" val="Tutorial_01"/>
+    </faction_initial_setup>
+	<faction_initial_setup name="WardenFleet" do_not_add_faction="true"/>
+	<faction_initial_setup name="HunterFleet" do_not_add_faction="true"/>
+	
+
+    <!--Setup for planet topography
+        *************************************-->
+    <!--Note that these tutorial planets allow you to define planets manually.  This ONLY works with the Tutorial_01 map type.
+        If you want to have a tutorial in a regular other map type of some other sort, you can do so, but these won't be read in in terms of placement and names.-->
+    <tutorial_planet name="Murdoch" x="0" y="0"/>
+    <tutorial_planet name="Midlander" x="100" y="-20">
+      <link name="Murdoch"/>
+      <link name="Farland"/>
+    </tutorial_planet>
+    <tutorial_planet name="Farland" x="200" y="20"/>
+	<tutorial_planet name="Sidelander" x="-150" y="200">
+	  <link name="Murdoch"/>
+	</tutorial_planet>
+
+
+
+    <!--Setup for planet ownership, etc
+        *************************************-->
+    <!--Note that these work for even non-manually-created maps.  Ownerships are either whatever you named the factions above, 
+        or are the built-in ones noted above.  You can match planets based on their added-index or their name.-->
+    <planet_ownership_and_spawning match_index="0" linked_faction_name="FirstPlayer" is_homeworld="true"
+          command_station_point="200,1000" skip_player_home_forcefield="false" skip_player_home_engineers="false"
+          skip_player_home_factory="false" skip_player_home_human_settlement="false" skip_player_home_human_cryogenic_pods="false"
+          skip_player_home_initial_combat_fleet="false" skip_player_home_initial_battlestation="false" skip_player_home_initial_support_fleet="false"
+          initial_combat_fleet="ClassicStartingFleet" initial_battlestation_fleet="ClassicStartingDefenses" initial_support_fleet=""
+          number_of_metal_spots="4" >
+    </planet_ownership_and_spawning>
+    <planet_ownership_and_spawning match_name="Midlander" linked_faction_name="AI" mark_level_index="1"
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="true" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="true">
+			<ship_placement faction="AI" type="AdvancedResearchStation" placement_point="1000,1000"/>
+	</planet_ownership_and_spawning>
+			
+    <planet_ownership_and_spawning match_name="Farland" linked_faction_name="AI" mark_level_index="5" is_homeworld="true" number_of_metal_spots="8"
+            skip_ai_guard_posts="true" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="true"/>
+
+    <planet_ownership_and_spawning match_name="Sidelander" mark_level_index="1"  number_of_metal_spots="8" 
+            skip_ai_wormhole_sentinels="true" skip_ai_guardians="true" skip_ai_initial_turrets="true" skip_ai_guard_posts="true" skip_ai_initial_non_turret_defenses="true" skip_ai_initial_strikecraft="true"/>     	  
+
+    <!--Actual steps of the tutorial itself!
+    
+      For informaton about the conditions that you can use, and how to use them, 
+      please see this wiki page: https://wiki.arcengames.com/index.php?title=AI_War_2:_Tutorial_Step_Conditions
+      *************************************-->
+    <tutorial_step text_to_show="Bienvenue dans le quatrième didacticiel d'AI War 2. Celui-ci couvre les principales ressources, le fonctionnement de la technologie ainsi que le système de piratage.
+
+Tout d'abord, jetons un autre coup d'œil au menu Build.">
+      <condition type="PlayerHasSidebarMenuOpen_Build"/>
+    </tutorial_step>
+	
+    <tutorial_step text_to_show="Lorsque vous passez la souris sur l'une des options de l'onglet Construire, certains chiffres sont liés à notre économie. Le premier est&lt;color=#ccccee&gt;Metal&lt;/color&gt; coût, représenté par l'enclume, et le second est &lt;color=#FFDE00&gt;Energy&lt;/color&gt; utilisation, représentée par l'éclair.
+	
+&lt;color=#ccccee&gt;Metal&lt;/color&gt; est utilisé pour tout construire. Il est généré au fil du temps par des choses comme &lt;color=#ccccee&gt;Metal&lt;/color&gt; Moissonneurs et stations de commande, et a passé du temps à construire des choses jusqu'à ce qu'elles soient terminées. &lt;color=#ccccee&gt;Metal&lt;/color&gt; les sources ne peuvent jamais s'épuiser.
+
+&lt;color=#FFDE00&gt;Energy&lt;/color&gt; est une ressource qui n'est pas collectée, stockée et consommée mais plutôt disponible et autorisée pour les unités. Des choses comme les postes de commandement l'augmentent, tandis que la plupart des unités le diminuent. Si vous n'en avez pas assez &lt;color=#FFDE00&gt;Energy&lt;/color&gt; laissé pour quelque chose, vous ne pouvez pas le construire.
+
+Les deux montants actuels de ces ressources sont visibles tout en haut de l'écran, avec les mêmes icônes à proximité (enclume et éclair).
+
+Ensuite, ouvrons l'onglet Tech.
+
+&lt;color=#999999&gt;Conseil supplémentaire 1: si vous vous demandez où votre &lt;color=#ccccee&gt;Metal&lt;/color&gt; va, vous pouvez cliquer sur le montant en haut de l'écran pour obtenir une liste des&lt;color=#ccccee&gt;Metal&lt;/color&gt; flows.&lt;/color&gt;
+
+&lt;color=#999999&gt;Astuce supplémentaire 2: l'onglet Build affiche également &lt;color=#ccccee&gt;Metal&lt;/color&gt; coût à droite de l'option de construction.&lt;/color&gt;">
+      <condition type="PlayerHasSidebarMenuOpen_Tech"/>
+    </tutorial_step>
+
+    <tutorial_step text_to_show="Presque tout ce que nous pouvons utiliser est affecté par l'un des&lt;color=#7CE9FF&gt;Technologies&lt;/color&gt; ici.
+
+Un fait très important est que ces&lt;color=#7CE9FF&gt;Technologies&lt;/color&gt; ne sont pas par type d'unité. Plusieurs unités peuvent bénéficier de la même &lt;color=#7CE9FF&gt;Technology&lt;/color&gt;, et en fait, nous avons l'un de ces exemples.
+
+Si vous survolez chaque &lt;color=#7CE9FF&gt;Technology&lt;/color&gt;, il vous indiquera quelles unités vous possédez actuellement et que vous pourrez capturer sur les unités des flottes que cela affecterait également.
+
+La ressource utilisée pour ceux-ci est &lt;color=#7CE9FF&gt;Science&lt;/color&gt;, représenté par l'icône du flacon. Vous pouvez voir votre montant actuel en haut, tout comme &lt;color=#ccccee&gt;Metal&lt;/color&gt; and &lt;color=#FFDE00&gt;Energy&lt;/color&gt;. Nous avons quelques façons de gagner &lt;color=#7CE9FF&gt;Science&lt;/color&gt;, mais le principal est de l'extraire des planètes que nous avons capturées. Il y a cependant une quantité limitée à collecter par planète.
+
+Essayons de mettre à niveau quelque chose! Généraliste de mise à niveau, Fusion et commotion cérébrale &lt;color=#7CE9FF&gt;Technologies&lt;/color&gt; une fois que.
+
+&lt;color=#999999&gt;Astuce supplémentaire: survoler le &lt;color=#7CE9FF&gt;Science&lt;/color&gt; montant en haut de l'écran vous montrera s'il reste encore des planètes à extraire.&lt;/color&gt;">
+      <condition type="PlayerHasResearchedTechNumberOfTimes" tech_upgrade="Generalist" count="1"/>
+	  <condition type="PlayerHasResearchedTechNumberOfTimes" tech_upgrade="Fusion" count="1"/>
+	  <condition type="PlayerHasResearchedTechNumberOfTimes" tech_upgrade="Concussion" count="1"/>
+    </tutorial_step>
+
+    <tutorial_step text_to_show="Ce que la mise à niveau vient de faire est d'améliorer la Marque des unités concernées. Il existe une plage allant de 1 au plus bas à 7 au plus haut.
+
+Chaque marque qu'une unité a augmente des choses comme la santé, les dégâts et parfois des effets spéciaux tels que les rayons du tracteur ou la production de ressources. La plupart des choses augmenteront également leur montant maximum, comme nos V-Wings, mais des choses comme &lt;color=#ccccee&gt;Metal&lt;/color&gt; Les pêcheurs ne le feront pas.
+
+Chaque unité qui a des marques a un chiffre à côté d'elle, qui a une couleur différente selon la marque. Du plus bas au plus haut, ils sont &lt;color=#fbffbd&gt;I&lt;/color&gt;, &lt;color=#ffba00&gt;II&lt;/color&gt;, &lt;color=#00deff&gt;III&lt;/color&gt;, &lt;color=#60ff00&gt;IV&lt;/color&gt;, &lt;color=#ff3000&gt;V&lt;/color&gt;, &lt;color=#ff0036&gt;VI&lt;/color&gt; and &lt;color=#ff00ea&gt;VII&lt;/color&gt;
+
+Une partie de la stratégie du jeu consiste à améliorer les bonnes choses. Par exemple, la mise à niveau du &lt;color=#7CE9FF&gt;Technology&lt;/color&gt; qui profite à beaucoup de vos unités est probablement mieux que le &lt;color=#7CE9FF&gt;Technology&lt;/color&gt; cela ne profite qu'à quelques-uns, mais il est tout à fait possible que le second soit plus utile à long terme.
+
+Il y a un dernier élément de mise à niveau que nous devrions examiner. Tout d'abord, ouvrez l'onglet Flotte.">
+      <condition type="PlayerHasSidebarMenuOpen_Fleets"/>
+    </tutorial_step>
+	
+    <tutorial_step text_to_show="Maintenant que nous sommes ici, faites un clic gauche sur la flotte 'Murdoch Cmd', comme vous l'avez fait dans le tutoriel précédent avec les flottes de grève mobile. Vous verrez près du sommet «Fleet Levels From Science».
+
+Ce que cela vous permet de faire, c'est de dépenser un peu de science pour tout mettre à niveau dans cette flotte, de manière permanente, même si vous perdez la planète, puis la reprenez, changez de station, etc.
+
+Cela peut être pratique si vous avez besoin d'un peu de revenu ou d'énergie, mais que vous n'avez qu'une seule station économique ou une station militaire sur un point d'étranglement ou que vous gardez quelque chose de vraiment important.
+
+Vous pouvez faire de même pour les flottes de Battlestation et de Citadelle, qui peuvent être assez efficaces car elles peuvent se déplacer et construire des défenses ailleurs. Cependant, les flottes mobiles ne sont pas autorisées à le faire.
+
+Nous allons maintenant passer à la dernière ressource. Cependant, vous devez d'abord construire des défenses à partir de votre Battlestation avant de continuer - ne voulez pas laisser notre monde natal sans défense!
+
+Ensuite, nous devons déplacer notre flotte vers {c1.PlanetName}. Une fois qu'il est là, envoyez votre vue là-bas et ouvrez le&lt;color=#3DE799&gt;Hacks&lt;/color&gt; languette. Assurez-vous d'apporter tout cela!
+
+&lt;color=#999999&gt;Astuce supplémentaire: mettre à niveau votre monde d'origine de cette façon dès le début peut donner beaucoup de revenus supplémentaires!&lt;/color&gt;">">
+      <condition type="PlayerHasCountOfSpecificShipOnPlanet" planet_by_name="Midlander" entity_type="TransportFlagship_Starter" count="1"/>
+	  <condition type="PlayerHasCountOfSpecificShipOnPlanet" planet_by_name="Midlander" entity_type="VWing" count="10"/>
+	  <condition type="PlayerHasCountOfSpecificShipOnPlanet" planet_by_name="Midlander" entity_type="FusionBomber" count="10"/>
+	  <condition type="PlayerHasCountOfSpecificShipOnPlanet" planet_by_name="Midlander" entity_type="ConcussionCorvette" count="10"/>
+	  <condition type="PlayerHasSidebarMenuOpen_Hacking"/>
+    </tutorial_step>	
+
+    <tutorial_step text_to_show="Quelques options ici. Chacun montre le coût en &lt;color=#3DE799&gt;Hacking Points&lt;/color&gt; et la durée. Les survoler nous dit ce qu'ils font. Certains ciblent une unité spécifique de la planète et disent ce que c'est, sinon c'est quelque chose qui est fait à la planète.
+
+&lt;color=#3DE799&gt;Hacking Points&lt;/color&gt; sont la ressource utilisée pour effectuer &lt;color=#3DE799&gt;Hacks&lt;/color&gt;, représenté par l'icône du chapeau et du masque pour les yeux, visible en haut. Comme &lt;color=#7CE9FF&gt;Science&lt;/color&gt;, il y a 2 façons de l'obtenir, mais la principale est également de l'extraire des planètes capturées, avec une quantité finie de chacune.
+
+Nous voulons faire le &lt;color=#3DE799&gt;Grant Ship Line Hack&lt;/color&gt;. Il y a une station de recherche avancée ici, qui peut accorder &lt;color=#3DE799&gt;Hacking&lt;/color&gt; Flottez un nouveau type d'unité.
+
+Nous avons amené toute la flotte ici parce que la plupart &lt;color=#3DE799&gt;Hacks&lt;/color&gt; avoir une réponse - l'IA n'est pas heureuse. Tant qu'ils ne sont pas terminés, les ennemis apparaissent périodiquement et tentent de vous arrêter. Ce &lt;color=#3DE799&gt;Hack&lt;/color&gt; n'est actuellement pas trop difficile, et quelques rares n'ont pas de réponse.
+
+Vous pouvez survoler la quantité de ressources en haut pour voir la force de la réponse de l'IA. Cela augmente plus vous &lt;color=#3DE799&gt;Hack&lt;/color&gt; cette même IA. Des factions comme le Nanocauste réagissent un peu différemment.
+
+Commencez le&lt;color=#3DE799&gt;Hack&lt;/color&gt;, et nous continuerons lorsque le &lt;color=#3DE799&gt;Hack&lt;/color&gt; est complet.
+
+&lt;color=#999999&gt;Astuce supplémentaire1: &lt;color=#3DE799&gt;Hacking&lt;/color&gt; est effectué par le vaisseau amiral le plus proche de la cible. Tandis que le &lt;color=#3DE799&gt;Hack&lt;/color&gt; est en cours, il ne peut pas quitter la planète.&lt;/color&gt;
+
+&lt;color=#999999&gt;Astuce supplémentaire 2: clic gauche sur le&lt;color=#3DE799&gt;Hacking&lt;/color&gt; une notification en haut de l'écran vous permettra de l'annuler. Cela peut être utile si la réponse est écrasante.&lt;/color&gt;">">
+      <condition type="EnemyShipsOfSpecificTypeOnPlanetLessThanOrEqualTo" planet_by_name="Midlander" entity_type="AdvancedResearchStation" count="0"/>
+    </tutorial_step>
+
+    <tutorial_step text_to_show="Vous avez maintenant un type d'unité supplémentaire pour cette flotte. Nous allons maintenant passer à la toute dernière chose, qui n'est pas exactement une ressource: &lt;color=#FF5454&gt;AI Progress&lt;/color&gt;, ou &lt;color=#FF5454&gt;AIP&lt;/color&gt;.
+	
+&lt;color=#FF5454&gt;AIP&lt;/color&gt; est le principal indicateur de la connaissance que vous avez de l'IA. Plus il est élevé, plus il consacrera de forces à votre présence et, éventuellement, il aura de nouveaux comportements, tels que l'ouverture de trous de ver à votre ligne de fond.
+
+Le courant &lt;color=#FF5454&gt;AIP&lt;/color&gt; La valeur s'affiche à nouveau dans la barre supérieure, avec l'icône de visage menaçant rouge.
+
+Faire des choses comme détruire une station de commande AI augmentera cela. Il existe également des moyens de le réduire, comme la destruction de structures comme les centres de données.
+
+Gérer cela est crucial pour survivre et finalement gagner. Vous devez vous assurer quoi que vous payiez le prix en &lt;color=#FF5454&gt;AIP&lt;/color&gt; car cela en vaut la peine, sinon vous finirez par être dépassé.
+
+Unités qui augmentent &lt;color=#FF5454&gt;AIP&lt;/color&gt; l'indiquera dans leur info-bulle. En général cependant, vos unités n'attaqueront jamais automatiquement quelque chose qui l'augmenterait.
+
+Essayez de détruire la station de commande AI pour voir le changement.
+
+&lt;color=#999999&gt;Astuce supplémentaire 1: passez la souris sur le &lt;color=#FF5454&gt;AIP&lt;/color&gt; montant vous donnera plus d'informations à ce sujet.&lt;/color&gt;
+&lt;color=#999999&gt;Conseil supplémentaire 2: cliquez sur le &lt;color=#FF5454&gt;AIP&lt;/color&gt; montant vous donnera un journal de chaque changement dans le jeu entier.&lt;/color&gt;">
+      <condition type="EnemyShipsOfSpecificTypeOnPlanetLessThanOrEqualTo" planet_by_name="Midlander" entity_type="AICommandStation" count="0"/>
+    </tutorial_step>	
+	
+  </tutorial>	
+	
+
+</root>

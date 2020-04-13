@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <praetorian_type name="Normal"
+                   is_default="true"
+           display_name="Bodyguard"
+           abbreviation="Bodyguard"
+           dll_name="AIWarExternalCode"
+           type_name="Arcen.AIW2.External.PraetorianGuardType_Normal"
+          description="This is the bodyguard of the AI Overlord."
+  >
+  </praetorian_type>
+</root>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <item name="FallenSpireGlobalData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.FallenSpireGlobalExternalData" />
+  <item name="FallenSpirePerUnitData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.FallenSpirePerUnitExternalData" /> 
+  <item name="ScourgeGlobalData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.ScourgeGlobalExternalData" />
+  <item name="ScourgePerUnitData" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.ScourgePerUnitExternalData" />
+</root>

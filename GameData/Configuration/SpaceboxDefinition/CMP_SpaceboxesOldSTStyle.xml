@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <spacebox name="LightGreen" weight="1" visuals="assets/traditionalskyboxes/batch2/_PurpleGoldPoison.mat"  uses_traditional_skybox="true" />
+  <spacebox name="RichBlue" weight="1" visuals="assets/traditionalskyboxes/batch2/_SwirlyYellow.mat"  uses_traditional_skybox="true" />
+  <spacebox name="DimRed" weight="1" visuals="assets/traditionalskyboxes/batch2/GreenBluePoison_2y0qdj39hgs0.mat"  uses_traditional_skybox="true" />
+  <spacebox name="RichPurple" weight="1" visuals="assets/spacebg/materials/forusing/chunksandslashes_greenpale.mat"   />
+  <spacebox name="NearBlackBlue" weight="1" visuals="assets/spacebg/materials/forusing/stormybats_red.mat"  />
+  <spacebox name="MottledGreen" weight="1" visuals="assets/spacebg/materials/forusing/chunksandslashes_gold.mat"  />
+  <spacebox name="MediumGold" weight="1" visuals="assets/spacebg/materials/forusing/calmribs_blue.mat" />
+  <spacebox name="MediumBlue" weight="1" visuals="assets/traditionalskyboxes/batch2/_BlackHole.mat"  uses_traditional_skybox="true" />
+</root>
