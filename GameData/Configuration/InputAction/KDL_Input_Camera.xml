@@ -1,95 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
   <input_action name="CameraSpeedUp"
-      category="Camera" display_name="Camera Speed Up"
-      description="Make all camera movements faster."
+      category="Camera" display_name="Accélération de la caméra"
+      description="Accélérez tous les mouvements de la caméra."
       check_type="Custom" key="LeftShift" />
   <input_action name="CameraSlowDown"
-      category="Camera" display_name="Camera Slow Down"
-      description="Make all camera movements slower."
+      category="Camera" display_name="Ralentissement de la caméra"
+      description="Ralentissez tous les mouvements de la caméra."
       check_type="Custom" key="LeftControl" />
   
   <input_action name="CameraLeft"
-      category="Camera" display_name="Camera Left"
-      description="Pan the camera left."
+      category="Camera" display_name="Caméra gauche"
+      description="Déplacez la caméra vers la gauche."
       check_type="Custom" key="LeftArrow" />
   <input_action name="CameraLeftAlt"
-      category="Camera" display_name="Camera Left (Alt)"
-      description="Pan the camera left."
+      category="Camera" display_name="Caméra gauche (Alt)"
+      description="Déplacez la caméra vers la gauche."
       check_type="Custom" key="A" default_should_override_saved_if_older_than_version="Cameras_745"/>
   <input_action name="CameraRight"
-      category="Camera" display_name="Camera Right"
-      description="Pan the camera right."
+      category="Camera" display_name="Caméra droite"
+      description="Déplacez la caméra vers la droite."
       check_type="Custom" key="RightArrow" />
   <input_action name="CameraRightAlt"
-      category="Camera" display_name="Camera Right (Alt)"
-      description="Pan the camera right."
+      category="Camera" display_name="Caméra droite (Alt)"
+      description="Déplacez la caméra vers la droite"
       check_type="Custom" key="D" default_should_override_saved_if_older_than_version="Cameras_745"/>
   <input_action name="CameraForward"
-      category="Camera" display_name="Camera Forward"
-      description="Pan the camera forward."
+      category="Camera" display_name="Caméra vers l'avant"
+      description="Faites pivoter la caméra vers l'avant."
       check_type="Custom" key="UpArrow" />
   <input_action name="CameraForwardAlt"
-      category="Camera" display_name="Camera Forward (Alt)"
-      description="Pan the camera forward."
+      category="Camera" display_name="Caméra vers l'avant (Alt)"
+      description="Faites pivoter la caméra vers l'avant."
       check_type="Custom" key="W" default_should_override_saved_if_older_than_version="Cameras_745"/>
   <input_action name="CameraBackward"
-      category="Camera" display_name="Camera Backward"
-      description="Pan the camera backward."
+      category="Camera" display_name="Caméra vers l'arrière"
+      description="Faites pivoter la caméra vers l'arrière"
       check_type="Custom" key="DownArrow" />
   <input_action name="CameraBackwardAlt"
-      category="Camera" display_name="Camera Backward (Alt)"
-      description="Pan the camera backward."
+      category="Camera" display_name="Caméra vers l'arrière (Alt)"
+      description="Faites pivoter la caméra vers l'arrière"
       check_type="Custom" key="S" default_should_override_saved_if_older_than_version="Cameras_745"/>
   
   <input_action name="CameraGrabPanMode"
-      category="Camera" display_name="Camera 'Grab Pan' Mode"
-      description="While holding this button down, mouse movements pan the camera as if you have grabbed the battlefield."
+      category="Camera" display_name="Mode de prise de vue de la caméra"
+      description="Tout en maintenant ce bouton enfoncé, les mouvements de la souris font pivoter la caméra comme si vous vous étiez emparé du champ de bataille."
       check_type="Custom" key="MiddleMouse" />
   <input_action name="CameraGrabPanModeAlt"
-      category="Camera" display_name="Camera 'Grab Pan' Mode (Alt)"
-      description="While holding this button down, mouse movements pan the camera as if you have grabbed the battlefield."
+      category="Camera" display_name="Mode de prise de vue de la caméra (Alt)"
+      description="Tout en maintenant ce bouton enfoncé, les mouvements de la souris font pivoter la caméra comme si vous vous étiez emparé du champ de bataille."
       check_type="Custom" key="None" />
   
   <input_action name="CameraRotateTiltMode"
-      category="Camera" display_name="Camera 'Rotate Tilt' Mode"
-      description="While holding this button down, mouse movements rotate and tilt the camera view (not on the galaxy map)."
+      category="Camera" display_name="Mode «Rotation et inclinaison» de la caméra"
+      description="Tout en maintenant ce bouton enfoncé, les mouvements de la souris tournent et inclinent la vue de la caméra (pas sur la carte de la galaxie)."
       check_type="Custom" key="Mouse4" />
   <input_action name="CameraRotateTiltModeAlt"
-      category="Camera" display_name="Camera 'Rotate Tilt' Mode (Alt)"
-      description="While holding this button down, mouse movements rotate and tilt the camera view (not on the galaxy map)."
+      category="Camera" display_name="Mode «Rotation et inclinaison» de la caméra (Alt)"
+      description="Tout en maintenant ce bouton enfoncé, les mouvements de la souris tournent et inclinent la vue de la caméra (pas sur la carte de la galaxie)."
       check_type="Custom" key="Q" />
 
   <input_action name="CameraZoomInKeyboard"
-      category="Camera" display_name="Camera Zoom In (Keyboard)"
-      description="Zoom the camera in."
+      category="Camera" display_name="Zoom avant de la caméra (clavier)"
+      description="Zoomez sur la caméra."
       check_type="Custom" key="PageUp" />
   <input_action name="CameraZoomOutKeyboard"
-      category="Camera" display_name="Camera Zoom Out (Keyboard)"
-      description="Zoom the camera out."
+      category="Camera" display_name="Zoom arrière de la caméra (clavier)"
+      description="Zoomez sur la caméra."
       check_type="Custom" key="PageDown" />
 
   <input_action name="CameraZoomInOutMouse"
-      category="Camera" display_name="Camera Zoom In/Out (Mouse)"
-      description="Zoom the camera in and out with the mouse wheel."
+      category="Camera" display_name="Zoom avant/arière de la caméra (souris)"
+      description="Zoomez et dézoomez la caméra avec la molette de la souris."
       check_type="Custom" key="MouseWheel" />
 
   <input_action name="CameraRotateLeft"
-      category="Unused" display_name="Camera Rotate Left"
-      description="Rotate the camera left (not in galaxy map mode)."
+      category="Unused" display_name="Rotation de la caméra à gauche"
+      description="Faites pivoter la caméra vers la gauche (pas en mode carte galaxie)."
       dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
       key="None" />
   <input_action name="CameraRotateRight"
-      category="Unused" display_name="Camera Rotate Right"
-      description="Rotate the camera right (not in galaxy map mode)."
+      category="Unused" display_name="Rotation de la caméra à droite"
+      description="Faites pivoter la caméra vers la droite (pas en mode carte galaxie)."
       check_type="Custom" key="None" />
 
   <input_action name="CameraTiltDown"
-      category="Unused" display_name="Camera Tilt Down"
-      description="Tilt the camera down (not in galaxy map mode)."
+      category="Unused" display_name="Inclinaison de la caméra vers le bas"
+      description="Inclinez l'appareil photo vers le bas (pas en mode carte galaxie)."
       check_type="Custom" key="None" />
   <input_action name="CameraTiltUp"
-      category="Unused" display_name="Camera Tilt Up"
-      description="Tilt the camera up (not in galaxy map mode)."
+      category="Unused" display_name="Inclinaison de la caméra"
+      description="Inclinez la caméra vers le haut (pas en mode carte galaxie)."
       check_type="Custom" key="None" />
 </root>

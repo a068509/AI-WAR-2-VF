@@ -15,31 +15,31 @@
       affect how the game plays.-->
 
   <build_category name="Uncategorized" sort_index="1" display_name="Uncategorized"
-      description="Oops, looks like someone forgot to give this a category!  Please let the devs know"
+      description="Oups, on dirait que quelqu'un a oublié de lui donner une catégorie! Veuillez informer les développeurs"
   />
   
   <build_category name="Infrastructure" sort_index="10" display_name="Infrastructure"
-      description="Unarmed facilities and units that serve economic and construction purposes."
+      description="Installations et unités non armées à des fins économiques et de construction."
   />
-  <build_category name="Turrets" sort_index="20" display_name="Turrets"
-    description="You need turrets on your planets!  Your mobile fleets needs to be off shooting stuff, and turrets are individually able to take on roughly 10x their number in mobile forces.  That said, you can also set up a 'beachhead' of turrets in enemy territory to make their life difficult, so consider bringing Battlestations to the enemy from time to time."
+  <build_category name="Turrets" sort_index="20" display_name="Tourelles"
+    description="Vous avez besoin de tourelles sur vos planètes! Vos flottes mobiles doivent être à l'écart des tirs, et les tourelles peuvent individuellement prendre environ 10 fois leur nombre en forces mobiles. Cela dit, vous pouvez également installer une `` tête de pont '' de tourelles en territoire ennemi pour leur rendre la vie difficile, alors pensez à apporter de temps en temps des Battlestations à l'ennemi."
 	/>
-	<build_category name="OtherDefenses" sort_index="30" display_name="Other Defenses"
-    description="If you want to protect your key structures, or prevent the enemy from moving around too much while you shoot them, or de-cloak the enemy so you know they're even present... here's the ticket."
+	<build_category name="OtherDefenses" sort_index="30" display_name="Autres défenses"
+    description="Si vous voulez protéger vos structures clés, ou empêcher l'ennemi de trop se déplacer pendant que vous les tirez, ou masquer l'ennemi pour que vous sachiez qu'il est même présent ... voici le ticket."
 	/>
   <build_category name="StationKeepers" sort_index="40" display_name="Station-Keepers"
-    description="Large and dangerous mobile ships that nonetheless must stay on the local planet."
+    description="Grands navires mobiles dangereux qui doivent néanmoins rester sur la planète locale."
 	/>
   <build_category name="CommandStations" sort_index="50" display_name="Command Stations"
     only_shows_when_planet_not_owned_by_anyone="true" granted_by_any_mobile_fleet="true"
-    description="You can build a new command station on a neutral planet by bringing any of your fleets there."
+    description="Vous pouvez construire une nouvelle station de commandement sur une planète neutre en y amenant n'importe laquelle de vos flottes."
   />
   <build_category name="CommandStationUpgrades" sort_index="60" display_name="Command Upgrades"
     only_shows_when_planet_owned_by_local_player="true" only_shows_when_not_a_player_home_planet="true" granted_by_any_command_station="true" hides_entries_where_cannot_build_another="true"
-    description="You can swap your command station out for a different one, if you unlock a better type or your needs change."
+    description="Vous pouvez échanger votre station de commande pour une autre, si vous débloquez un meilleur type ou si vos besoins changent."
     />
 
-  <build_category name="CustomFleetFlagships" sort_index="90" display_name="Custom Fleets"
-    description="Flagships without any ships in their fleets... but lots of useful empty slots that you can swap with in order to make custom groups to your taste.  Want a fleet of melee specialists, or a fancy raiding party, or a bunch of cloaking ships just in one or two groups you can assign to hotkeys?  Here's the best way to go about it!"
+  <build_category name="CustomFleetFlagships" sort_index="90" display_name="Flottes personnalisées"
+    description="Des vaisseaux amiraux sans aucun navire dans leurs flottes ... mais beaucoup d'emplacements vides utiles avec lesquels vous pouvez échanger afin de créer des groupes personnalisés à votre goût. Vous voulez une flotte de spécialistes de mêlée, ou un groupe de raids de fantaisie, ou un tas de navires de camouflage juste dans un ou deux groupes que vous pouvez affecter à des raccourcis clavier? Voici la meilleure façon de procéder!"
 	/>
 </root>

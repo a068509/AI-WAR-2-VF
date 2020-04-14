@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
   <fleet_name_type name="Random" display_name="Random" subdir="Random"
-          description="Randomly generated names." />
+          description="Noms générés aléatoirement." />
   <fleet_name_type name="Ancient Gods" display_name="Ancient Gods" subdir="AncientGods"
-          description="Various Greek and Roman deities. (Created by StarKelp)" />
+          description="Diverses divinités grecques et romaines. (Créé par StarKelp)" />
   <fleet_name_type name="British Ships" display_name="British Ships" subdir="BritishShips"
-          description="Based upon ships of the British Navy. (Created by StarKelp)" />
+          description="Basé sur des navires de la marine britannique. (Créé par StarKelp)" />
   <fleet_name_type name="US Ships" display_name="United States Ships" subdir="US_Ships"
-          description="Based upon ships of the United States Navy. (Created by StarKelp)" />
+          description="Basé sur des navires de la marine américaine. (Créé par StarKelp)" />
   <fleet_name_type name="US States" display_name="States of USA" subdir="US_States"
-          description="States in the United States. (Created by StarKelp)" />
+          description="Aux États-Unis. (Créé par StarKelp)" />
    <fleet_name_type name="Mathematicians" display_name="Mathematicians" subdir="Mathematicians"
-          description="Famous Mathematicians. (Created by Peter Ebbesen)" />
+          description="Mathématiciens célèbres. (Créé par Peter Ebbesen)" />
    <fleet_name_type name="Elements" display_name="Elements" subdir="Elements"
-          description="Selection of elements from the periodic table. (Created by StarKelp)" />
+          description="Sélection des éléments du tableau périodique. (Créé par StarKelp)" />
    <fleet_name_type name="Coward" display_name="Coward" subdir="Coward"
-          description="A selection of less than brave fleet names. (Created by StarKelp)" />
+          description="Une sélection de noms de flotte moins que courageux. (Créé par StarKelp)" />
    <fleet_name_type name="Various Weapons" display_name="Various Weapons" subdir="VariousWeapons"
-          description="Weapons from other games. Can you recognize the references?  (Created by DEMOCRACY_DEMOCRACY)" />          
+          description="Armes d'autres jeux. Pouvez-vous reconnaître les références? (Créé par DEMOCRACY_DEMOCRACY)" />          
 </root>

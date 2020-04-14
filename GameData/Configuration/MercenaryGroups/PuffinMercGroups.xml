@@ -15,7 +15,7 @@
 			time_between_summons_in_seconds="600"
 			repair_time_in_seconds="1800"
 			spawn_delay="1"
-			description="Purchase a group of War Harvester bots from a fellow resistance group. These bots harvest metal from their targets and grant it to you using their scrap cannons. These are put under your command permanently."
+			description="Achetez un groupe de robots War Harvester à un autre groupe de résistance. Ces robots collectent le métal de leurs cibles et vous le donnent en utilisant leurs canons à ferraille. Ceux-ci sont placés sous votre commandement en permanence."
 			/>  
 
   <item name="War Siegers" display_name="War Siegers"
@@ -32,7 +32,7 @@
 			time_between_summons_in_seconds="600"
 			repair_time_in_seconds="1800"
 			spawn_delay="1"
-			description="Purchase a group of War Sieger bots from a fellow resistance group. These bots wield a rapid fire plasma cannon for long range devastation. These are put under your command permanently."
+			description="Achetez un groupe de robots War Sieger à un autre groupe de résistance. Ces robots utilisent un canon à plasma à tir rapide pour une dévastation à longue distance. Ceux-ci sont placés sous votre commandement en permanence."
 			/>
 
   <item name="Automated Firesupport" display_name="Automated Firesupport"
@@ -55,7 +55,7 @@
 			time_between_summons_in_seconds="300"
 			repair_time_in_seconds="900"
 			spawn_delay="1"
-			description="A group of vagabonds have activated an abandoned drone factory, and are willing to supply you with a temporary force of Sniper and Sentinel Gunboat units."
+			description="Un groupe de vagabonds a activé une usine de drones abandonnée et est prêt à vous fournir une force temporaire d'unités Sniper et Sentinel Gunboat."
 			/>
 
   <item name="Automated Shredders" display_name="Automated Shredders"
@@ -78,7 +78,7 @@
 			time_between_summons_in_seconds="300"
 			repair_time_in_seconds="900"
 			spawn_delay="1"
-			description="A group of vagabonds have activated an abandoned drone factory, and are willing to supply you with a temporary force of Gangsaw and Vampire units."
+			description="Un groupe de vagabonds a activé une usine de drones abandonnée et est prêt à vous fournir une force temporaire d'unités Gangsaw et Vampire."
 			/>
 
   <item name="Automated Construction Swarm" display_name="Automated Construction Swarm"
@@ -98,7 +98,7 @@
 			time_between_summons_in_seconds="300"
 			repair_time_in_seconds="900"
 			spawn_delay="1"
-			description="A group of vagabonds have activated an abandoned drone factory, and are willing to supply you with a temporary force of modified construction bots, that spawn smaller copies on death."
+			description="Un groupe de vagabonds a activé une usine de drones abandonnée et est prêt à vous fournir une force temporaire de robots de construction modifiés, qui engendrent de plus petites copies à la mort."
 			/>
 
   <item name="Anvil Securities" display_name="Anvil Securities"
@@ -121,7 +121,7 @@
 			time_between_summons_in_seconds="300"
 			repair_time_in_seconds="1200"
 			spawn_delay="1"
-			description="Before the current war, they used to be a defense contractor. Now, for a price they'll help defend nearby friendly and neutral planets with their Forcefield Frigates and Spiders."
+			description="Avant la guerre actuelle, ils étaient un entrepreneur de défense. Maintenant, pour un prix, ils aideront à défendre les planètes amies et neutres à proximité avec leurs champ de force frégates et araignées."
 			/>
 			
 	<item name="Sabre Company" display_name="Sabre Company"
@@ -141,7 +141,7 @@
 			time_between_summons_in_seconds="300"
 			repair_time_in_seconds="900"
 			spawn_delay="1"
-			description="This military company, gone rogue from the start of the war, will, for a price, send a group of Pulsar Tanks."
+			description="Cette compagnie militaire, devenue voyou depuis le début de la guerre, enverra, pour un prix, un groupe de chars Pulsar."
 			/>
   
 </root>

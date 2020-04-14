@@ -148,6 +148,7 @@ This also opens the game up to an AI Civil War, in which case they would have th
            type="SpecialFaction"
            must_be_at_most_one="true"
            should_not_be_shown="true"
+           auto_add_one_of_faction_if_missing_on_save_load="true"
            description="This zombie hates the AI"
            ai_can_send_waves_against_this="false"
            ai_threat_against_this_faction_goes_back_to_guarding="true"
@@ -162,6 +163,7 @@ This also opens the game up to an AI Civil War, in which case they would have th
            type="SpecialFaction"
            must_be_at_most_one="true"
            should_not_be_shown="true"
+           auto_add_one_of_faction_if_missing_on_save_load="true"
            allied_to_ai_by_default="true"
            description="This zombie hates humans"
   >
@@ -174,6 +176,7 @@ This also opens the game up to an AI Civil War, in which case they would have th
            type="SpecialFaction"
            must_be_at_most_one="true"
            should_not_be_shown="true"
+           auto_add_one_of_faction_if_missing_on_save_load="true"
            ai_threat_against_this_faction_goes_back_to_guarding="true"
            description="This zombie hates everyone"
            ai_can_send_waves_against_this="false"
@@ -410,6 +413,7 @@ Clustered Telia spawns Telia in groups of 2 across the galaxy based on Intensity
            type="SpecialFaction"
            must_be_at_most_one="true"
            should_not_be_shown="true"
+           auto_add_one_of_faction_if_missing_on_save_load="true"
            counts_as_part_of_player_strength_at_planet_for_counterattack_blocking="true"
            description="Outguard are independent units summoned by the player. Capture Outguard Communicators on the map to gain access to these powerful forces."
   >

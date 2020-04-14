@@ -4,8 +4,8 @@
         dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.DeathEffect_Nanocaustation"
         description_prefix="NANOCAUSTATION"
         description_damage_name="nanocaustation"
-        description_conditions="if the target is a mobile combatant"
-        description_of_effects="the nanocaust faction gains a corrupted copy of that target"
+        description_conditions="si la cible est un combattant mobile"
+        description_of_effects="la faction nanocauste gagne une copie corrompue de cet objectif"
         description_added_note_for_player=""
         >
 		<offense_tier name="None" ability_multiplier="0" />

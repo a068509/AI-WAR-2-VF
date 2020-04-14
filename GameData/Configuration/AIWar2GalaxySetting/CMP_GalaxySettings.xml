@@ -150,7 +150,7 @@ Bear in mind that these can also be hacked in order to give you the bonus withou
            
 Bear in mind that these can also be hacked in order to give you the bonus without you having to hold them, so normally that's supposed to be the workaround if you just feel you can't (or don't want to) protect them on the planet you find them on for whatever reason." />
 
-<galaxy_setting name="MeleeRammingLogic" category="Units" display_name="Melee Ships Ramming Logic" type="BoolToggle" default="true"
+<galaxy_setting name="MeleeRammingLogic" category="Units" display_name="Melee Ships Ramming Logic" type="BoolToggle" default="true" changeable_during_gameplay="true"
          description="Most ships in this game use special kiting logic to have them retain optimal firing distance from their target. Enabling this causes Melee ships to forgo this logic and simply try to ram their targets instead." />
 
 </root>

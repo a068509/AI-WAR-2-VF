@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <objective_category name="PrimeObjectives" display_name="Prime Objectives" sort_priority="1"
-        description="Your ultimate goals, if you wish to win the war.  You don't have to achieve all of them, just any one of them." />
+  <objective_category name="PrimeObjectives" display_name="Objectifs principaux" sort_priority="1"
+        description="Vos objectifs ultimes, si vous souhaitez gagner la guerre. Vous n'avez pas besoin de tous les atteindre, n'importe lequel d'entre eux." />
 
-  <objective_category name="BeginnerTips" display_name="Beginner Tips" sort_priority="10"
-        description="Helpful tips specifically for new commanders." />
+  <objective_category name="BeginnerTips" display_name="Conseils pour débutants" sort_priority="10"
+        description="Conseils utiles spécifiquement pour les nouveaux commandants." />
 
-  <objective_category name="CriticalDestructionTargets" display_name="Critical Targets" sort_priority="20"
-                      description="You don't HAVE to destroy or hack these units, but winning the war without doing so will be much harder.  Explore the galaxy to find more of these." />
+  <objective_category name="CriticalDestructionTargets" display_name="Cibles critiques" sort_priority="20"
+                      description="Vous n'avez pas besoin de détruire ou de pirater ces unités, mais gagner la guerre sans le faire sera beaucoup plus difficile. Explorez la galaxie pour en trouver plus." />
 
-  <objective_category name="CapturableFlagships" display_name="New Fleets" sort_priority="30"
-        description="Capturing these fleets will give you large numbers of new offensive (or sometimes support) units to use on the map." />
+  <objective_category name="CapturableFlagships" display_name="Nouvelles flottes" sort_priority="30"
+        description="La capture de ces flottes vous donnera un grand nombre de nouvelles unités offensives (ou parfois de soutien) à utiliser sur la carte." />
 
-  <objective_category name="MoreTurrets" display_name="More Turrets" sort_priority="40"
-        description="Capturing these Global Command Augmenters will give you all sorts of extra defenses for ALL of your command stations, which is pretty critical.  Your planets are otherwise quite weak and have a hard time defending themselves." />
+  <objective_category name="MoreTurrets" display_name="Plus de tourelles" sort_priority="40"
+        description="La capture de ces augmentateurs de commandement mondiaux vous donnera toutes sortes de défenses supplémentaires pour TOUTES vos stations de commandement, ce qui est assez critique. Vos planètes sont par ailleurs assez faibles et ont du mal à se défendre." />
   
-  <objective_category name="CapturableBattlestations" display_name="New Battlestations" sort_priority="40"
-        description="Restoring these Battlestations (or Citadels) will allow you to fortify your planets more effectively." />
+  <objective_category name="CapturableBattlestations" display_name="Nouvelles Battlestations" sort_priority="40"
+        description="La restauration de ces Battlestations (ou Citadelles) vous permettra de fortifier vos planètes plus efficacement." />
 
-  <objective_category name="CriticalCapturables" display_name="Critical Capturables" sort_priority="50"
-        description="You don't HAVE to capture these units, but winning the war without doing so will be much harder.  Explore the galaxy to find more of these." />
+  <objective_category name="CriticalCapturables" display_name="Capturables critiques" sort_priority="50"
+        description="Vous n'avez pas à capturer ces unités, mais gagner la guerre sans le faire sera beaucoup plus difficile. Explorez la galaxie pour en trouver plus." />
 
-  
-
-  <objective_category name="ResourceGathering" display_name="Resource Gathering" sort_priority="80"
-        description="Resources available to you that you haven't yet claimed." />
   
 
-  <objective_category name="MercenaryBeacons" display_name="Mercenary Beacons" sort_priority="200"
-        description="Fly deep into space and hack mercenary beacons in order to find new mercenary factions to talk to.  Some mercenary groups are more useful than others, and some are harder to reach than others.  Weigh the pros and cons, and go hack the beacons that seem worth the time and hassle." />
+  <objective_category name="ResourceGathering" display_name="Collecte de ressources" sort_priority="80"
+        description="Les ressources à votre disposition que vous n'avez pas encore réclamées." />
+  
 
-  <objective_category name="OtherFactions" display_name="Other Factions" sort_priority="300"
-        description="What else lurks in the cosmos?  As you meet other factions, they may provide opportunities or challenges that show up here." />
+  <objective_category name="MercenaryBeacons" display_name="Balises mercenaires" sort_priority="200"
+        description="Volez profondément dans l'espace et piratez des balises mercenaires afin de trouver de nouvelles factions mercenaires à qui parler. Certains groupes de mercenaires sont plus utiles que d'autres, et certains sont plus difficiles à atteindre que d'autres. Pesez le pour et le contre, et allez pirater les balises qui semblent en valoir la peine et les tracas." />
 
-  <objective_category name="OtherCapturables" display_name="Other Capturables" sort_priority="500"
-        description="These are units can be captured, and may wind up turning the tide for you if you do.  In a BROAD sense this type of unit is not considered critical, but for your specific circumstances you'll want to think about that on your own." />
+  <objective_category name="OtherFactions" display_name="Autres factions" sort_priority="300"
+        description="Quoi d'autre se cache dans le cosmos? Lorsque vous rencontrez d'autres factions, elles peuvent offrir des opportunités ou des défis qui apparaissent ici." />
 
-  <objective_category name="OtherDestructionTargets" display_name="Other Destructibles" sort_priority="600"
-        description="These are units can be destroyed, and may wind up turning the tide for you if you do.  In a BROAD sense this type of unit is not considered critical, but for your specific circumstances you'll want to think about that on your own." />
+  <objective_category name="OtherCapturables" display_name="Autres capturables" sort_priority="500"
+        description="Ce sont des unités qui peuvent être capturées et qui pourraient finir par renverser la vapeur pour vous si vous le faites. Dans un sens LARGE, ce type d'unité n'est pas considéré comme critique, mais pour vos circonstances spécifiques, vous voudrez y penser par vous-même." />
+
+  <objective_category name="OtherDestructionTargets" display_name="Autres destructibles" sort_priority="600"
+        description="Ce sont des unités qui peuvent être détruites, et peuvent finir par renverser la vapeur pour vous si vous le faites. Dans un sens LARGE, ce type d'unité n'est pas considéré comme critique, mais pour vos circonstances spécifiques, vous voudrez y penser par vous-même." />
 </root>

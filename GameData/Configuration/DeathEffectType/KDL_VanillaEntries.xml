@@ -4,9 +4,9 @@
        	dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.DeathEffect_Zombification"
         description_prefix="ZOMBIFICATION"
         description_damage_name="zombification"
-        description_conditions="if the target is a mobile combatant (minus some immune)"
-        description_of_effects="this ship's faction gains an allied copy of that target"
-        description_added_note_for_player="The zombie will move and attack on its own."
+        description_conditions="si la cible est un combattant mobile (moins certains immunisés)"
+        description_of_effects="la faction de ce navire gagne une copie alliée de cette cible"
+        description_added_note_for_player="Le zombie se déplacera et attaquera tout seul."
         >
 		<offense_tier name="None" ability_multiplier="0" />
 		<offense_tier name="Minor" ability_multiplier="0.1" />
@@ -27,7 +27,7 @@
         description_prefix="METABOLIZATION"
         description_damage_name="metabolic"
         description_conditions=""
-        description_of_effects="this ship's faction immediately gains 20% of that target's metal cost, up to 5000 metal."
+        description_of_effects="la faction de ce vaisseau gagne immédiatement 20% du coût en métal de cette cible, jusqu'à 5000 en métal."
         description_added_note_for_player=""
         >
     <offense_tier name="None" ability_multiplier="0" />
@@ -41,7 +41,7 @@
         description_prefix="GREATER METABOLIZATION"
         description_damage_name="metabolic"
         description_conditions=""
-        description_of_effects="this ship's faction immediately gains 50% of that target's metal cost, up to 50000 metal."
+        description_of_effects="la faction de ce navire gagne immédiatement 50% du coût en métal de cette cible, jusqu'à 50000 métal."
         description_added_note_for_player=""
         >
     <offense_tier name="None" ability_multiplier="0" />

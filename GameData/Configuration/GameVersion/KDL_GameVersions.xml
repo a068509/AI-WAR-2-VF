@@ -345,4 +345,5 @@
   <game_version name="2022_WardenStacking" major_version="2" minor_version="022" release_date_text="April 10th, 2020" />
   <game_version name="2023_BetterChatKey" major_version="2" minor_version="023" release_date_text="April 10th, 2020" />
   <game_version name="2024_UIFocusHotfix" major_version="2" minor_version="024" release_date_text="April 10th, 2020" />
+  <game_version name="2025_TheTwentyMillionProblem" major_version="2" minor_version="025" release_date_text="April 13th, 2020" />
 </root>

@@ -17,7 +17,7 @@
 		time_between_summons_in_seconds="300"
 		repair_time_in_seconds="1200"
         spawn_delay="1"
-        description="Arnaud became a safe and cautious leader after his family was eaten by AI-infested wombats. He leads a pack of Aggressors and Paralysers who will patrol nearby allied planets."
+        description="Arnaud est devenu un leader sûr et prudent après que sa famille ait été mangée par des wombats infestés par l'IA. Il dirige un groupe d'agresseurs et de paralyseurs qui patrouilleront les planètes alliées à proximité."
         />
   <item name="Lobar the Wolf" display_name="Lobar the Wolf"
         on_spawn_behaviour="Attack"
@@ -36,7 +36,7 @@
 		time_between_summons_in_seconds="300"
 		repair_time_in_seconds="900"
         spawn_delay="1"
-        description="Lobar and his group hate the AI with a passion and will attack AI planets, using a mix of Vanguards and Heavy Fusion Bombers."
+        description="Lobar et son groupe détestent l'IA avec passion et attaqueront les planètes de l'IA, en utilisant un mélange d'avant-garde et de bombardiers à fusion lourde."
         />
   <!-- this one warps out after a battle, so no need to specify the seconds allowed to exist -->
   <item name="Xenophon" display_name="Xenophon"
@@ -56,7 +56,7 @@
 		time_between_summons_in_seconds="300"
 		repair_time_in_seconds="1200"
         spawn_delay="1"
-        description="Xenophon and his men just want to get home again after each job, and as such will warp out after their first battle. They use a mix of Porcupines and MLRS Corvettes."
+        description="Xenophon et ses hommes veulent juste rentrer chez eux après chaque travail, et en tant que tels, ils se déformeront après leur première bataille. Ils utilisent un mélange de porcs-épics et de corvettes MLRS."
         />
   <item name="Prufrock's Partisans" display_name="Prufrock's Partisans"
         on_spawn_behaviour="DefendLocalPlanet"
@@ -75,7 +75,7 @@
 		time_between_summons_in_seconds="300"
 		repair_time_in_seconds="900"
         spawn_delay="1"
-        description="Prufrock is an expert at distracting the AI with swarms of decoy drones."
+        description="Prufrock est un expert pour distraire l'IA avec des nuées de drones leurres."
         />
   <item name="Hereward the Wake" display_name="Hereward the Wake"
         on_spawn_behaviour="PatrolAdjacentFriendlyAndNeutralPlanets"
@@ -94,7 +94,7 @@
 		time_between_summons_in_seconds="300"
 		repair_time_in_seconds="1200"
         spawn_delay="1"
-        description="A defensive specialist, Hereward will lead his group in patrolling nearby planets using a group of Velociraptors."
+        description="Spécialiste défensif, Hereward dirigera son groupe dans les patrouilles des planètes voisines à l'aide d'un groupe de Velociraptors."
         />
 		<!-- This group below spawns turrets at the side of the gravity well - not very useful. He's been remade to bring Missiles and Spiders so he contributes. !-->
   <item name="Kosciuszko Fortifications Inc" display_name="Kosciuszko Fortifications Inc"
@@ -114,7 +114,7 @@
 		time_between_summons_in_seconds="300"
 		repair_time_in_seconds="1200"
         spawn_delay="1"
-        description="Kosciuszko is a turret specialist, and brings his own defensive emplacements."
+        description="Kosciuszko est un spécialiste des tourelles et apporte ses propres emplacements défensifs."
         />
 		
 </root>

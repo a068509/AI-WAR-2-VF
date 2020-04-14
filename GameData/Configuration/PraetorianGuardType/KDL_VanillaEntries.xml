@@ -6,7 +6,7 @@
            abbreviation="Bodyguard"
            dll_name="AIWarExternalCode"
            type_name="Arcen.AIW2.External.PraetorianGuardType_Normal"
-          description="This is the bodyguard of the AI Overlord."
+          description="Ceci est le garde du corps de l'IA Overlord."
   >
   </praetorian_type>
 </root>

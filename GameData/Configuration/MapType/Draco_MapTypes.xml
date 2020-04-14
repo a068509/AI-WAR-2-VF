@@ -9,7 +9,7 @@
 	</map_type>-->
 	<map_type name="D18Rings"
               display_name="Linked Rings"
-              description="Generates rings that are themselves generated on rings that are themselves generated on rings."
+              description="Génère des anneaux eux-mêmes générés sur des anneaux eux-mêmes générés sur des anneaux."
               dll_name="AIWarExternalCode"
               type_name="Arcen.AIW2.External.Mapgen_D18_LinkedRings"
               min_planets="10"
@@ -18,7 +18,7 @@
 	</map_type>
 	<map_type name="D18Swirl"
               display_name="Swirl"
-              description="Planets are arranged in concentric elipsoid rings with connections based on proximity. Similar to Concentric."
+              description="Les planètes sont disposées en anneaux élipsoïdes concentriques avec des connexions basées sur la proximité. Similaire à Concentric."
               dll_name="AIWarExternalCode"
               type_name="Arcen.AIW2.External.Mapgen_D18_Ellipses"
               author_line="Credit to Draco18s"
@@ -29,7 +29,7 @@
 	</map_type>
 	<map_type name="D18Bubbles"
               display_name="Bubbles"
-              description="Kind of looks like soap bubbles. Rings clustered near each other with connections to neighboring rings."
+              description="Ressemble à des bulles de savon. Anneaux regroupés les uns à côté des autres avec des connexions aux anneaux voisins."
               dll_name="AIWarExternalCode"
               type_name="Arcen.AIW2.External.Mapgen_D18_Bubbles"
               min_planets="10"

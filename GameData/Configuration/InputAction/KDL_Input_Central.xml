@@ -1,95 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
   <input_action name="SelectUnit"
-      category="Critical" display_name="Select Unit"
-      description="Press this button with the mouse hovered over it to select it, or hold this button and drag the mouse to create a selection area."
+      category="Critical" display_name="Sélectionnez l'unité"
+      description="Appuyez sur ce bouton avec la souris au-dessus pour le sélectionner, ou maintenez ce bouton et faites glisser la souris pour créer une zone de sélection."
       check_type="Custom" key="LeftMouse" />
   <input_action name="GiveOrdersToUnit"
-      category="Critical" display_name="Give Orders To Unit"
-      description="With one or more units selected, press this button to give them an order.  Clicking empty space is a move order; clicking another unit is attack, repair, etc."
+      category="Critical" display_name="Donner des ordres à l'unité"
+      description="Une ou plusieurs unités étant sélectionnées, appuyez sur ce bouton pour leur donner un ordre. Cliquer sur un espace vide est un ordre de déplacement; cliquer sur une autre unité est une attaque, une réparation, etc."
       check_type="Custom" key="RightMouse" />
 
   <input_action name="ToggleGalaxyMap"
-      category="Critical" display_name="Toggle Galaxy Map"
-      description="There are two main views in the game, and this toggles between them.
+      category="Critical" display_name="Basculer la carte Galaxy"
+      description="Il y a deux vues principales dans le jeu, et cela bascule entre elles.
 
-The galaxy map shows an overview of all the planets.  At different zoom levels, you can see various intel.  Paired with the objectives tab of your sidebar, all strategic decisions are at your fingertips.
+La carte de la galaxie montre un aperçu de toutes les planètes. À différents niveaux de zoom, vous pouvez voir divers renseignements. Jumelé à l'onglet objectifs de votre barre latérale, toutes les décisions stratégiques sont à portée de main.
 
-The planet view, or 'main view,' shows the battlefield around a single planet.  This is where you do all your constructing, fighting, and so on.  You'll move your view between planets fairly often."
+La vue de la planète, ou «vue principale», montre le champ de bataille autour d'une seule planète. C'est là que vous construisez, combattez, etc. Vous déplacez votre vue entre les planètes assez souvent."
       dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MainHandler"
       default_should_override_saved_if_older_than_version="KeyRebindings_744"
       key="Tab" />
 
   <input_action name="SendThroughWormhole"
-      category="Critical" display_name="Send Through Wormhole"
-      description="Normally clicking on or near a wormhole does nothing, because you'd accidentally send your units or camera through all the time.  However, holding down this button lets you interact with the wormhole to send units through (by default right-click) or your camera through (by default left-click).  Holding this also makes the name of the planet on the other side appear."
+      category="Critical" display_name="Envoyer par le trou de ver"
+      description="Normalement, cliquer sur ou près d'un trou de ver ne fait rien, car vous enverriez accidentellement vos unités ou votre caméra tout le temps. Cependant, en maintenant ce bouton enfoncé, vous pouvez interagir avec le trou de ver pour envoyer des unités via (clic droit par défaut) ou avec votre caméra (clic gauche par défaut). Tenir cela fait aussi apparaître le nom de la planète de l'autre côté."
       check_type="Custom" key="LeftControl" />
   <input_action name="SuppressTooltips"
-      category="Tooltips/Details" display_name="Suppress Tooltips"
-      description="Sometimes you just want to look around without tooltips coming up at all.  Hold this key to do so."
+      category="Tooltips/Details" display_name="Supprimer les info-bulles"
+      description="Parfois, vous voulez simplement regarder autour sans que des info-bulles apparaissent. Maintenez cette touche pour le faire."
       check_type="Custom" key="LeftShift" />
   <input_action name="ToggleShipAndPlanetTooltipDetailMode"
-      category="Hidden" display_name="Deprecated Toggle"
-      description="Deprecated"
+      category="Hidden" display_name="Bascule obsolète"
+      description="Obsolète"
       check_type="Custom" key="None" />
   
   <input_action name="IncreaseShipAndPlanetTooltipDetailBy1_Key1"
-      category="Tooltips/Details" display_name="Increase Ship And Planet Tooltip Detail (Key 1)"
-      description="By default, the amount of information about ships and planets is heavily abbreviated.  Hold this key alone to see the medium detail view.  Hold this AND the other 'increase detail' key to see the max detail.
+      category="Tooltips/Details" display_name="Augmenter les détails de l'info-bulle du navire et de la planète (key 1)"
+      description="Par défaut, la quantité d'informations sur les navires et les planètes est fortement abrégée. Maintenez cette touche seule pour voir la vue de détail moyenne. Maintenez cette touche ET l'autre touche «augmenter les détails» pour voir le détail maximum.
       
-In the tooltips section of the settings menu, you can adjust the default up to show medium or high detail.  In those cases, there's no way to see the abbreviated versions."
+Dans la section des info-bulles du menu des paramètres, vous pouvez ajuster la valeur par défaut pour afficher des détails moyens ou élevés. Dans ces cas, il n'y a aucun moyen de voir les versions abrégées."
       check_type="Custom" key="LeftControl" />
   <input_action name="IncreaseShipAndPlanetTooltipDetailBy1_Key2"
-      category="Tooltips/Details" display_name=" (Key 1) Ship And Planet Tooltip Detail (Key 2)"
-      description="By default, the amount of information about ships and planets is heavily abbreviated.  Hold this key alone to see the medium detail view.  Hold this AND the other 'increase detail' key to see the max detail.
+      category="Tooltips/Details" display_name=" (Key 1) Détails de l'info-bulle sur le navire et la planète (Key 2)"
+      description="Par défaut, la quantité d'informations sur les navires et les planètes est fortement abrégée. Maintenez cette touche seule pour voir la vue de détail moyenne. Maintenez cette touche ET l'autre touche «augmenter les détails» pour voir le détail maximum.
       
-In the tooltips section of the settings menu, you can adjust the default up to show medium or high detail.  In those cases, there's no way to see the abbreviated versions."
+Dans la section des info-bulles du menu des paramètres, vous pouvez ajuster la valeur par défaut pour afficher des détails moyens ou élevés. Dans ces cas, il n'y a aucun moyen de voir les versions abrégées."
       check_type="Custom" key="LeftAlt" />
   <input_action name="HoldAndClickToViewDetailsOfContents"
-      category="Tooltips/Details" display_name="Hold And Click To View Details Of Contents"
-      description="Hold this key down when clicking a button or a ship in order to view the details of any ships contained within that clicked item (ships in a wave, ships in a transport, ships in a fleet, ships improved by a tech).
+      category="Tooltips/Details" display_name="Maintenez et cliquez pour afficher les détails du contenu"
+      description="Maintenez cette touche enfoncée lorsque vous cliquez sur un bouton ou un navire afin d'afficher les détails de tous les navires contenus dans cet élément cliqué (navires dans une vague, navires dans un transport, navires dans une flotte, navires améliorés par une technologie).
       
-This is SUPER important for finding out what the actual stats are of ships that otherwise would just be a list of names."
+C'est SUPER important pour savoir quelles sont les statistiques réelles des navires qui autrement ne seraient qu'une liste de noms."
       check_type="Custom" key="C" />
 
   <input_action name="TakeSafestPath"
-      category="Selection" display_name="Take Safest Path Through Galaxy"
-      description="When sending orders to move ships between planets, hold this button to make sure your ships take the safest path through the galaxy."
+      category="Selection" display_name="Prenez le chemin le plus sûr à travers la galaxie"
+      description="Lorsque vous envoyez des ordres pour déplacer des navires entre des planètes, maintenez ce bouton pour vous assurer que vos navires empruntent le chemin le plus sûr à travers la galaxie."
       check_type="Custom" key="X" />
 
   <input_action name="TakeShortestPath"
-      category="Selection" display_name="Take Shortest Path Through Galaxy"
-      description="When sending orders to move ships between planets, hold this button to make sure your ships take the shortest path."
+      category="Selection" display_name="Prenez le chemin le plus court à travers Galaxy"
+      description="Lorsque vous envoyez des ordres pour déplacer des navires entre des planètes, maintenez ce bouton pour vous assurer que vos navires empruntent le chemin le plus court."
       check_type="Custom" key="Y" />
 
   <input_action name="SuppressTechUpgradePrompt"
-      category="Tooltips/Details" display_name="Holding this suppresses the tech upgrade 'Are you sure?' prompt"
+      category="Tooltips/Details" display_name="Le maintien de cette suppression supprime la mise à niveau technologique 'Êtes-vous sûr?' rapide"
       description="Hold this button to suppress the tech upgrade 'Are you sure?' prompt, without needing to disable it altogether."
       check_type="Custom" key="X" />
 
   <input_action name="HoldToSeeShipStrengthsAndWeaknesses"
-      category="Tooltips/Details" display_name="Hold To See Ship Strengths And Weaknesses"
-      description="Hold this key down when you're viewing a ship tooltip, and the regular tooltip will be replaced with what this ship is strong against or weak against."
+      category="Tooltips/Details" display_name="Tenez pour voir les forces et les faiblesses du navire"
+      description="Maintenez cette touche enfoncée lorsque vous affichez une info-bulle de vaisseau, et l'infobulle régulière sera remplacée par ce contre quoi ce vaisseau est fort ou faible."
       check_type="Custom" key="R" />
 
   <input_action name="AddToSelection"
-      category="Selection" display_name="Add To Selection"
-      description="Normally when you select units, you replace what was previously selected.  Hold this button down to add the new selection to the old one, instead."
+      category="Selection" display_name="Ajouter à la sélection"
+      description="Normalement, lorsque vous sélectionnez des unités, vous remplacez ce qui a été précédemment sélectionné. Maintenez ce bouton enfoncé pour ajouter la nouvelle sélection à l'ancienne."
       check_type="Custom" key="LeftShift" />
   <input_action name="RemoveFromSelection"
-      category="Selection" display_name="Remove From Selection"
-      description="Normally when you select units, you replace what was previously selected.  Hold this button down to keep the existing selection, but remove any units you're selecting now that were in the selection."
+      category="Selection" display_name="Supprimer de la sélection"
+      description="Normalement, lorsque vous sélectionnez des unités, vous remplacez ce qui a été précédemment sélectionné. Maintenez ce bouton enfoncé pour conserver la sélection existante, mais supprimez toutes les unités que vous sélectionnez maintenant qui étaient dans la sélection."
       check_type="Custom" key="LeftAlt" />
   <input_action name="Build5xUnits"
-      category="Common" display_name="Build 5x Units"
-      description="Normally when you click to place a turret or similar, it just builds the one unit there.  Hold down this key, and it will instead build a cluster of 5 (assuming you have the cap free for that).
+      category="Common" display_name="Construire 5x unités"
+      description="Normalement, lorsque vous cliquez pour placer une tourelle ou similaire, il construit simplement une unité là-bas. Maintenez cette touche enfoncée, et elle créera à la place un cluster de 5 (en supposant que vous avez le cap gratuit pour cela).
       
-Hold this AND the 'Build 10x' button to build 50 at a time."
+Maintenez ce bouton ET le bouton «Build 10x» pour construire 50 à la fois"
       check_type="Custom" key="LeftControl" />
   <input_action name="Build10xUnits"
-      category="Common" display_name="Build 10x Units"
-      description="Normally when you click to place a turret or similar, it just builds the one unit there.  Hold down this key, and it will instead build a cluster of 10 (assuming you have the cap free for that).
+      category="Common" display_name="Construire 10x unités"
+      description="Normalement, lorsque vous cliquez pour placer une tourelle ou similaire, il construit simplement une unité là-bas. Maintenez cette touche enfoncée, et elle construira à la place un cluster de 10 (en supposant que vous avez le plafond libre pour cela).
       
-Hold this AND the 'Build 5x' button to build 50 at a time."
+Maintenez ce bouton ET le bouton «Build 5x» pour construire 50 à la fois."
       check_type="Custom" key="LeftAlt" />
 </root>

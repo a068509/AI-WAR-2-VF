@@ -6,7 +6,7 @@
            abbreviation="Intelligent Predator"
            dll_name="AIWarExternalCode"
            type_name="Arcen.AIW2.External.HunterFleetType_Normal"
-          description="The standard behavior, where the Hunter Fleet uses intelligence (based on its difficulty level) to decide when the optimal time is to attack you and truly overwhelm you. Higher hunter difficulties are smarter. The whole Hunter Fleet operates as a unit"
+          description="Le comportement standard, où la flotte de chasseurs utilise l'intelligence (en fonction de son niveau de difficulté) pour décider du moment optimal pour vous attaquer et vous submerger vraiment. Les difficultés plus élevées des chasseurs sont plus intelligentes. L'ensemble de la flotte Hunter opère comme une unité"
   >
   </sub_type>
   <!--deprecated_in_favor_of="Normal"-->
@@ -15,7 +15,7 @@
            abbreviation="Assassin"
            dll_name="AIWarExternalCode"
            type_name="Arcen.AIW2.External.HunterFleetType_Assassin"
-          description="The Hunter Fleet can split up into smaller groups and try to assassinate important targets. Experimental; feedback is requested"
+          description="La flotte de chasseurs peut se diviser en petits groupes et essayer d'assassiner des cibles importantes. Expérimental; une rétroaction est demandée"
   >
   </sub_type>
 
@@ -24,7 +24,7 @@
            abbreviation="Defense"
            dll_name="AIWarExternalCode"
            type_name="Arcen.AIW2.External.HunterFleetType_Defense"
-          description="Rather than attacking you aggressively and causing potential devastating losses on your end, the Hunter Fleet acts almost like a second Warden Fleet -- things get very hairy for you when you are attacking the AI, then."
+          description="Plutôt que de vous attaquer de manière agressive et de causer des pertes dévastatrices potentielles de votre côté, la flotte de chasseurs agit presque comme une seconde flotte de gardiens - les choses deviennent très poilues pour vous lorsque vous attaquez l'IA, alors."
   >
   </sub_type>
   <sub_type name="Kamikaze"
@@ -32,7 +32,7 @@
            abbreviation="Kamikaze"
            dll_name="AIWarExternalCode"
            type_name="Arcen.AIW2.External.HunterFleetType_Kamikaze"
-          description="Makes it far more aggressive in deciding to attack. Normally it'll wait until a certain ratio of power compared to yours, but Kamikaze has a much lower requirement."
+          description="Le rend beaucoup plus agressif pour décider d'attaquer. Normalement, il attendra un certain rapport de puissance par rapport au vôtre, mais Kamikaze a une exigence beaucoup plus faible."
   >
   </sub_type>
   <sub_type name="KiteMaster"
@@ -40,7 +40,7 @@
            abbreviation="Kite Master"
            dll_name="AIWarExternalCode"
            type_name="Arcen.AIW2.External.HunterFleetType_KiteMaster"
-          description="Same as the Intelligent Predator hunter fleet in most ways, but its ships start using the kiting behavior that yours are also able to use. Makes them much more tricky to chase down!"
+          description="Identique à la flotte de chasseurs de prédateurs intelligents à bien des égards, mais ses navires commencent à utiliser le comportement de cerf-volant que le vôtre peut également utiliser. Les rend beaucoup plus difficiles à chasser!"
   >
   </sub_type>
 

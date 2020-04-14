@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <item name="DecodingNanobots" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Nanocaust_Hive_Hacking" display_name="Decode Nanobots" description="Hack the core Nanobot Hive in order to subvert them into being your allies. From then on, the Hive will devote all of its energy to destroying the AI. This will not be easy."
+  <item name="DecodingNanobots" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Nanocaust_Hive_Hacking" display_name="Decode Nanobots" description="Piratez le noyau Nanobot Hive afin de les transformer en alliés. Dès lors, la Ruche consacrera toute son énergie à détruire l'IA. Ceci ne sera pas facile."
         hack_duration="600"
         primary_hacking_response_interval="30"
         primary_response_strength_per_interval="10.5"

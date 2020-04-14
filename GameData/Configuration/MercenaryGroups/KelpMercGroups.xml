@@ -20,7 +20,7 @@
 		time_between_summons_in_seconds="300"
 		repair_time_in_seconds="1200"
         spawn_delay="1"
-        description="After decades of silence, a rogue scientist has contacted us, offering potent spire technology to defend our planets. The power required to fuel these defenses is immense, however, and we can only keep them up for a limited time."
+        description="Après des décennies de silence, un scientifique voyou nous a contactés, offrant une puissante technologie de flèche pour défendre nos planètes. Cependant, la puissance nécessaire pour alimenter ces défenses est immense et nous ne pouvons les maintenir que pendant un temps limité."
         /> 
   
 	<item name="Hydral Hobbyist" display_name="Hydral Hobbyist"
@@ -38,7 +38,7 @@
 		time_between_summons_in_seconds="300"
 		repair_time_in_seconds="900"
         spawn_delay="1"
-        description="We have recieved an offer of assistance by one who simply goes by Hydran. Their ship seems to be weak on offensive power, but is filled to the brim with paralyzing shots and redundancy systems."
+        description="Nous avons reçu une offre d'assistance d'une personne qui passe simplement par Hydran. Leur vaisseau semble faible en puissance offensive, mais il est rempli à ras bord de tirs paralysants et de systèmes de redondance."
         />
 
 <item name="Democratic Demolitionists" display_name="Democratic Demolitionists"
@@ -59,6 +59,6 @@
 		time_between_summons_in_seconds="300"
 		repair_time_in_seconds="1200"
         spawn_delay="1"
-        description="The leader of this group was stuck with nothing but grenade launcher ship and turret schematics. He took the only logical conclusion and built hundreds of them."
+        description="Le chef de ce groupe était coincé avec rien d'autre que des schémas de navire lance-grenades et de tourelle. Il a pris la seule conclusion logique et en a construit des centaines."
         />		
 </root>

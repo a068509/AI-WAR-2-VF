@@ -82,7 +82,7 @@
         local_hacker_required="true"
 />
 -->
-  <item name="SpireArchiveExtraction" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_SpireArchive" display_name="Spire Archive Extraction" description="Hacking this Spire Archive will grant you a large amount of Science, but it takes a long time. Be prepared for an extreme AI response against your units. "
+  <item name="SpireArchiveExtraction" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_SpireArchive" display_name="Spire Archive Extraction" description="Le piratage de cette archive Spire vous accordera une grande quantité de science, mais cela prend beaucoup de temps. Soyez prêt pour une réponse extrême de l'IA contre vos unités. "
         hack_duration="300"
         primary_hacking_response_interval="35"
         primary_response_strength_per_interval="1.5"
@@ -100,7 +100,7 @@
 		exo_on_completion="true"
 />
 
-  <item name="WeakenTurretsOnAIWorld" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_WeakenTurretsOnAIWorld" display_name="Weaken AI Turrets" description="Hacking into the local AI network will reduce the range of AI turrets to 25% of their normal values, and their damage output to 50% of normal.  Only works on planets of mark 6 or lower."
+  <item name="WeakenTurretsOnAIWorld" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_WeakenTurretsOnAIWorld" display_name="Weaken AI Turrets" description="Le piratage du réseau AI local réduira la portée des tourelles AI à 25% de leurs valeurs normales et leur puissance de dégâts à 50% de la normale. Fonctionne uniquement sur les planètes de marque 6 ou inférieure"
         hacking_cost_per_second="0"
         effect_per_second="1"
         hack_duration="2"
@@ -119,7 +119,7 @@
         hack_is_against_planet="true"
         exo_on_completion="false"
 />
-  <item name="WeakenGuardPostsOnAIWorld" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_WeakenGuardPostsOnAIWorld" display_name="Weaken AI Guard Posts" description="Hacking into the local AI network will reduce the range of AI guard posts to 50% of their normal values, and their damage output to 75% of normal.  Only works on planets of mark 6 or lower."
+  <item name="WeakenGuardPostsOnAIWorld" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_WeakenGuardPostsOnAIWorld" display_name="Weaken AI Guard Posts" description="Le piratage dans le réseau AI local réduira la portée des postes de garde AI à 50% de leurs valeurs normales et leur sortie de dégâts à 75% de la normale. Fonctionne uniquement sur les planètes de marque 6 ou inférieure."
         hacking_cost_per_second="0"
         effect_per_second="1"
         hack_duration="2"
@@ -138,7 +138,7 @@
         hack_is_against_planet="true"
         exo_on_completion="false"
 />
-  <item name="HackingGlobalCommandAugmenter" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_GlobalCommandAugmenter" display_name="Hack Command Augmenter" description="Hacks the Global Command Augmenter on this planet, giving you all of its benefits, permanently. This hack destroys the GCA, but there is no cost to you for its destruction. If you already have paid the AIP cost for this planet, then this hack costs only half of what it would normally."
+  <item name="HackingGlobalCommandAugmenter" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_GlobalCommandAugmenter" display_name="Hack Command Augmenter" description="Pirate le Global Command Augmenter sur cette planète, vous offrant tous ses avantages de façon permanente. Ce hack détruit le GCA, mais sa destruction est gratuite. Si vous avez déjà payé le coût AIP pour cette planète, ce hack ne coûte que la moitié de ce qu'il serait normalement."
         hacking_cost_per_second="0"
         effect_per_second="1"
         hack_duration="120"
@@ -154,7 +154,7 @@
         local_hacker_required="true"
         exo_on_completion="true"
 />
-  <item name="RerollGlobalCommandAugmenter" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_RerollGCA" display_name="Reroll GCA contents" description="This will change the defenses that this GCA will give to your Command Stations."
+  <item name="RerollGlobalCommandAugmenter" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_RerollGCA" display_name="Reroll GCA contents" description="Cela changera les défenses que ce GCA donnera à vos postes de commandement."
         hack_duration="20"
         hacking_cost_multiplier_per_attempt="0"
         primary_hacking_response_interval="10"
@@ -166,7 +166,7 @@
         local_hacker_required="true"
         hack_is_against_planet="false"
 />
-  <item name="HackingIntraGalacticCoordinators" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_IntraGalacticCoordinators" display_name="Hack Coordinator" description="Hacks the Intra-Galactic Coordinator on this planet, giving you all of its benefits, permanently. This hack destroys the IGC, but there is no cost to you for its destruction. If you already have paid the AIP cost for this planet, then this hack costs only half of what it would normally."
+  <item name="HackingIntraGalacticCoordinators" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_IntraGalacticCoordinators" display_name="Hack Coordinator" description="Pirate le coordinateur intra-galactique sur cette planète, vous offrant tous ses avantages, en permanence. Ce hack détruit l'IGC, mais sa destruction est gratuite. Si vous avez déjà payé le coût AIP pour cette planète, ce hack ne coûte que la moitié de ce qu'il serait normalement."
         hacking_cost_per_second="0"
         effect_per_second="1"
         hack_duration="120"
@@ -182,7 +182,7 @@
         local_hacker_required="true"
         exo_on_completion="true"
 />
-	<item name="HackIonCannon" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_TakeOverWeapon" display_name="Hack Ion Cannon" description="Captures all Ion Cannons on this planet for your own faction, permanently. Only works on planets of mark 6 or lower."
+	<item name="HackIonCannon" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_TakeOverWeapon" display_name="Hack Ion Cannon" description="Capture en permanence tous les canons à ions de cette planète pour votre propre faction. Fonctionne uniquement sur les planètes de marque 6 ou inférieure."
         hacking_cost_per_second="0"
         effect_per_second="1"
         hack_duration="2"
@@ -201,7 +201,7 @@
 		only_for_hostile="true"
         only_show_once_per_planet_with_multiple_entities_granting_this="true"
 />
-	<item name="HackMassDriver" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_TakeOverWeapon" display_name="Hack Mass Driver" description="Captures all Orbital Mass Drivers on this planet for your own faction, permanently. Only works on planets of mark 6 or lower."
+	<item name="HackMassDriver" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_TakeOverWeapon" display_name="Hack Mass Driver" description="Capture tous les pilotes de masse orbitale sur cette planète pour votre propre faction, en permanence. Fonctionne uniquement sur les planètes de marque 6 ou inférieure."
         hacking_cost_per_second="0"
         effect_per_second="1"
         hack_duration="2"
@@ -221,7 +221,7 @@
         only_show_once_per_planet_with_multiple_entities_granting_this="true"
 />
 
-	<item name="HackCoprocessor" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_ScoutAllOfTypeOneTimeOnly" display_name="Hack Coprocessor" description="Explores all planets with a Coprocessor located on it. Costs 5 Hacking Points per unexplored Coprocessor."
+	<item name="HackCoprocessor" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_ScoutAllOfTypeOneTimeOnly" display_name="Hack Coprocessor" description="Explore toutes les planètes avec un coprocesseur situé dessus. Coûte 5 points de piratage par coprocesseur inexploré."
         hacking_cost_per_second="0"
         effect_per_second="1"
         hack_duration="60"
@@ -237,7 +237,7 @@
 	unit_tag_target="Coprocessor"
 />
   <!--time-based hacks variants-->
-  <item name="SubvertSuperTerminal" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_SubvertSuperTerminal" display_name="Subvert Super Terminal" description="The longer you hold on, the more you'll reduce (AIP), but you'll also cause a massive incursion of AI forces while doing it, some of which will head directly to your homeworld as an Exo-Galactic Strike. Careful not to kill yourself by holding on too long. You only get one shot at this hack before the AI adapts, so make it count."
+  <item name="SubvertSuperTerminal" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_SubvertSuperTerminal" display_name="Subvert Super Terminal" description="plus vous maintenez, plus vous réduirez (AIP), mais vous provoquerez également une incursion massive de forces de l'IA en le faisant, dont certaines se dirigeront directement vers votre monde natal en tant que frappe exo-galactique. Attention à ne pas vous tuer en vous tenant trop longtemps. Vous ne recevez qu'un seul coup sur ce hack avant que l'IA ne s'adapte, alors faites en sorte qu'il compte."
         hacking_cost_per_second="0.2"
         effect_per_second="0.2" 
         hack_duration="-1"
@@ -258,7 +258,7 @@
         local_hacker_required="true"
         destroy_hack_target_on_completion="true"
 />
-  <item name="ScienceExtraction" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_ScienceExtraction" display_name="Covert Science Extraction" description="This device hacks into the AI surveillance net and data archives in the local planetary system to obtain Science, up to the normal amount. Be prepared for an AI response against your units."
+  <item name="ScienceExtraction" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_ScienceExtraction" display_name="Covert Science Extraction" description="Cet appareil pirate le réseau de surveillance de l'IA et les archives de données du système planétaire local pour obtenir la science, jusqu'à la quantité normale. Soyez prêt pour une réponse de l'IA contre vos unités."
         hacking_cost_per_second="0.15"
         effect_per_second="10" 
         hack_duration="-1"
@@ -273,7 +273,7 @@
         hack_is_against_planet="false"
         exo_on_completion="false"
         />
-    <item name="ScienceExtractionFromNeutralWorld" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_ScienceExtractionFromNeutralPlanet" display_name="Neutral Planet Science Extraction" description="This device scans the wreckage of the AI structures on the planet to obtain Science, up to the normal amount."
+    <item name="ScienceExtractionFromNeutralWorld" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_ScienceExtractionFromNeutralPlanet" display_name="Neutral Planet Science Extraction" description="Cet appareil scanne l'épave des structures de l'IA sur la planète pour obtenir la science, jusqu'à la quantité normale."
         hacking_cost_per_second="0"
         effect_per_second="0" 
         hack_duration="10"
@@ -291,7 +291,7 @@
         exo_on_completion="true"
 />
 
-    <item name="DeploySpyNanites_Watch" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_DeploySpyNanites_Watch" display_name="Watch Planet" description="This hack deploys spy nanites that will grant you permanent vision on this planet."
+    <item name="DeploySpyNanites_Watch" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_DeploySpyNanites_Watch" display_name="Watch Planet" description="Ce hack déploie des nanites d'espionnage qui vous accorderont une vision permanente sur cette planète."
         hacking_cost_per_second="0"
         effect_per_second="1" 
         hack_duration="2"
@@ -307,7 +307,7 @@
         exo_on_completion="false"
         only_for_unwatched_planets="true"
         />
-    <item name="DeploySpyNanites_WatchLocal" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_DeploySpyNanites_WatchLocal" display_name="Watch Planet (local)" description="This hack deploys spy nanites that will grant you vision of the planet until the AI reconquers it. Only for planets without defenders."
+    <item name="DeploySpyNanites_WatchLocal" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_DeploySpyNanites_WatchLocal" display_name="Watch Planet (local)" description="Ce hack déploie des nanites d'espionnage qui vous donneront une vision de la planète jusqu'à ce que l'IA la reconquière. Uniquement pour les planètes sans défenseurs."
         hacking_cost_per_second="0"
         effect_per_second="1" 
         hack_duration="2"
@@ -325,7 +325,7 @@
         only_for_undefended_planets="true"
         />
 
-    <item name="DeploySpyNanites_Explore" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_DeploySpyNanites_Explore" display_name="Explore Planet" description="This hack deploys spy nanites to Explore this planet."
+    <item name="DeploySpyNanites_Explore" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_DeploySpyNanites_Explore" display_name="Explore Planet" description="Ce hack déploie des nanites d'espionnage pour explorer cette planète."
         hacking_cost_per_second="0"
         effect_per_second="1" 
         hack_duration="2"
@@ -342,7 +342,7 @@
         only_for_unexplored_planets="true"
         />
 
-    <item name="HackToGrantTech" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_GrantTech" display_name="Grant Technology" description="This will allow the player to unlock a new Tech. Unlocking a Tech this way does not increase the cost of doing it with Science."
+    <item name="HackToGrantTech" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_GrantTech" display_name="Grant Technology" description="Cela permettra au joueur de déverrouiller une nouvelle technologie. Déverrouiller un Tech de cette façon n'augmente pas le coût de le faire avec la science."
         hack_duration="80"
 		hacking_cost_multiplier_per_attempt="0"
         primary_hacking_response_interval="30"
@@ -358,7 +358,7 @@
 		exo_on_completion="true"
 />
 
-    <item name="HackToGrantShipLine" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_GrantShipLine" display_name="Grant Ship Line" description="This will allow the player to grant a new ship line to the hacking Flagship (the one closest to the target)."
+    <item name="HackToGrantShipLine" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_GrantShipLine" display_name="Grant Ship Line" description="Cela permettra au joueur d'accorder une nouvelle ligne de vaisseau au vaisseau amiral pirate (le plus proche de la cible)."
         hack_duration="30"
 		hacking_cost_multiplier_per_attempt="0"
         primary_hacking_response_interval="30"
@@ -378,7 +378,7 @@
 		exo_on_completion="true"
 />
 
-    <item name="HackToDoubleShipLineCap" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_DoubleShipLineCap" display_name="Double Ship Line Cap" description="This will allow the player to double the cap of one of the strikecraft ship lines of the hacking Flagship (the one closest to the target)."
+    <item name="HackToDoubleShipLineCap" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_DoubleShipLineCap" display_name="Double Ship Line Cap" description="Cela permettra au joueur de doubler le plafond de l'une des lignes de navires de frappe du vaisseau amiral piratage (celle la plus proche de la cible)."
         hack_duration="30"
 		hacking_cost_multiplier_per_attempt="0"
         primary_hacking_response_interval="30"
@@ -397,7 +397,7 @@
         destroy_hack_target_on_completion="true"
 		exo_on_completion="true"
 />
-        <item name="ConvertTVToScience" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_ConvertTVToScience" display_name="Convert Tech Vault to Science" description="You can disassemble the Tech Vault in order to figure out how it works. This grants some science but you won't get a Tech."
+        <item name="ConvertTVToScience" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_ConvertTVToScience" display_name="Convert Tech Vault to Science" description="Vous pouvez démonter le Tech Vault afin de comprendre comment il fonctionne. Cela accorde un peu de science mais vous n'obtiendrez pas de Tech."
         hack_duration="30"
 		hacking_cost_multiplier_per_attempt="0"
         primary_hacking_response_interval="30"
@@ -412,7 +412,7 @@
         destroy_hack_target_on_completion="true"
 		exo_on_completion="true"
 />
-        <item name="RerollTV" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_RerollTV" display_name="Reroll Tech Vault Contents" description="This will change the Tech Line you get from this Tech Vault."
+        <item name="RerollTV" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_RerollTV" display_name="Reroll Tech Vault Contents" description="Cela changera la ligne technique que vous obtenez de ce coffre technique."
         hack_duration="50"
         hacking_cost_multiplier_per_attempt="0"
         primary_hacking_response_interval="10"
@@ -439,7 +439,7 @@
         hack_is_against_planet="false"
 />-->
 
-        <item name="RerollARS" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_RerollARS" display_name="Reroll ARS contents" description="This will change the ships you can get from the ARS."
+        <item name="RerollARS" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_RerollARS" display_name="Reroll ARS contents" description="Cela changera les navires que vous pouvez obtenir de l'ARS."
         hack_duration="20"
         hacking_cost_multiplier_per_attempt="0"
         primary_hacking_response_interval="10"
@@ -452,7 +452,7 @@
         hack_is_against_planet="false"
 />
 
-        <item name="ConvertARSToScience" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_ConvertARSToScience" display_name="Convert ARS to Science" description="You can disassemble the ARS in order to figure out how it works. This grants  some science but you won't get the ship line."
+        <item name="ConvertARSToScience" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_ConvertARSToScience" display_name="Convert ARS to Science" description="Vous pouvez démonter l'ARS pour comprendre comment il fonctionne. Cela accorde un peu de science, mais vous n'obtiendrez pas la ligne de navire."
         hack_duration="30"
 		hacking_cost_multiplier_per_attempt="0"
         primary_hacking_response_interval="30"
@@ -468,7 +468,7 @@
 		exo_on_completion="true"
 />
 
-    <item name="Sabotage" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_Sabotage" display_name="Sabotage AI defenses" description="This will allow the player to destroy a powerful defensive structure on the planet. Not every defensive structure can be sabotaged. If the structure would normally increase AI Progress on death, destroying it this way does not cause that increase."
+    <item name="Sabotage" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_Sabotage" display_name="Sabotage AI defenses" description="Cela permettra au joueur de détruire une puissante structure défensive sur la planète. Toutes les structures défensives ne peuvent pas être sabotées. Si la structure augmente normalement la progression de l'IA à la mort, la détruire de cette façon ne provoque pas cette augmentation."
         hack_duration="15"
 		hacking_cost_multiplier_per_attempt="0"
         primary_hacking_response_interval="10"
@@ -482,7 +482,7 @@
 />
 
   <!-- for various minor factions. Nanocaust is in its own file -->
-  <item name="AccessMercenaryBeacon" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_AccessMercenaryBeacon" display_name="Access Outguard Beacon" description="Hacking this beacon will allow you to contact some of the Outguard -- remnant anti-ai forces that can come to your aid. Since the Outguard are subverting the AI communication channels, expect some extremely heavy AI response to this. Upon completion, your AIP will increase by 10."
+  <item name="AccessMercenaryBeacon" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_AccessMercenaryBeacon" display_name="Access Outguard Beacon" description="Le piratage de cette balise vous permettra de contacter certaines des forces anti-ai restantes d'Outguard - qui peuvent vous venir en aide. Étant donné que l'Outguard subvertit les canaux de communication de l'IA, attendez-vous à une réponse de l'IA extrêmement lourde. À la fin, votre AIP augmentera de 10."
         hack_duration="150"
         primary_hacking_response_interval="15"
         primary_response_strength_per_interval="0.75"
@@ -494,7 +494,7 @@
 />
 
 
-  <item name="ProvokeVengeanceStrike" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_ProvokeVengeanceStrike" display_name="Provoke Vengeance Strike" description="Finishing this Hack will cause the Dark Spire to launch a Vengeance Strike, wherein every Vengeance Generator will simultaneously launch a fleet to attack, well, everything."
+  <item name="ProvokeVengeanceStrike" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_ProvokeVengeanceStrike" display_name="Provoke Vengeance Strike" description="La fin de ce hack entraînera le Dark Spire à lancer une attaque de vengeance, dans laquelle chaque générateur de vengeance lancera simultanément une flotte pour attaquer, eh bien, tout."
         hack_duration="300"
         primary_hacking_response_interval="60"
         primary_response_strength_per_interval="1.2"
@@ -504,7 +504,7 @@
         response_strength_on_completion="1"
         local_hacker_required="true"
         />
-  <item name="DownloadDarkSpireShip" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_DownloadDarkSpireShip" display_name="Download Dark Spire Ship Design" description="Hacking this Vengeance Generator will give the Fleet that did it a few of the Dark Spire Wraith or Phantom ships, but it might have devastating consequences; are you willing to set a fire upon the deep?"
+  <item name="DownloadDarkSpireShip" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_DownloadDarkSpireShip" display_name="Download Dark Spire Ship Design" description="Le piratage de ce générateur de vengeance donnera à la flotte qui l'a fait quelques-uns des vaisseaux Dark Spire Wraith ou Phantom, mais cela pourrait avoir des conséquences dévastatrices; êtes-vous prêt à mettre le feu aux profondeurs?"
         hack_duration="300"
         primary_hacking_response_interval="45"
         primary_response_strength_per_interval="1.5"
@@ -515,7 +515,7 @@
         local_hacker_required="true"
 />
 
-    <item name="RenderVengeanceGeneratorVulnerable" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_RenderVengeanceGeneratorVulnerable" display_name="Render Vengeance Generator Vulnerable" description="Hacking this Vengeance Generator will make it vulnerable to conventional weaponry. This is likely to provoke an extremely strong Dark Spire response"
+    <item name="RenderVengeanceGeneratorVulnerable" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_RenderVengeanceGeneratorVulnerable" display_name="Render Vengeance Generator Vulnerable" description="Le piratage de ce générateur de vengeance le rendra vulnérable aux armes classiques. Cela est susceptible de provoquer une réponse extrêmement puissante de Dark Spire"
         hack_duration="300"
         primary_hacking_response_interval="40"
         primary_response_strength_per_interval="2.5"
@@ -526,7 +526,7 @@
         local_hacker_required="true"
 />
 
-  <item name="DownloadDysonShip" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_DownloadDysonShip" display_name="Download Dyson Ship Design" description="Hacking the Dyson Sphere will give the Fleet that did it a few of the Dyson Defender ships, but it will make the Dyson Sphere very unhappy with you."
+  <item name="DownloadDysonShip" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_DownloadDysonShip" display_name="Download Dyson Ship Design" description="Le piratage de la sphère Dyson donnera à la flotte qui l'a fait quelques-uns des navires Dyson Defender, mais cela rendra la sphère Dyson très mécontente de vous."
         hack_duration="300"
         primary_hacking_response_interval="30"
         primary_response_strength_per_interval="1.5"
@@ -536,7 +536,7 @@
         response_strength_on_completion="1"
         local_hacker_required="true"
 />
-  <item name="IncreaseDysonProduction" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_IncreaseDysonProduction" display_name="Increase Dyson Unit Production" description="This Hack will improve Dyson unit production. It will definitely make the Dyson Sphere unhappy with you as well."
+  <item name="IncreaseDysonProduction" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_IncreaseDysonProduction" display_name="Increase Dyson Unit Production" description="Ce Hack améliorera la production d'unités Dyson. Cela rendra certainement la sphère Dyson mécontente de vous aussi."
         hack_duration="300"
         primary_hacking_response_interval="30"
         primary_response_strength_per_interval="1.5"
@@ -546,7 +546,7 @@
         response_strength_on_completion="1"
         local_hacker_required="true"
 />
-  <item name="IncreaseDysonMaxStrength" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_IncreaseDysonMaxStrength" display_name="Increase Dyson Max Strength" description="This Hack will increase this Dyson Sphere's max strength. It will definitely make the Dyson Sphere unhappy with you as well."
+  <item name="IncreaseDysonMaxStrength" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_IncreaseDysonMaxStrength" display_name="Increase Dyson Max Strength" description="Ce Hack augmentera la force maximale de cette sphère Dyson. Cela rendra certainement la sphère Dyson mécontente de vous aussi."
         hack_duration="300"
         primary_hacking_response_interval="30"
         primary_response_strength_per_interval="1.5"
@@ -557,7 +557,7 @@
         local_hacker_required="true"
 />
 
-  <item name="DecreaseDysonProduction" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_DecreaseDysonProduction" display_name="Decrease Dyson Unit Production" description="This Hack will diminish Dyson unit production. It will definitely make the Dyson unhappy with you as well."
+  <item name="DecreaseDysonProduction" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_DecreaseDysonProduction" display_name="Decrease Dyson Unit Production" description="Ce hack diminuera la production d'unités Dyson. Cela rendra certainement le Dyson mécontent de vous aussi."
         hack_duration="300"
         primary_hacking_response_interval="30"
         primary_response_strength_per_interval="1.5"
@@ -567,7 +567,7 @@
         response_strength_on_completion="1"
         local_hacker_required="true"
         />
-    <item name="SummonDevourerGolem" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_SummonDevourerGolem" display_name="Summon Unknown Being" description="This Hack will activate the beacon; it looks like a homing beacon of some sort...."
+    <item name="SummonDevourerGolem" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_SummonDevourerGolem" display_name="Summon Unknown Being" description="Ce Hack activera la balise; il ressemble à une balise de ralliement en quelque sorte ...."
         hack_duration="60"
         primary_hacking_response_interval="30"
         primary_response_strength_per_interval="1.5"
@@ -579,7 +579,7 @@
         science_to_grant_on_completion="1000"
         destroy_hack_target_on_completion="true"
 />
-    <item name="EnableHRF" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_EnableHRF" display_name="Seek Allies" description="This Hack will activate the beacon; it looks like a way to contact potential allies."
+    <item name="EnableHRF" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_EnableHRF" display_name="Seek Allies" description="Ce Hack activera la balise; cela ressemble à un moyen de contacter des alliés potentiels."
         hack_duration="60"
         primary_hacking_response_interval="30"
         primary_response_strength_per_interval="1.5"
@@ -591,7 +591,7 @@
         science_to_grant_on_completion="1000"
         destroy_hack_target_on_completion="true"
 />
-    <item name="DestabilizeWormhole" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_DestabilizeWormhole" display_name="Destabilize Wormhole" description="This Hack destabilize and collapse the exogalactic wormhole."
+    <item name="DestabilizeWormhole" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_DestabilizeWormhole" display_name="Destabilize Wormhole" description="Ce Hack déstabilise et effondre le trou de ver exogalactique."
         hack_duration="60"
         primary_hacking_response_interval="10"
         primary_response_strength_per_interval="1.5"
@@ -607,7 +607,7 @@
 		response_strength = # of Enraged Harvesters to spawn per pulse
 		increase_per_effect = mark level increase per pulse
 	-->
-	<item name="TameTelium" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_TameTelium" display_name="Tame Macrophage Telium" description="Hack the mindset of a Telium on this planet, converting it to your cause. This hack will cause it ignore the mental part of its natural production chain, releasing swarms of angry Enraged Harvesters to defend itself."
+	<item name="TameTelium" dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Hacking_TameTelium" display_name="Tame Macrophage Telium" description="Piratez l'état d'esprit d'un Telium sur cette planète, en le convertissant à votre cause. Ce hack l'amènera à ignorer la partie mentale de sa chaîne de production naturelle, libérant des nuées de Moissonneurs Enragés en colère pour se défendre."
 		hack_duration="300"
 		primary_response_strength_per_interval="1"
 		primary_hacking_response_interval="30"

@@ -32,7 +32,7 @@
 -->
   <map_type name="ClustersMicrocosm"
             display_name="Clusters Microcosm"
-            description="Clusters are arranged in highly regular shapes."
+            description="Les grappes sont disposées selon des formes très régulières."
               dll_name="AIWarExternalCode"
               type_name="Arcen.AIW2.External.Mapgen_ClustersRoot"
               min_planets="40"
@@ -53,7 +53,7 @@
   />
   <map_type name="Snake"
               display_name="Spiral Snake"
-              description="Planets are organized into a spiral, with only one path between all planets."
+              description="Les planètes sont organisées en spirale, avec un seul chemin entre toutes les planètes."
               dll_name="AIWarExternalCode"
               type_name="Arcen.AIW2.External.Mapgen_Concentric"
               min_planets="40"
@@ -72,7 +72,7 @@
   </map_type>
   <map_type name="X"
               display_name="X"
-              description="Planets are organized into four distinct groups only connected via a single central planet."
+              description="Les planètes sont organisées en quatre groupes distincts connectés uniquement via une seule planète centrale."
               dll_name="AIWarExternalCode"
               type_name="Arcen.AIW2.External.Mapgen_X"
               min_planets="40"
@@ -81,7 +81,7 @@
   </map_type>
   <map_type name="Grid"
               display_name="Grid"
-              description="Planets are organized into an orderly grid."
+              description="Les planètes sont organisées en une grille ordonnée."
               dll_name="AIWarExternalCode"
               type_name="Arcen.AIW2.External.RootLatticeTypeGenerator"
               min_planets="40"
@@ -90,7 +90,7 @@
   </map_type>
   <map_type name="Maze"
               display_name="Maze"
-              description="Planets are organized into a maze-like grid."
+              description="Les planètes sont organisées en une grille semblable à un labyrinthe."
               dll_name="AIWarExternalCode"
               type_name="Arcen.AIW2.External.RootLatticeTypeGenerator"
               min_planets="40"
@@ -99,7 +99,7 @@
   </map_type>
   <map_type name="Clusters"
               display_name="Clusters"
-              description="Planets are organized into a number of clusters, each of which has only a few wormholes that lead to other clusters. Planets within a cluster each have a moderate number of connections to other planets within the cluster."
+              description="Les planètes sont organisées en un certain nombre de grappes, dont chacune n'a que quelques trous de ver qui mènent à d'autres grappes. Les planètes d'un cluster ont chacune un nombre modéré de connexions aux autres planètes du cluster."
               dll_name="AIWarExternalCode"
               type_name="Arcen.AIW2.External.Mapgen_ClustersRoot"
               min_planets="40"
@@ -108,7 +108,7 @@
   </map_type>
   <map_type name="Wheel"
               display_name="Wheel"
-              description="Planets are arranged in a wheel-like shape with a number of spokes and a rim."
+              description="Les planètes sont disposées en forme de roue avec un certain nombre de rayons et une jante."
               dll_name="AIWarExternalCode"
               type_name="Arcen.AIW2.External.Mapgen_Wheel"
               min_planets="40"
@@ -117,7 +117,7 @@
   </map_type>
   <map_type name="Honeycomb"
               display_name="Honeycomb"
-              description="Planets are arranged in a hexagonal pattern."
+              description="Les planètes sont disposées selon un motif hexagonal."
               dll_name="AIWarExternalCode"
               type_name="Arcen.AIW2.External.Mapgen_Honeycomb"
               min_planets="40"
@@ -126,7 +126,7 @@
   </map_type>
   <map_type name="Encapsulated"
               display_name="Encapsulated"
-              description="Planets are arranged in small and large clusters inside an outer rim. Sometimes the clusters all connect to each other, other times you have to traverse the rim to get to the other clusters."
+              description="Les planètes sont disposées en petits et grands groupes à l'intérieur d'un bord extérieur. Parfois, les clusters se connectent tous les uns aux autres, d'autres fois, vous devez traverser le bord pour accéder aux autres clusters."
               dll_name="AIWarExternalCode"
               type_name="Arcen.AIW2.External.Mapgen_Encapsulated"
               min_planets="40"

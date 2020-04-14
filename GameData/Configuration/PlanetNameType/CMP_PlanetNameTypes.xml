@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
   <planet_name_type name="Standard" display_name="Standard" subdir="Standard"
-          description="Inspired by famous scientists, along with real and fictional named planets and locations from other works.  Created by Chris and Keith." />
+          description="Inspiré par des scientifiques célèbres, ainsi que des planètes nommées réelles et fictives et des emplacements d'autres œuvres. Créé par Chris et Keith." />
   <planet_name_type name="NoGravitas" display_name="No Gravitas" subdir="NoGravitas"
-          description="Inspired by phrases and spaceship names in a pretty humorous sci fi series.  Created by Draco18s (edited by Chris)." />
+          description="Inspiré par des phrases et des noms de vaisseaux spatiaux dans une série de science-fiction assez humoristique. Créé par Draco18s (édité par Chris et traduit par Knight-HD)." />
   <planet_name_type name="FantasyMonsters" display_name="Fantasy Monsters" subdir="FantasyMonsters"
-          description="Inspired by the names of monsters in several fantasy games.  Created by Zoutzakje (edited by Chris)." />
+          description="Inspiré par les noms des monstres dans plusieurs jeux fantastiques. Créé par Zoutzakje (édité par Chris et traduit par Knight-HD)." />
   <planet_name_type name="KahunasRealStars" display_name="Kahuna's Real Stars" subdir="KahunasRealStars"
-          description="Absolutely enormous list of actual star names, including codenames for them.  Plus a few easter eggs in there.  Created by Kahuna." />
+          description="Liste absolument énorme de noms d'étoiles réels, y compris les noms de code pour eux. Plus quelques œufs de Pâques là-dedans. Créé par Kahuna" />
   <planet_name_type name="KahunasRealStarsNoCodenames" display_name="Kahuna's No-Codename Stars" subdir="KahunasRealStarsNoCodenames"
-          description="Absolutely enormous list of actual star names, but minus the codename-y sort.  Plus a few easter eggs in there.  Created by Kahuna." />
+          description="Liste absolument énorme de noms d'étoiles réels, mais moins le tri par nom de code-y. Plus quelques œufs de Pâques là-dedans. Créé par Kahuna." />
   <planet_name_type name="Cities_DE" display_name="Cities (DE)" subdir="Cities_DE"
-          description="Most cities in Germany show up here, if they are 10 characters or fewer.  Created by Viss Valdyr." />
+          description="La plupart des villes d'Allemagne apparaissent ici, si elles sont de 10 caractères ou moins. Créé par Viss Valdyr." />
   <planet_name_type name="Cities_UK" display_name="Cities (UK)" subdir="Cities_UK"
-          description="Most cities in the UK show up here, if they are 10 characters or fewer.  Created by Viss Valdyr." />
+          description="La plupart des villes du Royaume-Uni apparaissent ici, si elles sont de 10 caractères ou moins. Créé par Viss Valdyr." />
   <planet_name_type name="Cities_US" display_name="Cities (US)" subdir="Cities_US"
-          description="Most cities in the US show up here, if they are 10 characters or fewer.  Created by Viss Valdyr." />
+          description="La plupart des villes des États-Unis apparaissent ici, si elles sont de 10 caractères ou moins. Créé par Viss Valdyr." />
   <planet_name_type name="Cities_RUS" display_name="Cities (RUS)" subdir="Cities_RUS"
-          description="Most cities in Russia show up here, if they are 10 characters or fewer.  Created by Viss Valdyr." />
+          description="La plupart des villes de Russie apparaissent ici, si elles sont de 10 caractères ou moins. Créé par Viss Valdyr." />
   <planet_name_type name="Cities_FRandSP" display_name="Cities (FR/SPA)" subdir="Cities_FRandSP"
-          description="Most cities in France and Spain show up here, if they are 10 characters or fewer.  It's a shorter (and combined) list because most of their city names are quite long!  Created by Viss Valdyr." />
+          description="La plupart des villes de France et d'Espagne s'affichent ici, si elles comptent 10 caractères ou moins. C'est une liste plus courte (et combinée) car la plupart des noms de leurs villes sont assez longs! Créé par Viss Valdyr." />
 </root>

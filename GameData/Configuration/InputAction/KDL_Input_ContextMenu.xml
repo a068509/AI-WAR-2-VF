@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
   <input_action name="MasterMenuBack"
-      category="Hidden" display_name="Master Menu Back Button"
+      category="Hidden" display_name="Bouton Retour du menu principal"
       description="~*~"
       dll_name="AIWarExternalCode" type_name="Arcen.AIW2.External.Input_MasterMenuHandler"
       default_should_override_saved_if_older_than_version="KeyRebindings_744"
